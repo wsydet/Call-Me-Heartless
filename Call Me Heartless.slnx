@@ -1,4 +1,11 @@
 ﻿<Solution>
-  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Game.Narrative.Runtime.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Game.UI.Editor.csproj" />
+  <Project Path="Game.Narrative.Editor.csproj" />
+  <Project Path="Game.Table.Runtime.csproj" />
+  <Project Path="Game.Narrative.Tests.csproj" />
+  <Project Path="Game.Module.Editor.csproj" />
+  <Project Path="Game.NovelSave.Runtime.csproj" />
 </Solution>

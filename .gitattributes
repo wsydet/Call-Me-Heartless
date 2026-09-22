@@ -169,3 +169,6 @@ Packages/packages-lock.json linguist-generated
 
 # Exceptions for .asset files such as lightning pre-baking
 LightingData.asset     binary
+
+# Installed AI skills use byte-level SHA-256 ownership checks.
+.agents/**             -text
