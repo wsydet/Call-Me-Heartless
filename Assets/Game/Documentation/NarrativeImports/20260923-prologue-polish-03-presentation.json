@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "batchId": "20260923-prologue-polish-03",
+  "skillId": "ember-vn-polish-presentation",
+  "storyId": "0942d3f17d504f01ba64169b17e2a578",
+  "chapterId": "2e58920df7dd454096c73f95a528b843",
+  "choices": {
+    "scope": "all",
+    "intensity": "light",
+    "title": true,
+    "mother": true,
+    "height": true,
+    "preview": true
+  },
+  "planHash": "607a04a0906c64b1932c31bf83eb96c3fbcc0a39ff40e2121b0bb7e2c3236d0a",
+  "sourceFingerprint": "1dd9e9db3b73a21dd58073d9d37c998e88086d78376083eff5ab0fa5f4ebcb59",
+  "beforeFingerprint": "177d9da861d135200ef7f57fb821251563bac534956054a1e546031c239e5e69",
+  "beforeFiles": {
+    "Assets/Game/Documentation/NarrativeImports/20260923-prologue-01.json": "9a13c4391b3ce8426b3baf623b439584ff927461739a23c0dda1bf8cc82cec56",
+    "Assets/Game/Documentation/NarrativeImports/20260923-prologue-01.json.meta": "f7892b4f44c8bf4f53dced0e44e166c7a672e66da4a5fa5c1c053b13a47b84b9",
+    "Assets/Game/Documentation/NarrativeImports/20260923-prologue-polish-03-presentation.json": "absent",
+    "Assets/Game/Module/Narrative/NarrativeData.cs": "00b85e829118d0a649ef64ebc77ed405bfadb84ff8ed8aa6babb04692a1e130c",
+    "Assets/Game/Module/Narrative/NarrativeValidator.cs": "c62399eca4817d5caa8096274128bfae0790889938b9cb6cb5c98f1c52f3dc45",
+    "Assets/Game/Module/Narrative/NovelActorRules.cs": "3196579be81d0b4b1ad05bf80a7dbb98751839e57840a510c716f11e08800491",
+    "Assets/Game/Module/Narrative/NovelScreenRules.cs": "b7cb5b34f707c934efd0d9fc09a057105aea94097bdf8f45086be60a7b8c84a8",
+    "Assets/Game/Module/Narrative/NovelSession.Actors.cs": "9bacb3cf5589fec831a7c5269ec993bc3cbdc602d62346d46de19738d97ea6d9",
+    "Assets/Game/Module/Narrative/NovelSession.Screen.cs": "ad64511492b7aaff9e036bdf79bf2582e9c5c392da0612667024f6c858ad9c90",
+    "Assets/Game/Module/Narrative/NovelText.cs": "1f4fbf7835be1f6590f47a08e3724c764a99f74f9dc0cea14fa77ea2779951c0",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset": "0eea71a8365f0a9e6af9d154d36eaeba87a70b9d73885ba136ad4eee6e7046c1",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset.meta": "d94032979cb2d418289a9fc4bd16f624508ce4276188f6ea657854ef90988f0a",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset": "e73e7a7026cbf54ad3f87b083e219d6786f0a48c231026e873276d5066b2696e",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset.meta": "5277740d808b05aca3d3268882d29100383e425eec5532eb6fd2e1b3d39a03ef",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset": "ccd89fe2484f0dd255c6defb2a08879e3be3b28cb20aa4874a5632450470c7e6",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset.meta": "b2f2f9c8529db8d735bf4e1c68135d4efafa64f85e172abee57398338cb9f73f",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Endings/CH01_Prologue_PreviewEnd.asset": "7c5b0e217f030490ed97051e19de420f7709a31265ba3ba62b7d47768dc4cf68",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Endings/CH01_Prologue_PreviewEnd.asset.meta": "8c99a8bc915f0366db033eb58351fefc876508d4c7cf0c6f20cfb30bd03bf832",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story.asset": "13747b81e0e2d0fd0a33324767d4f7537bbcdccb8c3f6c7707a2cc1d64429d73",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story.asset.meta": "fec8c0317d47185b9c1044002df80dae92738243cac7581e07829b1643a7f845",
+    "Assets/GameResource/Resources/Config/Tables/novel_audio.bytes": "bc98ea6704a40e89a214c2f586b31f5c009c7fab0f63c0a3233ff12365ab96b1",
+    "Assets/GameResource/Resources/Config/Tables/novel_backgrounds.bytes": "8776ceb78571b6fcd096e3c029c26a5bda7147344a90885ade384cd7e19de501",
+    "Assets/GameResource/Resources/Config/Tables/novel_characters.bytes": "831aac8cdeae1fd0bc657986e348aada33874bd9a7db816748e99c13c7a9215f",
+    "Assets/GameResource/Resources/Config/Tables/novel_portraits.bytes": "3c8c6af3acab8e1893b10ab90441af0029b3bfe2ab7bfdb679eb3c501598b849",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds.meta": "21539a34b6196c47cfd5de2e7e2d7b6faf3c22ef5b015337568abde7a00c7f4b",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/客厅_default.png": "ca101ee84be5be1fdbcd313a28d77cc6d0220e6b54d3fbddc44e6de8fc903f62",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/客厅_default.png.meta": "fc4b631de7d351f938f5534ff553f63caca1891bca4ae9c83a43cedad626615a",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/房间_default.png": "6b1f7c5d10465d12cd44828930f12f3cb19e1c6af821849353daec100accd84c",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/房间_default.png.meta": "3e6f1febdc50a42e31731ed3458e4c0225631b7208e265cb250472659034505f",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/教室_default.png": "059971faaf57491e493723fbdeec7bb524b64372327f28f171f468804c4dbf8f",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/教室_default.png.meta": "5f2b5e9d4d10dab4d0e81ed376c466a895cf3c96252fbcb6d7ffa5fbe10d36c4",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/村庄_default.png": "d585d14204c9dd7eaf60b12a1515d608f54d0b1212ee3b76329e294343a15ffa",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/村庄_default.png.meta": "43604856fb2f96e1dbf7ccbf457ef7a426e5007d6f00972093dac3af68c02465",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/森林_default.png": "42edcf07b8bca9a41b70b069b49e62248eccf6216fe6622b9e388523311f91f8",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/森林_default.png.meta": "1fd5c5ce67b2d2426dc1c70470522609350be84071090651d00ec28eb837e09e",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/游戏厅_default.png": "ef92187d52469710461bc157e63e73724ad4775690ab7c94ae12ad9bafa1cc74",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/游戏厅_default.png.meta": "833b7b486c750b85e283ff7c84ee5d82cb74a72647c40fe9cb3618b6545dda41",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/菜地_default.png": "7cbbe41e6448b58a09d573cb7dc9b1c67161796fb5563ce4227d618a8aa32cba",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/菜地_default.png.meta": "a37b4c3c8f70a1a819fbf12d4b5c5efc3a5e4a5050b0584601d7fd21532d2139",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/道观_default.png": "a7932c346049b0f57109c35c4fdb707ee67d439543d3b196f05ac17f3fa26dec",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Backgrounds/道观_default.png.meta": "1970ad20be67144c870b1e29a5c0720ca83d719efbbe6ab8d0591fe54c244fa4",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits.meta": "64ec5150ef6854623f97d4d5598e69d11e85a8ed887eb6a78561b694da7d0525",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_cz_default.png": "2905bcb41c793166235f0d3ebe3d2aea99f485cbd7d8957a9d3f555cca863982",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_cz_default.png.meta": "a4109999423b9f2c29406dfb8c34413a615f331cdcd21430a59bf21d9784f5b5",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_微笑.png": "271cb873848afa6b5adcea7be27d8cd3beb7727579c0f870404c93044524ecb7",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_微笑.png.meta": "c80fc0924191232f63591bbc6bd77b135ccb324808701043ec12bf0a374f26bf",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_睁眼.png": "8c8b8300fe2502c6348f400add4e73eb7ea39a1f13e4c8b3c5bf83d7c558b248",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_睁眼.png.meta": "aa3a43194cddd02dae65fbd95f466891ec6473dde299b43a265a59d9e8799087",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_闭眼.png": "25d6ba77bc272b5d1e8341db8ca5313a7bd0fea2c5bfe326c28a598fcdd14a07",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_闭眼.png.meta": "1be57be0984b43d35e78a1cb2d8af5d3a1ef85a88079cb977cacbb0d58db3a0d",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-不笑.png": "1630b214f7516f0fa28aafc42904b9ed1ee0a5c641bcad8e3467975c091db0db",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-不笑.png.meta": "e839989625bbfceccdb6378df244e370a04aeeb8d88f313b2b8703c538201317",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-微笑.png": "041f2ed2ef7109524aebd85be0dc948cd96e4a0c6057053d080bdcbabc57f904",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-微笑.png.meta": "3864f5214341647587686cc7ad76492f19b45c7039aa246b279d63b81dd9f262",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-张嘴.png": "78aeb3e4107964ed0b00051efe9cc7e6e308f325d8949ed65a6ae74d719bd989",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-张嘴.png.meta": "3db3864080b9166ef29419742b2055ebc3b9035e74e041957e0e5528fdfe837d",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-龇牙.png": "557933234d4b7d728dad950e3b6fe1193a5c0f48aa5312a4d9e47e1a5dd3f515",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-龇牙.png.meta": "3d47530eecb12a91c067bed8c3e62cf8decb0eb1e53762bfbe0bfcde024664eb",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mq_default.png": "fedb63d05efbb2ff06a02f272b0796ffcba25d47fe0b756291bd6d55a821549c",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mq_default.png.meta": "b6b96b6d5351f964481b39099195167b8dda24ea2917693173a09d896a36fc6e",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mryx_default.png": "6cd53bad2b6eafa259be59e62090b68fc32e4b012d4a406181fd7e0da1121185",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mryx_default.png.meta": "0af960cadb59fdf5b600ca0d269527429fe6f1d1b8eb7297a126caeb84d5f723",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_srq_微笑.png": "ff71d558efabc62bf8144176baa6c77754c0ffb9141e3a5cf3a031d8ee59da90",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_srq_微笑.png.meta": "40d2dc9eb1d296a70ea57c18bb343b026b5dfcac687fcb1913f29aea69f96195",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_sy_default.png": "7e1de006ea40fd8240dd2a95038fb95e4a826a4d586c454783f4bdc4ae4f5766",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_sy_default.png.meta": "fe070730e74b547d5eb47a78d03a557a6e1c78a7c1ba4fe39a06dee31145544d",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_xk_default.png": "89e7679c82c563ff9b0844d429318a3c8adb21c8d28f21a39df4233049f6119f",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_xk_default.png.meta": "ea0249e708fd7fa68ad4ed829f53b5dd97e241ccdbc25389fed11c6f3cf7fa48",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_yyf_微笑.png": "5a0a9d3de4e9dcb83b1917e5b1d2d3cf0129274bfaa80f90bb1d3ffe84d19ed2",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_yyf_微笑.png.meta": "b11d227971a40af7f33d56617d4e6e81d08ebc94c97cc53b2f3dda1b991d7556",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/TitleUI.meta": "f9153878404a169a5d7f4428efe1edd9a69b8d8bf56f1e180cfbe116b07727c6",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/TitleUI/道是无情标题字_default.png": "3835568bd35a331cf8204f618f6eb7b182f70e55457efc4ab659db4e442c6450",
+    "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/TitleUI/道是无情标题字_default.png.meta": "2b6ee04d9fa10fdbbfa01dc719525886daf61643470382d5c774aba174a8f382"
+  },
+  "afterFiles": {
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story.asset": "13747b81e0e2d0fd0a33324767d4f7537bbcdccb8c3f6c7707a2cc1d64429d73",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story.asset.meta": "fec8c0317d47185b9c1044002df80dae92738243cac7581e07829b1643a7f845",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset": "0eea71a8365f0a9e6af9d154d36eaeba87a70b9d73885ba136ad4eee6e7046c1",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset.meta": "d94032979cb2d418289a9fc4bd16f624508ce4276188f6ea657854ef90988f0a",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset": "7da132e1899ee1f387ab66423899d351d93ac2f0dbe74e406c1729ec834860df",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset.meta": "5277740d808b05aca3d3268882d29100383e425eec5532eb6fd2e1b3d39a03ef",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset": "895035b85056db17537279285f716163b9b14fe6defa0c69e2e43a32092d0339",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset.meta": "b2f2f9c8529db8d735bf4e1c68135d4efafa64f85e172abee57398338cb9f73f",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Endings/CH01_Prologue_PreviewEnd.asset": "7c5b0e217f030490ed97051e19de420f7709a31265ba3ba62b7d47768dc4cf68",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Endings/CH01_Prologue_PreviewEnd.asset.meta": "8c99a8bc915f0366db033eb58351fefc876508d4c7cf0c6f20cfb30bd03bf832"
+  },
+  "operations": [
+    {
+      "group": "title",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+      "nodeName": "CH01_Prologue_Classroom",
+      "anchorCommandId": "eaf7f703b283413b96ef58542538fe86",
+      "anchorText": "序章开始",
+      "action": "insert_before",
+      "before": "无此指令",
+      "parameters": {
+        "_kind": 0,
+        "_textMode": 1,
+        "_text": "序章",
+        "_lineId": "GENERATE_NEW_GUID",
+        "_characterId": "",
+        "_textRevision": 1
+      },
+      "timing": "串行；标题按正常阅读推进，人物缩放为即时",
+      "reset": "下一句普通对白自动恢复原布局",
+      "reason": "使用已有Title模式，居中标题和暗底；新增一条标题Say，原24句逐字不变",
+      "resource": "",
+      "resultCommandId": "46446e8be6d043d6bc99a93991db1028",
+      "resultActionId": "",
+      "resultParameters": {
+        "_kind": 0,
+        "_textMode": 1,
+        "_text": "序章",
+        "_lineId": "7520a61c920742068a5b93ca61e7bafd",
+        "_characterId": "",
+        "_textRevision": 1
+      }
+    },
+    {
+      "group": "mother",
+      "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset",
+      "nodeName": "CH01_Prologue_Home",
+      "anchorCommandId": "18bbeb8a07704181b786d40ed8b3bc9f",
+      "anchorText": "你已经两个星期没去上学了，你到底想怎么样？",
+      "action": "insert_before",
+      "before": "无此指令",
+      "parameters": {
+        "_kind": 4,
+        "_resourceKey": "CMH_mq_default",
+        "_slot": 1,
+        "_visualAction": 0,
+        "_instanceId": "prologue_mother",
+        "_duration": 0.18
+      },
+      "timing": "串行；标题按正常阅读推进，人物缩放为即时",
+      "reset": "保持到本节点结束；会话结束清理，不另编造离场",
+      "reason": "母亲图片已经导入，原表美术列空导致未编排Show；补首次发言前入场，后续我为内心对白不换图",
+      "resource": "CMH_mq_default",
+      "resultCommandId": "18c9c43868134ca6878cde9dfa7871f3",
+      "resultActionId": "",
+      "resultParameters": {
+        "_kind": 4,
+        "_resourceKey": "CMH_mq_default",
+        "_slot": 1,
+        "_visualAction": 0,
+        "_instanceId": "prologue_mother",
+        "_duration": 0.18
+      }
+    },
+    {
+      "group": "height",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+      "nodeName": "CH01_Prologue_Classroom",
+      "anchorCommandId": "d4cd3d7bc0af4bbd8c2190c28b6e2c6c",
+      "anchorText": "哎你看这个歌星的瓜",
+      "action": "insert_before",
+      "before": "无此指令",
+      "parameters": {
+        "_kind": 11,
+        "_instanceId": "prologue_speaker",
+        "_scale": {
+          "x": 0.75,
+          "y": 0.75
+        },
+        "_duration": 0,
+        "_actionId": "GENERATE_NEW_GUID",
+        "_parallel": false
+      },
+      "timing": "串行；标题按正常阅读推进，人物缩放为即时",
+      "reset": "现有离开教室Hide释放实例；不影响母亲、其他章节或示例",
+      "reason": "参考用户截图，结合透明留白：课堂人物等比75%，主角头顶约20%、室友约16%留空；保留图片锚点和公共Prefab，交叉淡化继承变换",
+      "resource": "",
+      "resultCommandId": "74f642e4591043539bb422b0e30b971c",
+      "resultActionId": "5acfadfaaef74882a88868a8f7a8f62f",
+      "resultParameters": {
+        "_kind": 11,
+        "_instanceId": "prologue_speaker",
+        "_scale": {
+          "x": 0.75,
+          "y": 0.75
+        },
+        "_duration": 0,
+        "_actionId": "5acfadfaaef74882a88868a8f7a8f62f",
+        "_parallel": false
+      }
+    },
+    {
+      "group": "height",
+      "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset",
+      "nodeName": "CH01_Prologue_Home",
+      "anchorCommandId": "18bbeb8a07704181b786d40ed8b3bc9f",
+      "anchorText": "你已经两个星期没去上学了，你到底想怎么样？",
+      "action": "insert_before",
+      "before": "无此指令",
+      "parameters": {
+        "_kind": 11,
+        "_instanceId": "prologue_mother",
+        "_scale": {
+          "x": 0.85,
+          "y": 0.85
+        },
+        "_duration": 0,
+        "_actionId": "GENERATE_NEW_GUID",
+        "_parallel": false
+      },
+      "timing": "串行；标题按正常阅读推进，人物缩放为即时",
+      "reset": "随母亲实例清理；不改公共Prefab或图片",
+      "reason": "母亲图比例与课堂不同，独立85%，头顶约21%留空；按1920×1080布局估算，试播再核对",
+      "resource": "",
+      "resultCommandId": "c76e88d0ccb748248f3674ec8475dcfd",
+      "resultActionId": "431de8469697486da22d2d1fd6068f1e",
+      "resultParameters": {
+        "_kind": 11,
+        "_instanceId": "prologue_mother",
+        "_scale": {
+          "x": 0.85,
+          "y": 0.85
+        },
+        "_duration": 0,
+        "_actionId": "431de8469697486da22d2d1fd6068f1e",
+        "_parallel": false
+      }
+    }
+  ],
+  "preservationComparison": {
+    "equal": true,
+    "scope": "All original Say text/character/Voice/IDs/order, variable assignments, graph links, story/chapter metadata and ending; all original commands preserved exactly; excluding four approved additions and node content revisions"
+  },
+  "validation": {
+    "story": true,
+    "chapter": true,
+    "resourceSprites": true,
+    "preview": {
+      "status": "passed",
+      "method": "Isolated editor NovelPlaybackStory + formal NovelPlaybackView + NovelSession; auto dialogue, 0.05s steps; no save callbacks",
+      "nodes": [
+        {
+          "node": "Classroom",
+          "state": "Ended",
+          "sayCount": 15,
+          "remainingActions": []
+        },
+        {
+          "node": "Home",
+          "state": "Ended",
+          "sayCount": 10,
+          "remainingActions": []
+        }
+      ],
+      "classroomScalePreservedAcrossCrossFades": 0.75,
+      "motherScale": 0.85,
+      "motherVisibleAndClearedAtNodeEnd": true,
+      "homeCoverRemoved": true,
+      "consoleErrors": 0,
+      "screenshots": [
+        ".utmp\\vn-presentation\\20260923-prologue-polish-03\\title.png",
+        ".utmp\\vn-presentation\\20260923-prologue-polish-03\\roommate.png",
+        ".utmp\\vn-presentation\\20260923-prologue-polish-03\\protagonist.png",
+        ".utmp\\vn-presentation\\20260923-prologue-polish-03\\mother.png"
+      ],
+      "visualReview": "Title centered, mother visible, portraits have top margin. Original full-body images show more lower body than user reference; no cropping or shared layout edits. Final aesthetic acceptance remains with user."
+    },
+    "independentComparison": {
+      "originalSayCount": 24,
+      "allOriginalCommandsExact": true,
+      "originalIdsOrderTextAndGraphUnchanged": true,
+      "newCommands": 4,
+      "sampleFilesUnchanged": 49,
+      "onlyTwoDialogueAssetsChanged": true
+    }
+  },
+  "deferred": [
+    "老师立绘缺失",
+    "模糊滤镜未实现"
+  ],
+  "saveCompatibility": "Presentation changes affect semantic fingerprint; prior prologue saves may be incompatible; no saves changed",
+  "completedAtUtc": "2026-09-23T12:36:37.873076+00:00",
+  "afterFingerprint": "f2574e3402296e1ae2ec08f7bd03af3842754105f8bfd65273a8975b016d4f5c",
+  "afterFingerprintAlgorithm": "SHA256 sorted compact UTF-8 JSON afterFiles"
+}

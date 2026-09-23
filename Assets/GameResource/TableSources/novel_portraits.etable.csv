@@ -5,3 +5,17 @@ lin_neutral,lin,neutral,UI/Module/Narrative/Atlas/LastLight/Portraits/zhou_eveni
 lastlight_alice,lastlight_wan,evening,UI/Module/Narrative/Atlas/LastLight/Portraits/lin_evening
 lastlight_zhou,lastlight_zhou,evening,UI/Module/Narrative/Atlas/LastLight/Portraits/zhou_evening
 lastlight_wan_smile,lastlight_wan,smile,UI/Module/Narrative/Atlas/LastLight/Portraits/lin_smile
+CMH_sy_default,CMH_sy,default,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_sy_default
+CMH_inner_睁眼,CMH_inner,睁眼,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_睁眼
+CMH_inner_闭眼,CMH_inner,闭眼,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_闭眼
+CMH_inner_微笑,CMH_inner,微笑,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_微笑
+CMH_mryx_default,CMH_mryx,default,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mryx_default
+CMH_cz_default,CMH_cz,default,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_cz_default
+CMH_lxz_r_人形-不笑,CMH_lxz_r,人形-不笑,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-不笑
+CMH_lxz_r_人形-微笑,CMH_lxz_r,人形-微笑,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-微笑
+CMH_lxz_s_兽形-张嘴,CMH_lxz_s,兽形-张嘴,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-张嘴
+CMH_lxz_s_兽形-龇牙,CMH_lxz_s,兽形-龇牙,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-龇牙
+CMH_mq_default,CMH_mq,default,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mq_default
+CMH_yyf_微笑,CMH_yyf,微笑,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_yyf_微笑
+CMH_srq_微笑,CMH_srq,微笑,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_srq_微笑
+CMH_xk_default,CMH_xk,default,UI/Module/Narrative/Atlas/CMH/Portraits/CMH_xk_default

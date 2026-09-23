@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "batchId": "20260923-prologue-01",
+  "sourceUrl": "https://my.feishu.cn/sheets/P6VfsAMj3hq15btR3Oice7i4nId?sheet=6f3af6",
+  "sheetId": "6f3af6",
+  "range": "A2:E27",
+  "headerRange": "A1:E1",
+  "readAtUtc": "2026-09-23T11:38:47.7959904Z",
+  "sourceFingerprint": "96c2de9bab76be41b8a756e7c42bc33d3f59916101b0c644d62dc2e715ec6874",
+  "sourceFingerprintAlgorithm": "SHA256 of sorted compact UTF-8 JSON rows including header; missing cell values normalized to empty string",
+  "headerMapping": {
+    "场景": "A",
+    "说话人": "B",
+    "台词": "C",
+    "美术": "D",
+    "变化": "E"
+  },
+  "choices": {
+    "sheet": "6f3af6",
+    "start": 2,
+    "end": 27,
+    "folder": "CallMeHeartless",
+    "story": "Call Me Heartless",
+    "chapter": "第一章·序章",
+    "scene": true,
+    "inner": "self",
+    "empty": "narrator",
+    "home": "客厅_default",
+    "art": "defer",
+    "counselor": "create",
+    "transition": "black05",
+    "ending": "preview_end"
+  },
+  "planHash": "8267a3f5bf2bbd5af008a09e6d50f5582cbce4cebeff1c176e2a2c0a035ad4db",
+  "storyId": "0942d3f17d504f01ba64169b17e2a578",
+  "chapterId": "2e58920df7dd454096c73f95a528b843",
+  "assets": [
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story.asset",
+      "guid": "97bcb4ee0aa64f54d952920292e79e21",
+      "sha256": "13747b81e0e2d0fd0a33324767d4f7537bbcdccb8c3f6c7707a2cc1d64429d73"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset",
+      "guid": "4daafdce996c2ac4fa0c7c941c4ff895",
+      "sha256": "0eea71a8365f0a9e6af9d154d36eaeba87a70b9d73885ba136ad4eee6e7046c1"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+      "guid": "431120cfb0b631c42876ab1e57c907de",
+      "sha256": "d0ece5f4e9a49be0c83cca407b89a23967acb4b88979c3fc4316736c68339d29"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset",
+      "guid": "a7b2218cd1f99a440b706f304ec1fa5a",
+      "sha256": "42f7fae92d21a49ddf79e22843636cab8ffb800f617ab53ccdb17fb14dbb9843"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Endings/CH01_Prologue_PreviewEnd.asset",
+      "guid": "118137fad9e25a54a886b366608094ef",
+      "sha256": "7c5b0e217f030490ed97051e19de420f7709a31265ba3ba62b7d47768dc4cf68"
+    }
+  ],
+  "rows": [
+    {
+      "sourceRow": 2,
+      "raw": {
+        "场景": "课堂",
+        "说话人": "旁白（心里想法）",
+        "台词": "从今年入伏以来，空气的闷热似乎就没有好转。\n\n",
+        "美术": "背景：教室，老师（模糊的人影）在讲台上讲课",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "eaf7f703b283413b96ef58542538fe86",
+          "lineId": null,
+          "actionId": null,
+          "kind": "Background"
+        },
+        {
+          "commandId": "6bfedeb153bb4c5d92fae03edb0564e1",
+          "lineId": "5b5e61b8dea04fcbb4033dbf02a30f9a",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_inner",
+      "status": "imported",
+      "semanticNote": "内心叙述；按用户选择显示我"
+    },
+    {
+      "sourceRow": 3,
+      "raw": {
+        "场景": "",
+        "说话人": "旁白（心里想法）",
+        "台词": "老师一直在讲台上平铺直叙地念着课本上印好的字。我一直在这里坐着，盯着黑板，老师看向我的时候，我还会配合点头微笑，但实际上什么都没听进去。",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "bb1c1e1c6df64a6a940dff725ee99830",
+          "lineId": "c51cb156476743a5a5860a16859c6050",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_inner",
+      "status": "imported",
+      "semanticNote": "内心叙述；按用户选择显示我"
+    },
+    {
+      "sourceRow": 4,
+      "raw": {
+        "场景": "",
+        "说话人": "旁白（心里想法）",
+        "台词": "只是为了不被扣掉那20 %的出勤率分，真的值得吗？",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "50370eb0ff0e41d49068ca5386219fa9",
+          "lineId": "23efc9fbb071426ab73b4de0bbed05a5",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_inner",
+      "status": "imported",
+      "semanticNote": "内心叙述；按用户选择显示我"
+    },
+    {
+      "sourceRow": 5,
+      "raw": {
+        "场景": "",
+        "说话人": "旁白（心里想法）",
+        "台词": "旁边坐着的室友，我好像从来不记得有把眼睛从手机屏幕上移开过",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "7fe5f3113c8943398f5fc35d700eb02c",
+          "lineId": "03e61f5359e640b2b931f35dd12610ce",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_inner",
+      "status": "imported",
+      "semanticNote": "内心叙述；按用户选择显示我"
+    },
+    {
+      "sourceRow": 6,
+      "raw": {
+        "场景": "",
+        "说话人": "室友",
+        "台词": "哎你看这个歌星的瓜",
+        "美术": "看手机的舍友头像（模糊）",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "45edd79fc84940e1a41ec6cc0e749a51",
+          "lineId": null,
+          "actionId": null,
+          "kind": "Character"
+        },
+        {
+          "commandId": "d4cd3d7bc0af4bbd8c2190c28b6e2c6c",
+          "lineId": "813194d986fc447c813979826993e388",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_sy",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 7,
+      "raw": {
+        "场景": "",
+        "说话人": "我",
+        "台词": "嗯",
+        "美术": "主控头像（正常平静表情）",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "594617459fdd41ce9bef62f3cd460a9c",
+          "lineId": null,
+          "actionId": null,
+          "kind": "Character"
+        },
+        {
+          "commandId": "c886de4ee04c4f37bfdeb90c9657ffd2",
+          "lineId": "a010499c31d7433cb29d751f4d1f9453",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_inner",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 8,
+      "raw": {
+        "场景": "",
+        "说话人": "室友",
+        "台词": "他真的好厉害啊",
+        "美术": "看手机的舍友头像",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "659e06daf2f94b71a0e1e4840553f7f5",
+          "lineId": null,
+          "actionId": null,
+          "kind": "Character"
+        },
+        {
+          "commandId": "12356d0cae9f45a2a54fe6c4b6da7e91",
+          "lineId": "5a8519ab46894e0f90555dad54ea4199",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_sy",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 9,
+      "raw": {
+        "场景": "",
+        "说话人": "我",
+        "台词": "嗯……",
+        "美术": "主控头像（正常平静表情）",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "f299f055d441422ab2bc73c494bb4745",
+          "lineId": null,
+          "actionId": null,
+          "kind": "Character"
+        },
+        {
+          "commandId": "a285e92ae61f47bcafa4e38a6490095b",
+          "lineId": "21a2fd8769cd4be99357b00eb53784bf",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_inner",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 10,
+      "raw": {
+        "场景": "",
+        "说话人": "室友",
+        "台词": "你这个人怎么这么没意思，算了我找别人聊",
+        "美术": "看手机的舍友头像",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "5d933a7e1bd545929ff117ad582cfc51",
+          "lineId": null,
+          "actionId": null,
+          "kind": "Character"
+        },
+        {
+          "commandId": "8ebeeba5fef24f6dba412ad29badc39f",
+          "lineId": "8779d9f77646428b8fa8c43d2bea1c05",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_sy",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 11,
+      "raw": {
+        "场景": "",
+        "说话人": "我",
+        "台词": "……",
+        "美术": "主控头像（正常平静表情）",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "81792f18e0e5448999aedf696e07614f",
+          "lineId": null,
+          "actionId": null,
+          "kind": "Character"
+        },
+        {
+          "commandId": "3d8cc57ecc684ccfb02aea0b2afea9b1",
+          "lineId": "6680ad975bdb4a92916c3a0b86ba6d0a",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_inner",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 12,
+      "raw": {
+        "场景": "",
+        "说话人": "旁白",
+        "台词": "那种闷热带来的窒息感似乎盘踞在每一张脸上",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "41a56f0d8c644f3cbd5fa0f26a5b8cd6",
+          "lineId": "e299f821f1d34d1ba9f59de665f1fd07",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 13,
+      "raw": {
+        "场景": "",
+        "说话人": "我",
+        "台词": "（背起书包）老师，我上个厕所",
+        "美术": "主控头像（正常平静表情）",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "4bed818728744c268e02dd07460f2f41",
+          "lineId": null,
+          "actionId": null,
+          "kind": "Character"
+        },
+        {
+          "commandId": "2dad760450fa41b8aee1a7feaa37983c",
+          "lineId": "ea3b5dd50e8047738556e712c1bfffe9",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_inner",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 14,
+      "raw": {
+        "场景": "",
+        "说话人": "",
+        "台词": "老师没搭理我，我视为默许，直接从后门出来",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "49977b3c1c0a49cc9c851ec7fcee7def",
+          "lineId": "62d30aefc3804decb659384d79174fed",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 15,
+      "raw": {
+        "场景": "",
+        "说话人": "",
+        "台词": "教学楼门口这条路，一直向北走，能走到哪里",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "e96ad7eb336240658c2f2895af7e5d08",
+          "lineId": "a058a2a03827404bafd808de6cd27140",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 16,
+      "raw": {
+        "场景": "",
+        "说话人": "",
+        "台词": "",
+        "美术": "fade out",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "nodeGuid": "431120cfb0b631c42876ab1e57c907de",
+      "commands": [
+        {
+          "commandId": "e2173c97b40341bda33539455bd782ae",
+          "lineId": null,
+          "actionId": "be6250423c5e4cdc9f4405bd3ea7f1ed",
+          "kind": "Cover"
+        }
+      ],
+      "characterId": null,
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 17,
+      "raw": {
+        "场景": "",
+        "说话人": "",
+        "台词": "",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": null,
+      "nodeGuid": null,
+      "commands": [],
+      "characterId": null,
+      "status": "separator",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 18,
+      "raw": {
+        "场景": "家",
+        "说话人": "母亲",
+        "台词": "你已经两个星期没去上学了，你到底想怎么样？",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+      "nodeGuid": "a7b2218cd1f99a440b706f304ec1fa5a",
+      "commands": [
+        {
+          "commandId": "ad1ca09d68a241b485295b5ad37c5c11",
+          "lineId": null,
+          "actionId": null,
+          "kind": "Character"
+        },
+        {
+          "commandId": "8c9d844bd8e34c1fa96a6bf129140cbb",
+          "lineId": null,
+          "actionId": null,
+          "kind": "Background"
+        },
+        {
+          "commandId": "07313abb832d4c339bb959fffa1512c7",
+          "lineId": null,
+          "actionId": "57a7735ba36a4769af56052234776561",
+          "kind": "Cover"
+        },
+        {
+          "commandId": "18bbeb8a07704181b786d40ed8b3bc9f",
+          "lineId": "34db4b4600c543139b579ddb349988dd",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_mq",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 19,
+      "raw": {
+        "场景": "",
+        "说话人": "我",
+        "台词": "……",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+      "nodeGuid": "a7b2218cd1f99a440b706f304ec1fa5a",
+      "commands": [
+        {
+          "commandId": "492b1a93c81641d28bd3afb6784aa3ed",
+          "lineId": "0bb2efe69fcb4804ac50a8ed1876a5e5",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_inner",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 20,
+      "raw": {
+        "场景": "",
+        "说话人": "母亲",
+        "台词": "你这个人算是废了",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+      "nodeGuid": "a7b2218cd1f99a440b706f304ec1fa5a",
+      "commands": [
+        {
+          "commandId": "3662964997694cc5bfef2b81efb7883e",
+          "lineId": "7d4545dd9d074e739bfdc641e34df2d6",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_mq",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 21,
+      "raw": {
+        "场景": "",
+        "说话人": "我",
+        "台词": "嗯。",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+      "nodeGuid": "a7b2218cd1f99a440b706f304ec1fa5a",
+      "commands": [
+        {
+          "commandId": "25c83248c4ff4589b96ee68bf4737e33",
+          "lineId": "23c0b7405d43481d9483fe02fc439af4",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_inner",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 22,
+      "raw": {
+        "场景": "",
+        "说话人": "母亲",
+        "台词": "我就不懂，天天好吃好喝的供着你，有啥好抑郁的。",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+      "nodeGuid": "a7b2218cd1f99a440b706f304ec1fa5a",
+      "commands": [
+        {
+          "commandId": "76171f55a1be4bce81d0cb84d3aed157",
+          "lineId": "73104c71308b453a9ce10c172089c5f4",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_mq",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 23,
+      "raw": {
+        "场景": "",
+        "说话人": "我",
+        "台词": "……",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+      "nodeGuid": "a7b2218cd1f99a440b706f304ec1fa5a",
+      "commands": [
+        {
+          "commandId": "e83227420a494fc181cc385aa1176fe4",
+          "lineId": "1e99e76442644ed18a5236466c5397bc",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_inner",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 24,
+      "raw": {
+        "场景": "",
+        "说话人": "母亲",
+        "台词": "这是你辅导员给你办好的休学手续，说是两年内想通了还能回去接着读，不然就办退学，你自己看着办吧",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+      "nodeGuid": "a7b2218cd1f99a440b706f304ec1fa5a",
+      "commands": [
+        {
+          "commandId": "2882767f03d84c68958ed72baebf2422",
+          "lineId": "16c2fc7f2bb346f8929bef63ba9a6a44",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_mq",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 25,
+      "raw": {
+        "场景": "",
+        "说话人": "我",
+        "台词": "（接过）ok。",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+      "nodeGuid": "a7b2218cd1f99a440b706f304ec1fa5a",
+      "commands": [
+        {
+          "commandId": "953746c9d2e24b489a585752663ce2ec",
+          "lineId": "9142c22b0dd24abbadbe9ea1b78aa4e2",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_inner",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 26,
+      "raw": {
+        "场景": "",
+        "说话人": "旁白",
+        "台词": "附在休学手续上的是辅导员留言",
+        "美术": "",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+      "nodeGuid": "a7b2218cd1f99a440b706f304ec1fa5a",
+      "commands": [
+        {
+          "commandId": "dd79b045b1f742cabd8ff7a37ab1e73d",
+          "lineId": "f7b924bc112c4984b2eb455b38129e74",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "",
+      "status": "imported",
+      "semanticNote": null
+    },
+    {
+      "sourceRow": 27,
+      "raw": {
+        "场景": "",
+        "说话人": "导员",
+        "台词": "“上学的意义我想你都清楚，我也不多劝，不过如果你想换个环境，我有个朋友在县城需要人手，需要的话可以联系13XXXXXXXXX”",
+        "美术": "无头像",
+        "变化": ""
+      },
+      "sourceStableKey": null,
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "2e58920df7dd454096c73f95a528b843",
+      "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+      "nodeGuid": "a7b2218cd1f99a440b706f304ec1fa5a",
+      "commands": [
+        {
+          "commandId": "e1a24ab854884e5895a43633615f3b10",
+          "lineId": null,
+          "actionId": null,
+          "kind": "Character"
+        },
+        {
+          "commandId": "deb9861fdc974fa28250e569ac880ee4",
+          "lineId": "da9fc09b0f48405496452ed5f0093e01",
+          "actionId": null,
+          "kind": "Say"
+        }
+      ],
+      "characterId": "CMH_dy",
+      "status": "imported",
+      "semanticNote": null
+    }
+  ],
+  "endingNodeId": "e9c1f9e2320144b1ba8cb0dc8188634d",
+  "endingId": "9f5cd4ba4ee041939d09f1ad8bc06623",
+  "endingPurpose": "Technical preview terminator only; not a authored story ending",
+  "targetFingerprint": "a159fe5a07ad0fd54c5069918eb9c2f2bcae3db52e3b05428eb888a4bbcc5a93",
+  "targetFiles": {
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters.meta": "68be60ac32ae0caa93a4ca605e37019a51e5d05e030107bf971eadb3ae7718c1",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story.asset": "13747b81e0e2d0fd0a33324767d4f7537bbcdccb8c3f6c7707a2cc1d64429d73",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story.asset.meta": "fec8c0317d47185b9c1044002df80dae92738243cac7581e07829b1643a7f845",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue.meta": "941b73f2c2092d01e7342ea0aa354b04497cf5a560998198a6ec9eb6f5cec8c7",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset": "0eea71a8365f0a9e6af9d154d36eaeba87a70b9d73885ba136ad4eee6e7046c1",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset.meta": "d94032979cb2d418289a9fc4bd16f624508ce4276188f6ea657854ef90988f0a",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue.meta": "8885c87bdc9936b17d090368545a315ed9510f7d58938830325140ba0c9afd69",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Endings.meta": "2b8689de0f907b71def9acc6949130fa67f25d7391ea53cb5a2eeacff5d900f7",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset": "d0ece5f4e9a49be0c83cca407b89a23967acb4b88979c3fc4316736c68339d29",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset.meta": "5277740d808b05aca3d3268882d29100383e425eec5532eb6fd2e1b3d39a03ef",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset": "42f7fae92d21a49ddf79e22843636cab8ffb800f617ab53ccdb17fb14dbb9843",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset.meta": "b2f2f9c8529db8d735bf4e1c68135d4efafa64f85e172abee57398338cb9f73f",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Endings/CH01_Prologue_PreviewEnd.asset": "7c5b0e217f030490ed97051e19de420f7709a31265ba3ba62b7d47768dc4cf68",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Endings/CH01_Prologue_PreviewEnd.asset.meta": "8c99a8bc915f0366db033eb58351fefc876508d4c7cf0c6f20cfb30bd03bf832",
+    "Assets/GameResource/TableSources/novel_characters.etable.csv": "2eb8d7abda01629aa52b134434d79e93820e0d4415dcd6da13fc57d7c6bb6310",
+    "Assets/GameResource/Resources/Config/Tables/novel_characters.bytes": "831aac8cdeae1fd0bc657986e348aada33874bd9a7db816748e99c13c7a9215f"
+  },
+  "deferredArt": [
+    "第2行：模糊老师立绘缺失，暂不实现",
+    "第6行：室友模糊效果暂不实现，使用现有室友图"
+  ],
+  "validation": {
+    "story": true,
+    "chapter": true,
+    "exactLines": 24,
+    "spriteReferences": true,
+    "sourceSeparatorRows": [
+      17
+    ]
+  }
+}

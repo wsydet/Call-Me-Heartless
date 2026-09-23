@@ -16,7 +16,7 @@ namespace Game.Narrative
         public string StoryPath { get; }
         public string ChapterId { get; }
         public string NodeId { get; }
-        public NovelNewGameRequest(string storyPath = "Config/Narrative/LastLight/Story", string chapterId = null, string nodeId = null)
+        public NovelNewGameRequest(string storyPath = "Config/Narrative/CallMeHeartless/Story", string chapterId = null, string nodeId = null)
         {
             // 目录迁移前的存档仍保存旧 Resources 路径；加载时归一化，后续存档写入新路径。
             StoryPath = storyPath != null && storyPath.StartsWith("VisualNovel/", StringComparison.Ordinal)
