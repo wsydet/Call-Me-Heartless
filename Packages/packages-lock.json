@@ -39,7 +39,7 @@
       "hash": "ce41e18818f15dd4680dfad1cea24077b22902ba"
     },
     "com.ember": {
-      "version": "https://github.com/wsydet/ember-unity-framework.git?path=/Packages/com.ember#v0.14.7",
+      "version": "https://github.com/wsydet/ember-unity-framework.git?path=/Packages/com.ember#v0.14.10",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -48,7 +48,7 @@
         "com.unity.inputsystem": "1.19.0",
         "com.unity.ugui": "2.5.0"
       },
-      "hash": "2a77e437658703f7606fb78a095c92c43fc284e8"
+      "hash": "3b5b3e4e2f2237961b537ad49bff078d1368e7d9"
     },
     "com.flyingworm.consolepro": {
       "version": "https://github.com/wsydet/ember-thirdparty-upm.git?path=/com.flyingworm.consolepro#consolepro-v3.9.81",
