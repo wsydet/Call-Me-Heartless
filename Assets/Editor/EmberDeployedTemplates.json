@@ -3,10 +3,10 @@
     "records": [
         {
             "templateId": "visual-novel",
-            "version": "0.7.3",
+            "version": "0.9.0",
             "frameworkVersion": "0.14.1",
-            "deployedAt": "2026-09-23T10:30:44.7402587Z",
-            "contentHash": "2953415148073e79fa3feb45227c180a"
+            "deployedAt": "2026-09-24T10:40:50.8842671Z",
+            "contentHash": "bd18ed6a62bb2be51a9ef43d14b9a4ce"
         }
     ]
 }

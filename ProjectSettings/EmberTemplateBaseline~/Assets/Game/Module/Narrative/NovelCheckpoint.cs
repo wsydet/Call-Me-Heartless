@@ -11,7 +11,8 @@ namespace Game.Narrative
     [Serializable]
     public sealed class NovelCheckpoint
     {
-        public int SchemaVersion = 6;
+        public int SchemaVersion = 7;
+        public uint RandomState;
         public float CameraZoom = 1;
         public UnityEngine.Vector2 CameraOffset;
         public string StoryPath, StoryId, Semantics, ChapterId, NodeId, CommandId, LineId;
@@ -109,6 +110,19 @@ namespace Game.Narrative
                         w.Write(cmd.CharacterId ?? ""); w.Write(cmd.ResourceKey ?? ""); w.Write(cmd.VariableId ?? "");
                         w.Write((int)cmd.Scope); Value(w, cmd.Value); w.Write(cmd.Duration);
                         w.Write((int)cmd.Slot); w.Write((int)cmd.VisualAction);
+                        if (cmd.TextBindings.Count > 0)
+                        {
+                            w.Write("TextBindings1"); w.Write(cmd.TextBindings.Count);
+                            foreach (var binding in cmd.TextBindings)
+                            { w.Write(binding.Token); w.Write(binding.VariableId); w.Write((int)binding.Scope); }
+                        }
+                        if (cmd.Kind == NovelCommandKind.CalculateVariable)
+                        {
+                            w.Write("Integer1"); w.Write((int)cmd.IntegerOperation); w.Write(cmd.IntegerOperand);
+                            w.Write(cmd.OperandVariableId ?? ""); w.Write((int)cmd.OperandScope);
+                        }
+                        if (cmd.Kind == NovelCommandKind.RandomVariable)
+                        { w.Write("Random1"); w.Write(cmd.RandomMin); w.Write(cmd.RandomMax); }
                         // Keep the exact legacy byte stream for stories without E0 fields.
                         if (!string.IsNullOrEmpty(cmd.InstanceId) || cmd.Kind == NovelCommandKind.Opacity || cmd.Kind == NovelCommandKind.WaitActions)
                         {
@@ -135,6 +149,12 @@ namespace Game.Narrative
                             foreach (var beat in cmd.TextBeats)
                             { w.Write(beat.At); w.Write(beat.Pause); w.Write(beat.Speed); w.Write(beat.Instant); }
                         }
+                        if (cmd.Kind == NovelCommandKind.Say && (cmd.TextMode == NovelTextMode.Title || cmd.TextReveal != NovelTextReveal.Typewriter || cmd.TextSpeedMultiplier != 1))
+                        {
+                            w.Write("TextEffects"); w.Write((int)cmd.TextReveal); w.Write(cmd.TextFadeDuration);
+                            w.Write(cmd.TitleExitDuration); w.Write(cmd.TextSpeedMultiplier); w.Write((int)cmd.TextEase);
+                        }
+                        if (cmd.Kind == NovelCommandKind.HideAllCharacters) w.Write((int)cmd.Ease);
                         if (cmd.Kind == NovelCommandKind.Camera || cmd.Kind == NovelCommandKind.Wipe)
                         {
                             w.Write("E5"); w.Write(cmd.ActionId ?? ""); w.Write(cmd.Parallel); w.Write(cmd.Delay); w.Write((int)cmd.Ease);

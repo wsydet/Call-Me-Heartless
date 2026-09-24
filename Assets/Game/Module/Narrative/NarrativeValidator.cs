@@ -92,6 +92,7 @@ namespace Game.Narrative
                         string.IsNullOrWhiteSpace(c.ActionId) || !NovelActionHandle.ValidTime(c.Delay) ||
                         !NovelActionHandle.ValidTime(c.Opacity) || c.Opacity > 1))
                         Error("BadAction", "透明度动作需要有效目标、动作 ID、0–1 透明度和非负延迟；遮罩请用 Cover/Flash，粒子实例使用 EffectPlay/EffectStop", node.Id, c.CommandId);
+                    if (c.Kind == NovelCommandKind.HideAllCharacters && !Enum.IsDefined(typeof(NovelEase), c.Ease)) Error("BadEase", "隐藏全部立绘的缓动无效", node.Id, c.CommandId);
                     string cameraError = NovelCameraRules.Validate(c);
                     if (cameraError != null) Error("BadCamera", cameraError, node.Id, c.CommandId);
                     string textError = NovelTextRules.Validate(c);
@@ -109,6 +110,10 @@ namespace Game.Narrative
                     if (c.Kind == NovelCommandKind.WaitActions && (c.WaitActions.Count == 0 ||
                         System.Linq.Enumerable.Any(c.WaitActions, string.IsNullOrWhiteSpace)))
                         Error("BadActionWait", "等待列表不能为空，填写已启动的动作 ID", node.Id, c.CommandId);
+                    string bindingError = NovelTextBindings.Validate(c, variables, globals);
+                    if (bindingError != null) Error("BadTextBinding", bindingError, node.Id, c.CommandId);
+                    string variableError = NovelVariableRules.Validate(c, variables, globals);
+                    if (variableError != null) Error("BadVariableOperation", variableError, node.Id, c.CommandId);
                     var assignments = c.Scope == NovelVariableScope.Global ? globals : variables;
                     if (c.Kind == NovelCommandKind.SetVariable && (!Enum.IsDefined(typeof(NovelVariableScope), c.Scope) || string.IsNullOrWhiteSpace(c.VariableId) ||
                         assignments == null || !assignments.TryGetValue(c.VariableId, out NovelValue v) || v.Type != c.Value.Type))

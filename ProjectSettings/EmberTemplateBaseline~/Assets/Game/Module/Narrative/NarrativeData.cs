@@ -7,7 +7,8 @@ namespace Game.Narrative
     public enum NovelValueType { Bool, Int, String }
     public enum NovelComparison { Equal, NotEqual, Greater, GreaterOrEqual, Less, LessOrEqual }
     public enum NovelJunction { All, Any }
-    public enum NovelCommandKind { Say, SetVariable, Wait, Background, Character, BGM, SFX, Voice, Opacity, WaitActions, Move, Scale, Rotate, Mirror, Layer, Gesture, Emphasis, Shake, Cover, Flash, CrossFade, EffectPlay, EffectStop, BGMStop, AmbientPlay, AmbientStop, AmbientVolume, DialogueVisibility, Camera, Wipe }
+    public enum NovelCommandKind { Say, SetVariable, Wait, Background, Character, BGM, SFX, Voice, Opacity, WaitActions, Move, Scale, Rotate, Mirror, Layer, Gesture, Emphasis, Shake, Cover, Flash, CrossFade, EffectPlay, EffectStop, BGMStop, AmbientPlay, AmbientStop, AmbientVolume, DialogueVisibility, Camera, Wipe, HideAllCharacters, CalculateVariable, RandomVariable }
+    public enum NovelIntegerOperation { Assign, Add, Subtract, Multiply, Divide, Modulo }
     public enum NovelNodeKind { Dialogue, Choice, Branch, Ending, ChapterExit }
     public enum NovelVariableScope { Chapter, Global }
     public enum NovelPortraitSlot { Left, Center, Right }
@@ -125,16 +126,25 @@ namespace Game.Narrative
         #endregion
     }
 
-    /// <summary>M1 仅执行 Say、SetVariable 和 Wait；演出命令交由后续演出层完成并回报。</summary>
+    /// <summary>执行器处理对白、等待与结构化变量指令；演出命令交由演出层完成并回报。</summary>
     [Serializable]
-    public sealed class NovelCommand
+    public sealed class NovelCommand : ISerializationCallbackReceiver
     {
         #region 编辑器面板参数
         [SerializeField] private float _cameraZoom = 1;
         [SerializeField] private NovelWipeDirection _wipeDirection;
         [SerializeField] private NovelTextMode _textMode;
+        [SerializeField, HideInInspector] private int _textEffectsVersion;
+        [SerializeField] private NovelTextReveal _textReveal;
+        [SerializeField] private float _textFadeDuration = .8f;
+        [SerializeField] private float _titleExitDuration = .65f;
+        [SerializeField] private float _textSpeedMultiplier = 1;
+        [SerializeField] private NovelEase _textEase = NovelEase.SmoothStep;
+        [SerializeField] private string _stepGroupId, _stepGroupName;
+        [SerializeField] private Color _stepGroupColor = new(.45f, .65f, .95f, 1);
         [SerializeField] private List<NovelTextBeat> _textBeats = new();
         [SerializeField] private bool _dialogueVisible = true;
+        [SerializeField] private List<NovelTextBinding> _textBindings = new();
         [SerializeField] private string _commandId;
         [SerializeField] private NovelCommandKind _kind;
         [SerializeField] private string _lineId;
@@ -146,6 +156,11 @@ namespace Game.Narrative
         [SerializeField] private NovelVariableScope _scope;
         [SerializeField] private NovelValue _value;
         [SerializeField] private float _duration;
+        [SerializeField] private NovelIntegerOperation _integerOperation;
+        [SerializeField] private string _operandVariableId;
+        [SerializeField] private NovelVariableScope _operandScope;
+        [SerializeField] private int _integerOperand;
+        [SerializeField] private int _randomMin, _randomMax = 99;
         [SerializeField] private NovelPortraitSlot _slot;
         [SerializeField] private NovelVisualAction _visualAction;
         [SerializeField] private string _instanceId;
@@ -183,6 +198,14 @@ namespace Game.Narrative
         public float CameraZoom => _cameraZoom;
         public NovelWipeDirection WipeDirection => _wipeDirection;
         public NovelTextMode TextMode => _textMode;
+        public NovelTextReveal TextReveal => _textReveal == NovelTextReveal.Default ? (_textMode == NovelTextMode.Title ? NovelTextReveal.Fade : NovelTextReveal.Typewriter) : _textReveal;
+        public float TextFadeDuration => _textFadeDuration;
+        public float TitleExitDuration => _titleExitDuration;
+        public float TextSpeedMultiplier => _textSpeedMultiplier;
+        public NovelEase TextEase => _textEase;
+        public string StepGroupId => _stepGroupId;
+        public string StepGroupName => _stepGroupName;
+        public Color StepGroupColor => _stepGroupColor;
         public IReadOnlyList<NovelTextBeat> TextBeats => _textBeats ?? (IReadOnlyList<NovelTextBeat>)Array.Empty<NovelTextBeat>();
         public bool DialogueVisible => _dialogueVisible;
         public bool Persistent => _persistent;
@@ -195,6 +218,7 @@ namespace Game.Narrative
         public Color Color => _color;
         public float Hold => _hold;
         public bool WholeReader => _wholeReader;
+        public IReadOnlyList<NovelTextBinding> TextBindings => _textBindings ?? (IReadOnlyList<NovelTextBinding>)Array.Empty<NovelTextBinding>();
         public string CommandId => _commandId;
         public NovelCommandKind Kind => _kind;
         public string LineId => _lineId;
@@ -206,6 +230,12 @@ namespace Game.Narrative
         public NovelVariableScope Scope => _scope;
         public NovelValue Value => _value;
         public float Duration => _duration;
+        public NovelIntegerOperation IntegerOperation => _integerOperation;
+        public string OperandVariableId => _operandVariableId;
+        public NovelVariableScope OperandScope => _operandScope;
+        public int IntegerOperand => _integerOperand;
+        public int RandomMin => _randomMin;
+        public int RandomMax => _randomMax;
         public NovelPortraitSlot Slot => _slot;
         public NovelVisualAction VisualAction => _visualAction;
         public string InstanceId => _instanceId;
@@ -230,6 +260,19 @@ namespace Game.Narrative
         #endregion
         // --------------------------------------------------------
         #region 外部方法
+        internal NovelCommand WithResolvedText(string text)
+        {
+            var copy = (NovelCommand)MemberwiseClone(); copy._text = text; return copy;
+        }
+        public void OnBeforeSerialize() { }
+        public void OnAfterDeserialize()
+        {
+            // Legacy assets and JsonUtility snapshots omit these fields and deserialize them as zero.
+            // A version distinguishes missing data from a deliberately invalid new configuration.
+            if (_textEffectsVersion != 0) return;
+            _textEffectsVersion = 1; _textReveal = NovelTextReveal.Default;
+            _textFadeDuration = .8f; _titleExitDuration = .65f; _textSpeedMultiplier = 1; _textEase = NovelEase.SmoothStep;
+        }
         public NovelCommand(string commandId, NovelCommandKind kind, string text = null, string lineId = null,
             string characterId = null, string resourceKey = null, string variableId = null,
             NovelValue value = default, float duration = 0, int textRevision = 1, NovelVariableScope scope = NovelVariableScope.Chapter,
@@ -240,9 +283,18 @@ namespace Game.Narrative
             Vector2? scale = null, float rotation = 0, bool mirror = false, int layer = 0,
             NovelEase ease = NovelEase.Linear, NovelGesture gesture = NovelGesture.Jump, float strength = 1,
             bool exitAfterMove = false, NovelEmphasisMode emphasisMode = NovelEmphasisMode.Off, float dimFactor = .55f, Vector2? direction = null, float frequency = 12, bool decay = true,
-            Color? color = null, float hold = 0, bool wholeReader = false, bool persistent = false, bool keepOnSceneChange = false, string bindingId = null, float volume = 1, NovelTextMode textMode = NovelTextMode.Dialogue, NovelTextBeat[] textBeats = null, bool dialogueVisible = true, float cameraZoom = 1, NovelWipeDirection wipeDirection = NovelWipeDirection.LeftToRight)
+            Color? color = null, float hold = 0, bool wholeReader = false, bool persistent = false, bool keepOnSceneChange = false, string bindingId = null, float volume = 1, NovelTextMode textMode = NovelTextMode.Dialogue, NovelTextBeat[] textBeats = null, bool dialogueVisible = true, float cameraZoom = 1, NovelWipeDirection wipeDirection = NovelWipeDirection.LeftToRight, NovelTextReveal textReveal = NovelTextReveal.Default, float textFadeDuration = .8f, float titleExitDuration = .65f, float textSpeedMultiplier = 1, NovelEase textEase = NovelEase.SmoothStep,
+            NovelIntegerOperation integerOperation = NovelIntegerOperation.Assign, int integerOperand = 0,
+            string operandVariableId = null, NovelVariableScope operandScope = NovelVariableScope.Chapter,
+            int randomMin = 0, int randomMax = 99, NovelTextBinding[] textBindings = null)
         {
+            _textBindings = new List<NovelTextBinding>(textBindings ?? Array.Empty<NovelTextBinding>());
+            _integerOperation = integerOperation; _integerOperand = integerOperand;
+            _operandVariableId = operandVariableId; _operandScope = operandScope;
+            _randomMin = randomMin; _randomMax = randomMax;
+            _textEffectsVersion = 1;
             _cameraZoom = cameraZoom; _wipeDirection = wipeDirection;
+            _textReveal = textReveal; _textFadeDuration = textFadeDuration; _titleExitDuration = titleExitDuration; _textSpeedMultiplier = textSpeedMultiplier; _textEase = textEase;
             _textMode = textMode; _textBeats = new List<NovelTextBeat>(textBeats ?? Array.Empty<NovelTextBeat>()); _dialogueVisible = dialogueVisible;
             _commandId = commandId; _kind = kind; _text = text; _lineId = lineId;
             _characterId = characterId; _resourceKey = resourceKey; _variableId = variableId;

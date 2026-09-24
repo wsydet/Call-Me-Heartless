@@ -156,7 +156,7 @@ namespace Game.Narrative
         // --------------------------------------------------------
         #region 外部方法
         public NovelSession(NovelCheckpoint checkpoint, Func<NarrativeTableCatalog> catalogProvider, INovelResources resources, INovelAudio audio = null)
-            : this(new NovelNewGameRequest(checkpoint.StoryPath), catalogProvider, resources, audio)
+            : this(new NovelNewGameRequest(checkpoint.StoryPath, storyId: checkpoint.StoryId), catalogProvider, resources, audio)
         {
             // Deep copy prevents callers mutating an in-flight restore.
             _restore = JsonUtility.FromJson<NovelCheckpoint>(JsonUtility.ToJson(checkpoint)); _restoring = true;
@@ -164,6 +164,7 @@ namespace Game.Narrative
         public bool TryCapture(out NovelCheckpoint checkpoint, out string error)
         {
             checkpoint = null; error = "会话尚未就绪或正在恢复";
+            if (_textExiting) { error = "章节卡正在渐隐，请等待过渡完成"; return false; }
             if (!IsReady || !_runner.TryCapture(out checkpoint, out error)) return false;
             RecordStableLine();
             checkpoint.StoryPath = _storyPath; checkpoint.BgmKey = _bgmKey;

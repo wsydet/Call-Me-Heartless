@@ -10,10 +10,12 @@ namespace Game.Narrative.Tests
 {
     public sealed partial class NovelSessionTests
     {
-        private sealed class TextView : INovelView, INovelTextView
+        private sealed class TextView : INovelView, INovelTextView, INovelTextEffectsView
         {
             public int Capacity = 4, Start, Visible, Clears;
             public bool StoryVisible = true;
+            public float TextAlpha = 1, CardAlpha = 1;
+            public void SetTextEffects(float textOpacity, float cardOpacity) { TextAlpha = textOpacity; CardAlpha = cardOpacity; }
             public NovelCommand Command;
             public int TextLength => NovelTextRules.Length(Command?.Text);
             public int PrepareText(NovelCommand command, int start)
@@ -247,6 +249,10 @@ namespace Game.Narrative.Tests
                 var body = root.GetComponentsInChildren<TMP_Text>(true).Single(t => t.name == "Body");
                 var speaker = root.GetComponentsInChildren<TMP_Text>(true).Single(t => t.name == "Speaker");
                 var originalMin = body.rectTransform.anchorMin; var originalMax = body.rectTransform.anchorMax;
+                var dialogue = (RectTransform)body.transform.parent;
+                var dialogueParent = dialogue.parent; int dialogueSibling = dialogue.GetSiblingIndex();
+                var advance = (RectTransform)root.transform.Find("ReadingShading/Advance");
+                var advanceMin = advance.anchorMin; var advanceMax = advance.anchorMax;
                 string longText = string.Concat(Enumerable.Repeat("窗外的灯亮起来。你把尚未寄出的信轻轻放在桌上。\n", 60));
                 var longCommand = new NovelCommand("long", NovelCommandKind.Say, longText, "long", textMode: NovelTextMode.FullScreen);
                 int end = view.PrepareText(longCommand, 0);
@@ -254,11 +260,11 @@ namespace Game.Narrative.Tests
                 view.ShowText("旁白", int.MaxValue); view.Flush(); Assert.IsFalse(speaker.gameObject.activeSelf);
                 Assert.AreEqual(TextOverflowModes.Page, body.overflowMode); Assert.IsFalse(body.richText);
                 var formal = (INovelView)typeof(NovelPlaybackView).GetField("_visual", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).GetValue(view);
-                var baseFont = formal.GetType().GetField("_bodyFontSize", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
-                float normalFont = (float)baseFont.GetValue(formal);
-                baseFont.SetValue(formal, normalFont * 1.2f);
+                var narrationStyle = root.GetComponentsInChildren<TMP_Text>(true).Single(t => t.name == "FullScreenBody");
+                float normalFont = narrationStyle.fontSize;
+                narrationStyle.fontSize = normalFont * 1.2f;
                 Assert.Less(view.PrepareText(longCommand, 0), end, "A larger font must invalidate measured page boundaries.");
-                baseFont.SetValue(formal, normalFont);
+                narrationStyle.fontSize = normalFont;
                 var ordinary = new NovelCommand("line", NovelCommandKind.Say, "正文", "line");
                 view.PrepareText(ordinary, 0); view.ShowText("林晚", int.MaxValue);
                 Assert.AreEqual(originalMin, body.rectTransform.anchorMin); Assert.AreEqual(originalMax, body.rectTransform.anchorMax);
@@ -270,16 +276,25 @@ namespace Game.Narrative.Tests
                 Assert.AreEqual(TextAlignmentOptions.Center, body.alignment);
                 formal.Render(session.Snapshot, data.Dialogue.Commands[0], "", 2, "");
                 Assert.AreEqual("最后一盏灯", body.text); Assert.AreEqual(2, body.maxVisibleCharacters);
-                var bodyCorners = new Vector3[4]; var arrowCorners = new Vector3[4];
-                body.rectTransform.GetWorldCorners(bodyCorners);
-                ((RectTransform)root.transform.Find("ReadingShading/Advance/Label")).GetWorldCorners(arrowCorners);
-                Assert.Greater(bodyCorners[0].y, arrowCorners[2].y, "Title/full-screen text must leave the advance arrow below it.");
+                view.Flush();
+                var screenCorners = new Vector3[4]; var dialogueCorners = new Vector3[4];
+                ((RectTransform)root.transform).GetWorldCorners(screenCorners); dialogue.GetWorldCorners(dialogueCorners);
+                for (int corner = 0; corner < 4; corner++)
+                    Assert.Less(Vector3.Distance(screenCorners[corner], dialogueCorners[corner]), .01f, "Chapter background must fill the entire canvas.");
+                Assert.AreEqual(1f, dialogue.GetComponent<UnityEngine.UI.Image>().color.a);
+                Assert.AreEqual(Vector2.zero, advance.anchorMin); Assert.AreEqual(Vector2.one, advance.anchorMax);
+                Assert.IsFalse(root.GetComponentsInChildren<Transform>(true).Single(t => t.name == "ReadingControls").gameObject.activeSelf);
+                Assert.Less(Vector3.Distance(body.rectTransform.TransformPoint(body.rectTransform.rect.center),
+                    ((RectTransform)root.transform).TransformPoint(((RectTransform)root.transform).rect.center)), .01f);
                 Assert.IsFalse(body.raycastTarget);
                 int frame = 1;
                 for (; frame < 2000 && session.Snapshot.State != NarrativeState.Ended; frame++)
                 { session.Advance(frame); session.Tick(.01f, frame); view.Flush(); }
                 Assert.AreEqual(NarrativeState.Ended, session.Snapshot.State, session.Snapshot.Error?.ToString());
                 Assert.AreEqual(3, session.History.Count); Assert.AreEqual(longText, session.History[1].Text);
+                Assert.AreSame(dialogueParent, dialogue.parent); Assert.AreEqual(dialogueSibling, dialogue.GetSiblingIndex());
+                Assert.AreEqual(advanceMin, advance.anchorMin); Assert.AreEqual(advanceMax, advance.anchorMax);
+                Assert.AreEqual(originalMin, body.rectTransform.anchorMin); Assert.AreEqual(originalMax, body.rectTransform.anchorMax);
                 session.Dispose(); session = null; view.Dispose(); view.Dispose(); view = null;
                 Assert.AreEqual(before, AssetDatabase.GetAssetDependencyHash(path));
             }

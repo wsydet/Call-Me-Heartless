@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: 4daafdce996c2ac4fa0c7c941c4ff895
   m_EditorClassIdentifier: Game.Narrative.Editor::Game.Narrative.Editor.NarrativeGraphLayout
   _chapterGuid: 4daafdce996c2ac4fa0c7c941c4ff895
-  _positions: []
+  _positions:
+  - _nodeId: a54f913d208b4410aed1443dd292cf30
+    _position: {x: 0, y: 0}

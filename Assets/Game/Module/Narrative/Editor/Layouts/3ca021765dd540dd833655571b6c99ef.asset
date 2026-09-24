@@ -15,4 +15,4 @@ MonoBehaviour:
   _chapterGuid: 3ca021765dd540dd833655571b6c99ef
   _positions:
   - _nodeId: last_light_ch01
-    _position: {x: -0, y: 0}
+    _position: {x: 360, y: 240}
