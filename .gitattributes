@@ -172,3 +172,8 @@ LightingData.asset     binary
 
 # Installed AI skills use byte-level SHA-256 ownership checks.
 .agents/**             -text
+
+# 模板部署基线按字节参与 contentHash 校验（EmberProjectSetup.ValidateDeploymentBaseline）。
+# .py/.html 不在框架的换行归一化列表内，禁止 git 做任何换行转换，否则检出即校验失败。
+ProjectSettings/EmberTemplateBaseline~/**/*.py    -text
+ProjectSettings/EmberTemplateBaseline~/**/*.html  -text
