@@ -5,3 +5,5 @@ lastlight_voice_wan,Voice,Audio/Narrative/LastLight/wan_wait
 lastlight_voice_goodnight,Voice,Audio/Narrative/LastLight/wan_goodnight
 lastlight_rooftop_wind,SFX,Audio/Narrative/LastLight/rooftop_wind
 lastlight_evening,BGM,Audio/Narrative/LastLight/evening
+CMH_fallingstar,BGM,Audio/Narrative/CallMeHeartless/CMH_fallingstar
+CMH_fallingstar_cut,BGM,Audio/Narrative/CallMeHeartless/CMH_fallingstar_cut

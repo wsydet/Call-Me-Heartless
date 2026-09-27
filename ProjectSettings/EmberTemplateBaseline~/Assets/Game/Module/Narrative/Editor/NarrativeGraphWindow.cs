@@ -36,6 +36,7 @@ namespace Game.Narrative.Editor
         private NarrativeStoryGraphView _storyGraph;
         private ObjectField _storyField;
         private Toolbar _chapterToolbar;
+        private ToolbarMenu _languageMenu;
         private SerializedObject _storyContent;
         private SerializedObject _overviewContent;
         private NarrativeChapterSO _existingChapter;
@@ -57,6 +58,8 @@ namespace Game.Narrative.Editor
         private NarrativeNodeSO _existing;
         private string _message;
         private IReadOnlyList<NarrativeError> _errors = Array.Empty<NarrativeError>();
+        /// <summary>编写提示（不阻断运行，只在流程窗口以警告显示）。</summary>
+        private IReadOnlyList<NarrativeError> _hints = Array.Empty<NarrativeError>();
         public NarrativeSnapshot ObservedSnapshot => _snapshot;
         public NarrativeChapterSO Chapter => _chapter;
         public NarrativeNodeSO SelectedNode => _selected;
@@ -118,6 +121,7 @@ namespace Game.Narrative.Editor
             Button(global, "章节总览", () => ShowStory(_story));
             Button(global, "保存剧情", () => TryEdit(() => NarrativeStoryModel.Save(_story)));
             Button(global, "校验剧情", ValidateStory);
+            BuildLanguageMenu(global);
             var create = new ToolbarMenu { text = "新建 ▾" };
             create.menu.AppendAction("新剧情", _ => CreateStory(), _ => WriteStatus(_story, true));
             create.menu.AppendAction("新章节", _ => CreateChapter(), _ => WriteStatus(_story, true));
@@ -188,6 +192,39 @@ namespace Game.Narrative.Editor
             RefreshGraph(); _graph.SelectModel(_selected, false); _graph.UpdateViewTransform(_pan, Vector3.one * Mathf.Clamp(_zoom, .1f, 3));
             _storyGraph.UpdateViewTransform(_overviewPan, _overviewScale);
             _graph.schedule.Execute(() => { if (_follow && _snapshot != null && !_overview) LocateCurrent(true); });
+        }
+        // 全局语言切换：改写持久化的语言偏好，并让流程面板上的多语言预览立刻跟着变。
+        private void BuildLanguageMenu(Toolbar toolbar)
+        {
+            _languageMenu = new ToolbarMenu { text = LanguageMenuText() };
+            var localizer = NovelLocalization.Localizer;
+            if (localizer != null)
+            {
+                var languages = localizer.Languages;
+                if (languages != null)
+                    for (int i = 0; i < languages.Count; i++)
+                    {
+                        string language = languages[i];
+                        _languageMenu.menu.AppendAction(language,
+                            _ => { NovelLocalization.SetLanguage(language); RefreshLanguageMenu(); },
+                            _ => language == localizer.CurrentLanguage ? DropdownMenuAction.Status.Checked : DropdownMenuAction.Status.Normal);
+                    }
+            }
+            _languageMenu.menu.AppendAction("重刷 TMPEx 显示", _ => { NovelLocalization.RefreshUiText(); RefreshLanguageMenu(); });
+            toolbar.Add(_languageMenu);
+        }
+
+        private static string LanguageMenuText()
+        {
+            var localizer = NovelLocalization.Localizer;
+            return localizer == null ? "语言：未装配" : "语言：" + localizer.CurrentLanguage;
+        }
+
+        private void RefreshLanguageMenu()
+        {
+            if (_languageMenu != null) _languageMenu.text = LanguageMenuText();
+            _inspector?.MarkDirtyRepaint();
+            Repaint();
         }
         private static void ConfigureToolbar(Toolbar toolbar, string label = null)
         {
@@ -271,6 +308,8 @@ namespace Game.Narrative.Editor
                 bytes.Add(entry.TableId, asset.bytes);
             }
             if (_tableEngine.Load(catalog, bytes).Succeeded) _catalog = new NarrativeTableCatalog(_tableEngine.Database);
+            // 编辑器预览也要装配多语言与皮肤，否则试播画面与运行期不一致。
+            if (_catalog != null) { NovelLocalization.Install(_catalog); NovelSkin.Install(_catalog); }
             else _message = "导表产物加载失败，请在配置表中心检查。";
         }
         private void Validate()
@@ -278,7 +317,9 @@ namespace Game.Narrative.Editor
             if (!_chapter) return;
             LoadTables();
             _errors = NarrativeAssetValidation.Validate(_story, _chapter, _catalog);
-            _message = _errors.Count == 0 ? "章节校验通过（已重新读取导出配表）。" : null; QueueRefresh();
+            _hints = NarrativeAssetValidation.ValidateHints(_story, _chapter);
+            _message = _errors.Count == 0 ? (_hints.Count == 0 ? "章节校验通过（已重新读取导出配表）。"
+                : "章节校验通过，另有 " + _hints.Count + " 条编写提示。") : null; QueueRefresh();
         }
         private void BindContent()
         {
@@ -314,6 +355,11 @@ namespace Game.Narrative.Editor
                 {
                     EditorGUILayout.HelpBox(error.ToString(), MessageType.Error);
                     if (GUILayout.Button("定位此错误")) LocateError(error);
+                }
+                foreach (var hint in _hints)
+                {
+                    EditorGUILayout.HelpBox("编写提示（不阻断运行）\n" + hint, MessageType.Warning);
+                    if (GUILayout.Button("定位此提示")) LocateError(hint);
                 }
             }
             EditorGUILayout.EndScrollView();
@@ -459,8 +505,8 @@ namespace Game.Narrative.Editor
             var matches = (_story ? _story.Chapters : _chapter ? new[] { _chapter } : Array.Empty<NarrativeChapterSO>())
                 .Where(c => c && c.ChapterId == error.ChapterId).ToArray();
             if (matches.Length != 1) { _message = "错误章节无法唯一定位：" + error.ChapterId; return; }
-            var errors = _errors;
-            ShowChapter(matches[0]); _errors = errors;
+            var errors = _errors; var hints = _hints;
+            ShowChapter(matches[0]); _errors = errors; _hints = hints;
             var nodes = _chapter.Nodes.Where(n => n && n.NodeId == error.NodeId).ToArray();
             if (nodes.Length != 1) { _message = error.ToString(); return; }
             SelectNode(nodes[0]); _graph?.SelectModel(nodes[0], true);
@@ -511,7 +557,7 @@ namespace Game.Narrative.Editor
         {
             _overview = false;
             if (chapter && (!_story || !_story.Chapters.Contains(chapter))) _story = NarrativeStoryModel.FindStory(chapter);
-            _chapter = chapter; _selected = null; _errors = Array.Empty<NarrativeError>();
+            _chapter = chapter; _selected = null; _errors = Array.Empty<NarrativeError>(); _hints = Array.Empty<NarrativeError>();
             BindContent(); RefreshGraph(); _graph?.schedule.Execute(() => _graph.FrameAll());
         }
         public void SelectNode(NarrativeNodeSO node) { SetInspectedNode(node); _graph?.SelectModel(node, false); }

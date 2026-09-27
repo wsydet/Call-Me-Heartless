@@ -262,15 +262,103 @@
             "directories": []
         },
         {
-            "id": "ember-vn-export-story",
+            "id": "ember-vn-custom-node",
             "repository": "package:com.ember",
-            "revision": "0.9.0",
+            "revision": "0.13.0",
             "commit": "",
-            "installedAtUtc": "2026-09-24T10:40:54.8047361Z",
+            "installedAtUtc": "2026-09-26T18:59:16.4054401Z",
             "files": [
                 {
                     "path": "SKILL.md",
-                    "sha256": "a467b080ed55abd2e22460963eaa27eafd9b44bdd055dc95e61d4b299c9a8f2d"
+                    "sha256": "634d998fd37f2225fb5ca894f4ff4af2e26f349d932b422b57bcc15ff297e44c"
+                },
+                {
+                    "path": "SKILL.md.meta",
+                    "sha256": "dc25b22cbc93d7da1bac139de410de6e4e24a4b643cbf623050b87105f609564"
+                },
+                {
+                    "path": "assets.meta",
+                    "sha256": "50ad457f09e5b843a08e7c8f24a1b36f1a519626eac59faa4fec2ca91dc38aff"
+                },
+                {
+                    "path": "assets/confirmation.html",
+                    "sha256": "5598e062b0fa02dfa3a5b2cc6a332e4d5d0cdebb4d7bf33a115d4f5fa8481c01"
+                },
+                {
+                    "path": "assets/confirmation.html.meta",
+                    "sha256": "670e147a367a4f816b45f98c8a4002b8f8d7f63d136297d462f8bc0115aed31b"
+                },
+                {
+                    "path": "references.meta",
+                    "sha256": "3ceff630a6149d69564a793e7299233fe2c23eafd1cdc85bc6090197351c6807"
+                },
+                {
+                    "path": "references/confirmation-workflow.md",
+                    "sha256": "764f194fb037d1c4a6e3d9ab1d7e2394802bac0ca7ecd534cbf911e8e5a21e5d"
+                },
+                {
+                    "path": "references/confirmation-workflow.md.meta",
+                    "sha256": "e08294613591575f241b96680cf72e140be0ada4e7c72a5ba0c8ce9a28783b90"
+                },
+                {
+                    "path": "references/extension-contract.md",
+                    "sha256": "e94dc8d6a050ecacacff7abc8b282f4d2f059c813209d4cb2e6bccfd74d1a601"
+                },
+                {
+                    "path": "references/extension-contract.md.meta",
+                    "sha256": "1ed5030d77e7e968cccc7be181047a327f42917fe9c4b988aef8ddf1bb577966"
+                },
+                {
+                    "path": "references/implementation-rules.md",
+                    "sha256": "6dcb30a9e67296c766fd0a6801320d78181b43a6fa4e5e8da566234064e0035c"
+                },
+                {
+                    "path": "references/implementation-rules.md.meta",
+                    "sha256": "7cdc98758c5e4a98fd2ba182b336d2da23231a1f74c371507659f08a15d66827"
+                },
+                {
+                    "path": "scripts.meta",
+                    "sha256": "c7ccb77495a353b09f8106ff1428903232be7161b15fe5a60618786656532bf3"
+                },
+                {
+                    "path": "scripts/confirmation.py",
+                    "sha256": "98347f90698236e97c4cc05caf93131b2c265f4f6dfcc4e35e03793634b4eb77"
+                },
+                {
+                    "path": "scripts/confirmation.py.meta",
+                    "sha256": "270f43496907a70056c939f5363aa18c4b247a161170d9f4cd6f80df743ff703"
+                },
+                {
+                    "path": "scripts/test_confirmation.py",
+                    "sha256": "9501052535682189f883909152eaad51805928167caca896bd0c3ba05e37bd94"
+                },
+                {
+                    "path": "scripts/test_confirmation.py.meta",
+                    "sha256": "3963f45278b4334ef52fe16d905e37a523e47c2701313d23ecd77590a0ceeb65"
+                }
+            ],
+            "ownerKind": "template",
+            "templateId": "visual-novel",
+            "templateVersion": "0.13.0",
+            "templateContentHash": "0aa62a24f632c2f426a691f97002eb56",
+            "originTemplateId": "visual-novel",
+            "templateMode": "deployed",
+            "directories": [
+                "assets",
+                "references",
+                "scripts"
+            ]
+        },
+        {
+            "id": "ember-vn-export-story",
+            "repository": "package:com.ember",
+            "revision": "0.13.0",
+            "commit": "",
+            "installedAtUtc": "2026-09-26T18:59:16.4114524Z",
+            "files": [
+                {
+                    "path": "SKILL.md",
+                    "sha256": "8a4abe21005200ba07da2727f531880e54979eba8316593f170e97ff266d41c1"
                 },
                 {
                     "path": "SKILL.md.meta",
@@ -279,8 +367,8 @@
             ],
             "ownerKind": "template",
             "templateId": "visual-novel",
-            "templateVersion": "0.9.0",
-            "templateContentHash": "bd18ed6a62bb2be51a9ef43d14b9a4ce",
+            "templateVersion": "0.13.0",
+            "templateContentHash": "0aa62a24f632c2f426a691f97002eb56",
             "originTemplateId": "visual-novel",
             "templateMode": "deployed",
             "directories": []
@@ -288,13 +376,13 @@
         {
             "id": "ember-vn-import-images",
             "repository": "package:com.ember",
-            "revision": "0.9.0",
+            "revision": "0.13.0",
             "commit": "",
-            "installedAtUtc": "2026-09-24T10:40:54.9111596Z",
+            "installedAtUtc": "2026-09-26T18:59:16.4566604Z",
             "files": [
                 {
                     "path": "SKILL.md",
-                    "sha256": "d2501f4af098a8b1b21142d096e5ad52cd18699f08e63668fe7bd17a8f94cb6f"
+                    "sha256": "9a6fd6978cd78e1f1b0218967e7a266ff1a6721f658accc30ceee499e82fd1c4"
                 },
                 {
                     "path": "SKILL.md.meta",
@@ -306,7 +394,7 @@
                 },
                 {
                     "path": "assets/confirmation.html",
-                    "sha256": "ff6f625abcab1a509efeaf1c1e33e15b926d9d38946d76ed046bc5ea05c4a335"
+                    "sha256": "23e4392fe9d4c46a8e8ea76ed2589701f3bf3032d4b4652383f339268d9594f4"
                 },
                 {
                     "path": "assets/confirmation.html.meta",
@@ -318,7 +406,7 @@
                 },
                 {
                     "path": "references/confirmation-workflow.md",
-                    "sha256": "c70b80ebd7526c5f079c559dbfa104d96ebda6167b34398bbb57e18e134ac1b0"
+                    "sha256": "e35ac5612cf5af54ae18ac7b5eae74fbf30c2c85583e207fedcbb5ab647a76e7"
                 },
                 {
                     "path": "references/confirmation-workflow.md.meta",
@@ -326,7 +414,7 @@
                 },
                 {
                     "path": "references/project-mapping.md",
-                    "sha256": "e1124777f4d61a06b69c95f22c019a7cd31f96743dd05fa96004441f588a77b3"
+                    "sha256": "535a81507e4648c43a759ef01ffef3f6fc216a528024ec8e714b84f6e80170b5"
                 },
                 {
                     "path": "references/project-mapping.md.meta",
@@ -338,7 +426,7 @@
                 },
                 {
                     "path": "scripts/confirmation.py",
-                    "sha256": "d11f34f1a35c731c663dcc5eeba67adb23a6808c287820340aa2946b9ecde614"
+                    "sha256": "c801d1b8492ff14dbef769f5573bfa25a66bf3fad0db1ae78ea6d1e7641cd3a5"
                 },
                 {
                     "path": "scripts/confirmation.py.meta",
@@ -346,7 +434,7 @@
                 },
                 {
                     "path": "scripts/test_confirmation.py",
-                    "sha256": "8d2bb2b72b3e465c51635c61dd8b828dde06b11de70bcc1a9e373fe218492c33"
+                    "sha256": "e159140d43f8e1ac9649870d57aa7d1c474e94477b6d781b6ec1f05d797197e4"
                 },
                 {
                     "path": "scripts/test_confirmation.py.meta",
@@ -355,8 +443,8 @@
             ],
             "ownerKind": "template",
             "templateId": "visual-novel",
-            "templateVersion": "0.9.0",
-            "templateContentHash": "bd18ed6a62bb2be51a9ef43d14b9a4ce",
+            "templateVersion": "0.13.0",
+            "templateContentHash": "0aa62a24f632c2f426a691f97002eb56",
             "originTemplateId": "visual-novel",
             "templateMode": "deployed",
             "directories": [
@@ -368,13 +456,13 @@
         {
             "id": "ember-vn-import-story",
             "repository": "package:com.ember",
-            "revision": "0.9.0",
+            "revision": "0.13.0",
             "commit": "",
-            "installedAtUtc": "2026-09-24T10:40:54.9604699Z",
+            "installedAtUtc": "2026-09-26T18:59:16.4927115Z",
             "files": [
                 {
                     "path": "SKILL.md",
-                    "sha256": "2b32d3e13e28f684178aaaa0a78ba345011ddcb2502056f2140af2d35b178844"
+                    "sha256": "444d4e8e1b03a8a660423920bb59fb5f904ef0f9130f4131e6e9779319eeaeda"
                 },
                 {
                     "path": "SKILL.md.meta",
@@ -386,15 +474,23 @@
                 },
                 {
                     "path": "references/import-mapping.md",
-                    "sha256": "3a514ce6c2adcc0367cf010951bc1d9579e5a1aac2fd0b0cd2ebd6971acf33d1"
+                    "sha256": "f5c18399cfdf7fc36eeb99f0e8b26e6805025e474dfb9e25acf4a52f4066defd"
                 },
                 {
                     "path": "references/import-mapping.md.meta",
                     "sha256": "5e2c62c1574beaba6d12add1458767423a7682640d2b8abb6cf41001e4874f32"
                 },
                 {
+                    "path": "references/localization.md",
+                    "sha256": "8cf8e206eda2d877881cdf489841dd25bf93f3d0b51f30acdbb19e0f6e224b96"
+                },
+                {
+                    "path": "references/localization.md.meta",
+                    "sha256": "3743aee56c431424f958c3de5b2b586800527e658933924608846e45b9d86db6"
+                },
+                {
                     "path": "references/logic-mapping.md",
-                    "sha256": "9349d0bb98e0a83b278c19e705fd53d348fdcc117420471a813ebeb348bf684b"
+                    "sha256": "1fb134f42b83a3eb092953d3ca598e3b9d54f603dbb31d19b07309bdbf6a9b03"
                 },
                 {
                     "path": "references/logic-mapping.md.meta",
@@ -406,7 +502,7 @@
                 },
                 {
                     "path": "scripts/audit_snapshots.py",
-                    "sha256": "ee50f08d67a94d930d53a3e1ba0514864cfefc5ca5f54d2c74b2838133398567"
+                    "sha256": "654e495004aaa9654d50f121fa071ddce2e6d403a1bfe568b41bd082880f48b7"
                 },
                 {
                     "path": "scripts/audit_snapshots.py.meta",
@@ -415,8 +511,8 @@
             ],
             "ownerKind": "template",
             "templateId": "visual-novel",
-            "templateVersion": "0.9.0",
-            "templateContentHash": "bd18ed6a62bb2be51a9ef43d14b9a4ce",
+            "templateVersion": "0.13.0",
+            "templateContentHash": "0aa62a24f632c2f426a691f97002eb56",
             "originTemplateId": "visual-novel",
             "templateMode": "deployed",
             "directories": [
@@ -427,9 +523,9 @@
         {
             "id": "ember-vn-polish-presentation",
             "repository": "package:com.ember",
-            "revision": "0.9.0",
+            "revision": "0.13.0",
             "commit": "",
-            "installedAtUtc": "2026-09-24T10:40:54.9796731Z",
+            "installedAtUtc": "2026-09-26T18:59:16.4987373Z",
             "files": [
                 {
                     "path": "SKILL.md",
@@ -442,8 +538,8 @@
             ],
             "ownerKind": "template",
             "templateId": "visual-novel",
-            "templateVersion": "0.9.0",
-            "templateContentHash": "bd18ed6a62bb2be51a9ef43d14b9a4ce",
+            "templateVersion": "0.13.0",
+            "templateContentHash": "0aa62a24f632c2f426a691f97002eb56",
             "originTemplateId": "visual-novel",
             "templateMode": "deployed",
             "directories": []
@@ -451,19 +547,91 @@
     ],
     "templateBaseline": {
         "templateId": "visual-novel",
-        "businessVersion": "0.9.0",
-        "businessContentHash": "bd18ed6a62bb2be51a9ef43d14b9a4ce",
-        "sourceVersion": "0.9.0",
-        "sourceContentHash": "bd18ed6a62bb2be51a9ef43d14b9a4ce",
+        "businessVersion": "0.13.0",
+        "businessContentHash": "0aa62a24f632c2f426a691f97002eb56",
+        "sourceVersion": "0.13.0",
+        "sourceContentHash": "0aa62a24f632c2f426a691f97002eb56",
         "sourceExists": true,
         "sourceFiles": [
             {
                 "path": "catalog.json",
-                "sha256": "9d534a78021f793b940bbe9cf0a8c28d341e27a84ed99b356236b09d94208ef1"
+                "sha256": "2d3761763105ba3670a24a65ee078b44ac59a4a65ac60b22fd6c30f7700f4846"
             },
             {
                 "path": "catalog.json.meta",
                 "sha256": "02f29f6bf16931547e5897654adda70cd59fd98e4d6a7fe637d966aa00415143"
+            },
+            {
+                "path": "ember-vn-custom-node.meta",
+                "sha256": "398f0687b2fd94a93e28fd774755c7c4c56e2a80d854f9b9d3db77ee9a77adac"
+            },
+            {
+                "path": "ember-vn-custom-node/SKILL.md",
+                "sha256": "634d998fd37f2225fb5ca894f4ff4af2e26f349d932b422b57bcc15ff297e44c"
+            },
+            {
+                "path": "ember-vn-custom-node/SKILL.md.meta",
+                "sha256": "dc25b22cbc93d7da1bac139de410de6e4e24a4b643cbf623050b87105f609564"
+            },
+            {
+                "path": "ember-vn-custom-node/assets.meta",
+                "sha256": "50ad457f09e5b843a08e7c8f24a1b36f1a519626eac59faa4fec2ca91dc38aff"
+            },
+            {
+                "path": "ember-vn-custom-node/assets/confirmation.html",
+                "sha256": "5598e062b0fa02dfa3a5b2cc6a332e4d5d0cdebb4d7bf33a115d4f5fa8481c01"
+            },
+            {
+                "path": "ember-vn-custom-node/assets/confirmation.html.meta",
+                "sha256": "670e147a367a4f816b45f98c8a4002b8f8d7f63d136297d462f8bc0115aed31b"
+            },
+            {
+                "path": "ember-vn-custom-node/references.meta",
+                "sha256": "3ceff630a6149d69564a793e7299233fe2c23eafd1cdc85bc6090197351c6807"
+            },
+            {
+                "path": "ember-vn-custom-node/references/confirmation-workflow.md",
+                "sha256": "764f194fb037d1c4a6e3d9ab1d7e2394802bac0ca7ecd534cbf911e8e5a21e5d"
+            },
+            {
+                "path": "ember-vn-custom-node/references/confirmation-workflow.md.meta",
+                "sha256": "e08294613591575f241b96680cf72e140be0ada4e7c72a5ba0c8ce9a28783b90"
+            },
+            {
+                "path": "ember-vn-custom-node/references/extension-contract.md",
+                "sha256": "e94dc8d6a050ecacacff7abc8b282f4d2f059c813209d4cb2e6bccfd74d1a601"
+            },
+            {
+                "path": "ember-vn-custom-node/references/extension-contract.md.meta",
+                "sha256": "1ed5030d77e7e968cccc7be181047a327f42917fe9c4b988aef8ddf1bb577966"
+            },
+            {
+                "path": "ember-vn-custom-node/references/implementation-rules.md",
+                "sha256": "6dcb30a9e67296c766fd0a6801320d78181b43a6fa4e5e8da566234064e0035c"
+            },
+            {
+                "path": "ember-vn-custom-node/references/implementation-rules.md.meta",
+                "sha256": "7cdc98758c5e4a98fd2ba182b336d2da23231a1f74c371507659f08a15d66827"
+            },
+            {
+                "path": "ember-vn-custom-node/scripts.meta",
+                "sha256": "c7ccb77495a353b09f8106ff1428903232be7161b15fe5a60618786656532bf3"
+            },
+            {
+                "path": "ember-vn-custom-node/scripts/confirmation.py",
+                "sha256": "98347f90698236e97c4cc05caf93131b2c265f4f6dfcc4e35e03793634b4eb77"
+            },
+            {
+                "path": "ember-vn-custom-node/scripts/confirmation.py.meta",
+                "sha256": "270f43496907a70056c939f5363aa18c4b247a161170d9f4cd6f80df743ff703"
+            },
+            {
+                "path": "ember-vn-custom-node/scripts/test_confirmation.py",
+                "sha256": "9501052535682189f883909152eaad51805928167caca896bd0c3ba05e37bd94"
+            },
+            {
+                "path": "ember-vn-custom-node/scripts/test_confirmation.py.meta",
+                "sha256": "3963f45278b4334ef52fe16d905e37a523e47c2701313d23ecd77590a0ceeb65"
             },
             {
                 "path": "ember-vn-export-story.meta",
@@ -471,7 +639,7 @@
             },
             {
                 "path": "ember-vn-export-story/SKILL.md",
-                "sha256": "a467b080ed55abd2e22460963eaa27eafd9b44bdd055dc95e61d4b299c9a8f2d"
+                "sha256": "8a4abe21005200ba07da2727f531880e54979eba8316593f170e97ff266d41c1"
             },
             {
                 "path": "ember-vn-export-story/SKILL.md.meta",
@@ -483,7 +651,7 @@
             },
             {
                 "path": "ember-vn-import-images/SKILL.md",
-                "sha256": "d2501f4af098a8b1b21142d096e5ad52cd18699f08e63668fe7bd17a8f94cb6f"
+                "sha256": "9a6fd6978cd78e1f1b0218967e7a266ff1a6721f658accc30ceee499e82fd1c4"
             },
             {
                 "path": "ember-vn-import-images/SKILL.md.meta",
@@ -495,7 +663,7 @@
             },
             {
                 "path": "ember-vn-import-images/assets/confirmation.html",
-                "sha256": "ff6f625abcab1a509efeaf1c1e33e15b926d9d38946d76ed046bc5ea05c4a335"
+                "sha256": "23e4392fe9d4c46a8e8ea76ed2589701f3bf3032d4b4652383f339268d9594f4"
             },
             {
                 "path": "ember-vn-import-images/assets/confirmation.html.meta",
@@ -507,7 +675,7 @@
             },
             {
                 "path": "ember-vn-import-images/references/confirmation-workflow.md",
-                "sha256": "c70b80ebd7526c5f079c559dbfa104d96ebda6167b34398bbb57e18e134ac1b0"
+                "sha256": "e35ac5612cf5af54ae18ac7b5eae74fbf30c2c85583e207fedcbb5ab647a76e7"
             },
             {
                 "path": "ember-vn-import-images/references/confirmation-workflow.md.meta",
@@ -515,7 +683,7 @@
             },
             {
                 "path": "ember-vn-import-images/references/project-mapping.md",
-                "sha256": "e1124777f4d61a06b69c95f22c019a7cd31f96743dd05fa96004441f588a77b3"
+                "sha256": "535a81507e4648c43a759ef01ffef3f6fc216a528024ec8e714b84f6e80170b5"
             },
             {
                 "path": "ember-vn-import-images/references/project-mapping.md.meta",
@@ -527,7 +695,7 @@
             },
             {
                 "path": "ember-vn-import-images/scripts/confirmation.py",
-                "sha256": "d11f34f1a35c731c663dcc5eeba67adb23a6808c287820340aa2946b9ecde614"
+                "sha256": "c801d1b8492ff14dbef769f5573bfa25a66bf3fad0db1ae78ea6d1e7641cd3a5"
             },
             {
                 "path": "ember-vn-import-images/scripts/confirmation.py.meta",
@@ -535,7 +703,7 @@
             },
             {
                 "path": "ember-vn-import-images/scripts/test_confirmation.py",
-                "sha256": "8d2bb2b72b3e465c51635c61dd8b828dde06b11de70bcc1a9e373fe218492c33"
+                "sha256": "e159140d43f8e1ac9649870d57aa7d1c474e94477b6d781b6ec1f05d797197e4"
             },
             {
                 "path": "ember-vn-import-images/scripts/test_confirmation.py.meta",
@@ -547,7 +715,7 @@
             },
             {
                 "path": "ember-vn-import-story/SKILL.md",
-                "sha256": "2b32d3e13e28f684178aaaa0a78ba345011ddcb2502056f2140af2d35b178844"
+                "sha256": "444d4e8e1b03a8a660423920bb59fb5f904ef0f9130f4131e6e9779319eeaeda"
             },
             {
                 "path": "ember-vn-import-story/SKILL.md.meta",
@@ -559,15 +727,23 @@
             },
             {
                 "path": "ember-vn-import-story/references/import-mapping.md",
-                "sha256": "3a514ce6c2adcc0367cf010951bc1d9579e5a1aac2fd0b0cd2ebd6971acf33d1"
+                "sha256": "f5c18399cfdf7fc36eeb99f0e8b26e6805025e474dfb9e25acf4a52f4066defd"
             },
             {
                 "path": "ember-vn-import-story/references/import-mapping.md.meta",
                 "sha256": "5e2c62c1574beaba6d12add1458767423a7682640d2b8abb6cf41001e4874f32"
             },
             {
+                "path": "ember-vn-import-story/references/localization.md",
+                "sha256": "8cf8e206eda2d877881cdf489841dd25bf93f3d0b51f30acdbb19e0f6e224b96"
+            },
+            {
+                "path": "ember-vn-import-story/references/localization.md.meta",
+                "sha256": "3743aee56c431424f958c3de5b2b586800527e658933924608846e45b9d86db6"
+            },
+            {
                 "path": "ember-vn-import-story/references/logic-mapping.md",
-                "sha256": "9349d0bb98e0a83b278c19e705fd53d348fdcc117420471a813ebeb348bf684b"
+                "sha256": "1fb134f42b83a3eb092953d3ca598e3b9d54f603dbb31d19b07309bdbf6a9b03"
             },
             {
                 "path": "ember-vn-import-story/references/logic-mapping.md.meta",
@@ -579,7 +755,7 @@
             },
             {
                 "path": "ember-vn-import-story/scripts/audit_snapshots.py",
-                "sha256": "ee50f08d67a94d930d53a3e1ba0514864cfefc5ca5f54d2c74b2838133398567"
+                "sha256": "654e495004aaa9654d50f121fa071ddce2e6d403a1bfe568b41bd082880f48b7"
             },
             {
                 "path": "ember-vn-import-story/scripts/audit_snapshots.py.meta",
@@ -599,6 +775,10 @@
             }
         ],
         "sourceDirectories": [
+            "ember-vn-custom-node",
+            "ember-vn-custom-node/assets",
+            "ember-vn-custom-node/references",
+            "ember-vn-custom-node/scripts",
             "ember-vn-export-story",
             "ember-vn-import-images",
             "ember-vn-import-images/assets",

@@ -90,6 +90,8 @@ namespace Game.UI.Editor
             }
             if (!_tableEngine.Load(catalog, bytes).Succeeded) throw new InvalidOperationException("导表产物加载失败，请检查配置表中心。");
             _catalog = new NarrativeTableCatalog(_tableEngine.Database);
+            // 预览与运行期保持一致：装上多语言与皮肤，预览才会显示当前语言的文本与皮肤图。
+            NovelLocalization.Install(_catalog); NovelSkin.Install(_catalog);
         }
         private void ApplyNodePreview()
         {
@@ -113,8 +115,11 @@ namespace Game.UI.Editor
                     {
                         line++;
                         body.text = command.Text;
-                        speaker.text = command.CharacterId ?? string.Empty;
-                        if (_catalog != null && _catalog.TryGetCharacter(command.CharacterId, out var character)) speaker.text = character.DisplayName;
+                        // 与运行期同一条解析链：称呼 Key → character.〈角色键〉→ 角色表 displayName。
+                        string fallback = string.IsNullOrEmpty(command.CharacterId) ? string.Empty
+                            : _catalog != null && _catalog.TryGetCharacter(command.CharacterId, out var character)
+                                ? character.DisplayName : command.CharacterId;
+                        speaker.text = NovelLocalization.SpeakerName(command.CharacterId, command.SpeakerNameKey, fallback);
                         if (line == _previewLine)
                         {
                             _previewTextMode = command.TextMode;

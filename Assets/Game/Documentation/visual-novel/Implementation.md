@@ -1515,3 +1515,537 @@ Unity MCP 未连接或不可用，本次未完成 Unity 编译验证。请在 Un
 - 用户提供的 TestResults_20260924_170905.xml 共 645 项，其中 35 项失败。根因是旧命令的新增文字参数在反序列化后为零，触发 BadText 并造成后续加载失败；使用序列化版本与默认值迁移修复，保留新配置非法值的校验。剩余页面用例改为先完成章节卡退出，再验证阅读控制。
 - Unity MCP 恢复后编译错误为零；156 项运行/剧情/存档用例、8 项正式 Prefab 布局/透明度用例通过。13 项实际页面/观察用例首轮 12 项通过，修复旧层级假设后最后 1 项单独复测通过，相关用例合计 177 项。跨 Play Mode 回调会丢失 MCP job 进度，以项目 NarrativeTestReport 落盘 XML 为最终结果。证据：`.utmp/visual-novel-m3/tests-20260924-091422231.xml`、`tests-20260924-091807200.xml`、`tests-20260924-092005330.xml`、`tests-20260924-092051840.xml`。
 - 未重新运行全部 645 项框架测试，未发布框架 tag，也未部署/验收消费项目。
+
+## 0.9.1 UI 皮肤与配表多语言（2026-09-25，工作副本未封存）
+
+- 新增配表多语言：`novel_languages` / `novel_content_text`（内容）/ `novel_ui_text`（界面）；源语言列固定 `zh_Hans`，暂定简体、繁体、日语、英语，可继续扩展。回退链为目标语言列 → 源语言列 → 资产原文，因此缺翻译显示源语言而不是空白，Key 查不到也不报错。
+- 字段新增：Say、选项/分流、章节出口路线加 `_textKey`，选择提示加 `_promptTextKey`，章节名与剧情名加 `_displayNameKey`。角色名走内容表的 `character.〈角色键〉`，未命中回退 `novel_characters.displayName`（该表结构未改，消费项目零迁移）。
+- 正文替换放在 runner 的运行期文本副本上（变量绑定之后、`NovelValidator` 之后），校验始终面对原文，所以译文长短不同不会触发 `TextBeats` 越界；Key 不进指纹，切语言与补译文都不会让既有存档失效。选项、提示、章节名没有长度校验，在读定义时替换。
+- UI 文本由 `TMPEx`（`Ember.UIExtension`）承接：TMP 的 Inspector 右上角三点菜单「替换为 TMPEx（多语言文本）」，沿用既有 `EUIComponentReplaceMenu` 延迟替换机制，字体/材质/对齐等原设置全部保留；编辑期不改写文本（带 `ExecuteAlways`，保住所见即所得），未装配配表时行为与普通 TMP 完全一致。
+- 新增 UI 皮肤：`novel_skins` / `novel_skin_sprites` / `novel_story_skin`。覆盖行按「页面 + EUI 绑定控件 + 相对节点」寻址，运行期在页面绑定完成后按名换图，不修改任何 Prefab、Binding 或布局；按小说赋值，主界面与阅读页共用同一套解析。本期只换图片，位置与大小仍由各小说在布局窗口调整。
+- 编辑器：节点与章节 Inspector 顶部、流程窗口工具栏各提供全局语言切换；对白、选项、提示、章节名四处新增多语言 Key 输入与逐语言预览（命中显示译文，未命中显示「缺条目 → 回退：原文」）。菜单 `Ember/视觉小说/导出皮肤可覆盖图片清单` 扫描全部页面 Prefab（含主界面），列出可覆盖图片并输出候选 CSV 行到剪贴板；布局窗口的外观区另提供「把此元素加入皮肤清单（复制 CSV 行）」，单个元素一键取行。两者共用同一套寻址实现（`NovelSkinImageCatalog.TryDescribe`），不会分叉。
+- 编辑器内的三个预览入口（流程窗口、节点试播、布局窗口节点预览）在建立配表后同样装配多语言与皮肤，试播画面与运行期一致；已实测该装配方式下语言解析与按小说解析皮肤均生效。
+- 导入/导出技能同步：新增 `references/localization.md` 作为 Key 与配表的唯一口径；导入时写 Key 并在 `novel_content_text` 追加行（只填 `zh_Hans`，不覆盖已交付译文）；导出新增「多语言Key」列。`catalog.json` 的 `minimumTemplateVersion` 待随本次 Bump 一并更新。
+- 实测：新增 8 项多语言/皮肤用例 8/8 通过；指纹、定义读取、变量逻辑、图模型等高风险既有类 82/82 通过；`NovelSessionTests` 137 项中 134 项通过。失败 3 项均为既有 schema 断言（`NovelCheckpoint.cs` 的 `SchemaVersion = 7` 与两处硬编码 6 的断言），这三个文件与模板快照逐字节一致且未被本次修改。
+- 指纹回归：`E0StoryFixture` 与 `M1StoryFixture` 的 `Fingerprint` 与改动前基线逐字节一致（`7D8B67D3…3FC32`、`FFBCEEA6…26AFB`），装配多语言并切换三种语言后仍一致。
+- 皮肤实测：演示皮肤 `lastlight_alt` 在阅读页 `History/SkinIcon` 与主界面 `NovelBackdrop` 各命中 1 并真的换图；无覆盖行的 `lastlight_default` 命中 0（保持 Prefab 外观）。已知约束：覆盖值必须是项目 `Resources` 下的图片，Unity 内置 `UISprite` 无法用路径表示，只能当被替换方。
+- 未验证：编辑器面板的实际渲染（Key 行与语言下拉的排版、交互）与运行期皮肤在真实页面上的画面效果，需要人工或 Play Mode 确认；`NarrativeLibraryTests.RenamingAndMovingStoryPreservesEntryAndStableLookup` 需要编辑器前台焦点，本轮未跑通；`NovelGameplayTests` 重场景用例在本环境下不稳定（改动前同样如此）。
+- 未运行框架全量回归，未发布框架 tag，未部署或验收消费项目，模板尚未保存与 Bump。
+
+## 0.10.0 说话人临时称呼（2026-09-26）
+
+- 新增 Say 字段 `_speakerNameKey`（「说话人称呼 Key（留空用角色名）」）：只为这一句覆盖**姓名框显示**，
+  用于「主角先遇到一个人、后面才知道名字」——揭晓前显示 `？？？`，揭晓后留空即显示真名。
+  构造参数追加在参数列表末尾，`WithResolvedText` 的 `MemberwiseClone` 自然继承，`JsonUtility` 往返保留。
+- 显示名解析收敛为一条链：`_speakerNameKey` 命中内容表 → `character.〈角色键〉` → `novel_characters.displayName`，
+  共用入口 `NovelLocalization.SpeakerName(characterId, speakerNameKey, displayName)`。运行期当前句
+  （`NovelSession.Render`）、历史解析（`NovelSession.Reading.ResolveSpeaker`）、运行期摘要
+  （`NarrativeContentGUI.Summary`）与布局窗口节点预览（`NovelGameplayLayoutWindow.ApplyNodePreview`
+  写 Speaker 文本处）四处都走它，不再各写一份回退规则。覆盖 Key 留空或查不到时按原回退链继续，不显示空白、不报错；
+  编辑器里该字段复用现成的 `LocalizationKeyField`，逐语言预览未命中时显示「缺条目 → 回退：〈角色名〉」。
+- **不改进存档指纹**：称呼 Key 是表现层字段，与 `_text` 同类，不写进 `NovelCompatibility.Fingerprint`，
+  因此给既有剧情补称呼 Key 不会让玩家已读存档被判「剧情语义已变化」。新增用例锁定「只改称呼 Key
+  时指纹逐字节一致」。
+- 历史与存档：`NovelHistoryEntry` 增加 `SpeakerNameKey`，`RecordStableLine` 写入、`TryCapture` 复制、
+  `History` 解析优先使用它，所以回看揭晓前的旧句仍是 `？？？`，不会因为后面说了真名而串味。
+  旧档没有这个字段，反序列化后为空、解析退回角色名回退链，行为与改动前完全一致；恢复校验仍只做
+  结构与规模检查，`SchemaVersion` 保持 **7**，没有版本迁移分支。
+- 配表：内容表新增 Key 家族 `speaker.〈语义〉`，模板已提供 `speaker.unknown`（`？？？` / `？？？` / `？？？` / `???`，
+  `novel_content_text` 与烘焙产物已同步）。多语言 Key 表、回退链与「揭晓前显示占位名」写法写入
+  `references/localization.md` 第 2、4、4.1 节，导入技能的五列映射补「临时称呼 → 真实角色键 + 称呼 Key」，
+  导出技能明确 `说话人` 列写真实角色名、称呼 Key 附注而不回写 `？？？`。
+- 编辑器还顺手保证新建指令会清空该字段（`NarrativeGraphModel.AddItem`），不会从被复制的上一条指令继承。
+- 实测：新增 5 项 `NovelSpeakerNameTests` 用例 **5/5 通过**（覆盖 Key 命中显示译文、Key 未命中回退角色名、
+  只改称呼 Key 时指纹不变、历史带 Key 且旧档缺字段仍能恢复、Emphasis Auto 仍按真实角色键匹配）。
+  过滤掉需要编辑器前台焦点的历史用例后，`Game.Narrative.Tests` 相关 11 个类 **228/228 通过**
+  （含 `NovelSessionTests` 全部分片即 NovelLocalization / NovelText / NovelReading / NovelCheckpoint /
+  NovelActor / NovelCamera / NovelScreen / NovelMedia / NovelStepPresentation / NovelVariableLogic、
+  `NovelCheckpointTests`、`NarrativeRunnerTests`、`NarrativeStory*`、`NarrativeGraph*` 与
+  `NarrativeAvailability/TemplateIdentity`）。既有指纹基线（E0 `7D8B67D3…`、M1 `FFBCEEA6…`）未变。
+- 未验证：`NarrativeLibraryTests.RenamingAndMovingStoryPreservesEntryAndStableLookup` 需要编辑器前台焦点，
+  本环境未跑通；`NovelGameplayTests` 重场景用例在本环境下无法启动（改动前同样如此）；
+  未运行框架全量回归，未跑 Play Mode，未部署或验收消费项目。
+- 已知边界：称呼 Key 是**跨角色**的语义 Key（`speaker.unknown` 谁都能用），不是「角色键的别名」；
+  同一个临时称呼在同一部作品里应复用同一个 Key，语义不同才另开一个。译文与原文长度差异不影响它，
+  因为它只替换姓名框，不参与正文分页与 `TextBeats` 校验。
+
+## 0.10.1 表现与交互修复批（2026-09-26）
+
+来源：消费项目 Call-Me-Heartless 把当前小说从内置样例 LastLight 换成《道是无情》之后，
+在制作中被以下表现/交互缺陷挡住，只能用剧情侧手段绕开（背景时长写 0、用 `HideAllCharacters`
+兜底清场、把章节卡挪到背景之后、直接读最新档）。本批把缺陷修回模板，让消费项目不必再绕。
+
+**共同约束**：全部是运行期表现/交互修复，**不写进 `NovelCompatibility.Fingerprint`**，
+`NovelCheckpoint.CurrentSchemaVersion` 保持 **7**，没有版本迁移分支；既有存档不会被判为不兼容。
+
+### P1 阅读页不透明底板
+
+- `EUINovelReaderPage.prefab` 根节点新增第一个子节点 `Backdrop`：铺满整屏、`color.a = 1`、
+  `raycastTarget = false`、不带绑定、颜色取页面基色 `(0.02, 0.025, 0.04, 1)`（与 `TitleLayout` 同源）。
+  它排在 `Background` 之前，因此背景淡入、章节卡退场渐隐、任何页面级过渡期间透出的都是这层基色。
+- **揭幕只作用于内容容器**：框架 `EUIPage.GetTransitionCanvasGroup()` 优先取 `Animator` 节点的
+  `CanvasGroup`；底板刻意留在该子树之外，不会被一起淡掉。阅读页的 `EUIBinding` 是
+  `usePresetFade = true / fadeInTime = 0`，该节点的 `Animator` 组件保持关闭（`useAnimator = false`），
+  所以 `EUICommon_Enter` 那 0.3 秒动画当前不会播放；即使有人打开 `useAnimator`，
+  它作用的也是同一棵内容子树，底板仍然不受影响。
+- 底板不是 EUI 绑定控件（不进 `ControlMap`，不重新生成 Binding），但可以按皮肤覆盖：
+  `control` 留空 + `node = Backdrop`。Gameplay 主 UI 布局窗口按 `reader/<index>` 枚举子元素，
+  因此它可以在窗口里选中改色；索引路径整体后移一位，窗口的 `SourceHash` 守卫会在 Prefab
+  变动时拒绝用旧草稿覆盖。
+
+### P2 背景同键重设改为幂等
+
+- `NovelSession.ResolveVisualCommand` 新增 `BackgroundEnterOpacity(old, command)`：
+  非 Hide 且**与当前显示的背景同键、且当前背景仍可见**时，起始透明度取当前值（画面不动、
+  只重设资源）；换键、或当前背景已被显式淡到 0 时仍从 0 淡入，`Hide` 语义不变。
+- 关键点是**仍然占用指令时长**：过渡进度照旧走完 `Duration`，只是不再有视觉变化，
+  所以剧情节奏、自动存档稳定点、`WaitActions` 时序都不变。
+- 对 LastLight 的影响：四个对话节点段首都是 `Background Show lastlight_rooftop` + 0.3 秒。
+  改动前每次跨节点整屏一黑再亮回来，改动后不再闪，时长保留 0.3 秒。指令、台词、分支、
+  指纹都没有变化。消费项目把 8 条背景的时长写成 0 是为了绕开这个闪烁，现在可以恢复。
+
+### P3 空实例 ID 的立绘隐藏
+
+- `NovelSession.Actors.ResolveActorVisual` 的空 ID 解析从「只找 `Occupant(Slot)`」扩展为
+  `Occupant(Slot) ?? UnnamedSlotOccupant(Slot)`。`UnnamedSlotOccupant` **只在实例 `NamedSlot < 0`
+  时命中**（归一化入场、或已移动到自由坐标），因此已经 `Move` 到**别的命名位置**的实例
+  不会被一条陈旧的空 ID 指令误删——`NovelActorTests.E1EmptyLogicalSlotHideKeepsDurationAndDoesNotHideMovedActor`
+  这条既有不变量仍然成立（该用例原样保留并通过）。
+- 新增一次性诊断 `DiagnoseEmptyHide`（按指令 ID 去重，不随节点重访刷屏）：退化匹配生效时提示
+  改用明确实例 ID；槽位上什么都没有时明确报「没有隐藏任何实例」，不再完全静默。
+- 编辑期新增**编写提示**通道：`NarrativeAssetValidation.ValidateHints` 与「校验剧情 / 校验章节」
+  并列产出，在流程窗口以 `MessageType.Warning` 显示（黄色 + 「定位此提示」），
+  **不进 `TryReadDefinition` 的阻断判定**（那条路径只要有一条 error 就拒绝运行整章）。
+  只做同节点顺序分析：`AmbiguousSlotHide`（退化生效）、`StaleSlotHide`（槽位被移到别处的人占用）、
+  `ChapterCardBeforeBackground`（章节卡之前没声明背景）。跨节点延续的状态有意不报，避免对分支内容误报。
+- 兼容性：`legacy-<slot>` 身份（`VisualId`）与存档 Schema 都没有变化；旧档恢复路径不受影响。
+- 节点 Inspector 里两处内联说明原本写的是旧语义（「Replace/Hide 按实例寻址，忽略位置」「位置原本为空时保持为空」），
+  已按新规则改写，避免模板自带的编辑期文案与运行期行为互相矛盾。
+  它们仍是**不做校验**的 `MessageType.Info` 提示，真正的检查走上面的编写提示通道。
+
+### P4 章节卡与背景顺序
+
+- 选择「运行期兜底」而不是「校验器强制」：P1 的底板保证章节卡退场渐隐期间始终有不透明底色，
+  所以「节点以章节卡开场、背景排在它之后」不再露空；同时用 `ChapterCardBeforeBackground`
+  编写提示引导作者采用推荐写法（LastLight 已经是先声明背景再放卡片）。
+  这样不会让任何既有消费项目因为一条新的硬错误而无法运行剧情。
+
+### P5 主菜单「继续游戏」——**本批撤回，维持原设计**
+
+- 任务书原本要求把「继续游戏」改成打开槽位页（与消费项目自己的改法一致）。实现并封存之后，
+  用户明确纠正：**要的是原设计**——保留全部五个按钮，「继续游戏」**直接续读最新进度**，
+  「读取存档」打开槽位页读主动保存的档。两种做法都被实现过，最终**整体回退**为原设计：
+  - `EUIMainPage.OnInitUser`：`NovelContinue` 监听恢复为 `NovelSaveUI.Continue`，`NovelLoad` 保持 `NovelSaveUI.Open`；
+  - `RefreshNovelSave`：恢复「`hasAny` 控继续游戏 / `hasManual` 控读取存档」与
+    `NovelContinue.interactable` 的 `Store.Latest >= 0` 门槛；
+  - `NovelSaveUI.Continue()` 的注释恢复为「主菜单用它续读最新进度」；
+  - `NovelGameplayTests` 恢复 `MainMenuVisibilityAndLayoutFollowSlotKinds(slot, resume, load, count)` 四参数
+    与 `MainMenuContinueLoadsDirectlyAndLoadOpensChooser` 的直读断言（P6 的解耦与 P4 的首屏断言保留）。
+- 结论：**这一项最终没有产生任何模板行为变化**，只是把「继续游戏 = 弹槽位页」的中间实现撤回。
+  撤回后 `MainMenuVisibilityAndLayoutFollowSlotKinds` 四组参数 4/4 通过（有无存档 × 有无手动槽）。
+- 语义边界：`NovelSaveUI.Continue()` 走的是 `Store.Latest`（最近一次写入的槽位，通常是自动槽 7，
+  但也可能是玩家刚存的手动槽），即「续读最新进度」而不是硬编码读槽位 7。这与原实现一致，未做改动。
+
+### P6 模板用例与「当前小说」解耦
+
+- `NovelGameplayTests` 新增 `PinnedSampleStory`：用例内把 `NarrativeLibrarySO.Current` 临时指向
+  LastLight，`Dispose` 时还原，并核对 `Library.asset` 的磁盘内容没有被写脏（资源引用的临时改写
+  只应存在于内存）。原来「按 LastLight 资源路径读指令表 + 断言它的首屏立绘」的写法，
+  在消费项目换了当前小说之后必然失败——那是用例与当前小说耦合，不是模板缺陷。
+- `:173` 的「揭幕前首屏背景必须已应用」放宽为与 P4 对齐：首屏要么背景已就位，
+  要么必须已有不透明底板兜底，并且底板本身始终要求不透明。
+- `MainMenuContinueLoadsDirectlyAndLoadOpensChooser` 重写为
+  `MainMenuContinueOpensTheSlotChooserAndReadingKeepsTheCurtain`：继续游戏只断言「打开槽位页、
+  没有 Loading 转场、没有会话、没有触发阅读页加载」，而原来与读取路径有关的断言
+  （慢加载遮挡、`SkipFakeProgress`、进度条隐藏、只有一个 Loading 页、阅读页先打开完成、
+  「读档成功」先于遮挡退出、揭幕后 Status 文案）全部**保留**并移到槽位页 `Read` 之后的恢复链路上。
+- `MainMenuVisibilityAndLayoutFollowSlotKinds` 的 `load` 参数移除，改为断言 `NovelLoad` 始终隐藏。
+
+### P7 循环音 Mixer 分组
+
+- 框架新增 `EmberAudioManager.BgmMixerGroup / SfxMixerGroup / HasMixer`（没有 Mixer 时为 null）。
+- `INovelLoopAudio.CreateLoop(AudioClip, bool bgm)` 增加 BGM / 环境音角色；`INovelLoopPlayback`
+  增加 `MixerRouted`。`NovelLoopPlayback` 接收 `AudioMixerGroup` 并设置
+  `outputAudioMixerGroup`；`NovelAudio` 按角色取对应分组。
+- 接上分组后玩家音量由分组承担，`NovelSession.LoopSourceGain` 只写剧情增益，
+  避免玩家音量被叠乘两次；未接 Mixer 时行为与接入前完全一致（既有音量用例原样通过）。
+- 编辑器「播放节点」的试播循环音**故意不接 Mixer**：试播要能独立于项目混音设置发声与静音。
+- 模板与仓库都**没有**配置 Mixer，所以这条路径的**实际出声仍未经人工听音**；
+  已把 6 步听音验收步骤写入 `EffectConfiguration.md` §3.6，并登记为 [路线图](PresentationRoadmap.md) 的待验收项。
+
+### P8 排障文档
+
+- `EffectConfiguration.md` §8 增加首条排查项：**Play 模式完全听不到声音时先看 Game 视图工具栏的
+  Mute Audio（`EditorUtility.audioMasterMute`）**——消费项目这次就是被它静音、绕了一轮才定位。
+
+### 测试与验证（本次实际执行）
+
+- `Game.Narrative.Tests`（EditMode）分批执行，合计 **263/263 通过**，0 失败：
+
+  | 批次 | 结果 |
+  |---|---|
+  | `NovelSessionTests`（含新增 E6：背景幂等、换键/淡出边界、空 ID 隐藏退化与诊断、编写提示、循环音分组与音量） | 151/151 |
+  | `NovelReaderBackdropTests`（新增 4 项：底板位置/不透明/铺满/不拦截点击、底板在过渡容器之外、绑定未被新增节点打散、章节卡与底板绘制顺序）+ `NovelLayoutAppearanceTests` | 11/11 |
+  | `NarrativeGraphTests`、`NarrativeLibraryTests`、`NarrativeRunnerTests`、`NarrativeStoryTests`、`NarrativeTemplateIdentityTests`、`NovelUIFollowupTests`、`NovelVariableLogicTests` | 67/67 |
+  | `NovelCheckpointTests`、`NarrativeStoryEditorTests` | 27/27 |
+  | `NarrativeGraphInteractionTests`、`NarrativeAvailabilityTests` | 7/7 |
+
+  还原被误改的 `CH01_intro.asset` 之后重跑 `NovelSessionTests` 仍为 151/151，且该资产不再被改写。
+  首轮 `NovelSessionTests` 曾 148/151，3 项新增用例是我自己的推进帧数写错（对白需要两次
+  `Advance` 才能离开、Hide 需要非零时长才会走完），修正用例后 151/151，**不是产品代码缺陷**。
+- 编译：全部改动经 Unity 编译通过，编译期无 error。
+- **未执行**：`NovelGameplayTests`（11 项，含本批重写的 P5/P6 用例）与 `NarrativeObservationPlayTests`（0 项）。
+  前者需要在 EditMode 内进入 Play Mode，本环境里测试运行器启动后停留在 0/11、
+  `EditorApplication.isPlaying` 始终为 false——与 0.10.0 记录里的同一条环境限制一致
+  （改动前同样如此）。**P5/P6 的用例改写因此只有静态审查，没有执行证据。**
+  静态审查中已发现并修正一处会误报的断言：槽位页在 Loading 遮挡期间仍处于打开状态，
+  不能断言它已关闭（候选提交时才统一 `CloseAllPopups`）。
+- **未执行**：框架全量回归、Player 构建、消费项目部署与实际画面/听音验收。
+  底板、背景重设与隐藏语义都直接改变观感，消费项目升级后必须重新看画面。
+
+### 消费项目侧的实际绕法（对照，来自 Call-Me-Heartless 的批次回执）
+
+消费项目把每一处绕法都写进了 `Documentation/NarrativeImports/*.json` 的 `findings` / `appliedOptions` / `notOffered`，
+本批的判定与它们逐条对得上，可作为「修在模板里」的验收对照：
+
+| 缺陷 | 消费项目的绕法 | 本批 |
+|---|---|---|
+| P1 读者页无底板 | 明确拒绝在项目里改预fab（判定为「UI 改动，属布局工具 / EUI 开发中心范围」，`notOffered` 逐字记录），改用 13 条黑色 `Cover` 当幕布遮住透明空档 | 底板修在模板预fab 里，遮罩不再必需 |
+| P2 背景同键重设闪黑 | 11 条 `Background` 里 **8 条把时长改成 0**（`appliedOptions[S1a]`），并自述「这是真实连播里能看到的最频繁的一处断层」 | 幂等重设，时长可恢复 |
+| P3 空 ID 隐藏失效 | 补了 1 条实例 ID（母亲），另用 1 次 `HideAllCharacters` 当章节收尾兜底才真正清场；**仍留 4 条空 ID 隐藏** | 退化语义 + 诊断，4 条自动生效 |
+| P4 章节卡无背景 | 没有重排指令（`notOffered` 明确拒绝），改为在卡片前后各插一条黑色 `Cover` | 底板兜底 + 编写提示 |
+| P5 继续游戏 | 手工把 `NovelContinue` 改成 `NovelSaveUI.Open`（保留两个按钮） | **本批撤回**：维持原设计——继续游戏续读最新进度，读取存档开槽位页。消费项目的改法属于其项目侧选择，模板不采纳 |
+
+P3 的关键确认：消费项目里触发缺陷的两次入场都是 `_positionMode: 1`（归一化）——`prologue_mother` 与
+`prologue_speaker`。归一化入场 `NamedSlot = -1`，正是本批退化规则命中的条件，所以那 4 条遗留的空 ID 隐藏会自动开始生效。
+
+**与消费项目的关系（P5 已撤回）**：消费项目把「继续游戏」和「读档」都指向 `NovelSaveUI.Open` 并保留两个按钮
+（还有 `MainMenuContinueAndLoadBothOpenChooserWithoutTransition` 断言两者都开槽位页）。
+本批曾按任务书照做，随后按用户明确要求**整体回退为原设计**，因此：
+
+- 模板与消费项目在「继续游戏」的行为上**不一致**——模板是直读最新进度，消费项目是开槽位页；
+- `EUIMainPage.cs` 是消费项目在这六个文件里唯一的本地代码改动，而模板这一项已回到原始内容，
+  所以**这个文件在模板升级时不会再冲突**（模板内容 = 他们部署基线的内容）；
+- 若消费项目想跟模板一致，把 `NovelContinue` 的监听从 `NovelSaveUI.Open` 改回 `NovelSaveUI.Continue` 即可。
+
+### 模板保存与封存
+
+| 项 | 值 |
+|---|---|
+| 模板 | `visual-novel` |
+| 版本 | `0.10.0` → **`0.10.1`**（patch，经项目中心 SaveTemplate + 显式 Bump） |
+| 父模板 | `base`，`parentVersion 0.6.4`，`parentContentHash 2257aea46640e1f91735ba006522507d`（未变） |
+| 兼容框架声明 | `0.14.1`（派生模板不能单独声明框架版本，由 `base` 继承；与当前框架 `0.14.12` 的 major.minor 一致，仍在兼容闸门内） |
+| 内容 / 封存 hash | 以 `Packages/com.ember/Templates~/visual-novel/template.json` 为准；两者一致即表示已封存。本文不内嵌 hash——**文档本身在快照范围内**，写死 hash 会让保存后的内容与 metadata 立刻不一致。 |
+| 编辑记录 | `Assets/Editor/EmberEditingTemplate.json` 已同步为 `0.10.1` 与当前内容 hash |
+| 父快照 | `ParentSnapshot~` 未改动（`git status` 0 项） |
+
+保存过程有一条需要留痕的环境问题：**第一次封存时快照里混进了与本批无关的
+`CH01_intro.asset` 被 Unity 重写的结果**。该文件在会话期间被某个更早的测试运行
+（首次全量 EditMode 批次，运行器启动时把内存中的脏资产落盘）从「省略默认字段」的紧凑写法
+重写成「写全字段、未设字段为 0」的写法，其中 `_dialogueVisible` 等字段的实际取值因此与
+改动前不同。已 `git checkout` 还原该资产与同期被重写的 TMP 字体资产 `NovelSerif SDF.asset`，
+重新 SaveTemplate + Bump，并对还原后的快照复核：
+
+- 快照内 `GameResource/Resources/Config/Narrative` 与 `UI/Common/Fonts` 均已回到 HEAD 内容；
+- 重跑 `NovelSessionTests` 151/151 通过后，这两个文件不再被改写——**本批新增/修改的用例不是元凶**；
+- 既有 `NovelActionHandleTests.SampleStoryFingerprintsStayByteIdentical` 与
+  `NovelLocalizationTests.SampleStoryFingerprintsStillMatchThePreChangeBaseline` 在本批中通过，
+  LastLight 的语义指纹没有变化。
+
+快照里另有三项**改动前就已存在的**脏文件被一并纳入（`EmberDebugConfig.asset`、
+`Atlas/LastLight/Backgrounds/rooftop_night.png.meta`、`Atlas/LastLight/Portraits/lin_smile.png.meta`）。
+SaveTemplate 按设计整体快照 `Game/Resources/Ember/Editor/Settings/GameResource` 五个受管目录，
+无法按文件排除；它们不属于本批改动，如需干净批次请先还原这三项再重新 SaveTemplate + Bump。
+
+## 0.10.2 多语言即时切换与示例小说译文（2026-09-26，工作副本未封存）
+
+来源：用户实测反馈「多语言切换好像没生效」。核查结论是**链路通、内容空、两处 Key 冲突**，
+三件事叠在一起让切换看起来完全没反应：
+
+1. 三张多语言表齐备、`GameTableModule` 初始化时就 `Install` 了解析器、界面 TMPEx 的 Key 也都挂好了，
+   但 `novel_ui_text` 50 行里只有 `ui.main.*` 六行有译文，其余 43 行只有 `zh_Hans` →
+   回退链把 `zh_Hant`/`ja`/`en` 全部兜回中文。所以「切了语言，界面还是中文」。
+2. 示例小说（LastLight，`storyId = last_light_m5`）**一句 Key 都没填**：4 个对话资产的 `_textKey` 全空、
+   `Story.asset` 的 `_displayNameKey` 为空、选择/分流资产连字段都还没序列化出来 →
+   正文在任何语言下都不会变。这是「游戏模式里切换不生效」的主因。
+3. 两处「运行期接管的文本仍然挂着 Key」：`EUIMainPanel/TitleText`（挂 `ui.main.Title`）被
+   `EUIMainPage` 写成小说名，`EUINovelChoiceItem/Select/Label`（挂 `ui.reader.Choice.Label`）被
+   `Configure` 写成选项文字。两处代码赋值都不清 Key，于是**每次切语言的 `TextLocalization.RefreshAll()`
+   都会把它们顶回表里的静态值**——主界面标题被换成界面标题、选项文字变成「选项」两个字。
+
+### 语言变更广播（框架层）
+
+- `EmberBroadcastEvent` 新增 `Localization = 7000` 基址与 `LanguageChanged = 7001`（载荷为新语言标识）；
+- `TextLocalization.PublishLanguageChanged(language)` 成为**唯一发布点**：先 `RefreshAll()` 重刷所有活动
+  TMPEx，再播报事件。`NovelLocalization.SetLanguage` 改为调用它；`NovelLocalization.Changed` 静态事件保留，
+  作为旧订阅点继续触发。
+- **不用 `NovelSaveModule.Changed`**：它是存档 IO/反馈通道，每个自动保存稳定点都会触发，语义也不对
+  （语言按设计不进存档、不进指纹）。
+- `TMPEx.SetSource(text)` 新增：写文本并**同时清掉 Key**，给「运行期接管一个挂了 Key 的控件」用。
+  主界面标题、选项文字、阅读页的「停止快进」等按钮文案都改走它。
+
+### 内容侧即时重刷
+
+| 位置 | 做法 |
+|---|---|
+| 当前句 | 不需要额外机制：runner 用 `_resolvedLanguage` 做文本副本缓存键，切语言后下一次取 `CurrentCommand` 就会重解析。`NovelSession.Render` 现在按「同一句只换文本」保留显示进度（`CommandId + LineId + TextRevision` 相同才算同一句），所以切语言**不会**让当前句重播打字机 |
+| 选项 | 运行期 `NovelRoute` 新增 `TextKey`（读定义时一并带入），阅读页显示走 `NovelLocalization.RouteText`；语言变更时阅读页清掉选项缓存代次，下一次渲染整批重建（原来选项文字在读定义时就被烤成当时的语言，会话中切语言不会变） |
+| 提示 / 结局 | 阅读页选择提示改走 `ui.reader.Choice.Prompt`、结局改走 `ui.reader.Ending.Text`（节点自身的 `prompt.<剧情>.<节点>` 仍只在编辑期使用） |
+| 历史 | `NovelHistoryEntry` 新增 `TextKey` 与 `TextHasBindings`；回看时**没有文字变量绑定**的句子按 Key 用当前语言重解析，带绑定的句子固定用存档里的文本（历史里没有可复用的变量值，重解析会露出未替换的占位符）。旧档反序列化为空 → 行为不变，**不推进 SchemaVersion**（与 `SpeakerNameKey` 同口径） |
+| 状态行 / 单位 | 阅读页状态（准备中 / 已暂停 / 结局）、设置页「字/秒」「秒」「正常/减弱/关闭」、槽位名与「尚未保存」、历史「旁白」与空提示、阅读页控制条（自动 ON/OFF、速度、停止快进）都改走配表 |
+| 订阅方 | 阅读页、主界面标题、设置页订阅 `LanguageChanged`；阅读页收到后调新增的 `NovelSession.RefreshLocalization()` 立刻重渲染，所以设置弹窗盖在阅读页上时也能当场看到新语言 |
+
+### 示例小说译文（4 语言补齐）
+
+- 83 条 Say 台词补 `text.last_light_m5.<lineId>`；选项 `option.last_light_m5.<optionId>`（2 + 1 条）；
+  提示 `prompt.last_light_m5.last_light_choice`；章节名 `chapter.last_light_m5.last_light_ch01`；
+  剧情名 `story.last_light_m5`；另有 5 个 `character.*` 与新增 UI 行，`zh_Hant`/`ja`/`en` 全部补齐。
+  原文照旧留在 `_text` / `_displayName`，同时是源语言文本与回退文本。
+- **指纹安全**：`NovelCompatibility.Fingerprint` 不写 `cmd.Text` / `cmd.TextKey`，Routes 只写
+  Id/TargetId/Condition，所以给既有剧情补 Key **不会作废玩家存档**。
+- 译文里的 `{playerName}` 会被替换：`NarrativeRunner` 现在把译文也过一遍
+  `NovelTextBindings.Resolve(text, bindings, ...)`。改动前译文直接覆盖绑定结果，译文里的占位符会被原样显示。
+- `ui.reader.Choice.Label` 刻意留空 `zh_Hant`/`ja`/`en` 三列：它已经不挂任何控件，专门留作
+  `LocalizationResolvesLanguagesAndFallsBack` 的**回退链探针**，补其它 UI 译文时不要填它。
+
+### 验证（本轮实测）
+
+- **编译**：Unity MCP 触发编译，0 error。中途修掉一处我自己引入的错误——`TMPEx.cs` 用 `[HasGC]`
+  但缺 `using Ember.Basic`（CS0246）。
+- **配表烘焙**：`EditorUtility.UnloadUnusedAssetsImmediate()` → `EmberTablePipeline.BakeAndGenerateAll()`
+  → `AssetDatabase.Refresh()`；`Succeeded=True`、0 诊断、24 项产物。烘焙产物里已能读到新 Key 与四个语言列。
+- **跨表核对**（脚本 `.utmp/l10n/verify-l10n.ps1`）：内容表 95 行 / UI 表 70 行，每行 5 列；
+  资产、Prefab、C# 引用的 Key 与表**0 缺失、0 孤儿**；83 条 `zh_Hans` 与资产原文逐字符一致；
+  两条含 `{playerName}` 的行四列都保留了占位符；唯一空列是刻意留空的回退探针行。
+- **测试**：`Game.Narrative.Tests.NovelSessionTests` **179/179 通过**（含多语言、说话人称呼、指纹基线）。
+  其中新增用例 `LanguageSwitchMidSessionRefreshesVisibleTextHistoryAndBroadcast` 覆盖本批的核心契约：
+  当前句按新语言重建、同一条 Say 的显示进度不被重置、历史回看跟着当前语言、广播点发布一次播报一次。
+  **它在第一次运行时抓到一个真实缺陷**：`NovelSession.History` 的投影只复制了 `Text` 等旧字段，
+  没带出新增的 `TextKey`/`TextHasBindings`，于是历史页拿到的条目永远按存档文本显示、切语言不会跟着变；
+  修好投影后通过。整个 `Game.Narrative.Tests` EditMode 批次 **327/328**，唯一失败项
+  `NovelGameplayTests.RealMenuReaderBranchEndingAndRepeatedExit`（真 UI 全流程跑图，报「剧情连续 15 秒未推进：
+  last_light_intro_020 state=Cancelled」）**在本批改动之前就已失败**——同一天的
+  `.utmp/visual-novel-m3/tests-20260926-*.xml` 里 17:47 与 17:53 两批同样失败，18:03 与 18:18 两批通过，
+  属于该用例本身的时序抖动，本轮不计入本批回归，但**需要在 Unity 里手动复跑确认真机表现**。
+- **资产未被测试改写**：跑测试前后对 8 个示例资产做逐字节比对（备份在 `.utmp/l10n/backup/`），
+  全部一致，没有出现 0.10.1 那次的「Unity 重写紧凑 YAML」副作用。
+
+### 未做
+
+- **没有保存进模板快照**（按用户要求先只改项目 `Assets/`）：`Packages/com.ember/Templates~/visual-novel`
+  与本批无关，`template.json` 的 hash/版本未动，`ParentSnapshot~` 未动。要把本批交付给消费项目，
+  还需要一次 SaveTemplate + Bump（框架侧 `EmberBroadcastEvent`/`TextLocalization`/`TMPEx` 的改动
+  也要配套新的框架 tag）。
+- `NovelSaveModule` 的用户可见反馈文案（「正在保存…」「保存成功 · 手动槽 1」「读档成功」等约 15 条）
+  仍是中文硬编码，本次未纳入。
+
+## 0.10.3 安全区归属、输入页规范与保存提醒（2026-09-26，工作副本未封存）
+
+来源：用户复核新加的名字输入页（`EUINovelNameInputPage`）时提出的三点：① 新页面的绑定子组件命名与
+UI 中文简述不符合 EUI 规范；② 除全屏背景外的内容都应放进安全区的合适锚点节点；③ 输入页打开期间
+不能保存，但必须给出明确提醒。用户逐条确认后执行。
+
+### EUISafeArea 归属迁移（7 个页面）
+
+- **判定依据**：`EUISafeArea.UpdateRect` 把自身设为撑满父级（`anchorMin=(0,0)`、`anchorMax=(1,1)` + padding），
+  而 `Center` 又是它的撑满子节点（`anchorMin=(0,0)`、`anchorMax=(1,1)`、offset 全 0），
+  因此**两者 rect 恒等**，把内容节点从 `EUISafeArea` 移进 `Center` 是布局中性的。
+  其余 8 个锚点是零尺寸的点/线，只适合贴边元素，不适合放归一化锚点的整块内容。
+- 迁移清单（`PrefabUtility.LoadPrefabContents` + `SetParent(center, worldPositionStays: false)`，
+  保持原有的兄弟顺序）：主菜单 `TitleText`/`NovelCaption`/`TitleRule`；设置面板 `NovelPreferences`；
+  阅读页 `Dialogue`/`Choices`/`Saves`/`QuickSave`/`QuickLoad`/`ReadingTools`/`ReadingControls`/`RestoreUI`/
+  `FullScreenLayout`；阅读菜单、历史、字号、存档页的 `Panel`/`HistoryPanel`。
+- **实测证据**：迁移脚本对每个被移动节点比对移动前后的世界矩形，7 个页面全部
+  `rectIdentical=True`；迁移后重跑审计探针，9 个页面（含原本就合规的 `EUIGamePlayPanel` 与用户
+  亲手改过的名字输入页）均 **`outsideAnchor=0`**（`EUISafeArea` 的直接子节点只剩 9 个锚点）。
+- 7 个页面的 Binding 都用 UI 中心的 `EUIBindingCodeGenUtility.TryRegenerateCode` 重新生成（`regen=True`）。
+- **连带修掉的硬编码路径**：`NovelUiTextKeyBinder` 的 30+ 条静态文案路径、
+  `NovelLanguageSettingsMigration` 的 `NovelPreferences` 路径、`NovelReadingGameplayTests` 的 3 条
+  `transform.Find` 路径。皮肤表 `novel_skin_sprites` 用 `control`+`node` 相对寻址，唯一 `control` 留空的行
+  指向根节点 `NovelBackdrop`，不受影响（已核对）。
+- 仍留在页面根节点、不在安全区内的：阅读页 `ReadingShading`（上下渐变 + 全屏点击区）与
+  `TitleLayout`（章节卡），以及各页的 `Backdrop`/`NovelBackdrop`。它们属"全屏背景/装饰"，本次按
+  用户口径未动。
+
+### 名字输入页（新页面的规范与强制语义）
+
+- 绑定子组件改名到规范前缀并重新生成：`Title`→`m_Txt_Title`、`NameInput`→`m_Inp_Name`、
+  `Confirm`→`m_Btn_Confirm`（生成字段 `Txt_Title`/`Inp_Name`/`Btn_Confirm`）；root `EUIBinding` 填上
+  UI 中文简述。「名字输入弹窗：开局让玩家输入名字，确认或取消后把结果交回剧情。」——
+  该描述在实现变更后仍适用（结果仍会交回，只是不再有取消按钮）。
+- **移除关闭按钮**：名字输入是**强制步骤**，不给取消出口。删掉节点 `m_Btn_Close`、对应绑定条目
+  （4→3）与页面里的取消接线；`OnClose` 的兜底 `Cancel()`（写默认名）保留，因为读档拆会话、退出到
+  主菜单、故障这些路径仍会关闭页面，没有它剧情会永久停在等待步骤。
+- 漏挂 Key 的两条静态文案补上：`Hint`→`ui.name.Hint`、确定按钮→`ui.name.Confirm`。
+  `m_Txt_Title` 与「×」保持空 Key：标题由步骤资产在运行期写入，挂 Key 会被切语言的 `RefreshAll` 顶掉。
+- **改名的连带影响**：既有 PlayMode 用例 `NovelGameplayTests` 有两处 `Button(..., "Confirm")`，
+  而该 helper 只兼容裸名与 `m_`+名、不兼容 `m_Btn_`+名 → 一并改为 `"Btn_Confirm"`，否则会静默失配。
+
+### 输入期间的保存提醒
+
+- 行为不变：输入节点等待期间状态是 `Executing` + `Wait.CustomStep`，不在稳定点，所以
+  `EUINovelSavePage` 的保存按钮全部禁用、`NarrativeRunner.TryCapture` 也会拒绝（两层门控）。
+- 新增提醒：`EUINovelSavePage.Refresh` 检测到 `Wait.CustomStep` 时，反馈文本优先显示
+  `ui.save.InputPending`（「正在输入名字，完成输入后才能保存。」），不再只把按钮变灰。
+  新增 UI 键已补四语言并烘焙（`Succeeded=True`、0 诊断）。
+
+### 本次新增测试（只写不跑，交用户手动执行）
+
+`Assets/Game/Module/Narrative/Tests/NovelNameInputSaveTests.cs`：3 个 PlayMode 用例，覆盖输入节点
+**前 / 中 / 后**的存读档契约（读回输入前的档必须重新询问且不残留名字、输入期间保存被拒且不写盘、
+此时读档要干净关掉输入页、留空写默认名且剧情继续、输入后的档保留名字且不再询问）。
+用例把存档目录换到 `.utmp/name-input-saves/<guid>`，不碰本机存档。**未运行**，只做了编译验证（0 error）。
+
+## 2026-09-27 前两章（序章＋第一章）多语言补齐（工作副本未封存）
+
+来源：用户指出「目前的前两章，没有多语言，需要补充」。`20260925-chapter01-*`、`20260925-cmh-*`、
+`20260926-cmh-prologue-*` 几批导入/演出记录里一直挂着「142 句台词多语言 Key 为空」，
+本批按 `0.10.2` 给示例小说 LastLight 补译文的同一套口径把它补完。
+
+### 写入范围（与示例小说用的两张表一致）
+
+- 对白 **142 句** → `text.<storyId>.<lineId>`，覆盖 `CH01_Prologue_Classroom/Home` 与
+  `CH02_Chapter01_*` 共 11 个对白资产。
+- 选项 / 分流 **4 条** → `option.<storyId>.<optionId>`（`CH02_Chapter01_HubChoice` 3 条 +
+  `CH02_Chapter01_HubBranch` 1 条）。
+- 章节名 **3 条** → `chapter.<storyId>.<chapterId>`（序章、第一章、结局）。
+- 角色名 **7 条** → `character.CMH_inner / sy / mq / dy / lxz_r / srq / zz`，即前两章实际出场的角色。
+- 全部落在 `novel_content_text.etable.csv`（新增 156 行，95 → 251 行）；`novel_ui_text` 本就是齐的，未动。
+
+### 决策
+
+- **Key 用既有 GUID ID，不改成可读名**：`NovelCompatibility.Fingerprint` 写的是
+  `story.Id` / `c.Id` / `n.Id` / `cmd.LineId`，把 `_storyId` 或节点 ID 换成可读名会让既有存档全部失配。
+  代价是 Key 长（`text.0942d3f17d504f01ba64169b17e2a578.7520a61c920742068a5b93ca61e7bafd`），
+  换来的是「补语言不动作弊存档」。原文照旧留在 `_text` / `_displayName`，同时是源语言与回退文本。
+- **译文口径**（四列都填，与 LastLight 一致）：拂云观 → `拂雲觀` / `拂雲観` / `Fuyun Temple`；
+  妖怪 → `妖怪` / `yaoguai`；师伯·师叔公 → `senior / grand martial uncle`；导员 → `指导教师` /
+  `Counselor`；人名沿用示例小说的做法（zh/ja 保留汉字，en 用拼音，如 林夕染 → `Lin Xiran`）。
+- **`【主控昵称】` 四列原样保留**：项目还没有昵称变量与绑定，占位符按字面显示；等接上
+  `NovelTextBinding` 后四列会一起被替换，所以译文里不能译掉它。
+- **一条台词带内嵌换行**（`5b5e61b8…` 原文结尾有两个换行）：CSV 用 RFC 4180 引号跨行写法保留，
+  四列一致，避免译文与原文的段落间距不同。
+
+### 验证（本轮实测）
+
+- **双向核对**（Unity 内脚本，只读不写）：模板 156 行 ↔ 资产 149 个对象 Key，**0 缺失、0 孤儿**；
+  142 条 `zh_Hans` 与资产 `_text` 逐字符一致；四列无空值；`_text` 与占位符一致性通过。
+  这一轮抓到我自己写的 12 条英文译文含半角逗号却没加引号——被列数校验挡下后逐条修正。
+- **配表烘焙**：`UnloadUnusedAssetsImmediate()` → `BakeAndGenerateAll()` → `AssetDatabase.Refresh()`；
+  `Succeeded=True`、0 诊断、24 项产物。**踩坑记录**：CSV 是在 Unity 之外改写的，第一次烘焙读到的是
+  上一次导入的缓存（产物仍是 95 行），必须 `AssetDatabase.ImportAsset(csv, ForceUpdate)` + `Refresh()`
+  之后再烘焙；不要在 `Refresh` 之前烘焙。
+- **解析核对**：装配烘焙后的目录后，对 156 行 × 4 语言 = **624 次 `NovelLocalization.TryGetContent`
+  全部命中且与 CSV 完全一致（0 未命中、0 不一致）**；另抽查台词与 `character.CMH_lxz_r` 四语言取值。
+- **字体**：新增译文里 980 个唯一非 ASCII 字符，源 TTF `NotoSerifSC` **缺字 0**
+  （`NovelSerif SDF` 是 Dynamic，字形运行时按需入图集，`HasCharacter` 在编辑期报缺属正常）。
+- **测试**：见下方「测试结果」。
+
+### 测试结果
+
+`Game.Narrative.Tests` EditMode 全量：**332 项，325 通过 / 7 失败 / 0 跳过**，证据
+`.utmp/visual-novel-m3/tests-20260926-195639581.xml`（MCP job 因跨 Play Mode 的域重载被判 orphaned，
+进度丢失，以 `NarrativeTestReport` 落盘的 XML 为准——这一点与 0.10.2 的记录一致）。
+
+- **多语言相关用例全绿**：`LocalizationResolvesLanguagesAndFallsBackToSource`（读的正是本批改过的
+  真实配表）、`LocalizationResolvesCharacterNamesAndFallsBack`、`RunnerResolvesTextKeyPerLanguageAndFallsBack`、
+  `LanguageSwitchMidSessionRefreshesVisibleTextHistoryAndBroadcast`、`LocalizationNeverChangesStoryFingerprint`、
+  `SpeakerNameKey*`，全部通过。`NovelSessionTests` 179/179、`NarrativeStoryTests` 16/16、
+  `NarrativeRunnerTests` 17/17、`NovelCheckpointTests` 22/22、`NarrativeLibraryTests` 3/3。
+- **7 项失败全部集中在 `NovelGameplayTests`（真 UI 跑图族）**，且失败签名统一为
+  `session=null, wait=, pauses=, loading=False`（`NovelGameplayTests.cs:185` 的 `Wait` helper），
+  即**会话根本没起来**，与本批的文本/Key/配表无关：两套真实剧情的 `TryReadDefinition` 与三个章节的
+  `TryReadDefinition(allowChapterExit: true)` 都是 **0 错误**，本轮也没有改动任何启动、UI 或校验代码。
+- 这 7 项不是本批引入的，但**也不能算「本来就这样」**：对照改动前最近的批次
+  `.utmp/visual-novel-m3/tests-20260925-170710468.xml`（258 项，256 通过 / 2 失败）——
+  `M4RealHistorySaveNestingAndHiddenDialogueKeepPresentation` 与
+  `MainMenuContinueAndLoadBothOpenChooserWithoutTransition` 当时是**通过**的，另外 3 项
+  `NameInput*`（0.10.3 记的「只写不跑」）当时还不存在，2 项当时失败的用例现在也改成了 `session=null`。
+  两次运行之间工作副本被**另一个会话**改过（文件时间 02:26–03:01：视觉小说模板升到 0.13.0 的
+  `.utmp/ember-template-conflict-recovery/20260927-022659-predeploy-0.13.0`、名字输入页与
+  `NovelGameplayTests.cs`、`EUIMainPage.cs`、`EUISettingPage.cs`）。运行时还观察到
+  `[EmberUI.Manager] 页面 'EUIMainPanel' 处于 Showing，操作 'Close' 已挂起`——主面板关不掉正好会
+  让新游戏进不去阅读页，与本族failure签名吻合。
+  **本批不动这块**：需要在 Unity 里人工复跑确认真机表现，并先确认那次模板升级是否已经收尾。
+- 本批自己的文件足迹（按 mtime 核对，仅这些）：
+  `CallMeHeartless` 下 16 个剧情资产（11 对白 + 3 章节 + 1 选项 + 1 分流）、
+  `novel_content_text.etable.csv`、烘焙产物 `novel_content_text.bytes`、本文件；
+  另 `Assets/Resources/EmberDebugConfig.asset` 被 `SaveAssets()` 顺手重写了（它是
+  `NarrativeTestArtifactGuard` 的易变文件之一，非业务改动）。LastLight 与其余资产未被本批触碰。
+
+### 未做
+
+- **剧情名 `story.<storyId>` 未加**：`_displayName` 是英文作品名「Call Me Heartless」，
+  中文名属于策划决定，本批不擅自起名，该字段继续按原文显示。
+- **`【主控昵称】` 当时仍未绑定**：属昵称系统范围（`NovelPlayerNameInputStep` 已有，但剧情里没声明
+  `playerName` 变量、也没写 Binding），与本批无关。
+  *（2026-09-27 已解决：见下方「CMH 开局命名段」——剧情声明了全局 `playerName`、登记了三个自定义节点脚本，
+  11 处占位符连同文案表四语言列一起换成 `{playerName}` 绑定。）*
+- **模板快照未动**（同 `0.10.2`）：只改项目 `Assets/`，`template.json` 与 `ParentSnapshot~` 未改，
+  这批四个语言列不会自动进入模板；面向消费项目交付需要另做 SaveTemplate + Bump。
+- **译文是初翻**：四语言都填满以保证切语言可见效果，建议策划/翻译复核后再定稿；
+  核对用的片段文件留在 `Temp/localization/cmh_content_text_append.csv`（`Temp/` 已 gitignore）。
+
+## 2026-09-27 CMH 开局命名段（工作副本未封存）
+
+来源：用户要求「给目前的 CMH 小说加上开局的玩家命名步骤，输入框前几句模仿人睡迷糊后自问自答自己是谁，
+输入后想起来自己是谁；后面的【主控昵称】就是这个名字」。技能 `ember-vn-polish-presentation`，
+批次 `20260927-cmh-opening-name-01`，回执确认后执行。
+
+### 结论先行
+
+- **没有新建自定义节点**：项目早已具备 `NovelPlayerNameInputStep` + `EUINovelNameInputPage`，
+  示例小说 LastLight 的 `CH01_intro` 就是这套写法，本批按示例复用。
+- 缺的是三件「接线」：剧情没声明全局 `playerName`（`_globals` 为空）、
+  三个自定义节点脚本没登记（`_customSteps` 为空）、`【主控昵称】` 只是字面占位符。
+- `【主控昵称】` 一句有 `textKey`，源语言走**文案表**，所以只改资产 `_text` 不管用，
+  **必须同步改 `novel_content_text.etable.csv` 的四语言列并重烘焙**。
+
+### 写入内容（用户在选择页面选定：P2 · W1 · T1 · S1 · B1 · B3）
+
+- **位置**：插在压黑遮罩之后、章节卡「序章」之前（序章教室节点索引 2），共 **11 条**命令 ——
+  `开场段落·Begin` → 六句迷糊自问 → `输入玩家名字` → 两句想起 → `开场段落·End`；
+  包成一个二级步骤组「开局 · 输入名字」。进场既有指令的顺序与 ID 一个没动。
+- **迷糊台词**（旁白，姓名框留空，`Fade` 0.9 秒）：
+  「……好吵。」→「像是在很远的地方有人说话…」→「我在哪儿？…」
+  →「对了，是教室。上课上到一半，睡着了。」→「可是——我是谁？」→「名字就在嘴边，怎么就是想不起来。」
+  输入后：「（{playerName}。）」→「（……对了，想起来了。我是{playerName}。）」
+- **对照示例**：LastLight 用的是同一套 Begin/End（锁玩家推进 + 固定 1.6 秒自动间隔），
+  这次照搬，玩家读完后自然进入输入框，不会被手快点击抢跳。
+- **昵称接线**：剧情声明全局 `playerName`（String，初始「旅人」）；登记
+  `OpeningSegmentBegin` / `PlayerNameInputStep` / `OpeningSegmentEnd` 三个脚本资产；
+  11 处 `【主控昵称】` → `{playerName}` 绑定（台词修订 1 → 2）；文案表 11 行 × 四语言共 48 处占位符同步替换，
+  另追加 8 行新增台词的四语言文案；`ImportAsset(ForceUpdate)` 后
+  `EmberTablePipeline.BakeAndGenerateAll()`（Succeeded、0 诊断、24 项产物）。
+- **未选**：B2（把主控内心台词 51 句的姓名框从「我」改成玩家名字）——保持默认不选。
+
+### 验证（本轮实测）
+
+- **保持项比对**（以指令 ID 对齐，`.utmp/vn-presentation/20260927-cmh-opening-name-01/preservation-comparison.txt`）：
+  原指令零删除；新增 11 条全部落在序章教室且索引连续（2..12）；只有声明的 11 条台词发生正文/绑定变化；
+  **除 text/binds 外没有任何字段被改动**；选项/分流/结局/章节出口/变量声明逐字不变。
+- **定义与校验**：`TryReadDefinition` 0 错误，三章逐章 0 错误；三个自定义节点脚本 `Validate` 全 OK。
+- **配表解析**：15 个 Key × 4 语言 = 60 次 `TryGetContent` 全部命中且与 CSV 一致；
+  用 `NovelTextBindings.Resolve` 实调，`playerName=小黑` 得到「（小黑。）」。
+- **用例**：217 + 179 + 58 项全绿（`tests-20260926-203133261/203150815/203203763.xml`）。
+- **指纹**：本批 12 个文件变化（1 剧情 + 2 章节 + 7 对话节点 + 源表 + 烘焙产物），无 `.meta` 变化、无新增资源。
+
+### 与本批无关的既有失败（记录在案，未修）
+
+`NovelGameplayTests.NameInput*` 三项失败（`tests-20260926-203513451.xml`）。原因已取证：
+它们通过真实主菜单「开始游戏」进入，然后等 LastLight 示例的稳定点 `sample_open_line_2/3`，
+而 `Library.asset` 的 `_current` 已是 `CallMeHeartless`，`sample_open_*` 只存在于 LastLight 的 `CH01_intro`
+（另一会话随 0.13.0 模板升级带入的 `NovelNameInputSaveTests.cs` 至今未纳入 git），
+因此无论本批是否改动都等不到该稳定点。
+
+### 未做 / 留给下一批
+
+- `CH02_Chapter01_Arrival` 的 `917631bc…`（林夕染自报家门那句）**原本就是空说话人**，姓名框不显示「林夕染」；
+  这是导入期就存在的作者侧缺口，本批按保持项要求原样保留。
+- 主控内心台词（`CMH_inner`，姓名框显示「我」，51 句）仍未绑定说话人变量（B2 未选）。
+- 输入页标题仍是共享资产里的「请输入你的名字」、留空回退名仍是「旅人」：该资产同时被 LastLight 使用，
+  且 `NovelPlayerNameInputStep` 未覆写 `ScriptId`，无法为 CMH 另建同类型资产（会触发「ScriptId 重复」）。
+- 本批改变剧情语义指纹，优化前的存档可能被判为不兼容；未删除任何存档。
+- 进场观感需要从新游戏人工验收（黑幕下的自问节奏、输入页弹出时机、报名字后接标题卡与 BGM 的手感）。
+- 批次记录：`Assets/Game/Documentation/NarrativeImports/20260927-cmh-opening-name-01-presentation.json`。

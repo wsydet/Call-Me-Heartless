@@ -17,7 +17,8 @@ namespace Game.Narrative
         #region 外部方法
         [HasGC]
         public static IReadOnlyList<NarrativeError> Validate(NovelChapter chapter, INarrativeCatalog catalog,
-            IReadOnlyDictionary<string, NovelValue> globals = null, bool allowChapterExit = false)
+            IReadOnlyDictionary<string, NovelValue> globals = null, bool allowChapterExit = false,
+            IReadOnlyDictionary<string, NovelCustomStepSO> customSteps = null)
         {
             var errors = new List<NarrativeError>();
             void Error(string code, string message, string node = null, string command = null,
@@ -89,9 +90,9 @@ namespace Game.Narrative
                     if (c.Kind == NovelCommandKind.Opacity && (!Enum.IsDefined(typeof(NovelTargetKind), c.TargetKind) ||
                         c.TargetKind == NovelTargetKind.Mask || c.TargetKind == NovelTargetKind.Effect ||
                         c.TargetKind == NovelTargetKind.Character && string.IsNullOrWhiteSpace(c.InstanceId) ||
-                        string.IsNullOrWhiteSpace(c.ActionId) || !NovelActionHandle.ValidTime(c.Delay) ||
+                        !NovelActionHandle.ValidTime(c.Delay) ||
                         !NovelActionHandle.ValidTime(c.Opacity) || c.Opacity > 1))
-                        Error("BadAction", "透明度动作需要有效目标、动作 ID、0–1 透明度和非负延迟；遮罩请用 Cover/Flash，粒子实例使用 EffectPlay/EffectStop", node.Id, c.CommandId);
+                        Error("BadAction", "透明度动作需要有效目标、0–1 透明度和非负延迟；遮罩请用 Cover/Flash，粒子实例使用 EffectPlay/EffectStop", node.Id, c.CommandId);
                     if (c.Kind == NovelCommandKind.HideAllCharacters && !Enum.IsDefined(typeof(NovelEase), c.Ease)) Error("BadEase", "隐藏全部立绘的缓动无效", node.Id, c.CommandId);
                     string cameraError = NovelCameraRules.Validate(c);
                     if (cameraError != null) Error("BadCamera", cameraError, node.Id, c.CommandId);
@@ -99,14 +100,18 @@ namespace Game.Narrative
                     if (textError != null) Error("BadText", textError, node.Id, c.CommandId);
                     string mediaError = NovelMediaRules.Validate(c);
                     if (mediaError != null) Error("BadMedia", mediaError, node.Id, c.CommandId);
-                    if (NovelMediaRules.IsAudio(c.Kind) && !actionIds.Add(NovelMediaRules.ActionId(c)))
-                        Error("BadActionId", "声音动作 ID 在本章重复", node.Id, c.CommandId);
                     string screenError = NovelScreenRules.Validate(c);
                     if (screenError != null) Error("BadScreenAction", screenError, node.Id, c.CommandId);
                     string actorError = NovelActorRules.Validate(c);
                     if (actorError != null) Error("BadActor", actorError, node.Id, c.CommandId);
-                    if (NovelActorRules.IsAction(c.Kind) && !actionIds.Add(c.ActionId ?? ""))
-                        Error("BadActionId", "动作 ID 在本章重复", node.Id, c.CommandId);
+                    // 声音与视觉动作共用一条句柄唯一性规则，只比较解析值：留空 ActionId 时回退到步骤 ID，
+                    // 而步骤 ID 已在本轮前面保证章节内唯一，所以回退不会把两条动作判成冲突。
+                    // EffectPlay / EffectStop 是即时操作、不创建句柄，因此这里用 IsAudio 而不是 IsMedia。
+                    if ((NovelMediaRules.IsAudio(c.Kind) || NovelActorRules.IsAction(c.Kind)) &&
+                        !actionIds.Add(NovelActionHandle.ResolveId(c)))
+                        Error("BadActionId", string.IsNullOrWhiteSpace(c.ActionId)
+                            ? "动作 ID 在本章重复：留空的动作回退到步骤 ID " + c.CommandId + "，与另一个句柄重名"
+                            : "动作 ID 在本章重复：" + c.ActionId, node.Id, c.CommandId);
                     if (c.Kind == NovelCommandKind.WaitActions && (c.WaitActions.Count == 0 ||
                         System.Linq.Enumerable.Any(c.WaitActions, string.IsNullOrWhiteSpace)))
                         Error("BadActionWait", "等待列表不能为空，填写已启动的动作 ID", node.Id, c.CommandId);
@@ -125,6 +130,29 @@ namespace Game.Narrative
                         if (string.IsNullOrWhiteSpace(c.Text)) Error("EmptyText", "台词为空", node.Id, c.CommandId);
                         if (!string.IsNullOrEmpty(c.CharacterId) && (catalog == null || !catalog.HasCharacter(c.CharacterId)))
                             Error("MissingCharacter", "角色键不存在", node.Id, c.CommandId, key: c.CharacterId);
+                        // 说话人变量只覆盖显示名，不进指纹；但类型必须确定，否则运行期会静默退回角色名。
+                        if (!string.IsNullOrWhiteSpace(c.SpeakerVariableId))
+                        {
+                            var speakerSource = c.SpeakerVariableScope == NovelVariableScope.Global ? globals : variables;
+                            if (!Enum.IsDefined(typeof(NovelVariableScope), c.SpeakerVariableScope) || speakerSource == null ||
+                                !speakerSource.TryGetValue(c.SpeakerVariableId, out NovelValue speakerValue) ||
+                                speakerValue.Type != NovelValueType.String)
+                                Error("BadSpeakerVariable", "说话人变量必须是已声明的字符串变量", node.Id, c.CommandId);
+                        }
+                    }
+                    if (c.Kind == NovelCommandKind.CustomStep)
+                    {
+                        if (string.IsNullOrWhiteSpace(c.CustomStepId))
+                            Error("BadCustomStep", "自定义节点必须选择脚本", node.Id, c.CommandId);
+                        else if (customSteps == null)
+                            Error("MissingStory", "自定义节点必须在剧情会话中运行", node.Id, c.CommandId);
+                        else if (!customSteps.TryGetValue(c.CustomStepId, out NovelCustomStepSO script) || script == null)
+                            Error("BadCustomStep", "自定义节点脚本未在本剧情登记：" + c.CustomStepId, node.Id, c.CommandId);
+                        else
+                        {
+                            string scriptError = script.Validate(new NovelCustomStepValidation(chapter.Id, node.Id, c.CommandId, variables, globals));
+                            if (!string.IsNullOrEmpty(scriptError)) Error("BadCustomStep", scriptError, node.Id, c.CommandId);
+                        }
                     }
                     bool needsResource = NovelMediaRules.NeedsResource(c.Kind) || (c.Kind == NovelCommandKind.CrossFade || c.Kind == NovelCommandKind.Wipe) || (c.Kind >= NovelCommandKind.Background && c.Kind <= NovelCommandKind.Voice) || (c.Kind == NovelCommandKind.Say && !string.IsNullOrEmpty(c.ResourceKey));
                     if (c.Kind == NovelCommandKind.Character || c.Kind == NovelCommandKind.Background)

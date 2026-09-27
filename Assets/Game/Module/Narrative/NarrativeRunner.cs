@@ -37,16 +37,28 @@ namespace Game.Narrative
         public long AutoSaveRevision { get; private set; }
         public event Action Changed;
         private NovelCommand _resolvedSource, _resolvedCommand;
+        // 语言也是这份文本副本的缓存键：切语言后必须重建。
+        private string _resolvedLanguage;
         public NovelCommand CurrentCommand
         {
             get
             {
                 var raw = _node?.Kind == NovelNodeKind.Dialogue && _commandIndex >= 0 && _commandIndex < _node.Commands.Count ? _node.Commands[_commandIndex] : null;
-                if (raw == null || raw.Kind != NovelCommandKind.Say || raw.TextBindings.Count == 0) return raw;
-                if (_resolvedSource != raw)
+                if (raw == null || raw.Kind != NovelCommandKind.Say) return raw;
+                bool bindings = raw.TextBindings.Count > 0;
+                bool localized = !string.IsNullOrEmpty(raw.TextKey);
+                if (!bindings && !localized) return raw;
+                string language = localized ? NovelLanguageSettings.Current : null;
+                if (_resolvedSource != raw || _resolvedLanguage != language)
                 {
-                    _resolvedCommand = raw.WithResolvedText(NovelTextBindings.Resolve(raw, _variables, _globals));
-                    _resolvedSource = raw;
+                    string text = bindings ? NovelTextBindings.Resolve(raw, _variables, _globals) : raw.Text;
+                    // 多语言在变量绑定之后覆盖：Key 命中就用译文，否则保留原文。
+                    // 译文同样走一遍文字绑定替换，否则译文里的 {playerName} 会被原样显示出来。
+                    // 校验仍按原文进行，所以译文变短也不会让正文节奏点越界报错。
+                    if (localized && NovelLocalization.TryGetContent(raw.TextKey, out string translated))
+                        text = bindings ? NovelTextBindings.Resolve(translated, raw.TextBindings, _variables, _globals) : translated;
+                    _resolvedCommand = raw.WithResolvedText(text);
+                    _resolvedSource = raw; _resolvedLanguage = language;
                 }
                 return _resolvedCommand;
             }
@@ -81,7 +93,7 @@ namespace Game.Narrative
         {
             if (nodeId == null || !_nodes.TryGetValue(nodeId, out NovelNode next))
             { Fault("BadTarget", "目标节点不存在"); return; }
-            _resolvedSource = _resolvedCommand = null;
+            _resolvedSource = _resolvedCommand = null; _resolvedLanguage = null;
             _node = next; _commandIndex = 0; _options.Clear();
             _state = NarrativeState.Executing; _wait = NarrativeWait.None;
         }
@@ -255,7 +267,8 @@ namespace Game.Narrative
 
         public bool SetPresentationWait(long generation, long positionVersion, NarrativeWait reasons)
         {
-            const NarrativeWait allowed = NarrativeWait.Resource | NarrativeWait.Transition | NarrativeWait.Voice | NarrativeWait.Actions;
+            const NarrativeWait allowed = NarrativeWait.Resource | NarrativeWait.Transition | NarrativeWait.Voice |
+                NarrativeWait.Actions | NarrativeWait.CustomStep;
             if (!Matches(generation, positionVersion) || (_wait & NarrativeWait.Presentation) == 0 || (reasons & ~allowed) != 0) return false;
             return Mutate(() => _wait = NarrativeWait.Presentation | reasons, false);
         }

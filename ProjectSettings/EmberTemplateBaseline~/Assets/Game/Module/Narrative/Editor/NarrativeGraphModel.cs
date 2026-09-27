@@ -59,7 +59,9 @@ namespace Game.Narrative.Editor
             command.FindPropertyRelative("_commandId").stringValue = Guid.NewGuid().ToString("N");
             command.FindPropertyRelative("_lineId").stringValue = Guid.NewGuid().ToString("N");
             command.FindPropertyRelative("_textRevision").intValue = 1;
-            command.FindPropertyRelative("_actionId").stringValue = Guid.NewGuid().ToString("N");
+            // 动作 ID 是可选的等待句柄别名，默认留空并回退到指令 ID。复制节点会连源数据的
+            // _actionId 一起 Instantiate，所以这里必须显式清空，否则复制出的句柄会和源节点重名。
+            command.FindPropertyRelative("_actionId").stringValue = string.Empty;
         }
         #endregion
         // --------------------------------------------------------
@@ -228,7 +230,7 @@ namespace Game.Narrative.Editor
                 {
                     item.FindPropertyRelative("_kind").enumValueIndex = 0;
                     item.FindPropertyRelative("_scope").enumValueIndex = 0;
-                    foreach (string field in new[] { "_text", "_characterId", "_resourceKey", "_variableId" }) item.FindPropertyRelative(field).stringValue = "";
+                    foreach (string field in new[] { "_text", "_characterId", "_resourceKey", "_variableId", "_speakerNameKey" }) item.FindPropertyRelative(field).stringValue = "";
                     item.FindPropertyRelative("_duration").floatValue = 0;
                     item.FindPropertyRelative("_volume").floatValue = 1;
                     item.FindPropertyRelative("_cameraZoom").floatValue = 1;

@@ -7,7 +7,21 @@ namespace Game.Narrative
     public enum NovelValueType { Bool, Int, String }
     public enum NovelComparison { Equal, NotEqual, Greater, GreaterOrEqual, Less, LessOrEqual }
     public enum NovelJunction { All, Any }
-    public enum NovelCommandKind { Say, SetVariable, Wait, Background, Character, BGM, SFX, Voice, Opacity, WaitActions, Move, Scale, Rotate, Mirror, Layer, Gesture, Emphasis, Shake, Cover, Flash, CrossFade, EffectPlay, EffectStop, BGMStop, AmbientPlay, AmbientStop, AmbientVolume, DialogueVisibility, Camera, Wipe, HideAllCharacters, CalculateVariable, RandomVariable }
+    public enum NovelCommandKind { Say, SetVariable, Wait, Background, Character, BGM, SFX, Voice, Opacity, WaitActions, Move, Scale, Rotate, Mirror, Layer, Gesture, Emphasis, Shake, Cover, Flash, CrossFade, EffectPlay, EffectStop, BGMStop, AmbientPlay, AmbientStop, AmbientVolume, DialogueVisibility, Camera, Wipe, HideAllCharacters, CalculateVariable, RandomVariable,
+        /// <summary>
+        /// 立即切入当前曲目的高潮段，播完自动回循环。
+        /// <b>必须继续追加在枚举末尾：</b>NovelMediaRules.IsAudio 与校验器里有
+        /// <c>k &gt;= BGMStop &amp;&amp; k &lt;= AmbientVolume</c> 这类范围判断，
+        /// 插在中间会静默改变这些范围的语义。
+        /// </summary>
+        BGMClimax,
+        /// <summary>
+        /// 自定义节点（脚本步骤）：按 <c>_customStepId</c> 找到已登记在剧情清单里的
+        /// <see cref="NovelCustomStepSO"/> 脚本并执行，按需等待它完成。
+        /// <b>同样只能继续追加在枚举末尾：</b>NovelMediaRules / NovelScreenRules /
+        /// NovelActorRules / 校验器 / 指纹里都有基于枚举区间的判断，插在中间会静默改变它们的语义。
+        /// </summary>
+        CustomStep }
     public enum NovelIntegerOperation { Assign, Add, Subtract, Multiply, Divide, Modulo }
     public enum NovelNodeKind { Dialogue, Choice, Branch, Ending, ChapterExit }
     public enum NovelVariableScope { Chapter, Global }
@@ -150,6 +164,8 @@ namespace Game.Narrative
         [SerializeField] private string _lineId;
         [SerializeField] private int _textRevision = 1;
         [SerializeField] private string _characterId;
+        /// <summary>说话人称呼的多语言 Key；留空时用角色名。用于「名字揭晓前显示 ？？？」这类临时称呼。</summary>
+        [SerializeField] private string _speakerNameKey;
         [SerializeField, TextArea] private string _text;
         [SerializeField] private string _resourceKey;
         [SerializeField] private string _variableId;
@@ -160,6 +176,11 @@ namespace Game.Narrative
         [SerializeField] private string _operandVariableId;
         [SerializeField] private NovelVariableScope _operandScope;
         [SerializeField] private int _integerOperand;
+        /// <summary>自定义节点引用的脚本稳定 ID（<see cref="NovelCustomStepSO.ScriptId"/>）；脚本资产登记在剧情清单里。</summary>
+        [SerializeField] private string _customStepId;
+        /// <summary>说话人显示名的变量 ID；填了就覆盖称呼 Key / 角色名的显示结果，不改变对白角色键。</summary>
+        [SerializeField] private string _speakerVariableId;
+        [SerializeField] private NovelVariableScope _speakerVariableScope = NovelVariableScope.Global;
         [SerializeField] private int _randomMin, _randomMax = 99;
         [SerializeField] private NovelPortraitSlot _slot;
         [SerializeField] private NovelVisualAction _visualAction;
@@ -192,6 +213,8 @@ namespace Game.Narrative
         [SerializeField] private bool _keepOnSceneChange;
         [SerializeField] private string _bindingId;
         [SerializeField] private float _volume = 1;
+        /// <summary>内容多语言 Key；留空时显示 _text（原文），填了就从 novel_content_text 取当前语言文本。</summary>
+        [SerializeField] private string _textKey;
         #endregion
         // --------------------------------------------------------
         #region 内部参数
@@ -224,7 +247,9 @@ namespace Game.Narrative
         public string LineId => _lineId;
         public int TextRevision => _textRevision;
         public string CharacterId => _characterId;
+        public string SpeakerNameKey => _speakerNameKey;
         public string Text => _text;
+        public string TextKey => _textKey;
         public string ResourceKey => _resourceKey;
         public string VariableId => _variableId;
         public NovelVariableScope Scope => _scope;
@@ -234,6 +259,9 @@ namespace Game.Narrative
         public string OperandVariableId => _operandVariableId;
         public NovelVariableScope OperandScope => _operandScope;
         public int IntegerOperand => _integerOperand;
+        public string CustomStepId => _customStepId;
+        public string SpeakerVariableId => _speakerVariableId;
+        public NovelVariableScope SpeakerVariableScope => _speakerVariableScope;
         public int RandomMin => _randomMin;
         public int RandomMax => _randomMax;
         public NovelPortraitSlot Slot => _slot;
@@ -286,17 +314,22 @@ namespace Game.Narrative
             Color? color = null, float hold = 0, bool wholeReader = false, bool persistent = false, bool keepOnSceneChange = false, string bindingId = null, float volume = 1, NovelTextMode textMode = NovelTextMode.Dialogue, NovelTextBeat[] textBeats = null, bool dialogueVisible = true, float cameraZoom = 1, NovelWipeDirection wipeDirection = NovelWipeDirection.LeftToRight, NovelTextReveal textReveal = NovelTextReveal.Default, float textFadeDuration = .8f, float titleExitDuration = .65f, float textSpeedMultiplier = 1, NovelEase textEase = NovelEase.SmoothStep,
             NovelIntegerOperation integerOperation = NovelIntegerOperation.Assign, int integerOperand = 0,
             string operandVariableId = null, NovelVariableScope operandScope = NovelVariableScope.Chapter,
-            int randomMin = 0, int randomMax = 99, NovelTextBinding[] textBindings = null)
+            int randomMin = 0, int randomMax = 99, NovelTextBinding[] textBindings = null, string textKey = null,
+            string speakerNameKey = null, string customStepId = null,
+            string speakerVariableId = null, NovelVariableScope speakerVariableScope = NovelVariableScope.Global)
         {
             _textBindings = new List<NovelTextBinding>(textBindings ?? Array.Empty<NovelTextBinding>());
             _integerOperation = integerOperation; _integerOperand = integerOperand;
             _operandVariableId = operandVariableId; _operandScope = operandScope;
             _randomMin = randomMin; _randomMax = randomMax;
+            _customStepId = customStepId;
+            _speakerVariableId = speakerVariableId; _speakerVariableScope = speakerVariableScope;
             _textEffectsVersion = 1;
             _cameraZoom = cameraZoom; _wipeDirection = wipeDirection;
             _textReveal = textReveal; _textFadeDuration = textFadeDuration; _titleExitDuration = titleExitDuration; _textSpeedMultiplier = textSpeedMultiplier; _textEase = textEase;
             _textMode = textMode; _textBeats = new List<NovelTextBeat>(textBeats ?? Array.Empty<NovelTextBeat>()); _dialogueVisible = dialogueVisible;
-            _commandId = commandId; _kind = kind; _text = text; _lineId = lineId;
+            _commandId = commandId; _kind = kind; _text = text; _lineId = lineId; _textKey = textKey;
+            _speakerNameKey = speakerNameKey;
             _characterId = characterId; _resourceKey = resourceKey; _variableId = variableId;
             _value = value; _duration = duration; _textRevision = textRevision; _scope = scope;
             _slot = slot; _visualAction = visualAction;
@@ -319,13 +352,19 @@ namespace Game.Narrative
         #region 内部参数
         public string Id { get; }
         public string Text { get; }
+        /// <summary>
+        /// 选项文本的多语言 Key。
+        /// <para><see cref="Text"/> 是读定义时按当时语言取到的快照，会话进行中切语言不会变；
+        /// 显示时请用 <see cref="NovelLocalization.RouteText"/> 按 Key 重新解析。</para>
+        /// </summary>
+        public string TextKey { get; }
         public string TargetId { get; }
         public NovelCondition Condition { get; }
         #endregion
         // --------------------------------------------------------
         #region 外部方法
-        public NovelRoute(string id, string text, string targetId, NovelCondition condition = null)
-        { Id = id; Text = text; TargetId = targetId; Condition = condition ?? new NovelCondition(); }
+        public NovelRoute(string id, string text, string targetId, NovelCondition condition = null, string textKey = null)
+        { Id = id; Text = text; TextKey = textKey; TargetId = targetId; Condition = condition ?? new NovelCondition(); }
         #endregion
     }
 

@@ -12,6 +12,8 @@ namespace Game.Narrative
         private NovelEmphasisMode _emphasisMode;
         private string _emphasisInstance;
         private float _dimFactor = .55f;
+        /// <summary>已经报过诊断的空实例 ID 立绘隐藏指令，避免同一会话里反复刷同一条警告。</summary>
+        private readonly System.Collections.Generic.HashSet<string> _diagnosedEmptyHides = new(StringComparer.Ordinal);
         #endregion
         // --------------------------------------------------------
         #region 内部方法
@@ -19,15 +21,43 @@ namespace Game.Narrative
             new Vector2(.26f + (int)slot * .24f, slot == NovelPortraitSlot.Center ? .395f : .335f);
         private NovelVisualState Occupant(NovelPortraitSlot slot) => _visualStates.FirstOrDefault(v =>
             v.Kind == NovelCommandKind.Character && v.NamedSlot == (int)slot);
+        /// <summary>
+        /// 空实例 ID 的退化匹配：渲染槽上还没有认领任何命名位置的实例。
+        ///
+        /// 归一化入场（<c>PositionMode = Position</c>）的实例 <c>NamedSlot</c> 恒为 -1，
+        /// 按命名位置找永远找不到它；而它的渲染槽就是入场时选的那个槽。
+        /// 只在这个实例**没有**登记到别的命名位置时才退化匹配：已经 Move 到别处的实例
+        /// 仍然按旧的「过期槽位引用」处理，不会因为一条陈旧的空 ID 指令被误删。
+        /// </summary>
+        private NovelVisualState UnnamedSlotOccupant(NovelPortraitSlot slot) => _visualStates.FirstOrDefault(v =>
+            v.Kind == NovelCommandKind.Character && v.Slot == slot && v.NamedSlot < 0);
+        /// <summary>空实例 ID 的立绘隐藏只在每条指令上报一次诊断，不随节点重访反复刷屏。</summary>
+        private void DiagnoseEmptyHide(NovelCommand command, string detail)
+        {
+            string id = command.CommandId ?? command.Slot.ToString();
+            if (string.IsNullOrEmpty(id) || !_diagnosedEmptyHides.Add(id)) return;
+            Ember.Basic.EmberDebug.LogWarning("Game.Narrative",
+                "空实例 ID 的立绘隐藏（指令 " + id + "）：" + detail);
+        }
         private NovelCommand ResolveActorVisual(NovelCommand command)
         {
-            var existing = string.IsNullOrEmpty(command.InstanceId) ? Occupant(command.Slot) : Target(NovelTargetKind.Character, command.InstanceId);
+            var existing = string.IsNullOrEmpty(command.InstanceId)
+                ? Occupant(command.Slot) ?? UnnamedSlotOccupant(command.Slot) : Target(NovelTargetKind.Character, command.InstanceId);
+            // 空实例 ID 的 Hide 落在归一化入场的实例上时，语义从「按命名位置操作」退化为
+            // 「隐藏该渲染槽上的实例」。动作本身照常生效，这里只补一条一次性诊断，
+            // 让作者知道该把实例 ID 写明确，而不是让它继续依赖退化规则。
+            if (existing != null && string.IsNullOrEmpty(command.InstanceId) &&
+                command.VisualAction == NovelVisualAction.Hide && existing.NamedSlot < 0)
+                DiagnoseEmptyHide(command, "已按退化规则隐藏渲染槽 " + command.Slot + " 上的实例「" + existing.InstanceId +
+                    "」——该实例是归一化入场的，没有认领命名位置。建议把这条隐藏的实例 ID 改写成「" + existing.InstanceId + "」，不要依赖槽位退化。");
             bool preserve = command.VisualAction != NovelVisualAction.Hide && existing != null &&
                 command.VisualAction == NovelVisualAction.Replace && !string.IsNullOrEmpty(command.InstanceId);
             if (!string.IsNullOrEmpty(command.InstanceId) && command.VisualAction != NovelVisualAction.Show && existing == null)
                 throw new InvalidOperationException("人物实例不存在：" + command.InstanceId);
             if (existing == null && command.VisualAction == NovelVisualAction.Hide)
             {
+                DiagnoseEmptyHide(command, "没有隐藏任何实例：" + command.Slot +
+                    " 槽位上既没有认领该命名位置的人物，也没有归一化入场的人物。这条指令不会产生任何画面变化。");
                 _emptyActorHide = true; _visualFromOpacity = 1;
                 return new NovelCommand(command.CommandId, NovelCommandKind.Character, slot: command.Slot,
                     visualAction: NovelVisualAction.Hide);
@@ -88,9 +118,12 @@ namespace Game.Narrative
         }
         private NovelActionHandle StartAction(NovelCommand command, NarrativeSnapshot snapshot)
         {
-            if (_actions.TryGetValue(command.ActionId, out var previous) && !previous.IsFinished)
-                throw new InvalidOperationException("动作 ID 正在使用：" + command.ActionId);
-            if (!_actions.ContainsKey(command.ActionId) && _actions.Count >= 4096) throw new InvalidOperationException("动作 ID 超过会话上限 4096");
+            // 句柄身份统一取解析值；留空 ActionId 时回退到步骤 ID。Camera / Screen 也在这里就完成
+            // 冲突守卫和上限检查，再委派给各自的 Start*，所以它们内部写入 _actions 时不会再覆盖活动句柄。
+            string handleId = NovelActionHandle.ResolveId(command);
+            if (_actions.TryGetValue(handleId, out var previous) && !previous.IsFinished)
+                throw new InvalidOperationException("动作 ID 正在使用：" + handleId);
+            if (!_actions.ContainsKey(handleId) && _actions.Count >= 4096) throw new InvalidOperationException("动作 ID 超过会话上限 4096");
             if (command.Kind == NovelCommandKind.Camera) return StartCamera(command, snapshot);
             if (NovelScreenRules.IsAction(command.Kind)) return StartScreenAction(command, snapshot);
             bool opacity = command.Kind == NovelCommandKind.Opacity;
@@ -107,7 +140,7 @@ namespace Game.Narrative
             }
             CancelTarget(kind, id, command.Kind.ToString());
             var action = new NovelActionHandle { Generation = snapshot.SessionGeneration, Sequence = ++_actionSequence,
-                Id = command.ActionId, Kind = command.Kind, Property = command.Kind.ToString(), TargetKind = kind, TargetId = id,
+                Id = handleId, Kind = command.Kind, Property = command.Kind.ToString(), TargetKind = kind, TargetId = id,
                 From = target?.Opacity ?? _stageOpacity, To = command.Opacity, Duration = command.Duration, Delay = command.Delay,
                 Ease = opacity ? NovelEase.Linear : command.Ease, Gesture = command.Gesture, Strength = command.Strength, ExitAfterMove = command.ExitAfterMove };
             switch (command.Kind)
@@ -121,7 +154,7 @@ namespace Game.Narrative
                 case NovelCommandKind.Mirror: action.To = command.Mirror ? 1 : 0; break;
                 case NovelCommandKind.Layer: action.To = command.Layer; break;
             }
-            _actions[command.ActionId] = action; _runningActions.Add(action); return action;
+            _actions[handleId] = action; _runningActions.Add(action); return action;
         }
         private void WriteAction(NovelActionHandle action, float progress)
         {

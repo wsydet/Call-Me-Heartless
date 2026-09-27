@@ -245,6 +245,8 @@ namespace Game.UI.Editor
             }
             if (!_engine.Load(catalog, bytes).Succeeded) throw new InvalidOperationException("配表加载失败，请在配置表中心检查导出。");
             _catalog = new NarrativeTableCatalog(_engine.Database);
+            // 编辑态试播与运行期保持一致：装上多语言与皮肤后再建预览页面。
+            NovelLocalization.Install(_catalog); NovelSkin.Install(_catalog);
         }
         private List<NovelCommand> InitialCommands()
         {
@@ -304,7 +306,8 @@ namespace Game.UI.Editor
                 var initial = InitialCommands(); ShowInitialFrame();
                 _data = new NovelPlaybackStory(_node, _chapter, _story, initial, _variables);
                 _audio = new NovelPlaybackAudio(_host.transform); _audio.SetMuted(_muted);
-                _session = new NovelSession(new NovelNewGameRequest("editor-preview"), () => _catalog, _data, _audio);
+                // 同一个对象既是通用音频输出，也是分段 BGM 通道：试播因此与正式运行期走同一条分段链路。
+                _session = new NovelSession(new NovelNewGameRequest("editor-preview"), () => _catalog, _data, _audio, _audio);
                 _session.AttachView(_view); _session.ConfigureReading(null, 32, 1, 1, 1, 1);
                 _session.SetReadingMultiplier(_multiplier);
                 _frame = 0; _paused = false; _changed = false; _sourceJson = SourceJson;
