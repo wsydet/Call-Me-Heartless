@@ -1,0 +1,575 @@
+{
+  "schemaVersion": 1,
+  "batchId": "20260927-cmh-opening-name-01",
+  "skillId": "ember-vn-polish-presentation",
+  "appliedAtUtc": "2026-09-26T20:36:52.105Z",
+  "title": "CMH 开局玩家命名段：迷迷糊糊自问自己是谁 → 输入名字 → 想起自己是谁，并把后续【主控昵称】接上这个名字",
+  "scope": {
+    "storyPath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset",
+    "storyId": "0942d3f17d504f01ba64169b17e2a578",
+    "displayName": "Call Me Heartless",
+    "storyRevision": "7 -> 8",
+    "chapter": "第一章·序章",
+    "chapterRevision": "6 -> 7",
+    "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+    "nodeRevision": "9 -> 10（插入由编辑 API 自动 +1）",
+    "commandsBefore": 28,
+    "commandsAfter": 39
+  },
+  "receipt": {
+    "decision": ".utmp/vn-presentation/20260927-cmh-opening-name-01/decision.json",
+    "status": "confirmed",
+    "submittedAtUtc": "2026-09-26T20:26:56.176Z",
+    "planHash": "ee29b0f0f0d5985bd5ce75e65c5e97ae1cb12c41c5e9645e0b52e76a84ffa1b2",
+    "sourceFingerprint": "39124bd0121dd181bc2385707a22727c7a270d8e5b55c9e72d8fd90071658ca3",
+    "preservationFingerprint": "e0bc00626fbbd3d521afb1a9fb0e66c2f71372f037f3d9dd1c18bc99f5aea2f6",
+    "choices": {
+      "P": [
+        "P2"
+      ],
+      "W": [
+        "W1"
+      ],
+      "T": [
+        "T1"
+      ],
+      "S": [
+        "S1"
+      ],
+      "B": [
+        "B1",
+        "B3"
+      ]
+    },
+    "selected": [
+      "P2",
+      "W1",
+      "T1",
+      "S1",
+      "B1",
+      "B3"
+    ],
+    "preExecutionChecks": [
+      "回执 status=confirmed、skillId/batchId 一致",
+      "选项重解析出的计划哈希与回执逐字节一致（ee29b0f0f0d5985b…）",
+      "范围 56 个文件重算 rollup 与制定计划时一致（39124bd0121dd181…），零变化",
+      "剧情保持项快照 SHA256 与回执一致（e0bc00626fbbd3d5…）",
+      "Unity 侧按同一代码路径重算锚点，facts-recheck.json 与 facts.json 逐字节一致；11 条绑定锚点的 nodePath/commandId/lineId/oldText/newText 全部命中现网资产",
+      "序章教室节点锚点复核：[1]=压黑遮罩 a344c973…、[2]=章节卡「序章」46446e8b…、[0]=背景（首帧不变量）、共 28 条指令、contentRevision=9",
+      "CanEdit=True、未在播放；文案表 11 行现状与页面展示一致"
+    ]
+  },
+  "appliedOptions": [
+    {
+      "id": "P2",
+      "group": "位置 · 命名段插在哪里",
+      "label": "章节卡之前、黑幕之下（备选）"
+    },
+    {
+      "id": "W1",
+      "group": "节奏 · 这一段怎么推进",
+      "label": "照示例小说包一层自动段落（推荐）"
+    },
+    {
+      "id": "T1",
+      "group": "文案 · 迷糊自问的台词",
+      "label": "六句 · 逐层醒来（推荐）"
+    },
+    {
+      "id": "S1",
+      "group": "说话人 · 迷糊台词挂在谁名下",
+      "label": "旁白，姓名框留空（推荐）"
+    },
+    {
+      "id": "B1",
+      "group": "昵称 · 后面的【主控昵称】怎么处理",
+      "label": "把 11 处【主控昵称】接上玩家输入的名字（推荐）"
+    },
+    {
+      "id": "B3",
+      "group": "昵称 · 后面的【主控昵称】怎么处理",
+      "label": "给新增台词补四语言文案行（推荐）"
+    }
+  ],
+  "appliedEdits": {
+    "insertCommands": {
+      "node": "CH01_Prologue_Classroom.asset",
+      "insertIndex": 2,
+      "anchorBefore": "a344c973e7ca4ec1ae465624cbadb795",
+      "anchorAfter": "46446e8be6d043d6bc99a93991db1028",
+      "stepGroup": "开局 · 输入名字",
+      "stepGroupColor": {
+        "r": 0.75,
+        "g": 0.68,
+        "b": 0.95,
+        "a": 1
+      },
+      "commands": [
+        {
+          "index": 2,
+          "kind": "CustomStep",
+          "commandId": "a52323db5480575a0551a989337cb5c0",
+          "lineId": null,
+          "customStepId": "Game.Narrative.NovelOpeningSegmentSO.Begin",
+          "text": null,
+          "textKey": null,
+          "textReveal": null,
+          "textFadeDuration": null,
+          "characterId": null,
+          "textBindings": []
+        },
+        {
+          "index": 3,
+          "kind": "Say",
+          "commandId": "75d49eb612af842dc1e099bca4cfbba6",
+          "lineId": "1cf3faaee226fc111f7a59a6c8f4e251",
+          "customStepId": null,
+          "text": "（……好吵。）",
+          "textKey": "text.0942d3f17d504f01ba64169b17e2a578.1cf3faaee226fc111f7a59a6c8f4e251",
+          "textReveal": "Fade",
+          "textFadeDuration": 0.9,
+          "characterId": "（旁白，姓名框留空）",
+          "textBindings": []
+        },
+        {
+          "index": 4,
+          "kind": "Say",
+          "commandId": "1a09a91dbcb29e4190a85cad9e3e0e8f",
+          "lineId": "17c0aaceac384eab9f09fba7507fcde1",
+          "customStepId": null,
+          "text": "（像是在很远的地方有人说话，字句一层层糊在一起，听不清。）",
+          "textKey": "text.0942d3f17d504f01ba64169b17e2a578.17c0aaceac384eab9f09fba7507fcde1",
+          "textReveal": "Fade",
+          "textFadeDuration": 0.9,
+          "characterId": "（旁白，姓名框留空）",
+          "textBindings": []
+        },
+        {
+          "index": 5,
+          "kind": "Say",
+          "commandId": "05925516028a44c0e1bced098d79ffab",
+          "lineId": "93054cf9760c35922955838888b20df3",
+          "customStepId": null,
+          "text": "（我在哪儿？……有黑板，有课桌，还有粉笔灰的味道。）",
+          "textKey": "text.0942d3f17d504f01ba64169b17e2a578.93054cf9760c35922955838888b20df3",
+          "textReveal": "Fade",
+          "textFadeDuration": 0.9,
+          "characterId": "（旁白，姓名框留空）",
+          "textBindings": []
+        },
+        {
+          "index": 6,
+          "kind": "Say",
+          "commandId": "41c7b7b3c6b8caef3a69c5f0a2d064be",
+          "lineId": "d54712b9a77825b84494c156de51eaea",
+          "customStepId": null,
+          "text": "（对了，是教室。上课上到一半，睡着了。）",
+          "textKey": "text.0942d3f17d504f01ba64169b17e2a578.d54712b9a77825b84494c156de51eaea",
+          "textReveal": "Fade",
+          "textFadeDuration": 0.9,
+          "characterId": "（旁白，姓名框留空）",
+          "textBindings": []
+        },
+        {
+          "index": 7,
+          "kind": "Say",
+          "commandId": "96bacf740f7b1e685c5988ec5f2560cd",
+          "lineId": "ef62645e95f427f5106769cc1ae8f62d",
+          "customStepId": null,
+          "text": "（可是——我是谁？）",
+          "textKey": "text.0942d3f17d504f01ba64169b17e2a578.ef62645e95f427f5106769cc1ae8f62d",
+          "textReveal": "Fade",
+          "textFadeDuration": 0.9,
+          "characterId": "（旁白，姓名框留空）",
+          "textBindings": []
+        },
+        {
+          "index": 8,
+          "kind": "Say",
+          "commandId": "a0ad5527700548e88e552d98c0aa121b",
+          "lineId": "7f06348d95086d5cd259ff1e102efc91",
+          "customStepId": null,
+          "text": "（名字就在嘴边，怎么就是想不起来。）",
+          "textKey": "text.0942d3f17d504f01ba64169b17e2a578.7f06348d95086d5cd259ff1e102efc91",
+          "textReveal": "Fade",
+          "textFadeDuration": 0.9,
+          "characterId": "（旁白，姓名框留空）",
+          "textBindings": []
+        },
+        {
+          "index": 9,
+          "kind": "CustomStep",
+          "commandId": "b8a69ec08c1d3d5179c5f6416560c2b4",
+          "lineId": null,
+          "customStepId": "Game.Narrative.NovelPlayerNameInputStep",
+          "text": null,
+          "textKey": null,
+          "textReveal": null,
+          "textFadeDuration": null,
+          "characterId": null,
+          "textBindings": []
+        },
+        {
+          "index": 10,
+          "kind": "Say",
+          "commandId": "fa5188244ce85c9f652488ba2b4703e8",
+          "lineId": "b947014894b2f4f56bf8af9a0d29d11a",
+          "customStepId": null,
+          "text": "（{playerName}。）",
+          "textKey": "text.0942d3f17d504f01ba64169b17e2a578.b947014894b2f4f56bf8af9a0d29d11a",
+          "textReveal": "Fade",
+          "textFadeDuration": 0.9,
+          "characterId": "（旁白，姓名框留空）",
+          "textBindings": [
+            "{playerName}=>playerName@Global"
+          ]
+        },
+        {
+          "index": 11,
+          "kind": "Say",
+          "commandId": "097a79fd09eb02faadd2c31ff9173aaf",
+          "lineId": "f4fd3203ff2971fb4b0a8496b39b10f3",
+          "customStepId": null,
+          "text": "（……对了，想起来了。我是{playerName}。）",
+          "textKey": "text.0942d3f17d504f01ba64169b17e2a578.f4fd3203ff2971fb4b0a8496b39b10f3",
+          "textReveal": "Fade",
+          "textFadeDuration": 0.9,
+          "characterId": "（旁白，姓名框留空）",
+          "textBindings": [
+            "{playerName}=>playerName@Global"
+          ]
+        },
+        {
+          "index": 12,
+          "kind": "CustomStep",
+          "commandId": "26c4c11a92452cccabfebc0b286fa72b",
+          "lineId": null,
+          "customStepId": "Game.Narrative.NovelOpeningSegmentSO.End",
+          "text": null,
+          "textKey": null,
+          "textReveal": null,
+          "textFadeDuration": null,
+          "characterId": null,
+          "textBindings": []
+        }
+      ],
+      "note": "示例小说 LastLight CH01_intro 的同一套写法：开场段落 Begin（锁玩家推进 + 固定 1.6 秒自动间隔）→ 迷糊自问 → 输入名字 → 想起名字 → End。插入位置在压黑遮罩之后、章节卡之前，进场既有指令顺序与 ID 全部未动。"
+    },
+    "declaredGlobalVariable": {
+      "id": "playerName",
+      "type": "String",
+      "initial": "旅人",
+      "scope": "Global"
+    },
+    "registeredCustomSteps": [
+      {
+        "label": "开场段落 · 开始自动播放",
+        "path": "Assets/GameResource/Authoring/Narrative/Scripts/OpeningSegmentBegin.asset",
+        "scriptId": "Game.Narrative.NovelOpeningSegmentSO.Begin"
+      },
+      {
+        "label": "输入玩家名字",
+        "path": "Assets/GameResource/Authoring/Narrative/Scripts/PlayerNameInputStep.asset",
+        "scriptId": "Game.Narrative.NovelPlayerNameInputStep"
+      },
+      {
+        "label": "开场段落 · 结束并解锁",
+        "path": "Assets/GameResource/Authoring/Narrative/Scripts/OpeningSegmentEnd.asset",
+        "scriptId": "Game.Narrative.NovelOpeningSegmentSO.End"
+      }
+    ],
+    "nicknameBinding": {
+      "lines": 11,
+      "nodes": [
+        "CH02_Chapter01_Arrival",
+        "CH02_Chapter01_MainClose",
+        "CH02_Chapter01_Mountain",
+        "CH02_Chapter01_OptSchedule",
+        "CH02_Chapter01_OptSect",
+        "CH02_Chapter01_Overnight"
+      ],
+      "detail": [
+        {
+          "node": "CH02_Chapter01_Arrival",
+          "commandId": "917631bc26014753be3464a54825ad46",
+          "lineId": "8af239b1d9cd42b9982b225582c681ed",
+          "before": "【主控昵称】你好哦，我是拂云观的住持，我叫林夕染，明后天我会办个仪式收【主控昵称】为临时弟子",
+          "after": "{playerName}你好哦，我是拂云观的住持，我叫林夕染，明后天我会办个仪式收{playerName}为临时弟子"
+        },
+        {
+          "node": "CH02_Chapter01_MainClose",
+          "commandId": "7ffd4459c062420eb21519c50f09ba19",
+          "lineId": "635269032cd24508b63b3c13c07b30a4",
+          "before": "那么从今天开始拜托你了，【主控昵称】小徒弟",
+          "after": "那么从今天开始拜托你了，{playerName}小徒弟"
+        },
+        {
+          "node": "CH02_Chapter01_Mountain",
+          "commandId": "6cea57fc446047a1882060d0abf67b13",
+          "lineId": "b7de0e19e9764ea48f35a855e6620941",
+          "before": "懂了，就像白蛇传里的小青一样，我是【主控昵称】，那我们就算认识啦",
+          "after": "懂了，就像白蛇传里的小青一样，我是{playerName}，那我们就算认识啦"
+        },
+        {
+          "node": "CH02_Chapter01_Mountain",
+          "commandId": "e6e698ba79134ee79c68039059bc05c8",
+          "lineId": "d47d34a192c84aebbd872ea8b51ed089",
+          "before": "……【主控昵称】",
+          "after": "……{playerName}"
+        },
+        {
+          "node": "CH02_Chapter01_OptSchedule",
+          "commandId": "6b0a251283dc4e2cae3df0e2cee5b02c",
+          "lineId": "d9fb241e99964938ac2f5dd596b66cbd",
+          "before": "【主控昵称】需要做的事就是基础的贡品整理，庭院洒扫，浇菜种地，洗衣做饭之类",
+          "after": "{playerName}需要做的事就是基础的贡品整理，庭院洒扫，浇菜种地，洗衣做饭之类"
+        },
+        {
+          "node": "CH02_Chapter01_OptSchedule",
+          "commandId": "062d1deb4d7345e7a0e3682a49215cc5",
+          "lineId": "e85ace68d0de4de480abb18de3ab9d00",
+          "before": "【主控昵称】做的工作细致程度也会影响到经营情况",
+          "after": "{playerName}做的工作细致程度也会影响到经营情况"
+        },
+        {
+          "node": "CH02_Chapter01_OptSchedule",
+          "commandId": "5fe9d0454d39492e82e711a6b4fca884",
+          "lineId": "7fd00747e24c4ab58f5bf94d2c8a573f",
+          "before": "如果【主控昵称】有兴趣的话可以找我学习一些你在学校学不到的妙妙小知识",
+          "after": "如果{playerName}有兴趣的话可以找我学习一些你在学校学不到的妙妙小知识"
+        },
+        {
+          "node": "CH02_Chapter01_OptSchedule",
+          "commandId": "87190acd4c45444fa87a2b8db3284ab5",
+          "lineId": "37b09e2a4aec4ee7937a18afd8558957",
+          "before": "对【主控昵称】的个人提升也有一些帮助",
+          "after": "对{playerName}的个人提升也有一些帮助"
+        },
+        {
+          "node": "CH02_Chapter01_OptSchedule",
+          "commandId": "24c7d24f93484023b41d25a1aa929d0e",
+          "lineId": "b9272dc454e847cea8253617559c6e9a",
+          "before": "再说万一真有妖怪来了，还有我保护【主控昵称】嘛不是",
+          "after": "再说万一真有妖怪来了，还有我保护{playerName}嘛不是"
+        },
+        {
+          "node": "CH02_Chapter01_OptSect",
+          "commandId": "0bac59fe5fad4dcb9004ecd50f3bf50d",
+          "lineId": "59d7d4be0a754360baa3a44edde04190",
+          "before": "师父我还没有正式收过徒哦，【主控昵称】是第一个呢",
+          "after": "师父我还没有正式收过徒哦，{playerName}是第一个呢"
+        },
+        {
+          "node": "CH02_Chapter01_Overnight",
+          "commandId": "efcc6ca339a44ca983105ff48a2e2c28",
+          "lineId": "73d701b67af2430ca0a222600af16b5b",
+          "before": "那么仪式结束喽，【主控昵称】小朋友是我们门派的弟子了哦",
+          "after": "那么仪式结束喽，{playerName}小朋友是我们门派的弟子了哦"
+        }
+      ],
+      "note": "【主控昵称】→ {playerName} 变量绑定；台词其余文字、标点、说话人、顺序、多语言 Key 全部未动；台词修订 1 -> 2。"
+    },
+    "localizationTable": {
+      "path": "Assets/GameResource/TableSources/novel_content_text.etable.csv",
+      "tokenRewrites": {
+        "rows": 11,
+        "replacements": 48,
+        "from": "【主控昵称】",
+        "to": "{playerName}",
+        "note": "四语言列一起换，否则源语言列会继续按字面显示占位符"
+      },
+      "addedRows": [
+        "text.0942d3f17d504f01ba64169b17e2a578.1cf3faaee226fc111f7a59a6c8f4e251",
+        "text.0942d3f17d504f01ba64169b17e2a578.17c0aaceac384eab9f09fba7507fcde1",
+        "text.0942d3f17d504f01ba64169b17e2a578.93054cf9760c35922955838888b20df3",
+        "text.0942d3f17d504f01ba64169b17e2a578.d54712b9a77825b84494c156de51eaea",
+        "text.0942d3f17d504f01ba64169b17e2a578.ef62645e95f427f5106769cc1ae8f62d",
+        "text.0942d3f17d504f01ba64169b17e2a578.7f06348d95086d5cd259ff1e102efc91",
+        "text.0942d3f17d504f01ba64169b17e2a578.b947014894b2f4f56bf8af9a0d29d11a",
+        "text.0942d3f17d504f01ba64169b17e2a578.f4fd3203ff2971fb4b0a8496b39b10f3"
+      ],
+      "addedRowCount": 8,
+      "lastLightRowsUntouched": {
+        "before": 83,
+        "after": 83,
+        "changed": 0
+      },
+      "rebake": {
+        "api": "Ember.Table.Editor.EmberTablePipeline.BakeAndGenerateAll()",
+        "succeeded": true,
+        "diagnostics": 0,
+        "artifactActions": 24
+      }
+    },
+    "revisions": {
+      "story": "7 -> 8",
+      "chapters": [
+        "第一章·序章 6 -> 7",
+        "第一章 4 -> 5"
+      ],
+      "nodes": "序章教室 9 -> 10（编辑 API 自动）；CH02 六个对话节点各 +1（4/6/5/4/3/6 -> 5/7/6/5/4/7）",
+      "textRevision": "11 句被绑定改写的台词 1 -> 2"
+    }
+  },
+  "fingerprints": {
+    "scopeFiles": 56,
+    "changedFiles": 12,
+    "changedFileList": [
+      "Assets/GameResource/Resources/Config/Tables/novel_content_text.bytes",
+      "Assets/GameResource/TableSources/novel_content_text.etable.csv",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Chapter.asset",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_MainClose.asset",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Overnight.asset",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset"
+    ],
+    "metaChanged": 0,
+    "rollupBefore": "39124bd0121dd181bc2385707a22727c7a270d8e5b55c9e72d8fd90071658ca3",
+    "rollupAfter": "a9c898c1fc352c04d2e8bf29c1b5d2c7b07f2a4ba2b3901c6dafb40996965f3c",
+    "semanticFingerprintAfter": "DFBE8A875B02164D8193E80BA03A99E406CFDD452472A157ED44661007F78072",
+    "semanticFingerprintNote": "改动前的值未在本会话留取（上一次记录里的值已被后续多语言批次与 0.13.0 模板升级刷新，不可比）。按机制结论：新增指令、新增全局变量与绑定都参与 NovelCompatibility.Fingerprint，旧档可能被判为不兼容。未删除任何存档、未绕过兼容检查；NovelCheckpoint.CurrentSchemaVersion 仍为 8。"
+  },
+  "preservationComparison": {
+    "before": ".utmp/vn-presentation/20260927-cmh-opening-name-01/preservation-before.txt",
+    "after": ".utmp/vn-presentation/20260927-cmh-opening-name-01/preservation-after.txt",
+    "result": "以指令 ID 对齐逐条比对：原指令零删除；新增 11 条全部落在序章教室节点且索引连续（2..12）；只有声明的 11 条台词发生正文/绑定变化；除 text/binds 外没有任何字段被改动；全篇不再有字面【主控昵称】；选项/分流/结局/章节出口/变量声明逐字不变。",
+    "evidence": ".utmp/vn-presentation/20260927-cmh-opening-name-01/preservation-comparison.txt（全部 PASS，退出码 0）",
+    "intentionallyChanged": "11 句台词把未绑定的占位符【主控昵称】换成 {playerName} 变量绑定——这是本次用户明确要求的效果，属占位符绑定而非改写台词"
+  },
+  "validation": {
+    "entryCheck": {
+      "blockReason": "EmberProjectSetup.GetTemplateSkillExecutionBlockReason(\"ember-vn-polish-presentation\") 返回 null",
+      "templateActive": true,
+      "canEdit": true,
+      "isPlaying": false
+    },
+    "storyTryReadDefinition": true,
+    "storyErrors": 0,
+    "chapters": [
+      {
+        "name": "第一章·序章",
+        "read": true,
+        "errors": 0,
+        "nodes": 3
+      },
+      {
+        "name": "第一章",
+        "read": true,
+        "errors": 0,
+        "nodes": 12
+      },
+      {
+        "name": "结局",
+        "read": true,
+        "errors": 0,
+        "nodes": 1
+      }
+    ],
+    "definitionContent": {
+      "chapters": 3,
+      "globals": 1,
+      "customSteps": 3,
+      "globalPlayerName": "旅人 (String)"
+    },
+    "customStepValidation": [
+      {
+        "script": "PlayerNameInputStep",
+        "validate": "OK（目标变量 playerName 已是已声明的全局字符串变量）"
+      },
+      {
+        "script": "OpeningSegmentBegin",
+        "validate": "OK"
+      },
+      {
+        "script": "OpeningSegmentEnd",
+        "validate": "OK"
+      }
+    ],
+    "localizationResolution": {
+      "tablesLoaded": true,
+      "rows": 259,
+      "checked": "15 个 Key × 4 语言 = 60 次 NovelLocalization.TryGetContent",
+      "hit": 60,
+      "mismatch": 0,
+      "miss": 0,
+      "probes": [
+        "en：Hello, {playerName}. I'm the keeper of Fuyun Temple. …（占位符在译文里保留，运行期一起替换）",
+        "ja：（{playerName}。）",
+        "zh_Hans：（……对了，想起来了。我是{playerName}。）"
+      ],
+      "bindingResolveProbe": "用 NovelTextBindings.Resolve 实调，playerName=小黑 时得到「（小黑。）」与「（……对了，想起来了。我是小黑。）」"
+    },
+    "automatedTests": [
+      {
+        "run": "Game.Narrative.Tests 的 NovelCustomStepTests + NovelSessionTests + NarrativeStoryTests + NovelCheckpointTests",
+        "mode": "EditMode",
+        "total": 217,
+        "passed": 217,
+        "failed": 0,
+        "report": ".utmp/visual-novel-m3/tests-20260926-203133261.xml"
+      },
+      {
+        "run": "NovelCustomStepTests + NovelSessionTests",
+        "mode": "EditMode",
+        "total": 179,
+        "passed": 179,
+        "failed": 0,
+        "report": ".utmp/visual-novel-m3/tests-20260926-203150815.xml"
+      },
+      {
+        "run": "NarrativeStoryTests + NovelCheckpointTests + NovelLocalizationTests + NovelSpeakerNameTests + NarrativeRunnerTests + NarrativeLibraryTests",
+        "mode": "EditMode",
+        "total": 58,
+        "passed": 58,
+        "failed": 0,
+        "report": ".utmp/visual-novel-m3/tests-20260926-203203763.xml"
+      }
+    ],
+    "unityConsoleErrors": 0,
+    "staticOnly": "静态校验 + 定义读取 + 配表解析 + 用例；进场的实际观感（黑屏下的自问节奏、输入页弹出时机、报出名字后接章节卡的手感）需要你从新游戏实际看一眼。未声称画面通过。"
+  },
+  "knownFailuresNotCausedByThisBatch": [
+    {
+      "tests": [
+        "NovelGameplayTests.NameInputOpenRefusesSaveAndLoadClosesInputPageCleanly",
+        "NovelGameplayTests.NameInputSaveAfterKeepsEnteredNameAndDoesNotAskAgain",
+        "NovelGameplayTests.NameInputSaveBeforeRestoresToTheLineAndAsksAgain"
+      ],
+      "report": ".utmp/visual-novel-m3/tests-20260926-203513451.xml（3 项全失败）",
+      "evidence": "三项都通过真实主菜单「开始游戏」进入，然后等 LastLight 示例的稳定点 sample_open_line_2 / sample_open_line_3；而 Library.asset 的 _current 已经是 CallMeHeartless，sample_open_* 指令只存在于 LastLight 的 CH01_intro。因此无论本批是否改动都不可能等到该稳定点。",
+      "extra": "NovelNameInputSaveTests.cs 在本工作副本里是未纳入 git 的新文件（随 0.13.0 模板升级由另一会话带入），文件中标注的手动运行方式是 PlayMode，本次按 EditMode 过滤执行。",
+      "relation": "与本批无关的既有失败：失败断言等待的是另一个剧情的指令 ID，与本批新增的命名段没有因果关系。本批的对话节点校验、自定义节点校验、绑定解析与 235+ 项用例均已单独通过。"
+    }
+  ],
+  "pending": [
+    "CH02_Chapter01_Arrival 里 917631bc…（「{playerName}你好哦，我是拂云观的住持，我叫林夕染…」）原本就是空说话人：导入时没有填角色键，所以姓名框不显示「林夕染」。这是本次改动之前就存在的作者侧缺口，本批按保持项要求原样保留，没有顺手补。",
+    "主控内心台词（CMH_inner，姓名框显示「我」，共 51 句）仍未绑定说话人变量：B2 选项本次未勾选。若想让姓名框也显示玩家输入的名字，可在下一批单独选它。",
+    "B3 已补四语言，但译文是初翻，建议策划／翻译复核后再定稿。",
+    "输入页标题仍是共享资产里的「请输入你的名字」、留空回退名仍是「旅人」：该资产同时被 LastLight 示例使用，且 NovelPlayerNameInputStep 未覆写 ScriptId，无法为 CMH 另建同类型资产（会触发「自定义节点 ScriptId 重复」）。要改标题需要同时接受示例小说一起改。",
+    "本次改动改变了剧情语义指纹，优化前的存档可能被判为不兼容；未删除任何存档。",
+    "进场的实际观感需要你从新游戏验收：黑幕下的六句自问节奏、输入页弹出时机、报出名字后接「序章」标题卡与 BGM 的手感。"
+  ],
+  "evidence": {
+    "planSource": ".utmp/vn-presentation/20260927-cmh-opening-name-01/plan-source.json",
+    "decision": ".utmp/vn-presentation/20260927-cmh-opening-name-01/decision.json",
+    "applyPlan": ".utmp/vn-presentation/20260927-cmh-opening-name-01/apply-plan.tsv",
+    "preservationBefore": ".utmp/vn-presentation/20260927-cmh-opening-name-01/preservation-before.txt",
+    "preservationAfter": ".utmp/vn-presentation/20260927-cmh-opening-name-01/preservation-after.txt",
+    "preservationComparison": ".utmp/vn-presentation/20260927-cmh-opening-name-01/preservation-comparison.txt",
+    "fingerprintsBefore": ".utmp/vn-presentation/20260927-cmh-opening-name-01/fingerprints-before.json",
+    "fingerprintsAfter": ".utmp/vn-presentation/20260927-cmh-opening-name-01/fingerprints-after.json",
+    "backup": ".utmp/vn-presentation/20260927-cmh-opening-name-01/backup/",
+    "selectionPage": ".utmp/vn-presentation/20260927-cmh-opening-name-01/page/",
+    "serverLog": ".utmp/vn-presentation/20260927-cmh-opening-name-01/server.log",
+    "previousBatches": [
+      "Assets/Game/Documentation/NarrativeImports/20260926-cmh-prologue-entry-03-presentation.json",
+      "Assets/Game/Documentation/NarrativeImports/20260925-chapter01-01.json"
+    ]
+  },
+  "editCount": 20
+}

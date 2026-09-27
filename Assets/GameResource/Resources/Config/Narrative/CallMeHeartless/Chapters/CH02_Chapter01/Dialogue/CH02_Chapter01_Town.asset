@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c2efa25a9198a84abcf7b57a3b60f7c, type: 3}
-  m_Name: CH01_Prologue_Classroom
+  m_Name: CH02_Chapter01_Town
   m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeDialogueSO
-  _nodeId: a54f913d208b4410aed1443dd292cf30
-  _chapterId: 2e58920df7dd454096c73f95a528b843
-  _contentRevision: 11
+  _nodeId: 1ee958ac7ec042d986982a9c3b7c5ce2
+  _chapterId: 57c023ad23ef45be88cbab6bd9b3d51d
+  _contentRevision: 8
   _commands:
   - _cameraZoom: 1
     _wipeDirection: 0
@@ -27,155 +27,11 @@ MonoBehaviour:
     _textEase: 1
     _stepGroupId: 
     _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: eaf7f703b283413b96ef58542538fe86
-    _kind: 3
-    _lineId: 
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: 
-    _resourceKey: "\u6559\u5BA4_default"
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: 
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
     _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
     _textBeats: []
     _dialogueVisible: 1
     _textBindings: []
-    _commandId: a344c973e7ca4ec1ae465624cbadb795
-    _kind: 18
-    _lineId: 
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: 
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 99
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: entry03_prologue_cover_in
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: 
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 55e7a4d3f634adbc32fa9fc5a9a87781
+    _commandId: 6a0233f8df8f535102f3b6bf1eb46caf
     _kind: 30
     _lineId: 
     _textRevision: 1
@@ -241,817 +97,19 @@ MonoBehaviour:
     _titleExitDuration: 0.65
     _textSpeedMultiplier: 1
     _textEase: 1
-    _stepGroupId: 47c88076d29944f3bd0ecc26b478765a
-    _stepGroupName: "\u5F00\u5C40 \xB7 \u8F93\u5165\u540D\u5B57"
-    _stepGroupColor: {r: 0.75, g: 0.68, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: a52323db5480575a0551a989337cb5c0
-    _kind: 34
-    _lineId: 
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: 
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: Game.Narrative.NovelOpeningSegmentSO.Begin
-    _speakerVariableId: 
-    _speakerVariableScope: 1
-    _randomMin: 0
-    _randomMax: 99
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: 
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 2
-    _textFadeDuration: 0.9
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 47c88076d29944f3bd0ecc26b478765a
-    _stepGroupName: "\u5F00\u5C40 \xB7 \u8F93\u5165\u540D\u5B57"
-    _stepGroupColor: {r: 0.75, g: 0.68, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 75d49eb612af842dc1e099bca4cfbba6
-    _kind: 0
-    _lineId: 1cf3faaee226fc111f7a59a6c8f4e251
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: "\uFF08\u2026\u2026\u597D\u5435\u3002\uFF09"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.1cf3faaee226fc111f7a59a6c8f4e251
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 2
-    _textFadeDuration: 0.9
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 47c88076d29944f3bd0ecc26b478765a
-    _stepGroupName: "\u5F00\u5C40 \xB7 \u8F93\u5165\u540D\u5B57"
-    _stepGroupColor: {r: 0.75, g: 0.68, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 1a09a91dbcb29e4190a85cad9e3e0e8f
-    _kind: 0
-    _lineId: 17c0aaceac384eab9f09fba7507fcde1
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: "\uFF08\u50CF\u662F\u5728\u5F88\u8FDC\u7684\u5730\u65B9\u6709\u4EBA\u8BF4\u8BDD\uFF0C\u5B57\u53E5\u4E00\u5C42\u5C42\u7CCA\u5728\u4E00\u8D77\uFF0C\u542C\u4E0D\u6E05\u3002\uFF09"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.17c0aaceac384eab9f09fba7507fcde1
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 2
-    _textFadeDuration: 0.9
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 47c88076d29944f3bd0ecc26b478765a
-    _stepGroupName: "\u5F00\u5C40 \xB7 \u8F93\u5165\u540D\u5B57"
-    _stepGroupColor: {r: 0.75, g: 0.68, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 05925516028a44c0e1bced098d79ffab
-    _kind: 0
-    _lineId: 93054cf9760c35922955838888b20df3
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: "\uFF08\u6211\u5728\u54EA\u513F\uFF1F\u2026\u2026\u6709\u9ED1\u677F\uFF0C\u6709\u8BFE\u684C\uFF0C\u8FD8\u6709\u7C89\u7B14\u7070\u7684\u5473\u9053\u3002\uFF09"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.93054cf9760c35922955838888b20df3
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 2
-    _textFadeDuration: 0.9
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 47c88076d29944f3bd0ecc26b478765a
-    _stepGroupName: "\u5F00\u5C40 \xB7 \u8F93\u5165\u540D\u5B57"
-    _stepGroupColor: {r: 0.75, g: 0.68, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 41c7b7b3c6b8caef3a69c5f0a2d064be
-    _kind: 0
-    _lineId: d54712b9a77825b84494c156de51eaea
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: "\uFF08\u5BF9\u4E86\uFF0C\u662F\u6559\u5BA4\u3002\u4E0A\u8BFE\u4E0A\u5230\u4E00\u534A\uFF0C\u7761\u7740\u4E86\u3002\uFF09"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.d54712b9a77825b84494c156de51eaea
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 2
-    _textFadeDuration: 0.9
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 47c88076d29944f3bd0ecc26b478765a
-    _stepGroupName: "\u5F00\u5C40 \xB7 \u8F93\u5165\u540D\u5B57"
-    _stepGroupColor: {r: 0.75, g: 0.68, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 96bacf740f7b1e685c5988ec5f2560cd
-    _kind: 0
-    _lineId: ef62645e95f427f5106769cc1ae8f62d
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: "\uFF08\u53EF\u662F\u2014\u2014\u6211\u662F\u8C01\uFF1F\uFF09"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.ef62645e95f427f5106769cc1ae8f62d
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 2
-    _textFadeDuration: 0.9
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 47c88076d29944f3bd0ecc26b478765a
-    _stepGroupName: "\u5F00\u5C40 \xB7 \u8F93\u5165\u540D\u5B57"
-    _stepGroupColor: {r: 0.75, g: 0.68, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: a0ad5527700548e88e552d98c0aa121b
-    _kind: 0
-    _lineId: 7f06348d95086d5cd259ff1e102efc91
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: "\uFF08\u540D\u5B57\u5C31\u5728\u5634\u8FB9\uFF0C\u600E\u4E48\u5C31\u662F\u60F3\u4E0D\u8D77\u6765\u3002\uFF09"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.7f06348d95086d5cd259ff1e102efc91
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 47c88076d29944f3bd0ecc26b478765a
-    _stepGroupName: "\u5F00\u5C40 \xB7 \u8F93\u5165\u540D\u5B57"
-    _stepGroupColor: {r: 0.75, g: 0.68, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: b8a69ec08c1d3d5179c5f6416560c2b4
-    _kind: 34
-    _lineId: 
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: 
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: Game.Narrative.NovelPlayerNameInputStep
-    _speakerVariableId: 
-    _speakerVariableScope: 1
-    _randomMin: 0
-    _randomMax: 99
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: 
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 2
-    _textFadeDuration: 0.9
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 47c88076d29944f3bd0ecc26b478765a
-    _stepGroupName: "\u5F00\u5C40 \xB7 \u8F93\u5165\u540D\u5B57"
-    _stepGroupColor: {r: 0.75, g: 0.68, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings:
-    - _token: '{playerName}'
-      _variableId: playerName
-      _scope: 1
-    _commandId: fa5188244ce85c9f652488ba2b4703e8
-    _kind: 0
-    _lineId: b947014894b2f4f56bf8af9a0d29d11a
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: "\uFF08{playerName}\u3002\uFF09"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.b947014894b2f4f56bf8af9a0d29d11a
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 2
-    _textFadeDuration: 0.9
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 47c88076d29944f3bd0ecc26b478765a
-    _stepGroupName: "\u5F00\u5C40 \xB7 \u8F93\u5165\u540D\u5B57"
-    _stepGroupColor: {r: 0.75, g: 0.68, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings:
-    - _token: '{playerName}'
-      _variableId: playerName
-      _scope: 1
-    _commandId: 097a79fd09eb02faadd2c31ff9173aaf
-    _kind: 0
-    _lineId: f4fd3203ff2971fb4b0a8496b39b10f3
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: "\uFF08\u2026\u2026\u5BF9\u4E86\uFF0C\u60F3\u8D77\u6765\u4E86\u3002\u6211\u662F{playerName}\u3002\uFF09"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.f4fd3203ff2971fb4b0a8496b39b10f3
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 47c88076d29944f3bd0ecc26b478765a
-    _stepGroupName: "\u5F00\u5C40 \xB7 \u8F93\u5165\u540D\u5B57"
-    _stepGroupColor: {r: 0.75, g: 0.68, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 26c4c11a92452cccabfebc0b286fa72b
-    _kind: 34
-    _lineId: 
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: 
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: Game.Narrative.NovelOpeningSegmentSO.End
-    _speakerVariableId: 
-    _speakerVariableScope: 1
-    _randomMin: 0
-    _randomMax: 99
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: 
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 1
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
     _stepGroupId: 
     _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
     _textBeats: []
     _dialogueVisible: 1
     _textBindings: []
-    _commandId: 46446e8be6d043d6bc99a93991db1028
-    _kind: 0
-    _lineId: 7520a61c920742068a5b93ca61e7bafd
+    _commandId: c0fcaf57b425471182bd5f7db4426f97
+    _kind: 18
+    _lineId: 
     _textRevision: 1
     _characterId: 
     _speakerNameKey: 
-    _text: "\u5E8F\u7AE0"
+    _text: 
     _resourceKey: 
     _variableId: 
     _scope: 0
@@ -1060,7 +118,7 @@ MonoBehaviour:
       _bool: 0
       _int: 0
       _string: 
-    _duration: 0
+    _duration: 0.5
     _integerOperation: 0
     _operandVariableId: 
     _operandScope: 0
@@ -1069,12 +127,12 @@ MonoBehaviour:
     _speakerVariableId: 
     _speakerVariableScope: 0
     _randomMin: 0
-    _randomMax: 0
+    _randomMax: 99
     _slot: 0
     _visualAction: 0
     _instanceId: 
     _targetKind: 0
-    _actionId: 
+    _actionId: seam02_town_cover_in
     _parallel: 0
     _delay: 0
     _opacity: 1
@@ -1095,13 +153,13 @@ MonoBehaviour:
     _frequency: 12
     _decay: 1
     _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
+    _hold: 0.18
     _wholeReader: 0
     _persistent: 0
     _keepOnSceneChange: 0
     _bindingId: 
     _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.7520a61c920742068a5b93ca61e7bafd
+    _textKey: 
   - _cameraZoom: 1
     _wipeDirection: 0
     _textMode: 0
@@ -1117,14 +175,230 @@ MonoBehaviour:
     _textBeats: []
     _dialogueVisible: 1
     _textBindings: []
-    _commandId: 56f0d7f9f138460ba7a7256701c93862
+    _commandId: 484640535ced4a6887357034b422c475
+    _kind: 3
+    _lineId: 
+    _textRevision: 1
+    _characterId: 
+    _speakerNameKey: 
+    _text: 
+    _resourceKey: "\u6751\u5E84_default"
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0.35
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: 
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: ff5d87fb3e7747f986a03256f1e3d11e
+    _kind: 18
+    _lineId: 
+    _textRevision: 1
+    _characterId: 
+    _speakerNameKey: 
+    _text: 
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0.5
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: seam02_town_cover_out
+    _parallel: 0
+    _delay: 0
+    _opacity: 0
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: 
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 894117b0a43d73dd06b1ff95bb4ffdc3
+    _kind: 4
+    _lineId: 
+    _textRevision: 1
+    _characterId: 
+    _speakerNameKey: 
+    _text: 
+    _resourceKey: "CMH_inner_\u7741\u773C"
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0.18
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 1
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 2
+    _visualAction: 0
+    _instanceId: cmh_me
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 1
+    _position: {x: 0.5, y: 0.385}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: 
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 5aa8e798d4e849228b3e43c9b742b2a4
     _kind: 5
     _lineId: 
     _textRevision: 1
     _characterId: 
     _speakerNameKey: 
     _text: 
-    _resourceKey: CMH_fallingstar
+    _resourceKey: CMH_fallingstar_cut
     _variableId: 
     _scope: 0
     _value:
@@ -1189,7 +463,2527 @@ MonoBehaviour:
     _textBeats: []
     _dialogueVisible: 1
     _textBindings: []
-    _commandId: c61a9ccc04b145d8af5393ec9975604d
+    _commandId: 1ebdcb1ba4f747ac9521594676e4b213
+    _kind: 0
+    _lineId: 901fe983f584464a9a9714f416907edd
+    _textRevision: 1
+    _characterId: CMH_inner
+    _speakerNameKey: 
+    _text: "\u8FD9\u54EA\u80FD\u7B97\u5F97\u4E0A\u662F\u53BF\u57CE\uFF0C\u5206\u660E\u5C31\u662F\u4E61\u9547\u5427\u5582"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.901fe983f584464a9a9714f416907edd
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 712d43f430f3403299b5ba8bbb205e70
+    _kind: 4
+    _lineId: 
+    _textRevision: 1
+    _characterId: 
+    _speakerNameKey: 
+    _text: 
+    _resourceKey: CMH_zz_default
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0.18
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 2
+    _visualAction: 0
+    _instanceId: ch01_zz
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 1
+    _position: {x: 0.7, y: 0.33}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: 
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 2980b9cdb4a24239a5fd5b325e71ca14
+    _kind: 0
+    _lineId: 541728fe379f4a55960ee661bc19c695
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u4F60\u6765\u5566"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.541728fe379f4a55960ee661bc19c695
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: d007d05bf93a4bd895d7d94301341223
+    _kind: 0
+    _lineId: 3966345e4a864881b7ea877d9fdc6f23
+    _textRevision: 1
+    _characterId: CMH_inner
+    _speakerNameKey: 
+    _text: "\u4F60\u597D"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.3966345e4a864881b7ea877d9fdc6f23
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 82f96db459b747bda659a53ad11ce0a3
+    _kind: 0
+    _lineId: d5e42d1106c5428c93cae5bd67a7aa6e
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u540C\u5B66\uFF0C\u6211\u662F\u8FD9\u4E2A\u9547\u5B50\u7684\u9547\u957F\uFF0C\u542C\u4F60\u4EEC\u5BFC\u5458\u8BF4\u8D77\u8FC7\u4F60"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.d5e42d1106c5428c93cae5bd67a7aa6e
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 96102ba5921d441c9a0afbe274bcf00f
+    _kind: 0
+    _lineId: 23d248eba1844acfa59052bac2581bcc
+    _textRevision: 1
+    _characterId: CMH_inner
+    _speakerNameKey: 
+    _text: "\u600E\u4E48\u8BF4\u7684"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.23d248eba1844acfa59052bac2581bcc
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 1c86b5fd65d74b87b8cc14f33d9ae54b
+    _kind: 0
+    _lineId: d7efd32d17f44143a82b1b6458edbf62
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u4ED6\u8BF4\u4F60\u662F\u4E2A\u9760\u5F97\u4F4F\u7684\u6C89\u7A33\u7684\u540C\u5B66\uFF0C\u6700\u8FD1\u9700\u8981\u6362\u6362\u73AF\u5883\uFF0C\u6765\u6211\u4EEC\u8FD9\u91CC\u518D\u597D\u4E0D\u8FC7\u4E86"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.d7efd32d17f44143a82b1b6458edbf62
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 3a278a342e674548aaa02a87f2e9cfb2
+    _kind: 0
+    _lineId: 01ae8a8bc3524932b0ddb4d683690eb2
+    _textRevision: 1
+    _characterId: CMH_inner
+    _speakerNameKey: 
+    _text: "\uFF08\u56DB\u4E0B\u6253\u91CF\uFF09"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.01ae8a8bc3524932b0ddb4d683690eb2
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: ead77c3ccddc4d91bfad4bc48edb75d2
+    _kind: 0
+    _lineId: e7fe9053d09d4bdfa30c3ceea16972a4
+    _textRevision: 1
+    _characterId: CMH_inner
+    _speakerNameKey: 
+    _text: "\uFF08\u597D\u7A77\u7684\u5730\u65B9\uFF0C\u8BE5\u4E0D\u4F1A\u662F\u6025\u7F3A\u5EC9\u4EF7\u52B3\u52A8\u529B\u624D\u89C1\u8C01\u90FD\u8FD9\u6837\u8BF4\uFF09"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.e7fe9053d09d4bdfa30c3ceea16972a4
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 69c18f2171c54a33b4026b10fad5b367
+    _kind: 0
+    _lineId: b3f29536f35341f1919e454e87d5dc1c
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u6211\u4EEC\u8FD9\u8FB9\u5462\uFF0C\u8352\u5C71\u91CE\u5CAD\u7684\uFF0C\u6CA1\u4EC0\u4E48\u4EBA\u53E3"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.b3f29536f35341f1919e454e87d5dc1c
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 6dca650388d64a5e9667c9403037d525
+    _kind: 0
+    _lineId: e986a3b19b3041e081cbf776c9c25379
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u9547\u4E0A\u4E0D\u5230\u4E00\u5343\u4EBA\uFF0C\u90FD\u662F\u4EE5\u79CD\u5730\u6216\u517B\u732A\u4E3A\u751F\u7684\u519C\u6C11"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.e986a3b19b3041e081cbf776c9c25379
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 67705fabf17545f79ffec9eb5c62b02f
+    _kind: 0
+    _lineId: fc4dbd3acabe4fb98ca1c38d61cf7d4e
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u5F80\u9547\u5B50\u4E1C\u5317\u8FB9\u7684\u5C71\u4E0A\u8D70\uFF0C\u8D703\u5C0F\u65F6\u5C71\u8DEF\uFF0C\u6709\u5EA7\u62C2\u4E91\u89C2"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.fc4dbd3acabe4fb98ca1c38d61cf7d4e
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 04bb3888c9b04dab8874989597dedfc6
+    _kind: 0
+    _lineId: 431652436758437abe5afb566b60de75
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u6211\u8FD8\u6CA1\u95EE\u4F60\u7684\u5B97\u6559\u4FE1\u4EF0\uFF0C\u4F60\u5E94\u8BE5\u6CA1\u6709\u56FA\u5B9A\u4FE1\u4EF0\u5BF9\u5427\uFF1F"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.431652436758437abe5afb566b60de75
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 72186744f2964d4db1f20c0b85f3e97b
+    _kind: 0
+    _lineId: 99e1edd40b2b464e8e90dacf8b516808
+    _textRevision: 1
+    _characterId: CMH_inner
+    _speakerNameKey: 
+    _text: "\u6CA1\u6709\u7279\u522B\u7684\uFF0C\u5C0F\u65F6\u5019\u5BB6\u91CC\u5012\u662F\u5728\u9053\u89C2\u91CC\u7ED9\u6C42\u8FC7\u5E73\u5B89\u9501\uFF0C\u5982\u679C\u8FD9\u4E2A\u7B97\u7684\u8BDD"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.99e1edd40b2b464e8e90dacf8b516808
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: a12a26dbf3f94811b5df8c6f70f8e993
+    _kind: 0
+    _lineId: 28bdacb58d12433997dd4ce6995ebca7
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u597D\uFF0C\u90A3\u4E48\u603B\u4E4B\u6211\u4EEC\u8FDB\u5165\u6B63\u9898"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.28bdacb58d12433997dd4ce6995ebca7
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 88736c771eab46249f45f25d6fcfd62b
+    _kind: 0
+    _lineId: ea9211aba8224d53a396152f87ddcf2d
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u53EB\u4F60\u6765\u5462\uFF0C\u662F\u5E0C\u671B\u4F60\u5728\u62C2\u4E91\u89C2\u5F53\u4E00\u9635\u5B50\u7684\u5B66\u5F92"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.ea9211aba8224d53a396152f87ddcf2d
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 78c6b31c4da348f08e2ffc4dd2a7532a
+    _kind: 0
+    _lineId: eef8896cfe134c53bc3cd166c9df37b9
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u4F60\u4E5F\u770B\u5230\u4E86\uFF0C\u8FD9\u4E2A\u9547\u5B50\u5404\u65B9\u9762\u6761\u4EF6\u90FD\u5F88\u5DEE"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.eef8896cfe134c53bc3cd166c9df37b9
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 44f2cf9a3db34359bdca9ad843959119
+    _kind: 0
+    _lineId: c23d54a6f41c41f38c832545ce50b269
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u5728\u8FD9\u4E9B\u751F\u6D3B\u7684\u8270\u96BE\u4E2D\uFF0C\u62C2\u4E91\u89C2\u5BF9\u8FD9\u4E2A\u9547\u5B50\u7684\u9547\u6C11\u4EEC\u8D77\u5230\u4E86\u4E00\u5B9A\u7684\u5FC3\u7406\u5B89\u6170\u7684\u4F5C\u7528"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.c23d54a6f41c41f38c832545ce50b269
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: a7784bada5664169ac45e9ed4eef5735
+    _kind: 0
+    _lineId: af5337eab80a486c8e2028647918bdc7
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u867D\u7136\u6CA1\u6709\u5DE5\u8D44\u53D1\uFF0C\u4F46\u662F\u5F80\u597D\u7684\u65B9\u9762\u60F3\uFF0C\u8FD9\u91CC\u8FD8\u633A\u5C71\u6E05\u6C34\u79C0\u7684\uFF0C\u4F60\u4E5F\u80FD\u548C\u62C2\u4E91\u89C2\u7684\u9053\u957F\u5B66\u5230\u4E00\u4E9B\u6709\u8DA3\u7684\u77E5\u8BC6"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.af5337eab80a486c8e2028647918bdc7
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 8410095c08504e51ba9c5360ac894db4
+    _kind: 0
+    _lineId: a86ff527c8dc4020917bf9a0e30a8578
+    _textRevision: 1
+    _characterId: CMH_inner
+    _speakerNameKey: 
+    _text: "\u662F\u4EBA\u624B\u4E0D\u591F\u5417\uFF1F"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.a86ff527c8dc4020917bf9a0e30a8578
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: b4bc737216574df0a573da8d1ea6e34f
+    _kind: 0
+    _lineId: 7fe75a89d832433da5c12535db7c8206
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u6700\u8FD1\u62C2\u4E91\u89C2\u539F\u6765\u76843\u4F4D\u9053\u957F\u6709\u4E24\u4F4D\u5728\u5916\u8FDB\u4FEE\uFF0C\u73B0\u5728\u5E99\u91CC\u53EA\u6709\u4F4F\u6301\u4E00\u4EBA\uFF0C\u9700\u8981\u5E2E\u5FD9\u505A\u4E9B\u6253\u4E0B\u624B\u7684\u5DE5\u4F5C"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.7fe75a89d832433da5c12535db7c8206
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 8484c561135249ff8e0d063c995adfa1
+    _kind: 0
+    _lineId: b2744ba8188647b48bc05842f5b6f1a1
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u4F60\u53EF\u4EE5\u5728\u8FD9\u91CC\u5F85\u4E00\u6BB5\u65F6\u95F4\uFF0C\u76F4\u5230\u4ED6\u4EEC\u56DE\u6765\uFF0C\u4F60\u5C31\u53EF\u4EE5\u81EA\u7531\u51B3\u5B9A\u53BB\u7559"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.b2744ba8188647b48bc05842f5b6f1a1
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 98789c0d6eff4125b789aeac3ff82af9
+    _kind: 0
+    _lineId: 63c3424dc36d4815b1ce12cda55edbd8
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u5F53\u7136\u4E86\uFF0C\u5728\u5E99\u91CC\u8FD8\u662F\u8981\u5B66\u4E60\u4ED6\u4EEC\u7684\u6587\u5316\uFF0C\u9075\u5B88\u4ED6\u4EEC\u7684\u89C4\u77E9"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.63c3424dc36d4815b1ce12cda55edbd8
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: f606e901b12b4b41b35fa9ab8de463ef
+    _kind: 0
+    _lineId: af3c678d0c9e4dfba13d04f0a3b9db5d
+    _textRevision: 1
+    _characterId: CMH_inner
+    _speakerNameKey: 
+    _text: "\u90A3\u6211\u6709\u4EC0\u4E48\u597D\u5904\uFF1F"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.af3c678d0c9e4dfba13d04f0a3b9db5d
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: aac3649f0dcf4dd0b3324942b79a85ef
+    _kind: 0
+    _lineId: 3f1251ce91824dbdabcbaecc3a9bfe2a
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u55EF\u2026\u2026\u83B7\u5F97\u4EC0\u4E48\u90FD\u4E0D\u7528\u62C5\u5FC3\u7684\u4E00\u6BB5\u5305\u5403\u5305\u4F4F\u7684\u65F6\u95F4\uFF1F"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.3f1251ce91824dbdabcbaecc3a9bfe2a
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 3cc0a89f4b7e4a0c8250c4c93d2e6310
+    _kind: 0
+    _lineId: a05fbc4d0e1949ccb72146bf697a5b54
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u55EF\u2026\u2026\u5982\u679C\u4E0D\u6EE1\u610F\u7684\u8BDD\uFF0C\u7ED9\u4F60\u5F00\u4E2A\u5B9E\u4E60\u8BC1\u660E\u4E4B\u7C7B\u7684\uFF1F"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.a05fbc4d0e1949ccb72146bf697a5b54
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: a7b24474af04447880306c66dc1ede6c
+    _kind: 0
+    _lineId: 84ee6ec0e5704b8283e4936a444778b6
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u55EF\u2026\u2026\u5C31\uFF0C\u8FD9\u8FB9\u4EBA\u8FD8\u86EE\u8D28\u6734\u7684\uFF0C\u4E5F\u8BB8\u80FD\u6536\u83B7\u4E00\u4E9B\u5927\u57CE\u5E02\u6CA1\u6709\u7684\u6E29\u60C5\u5427"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.84ee6ec0e5704b8283e4936a444778b6
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 7d5972c60e9d4f2497f2b35157bd0538
+    _kind: 0
+    _lineId: d16fe01a1811442488d9c18a1f3fa970
+    _textRevision: 1
+    _characterId: CMH_inner
+    _speakerNameKey: 
+    _text: "\u5509"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.d16fe01a1811442488d9c18a1f3fa970
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 939f100e8d6540f3a19f36dc4492cbc0
+    _kind: 0
+    _lineId: b1b8912974744d348a3ff362d89f113a
+    _textRevision: 1
+    _characterId: CMH_inner
+    _speakerNameKey: 
+    _text: "\uFF08\u60F3\u5230\u5982\u679C\u5C31\u8FD9\u6837\u56DE\u5BB6\u8EBA\u7740\u8FD8\u662F\u8981\u9762\u5BF9\u5BB6\u91CC\u7684\u767D\u773C\uFF09"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.b1b8912974744d348a3ff362d89f113a
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: a67d56ff93f44f2ea568c2bda07dea7c
+    _kind: 0
+    _lineId: 79d75d974d4d410dbd4e0a62e0451c73
+    _textRevision: 1
+    _characterId: CMH_inner
+    _speakerNameKey: 
+    _text: "\u884C\u5427"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.79d75d974d4d410dbd4e0a62e0451c73
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 11ee699a6a814ec0a88e66dd1e574965
+    _kind: 0
+    _lineId: de73ec0816d8498d939c48ae9c452bad
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u592A\u597D\u4E86\uFF0C\u5E2E\u5927\u5FD9\u4E86"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.de73ec0816d8498d939c48ae9c452bad
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 8f4cdb66d63d479d91f89b36fcd959fd
+    _kind: 0
+    _lineId: 69d7041e8891400f992a27bf492024fb
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u6211\u73B0\u5728\u8DDF\u90A3\u8FB9\u8054\u7CFB\u4E0B\uFF0C\u4F60\u76F4\u63A5\u53BB\u90A3\u8FB9\u5427"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.69d7041e8891400f992a27bf492024fb
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: c2ea0cefd28b414083189e24e9723d8d
+    _kind: 0
+    _lineId: 976c7f1605ee420d84e952bbd8d945c2
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u6211\u5C31\u4E0D\u4E0A\u5C71\u4E86\uFF0C\u7ED9\u4F60\u9001\u5230\u5C71\u811A\u4E0B"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.976c7f1605ee420d84e952bbd8d945c2
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 3c7eb1e482ea4bb1a7f072db08e0bdc1
+    _kind: 0
+    _lineId: 794f580a276343a6beef5f00e3dc4159
+    _textRevision: 1
+    _characterId: CMH_zz
+    _speakerNameKey: 
+    _text: "\u54E6\u5BF9\u4E86\uFF0C\u9547\u6C11\u4F20\u8BF4\u5C71\u91CC\u6709\u5996\u602A\uFF0C\u6211\u662F\u4E0D\u4FE1\u7684\uFF0C\u4F46\u5C0F\u5FC3\u4E3A\u597D"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.794f580a276343a6beef5f00e3dc4159
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: 4d773974d2f94c0fb1ceafe576d8eed8
+    _kind: 0
+    _lineId: 09f5ee521efe43afb2a7c6a157dc801f
+    _textRevision: 1
+    _characterId: CMH_inner
+    _speakerNameKey: 
+    _text: "\u597D\u7684"
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 99
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: text.0942d3f17d504f01ba64169b17e2a578.09f5ee521efe43afb2a7c6a157dc801f
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: adfe0607fd904d3fb5ec342285a4fc55
     _kind: 18
     _lineId: 
     _textRevision: 1
@@ -1218,10 +3012,10 @@ MonoBehaviour:
     _visualAction: 0
     _instanceId: 
     _targetKind: 0
-    _actionId: entry03_prologue_cover_out
+    _actionId: ch01_polish_town_out
     _parallel: 0
     _delay: 0
-    _opacity: 0
+    _opacity: 1
     _waitActions: []
     _positionMode: 0
     _position: {x: 0, y: 0}
@@ -1229,7 +3023,7 @@ MonoBehaviour:
     _rotation: 0
     _mirror: 0
     _layer: 0
-    _ease: 0
+    _ease: 1
     _gesture: 0
     _strength: 1
     _exitAfterMove: 0
@@ -1239,7 +3033,7 @@ MonoBehaviour:
     _frequency: 12
     _decay: 1
     _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
+    _hold: 0.18
     _wholeReader: 0
     _persistent: 0
     _keepOnSceneChange: 0
@@ -1261,227 +3055,7 @@ MonoBehaviour:
     _textBeats: []
     _dialogueVisible: 1
     _textBindings: []
-    _commandId: 5ce149d2c7b32fcea24939e45c36f423
-    _kind: 4
-    _lineId: 
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: 
-    _resourceKey: "CMH_inner_\u95ED\u773C"
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0.18
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 1
-    _randomMin: 0
-    _randomMax: 99
-    _slot: 2
-    _visualAction: 0
-    _instanceId: cmh_me
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 1
-    _position: {x: 0.5, y: 0.385}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: 
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 6bfedeb153bb4c5d92fae03edb0564e1
-    _kind: 0
-    _lineId: 5b5e61b8dea04fcbb4033dbf02a30f9a
-    _textRevision: 1
-    _characterId: CMH_inner
-    _speakerNameKey: 
-    _text: "\u4ECE\u4ECA\u5E74\u5165\u4F0F\u4EE5\u6765\uFF0C\u7A7A\u6C14\u7684\u95F7\u70ED\u4F3C\u4E4E\u5C31\u6CA1\u6709\u597D\u8F6C\u3002\n\n"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.5b5e61b8dea04fcbb4033dbf02a30f9a
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats:
-    - _at: 23
-      _pause: 0.22
-      _speed: 1
-      _instant: 0
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: bb1c1e1c6df64a6a940dff725ee99830
-    _kind: 0
-    _lineId: c51cb156476743a5a5860a16859c6050
-    _textRevision: 1
-    _characterId: CMH_inner
-    _speakerNameKey: 
-    _text: "\u8001\u5E08\u4E00\u76F4\u5728\u8BB2\u53F0\u4E0A\u5E73\u94FA\u76F4\u53D9\u5730\u5FF5\u7740\u8BFE\u672C\u4E0A\u5370\u597D\u7684\u5B57\u3002\u6211\u4E00\u76F4\u5728\u8FD9\u91CC\u5750\u7740\uFF0C\u76EF\u7740\u9ED1\u677F\uFF0C\u8001\u5E08\u770B\u5411\u6211\u7684\u65F6\u5019\uFF0C\u6211\u8FD8\u4F1A\u914D\u5408\u70B9\u5934\u5FAE\u7B11\uFF0C\u4F46\u5B9E\u9645\u4E0A\u4EC0\u4E48\u90FD\u6CA1\u542C\u8FDB\u53BB\u3002"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.c51cb156476743a5a5860a16859c6050
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 756e1d9829b4ecc71e34e7ea1db6be72
+    _commandId: 5e92206eb5be534a0a77fdfb6d550979
     _kind: 30
     _lineId: 
     _textRevision: 1
@@ -1553,14 +3127,14 @@ MonoBehaviour:
     _textBeats: []
     _dialogueVisible: 1
     _textBindings: []
-    _commandId: 4a1551f932978680dca1e5ff4388d03c
+    _commandId: 5afd122ead427c657a4b40816571c339
     _kind: 4
     _lineId: 
     _textRevision: 1
     _characterId: 
     _speakerNameKey: 
     _text: 
-    _resourceKey: "CMH_inner_\u95ED\u773C"
+    _resourceKey: "CMH_inner_\u7741\u773C"
     _variableId: 
     _scope: 0
     _value:
@@ -1621,1175 +3195,11 @@ MonoBehaviour:
     _textEase: 1
     _stepGroupId: 
     _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 50370eb0ff0e41d49068ca5386219fa9
-    _kind: 0
-    _lineId: 23efc9fbb071426ab73b4de0bbed05a5
-    _textRevision: 1
-    _characterId: CMH_inner
-    _speakerNameKey: 
-    _text: "\u53EA\u662F\u4E3A\u4E86\u4E0D\u88AB\u6263\u6389\u90A320 %\u7684\u51FA\u52E4\u7387\u5206\uFF0C\u771F\u7684\u503C\u5F97\u5417\uFF1F"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.23efc9fbb071426ab73b4de0bbed05a5
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 7fe5f3113c8943398f5fc35d700eb02c
-    _kind: 0
-    _lineId: 03e61f5359e640b2b931f35dd12610ce
-    _textRevision: 1
-    _characterId: CMH_inner
-    _speakerNameKey: 
-    _text: "\u65C1\u8FB9\u5750\u7740\u7684\u5BA4\u53CB\uFF0C\u6211\u597D\u50CF\u4ECE\u6765\u4E0D\u8BB0\u5F97\u6709\u628A\u773C\u775B\u4ECE\u624B\u673A\u5C4F\u5E55\u4E0A\u79FB\u5F00\u8FC7"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.03e61f5359e640b2b931f35dd12610ce
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 45edd79fc84940e1a41ec6cc0e749a51
-    _kind: 4
-    _lineId: 
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: 
-    _resourceKey: CMH_sy_default
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0.18
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 2
-    _visualAction: 0
-    _instanceId: prologue_speaker
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 1
-    _position: {x: 0.7, y: 0.33}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: 
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: d4cd3d7bc0af4bbd8c2190c28b6e2c6c
-    _kind: 0
-    _lineId: 813194d986fc447c813979826993e388
-    _textRevision: 1
-    _characterId: CMH_sy
-    _speakerNameKey: 
-    _text: "\u54CE\u4F60\u770B\u8FD9\u4E2A\u6B4C\u661F\u7684\u74DC"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.813194d986fc447c813979826993e388
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: c886de4ee04c4f37bfdeb90c9657ffd2
-    _kind: 0
-    _lineId: a010499c31d7433cb29d751f4d1f9453
-    _textRevision: 1
-    _characterId: CMH_inner
-    _speakerNameKey: 
-    _text: "\u55EF"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.a010499c31d7433cb29d751f4d1f9453
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
     _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
     _textBeats: []
     _dialogueVisible: 1
     _textBindings: []
-    _commandId: a298634894a5b3bd69b39eabbbca473b
-    _kind: 20
-    _lineId: 
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: 
-    _resourceKey: "CMH_inner_\u7741\u773C"
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0.12
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 1
-    _randomMin: 0
-    _randomMax: 99
-    _slot: 0
-    _visualAction: 0
-    _instanceId: cmh_me
-    _targetKind: 2
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 1
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: 
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 12356d0cae9f45a2a54fe6c4b6da7e91
-    _kind: 0
-    _lineId: 5a8519ab46894e0f90555dad54ea4199
-    _textRevision: 1
-    _characterId: CMH_sy
-    _speakerNameKey: 
-    _text: "\u4ED6\u771F\u7684\u597D\u5389\u5BB3\u554A"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.5a8519ab46894e0f90555dad54ea4199
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats:
-    - _at: 1
-      _pause: 0.22
-      _speed: 1
-      _instant: 0
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: a285e92ae61f47bcafa4e38a6490095b
-    _kind: 0
-    _lineId: 21a2fd8769cd4be99357b00eb53784bf
-    _textRevision: 1
-    _characterId: CMH_inner
-    _speakerNameKey: 
-    _text: "\u55EF\u2026\u2026"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.21a2fd8769cd4be99357b00eb53784bf
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 8ebeeba5fef24f6dba412ad29badc39f
-    _kind: 0
-    _lineId: 8779d9f77646428b8fa8c43d2bea1c05
-    _textRevision: 1
-    _characterId: CMH_sy
-    _speakerNameKey: 
-    _text: "\u4F60\u8FD9\u4E2A\u4EBA\u600E\u4E48\u8FD9\u4E48\u6CA1\u610F\u601D\uFF0C\u7B97\u4E86\u6211\u627E\u522B\u4EBA\u804A"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.8779d9f77646428b8fa8c43d2bea1c05
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats:
-    - _at: 0
-      _pause: 0.5
-      _speed: 1
-      _instant: 0
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 3d8cc57ecc684ccfb02aea0b2afea9b1
-    _kind: 0
-    _lineId: 6680ad975bdb4a92916c3a0b86ba6d0a
-    _textRevision: 1
-    _characterId: CMH_inner
-    _speakerNameKey: 
-    _text: "\u2026\u2026"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.6680ad975bdb4a92916c3a0b86ba6d0a
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 41a56f0d8c644f3cbd5fa0f26a5b8cd6
-    _kind: 0
-    _lineId: e299f821f1d34d1ba9f59de665f1fd07
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: "\u90A3\u79CD\u95F7\u70ED\u5E26\u6765\u7684\u7A92\u606F\u611F\u4F3C\u4E4E\u76D8\u8E1E\u5728\u6BCF\u4E00\u5F20\u8138\u4E0A"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.e299f821f1d34d1ba9f59de665f1fd07
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 2dad760450fa41b8aee1a7feaa37983c
-    _kind: 0
-    _lineId: ea3b5dd50e8047738556e712c1bfffe9
-    _textRevision: 1
-    _characterId: CMH_inner
-    _speakerNameKey: 
-    _text: "\uFF08\u80CC\u8D77\u4E66\u5305\uFF09\u8001\u5E08\uFF0C\u6211\u4E0A\u4E2A\u5395\u6240"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.ea3b5dd50e8047738556e712c1bfffe9
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 93fc81f8c8227405a4ebd4a4e39c8187
-    _kind: 20
-    _lineId: 
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: 
-    _resourceKey: "CMH_inner_\u5FAE\u7B11"
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0.12
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 1
-    _randomMin: 0
-    _randomMax: 99
-    _slot: 0
-    _visualAction: 0
-    _instanceId: cmh_me
-    _targetKind: 2
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 1
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: 
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: 49977b3c1c0a49cc9c851ec7fcee7def
-    _kind: 0
-    _lineId: 62d30aefc3804decb659384d79174fed
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: "\u8001\u5E08\u6CA1\u642D\u7406\u6211\uFF0C\u6211\u89C6\u4E3A\u9ED8\u8BB8\uFF0C\u76F4\u63A5\u4ECE\u540E\u95E8\u51FA\u6765"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.62d30aefc3804decb659384d79174fed
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats:
-    - _at: 9
-      _pause: 0.22
-      _speed: 1
-      _instant: 0
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: e96ad7eb336240658c2f2895af7e5d08
-    _kind: 0
-    _lineId: a058a2a03827404bafd808de6cd27140
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: "\u6559\u5B66\u697C\u95E8\u53E3\u8FD9\u6761\u8DEF\uFF0C\u4E00\u76F4\u5411\u5317\u8D70\uFF0C\u80FD\u8D70\u5230\u54EA\u91CC"
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: text.0942d3f17d504f01ba64169b17e2a578.a058a2a03827404bafd808de6cd27140
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: e2173c97b40341bda33539455bd782ae
-    _kind: 18
-    _lineId: 
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: 
-    _resourceKey: 
-    _variableId: 
-    _scope: 0
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0.5
-    _integerOperation: 0
-    _operandVariableId: 
-    _operandScope: 0
-    _integerOperand: 0
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: be6250423c5e4cdc9f4405bd3ea7f1ed
-    _parallel: 0
-    _delay: 0
-    _opacity: 1
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 1, y: 1}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 1
-    _gesture: 0
-    _strength: 1
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0.55
-    _direction: {x: 1, y: 0}
-    _frequency: 12
-    _decay: 1
-    _color: {r: 0, g: 0, b: 0, a: 1}
-    _hold: 0.18
-    _wholeReader: 1
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: 
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0.8
-    _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
-    _textEase: 1
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
-    _textBeats: []
-    _dialogueVisible: 1
-    _textBindings: []
-    _commandId: afe12d8b78e2ac84f7c86b5033b3dcd3
+    _commandId: 1d1343994a7a2e223072a794cecb5a07
     _kind: 30
     _lineId: 
     _textRevision: 1
@@ -2846,4 +3256,4 @@ MonoBehaviour:
     _bindingId: 
     _volume: 1
     _textKey: 
-  _next: {fileID: 11400000, guid: a7b2218cd1f99a440b706f304ec1fa5a, type: 2}
+  _next: {fileID: 11400000, guid: 02f083a24f21fdd48b0522336558cee6, type: 2}

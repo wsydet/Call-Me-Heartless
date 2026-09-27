@@ -1,0 +1,3274 @@
+{
+    "schemaVersion":  1,
+    "batchId":  "20260925-chapter01-01",
+    "skillId":  "ember-vn-import-story",
+    "sourceUrl":  "https://my.feishu.cn/sheets/P6VfsAMj3hq15btR3Oice7i4nId",
+    "sheetId":  "zV7x0U",
+    "sheetName":  "第一章",
+    "range":  "A2:E126",
+    "headerRange":  "A1:E1",
+    "readAtUtc":  "2026-09-24T17:55:41.9972303Z",
+    "recheckedBeforeWriteUtc":  "2026-09-24T20:12:00Z",
+    "sourceFingerprint":  "a85bb9d0a41bcd9ae3fb39d59f3df3c54df8d2d38afac3b19c945573d3040e3e",
+    "sourceFingerprintAlgorithm":  "SHA256 over UTF-8 bytes of one compact JSON object per row in ascending sheet-row order, newline separated; fixed key order row,scene,speaker,text,art,change; missing cells normalized to empty string",
+    "headerMapping":  {
+                          "场景":  "A",
+                          "说话人":  "B",
+                          "台词":  "C",
+                          "美术":  "D",
+                          "变化":  "E"
+                      },
+    "choices":  {
+                    "range":  {
+                                  "sheet":  "第一章",
+                                  "sheetId":  "zV7x0U",
+                                  "start":  2,
+                                  "end":  126
+                              },
+                    "target":  {
+                                   "chapterDisplayName":  "第一章",
+                                   "chapterPrefix":  "CH02_Chapter01",
+                                   "endingChapterDisplayName":  "结局",
+                                   "endingChapterPrefix":  "CH99_Endings"
+                               },
+                    "emptySpeakerMode":  "continue-previous",
+                    "mayorMapping":  "create",
+                    "hiddenNameMode":  "hide",
+                    "backgrounds":  {
+                                        "镇上":  "村庄_default",
+                                        "半山腰":  "（不设置）",
+                                        "道观":  "道观_default",
+                                        "房间":  "房间_default"
+                                    },
+                    "fadeRow68":  "black05",
+                    "hubPrompt":  "once",
+                    "executeEndingDecoupling":  true,
+                    "note":  ""
+                },
+    "planHash":  "fe4e07425c555ce1fe8d241df12010a4da6dcb2c4ee8aa96758acd54e0f00433",
+    "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+    "storyAsset":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset",
+    "chapters":  [
+                     {
+                         "chapterId":  "2e58920df7dd454096c73f95a528b843",
+                         "displayName":  "第一章·序章",
+                         "prefix":  "CH01_Prologue",
+                         "role":  "序章；本批仅新增出口指向第一章，台词未改"
+                     },
+                     {
+                         "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                         "displayName":  "第一章",
+                         "prefix":  "CH02_Chapter01",
+                         "role":  "本批新建，承载第一章正文"
+                     },
+                     {
+                         "chapterId":  "8507fecd54b74197aab3c9427ddf03a1",
+                         "displayName":  "结局",
+                         "prefix":  "CH99_Endings",
+                         "role":  "本批新建的独立结局章，登记在剧情最后；承接原序章结局节点"
+                     }
+                 ],
+    "endingDecoupling":  {
+                             "option":  "A 独立结局章放最后",
+                             "movedNode":  {
+                                               "asset":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings/CH99_Endings_PreviewEnd.asset",
+                                               "guid":  "118137fad9e25a54a886b366608094ef",
+                                               "nodeId":  "e9c1f9e2320144b1ba8cb0dc8188634d",
+                                               "endingId":  "9f5cd4ba4ee041939d09f1ad8bc06623",
+                                               "guidPreserved":  true,
+                                               "nodeIdPreserved":  true,
+                                               "endingIdPreserved":  true
+                                           },
+                             "prologueExit":  {
+                                                  "asset":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits/CH01_Prologue_ExitToChapter01.asset",
+                                                  "nodeId":  "73a7d87c477c40eca36a9cdaafc77e25",
+                                                  "fallbackChapterId":  "57c023ad23ef45be88cbab6bd9b3d51d"
+                                              },
+                             "chapterExit":  {
+                                                 "asset":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits/CH02_Chapter01_ExitToEndings.asset",
+                                                 "nodeId":  "55c0b32052b94aa09ffe885533cb7aab",
+                                                 "fallbackChapterId":  "8507fecd54b74197aab3c9427ddf03a1"
+                                             },
+                             "note":  "此后中间插入章节只需改前一章出口的兜底指向，结局节点不再搬动"
+                         },
+    "revisionBumps":  {
+                          "storyRevision":  "1 -\u003e 2",
+                          "prologueStoryRevision":  "1 -\u003e 2",
+                          "prologueHomeContentRevision":  "5 -\u003e 6"
+                      },
+    "tableChanges":  [
+                         {
+                             "path":  "Assets/GameResource/TableSources/novel_characters.etable.csv",
+                             "change":  "新增 CMH_zz,镇长"
+                         },
+                         {
+                             "path":  "Assets/GameResource/Resources/Config/Tables/novel_characters.bytes",
+                             "change":  "由 EmberTablePipeline.BakeAndGenerateAll 重新烘焙"
+                         }
+                     ],
+    "assetCount":  20,
+    "assets":  [
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset",
+                       "guid":  "4daafdce996c2ac4fa0c7c941c4ff895",
+                       "sha256":  "bce141252b5f927d952defb0d2e30b037dc556b5a6d33d8fd469d2c935f4c10d"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+                       "guid":  "431120cfb0b631c42876ab1e57c907de",
+                       "sha256":  "a5bf99e0968e6e1b200b4357951a3a448345d7a0cba8fccc6ce0b1743ee19d2e"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset",
+                       "guid":  "a7b2218cd1f99a440b706f304ec1fa5a",
+                       "sha256":  "19f9ca34c15e3b3f781b428f35ddf4551610d0952b6b96ca34a08d938ab35ff8"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits/CH01_Prologue_ExitToChapter01.asset",
+                       "guid":  "db051ae094def574db2739618c88bc7f",
+                       "sha256":  "b212b7f8f4532d127c89ef8ccff04914d52d543c02dae70a9756131c7591c34c"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches/CH02_Chapter01_HubBranch.asset",
+                       "guid":  "be9971fa35a1aec4c8bee9ac5ecdd5e0",
+                       "sha256":  "20babea8bfa220c570aa74d7ee3218b00b9334980e2844f042592dd540b21b8c"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Chapter.asset",
+                       "guid":  "664b417b200cbef4fb08ceb776129d60",
+                       "sha256":  "c24c55d89b30f452b3e1fa154db122bbdcce3107947a7fb36581f94af4bba90e"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices/CH02_Chapter01_HubChoice.asset",
+                       "guid":  "a7ea549e5a99d9548a525d78b604b2ff",
+                       "sha256":  "b4170dfe8e0618b8e1b270dbe284c05958ff824ba4c6737d28bedb2ea64e0762"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset",
+                       "guid":  "28cbafd5ca885a1429c70820c91e84a6",
+                       "sha256":  "c9099adb7cab4fc6982b36349138fc5a3c1504a6ce71d1bee74512fa8a3247ee"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_HubSay.asset",
+                       "guid":  "f1ee9f3377679c947bbf5be799228087",
+                       "sha256":  "9964f0d93a81274a868cdebd0b831c1c0f5233fd957150af75b057121d5418e1"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_MainClose.asset",
+                       "guid":  "ca43d52133b129048a142c017acfd152",
+                       "sha256":  "7e4a6c1ad964b4f3751d09ac0c648be6ed0f9441a5ff78378994cddb8cb46576"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset",
+                       "guid":  "02f083a24f21fdd48b0522336558cee6",
+                       "sha256":  "ff7d1daa23363c1d1a0c52c447ab3efe4d682b5914c26094f1022165eeb03756"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset",
+                       "guid":  "c57e5c67accc095458a795b78db1a19a",
+                       "sha256":  "7f5557c59adf7ce5b74b12e5d37aa77680c431944f3edf82d22f2d131e33cda3"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+                       "guid":  "73dc1eb416e18954bbbe84f588b6edca",
+                       "sha256":  "993669d0ad2b3bb9c80bb61f3c693c1eaaba60c6a76c00e45097813191c9c26e"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset",
+                       "guid":  "cc37b82ac3267f24eb5c3fbe5c4e8b4e",
+                       "sha256":  "6b94d15f9491f9214a1c520d00bda89f81394b49c9240f19cac5b2dc4f5cbd77"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Overnight.asset",
+                       "guid":  "64474104c6bf64741b064d337b2f534b",
+                       "sha256":  "3daa9a490bf1a04bb21502c200c4792841ecc937f5b604bf4603ccdef04e4fbd"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+                       "guid":  "53e264a23cc882e41977f79bcd83c33e",
+                       "sha256":  "02aa1b5e66a06f16cdfb0dce3f2b7a7e0fbbca603c3c7c8a93f7361e15df7acd"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits/CH02_Chapter01_ExitToEndings.asset",
+                       "guid":  "3442714a5ccb8b347aa1053601550692",
+                       "sha256":  "9877544a323187d072ff91bb6170514467dcadbb3c1dba42eda3f5d3d3298f5a"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Chapter.asset",
+                       "guid":  "3b56d80b4988b65459dd1ca6136d49eb",
+                       "sha256":  "84b43a8ed3c91f8541b2723c758ed6337fd0de74b849b3b757ad51a065e08015"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings/CH99_Endings_PreviewEnd.asset",
+                       "guid":  "118137fad9e25a54a886b366608094ef",
+                       "sha256":  "3a9418368757e4c1db492e801de3ac3561b081cf4d35f9d163a93a91b4f97bea"
+                   },
+                   {
+                       "path":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset",
+                       "guid":  "97bcb4ee0aa64f54d952920292e79e21",
+                       "sha256":  "aed8eb161c40849d5a491383de5a63dbe52a03b7592552bd3119c3f2dcbd8217"
+                   }
+               ],
+    "targetFingerprint":  "4bb494d2c0b7e52274b332e98bbe9479a0fb54dd9bad02367f73d359cc722683",
+    "rows":  [
+                 {
+                     "sourceRow":  2,
+                     "raw":  {
+                                 "场景":  "镇上",
+                                 "说话人":  "我",
+                                 "台词":  "这哪能算得上是县城，分明就是乡镇吧喂",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "1ebdcb1ba4f747ac9521594676e4b213",
+                                          "lineId":  "901fe983f584464a9a9714f416907edd",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  3,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "你来啦",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "2980b9cdb4a24239a5fd5b325e71ca14",
+                                          "lineId":  "541728fe379f4a55960ee661bc19c695",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  4,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "你好",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "d007d05bf93a4bd895d7d94301341223",
+                                          "lineId":  "3966345e4a864881b7ea877d9fdc6f23",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  5,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "同学，我是这个镇子的镇长，听你们导员说起过你",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "82f96db459b747bda659a53ad11ce0a3",
+                                          "lineId":  "d5e42d1106c5428c93cae5bd67a7aa6e",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  6,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "怎么说的",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "96102ba5921d441c9a0afbe274bcf00f",
+                                          "lineId":  "23d248eba1844acfa59052bac2581bcc",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  7,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "他说你是个靠得住的沉稳的同学，最近需要换换环境，来我们这里再好不过了",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "1c86b5fd65d74b87b8cc14f33d9ae54b",
+                                          "lineId":  "d7efd32d17f44143a82b1b6458edbf62",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  8,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "（四下打量）",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "3a278a342e674548aaa02a87f2e9cfb2",
+                                          "lineId":  "01ae8a8bc3524932b0ddb4d683690eb2",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  9,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "（好穷的地方，该不会是急缺廉价劳动力才见谁都这样说）",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "ead77c3ccddc4d91bfad4bc48edb75d2",
+                                          "lineId":  "e7fe9053d09d4bdfa30c3ceea16972a4",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  10,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "我们这边呢，荒山野岭的，没什么人口",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "69c18f2171c54a33b4026b10fad5b367",
+                                          "lineId":  "b3f29536f35341f1919e454e87d5dc1c",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  11,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "镇上不到一千人，都是以种地或养猪为生的农民",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "6dca650388d64a5e9667c9403037d525",
+                                          "lineId":  "e986a3b19b3041e081cbf776c9c25379",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  12,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "往镇子东北边的山上走，走3小时山路，有座拂云观",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "67705fabf17545f79ffec9eb5c62b02f",
+                                          "lineId":  "fc4dbd3acabe4fb98ca1c38d61cf7d4e",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  13,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "我还没问你的宗教信仰，你应该没有固定信仰对吧？",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "04bb3888c9b04dab8874989597dedfc6",
+                                          "lineId":  "431652436758437abe5afb566b60de75",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  14,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "没有特别的，小时候家里倒是在道观里给求过平安锁，如果这个算的话",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "72186744f2964d4db1f20c0b85f3e97b",
+                                          "lineId":  "99e1edd40b2b464e8e90dacf8b516808",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  15,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "好，那么总之我们进入正题",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "a12a26dbf3f94811b5df8c6f70f8e993",
+                                          "lineId":  "28bdacb58d12433997dd4ce6995ebca7",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  16,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "叫你来呢，是希望你在拂云观当一阵子的学徒",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "88736c771eab46249f45f25d6fcfd62b",
+                                          "lineId":  "ea9211aba8224d53a396152f87ddcf2d",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  17,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "你也看到了，这个镇子各方面条件都很差",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "78c6b31c4da348f08e2ffc4dd2a7532a",
+                                          "lineId":  "eef8896cfe134c53bc3cd166c9df37b9",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  18,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "在这些生活的艰难中，拂云观对这个镇子的镇民们起到了一定的心理安慰的作用",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "44f2cf9a3db34359bdca9ad843959119",
+                                          "lineId":  "c23d54a6f41c41f38c832545ce50b269",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  19,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "虽然没有工资发，但是往好的方面想，这里还挺山清水秀的，你也能和拂云观的道长学到一些有趣的知识",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "a7784bada5664169ac45e9ed4eef5735",
+                                          "lineId":  "af5337eab80a486c8e2028647918bdc7",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  20,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "是人手不够吗？",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "8410095c08504e51ba9c5360ac894db4",
+                                          "lineId":  "a86ff527c8dc4020917bf9a0e30a8578",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  21,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "最近拂云观原来的3位道长有两位在外进修，现在庙里只有住持一人，需要帮忙做些打下手的工作",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "b4bc737216574df0a573da8d1ea6e34f",
+                                          "lineId":  "7fe75a89d832433da5c12535db7c8206",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  22,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "你可以在这里待一段时间，直到他们回来，你就可以自由决定去留",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "8484c561135249ff8e0d063c995adfa1",
+                                          "lineId":  "b2744ba8188647b48bc05842f5b6f1a1",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  23,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "当然了，在庙里还是要学习他们的文化，遵守他们的规矩",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "98789c0d6eff4125b789aeac3ff82af9",
+                                          "lineId":  "63c3424dc36d4815b1ce12cda55edbd8",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  24,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "那我有什么好处？",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "f606e901b12b4b41b35fa9ab8de463ef",
+                                          "lineId":  "af3c678d0c9e4dfba13d04f0a3b9db5d",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  25,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "嗯……获得什么都不用担心的一段包吃包住的时间？",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "aac3649f0dcf4dd0b3324942b79a85ef",
+                                          "lineId":  "3f1251ce91824dbdabcbaecc3a9bfe2a",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  26,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "",
+                                 "台词":  "嗯……如果不满意的话，给你开个实习证明之类的？",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "3cc0a89f4b7e4a0c8250c4c93d2e6310",
+                                          "lineId":  "a05fbc4d0e1949ccb72146bf697a5b54",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射  -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  27,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "",
+                                 "台词":  "嗯……就，这边人还蛮质朴的，也许能收获一些大城市没有的温情吧",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "a7b24474af04447880306c66dc1ede6c",
+                                          "lineId":  "84ee6ec0e5704b8283e4936a444778b6",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射  -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  28,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "唉",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "7d5972c60e9d4f2497f2b35157bd0538",
+                                          "lineId":  "d16fe01a1811442488d9c18a1f3fa970",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  29,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "",
+                                 "台词":  "（想到如果就这样回家躺着还是要面对家里的白眼）",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "939f100e8d6540f3a19f36dc4492cbc0",
+                                          "lineId":  "b1b8912974744d348a3ff362d89f113a",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射  -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  30,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "行吧",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "a67d56ff93f44f2ea568c2bda07dea7c",
+                                          "lineId":  "79d75d974d4d410dbd4e0a62e0451c73",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  31,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "镇长",
+                                 "台词":  "太好了，帮大忙了",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "11ee699a6a814ec0a88e66dd1e574965",
+                                          "lineId":  "de73ec0816d8498d939c48ae9c452bad",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 镇长 -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  32,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "",
+                                 "台词":  "我现在跟那边联系下，你直接去那边吧",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "8f4cdb66d63d479d91f89b36fcd959fd",
+                                          "lineId":  "69d7041e8891400f992a27bf492024fb",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射  -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  33,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "",
+                                 "台词":  "我就不上山了，给你送到山脚下",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "c2ea0cefd28b414083189e24e9723d8d",
+                                          "lineId":  "976c7f1605ee420d84e952bbd8d945c2",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射  -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  34,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "",
+                                 "台词":  "哦对了，镇民传说山里有妖怪，我是不信的，但小心为好",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "3c7eb1e482ea4bb1a7f072db08e0bdc1",
+                                          "lineId":  "794f580a276343a6beef5f00e3dc4159",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_zz",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射  -\u003e [CMH_zz]"
+                 },
+                 {
+                     "sourceRow":  35,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "好的",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "1ee958ac7ec042d986982a9c3b7c5ce2",
+                     "nodeGuid":  "53e264a23cc882e41977f79bcd83c33e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "4d773974d2f94c0fb1ceafe576d8eed8",
+                                          "lineId":  "09f5ee521efe43afb2a7c6a157dc801f",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Town；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  36,
+                     "raw":  {
+                                 "场景":  "半山腰（夜晚）",
+                                 "说话人":  "我",
+                                 "台词":  "真是不负责任啊镇长",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "52542cd6fb404afbb8bab149181f1297",
+                                          "lineId":  "c172cf93985949f09956e289b17c3cf7",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  37,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "",
+                                 "台词":  "天黑了才爬到半山腰，这山这么难爬也不说一声呢",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "2b4cd12710654f17bd5ef9952e909b87",
+                                          "lineId":  "ee684600569e44a9907022f385b404d1",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射  -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  38,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "",
+                                 "台词":  "诶？前面怎么走啊",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "0053e285e1d84847bfd9d56d2dc5a64e",
+                                          "lineId":  "b8cc1b9006e745a8b8883b3817430e24",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射  -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  39,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "？？？",
+                                 "台词":  "……",
+                                 "美术":  "申箬青立绘",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "9220d0941ed149b28b05a1872244bebc",
+                                          "lineId":  "95479e2ab15f427a8420877cb7fe1aa0",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 ？？？ -\u003e []"
+                 },
+                 {
+                     "sourceRow":  40,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "太好了前面有人",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "cc1283bb90434797b324ab5fb28e6308",
+                                          "lineId":  "551079593f2347609de73c685e421fd4",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  41,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "",
+                                 "台词":  "小师哥，怎么走才能到拂云观的生活区啊",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "01971035aab944eab8e1f78cc0355f0b",
+                                          "lineId":  "06933fa3f07f4370b0b48107bdeaf63b",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射  -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  42,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "？？？",
+                                 "台词":  "啊？",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "c8876ff5470f4966a09cf4af88a17a66",
+                                          "lineId":  "ba508a17273a4508b3dab1cde44b9c0f",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 ？？？ -\u003e []"
+                 },
+                 {
+                     "sourceRow":  43,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "",
+                                 "台词":  "陌生人吓了一跳，仿佛我不该和他说话",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "e909b54f6df04a99bd780bfee51b1faf",
+                                          "lineId":  "2052d6455a824a4e86ca4f30fb3a89e2",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射  -\u003e []"
+                 },
+                 {
+                     "sourceRow":  44,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "？？？",
+                                 "台词":  "我不是拂云观的",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "9a3a4759e3f248c385da9a6a44831287",
+                                          "lineId":  "67bc54ecfa8b4c208a3f041aa0f73e06",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 ？？？ -\u003e []"
+                 },
+                 {
+                     "sourceRow":  45,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "哦哦，那我该怎么称呼你",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "7b2f594de7f7472a850e427b7cf68d9b",
+                                          "lineId":  "609dc7ca21f14d6db127a5b0bb79f59e",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  46,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "？？？",
+                                 "台词":  "我叫申箬青，你可以叫我小青",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "4e83e5f0f4784a74849c33f8f0ab722a",
+                                          "lineId":  "143422d897c449a68691dd4fcd52ca65",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 ？？？ -\u003e []"
+                 },
+                 {
+                     "sourceRow":  47,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "懂了，就像白蛇传里的小青一样，我是【主控昵称】，那我们就算认识啦",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "6cea57fc446047a1882060d0abf67b13",
+                                          "lineId":  "b7de0e19e9764ea48f35a855e6620941",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  48,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "申箬青",
+                                 "台词":  "……【主控昵称】",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "e6e698ba79134ee79c68039059bc05c8",
+                                          "lineId":  "d47d34a192c84aebbd872ea8b51ed089",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_srq",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 申箬青 -\u003e [CMH_srq]"
+                 },
+                 {
+                     "sourceRow":  49,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "那我怎么走才能到拂云观生活区啊",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "7dd10fc161c146ac8e24c228c9c6e133",
+                                          "lineId":  "66b8c2313ffb469db11aaec1d6ea210c",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  50,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "申箬青",
+                                 "台词":  "（舔了下舌头）那边",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "582e3a4615584e449f8df8e3373ddaef",
+                                          "lineId":  "60c6fd62f2a541ba93a6f391c64831e4",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_srq",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 申箬青 -\u003e [CMH_srq]"
+                 },
+                 {
+                     "sourceRow":  51,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "带我去好不好",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "e06245e834a74434af993df2b3137f28",
+                                          "lineId":  "ce83c8e0996643c59ab2e06c2fec41f1",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  52,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "申箬青",
+                                 "台词":  "真是麻烦",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "b5d788f01f4442cf8c2ea93d12b94ed8",
+                                          "lineId":  "00d7ddb193ad4d909476d3e74d8a9482",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_srq",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 申箬青 -\u003e [CMH_srq]"
+                 },
+                 {
+                     "sourceRow":  53,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "旁白",
+                                 "台词":  "申箬青虽然不情愿但还是在前面带起了路",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "006d4ca66aa947cfa4ecef697bfd35ce",
+                                          "lineId":  "8f9f0878f6b146c7acc5d8b47b93a520",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 旁白 -\u003e []"
+                 },
+                 {
+                     "sourceRow":  54,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "申箬青",
+                                 "台词":  "前面亮灯的地方就是了，我先回去了",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "43ac5ba1f65e48b3bb32c05d38ec91f2",
+                                          "lineId":  "6c9a49c0c068470285a1dc5f24b74e15",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_srq",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 申箬青 -\u003e [CMH_srq]"
+                 },
+                 {
+                     "sourceRow":  55,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "好，谢谢你小青",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "419626ec00d94f998e03a0065ba968d4",
+                                          "lineId":  "31abaa472dfa422a9f2f158d5dfbb00f",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  56,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "申箬青",
+                                 "台词":  "……",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "99732585ac7b46819748abd53641365d",
+                     "nodeGuid":  "02f083a24f21fdd48b0522336558cee6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "fb51faf3c6b44c1d8735bc87242a7146",
+                                          "lineId":  "eb3b44d70cfd4963b3ef76b1549eca69",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_srq",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Mountain；说话人映射 申箬青 -\u003e [CMH_srq]"
+                 },
+                 {
+                     "sourceRow":  59,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "住持",
+                                 "台词":  "终于到了，我还在想你是不是出什么岔子了",
+                                 "美术":  "",
+                                 "变化":  "林夕染"
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "892a623db4314c9fb2dada1107773409",
+                     "nodeGuid":  "28cbafd5ca885a1429c70820c91e84a6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "0d7a469cd1d04841b30224255463d506",
+                                          "lineId":  "a30612cb533141e095cd290bdd0c1671",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Arrival；说话人映射 住持 -\u003e []"
+                 },
+                 {
+                     "sourceRow":  60,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "道长好",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "892a623db4314c9fb2dada1107773409",
+                     "nodeGuid":  "28cbafd5ca885a1429c70820c91e84a6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "05c486b39468468ea865ccf68807a585",
+                                          "lineId":  "5c39b1b3549e46a59c15ffd3496ed6d5",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Arrival；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  61,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "住持",
+                                 "台词":  "【主控昵称】你好哦，我是拂云观的住持，我叫林夕染，明后天我会办个仪式收【主控昵称】为临时弟子",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "892a623db4314c9fb2dada1107773409",
+                     "nodeGuid":  "28cbafd5ca885a1429c70820c91e84a6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "917631bc26014753be3464a54825ad46",
+                                          "lineId":  "8af239b1d9cd42b9982b225582c681ed",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Arrival；说话人映射 住持 -\u003e []"
+                 },
+                 {
+                     "sourceRow":  62,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "夕染师父",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "892a623db4314c9fb2dada1107773409",
+                     "nodeGuid":  "28cbafd5ca885a1429c70820c91e84a6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "caef4a659c984a628aea5f1332da2f80",
+                                          "lineId":  "95d9dda6b2c9442e9327c0f1469e289c",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Arrival；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  63,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "（笑）改口到很快嘛，先不急，累了吧今天，这是你的房间，这几个月你就住在这里",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "892a623db4314c9fb2dada1107773409",
+                     "nodeGuid":  "28cbafd5ca885a1429c70820c91e84a6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "417219e190ea4d62b8ea3bb349e52f94",
+                                          "lineId":  "e94b8bd6bd524738abcd844c1d756d2b",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Arrival；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  64,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "好的",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "892a623db4314c9fb2dada1107773409",
+                     "nodeGuid":  "28cbafd5ca885a1429c70820c91e84a6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "bf93f5b676324fbbb7983963e2a076a2",
+                                          "lineId":  "7ac922295db6402a99b115dbaae4f9c2",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Arrival；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  65,
+                     "raw":  {
+                                 "场景":  "自己房间（黑夜）",
+                                 "说话人":  "林夕染",
+                                 "台词":  "先在房间好好休息吧，明天带你熟悉下这里，晚安哦",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "892a623db4314c9fb2dada1107773409",
+                     "nodeGuid":  "28cbafd5ca885a1429c70820c91e84a6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "63e7ef0131b94fb3a386e45aa9580024",
+                                          "lineId":  "387c6032c589404481fc16c57890124d",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Arrival；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  66,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "晚安师父",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "892a623db4314c9fb2dada1107773409",
+                     "nodeGuid":  "28cbafd5ca885a1429c70820c91e84a6",
+                     "commands":  [
+                                      {
+                                          "commandId":  "36f1cba439e0488e9b7f9d0f772bb12a",
+                                          "lineId":  "5c0ecffff02245698ede1f3b2a6788ec",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Arrival；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  68,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "旁白",
+                                 "台词":  "过了一夜",
+                                 "美术":  "fadeout",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "ab2022f50e45483797909e97be4f4b75",
+                     "nodeGuid":  "64474104c6bf64741b064d337b2f534b",
+                     "commands":  [
+                                      {
+                                          "commandId":  "48d70e3671d24df7a9d4ed63d06f330f",
+                                          "lineId":  "7e2508902ea74883ae131e9a9394c54d",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Overnight；说话人映射 旁白 -\u003e []"
+                 },
+                 {
+                     "sourceRow":  69,
+                     "raw":  {
+                                 "场景":  "拂云观内部（白天）",
+                                 "说话人":  "林夕染",
+                                 "台词":  "那么仪式结束喽，【主控昵称】小朋友是我们门派的弟子了哦",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "ab2022f50e45483797909e97be4f4b75",
+                     "nodeGuid":  "64474104c6bf64741b064d337b2f534b",
+                     "commands":  [
+                                      {
+                                          "commandId":  "efcc6ca339a44ca983105ff48a2e2c28",
+                                          "lineId":  "73d701b67af2430ca0a222600af16b5b",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Overnight；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  70,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "（明明也没有大我几岁）",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "ab2022f50e45483797909e97be4f4b75",
+                     "nodeGuid":  "64474104c6bf64741b064d337b2f534b",
+                     "commands":  [
+                                      {
+                                          "commandId":  "4adc4653ee22491aad33d723e6f65eda",
+                                          "lineId":  "0c702d6dac864496a09f1d681ce782ad",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_Overnight；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  71,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "有什么想要问师父我的吗？",
+                                 "美术":  "",
+                                 "变化":  "选项：\n1. 日程安排\n2. 关于门派\n3. 关于妖怪（问完日程安排解锁）"
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "537d5206a78b47c48166dafb7d9065c3",
+                     "nodeGuid":  "f1ee9f3377679c947bbf5be799228087",
+                     "commands":  [
+                                      {
+                                          "commandId":  "f496602efff1496d89aa6b9b01f84dd1",
+                                          "lineId":  "f460cece685844e392cbff4d63e898c2",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_HubSay；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  73,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "首先是早上5点起来晨课",
+                                 "美术":  "",
+                                 "变化":  "选项1，日程安排"
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "7d0ffb7cd4ec49b0b5a20c494bf6ea56",
+                                          "lineId":  "b4082a50bdc24004a4d10343da25d5a7",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  74,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "这么早啊……",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "a3ce1e099b9c452aa5d0a95b7136da12",
+                                          "lineId":  "1cb5aee7713b4dd3994b51ce39146049",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  75,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "考虑到你是临时弟子，可以宽容点啦",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "67b91b4c2b474374be4a219f237c2be2",
+                                          "lineId":  "7aaa2c047523458296395d1fd07176ce",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  76,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "晨课就像早自习，在庙里诵诵经",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "9dc61c8c02da4465afbb7e7f656c26c5",
+                                          "lineId":  "da61c17b940149c4ab9b8cd7d9c7c17c",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  77,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "接下来的上午我会比较忙，有时候是应镇民要求主持仪式，有时候是表文作符，有时候是起卦看相，总之尽可能的满足香客要求",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "214f8b26184041e2891049cc24cbb483",
+                                          "lineId":  "b28596b960094a33b3453ca09bd627b8",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  78,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "（点头）师父会好多",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "3969edf220974f97ab6a0bfaccc717b4",
+                                          "lineId":  "3cab22889b05464791cb38d51399f8c6",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  79,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "【主控昵称】需要做的事就是基础的贡品整理，庭院洒扫，浇菜种地，洗衣做饭之类",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "6b0a251283dc4e2cae3df0e2cee5b02c",
+                                          "lineId":  "d9fb241e99964938ac2f5dd596b66cbd",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  80,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "是的，我们有小菜地",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "925400e6f9a94cd196fea5274386f1ee",
+                                          "lineId":  "3c2cf2c86c30438299e99a2907b7436d",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  81,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "生活物资短缺的话，每隔一个月统一下到镇子里采办一次",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "25d8075e7d6149b698d6fdae213ad004",
+                                          "lineId":  "943dd2bdc5454849b8e602b16fbc9414",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  82,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "每个月初我们都会清算一次上个月的经营情况",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "e4e981c71d4d4674b5491406f042360f",
+                                          "lineId":  "1ff37392abfe49978fa7893520554c82",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  83,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "【主控昵称】做的工作细致程度也会影响到经营情况",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "062d1deb4d7345e7a0e3682a49215cc5",
+                                          "lineId":  "e85ace68d0de4de480abb18de3ab9d00",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  84,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "当然我们也有来自镇上的固定经费，所以这个不用太过担心",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "896725089b584be1b1b8bfa6d37f3cd1",
+                                          "lineId":  "ef6024969f54497d8d1f2e1c48b9ce00",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  85,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "下午呢，我一般没什么事",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "bf17d2474199476088a0d290d893ebf1",
+                                          "lineId":  "ae4cd47f3a914567aa05985da29741c1",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  86,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "如果【主控昵称】有兴趣的话可以找我学习一些你在学校学不到的妙妙小知识",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "5fe9d0454d39492e82e711a6b4fca884",
+                                          "lineId":  "7fd00747e24c4ab58f5bf94d2c8a573f",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  87,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "对【主控昵称】的个人提升也有一些帮助",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "87190acd4c45444fa87a2b8db3284ab5",
+                                          "lineId":  "37b09e2a4aec4ee7937a18afd8558957",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  88,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "有什么感兴趣的方向吗？",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "f26930b1ce854e6294d9c6b9d1c3cd95",
+                                          "lineId":  "2436d1ba14384cf99e21b33f30c4ca4f",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  89,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "……除妖你会吗？",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "0ede948272a345259168ba1f2ac987df",
+                                          "lineId":  "faa66c92f92c4d1a82778a61bccfbc0b",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  90,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "怎么会想学这个",
+                                 "美术":  "表情微变",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "9ff6f537f7a7495dbc560104b70eac37",
+                                          "lineId":  "790a41d9d64b4692b085d3d46f4e8eeb",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  91,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "怎么了",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "891c7612bb304b48a93fbfd1efd41de6",
+                                          "lineId":  "64358d7e8caf4510a86323d1041150e4",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  92,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "……没，没什么",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "2889a55541f94af3b580320f5a8e51bb",
+                                          "lineId":  "5e2fce056c79454e9d9add6361350b6b",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  93,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "镇长说山里有妖怪啊，感觉很危险",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "c6c6ed4bec454bdd8f013a9d48f9f086",
+                                          "lineId":  "e66c88c8863144f3b319cbc49996f498",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  94,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "没有妖怪会想来神力庇护的地方捣乱的，只要你不乱跑，你就是安全的",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "b91b7cea92ed4a86956b1324c13894ed",
+                                          "lineId":  "c1aac3c25ad14ef39fa020bdaa21c517",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  95,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "再说万一真有妖怪来了，还有我保护【主控昵称】嘛不是",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "24c7d24f93484023b41d25a1aa929d0e",
+                                          "lineId":  "b9272dc454e847cea8253617559c6e9a",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  96,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "……",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "a3f632f8243c42dd8d52ba315e011d8c",
+                                          "lineId":  "8d5f3008dcae4463859280afa0942a4e",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  97,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "怎么啦，不相信我的实力？",
+                                 "美术":  "表情笑",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "20fba0fba9164824a08c022c7880675f",
+                                          "lineId":  "7c84a7b635ef4f92b34709da0a78f85e",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  98,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "勉强信你",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "a376aeb22d1a4f699e1a36765c15bdc7",
+                                          "lineId":  "6514ff9c018447e486efbe6789f7ba83",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  99,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "好嘛，看来哪天非得展示一下子不可了",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "cd6908509596495c88c61b32a373454e",
+                                          "lineId":  "45f2b9180bc6499b8d042c1bd2d61225",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  100,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "我很期待哦",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "5c9105f0103248a584e17647e338a08e",
+                     "nodeGuid":  "73dc1eb416e18954bbbe84f588b6edca",
+                     "commands":  [
+                                      {
+                                          "commandId":  "317227f45cff4a3b824b5dfc7da82c4c",
+                                          "lineId":  "b3b95be0af21400bbad6498b620a8a09",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSchedule；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  102,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "你有一个师伯，一个师叔公",
+                                 "美术":  "",
+                                 "变化":  "选项2：关于门派"
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c0e8c9974d964bd990bcb6defd7d238f",
+                     "nodeGuid":  "cc37b82ac3267f24eb5c3fbe5c4e8b4e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "c0c5921b358c4681a53922ee384d3afb",
+                                          "lineId":  "238ba8682b2b4462a5601c359c590057",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSect；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  103,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "师叔公有个不成器的徒弟，近些年很少看到他",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c0e8c9974d964bd990bcb6defd7d238f",
+                     "nodeGuid":  "cc37b82ac3267f24eb5c3fbe5c4e8b4e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "54f7b47b7a044674bd21ed31c323cb7c",
+                                          "lineId":  "c0a1c891e3dd44f08fa801497cf89220",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSect；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  104,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "师伯和师叔公都在外面进修",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c0e8c9974d964bd990bcb6defd7d238f",
+                     "nodeGuid":  "cc37b82ac3267f24eb5c3fbe5c4e8b4e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "969912e731574acf8921c6136d8028c6",
+                                          "lineId":  "d584440b96a6494288de5949f4ff01eb",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSect；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  105,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "师父我还没有正式收过徒哦，【主控昵称】是第一个呢",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c0e8c9974d964bd990bcb6defd7d238f",
+                     "nodeGuid":  "cc37b82ac3267f24eb5c3fbe5c4e8b4e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "0bac59fe5fad4dcb9004ecd50f3bf50d",
+                                          "lineId":  "59d7d4be0a754360baa3a44edde04190",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSect；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  106,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "是不是拿我练手来的",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c0e8c9974d964bd990bcb6defd7d238f",
+                     "nodeGuid":  "cc37b82ac3267f24eb5c3fbe5c4e8b4e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "4058dbdae4b44b998938b27f0b916ccc",
+                                          "lineId":  "eb12cfe1402149d0a7de5fa0d0301920",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSect；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  107,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "嘻嘻",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c0e8c9974d964bd990bcb6defd7d238f",
+                     "nodeGuid":  "cc37b82ac3267f24eb5c3fbe5c4e8b4e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "46c32a8676664bc59c506e666f825fc1",
+                                          "lineId":  "0d0c8472a1c8468b906da0767b29fcf9",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSect；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  108,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "师父是不是碰到这种尴尬的问题都会嬉皮笑脸糊弄过去",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c0e8c9974d964bd990bcb6defd7d238f",
+                     "nodeGuid":  "cc37b82ac3267f24eb5c3fbe5c4e8b4e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "7e5a3dccd1cd462b9f66b9aa7ae31ae5",
+                                          "lineId":  "1e809ce6ba324a2799f2ea0bc313a67a",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSect；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  109,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "哼",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c0e8c9974d964bd990bcb6defd7d238f",
+                     "nodeGuid":  "cc37b82ac3267f24eb5c3fbe5c4e8b4e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "7f76fb1a3ae44c079a5b672c6b940644",
+                                          "lineId":  "272f53d54a054060afa6e9a21829f1b4",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSect；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  110,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "总之呢就是这样，门派很小，但好处是人际关系及其简单",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c0e8c9974d964bd990bcb6defd7d238f",
+                     "nodeGuid":  "cc37b82ac3267f24eb5c3fbe5c4e8b4e",
+                     "commands":  [
+                                      {
+                                          "commandId":  "575490f46e3b491aae926a51fa92b57d",
+                                          "lineId":  "b68ead2b11784f58b9992c5d74c2a90a",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptSect；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  112,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "妖怪是很邪恶的生物哦",
+                                 "美术":  "",
+                                 "变化":  "选项3：关于妖怪"
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c96dec0de1124957807b5ffb43714d6b",
+                     "nodeGuid":  "c57e5c67accc095458a795b78db1a19a",
+                     "commands":  [
+                                      {
+                                          "commandId":  "c7e628fcd20d4f2daa982d326f76aa2d",
+                                          "lineId":  "14416cc9cfad463ca742f734321e2feb",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptDemon；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  113,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "不像人类这种会靠着对彼此的感情绑定在一起的生物",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c96dec0de1124957807b5ffb43714d6b",
+                     "nodeGuid":  "c57e5c67accc095458a795b78db1a19a",
+                     "commands":  [
+                                      {
+                                          "commandId":  "17b8aa4bf6c14d8da926c6b7ea4a8a2d",
+                                          "lineId":  "8d9d9701887648f6b3946ac8251fab2c",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptDemon；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  114,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "妖怪……很，冷漠",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c96dec0de1124957807b5ffb43714d6b",
+                     "nodeGuid":  "c57e5c67accc095458a795b78db1a19a",
+                     "commands":  [
+                                      {
+                                          "commandId":  "a337958a5678426fa8b41f16db105bfe",
+                                          "lineId":  "f6338709155a4d1889f3459b8cbc81a2",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptDemon；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  115,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "比如，漠视生命",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c96dec0de1124957807b5ffb43714d6b",
+                     "nodeGuid":  "c57e5c67accc095458a795b78db1a19a",
+                     "commands":  [
+                                      {
+                                          "commandId":  "d6f0ac7d219c4e04be0c88ddc0ef2589",
+                                          "lineId":  "900c4b345a8a4e9b8f4655d0b3fedb19",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptDemon；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  116,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "这里的镇民们，有人曾被妖怪以奇怪的方式杀害的。所以镇民们也很害怕妖怪。",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c96dec0de1124957807b5ffb43714d6b",
+                     "nodeGuid":  "c57e5c67accc095458a795b78db1a19a",
+                     "commands":  [
+                                      {
+                                          "commandId":  "dbe01b600f7b41bba20775f0de8dc6e5",
+                                          "lineId":  "a5096d6970de49f380f51ef761ca85af",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptDemon；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  117,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "如果不小心遇到了，一定要远离。",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c96dec0de1124957807b5ffb43714d6b",
+                     "nodeGuid":  "c57e5c67accc095458a795b78db1a19a",
+                     "commands":  [
+                                      {
+                                          "commandId":  "ce29a0d439934b7d8194c5ca78709f3d",
+                                          "lineId":  "fe21c16c5811426c8856386d89191a8d",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptDemon；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  118,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "另外，不要去后山",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c96dec0de1124957807b5ffb43714d6b",
+                     "nodeGuid":  "c57e5c67accc095458a795b78db1a19a",
+                     "commands":  [
+                                      {
+                                          "commandId":  "7df052c9c2a5446992c8eeb2cbbaa929",
+                                          "lineId":  "d75aad9e69c445158e9aeaafe9bedff0",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptDemon；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  119,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "这座山的灵力很强",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c96dec0de1124957807b5ffb43714d6b",
+                     "nodeGuid":  "c57e5c67accc095458a795b78db1a19a",
+                     "commands":  [
+                                      {
+                                          "commandId":  "7a220b25ab854fc8903e649f640571ec",
+                                          "lineId":  "afda024ea50b46dd931c95953b8e2e0e",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptDemon；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  120,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "会有些奇怪的事发生也说不定",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "c96dec0de1124957807b5ffb43714d6b",
+                     "nodeGuid":  "c57e5c67accc095458a795b78db1a19a",
+                     "commands":  [
+                                      {
+                                          "commandId":  "b84040ed6ce04a2fbecd595f4bba4485",
+                                          "lineId":  "5f4b8f7a9eea47048eb83debfc6870f6",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_OptDemon；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  123,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "我都了解了",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "d4ed48bba88940edb25a9f6448c57624",
+                     "nodeGuid":  "ca43d52133b129048a142c017acfd152",
+                     "commands":  [
+                                      {
+                                          "commandId":  "cc24b6a9f6d6465d8e91a242c0adbbc1",
+                                          "lineId":  "6017e3de9a3b4e189cd10ea14a635dfd",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_MainClose；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  124,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "那么从今天开始拜托你了，【主控昵称】小徒弟",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "d4ed48bba88940edb25a9f6448c57624",
+                     "nodeGuid":  "ca43d52133b129048a142c017acfd152",
+                     "commands":  [
+                                      {
+                                          "commandId":  "7ffd4459c062420eb21519c50f09ba19",
+                                          "lineId":  "635269032cd24508b63b3c13c07b30a4",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_MainClose；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 },
+                 {
+                     "sourceRow":  125,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "我",
+                                 "台词":  "好哦小师父",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "d4ed48bba88940edb25a9f6448c57624",
+                     "nodeGuid":  "ca43d52133b129048a142c017acfd152",
+                     "commands":  [
+                                      {
+                                          "commandId":  "08afb9e510784de2a49718a1ddd64cdc",
+                                          "lineId":  "676e246bbb7a461cb732954c651406e5",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_inner",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_MainClose；说话人映射 我 -\u003e [CMH_inner]"
+                 },
+                 {
+                     "sourceRow":  126,
+                     "raw":  {
+                                 "场景":  "",
+                                 "说话人":  "林夕染",
+                                 "台词":  "没大没小",
+                                 "美术":  "",
+                                 "变化":  ""
+                             },
+                     "sourceStableKey":  null,
+                     "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                     "chapterId":  "57c023ad23ef45be88cbab6bd9b3d51d",
+                     "nodeId":  "d4ed48bba88940edb25a9f6448c57624",
+                     "nodeGuid":  "ca43d52133b129048a142c017acfd152",
+                     "commands":  [
+                                      {
+                                          "commandId":  "f2a7ff8cd31d4ac4bd700cc2dffc6bf0",
+                                          "lineId":  "ffd04bf100d142459b6911eec4e2c4c8",
+                                          "actionId":  null,
+                                          "kind":  "Say"
+                                      }
+                                  ],
+                     "characterId":  "CMH_lxz_r",
+                     "status":  "imported",
+                     "semanticNote":  "节点 CH02_Chapter01_MainClose；说话人映射 林夕染 -\u003e [CMH_lxz_r]"
+                 }
+             ],
+    "validation":  {
+                       "tryReadDefinition":  true,
+                       "errors":  0,
+                       "runnerEnded":  true,
+                       "runnerEndingId":  "9f5cd4ba4ee041939d09f1ad8bc06623",
+                       "runnerFrames":  316,
+                       "exactLines":  117,
+                       "mismatches":  0,
+                       "consoleErrors":  0
+                   },
+    "deferredArt":  [
+                        "第 36-56 行：半山腰（夜晚）背景缺失，按用户选择不设背景；该段沿用上一场景的 村庄_default，补图后需增补 Background 指令",
+                        "第 2-35 行：镇长 CMH_zz 无立绘，待补图后补 Character 指令",
+                        "第 90 行「表情微变」：现有只有 人形-不笑 / 人形-微笑，采用 不笑",
+                        "第 47/48/61/69/79/83/86/87/95/105/124 行：【主控昵称】按原文保留，未加 NovelTextBinding（项目尚无昵称变量与输入系统，绑定会因变量未声明而校验失败）",
+                        "话题枢纽：已问过的话题仍可重复选择并重播（来源未规定隐藏已完成话题）"
+                    ]
+}

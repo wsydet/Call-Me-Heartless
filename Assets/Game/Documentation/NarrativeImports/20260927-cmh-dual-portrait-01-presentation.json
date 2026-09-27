@@ -1,0 +1,616 @@
+﻿{
+    "schemaVersion":  1,
+    "batchId":  "20260927-cmh-dual-portrait-01",
+    "skillId":  "ember-vn-polish-presentation",
+    "appliedAtUtc":  "2026-09-27T08:31:41.028Z",
+    "title":  "CMH 关键对话段：独白居中 / 对白双立绘 / 收束独白回居中",
+    "compositionRule":  "只有「我」说话时立绘居中；有别人在场说话时变双立绘（我在左列、对手在右列）；收束的独白再回到居中",
+    "scope":  {
+                  "storyPath":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset",
+                  "storyId":  "0942d3f17d504f01ba64169b17e2a578",
+                  "displayName":  "Call Me Heartless",
+                  "chapter":  "第一章·序章 + 第一章",
+                  "decisionScope":  "H2",
+                  "appliedNodes":  [
+                                       "CH01_Prologue_Classroom",
+                                       "CH02_Chapter01_Town",
+                                       "CH02_Chapter01_OptSchedule",
+                                       "CH02_Chapter01_Mountain"
+                                   ],
+                  "nodeCount":  4,
+                  "notInScope":  [
+                                     "CH01_Prologue_Home",
+                                     "CH02_Chapter01_Arrival",
+                                     "CH02_Chapter01_HubSay",
+                                     "CH02_Chapter01_Demon",
+                                     "CH02_Chapter01_OptDemon",
+                                     "CH02_Chapter01_OptSect",
+                                     "CH02_Chapter01_Overnight",
+                                     "CH02_Chapter01_MainClose"
+                                 ],
+                  "notInScopeNote":  "用户选择的是 H2「4 个关键节点」范围；其余 7 个节点在 plan-final.json 里已有完整可执行方案（59 条新增中的另外 30 条），本次未写入。"
+              },
+    "receipt":  {
+                    "decision":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/decision.json",
+                    "status":  "confirmed",
+                    "submittedAtUtc":  "2026-09-27T08:24:14.392Z",
+                    "planHash":  "6cedfb067e06b1e33cd0787a5372fe40f02e28e35b76f51aad4aa9f34ced33ec",
+                    "selected":  [
+                                     "H2"
+                                 ],
+                    "sourceFingerprint":  "0ad0ae8231a429883cd9cb4482d3df1ede3be124ecc572deff6c7b785f8220f4",
+                    "preservationFingerprint":  "0a662e3e8830078f4dcc79848ede8e4d796e08218933cda11b1dd162d8f767e4",
+                    "preExecutionChecks":  [
+                                               "status=confirmed、skillId/batchId 一致",
+                                               "sourceFingerprint 重算一致（0ad0ae8231a42988…），17 个范围文件零变化",
+                                               "preservationFingerprint 重算一致（0a662e3e8830078f…）",
+                                               "decision.plan 与 plan-final.json 逐条比对：4 个节点的 inserts 索引/ID/kind/坐标、deletes、patches 全部一致，0 处不符",
+                                               "范围 = 4 个节点，与 master 计划的 highlights 完全相同",
+                                               "Unity 侧 pre-flight：29 个新指令 ID 与现有 220 个 ID 零冲突；2 个改参目标与 8 个删除目标全部命中"
+                                           ]
+                },
+    "appliedEdits":  {
+                         "totals":  {
+                                        "nodes":  4,
+                                        "inserted":  29,
+                                        "patched":  2,
+                                        "removed":  8
+                                    },
+                         "approach":  "通过项目编辑路径写入：Undo.RecordObject + JsonUtility.FromJsonOverwrite 覆写 _commands，SerializedObject 递增 _contentRevision，EditorUtility.SetDirty + SaveAssets。",
+                         "tailSlotNote":  "运行时只为「新实例」解析指令里的渲染槽（NovelSession.ResolveActorVisual），已存在实例会用自己当前的槽且要求 positionMode 一致。因此每次居中↔双立绘切换都写成「先清台、再按左右重新声明」，而这些切换点全都只发生在「我」独自在场时，清台不会带走别人。",
+                         "nodes":  {
+                                       "CH01_Prologue_Classroom":  {
+                                                                       "title":  "序章 · 教室",
+                                                                       "chapter":  "第一章·序章",
+                                                                       "scene":  "上课睡着的我；室友搭话；最后是收拾书包的收束旁白",
+                                                                       "composition":  [
+                                                                                           "centred",
+                                                                                           "dual",
+                                                                                           "centred"
+                                                                                       ],
+                                                                       "partner":  "室友（CMH_sy，右列）",
+                                                                       "mePortraits":  [
+                                                                                           "CMH_inner_闭眼",
+                                                                                           "CMH_inner_睁眼",
+                                                                                           "CMH_inner_微笑"
+                                                                                       ],
+                                                                       "commands":  "39 -\u003e 39",
+                                                                       "asset":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+                                                                       "sha256Before":  "10e20783585f0a387f17c205ac2ce02ab0a43c67db5a9d19191dbce370b70444",
+                                                                       "sha256After":  "7acda9686f78cf945af3db07b7d199107438b3ca610ef51deeeacd1df420e738",
+                                                                       "meColumn":  "左列 Normalized (0.26, 0.33)；居中 Normalized (0.50, 0.385)",
+                                                                       "partnerColumn":  "右列：指令 slot=Right、positionMode=Normalized、坐标 (0.70, 0.33)；引擎按 (目标 − 该槽命名位置) 存偏移",
+                                                                       "inserts":  [
+                                                                                       {
+                                                                                           "finalIndex":  2,
+                                                                                           "role":  "clear-in",
+                                                                                           "commandId":  "55e7a4d3f634adbc32fa9fc5a9a87781",
+                                                                                           "kind":  "HideAllCharacters",
+                                                                                           "resourceKey":  null,
+                                                                                           "instanceId":  null,
+                                                                                           "position":  null,
+                                                                                           "duration":  0
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  17,
+                                                                                           "role":  "me-centered-open",
+                                                                                           "commandId":  "5ce149d2c7b32fcea24939e45c36f423",
+                                                                                           "kind":  "Character",
+                                                                                           "resourceKey":  "CMH_inner_闭眼",
+                                                                                           "instanceId":  "cmh_me",
+                                                                                           "position":  {
+                                                                                                            "y":  0.385,
+                                                                                                            "x":  0.5
+                                                                                                        },
+                                                                                           "duration":  0.18
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  20,
+                                                                                           "role":  "clear-center-for-dual",
+                                                                                           "commandId":  "756e1d9829b4ecc71e34e7ea1db6be72",
+                                                                                           "kind":  "HideAllCharacters",
+                                                                                           "resourceKey":  null,
+                                                                                           "instanceId":  null,
+                                                                                           "position":  null,
+                                                                                           "duration":  0.18
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  21,
+                                                                                           "role":  "me-left",
+                                                                                           "commandId":  "4a1551f932978680dca1e5ff4388d03c",
+                                                                                           "kind":  "Character",
+                                                                                           "resourceKey":  "CMH_inner_闭眼",
+                                                                                           "instanceId":  "cmh_me",
+                                                                                           "position":  {
+                                                                                                            "y":  0.33,
+                                                                                                            "x":  0.26
+                                                                                                        },
+                                                                                           "duration":  0.18
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  27,
+                                                                                           "role":  "me-wake",
+                                                                                           "commandId":  "a298634894a5b3bd69b39eabbbca473b",
+                                                                                           "kind":  "CrossFade",
+                                                                                           "resourceKey":  "CMH_inner_睁眼",
+                                                                                           "instanceId":  "cmh_me",
+                                                                                           "position":  null,
+                                                                                           "duration":  0.12
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  34,
+                                                                                           "role":  "me-smile",
+                                                                                           "commandId":  "93fc81f8c8227405a4ebd4a4e39c8187",
+                                                                                           "kind":  "CrossFade",
+                                                                                           "resourceKey":  "CMH_inner_微笑",
+                                                                                           "instanceId":  "cmh_me",
+                                                                                           "position":  null,
+                                                                                           "duration":  0.12
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  38,
+                                                                                           "role":  "clear-out",
+                                                                                           "commandId":  "afe12d8b78e2ac84f7c86b5033b3dcd3",
+                                                                                           "kind":  "HideAllCharacters",
+                                                                                           "resourceKey":  null,
+                                                                                           "instanceId":  null,
+                                                                                           "position":  null,
+                                                                                           "duration":  0.18
+                                                                                       }
+                                                                                   ],
+                                                                       "patchedCommands":  [
+                                                                                               {
+                                                                                                   "commandId":  "45edd79fc84940e1a41ec6cc0e749a51",
+                                                                                                   "set":  {
+                                                                                                               "position":  {
+                                                                                                                                "y":  0.33,
+                                                                                                                                "x":  0.7
+                                                                                                                            },
+                                                                                                               "duration":  0.18,
+                                                                                                               "positionMode":  1,
+                                                                                                               "slot":  2,
+                                                                                                               "positionModeLabel":  "Normalized",
+                                                                                                               "slotLabel":  "Right"
+                                                                                                           },
+                                                                                                   "note":  "原有立绘指令，实例 ID 与指令 ID 不变，只改站位到右列"
+                                                                                               }
+                                                                                           ],
+                                                                       "removedCommands":  [
+                                                                                               "594617459fdd41ce9bef62f3cd460a9c",
+                                                                                               "659e06daf2f94b71a0e1e4840553f7f5",
+                                                                                               "f299f055d441422ab2bc73c494bb4745",
+                                                                                               "5d933a7e1bd545929ff117ad582cfc51",
+                                                                                               "81792f18e0e5448999aedf696e07614f",
+                                                                                               "4bed818728744c268e02dd07460f2f41",
+                                                                                               "6b226ecd2c60457ea7dfdc6ebecc7b89"
+                                                                                           ],
+                                                                       "removedWhy":  "旧写法把「我」的表情轮换挂在室友实例 prologue_speaker 上（同一实例反复换图）。双立绘后这些换图会改到室友脸上，因此全部删除，改由 cmh_me 自己的交叉淡化承担；同时删除会退化为空操作的室友 Hide。",
+                                                                       "notes":  "居中开场用闭眼立绘，配合原句「上课上到一半，睡着了」；室友出现前清一次台，把「我」换成左右双立绘；结尾是纯旁白，不再需要立绘，直接收台。"
+                                                                   },
+                                       "CH02_Chapter01_Town":  {
+                                                                   "title":  "第一章 · 镇上见镇长",
+                                                                   "chapter":  "第一章",
+                                                                   "scene":  "我先在心里吐槽「这哪能算得上是县城」；镇长登场后长篇交代",
+                                                                   "composition":  [
+                                                                                       "centred",
+                                                                                       "dual"
+                                                                                   ],
+                                                                   "partner":  "镇长（CMH_zz，右列）",
+                                                                   "mePortraits":  [
+                                                                                       "CMH_inner_睁眼"
+                                                                                   ],
+                                                                   "commands":  "41 -\u003e 45",
+                                                                   "asset":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+                                                                   "sha256Before":  "561a4be05ac4db1bb166d14785bcf5b16771969368e57a4439c4ea7a5faf239e",
+                                                                   "sha256After":  "df8f528ce751c0e24edbbd7acc42c234159bb091b09bcc4d4b58b5274688d25f",
+                                                                   "meColumn":  "左列 Normalized (0.26, 0.33)；居中 Normalized (0.50, 0.385)",
+                                                                   "partnerColumn":  "右列：指令 slot=Right、positionMode=Normalized、坐标 (0.70, 0.33)；引擎按 (目标 − 该槽命名位置) 存偏移",
+                                                                   "inserts":  [
+                                                                                   {
+                                                                                       "finalIndex":  0,
+                                                                                       "role":  "clear-in",
+                                                                                       "commandId":  "6a0233f8df8f535102f3b6bf1eb46caf",
+                                                                                       "kind":  "HideAllCharacters",
+                                                                                       "resourceKey":  null,
+                                                                                       "instanceId":  null,
+                                                                                       "position":  null,
+                                                                                       "duration":  0
+                                                                                   },
+                                                                                   {
+                                                                                       "finalIndex":  4,
+                                                                                       "role":  "me-centered",
+                                                                                       "commandId":  "894117b0a43d73dd06b1ff95bb4ffdc3",
+                                                                                       "kind":  "Character",
+                                                                                       "resourceKey":  "CMH_inner_睁眼",
+                                                                                       "instanceId":  "cmh_me",
+                                                                                       "position":  {
+                                                                                                        "y":  0.385,
+                                                                                                        "x":  0.5
+                                                                                                    },
+                                                                                       "duration":  0.18
+                                                                                   },
+                                                                                   {
+                                                                                       "finalIndex":  42,
+                                                                                       "role":  "clear-center-for-dual",
+                                                                                       "commandId":  "5e92206eb5be534a0a77fdfb6d550979",
+                                                                                       "kind":  "HideAllCharacters",
+                                                                                       "resourceKey":  null,
+                                                                                       "instanceId":  null,
+                                                                                       "position":  null,
+                                                                                       "duration":  0.18
+                                                                                   },
+                                                                                   {
+                                                                                       "finalIndex":  43,
+                                                                                       "role":  "me-left",
+                                                                                       "commandId":  "5afd122ead427c657a4b40816571c339",
+                                                                                       "kind":  "Character",
+                                                                                       "resourceKey":  "CMH_inner_睁眼",
+                                                                                       "instanceId":  "cmh_me",
+                                                                                       "position":  {
+                                                                                                        "y":  0.33,
+                                                                                                        "x":  0.26
+                                                                                                    },
+                                                                                       "duration":  0.18
+                                                                                   },
+                                                                                   {
+                                                                                       "finalIndex":  44,
+                                                                                       "role":  "clear-out",
+                                                                                       "commandId":  "1d1343994a7a2e223072a794cecb5a07",
+                                                                                       "kind":  "HideAllCharacters",
+                                                                                       "resourceKey":  null,
+                                                                                       "instanceId":  null,
+                                                                                       "position":  null,
+                                                                                       "duration":  0.18
+                                                                                   }
+                                                                               ],
+                                                                   "patchedCommands":  [
+                                                                                           {
+                                                                                               "commandId":  "712d43f430f3403299b5ba8bbb205e70",
+                                                                                               "set":  {
+                                                                                                           "position":  {
+                                                                                                                            "y":  0.33,
+                                                                                                                            "x":  0.7
+                                                                                                                        },
+                                                                                                           "duration":  0.18,
+                                                                                                           "positionMode":  1,
+                                                                                                           "slot":  2,
+                                                                                                           "positionModeLabel":  "Normalized",
+                                                                                                           "slotLabel":  "Right"
+                                                                                                       },
+                                                                                               "note":  "原有立绘指令，实例 ID 与指令 ID 不变，只改站位到右列"
+                                                                                           }
+                                                                                       ],
+                                                                   "removedCommands":  [
+                                                                                           "2f52ce12bf364fa084ca427e13698a32"
+                                                                                       ],
+                                                                   "removedWhy":  "结尾空实例 ID 的立绘隐藏在清台之后没有对象可隐藏；删除后职责统一。",
+                                                                   "notes":  "镇长登场前只有我的一句吐槽，用居中立绘开场；他开口之后立刻切双立绘，之后 35 句对答全部保持左右构图。"
+                                                               },
+                                       "CH02_Chapter01_OptSchedule":  {
+                                                                          "title":  "第一章 · 选项「日程安排」",
+                                                                          "chapter":  "第一章",
+                                                                          "scene":  "师父介绍日程；我问「除妖你会吗」；最后两人各自收束",
+                                                                          "composition":  [
+                                                                                              "centred",
+                                                                                              "dual",
+                                                                                              "centred"
+                                                                                          ],
+                                                                          "partner":  "林夕染（CMH_lxz_r，不笑 → 微笑，右列）",
+                                                                          "mePortraits":  [
+                                                                                              "CMH_inner_睁眼",
+                                                                                              "CMH_inner_微笑"
+                                                                                          ],
+                                                                          "commands":  "33 -\u003e 42",
+                                                                          "asset":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+                                                                          "sha256Before":  "7dc2c6d7061c9dad29a5827e1207d0bf2a9fd22a27c59d0b538a469e30ba3806",
+                                                                          "sha256After":  "ae497f2b160c882d8e6f1ffcc41acdbd1a720787748186e2fa09024091fcd5ad",
+                                                                          "meColumn":  "左列 Normalized (0.26, 0.33)；居中 Normalized (0.50, 0.385)",
+                                                                          "partnerColumn":  "右列：指令 slot=Right、positionMode=Normalized、坐标 (0.70, 0.33)；引擎按 (目标 − 该槽命名位置) 存偏移",
+                                                                          "inserts":  [
+                                                                                          {
+                                                                                              "finalIndex":  0,
+                                                                                              "role":  "clear-in",
+                                                                                              "commandId":  "6a8077af6fd6a637c34a34ba5dfa2c33",
+                                                                                              "kind":  "HideAllCharacters",
+                                                                                              "resourceKey":  null,
+                                                                                              "instanceId":  null,
+                                                                                              "position":  null,
+                                                                                              "duration":  0
+                                                                                          },
+                                                                                          {
+                                                                                              "finalIndex":  29,
+                                                                                              "role":  "me-centered-open",
+                                                                                              "commandId":  "affca6a122612487d7aff427c6c1c491",
+                                                                                              "kind":  "Character",
+                                                                                              "resourceKey":  "CMH_inner_睁眼",
+                                                                                              "instanceId":  "cmh_me",
+                                                                                              "position":  {
+                                                                                                               "y":  0.385,
+                                                                                                               "x":  0.5
+                                                                                                           },
+                                                                                              "duration":  0.18
+                                                                                          },
+                                                                                          {
+                                                                                              "finalIndex":  32,
+                                                                                              "role":  "clear-center-for-dual",
+                                                                                              "commandId":  "5e10b8c6d159362771408f506988db82",
+                                                                                              "kind":  "HideAllCharacters",
+                                                                                              "resourceKey":  null,
+                                                                                              "instanceId":  null,
+                                                                                              "position":  null,
+                                                                                              "duration":  0.18
+                                                                                          },
+                                                                                          {
+                                                                                              "finalIndex":  33,
+                                                                                              "role":  "me-left",
+                                                                                              "commandId":  "96e5a03cc757d61892bdbb3cdb7b9203",
+                                                                                              "kind":  "Character",
+                                                                                              "resourceKey":  "CMH_inner_睁眼",
+                                                                                              "instanceId":  "cmh_me",
+                                                                                              "position":  {
+                                                                                                               "y":  0.33,
+                                                                                                               "x":  0.26
+                                                                                                           },
+                                                                                              "duration":  0.18
+                                                                                          },
+                                                                                          {
+                                                                                              "finalIndex":  34,
+                                                                                              "role":  "partner-right",
+                                                                                              "commandId":  "25d926b72c88ac528bfeabd3928b7b47",
+                                                                                              "kind":  "Character",
+                                                                                              "resourceKey":  "CMH_lxz_r_人形-不笑",
+                                                                                              "instanceId":  "ch01_lxz",
+                                                                                              "position":  {
+                                                                                                               "y":  0.33,
+                                                                                                               "x":  0.7
+                                                                                                           },
+                                                                                              "duration":  0.18
+                                                                                          },
+                                                                                          {
+                                                                                              "finalIndex":  37,
+                                                                                              "role":  "me-smile",
+                                                                                              "commandId":  "a45e3dd27709be5fa9f52cfa15cb42ec",
+                                                                                              "kind":  "CrossFade",
+                                                                                              "resourceKey":  "CMH_inner_微笑",
+                                                                                              "instanceId":  "cmh_me",
+                                                                                              "position":  null,
+                                                                                              "duration":  0.12
+                                                                                          },
+                                                                                          {
+                                                                                              "finalIndex":  39,
+                                                                                              "role":  "clear-center-for-solo",
+                                                                                              "commandId":  "177e579c404af737921b84ebbd4368fb",
+                                                                                              "kind":  "HideAllCharacters",
+                                                                                              "resourceKey":  null,
+                                                                                              "instanceId":  null,
+                                                                                              "position":  null,
+                                                                                              "duration":  0.18
+                                                                                          },
+                                                                                          {
+                                                                                              "finalIndex":  40,
+                                                                                              "role":  "me-centered-close",
+                                                                                              "commandId":  "647332e1bab2134c20326eea6a3159e3",
+                                                                                              "kind":  "Character",
+                                                                                              "resourceKey":  "CMH_inner_微笑",
+                                                                                              "instanceId":  "cmh_me",
+                                                                                              "position":  {
+                                                                                                               "y":  0.385,
+                                                                                                               "x":  0.5
+                                                                                                           },
+                                                                                              "duration":  0.18
+                                                                                          },
+                                                                                          {
+                                                                                              "finalIndex":  41,
+                                                                                              "role":  "clear-out",
+                                                                                              "commandId":  "e352ebe1a4e17ad159c1e1dec9ad7518",
+                                                                                              "kind":  "HideAllCharacters",
+                                                                                              "resourceKey":  null,
+                                                                                              "instanceId":  null,
+                                                                                              "position":  null,
+                                                                                              "duration":  0.18
+                                                                                          }
+                                                                                      ],
+                                                                          "patchedCommands":  [
+
+                                                                                              ],
+                                                                          "removedCommands":  [
+
+                                                                                              ],
+                                                                          "removedWhy":  null,
+                                                                          "notes":  "开头两句「首先是早上5点起来晨课／这么早啊……」是师父与我的一问一答，若让「我」单独居中开场会与台词打架；因此本节点用「居中的我 → 双立绘对答 → 我居中收束」三段式。结尾「我很期待哦」之后把「我」单独摆回中央。"
+                                                                      },
+                                       "CH02_Chapter01_Mountain":  {
+                                                                       "title":  "第一章 · 山路遇小青",
+                                                                       "chapter":  "第一章",
+                                                                       "scene":  "我在山路上独白；申箬青登场带路；她离开后我独自收束",
+                                                                       "composition":  [
+                                                                                           "centred",
+                                                                                           "dual",
+                                                                                           "centred"
+                                                                                       ],
+                                                                       "partner":  "申箬青（CMH_srq，微笑，右列）",
+                                                                       "mePortraits":  [
+                                                                                           "CMH_inner_睁眼"
+                                                                                       ],
+                                                                       "commands":  "25 -\u003e 33",
+                                                                       "asset":  "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset",
+                                                                       "sha256Before":  "432407d04f6a6f53ca8cd45d1284f0c9849a22888bf5ab7c8a947babfe1337b7",
+                                                                       "sha256After":  "912839656f6cc4d27e9fa93d87614438309d52ff2aeb8084b56b73232fa4fc81",
+                                                                       "meColumn":  "左列 Normalized (0.26, 0.33)；居中 Normalized (0.50, 0.385)",
+                                                                       "partnerColumn":  "右列：指令 slot=Right、positionMode=Normalized、坐标 (0.70, 0.33)；引擎按 (目标 − 该槽命名位置) 存偏移",
+                                                                       "inserts":  [
+                                                                                       {
+                                                                                           "finalIndex":  0,
+                                                                                           "role":  "clear-in",
+                                                                                           "commandId":  "353631b9afc7a6ca9c10bd2ac31db3b8",
+                                                                                           "kind":  "HideAllCharacters",
+                                                                                           "resourceKey":  null,
+                                                                                           "instanceId":  null,
+                                                                                           "position":  null,
+                                                                                           "duration":  0
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  4,
+                                                                                           "role":  "me-centered-open",
+                                                                                           "commandId":  "b7644595ec65f5320985b3a640ce0aff",
+                                                                                           "kind":  "Character",
+                                                                                           "resourceKey":  "CMH_inner_睁眼",
+                                                                                           "instanceId":  "cmh_me",
+                                                                                           "position":  {
+                                                                                                            "y":  0.385,
+                                                                                                            "x":  0.5
+                                                                                                        },
+                                                                                           "duration":  0.18
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  6,
+                                                                                           "role":  "clear-center-for-dual",
+                                                                                           "commandId":  "90dd148eb7a817284e643995a76e56de",
+                                                                                           "kind":  "HideAllCharacters",
+                                                                                           "resourceKey":  null,
+                                                                                           "instanceId":  null,
+                                                                                           "position":  null,
+                                                                                           "duration":  0.18
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  7,
+                                                                                           "role":  "me-left",
+                                                                                           "commandId":  "5a751ae627e0cc0bd0dbc243a22dd4a9",
+                                                                                           "kind":  "Character",
+                                                                                           "resourceKey":  "CMH_inner_睁眼",
+                                                                                           "instanceId":  "cmh_me",
+                                                                                           "position":  {
+                                                                                                            "y":  0.33,
+                                                                                                            "x":  0.26
+                                                                                                        },
+                                                                                           "duration":  0.18
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  8,
+                                                                                           "role":  "partner-right",
+                                                                                           "commandId":  "543bbfda313c740225ce82550f124e3f",
+                                                                                           "kind":  "Character",
+                                                                                           "resourceKey":  "CMH_srq_微笑",
+                                                                                           "instanceId":  "ch01_srq",
+                                                                                           "position":  {
+                                                                                                            "y":  0.33,
+                                                                                                            "x":  0.7
+                                                                                                        },
+                                                                                           "duration":  0.18
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  30,
+                                                                                           "role":  "clear-center-for-solo",
+                                                                                           "commandId":  "8d05a9d7a15668427862807bad169524",
+                                                                                           "kind":  "HideAllCharacters",
+                                                                                           "resourceKey":  null,
+                                                                                           "instanceId":  null,
+                                                                                           "position":  null,
+                                                                                           "duration":  0.18
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  31,
+                                                                                           "role":  "me-centered-close",
+                                                                                           "commandId":  "e84eb090b3a22210bff0f422593c1a5d",
+                                                                                           "kind":  "Character",
+                                                                                           "resourceKey":  "CMH_inner_睁眼",
+                                                                                           "instanceId":  "cmh_me",
+                                                                                           "position":  {
+                                                                                                            "y":  0.385,
+                                                                                                            "x":  0.5
+                                                                                                        },
+                                                                                           "duration":  0.18
+                                                                                       },
+                                                                                       {
+                                                                                           "finalIndex":  32,
+                                                                                           "role":  "clear-out",
+                                                                                           "commandId":  "cd5d399b66015e983fe4847bd41325ae",
+                                                                                           "kind":  "HideAllCharacters",
+                                                                                           "resourceKey":  null,
+                                                                                           "instanceId":  null,
+                                                                                           "position":  null,
+                                                                                           "duration":  0.18
+                                                                                       }
+                                                                                   ],
+                                                                       "patchedCommands":  [
+
+                                                                                           ],
+                                                                       "removedCommands":  [
+
+                                                                                           ],
+                                                                       "removedWhy":  null,
+                                                                       "notes":  "开头三句「真是不负责任啊镇长／天黑了才爬到半山腰／诶？前面怎么走啊」是纯独白，居中立绘；小青登场后切双立绘；她说完「我先回去了」之后的「好，谢谢你小青」与她的「……」回到居中收束。"
+                                                                   }
+                                   }
+                     },
+    "fingerprints":  {
+                         "scopeFiles":  17,
+                         "changedFiles":  4,
+                         "changedFileList":  [
+                                                 "Assets\\GameResource\\Resources\\Config\\Narrative\\CallMeHeartless\\Chapters\\CH01_Prologue\\Dialogue\\CH01_Prologue_Classroom.asset",
+                                                 "Assets\\GameResource\\Resources\\Config\\Narrative\\CallMeHeartless\\Chapters\\CH02_Chapter01\\Dialogue\\CH02_Chapter01_OptSchedule.asset",
+                                                 "Assets\\GameResource\\Resources\\Config\\Narrative\\CallMeHeartless\\Chapters\\CH02_Chapter01\\Dialogue\\CH02_Chapter01_Town.asset",
+                                                 "Assets\\GameResource\\Resources\\Config\\Narrative\\CallMeHeartless\\Chapters\\CH02_Chapter01\\Dialogue\\CH02_Chapter01_Mountain.asset"
+                                             ],
+                         "unchangedFiles":  13,
+                         "rollupBefore":  "0ad0ae8231a429883cd9cb4482d3df1ede3be124ecc572deff6c7b785f8220f4",
+                         "rollupAfter":  "25b0b4c73a881e5c31c0e7a685df9c3e43300231ee011b8cebcb9e6a796b656f",
+                         "preservationBeforeSha":  "37da1e1ead2e4a05a72d9ccda339863f8d431c3ca6bb3428d634ff997386e272",
+                         "preservationAfterSha":  "828ee01c02a8feb71332287279f98f07b48aedc998311a8352d3793a2e5c5604",
+                         "semanticFingerprintAfter":  "未在本次会话留取改动前的同口径值；按机制结论：新增演出指令会参与 NovelCompatibility.Fingerprint，旧存档可能被判为不兼容。未删除任何存档、未绕过兼容检查。",
+                         "metaChanged":  0
+                     },
+    "preservationComparison":  {
+                                   "before":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/preservation-before-indexed.txt",
+                                   "after":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/preservation-after-indexed.txt",
+                                   "result":  "以指令 ID 对齐逐条比对：153 条 Say/Voice/SetVariable 载荷逐字节相同（changed=0、missing=0）；删除指令 8 条、新增指令 29 条，与声明数量完全一致；无任何未声明的删除或新增。",
+                                   "kept":  [
+                                                "台词正文（含标点、空格、换行、括号、省略号）",
+                                                "说话人角色键与姓名框显示",
+                                                "每条路径上的 Say 顺序",
+                                                "3 个选项的文本/顺序/条件/去向",
+                                                "变量声明与赋值",
+                                                "章节入口、出口、节点连接、结局",
+                                                "Voice 绑定（本剧情全部为空）"
+                                            ],
+                                   "intentionallyChanged":  "仅演出层：29 条新增立绘/清台/交叉淡化指令，2 条原有立绘指令的站位，8 条已失效的旧表情轮换指令被删除。台词修订未提升。"
+                               },
+    "validation":  {
+                       "entryCheck":  {
+                                          "blockReason":  "EmberProjectSetup.GetTemplateSkillExecutionBlockReason(\"ember-vn-polish-presentation\") 返回 null",
+                                          "templateActive":  true,
+                                          "canEdit":  true,
+                                          "isPlaying":  false
+                                      },
+                       "storyValidation":  {
+                                               "method":  "Game.Narrative.Editor.NarrativeAssetValidation.Validate(story, null, catalog)，配表经 EmberTableEngine + GameTables.CreateCatalog() 实际加载（11/11 张表，IsReady=True）",
+                                               "errors":  0,
+                                               "authoringHints":  0,
+                                               "note":  "单独校验章节会报 MissingStory / playerName 未声明，那是因为缺剧情级上下文（自定义节点与全局变量定义在剧情上），不是缺陷；整篇校验 0 错。"
+                                           },
+                       "unityConsoleErrors":  0,
+                       "unityConsoleWarnings":  0,
+                       "staticOnly":  "静态校验 + 定义读取 + 配表解析 + 指令级保持项比对。立绘是否被对话框遮挡、居中立绘站位、两图间距这些观感必须由你在 Play 里实际验收；本次运行模型不接受图片输入，未声称画面通过。"
+                   },
+    "pending":  [
+                    "本次只写入 4 个关键节点（H2）。其余 7 个节点（序章家、抵达道观、问询枢纽、关于妖怪、关于门派、过夜、拜师收束）的完整方案已在 plan-final.json 里，未写入；要覆盖整章请在同一页面切到 H1 再确认一次。",
+                    "角色强调（Auto）仍会把「我」当成旁人：CMH_inner 既是「我」的立绘角色、也是「我」台词的说话人，主控开口时会去强调自己。本批未引入逐句 Manual 强调。",
+                    "CH02_Chapter01_Mountain 保留了一条原有的「申箬青 立绘显示（Named）」指令（在双立绘就位之后），运行期对同名实例是幂等的；它是导入期就存在的写法，本批按保持项要求未改。",
+                    "台词内容与说话人零改动，因此未提升任何 textRevision；节点 contentRevision 由编辑路径 +1（序章教室 10→11、镇上见镇长 7→8、日程安排 6→7、山路遇小青 7→8）。",
+                    "演出改动会改变剧情语义指纹，优化前的存档可能被判为不兼容；未删除任何存档。"
+                ],
+    "evidence":  {
+                     "decision":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/decision.json",
+                     "planFinal":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/plan-final.json",
+                     "applyPlan":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/apply-plan.json",
+                     "applyResult":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/apply-result.txt",
+                     "selectionPage":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/page/final.html",
+                     "backups":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/backup/",
+                     "fingerprintsBefore":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/fingerprints-before.json",
+                     "fingerprintsAfter":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/scope-after.sha256",
+                     "preservationBefore":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/preservation-before.txt",
+                     "preservationBeforeIndexed":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/preservation-before-indexed.txt",
+                     "preservationAfterIndexed":  ".utmp/vn-presentation/20260927-cmh-dual-portrait-01/preservation-after-indexed.txt",
+                     "rollbackNote":  "四个节点各自的原文件都在 backup/ 里，按文件名覆盖即可完全回退（本批已用它恢复过一次）。"
+                 }
+}

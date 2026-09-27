@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f55e888cf7c7b04ebfb825a7cd33326, type: 3}
+  m_Name: Chapter
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeChapterSO
+  _chapterId: 57c023ad23ef45be88cbab6bd9b3d51d
+  _displayName: "\u7B2C\u4E00\u7AE0"
+  _displayNameKey: chapter.0942d3f17d504f01ba64169b17e2a578.57c023ad23ef45be88cbab6bd9b3d51d
+  _assetPrefix: CH02_Chapter01
+  _storyRevision: 5
+  _entry: {fileID: 11400000, guid: 53e264a23cc882e41977f79bcd83c33e, type: 2}
+  _nodes:
+  - {fileID: 11400000, guid: 53e264a23cc882e41977f79bcd83c33e, type: 2}
+  - {fileID: 11400000, guid: 02f083a24f21fdd48b0522336558cee6, type: 2}
+  - {fileID: 11400000, guid: 28cbafd5ca885a1429c70820c91e84a6, type: 2}
+  - {fileID: 11400000, guid: 64474104c6bf64741b064d337b2f534b, type: 2}
+  - {fileID: 11400000, guid: f1ee9f3377679c947bbf5be799228087, type: 2}
+  - {fileID: 11400000, guid: be9971fa35a1aec4c8bee9ac5ecdd5e0, type: 2}
+  - {fileID: 11400000, guid: a7ea549e5a99d9548a525d78b604b2ff, type: 2}
+  - {fileID: 11400000, guid: 73dc1eb416e18954bbbe84f588b6edca, type: 2}
+  - {fileID: 11400000, guid: cc37b82ac3267f24eb5c3fbe5c4e8b4e, type: 2}
+  - {fileID: 11400000, guid: c57e5c67accc095458a795b78db1a19a, type: 2}
+  - {fileID: 11400000, guid: ca43d52133b129048a142c017acfd152, type: 2}
+  - {fileID: 11400000, guid: 3442714a5ccb8b347aa1053601550692, type: 2}
+  _variables:
+  - _id: asked_schedule
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: asked_sect
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: asked_demon
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 

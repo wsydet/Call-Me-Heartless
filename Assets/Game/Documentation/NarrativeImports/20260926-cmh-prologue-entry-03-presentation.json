@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "batchId": "20260926-cmh-prologue-entry-03",
+  "skillId": "ember-vn-polish-presentation",
+  "appliedAtUtc": "2026-09-25T16:33:47.519Z",
+  "scope": {
+    "storyPath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset",
+    "storyId": "0942d3f17d504f01ba64169b17e2a578",
+    "displayName": "Call Me Heartless",
+    "storyRevision": 5,
+    "chapters": [
+      {
+        "id": "2e58920df7dd454096c73f95a528b843",
+        "name": "第一章·序章",
+        "prefix": "CH01_Prologue",
+        "nodes": 3,
+        "storyRevision": 4
+      },
+      {
+        "id": "57c023ad23ef45be88cbab6bd9b3d51d",
+        "name": "第一章",
+        "prefix": "CH02_Chapter01",
+        "nodes": 12,
+        "storyRevision": 4
+      },
+      {
+        "id": "8507fecd54b74197aab3c9427ddf03a1",
+        "name": "结局",
+        "prefix": "CH99_Endings",
+        "nodes": 1,
+        "storyRevision": 1
+      }
+    ],
+    "dialogueNodes": 11,
+    "sayLines": 142,
+    "options": 3,
+    "branchRoutes": 1,
+    "variables": 3,
+    "setVariableCommands": 3,
+    "nodeConnections": 14,
+    "endings": 1
+  },
+  "receipt": {
+    "decision": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/decision.json",
+    "status": "confirmed",
+    "submittedAtUtc": "2026-09-25T16:15:16.887Z",
+    "planHash": "d9d93603c27a841990d30a546fbebe8f4e15b121ed821667f13c56d0b2dd8b8e",
+    "sourceFingerprint": "70af580acc09ef064a4e4498d8d216eda895feaee3dca9a34b67eba33b6691f4",
+    "sourceFingerprintRecheck": "执行前重算 fingerprints-before.json 的 SHA256，与回执完全一致；52 个源文件零变化",
+    "anchorRecheck": "执行前用 page/verify-anchors.js 直接解析资产 YAML 复核 5 条备选编辑（1 个文件）的锚点指令 ID、插入索引、插入前指令、遮罩颜色与透明度、动作 ID 唯一性（按互斥组合各查一遍），全部一致；page/verify.js 复核选项解析与哈希稳定性"
+  },
+  "findings": [
+    {
+      "id": "E1",
+      "severity": "defect",
+      "title": "序章进场有约 1 秒的「露空」：标题卡退场露空 0.65 秒 + 教室背景透明淡入 0.35 秒",
+      "detail": "序章开场是「章节卡 → 教室背景」，指令顺序是：[0] 章节卡「序章」 → [1] 背景 教室_default（0.35 秒淡入） → [2] BGM → [3] 第一句正文。问题有两段：其一，章节卡的不透明底色在退场时整体渐隐 0.65 秒，而此刻背景槽还是空的（背景指令要等卡退完才执行），于是卡退场期间看到的是一片空页；其二，紧接着背景指令把这一张图的 alpha 从 0 拉起，又有 0.35 秒是半透明的。两段加起来约 1 秒能透过读者页看到后面。",
+      "evidence": "读者页自己就是 Canvas，根节点只有 RectTransform/Canvas/CanvasScaler/GraphicRaycaster/CanvasGroup；Background/Picture 之下没有任何不透明底板 ⇒ 背景一透明就直接露到页后。上一批的接缝复核里，这处也是全篇唯一剩下的「无遮罩换景」，当时我误判为「正常的入场淡入」。",
+      "origin": "原始导入内容；上一批 20260925-cmh-seam-fix-02 未处理。"
+    },
+    {
+      "id": "E2",
+      "severity": "info",
+      "title": "读者页自身的显现动画也会让整页半透明（UI 层，很可能被 loading 幕挡住）",
+      "detail": "读者页根节点的 Animator 用 EUICommon_Ani，进入动画 EUICommon_Enter（0.3 秒）把根 CanvasGroup 的 m_Alpha 从 0 拉到 1。也就是说整页（含背景、遮罩、章节卡）在 0.3 秒内都是半透明的。不过新游戏揭幕时 TopMost 的 EUILoadingPage 通常还盖在上面，所以这段很可能看不见。它无法在剧情侧修，属 UI 层。",
+      "evidence": "AnimationUtility 读到 EUICommon_Enter 的曲线绑定为根节点 m_Alpha 0.000 → 1.000，2 个关键帧；EUILoadingPage 是 UILayer.TopMost，NovelGameplayTests 明确把它当进场 curtain 等待其关闭。"
+    },
+    {
+      "id": "E3",
+      "severity": "info",
+      "title": "全篇只有这一张章节卡，所以是一处孤立问题",
+      "detail": "逐条扫描三章所有 Say：只有 CH01_Prologue_Classroom@0（「序章」）使用 Title 模式，也没有 FullScreen 旁白。修好这一处即可，不会波及其他节点。",
+      "evidence": "扫描结果：CH01_Prologue/CH01_Prologue_Classroom@0 mode=Title；其余 142 句均为普通对白。"
+    }
+  ],
+  "appliedOptions": [
+    {
+      "id": "P1a",
+      "group": "P1 · 序章进场怎么改",
+      "label": "黑幕起手 + 0.5 秒撤幕淡入教室（推荐）",
+      "edits": [
+        {
+          "node": "CH01_Prologue_Classroom",
+          "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+          "op": "insertCommand",
+          "reason": "章节卡之前先压全黑遮罩：卡退场时露出的是黑幕而不是空页，同时让教室背景可以在不透明的幕下铺好。",
+          "command": "Cover",
+          "anchor": "插入前指令 46446e8be6d043d6bc99a93991db1028（计划索引 0）",
+          "commandId": "a344c973e7ca4ec1ae465624cbadb795",
+          "params": {
+            "kind": "Cover",
+            "actionId": "entry03_prologue_cover_in",
+            "duration": 0,
+            "hold": 0,
+            "opacity": 1,
+            "color": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "parallel": false
+          }
+        },
+        {
+          "node": "CH01_Prologue_Classroom",
+          "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+          "op": "insertCommand",
+          "reason": "教室背景与 BGM 就绪后撤幕，用 0.5 秒从黑幕淡入教室，作为真正的入场渐变。",
+          "command": "Cover",
+          "anchor": "插入前指令 6bfedeb153bb4c5d92fae03edb0564e1（计划索引 3）",
+          "commandId": "c61a9ccc04b145d8af5393ec9975604d",
+          "params": {
+            "kind": "Cover",
+            "actionId": "entry03_prologue_cover_out",
+            "duration": 0.5,
+            "hold": 0,
+            "opacity": 0,
+            "color": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "parallel": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "group": "P2 · 顺带缩短黑场",
+      "label": "教室背景在幕下的淡入时长 0.35 → 0",
+      "edits": [
+        {
+          "node": "CH01_Prologue_Classroom",
+          "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+          "op": "modifyCommand",
+          "reason": "背景在黑幕下淡入不可见，改成瞬时设置以缩短黑场。",
+          "command": "修改已有指令",
+          "anchorCommandId": "eaf7f703b283413b96ef58542538fe86",
+          "params": {
+            "_duration": 0
+          }
+        }
+      ]
+    }
+  ],
+  "notApplied": [
+    {
+      "id": "P1b",
+      "group": "P1 · 序章进场怎么改",
+      "reason": "用户未勾选；未写入任何改动"
+    },
+    {
+      "id": "P1c",
+      "group": "P1 · 序章进场怎么改",
+      "reason": "用户未勾选；未写入任何改动"
+    }
+  ],
+  "notOffered": [
+    {
+      "item": "给读者页加一层不透明底板",
+      "reason": "这才是「背景一透明就露到页后」的根因修法，但它是 UI 改动（新增 Image 节点），属布局工具 / EUI 开发中心范围。上一批已列为待办，本批仍未做。想做可以另起一次 UI 改动。"
+    },
+    {
+      "item": "改掉读者页的进入动画 EUICommon_Enter",
+      "reason": "它把根 CanvasGroup 的 alpha 从 0 拉到 1（0.3 秒），是 UI 层的共用动画资产，本技能不改 UI 资产；而且揭幕期间 TopMost 的 loading 面板通常已经把它挡住。"
+    },
+    {
+      "item": "改标题卡的退场渐隐时长（TitleExitDuration，当前 0.65 秒）",
+      "reason": "解决不了问题：卡退场发生在章节卡这条指令内部，之后再加遮罩已经晚了；把它改成 0 只会让卡变成硬切，而且仍有一帧空页。"
+    },
+    {
+      "item": "重排指令顺序，把背景提到章节卡之前",
+      "reason": "那样背景的透明淡入会挪到进场第一帧；它是否被 loading 幕挡住取决于揭幕时序，不如「黑幕起手」确定。本批选择不重排，保持原有指令顺序与 ID。"
+    },
+    {
+      "item": "顺带处理「序章」以外的章节卡",
+      "reason": "全篇只有这一张章节卡；其余 142 句都是普通对白，没有需要同样处理的位置。"
+    }
+  ],
+  "followUpCorrections": [
+    {
+      "id": "background-before-chapter-card",
+      "when": "同一批次交付后、用于验证「继续游戏」改动的自动化用例运行时",
+      "change": "把教室背景指令从章节卡之后移到最前（[0] 背景 dur=0 → [1] 黑幕 → [2] 章节卡 → [3] BGM → [4] 撤幕），原有指令 ID 与时长不变，遮幕两条也保持不变。",
+      "reason": "模板用例 NovelGameplayTests 断言「揭幕前首屏背景必须已应用」：首个可读画面出现时 Background/Picture 必须已经有 sprite。序章第一屏是章节卡，背景排在卡之后就不满足这条不变量。",
+      "effect": "画面完全不变：背景本来就是在黑幕之下瞬时设置的，玩家看到的仍是「黑幕 → 章节卡 → 卡退场露出黑幕 → 0.5 秒淡入教室」。改动后该断言通过。",
+      "historyNote": "这条断言在改动前也是失败的（当时背景排在章节卡之后，且带 0.35 秒透明淡入，首个可读画面时 sprite 仍为 null）。也就是说它自 CMH 内容导入起就不满足模板用例，本批把它修好了。"
+    }
+  ],
+  "revisionBumps": {
+    "storyRevision": "5 -> 7（本批 5 -> 6；随后为修正揭幕顺序再 6 -> 7）",
+    "chapterStoryRevision": "CH01_Prologue 4 -> 6（4 -> 5；再 5 -> 6）；CH02_Chapter01 与 CH99_Endings 未改动，保持 4 / 1",
+    "contentRevisionPerNode": "Classroom 7 -> 9（7 -> 8；再 8 -> 9）；其余 10 个对话节点未改动"
+  },
+  "fingerprints": {
+    "scopeAssets": 52,
+    "changedAssets": 3,
+    "changedFiles": [
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset"
+    ],
+    "perAsset": {
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters.meta": "68be60ac32ae0caa93a4ca605e37019a51e5d05e030107bf971eadb3ae7718c1",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue.meta": "941b73f2c2092d01e7342ea0aa354b04497cf5a560998198a6ec9eb6f5cec8c7",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset": "e85100709df9d1d848117d44255b6f648a62dcc7ad844f291705f05aa167322f",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset.meta": "d94032979cb2d418289a9fc4bd16f624508ce4276188f6ea657854ef90988f0a",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue.meta": "8885c87bdc9936b17d090368545a315ed9510f7d58938830325140ba0c9afd69",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset": "ef41ee7adf2da82ccfb9136723e5223263c40ce5ca18958e1595dc9a093d493d",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset.meta": "5277740d808b05aca3d3268882d29100383e425eec5532eb6fd2e1b3d39a03ef",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset": "d418e6783f5fa7b7fb0d67b8f08c246548b35dd3a76cb89187c4b9cf195f2c45",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset.meta": "b2f2f9c8529db8d735bf4e1c68135d4efafa64f85e172abee57398338cb9f73f",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Endings.meta": "2b8689de0f907b71def9acc6949130fa67f25d7391ea53cb5a2eeacff5d900f7",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits.meta": "a6efe22245846f4aa890d7ae7a5cbd6975e5688a218827116b41a76f2ee0c670",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits/CH01_Prologue_ExitToChapter01.asset": "b212b7f8f4532d127c89ef8ccff04914d52d543c02dae70a9756131c7591c34c",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits/CH01_Prologue_ExitToChapter01.asset.meta": "072df717e34080494a4c37992b9a75e7c7bc55aeac0df688eae07ca89d6f444a",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01.meta": "4e561a56205d5f00c5298dbb36004e3270b17d4163f4bcb062086963c3798be8",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches.meta": "099eb3a7d7f9c04384b2290e07f7c621b3292c65d943af9bc7f0678f525983fb",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches/CH02_Chapter01_HubBranch.asset": "20babea8bfa220c570aa74d7ee3218b00b9334980e2844f042592dd540b21b8c",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches/CH02_Chapter01_HubBranch.asset.meta": "a75c328e469aaa6a8d203b060e9918c3498b7a1148182abd71034ed9fe6b94d7",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Chapter.asset": "f2031923700ae2f5dd07400545578d36600433e45d4e38e7142254f7c60e54a3",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Chapter.asset.meta": "04b85d2b70834bb74fd9f91f6d2a2b9ea155ed6c4baa268d7c5f0bf0fb55fbbc",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices.meta": "9d65554ff72bafcaa6c542e2f4bfbedcb835a7215e3615b94b4e9640cbcf1fc2",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices/CH02_Chapter01_HubChoice.asset": "b4170dfe8e0618b8e1b270dbe284c05958ff824ba4c6737d28bedb2ea64e0762",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices/CH02_Chapter01_HubChoice.asset.meta": "e6558d854d4d847879431755314b1de814bc6df70d21ba8dfcf8e26f29638313",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue.meta": "56584c00c9976987896125ead5c8240ed99bc355bd676c4c06a4a924d23ab5e6",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset": "56a336578088692d710668c26b876a070ddc507e1c2280a14809e5a1d999fcf7",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset.meta": "08b5c5a65ca6b63decc0c93d3387d8b9b43d0ce1fa3626d88bb6f0997e66be19",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_HubSay.asset": "6359bd8d276a228f6f60e9ce5d8a5c3f152aa0baa3e78e1eb049c01bdc8cec6c",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_HubSay.asset.meta": "b884df07784ea2abe72b9638ccb55bcdd6bb666e4d690ef0d76c0a7c7b93b7d8",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_MainClose.asset": "4d5478fa220971c26188c9bf9fed9d98e80266d46c481d220c49713d440bd745",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_MainClose.asset.meta": "2223b938170bcfba829593a78c1429c9d848549332f0f4333b9752a787a8b1d6",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset": "729cf6049d753ca942f9df9ae54b1e8541a85227f63b310aa9fdc828c4c84819",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset.meta": "09d8b402f55a5692d51539ae8a7cac25a58b8768465b8bf94f25ba750c105915",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset": "533ab778d09185c29c9663cef1c50de563f64537623d5e0f08cddc3b9c58739e",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset.meta": "4bfc6bdd0057d1109f26cb580d3680561b2ad7a9a5cc38d092f7480ccd376395",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset": "35d0f7129d5b00b05b94a33a341cf39057cdaeaa2293f74a8da6427dd7df3fbc",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset.meta": "0bbfbb890ee88cfa023dfa8e99f54cc1291acf4e818a56a093d8b9b742d549b1",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset": "b48970e400e3e09f38e84ca8445d531db62e1bfb3f41f2e22adbde37944ae078",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset.meta": "b34e198dc29d7b89f84cb23a087d6f6c1a6ad375b445f6d15402ca31f58eaa43",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Overnight.asset": "3a758073725deae35ac7952ca4a0e300da2d54c258672ea5e02b89e69b4d5b1e",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Overnight.asset.meta": "307e8affd8b2dfbe6be56edbb3f2b8fe585681bc3a2becaefc6a44a804e4411f",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset": "1d9c9ec8adf7fc89c07e5da812fe550678e1f0ea991f5249eed45ae985c57b3a",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset.meta": "f1a04ed1d6bfac0c5ecfb74e0f3fba4ebe90aaeba6990043b96c71c20101d44e",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits.meta": "39ba4f7993f3968f9ff847f7f3303219c3ac740cebe382fa7b38082ce6df38d3",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits/CH02_Chapter01_ExitToEndings.asset": "9877544a323187d072ff91bb6170514467dcadbb3c1dba42eda3f5d3d3298f5a",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits/CH02_Chapter01_ExitToEndings.asset.meta": "f4846137d159ac4780f28e3c2c0fb72cc81154413574fc36c5d3bbac3db3e456",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings.meta": "4403ae73ae15a0ca38fead38977c90c97850b500de67c3ffdd78be61a6c3e348",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Chapter.asset": "84b43a8ed3c91f8541b2723c758ed6337fd0de74b849b3b757ad51a065e08015",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Chapter.asset.meta": "c26a68d597608b85f9dac0d81cece8ef853fd828d870498f4735c3267c5111ae",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings.meta": "092023775a7d9a6c810352962583d4b80b924397d4f024cef20f6d8afae85cf0",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings/CH99_Endings_PreviewEnd.asset": "3a9418368757e4c1db492e801de3ac3561b081cf4d35f9d163a93a91b4f97bea",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings/CH99_Endings_PreviewEnd.asset.meta": "8c99a8bc915f0366db033eb58351fefc876508d4c7cf0c6f20cfb30bd03bf832",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset": "bcd92eb22666bfe4188dcc46020a08ee3e5012b0dab568fa5b44b27098abb62b",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset.meta": "fec8c0317d47185b9c1044002df80dae92738243cac7581e07829b1643a7f845"
+    },
+    "afterPerAsset": {
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters.meta": "68be60ac32ae0caa93a4ca605e37019a51e5d05e030107bf971eadb3ae7718c1",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue.meta": "941b73f2c2092d01e7342ea0aa354b04497cf5a560998198a6ec9eb6f5cec8c7",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset": "b9e3741e7415d7b26a70eab28b1eed37469c078ed4e3b7a79434577f450c0f41",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset.meta": "d94032979cb2d418289a9fc4bd16f624508ce4276188f6ea657854ef90988f0a",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue.meta": "8885c87bdc9936b17d090368545a315ed9510f7d58938830325140ba0c9afd69",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset": "404783dafb890837518337b4b0feffdd1ee73cec68cef19daca043d9b5a6c44b",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset.meta": "5277740d808b05aca3d3268882d29100383e425eec5532eb6fd2e1b3d39a03ef",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset": "d418e6783f5fa7b7fb0d67b8f08c246548b35dd3a76cb89187c4b9cf195f2c45",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset.meta": "b2f2f9c8529db8d735bf4e1c68135d4efafa64f85e172abee57398338cb9f73f",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Endings.meta": "2b8689de0f907b71def9acc6949130fa67f25d7391ea53cb5a2eeacff5d900f7",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits.meta": "a6efe22245846f4aa890d7ae7a5cbd6975e5688a218827116b41a76f2ee0c670",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits/CH01_Prologue_ExitToChapter01.asset": "b212b7f8f4532d127c89ef8ccff04914d52d543c02dae70a9756131c7591c34c",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits/CH01_Prologue_ExitToChapter01.asset.meta": "072df717e34080494a4c37992b9a75e7c7bc55aeac0df688eae07ca89d6f444a",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01.meta": "4e561a56205d5f00c5298dbb36004e3270b17d4163f4bcb062086963c3798be8",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches.meta": "099eb3a7d7f9c04384b2290e07f7c621b3292c65d943af9bc7f0678f525983fb",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches/CH02_Chapter01_HubBranch.asset": "20babea8bfa220c570aa74d7ee3218b00b9334980e2844f042592dd540b21b8c",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches/CH02_Chapter01_HubBranch.asset.meta": "a75c328e469aaa6a8d203b060e9918c3498b7a1148182abd71034ed9fe6b94d7",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Chapter.asset": "f2031923700ae2f5dd07400545578d36600433e45d4e38e7142254f7c60e54a3",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Chapter.asset.meta": "04b85d2b70834bb74fd9f91f6d2a2b9ea155ed6c4baa268d7c5f0bf0fb55fbbc",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices.meta": "9d65554ff72bafcaa6c542e2f4bfbedcb835a7215e3615b94b4e9640cbcf1fc2",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices/CH02_Chapter01_HubChoice.asset": "b4170dfe8e0618b8e1b270dbe284c05958ff824ba4c6737d28bedb2ea64e0762",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices/CH02_Chapter01_HubChoice.asset.meta": "e6558d854d4d847879431755314b1de814bc6df70d21ba8dfcf8e26f29638313",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue.meta": "56584c00c9976987896125ead5c8240ed99bc355bd676c4c06a4a924d23ab5e6",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset": "56a336578088692d710668c26b876a070ddc507e1c2280a14809e5a1d999fcf7",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset.meta": "08b5c5a65ca6b63decc0c93d3387d8b9b43d0ce1fa3626d88bb6f0997e66be19",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_HubSay.asset": "6359bd8d276a228f6f60e9ce5d8a5c3f152aa0baa3e78e1eb049c01bdc8cec6c",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_HubSay.asset.meta": "b884df07784ea2abe72b9638ccb55bcdd6bb666e4d690ef0d76c0a7c7b93b7d8",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_MainClose.asset": "4d5478fa220971c26188c9bf9fed9d98e80266d46c481d220c49713d440bd745",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_MainClose.asset.meta": "2223b938170bcfba829593a78c1429c9d848549332f0f4333b9752a787a8b1d6",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset": "729cf6049d753ca942f9df9ae54b1e8541a85227f63b310aa9fdc828c4c84819",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset.meta": "09d8b402f55a5692d51539ae8a7cac25a58b8768465b8bf94f25ba750c105915",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset": "533ab778d09185c29c9663cef1c50de563f64537623d5e0f08cddc3b9c58739e",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset.meta": "4bfc6bdd0057d1109f26cb580d3680561b2ad7a9a5cc38d092f7480ccd376395",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset": "35d0f7129d5b00b05b94a33a341cf39057cdaeaa2293f74a8da6427dd7df3fbc",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset.meta": "0bbfbb890ee88cfa023dfa8e99f54cc1291acf4e818a56a093d8b9b742d549b1",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset": "b48970e400e3e09f38e84ca8445d531db62e1bfb3f41f2e22adbde37944ae078",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset.meta": "b34e198dc29d7b89f84cb23a087d6f6c1a6ad375b445f6d15402ca31f58eaa43",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Overnight.asset": "3a758073725deae35ac7952ca4a0e300da2d54c258672ea5e02b89e69b4d5b1e",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Overnight.asset.meta": "307e8affd8b2dfbe6be56edbb3f2b8fe585681bc3a2becaefc6a44a804e4411f",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset": "1d9c9ec8adf7fc89c07e5da812fe550678e1f0ea991f5249eed45ae985c57b3a",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset.meta": "f1a04ed1d6bfac0c5ecfb74e0f3fba4ebe90aaeba6990043b96c71c20101d44e",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits.meta": "39ba4f7993f3968f9ff847f7f3303219c3ac740cebe382fa7b38082ce6df38d3",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits/CH02_Chapter01_ExitToEndings.asset": "9877544a323187d072ff91bb6170514467dcadbb3c1dba42eda3f5d3d3298f5a",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits/CH02_Chapter01_ExitToEndings.asset.meta": "f4846137d159ac4780f28e3c2c0fb72cc81154413574fc36c5d3bbac3db3e456",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings.meta": "4403ae73ae15a0ca38fead38977c90c97850b500de67c3ffdd78be61a6c3e348",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Chapter.asset": "84b43a8ed3c91f8541b2723c758ed6337fd0de74b849b3b757ad51a065e08015",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Chapter.asset.meta": "c26a68d597608b85f9dac0d81cece8ef853fd828d870498f4735c3267c5111ae",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings.meta": "092023775a7d9a6c810352962583d4b80b924397d4f024cef20f6d8afae85cf0",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings/CH99_Endings_PreviewEnd.asset": "3a9418368757e4c1db492e801de3ac3561b081cf4d35f9d163a93a91b4f97bea",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings/CH99_Endings_PreviewEnd.asset.meta": "8c99a8bc915f0366db033eb58351fefc876508d4c7cf0c6f20cfb30bd03bf832",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset": "d1cd055fefe3cf7a2ea92415063b0c7532a0fbf807377a031d0b3324c19edcbf",
+      "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset.meta": "fec8c0317d47185b9c1044002df80dae92738243cac7581e07829b1643a7f845"
+    },
+    "note": "仅 3 个文件变化：剧情资产 1 + 章序章章节资产 1 + 序章课堂节点资产 1；无 .meta 变化，无新增资源"
+  },
+  "preservationComparison": {
+    "before": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/preservation-before.txt",
+    "after": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/preservation-after.txt",
+    "linesCompared": 142,
+    "optionsCompared": 3,
+    "branchRoutesCompared": 1,
+    "variablesCompared": 3,
+    "setVariableCompared": 3,
+    "nodeConnectionsCompared": 14,
+    "endingsCompared": 1,
+    "result": "规范化 contentRev / 命令索引 / 章节 storyRev 后逐行比较：194 行对 194 行，0 处差异",
+    "note": "台词、说话人、Voice、多语言 Key、正文、显示模式、章节卡参数、选项、条件、去向、变量与赋值、连接与结局全部未变；本批只新增两条遮罩并把一条背景时长改为 0"
+  },
+  "validation": {
+    "entryCheck": {
+      "blockReason": "EmberProjectSetup.GetTemplateSkillExecutionBlockReason(\"ember-vn-polish-presentation\") 返回 null",
+      "templateActive": true,
+      "canEdit": true,
+      "isPlaying": false
+    },
+    "storyTryReadDefinition": true,
+    "storyErrors": 0,
+    "chapters": [
+      {
+        "name": "第一章·序章",
+        "read": true,
+        "errors": 0
+      },
+      {
+        "name": "第一章",
+        "read": true,
+        "errors": 0
+      },
+      {
+        "name": "结局",
+        "read": true,
+        "errors": 0
+      }
+    ],
+    "resourceResolution": {
+      "checked": 35,
+      "missing": 0,
+      "unresolvable": 0
+    },
+    "runner": {
+      "started": true,
+      "ended": true,
+      "state": "Ended",
+      "endingId": "9f5cd4ba4ee041939d09f1ad8bc06623",
+      "frames": 349,
+      "choicesTaken": 3,
+      "streamEntries": 207
+    },
+    "entryTrace": {
+      "method": "按真实指令流逐条跟踪遮罩透明度、当前背景键与三个物理槽的在场立绘",
+      "steps": [
+        "[索引 0] 背景 教室_default（时长 0，瞬时设置）—— 首帧即为不透明，放在章节卡之前，保证「首个可读画面」出现时背景已经就位（模板用例的不变量）",
+        "[索引 1] 纯黑遮罩、目标透明度 1、时长 0（瞬时全黑）—— 此时背景已就位，全黑层把 0.35 秒的透明淡入彻底盖掉",
+        "[索引 2] 章节卡「序章」在遮罩之上显示（遮罩按文档位于阅读文字之下，卡片仍可见）",
+        "[索引 3] BGM CMH_fallingstar（时长 2、并行）",
+        "[索引 4] 纯黑遮罩、目标透明度 0、时长 0.5 —— 撤幕，从黑幕淡入已经完全不透明的教室，作为真正的入场渐变",
+        "[索引 5] 正文第一句开始"
+      ],
+      "note": "最终指令顺序：[0] 背景 → [1] 黑幕 → [2] 章节卡 → [3] BGM → [4] 撤幕 → [5..] 正文。原有指令 ID 全部保留，只是索引顺移。"
+    },
+    "seamAudit": {
+      "before": "无遮罩换景 1 处（就是序章进场这处第一张背景的透明淡入）、可见的同键重复声明 0 处、立绘瞬间消失 0 处",
+      "after": "透明露底断层 0 处、瞬时设置 6 处、黑幕或擦除下 6 处、立绘瞬间消失 0 处、立绘淡出 3 处",
+      "note": "判定口径：背景时长 0 时单帧即 alpha=1，不产生任何透明帧，因此与「有黑幕」同等安全。按这个口径，全篇已经不剩下任何「因为背景层透明而露到页后」的位置。"
+    },
+    "automatedTests": {
+      "continueFlow": {
+        "test": "Game.Narrative.Tests.NovelGameplayTests.MainMenuContinueAndLoadBothOpenChooserWithoutTransition",
+        "mode": "EditMode（用例内部自行进入 Play Mode）",
+        "result": "Passed",
+        "durationSeconds": 40.348,
+        "assertion": "继续游戏只打开槽位页：不显示转场遮挡、不启动剧情、不开始读取；随后从槽位页读取快速槽仍走遮挡，慢加载期间的遮挡与进度条断言保持通过"
+      },
+      "fullNarrativeSuite": {
+        "mode": "EditMode",
+        "total": 258,
+        "passed": 257,
+        "failed": 1,
+        "report": ".utmp/visual-novel-m3/tests-20260925-163213428.xml",
+        "remainingFailure": {
+          "test": "Game.Narrative.Tests.NovelGameplayTests.RealMenuReaderBranchEndingAndRepeatedExit",
+          "assertion": "规范示例的居中立绘应加载（NovelGameplayTests.cs:343）",
+          "assessment": "与本次改动无关的既有失败：该用例用 Resources.LoadAll(\"Config/Narrative/LastLight\") 并断言「首个可读画面」就有居中立绘，即按 LastLight 的「先背景后对白」开场写的；而 Library.asset 的 _current 已经是 CallMeHeartless，序章第一屏是章节卡、本就没有立绘。改动前它先在上一行「示例背景应加载」(342) 失败；本批把背景提到章节卡之前后 342 通过，失败点下移到 343。"
+        }
+      }
+    },
+    "semanticFingerprint": {
+      "before": "B85CB19A3BB0F12041ABA38DCE05B85029A50E249B6E51F7145A3A92A178CE5E",
+      "after": "AC19C61F9E5ADC067F65A1E5BC8234EAC4D772F32A88DA6E5A45F07C98E01C4E",
+      "note": "剧情语义指纹已改变（新增遮罩指令、背景时长与指令顺序都参与 NovelCompatibility.Fingerprint）；优化前的存档可能被判为不兼容。未删除任何存档，未绕过兼容检查"
+    },
+    "unityConsoleErrors": 0,
+    "consoleWarnings": 0,
+    "staticOnly": "本次为静态校验 + 纯运行器 + 按运行期同规则的状态推演。进场的真实观感（黑场长度、撤幕快慢、章节卡融入黑幕是否自然）需你从新游戏实际看一眼；未声称画面通过"
+  },
+  "risks": [
+    "本批改动会改变剧情语义指纹，优化前的存档可能被判为不兼容。不删除任何存档，也不绕过兼容检查；建议从新游戏验收。",
+    "开场会多出最多 0.5 秒从黑幕淡入教室（选 P1b 则没有渐变）。",
+    "如果连 loading 幕也没挡住读者页那 0.3 秒的进入动画，进场最初可能仍有一次极短的透出——那是 UI 层的事，剧情侧无法消除；这一批只保证「章节卡退场之后」不再露空。",
+    "静态校验与纯运行器不能替代画面观感；进场节奏需要你从新游戏实际看一眼。"
+  ],
+  "pending": [
+    "读者页没有不透明底板（Background/Picture 之下是空的），所以任何背景透明度都会露到页后。本批用「背景提前 + 黑幕 + 撤幕」把序章进场这条路径全部盖住了，但根因仍在；彻底的修法是给读者页加一层不透明底板（UI 改动，属布局工具 / EUI 开发中心范围）",
+    "读者页自身的进入动画 EUICommon_Enter（根 CanvasGroup alpha 0→1、0.3 秒）仍会让整页在半透明状态下出现；它属 UI 层，剧情侧无法消除。新游戏揭幕时 TopMost 的 EUILoadingPage 通常还盖在上面，所以很可能看不见，但未在 Play 模式实测",
+    "模板用例 NovelGameplayTests.RealMenuReaderBranchEndingAndRepeatedExit 仍失败：它按 LastLight 的「先背景后对白」开场断言「首个可读画面就有居中立绘」，而 Library.asset 的 _current 已是 CallMeHeartless、序章第一屏是章节卡。这是与本批无关的既有失败，需要决定是恢复 LastLight 为测试用当前小说，还是放宽该断言",
+    "镇长 CMH_zz 立绘缺失、【主控昵称】未绑定、CMH 缺 SFX/环境音/配音素材、142 句台词多语言 Key 为空 —— 均未处理",
+    "音频：编辑器 Game 视图的 Mute Audio 已关闭（EditorUtility.audioMasterMute 置为 False）。若仍听不到音乐，需要单独排查 NovelLoopPlayback（E3 循环音）的实际发声",
+    "本批改变了语义指纹，优化前的存档可能不兼容；未删除存档"
+  ],
+  "evidence": {
+    "planSource": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/plan-source.json",
+    "decision": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/decision.json",
+    "applyPlan": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/apply-plan.tsv",
+    "preservationBefore": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/preservation-before.txt",
+    "preservationAfter": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/preservation-after.txt",
+    "fingerprintsBefore": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/fingerprints-before.json",
+    "fingerprintsAfter": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/fingerprints-after.json",
+    "backup": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/backup/",
+    "selectionPage": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/page/",
+    "serverLog": ".utmp/vn-presentation/20260926-cmh-prologue-entry-03/server.log",
+    "previousBatches": [
+      "Assets/Game/Documentation/NarrativeImports/20260925-cmh-presentation-fix-01-presentation.json",
+      "Assets/Game/Documentation/NarrativeImports/20260925-cmh-seam-fix-02-presentation.json"
+    ]
+  },
+  "editCount": 3
+}

@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f591a0693451b184e909d2b5eb8b94b9, type: 3}
-  m_Name: CH01_Prologue_PreviewEnd
-  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeEndingSO
-  _nodeId: e9c1f9e2320144b1ba8cb0dc8188634d
+  m_Script: {fileID: 11500000, guid: 73ebcad26c0952a498ef1973fce6f5c8, type: 3}
+  m_Name: CH01_Prologue_ExitToChapter01
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeChapterExitSO
+  _nodeId: 73a7d87c477c40eca36a9cdaafc77e25
   _chapterId: 2e58920df7dd454096c73f95a528b843
   _contentRevision: 1
-  _endingId: 9f5cd4ba4ee041939d09f1ad8bc06623

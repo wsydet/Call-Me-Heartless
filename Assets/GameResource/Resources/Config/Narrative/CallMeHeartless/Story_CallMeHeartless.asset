@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98e6c866b448dd40aefd58d82b19ad1, type: 3}
+  m_Name: Story_CallMeHeartless
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeStorySO
+  _storyId: 0942d3f17d504f01ba64169b17e2a578
+  _displayName: Call Me Heartless
+  _displayNameKey: 
+  _revision: 8
+  _entry: {fileID: 11400000, guid: 4daafdce996c2ac4fa0c7c941c4ff895, type: 2}
+  _chapters:
+  - {fileID: 11400000, guid: 4daafdce996c2ac4fa0c7c941c4ff895, type: 2}
+  - {fileID: 11400000, guid: 664b417b200cbef4fb08ceb776129d60, type: 2}
+  - {fileID: 11400000, guid: 3b56d80b4988b65459dd1ca6136d49eb, type: 2}
+  _globals:
+  - _id: playerName
+    _value:
+      _type: 2
+      _bool: 0
+      _int: 0
+      _string: "\u65C5\u4EBA"
+  _exits:
+  - _source: {fileID: 11400000, guid: 4daafdce996c2ac4fa0c7c941c4ff895, type: 2}
+    _exit: {fileID: 11400000, guid: db051ae094def574db2739618c88bc7f, type: 2}
+    _routes: []
+    _fallback: {fileID: 11400000, guid: 664b417b200cbef4fb08ceb776129d60, type: 2}
+  - _source: {fileID: 11400000, guid: 664b417b200cbef4fb08ceb776129d60, type: 2}
+    _exit: {fileID: 11400000, guid: 3442714a5ccb8b347aa1053601550692, type: 2}
+    _routes: []
+    _fallback: {fileID: 11400000, guid: 3b56d80b4988b65459dd1ca6136d49eb, type: 2}
+  _customSteps:
+  - {fileID: 11400000, guid: 15583cb76cac68f44b3e2a2153486e6c, type: 2}
+  - {fileID: 11400000, guid: 1b5604ff2a9253940840c15014d176a0, type: 2}
+  - {fileID: 11400000, guid: 0ae387ae992e08a40b247937fb01898f, type: 2}
