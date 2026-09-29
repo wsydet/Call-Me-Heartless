@@ -37,6 +37,13 @@ MonoBehaviour:
     _textKey: option.0942d3f17d504f01ba64169b17e2a578.27e1b5ea8bc8428b830bcbd2021652bd
     _condition:
       _junction: 0
+      _predicates: []
+    _target: {fileID: 11400000, guid: c57e5c67accc095458a795b78db1a19a, type: 2}
+  - _optionId: cmh_ch01_questions_done
+    _text: "\u6CA1\u6709\u5176\u4ED6\u60F3\u95EE\u7684\u4E86"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.cmh_ch01_questions_done
+    _condition:
+      _junction: 0
       _predicates:
       - _variableId: asked_schedule
         _scope: 0
@@ -45,5 +52,21 @@ MonoBehaviour:
           _type: 0
           _bool: 1
           _int: 0
-          _string: 
-    _target: {fileID: 11400000, guid: c57e5c67accc095458a795b78db1a19a, type: 2}
+          _string:
+      - _variableId: asked_sect
+        _scope: 0
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 1
+          _int: 0
+          _string:
+      - _variableId: asked_demon
+        _scope: 0
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 1
+          _int: 0
+          _string:
+    _target: {fileID: 11400000, guid: ca43d52133b129048a142c017acfd152, type: 2}

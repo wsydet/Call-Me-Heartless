@@ -15,36 +15,5 @@ MonoBehaviour:
   _nodeId: 0eb30befaeee438d9e2302d9d4fec4bd
   _chapterId: 57c023ad23ef45be88cbab6bd9b3d51d
   _contentRevision: 1
-  _branches:
-  - _optionId: b404498d99884d06bb0f4c9e256b36b6
-    _text: "\u4E09\u9879\u90FD\u95EE\u5B8C\u4E86"
-    _textKey: option.0942d3f17d504f01ba64169b17e2a578.b404498d99884d06bb0f4c9e256b36b6
-    _condition:
-      _junction: 0
-      _predicates:
-      - _variableId: asked_schedule
-        _scope: 0
-        _comparison: 0
-        _value:
-          _type: 0
-          _bool: 1
-          _int: 0
-          _string: 
-      - _variableId: asked_sect
-        _scope: 0
-        _comparison: 0
-        _value:
-          _type: 0
-          _bool: 1
-          _int: 0
-          _string: 
-      - _variableId: asked_demon
-        _scope: 0
-        _comparison: 0
-        _value:
-          _type: 0
-          _bool: 1
-          _int: 0
-          _string: 
-    _target: {fileID: 11400000, guid: ca43d52133b129048a142c017acfd152, type: 2}
+  _branches: []
   _fallback: {fileID: 11400000, guid: a7ea549e5a99d9548a525d78b604b2ff, type: 2}

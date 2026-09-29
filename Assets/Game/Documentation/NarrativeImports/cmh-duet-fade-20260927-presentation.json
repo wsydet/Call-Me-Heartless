@@ -1,0 +1,2904 @@
+{
+  "schemaVersion": 1,
+  "batchId": "cmh-duet-fade-20260927",
+  "skillId": "ember-vn-polish-presentation",
+  "status": "applied-and-verified",
+  "projectRoot": "C:\\Users\\wuyu\\My\\Call Me Heartless",
+  "planHash": "33b0d45195527114b80d5c98390a5badea1a2839a9622c919cfd043bb5a833a1",
+  "choices": {
+    "packages": [
+      "CH01_Prologue_Classroom",
+      "CH02_Chapter01_Mountain",
+      "CH02_Chapter01_Town"
+    ],
+    "strength": "light"
+  },
+  "parameters": {
+    "fadeOut": 0.22,
+    "fadeIn": 0.22,
+    "hiddenMoveDuration": 0
+  },
+  "frameworkChangeRequired": false,
+  "sourceFingerprints": [
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters.meta",
+      "sha256": "68be60ac32ae0caa93a4ca605e37019a51e5d05e030107bf971eadb3ae7718c1"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset",
+      "sha256": "324850947ef64bbd5d6a20e1ef6aa061acc1ed8c35c40ebddf3a3638f34173ac"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset.meta",
+      "sha256": "fec8c0317d47185b9c1044002df80dae92738243cac7581e07829b1643a7f845"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue.meta",
+      "sha256": "941b73f2c2092d01e7342ea0aa354b04497cf5a560998198a6ec9eb6f5cec8c7"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01.meta",
+      "sha256": "4e561a56205d5f00c5298dbb36004e3270b17d4163f4bcb062086963c3798be8"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings.meta",
+      "sha256": "4403ae73ae15a0ca38fead38977c90c97850b500de67c3ffdd78be61a6c3e348"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset",
+      "sha256": "00a18102bc8dec232fd12a78a2b6b2725a634140a109a528fd925ccbc26d79d7"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset.meta",
+      "sha256": "d94032979cb2d418289a9fc4bd16f624508ce4276188f6ea657854ef90988f0a"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue.meta",
+      "sha256": "8885c87bdc9936b17d090368545a315ed9510f7d58938830325140ba0c9afd69"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Endings.meta",
+      "sha256": "2b8689de0f907b71def9acc6949130fa67f25d7391ea53cb5a2eeacff5d900f7"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits.meta",
+      "sha256": "a6efe22245846f4aa890d7ae7a5cbd6975e5688a218827116b41a76f2ee0c670"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+      "sha256": "982fff79acb3e8494232899e3b926dce8c26b4c65d6b8fa9ba89e82c7166f150"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset.meta",
+      "sha256": "5277740d808b05aca3d3268882d29100383e425eec5532eb6fd2e1b3d39a03ef"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset",
+      "sha256": "31cc1bf3636cb8650440fd56991d5190d4ed99a82f21da5414816f7146192a39"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset.meta",
+      "sha256": "b2f2f9c8529db8d735bf4e1c68135d4efafa64f85e172abee57398338cb9f73f"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits/CH01_Prologue_ExitToChapter01.asset",
+      "sha256": "b212b7f8f4532d127c89ef8ccff04914d52d543c02dae70a9756131c7591c34c"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits/CH01_Prologue_ExitToChapter01.asset.meta",
+      "sha256": "072df717e34080494a4c37992b9a75e7c7bc55aeac0df688eae07ca89d6f444a"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches.meta",
+      "sha256": "099eb3a7d7f9c04384b2290e07f7c621b3292c65d943af9bc7f0678f525983fb"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Chapter.asset",
+      "sha256": "bca3c9a618df3be275897a5ce9b5af518d0baec2f95cf9049afe63a9ed16a71f"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Chapter.asset.meta",
+      "sha256": "04b85d2b70834bb74fd9f91f6d2a2b9ea155ed6c4baa268d7c5f0bf0fb55fbbc"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices.meta",
+      "sha256": "9d65554ff72bafcaa6c542e2f4bfbedcb835a7215e3615b94b4e9640cbcf1fc2"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue.meta",
+      "sha256": "56584c00c9976987896125ead5c8240ed99bc355bd676c4c06a4a924d23ab5e6"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits.meta",
+      "sha256": "39ba4f7993f3968f9ff847f7f3303219c3ac740cebe382fa7b38082ce6df38d3"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches/CH02_Chapter01_HubBranch.asset",
+      "sha256": "dbbf8ebee210163dd5f4ef9015254da8d3f5bc3763d8ff3241b9d5042c3723e4"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches/CH02_Chapter01_HubBranch.asset.meta",
+      "sha256": "a75c328e469aaa6a8d203b060e9918c3498b7a1148182abd71034ed9fe6b94d7"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices/CH02_Chapter01_HubChoice.asset",
+      "sha256": "e9abe84828116bec610e371bea89a8763528250c9c618263ce18e9a0bea7f900"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices/CH02_Chapter01_HubChoice.asset.meta",
+      "sha256": "e6558d854d4d847879431755314b1de814bc6df70d21ba8dfcf8e26f29638313"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset",
+      "sha256": "e5b49c934ad957a6619b55677a935b5d759fc5eb454297a19963fc5a528d97c5"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset.meta",
+      "sha256": "08b5c5a65ca6b63decc0c93d3387d8b9b43d0ce1fa3626d88bb6f0997e66be19"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_HubSay.asset",
+      "sha256": "ef3d74aafbc392867cde314698ecc3ce28e6a3f1e4bb1a0f59e34f4af836d39c"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_HubSay.asset.meta",
+      "sha256": "b884df07784ea2abe72b9638ccb55bcdd6bb666e4d690ef0d76c0a7c7b93b7d8"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_MainClose.asset",
+      "sha256": "30ed1cf041dba54b318af983c1054a671a8bfef7cf9e2d14556ee0f2860e07ee"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_MainClose.asset.meta",
+      "sha256": "2223b938170bcfba829593a78c1429c9d848549332f0f4333b9752a787a8b1d6"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset",
+      "sha256": "235e5d8746b4680b8e87fe2af8d840f35c5d5fdce6f15b11dbdb802f32ef7d93"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset.meta",
+      "sha256": "09d8b402f55a5692d51539ae8a7cac25a58b8768465b8bf94f25ba750c105915"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset",
+      "sha256": "c3b49b5c124fd2a34aa6e3016c23e27911015c7698fe7e75c62f5b0640675746"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset.meta",
+      "sha256": "4bfc6bdd0057d1109f26cb580d3680561b2ad7a9a5cc38d092f7480ccd376395"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+      "sha256": "0d9782e3fdbad3b71adbb35cd124bb57dc76d98185f7f33fdf538c4c18bce05a"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset.meta",
+      "sha256": "0bbfbb890ee88cfa023dfa8e99f54cc1291acf4e818a56a093d8b9b742d549b1"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset",
+      "sha256": "d960780dad1c801cec118c451502a7ecbfb6441bd57e325894fec1dca93370ff"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset.meta",
+      "sha256": "b34e198dc29d7b89f84cb23a087d6f6c1a6ad375b445f6d15402ca31f58eaa43"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Overnight.asset",
+      "sha256": "8891c42f926be1d80bcc0891c60f464141a38a08482be27f8f24657c4671cb72"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Overnight.asset.meta",
+      "sha256": "307e8affd8b2dfbe6be56edbb3f2b8fe585681bc3a2becaefc6a44a804e4411f"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+      "sha256": "f3eff651f4a786e12baf29ab4899eeaad6bceee8eda3b874010d110fce11f3de"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset.meta",
+      "sha256": "f1a04ed1d6bfac0c5ecfb74e0f3fba4ebe90aaeba6990043b96c71c20101d44e"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits/CH02_Chapter01_ExitToEndings.asset",
+      "sha256": "9877544a323187d072ff91bb6170514467dcadbb3c1dba42eda3f5d3d3298f5a"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits/CH02_Chapter01_ExitToEndings.asset.meta",
+      "sha256": "f4846137d159ac4780f28e3c2c0fb72cc81154413574fc36c5d3bbac3db3e456"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Chapter.asset",
+      "sha256": "4d1a47866c15a5b2abf11cff6bc36bfc73fab68e3cc571ef5cec7a31446158b3"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Chapter.asset.meta",
+      "sha256": "c26a68d597608b85f9dac0d81cece8ef853fd828d870498f4735c3267c5111ae"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings.meta",
+      "sha256": "092023775a7d9a6c810352962583d4b80b924397d4f024cef20f6d8afae85cf0"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings/CH99_Endings_PreviewEnd.asset",
+      "sha256": "3a9418368757e4c1db492e801de3ac3561b081cf4d35f9d163a93a91b4f97bea"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings/CH99_Endings_PreviewEnd.asset.meta",
+      "sha256": "8c99a8bc915f0366db033eb58351fefc876508d4c7cf0c6f20cfb30bd03bf832"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_audio.etable.csv",
+      "sha256": "957bf225463b22fb5a2edd6d854d827532922bc68686b82c4832a01d2b5ea2bd"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_backgrounds.etable.csv",
+      "sha256": "dd21416fe13d14a207d81fbc01e525dbd9eceac9d100954f6eb3f52e15ee8756"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_bgm.etable.csv",
+      "sha256": "b6527315002b590fae81eaf06976b05be3b869ac60c4d364a0c30531e116672e"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_characters.etable.csv",
+      "sha256": "415b7bb3954ad008ee0bae44e03cd2e03a6db81a58247d41c86033298d1e4dcd"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_content_text.etable.csv",
+      "sha256": "cf3f2792444decf646442a758f3a1c8afd63d14d1f262fbc129e6235b9032a52"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_languages.etable.csv",
+      "sha256": "0b28593a9ba85772762f01c109d1de86fb8cf19e1a8bf1d24d40fed42869b69b"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_portraits.etable.csv",
+      "sha256": "0597918eb4ad2b8e4480f0fc8a63354467d7fd2b38111cc497924a92fd2be548"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_skin_sprites.etable.csv",
+      "sha256": "d8ca555ad870118ef65191d3464956e3fbeac1e0664c5aeb2013de8ebb38249e"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_skins.etable.csv",
+      "sha256": "b8bed8171550e05b574a834a090695bea524ee9758178404eb5e07762fde47f6"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_story_skin.etable.csv",
+      "sha256": "19cb3b8d43e14b39ac617cd15a75cfd568d8b43b9ec359e634246e540d1836b2"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_ui_text.etable.csv",
+      "sha256": "898c07c0a9fdf5bdbe4b0b0c8f11484807ef12147e70fb285e414ba2a894ab81"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeData.cs",
+      "sha256": "284576b1145ed32a809c7ee60c37bde5832e7e5ba319b4443341c5eaf67e7ff8"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeDiagnostics.cs",
+      "sha256": "c44e73b5527f3606bc67bc705a6f6a5567a9106a71026440249a3ed90060f659"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeModule.cs",
+      "sha256": "1e5aa50673105f88dc22e812709578cfda1b792aab91e0934feb88370f6fb40f"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeObservation.cs",
+      "sha256": "6904cdd5a82f802d1b0f4bc5925fa62700c668abc18331ead892b54119e969e6"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeRunner.Checkpoint.cs",
+      "sha256": "613a1bef8abc4bf07e093593ef2ababee73f0cbd5e1d43cd105a2b851a059791"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeRunner.cs",
+      "sha256": "f7f5bda988dc5ecf2f3653d7f8a90d5d0c2ea0888040f353f34c50c5ebec671f"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeStory.cs",
+      "sha256": "2f4fa0282b083073b220827a4d497aa426159554926a2d57ecc73d7e0e03d454"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeTableCatalog.cs",
+      "sha256": "7a894c8179392e9277e2e1d18fcbe0e315a17f908147c9a044df66745e647a32"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeValidator.cs",
+      "sha256": "41941c8d29c6c6dea14ac8b43a8b7263dd64625dc479f58272b5f8f1e5596f0f"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelActions.cs",
+      "sha256": "5c39f96dad3230fe971ba7ed01560927c8ae57edb2ca57c7bc61b59102408412"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelActorRules.cs",
+      "sha256": "c0060eb3d7e175a78b0cab72efee402f6ca2e29c959e308a47df63d7458a79f0"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelBgm.cs",
+      "sha256": "8eeafddc46dd6f7e202465091326d01b0986f57051a9ae1fc8e31bbb103cb75a"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelBgmDirector.cs",
+      "sha256": "beb42f2248be7542e0b7e81e197a4765ccd27f5cac67bac997d70e777f031366"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelBgmModule.cs",
+      "sha256": "93b2006ef5abb8878486b4f7dc05f4f2c48fa1a8e3c5d6ab6dd33505f8898f5e"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelBgmRunner.cs",
+      "sha256": "ee9d15dbece51ab24fa03c542d8a5abb3a38137f93d4c9ba21e071ec18a6edd3"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelCamera.cs",
+      "sha256": "bea02e66612506db19eb32c9ebdf3b0a178d74a94b08a97f359394cfbe229fc3"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelCheckpoint.cs",
+      "sha256": "94e919aee6b4a8ce217db8a3b606907612a8d068371b0151b998ffddf2949f96"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelCustomStep.cs",
+      "sha256": "4704242dce2e82464557bd17cd9a437b9a8bc29a1793d04bd7afbf0f9331ced8"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelCustomStepContext.cs",
+      "sha256": "6c937698680566cbf9c9cb866ba6c91e1be2114322f857a1041fd75a2b17d0e7"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelLanguageSettings.cs",
+      "sha256": "891c0043a96d60c85d6850a28103edc9430085df13f999597b456e6cc7c2feda"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelLocalization.cs",
+      "sha256": "d60e52f887550a5379400bcdf6731e803342ce780c9f8d68765fecbdcd3f84dd"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelLoopPlayback.cs",
+      "sha256": "a13a68c28906114e1e64947c66030cd97e772bea1b89c1406d5274b8cf0712da"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelMedia.cs",
+      "sha256": "dd4a9c6e0d079fe3116c2e08edf19890a01e8ca90b553b96678f30878a433e76"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelOpeningSegment.cs",
+      "sha256": "8f246403d6f9c699d1d448769283e4b558eaa14ca052c4536e393ad5072fb553"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelPresentation.cs",
+      "sha256": "0b323489c66ce4e03ceaa55c54dcc5b6d25d1b820176dcb6fa1cbeb82bc2cec4"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelScreenRules.cs",
+      "sha256": "6f239067dc2bcbb67d36282dfb989152e0465d92b834b315766d010560e69593"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Actions.cs",
+      "sha256": "6bfcff592f4efa848b0e3ff61481300aef880e5ca74a699dccb092798d693d24"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Actors.cs",
+      "sha256": "5d2f10d304277c5dcfcd842e39741d052b9949963c3323d9ea7a073e5d7b962a"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Checkpoint.cs",
+      "sha256": "5b29170353e3d6e26435645c6daeb9fef979cdcec3df8c3c17e7ddb6e51419d3"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.cs",
+      "sha256": "9a627345dca92dd47d886424d2011e7db6dad072edecb99630e911662547bdfa"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Media.cs",
+      "sha256": "db874f796dd3ba6eac0e13fef2ca95f113c534013c5e82a42feda4ef879a4b0b"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Reading.cs",
+      "sha256": "ea12c6f0419673f36320d2ca8928d53a966de88f4bbb215d1b9b0c0493fdeb36"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Screen.cs",
+      "sha256": "4f50e548dd9f2d2f6f174467d46f88e6547aedffe962f3d17e4228c04395618c"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.StepCleanup.cs",
+      "sha256": "35a85fd7dba778d8118fccbfde624e891d3ca40f65a001344cb65d83967525cd"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Text.cs",
+      "sha256": "e0bbf1bbd8be37f89870556c704c6e00af680621e06b3f91e7b4d1e403e149ad"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSkin.cs",
+      "sha256": "871d13bca1d20fc9f02f53f7d43beb9a2cff117e7bf327e960c6dd03169e68a3"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelStepService.cs",
+      "sha256": "9d3dd387d2af9ef6b1b05fbec19756350fdd7ee7628c7c87c4e305754682bbfc"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelText.cs",
+      "sha256": "572b46332823323df319164cd2436f9bba805cea2cb72f317ec8f600a95218a9"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelTextBindings.cs",
+      "sha256": "5afe3c97a41a8e9927304d04ac220be1ba0e3c87da7dda7a95d73bb6e4ca0241"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelUISkin.cs",
+      "sha256": "c1f49184f13af073c5f76d75ff33e62d335f53a769a5f5b9db3da2c18d578cc5"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelUISkinAssignments.cs",
+      "sha256": "237c4d5047fa06e97c52bbbf956d080fcb07f54fc70b739cda6ed6bf4013ee93"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelUISkinRuntime.cs",
+      "sha256": "bc02d1dfdc239b2ed1ceacc947c2fc5a9208cd11cd40dfeb454ba9f6db21628d"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelVariables.cs",
+      "sha256": "2d30c9afe82d03a6d5a6edb209df644bb1b081e89c628ce619ef864419c75831"
+    },
+    {
+      "path": "Assets/Game/UI/Runtime/Module/Narrative/EUINovelReaderPage.Actors.cs",
+      "sha256": "28d322d18aa92d54b6f45e2b6325bc6e5a3f18b17bdb73067b383768a6368e2e"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Prefabs/EUINovelReaderPage.prefab",
+      "sha256": "2108e99446d0c13e2866fc965d297a80a19c6bef53550323f06a88cd42c1baa7"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_闭眼.png",
+      "sha256": "25d6ba77bc272b5d1e8341db8ca5313a7bd0fea2c5bfe326c28a598fcdd14a07"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_闭眼.png.meta",
+      "sha256": "1be57be0984b43d35e78a1cb2d8af5d3a1ef85a88079cb977cacbb0d58db3a0d"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_微笑.png",
+      "sha256": "271cb873848afa6b5adcea7be27d8cd3beb7727579c0f870404c93044524ecb7"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_微笑.png.meta",
+      "sha256": "c80fc0924191232f63591bbc6bd77b135ccb324808701043ec12bf0a374f26bf"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_睁眼.png",
+      "sha256": "8c8b8300fe2502c6348f400add4e73eb7ea39a1f13e4c8b3c5bf83d7c558b248"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_睁眼.png.meta",
+      "sha256": "aa3a43194cddd02dae65fbd95f466891ec6473dde299b43a265a59d9e8799087"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-不笑.png",
+      "sha256": "1630b214f7516f0fa28aafc42904b9ed1ee0a5c641bcad8e3467975c091db0db"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-不笑.png.meta",
+      "sha256": "e839989625bbfceccdb6378df244e370a04aeeb8d88f313b2b8703c538201317"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-微笑.png",
+      "sha256": "041f2ed2ef7109524aebd85be0dc948cd96e4a0c6057053d080bdcbabc57f904"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-微笑.png.meta",
+      "sha256": "3864f5214341647587686cc7ad76492f19b45c7039aa246b279d63b81dd9f262"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-张嘴.png",
+      "sha256": "78aeb3e4107964ed0b00051efe9cc7e6e308f325d8949ed65a6ae74d719bd989"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-张嘴.png.meta",
+      "sha256": "3db3864080b9166ef29419742b2055ebc3b9035e74e041957e0e5528fdfe837d"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-龇牙.png",
+      "sha256": "557933234d4b7d728dad950e3b6fe1193a5c0f48aa5312a4d9e47e1a5dd3f515"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-龇牙.png.meta",
+      "sha256": "3d47530eecb12a91c067bed8c3e62cf8decb0eb1e53762bfbe0bfcde024664eb"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mq_default.png",
+      "sha256": "fedb63d05efbb2ff06a02f272b0796ffcba25d47fe0b756291bd6d55a821549c"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mq_default.png.meta",
+      "sha256": "b6b96b6d5351f964481b39099195167b8dda24ea2917693173a09d896a36fc6e"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mryx_default.png",
+      "sha256": "6cd53bad2b6eafa259be59e62090b68fc32e4b012d4a406181fd7e0da1121185"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mryx_default.png.meta",
+      "sha256": "0af960cadb59fdf5b600ca0d269527429fe6f1d1b8eb7297a126caeb84d5f723"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_srq_微笑.png",
+      "sha256": "ff71d558efabc62bf8144176baa6c77754c0ffb9141e3a5cf3a031d8ee59da90"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_srq_微笑.png.meta",
+      "sha256": "40d2dc9eb1d296a70ea57c18bb343b026b5dfcac687fcb1913f29aea69f96195"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_sy_default.png",
+      "sha256": "7e1de006ea40fd8240dd2a95038fb95e4a826a4d586c454783f4bdc4ae4f5766"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_sy_default.png.meta",
+      "sha256": "fe070730e74b547d5eb47a78d03a557a6e1c78a7c1ba4fe39a06dee31145544d"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_xk_default.png",
+      "sha256": "89e7679c82c563ff9b0844d429318a3c8adb21c8d28f21a39df4233049f6119f"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_xk_default.png.meta",
+      "sha256": "ea0249e708fd7fa68ad4ed829f53b5dd97e241ccdbc25389fed11c6f3cf7fa48"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_yyf_微笑.png",
+      "sha256": "5a0a9d3de4e9dcb83b1917e5b1d2d3cf0129274bfaa80f90bb1d3ffe84d19ed2"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_yyf_微笑.png.meta",
+      "sha256": "b11d227971a40af7f33d56617d4e6e81d08ebc94c97cc53b2f3dda1b991d7556"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_zz_default.png",
+      "sha256": "2905bcb41c793166235f0d3ebe3d2aea99f485cbd7d8957a9d3f555cca863982"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_zz_default.png.meta",
+      "sha256": "a4109999423b9f2c29406dfb8c34413a615f331cdcd21430a59bf21d9784f5b5"
+    }
+  ],
+  "targetFingerprints": [
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters.meta",
+      "sha256": "68be60ac32ae0caa93a4ca605e37019a51e5d05e030107bf971eadb3ae7718c1"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset",
+      "sha256": "324850947ef64bbd5d6a20e1ef6aa061acc1ed8c35c40ebddf3a3638f34173ac"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset.meta",
+      "sha256": "fec8c0317d47185b9c1044002df80dae92738243cac7581e07829b1643a7f845"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue.meta",
+      "sha256": "941b73f2c2092d01e7342ea0aa354b04497cf5a560998198a6ec9eb6f5cec8c7"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01.meta",
+      "sha256": "4e561a56205d5f00c5298dbb36004e3270b17d4163f4bcb062086963c3798be8"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings.meta",
+      "sha256": "4403ae73ae15a0ca38fead38977c90c97850b500de67c3ffdd78be61a6c3e348"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset",
+      "sha256": "00a18102bc8dec232fd12a78a2b6b2725a634140a109a528fd925ccbc26d79d7"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Chapter.asset.meta",
+      "sha256": "d94032979cb2d418289a9fc4bd16f624508ce4276188f6ea657854ef90988f0a"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue.meta",
+      "sha256": "8885c87bdc9936b17d090368545a315ed9510f7d58938830325140ba0c9afd69"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Endings.meta",
+      "sha256": "2b8689de0f907b71def9acc6949130fa67f25d7391ea53cb5a2eeacff5d900f7"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits.meta",
+      "sha256": "a6efe22245846f4aa890d7ae7a5cbd6975e5688a218827116b41a76f2ee0c670"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+      "sha256": "bebd47ff436a9b06ad1dbcf258c061e2cb91c414dd185f7c426cdc66063b6230"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset.meta",
+      "sha256": "5277740d808b05aca3d3268882d29100383e425eec5532eb6fd2e1b3d39a03ef"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset",
+      "sha256": "31cc1bf3636cb8650440fd56991d5190d4ed99a82f21da5414816f7146192a39"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset.meta",
+      "sha256": "b2f2f9c8529db8d735bf4e1c68135d4efafa64f85e172abee57398338cb9f73f"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits/CH01_Prologue_ExitToChapter01.asset",
+      "sha256": "b212b7f8f4532d127c89ef8ccff04914d52d543c02dae70a9756131c7591c34c"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Exits/CH01_Prologue_ExitToChapter01.asset.meta",
+      "sha256": "072df717e34080494a4c37992b9a75e7c7bc55aeac0df688eae07ca89d6f444a"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches.meta",
+      "sha256": "099eb3a7d7f9c04384b2290e07f7c621b3292c65d943af9bc7f0678f525983fb"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Chapter.asset",
+      "sha256": "bca3c9a618df3be275897a5ce9b5af518d0baec2f95cf9049afe63a9ed16a71f"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Chapter.asset.meta",
+      "sha256": "04b85d2b70834bb74fd9f91f6d2a2b9ea155ed6c4baa268d7c5f0bf0fb55fbbc"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices.meta",
+      "sha256": "9d65554ff72bafcaa6c542e2f4bfbedcb835a7215e3615b94b4e9640cbcf1fc2"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue.meta",
+      "sha256": "56584c00c9976987896125ead5c8240ed99bc355bd676c4c06a4a924d23ab5e6"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits.meta",
+      "sha256": "39ba4f7993f3968f9ff847f7f3303219c3ac740cebe382fa7b38082ce6df38d3"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches/CH02_Chapter01_HubBranch.asset",
+      "sha256": "dbbf8ebee210163dd5f4ef9015254da8d3f5bc3763d8ff3241b9d5042c3723e4"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches/CH02_Chapter01_HubBranch.asset.meta",
+      "sha256": "a75c328e469aaa6a8d203b060e9918c3498b7a1148182abd71034ed9fe6b94d7"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices/CH02_Chapter01_HubChoice.asset",
+      "sha256": "e9abe84828116bec610e371bea89a8763528250c9c618263ce18e9a0bea7f900"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices/CH02_Chapter01_HubChoice.asset.meta",
+      "sha256": "e6558d854d4d847879431755314b1de814bc6df70d21ba8dfcf8e26f29638313"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset",
+      "sha256": "e5b49c934ad957a6619b55677a935b5d759fc5eb454297a19963fc5a528d97c5"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset.meta",
+      "sha256": "08b5c5a65ca6b63decc0c93d3387d8b9b43d0ce1fa3626d88bb6f0997e66be19"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_HubSay.asset",
+      "sha256": "ef3d74aafbc392867cde314698ecc3ce28e6a3f1e4bb1a0f59e34f4af836d39c"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_HubSay.asset.meta",
+      "sha256": "b884df07784ea2abe72b9638ccb55bcdd6bb666e4d690ef0d76c0a7c7b93b7d8"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_MainClose.asset",
+      "sha256": "30ed1cf041dba54b318af983c1054a671a8bfef7cf9e2d14556ee0f2860e07ee"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_MainClose.asset.meta",
+      "sha256": "2223b938170bcfba829593a78c1429c9d848549332f0f4333b9752a787a8b1d6"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset",
+      "sha256": "0998ae3b1420fd348b9a0ac0ee546f9e72b077e7c1d284bd88fb78ac1ad58ce1"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset.meta",
+      "sha256": "09d8b402f55a5692d51539ae8a7cac25a58b8768465b8bf94f25ba750c105915"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset",
+      "sha256": "c3b49b5c124fd2a34aa6e3016c23e27911015c7698fe7e75c62f5b0640675746"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset.meta",
+      "sha256": "4bfc6bdd0057d1109f26cb580d3680561b2ad7a9a5cc38d092f7480ccd376395"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+      "sha256": "0d9782e3fdbad3b71adbb35cd124bb57dc76d98185f7f33fdf538c4c18bce05a"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset.meta",
+      "sha256": "0bbfbb890ee88cfa023dfa8e99f54cc1291acf4e818a56a093d8b9b742d549b1"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset",
+      "sha256": "d960780dad1c801cec118c451502a7ecbfb6441bd57e325894fec1dca93370ff"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset.meta",
+      "sha256": "b34e198dc29d7b89f84cb23a087d6f6c1a6ad375b445f6d15402ca31f58eaa43"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Overnight.asset",
+      "sha256": "8891c42f926be1d80bcc0891c60f464141a38a08482be27f8f24657c4671cb72"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Overnight.asset.meta",
+      "sha256": "307e8affd8b2dfbe6be56edbb3f2b8fe585681bc3a2becaefc6a44a804e4411f"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+      "sha256": "cdd25bf8a96d49b29c7b308023e5ce0ea0c550e7613203cd7b51af17cf631896"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset.meta",
+      "sha256": "f1a04ed1d6bfac0c5ecfb74e0f3fba4ebe90aaeba6990043b96c71c20101d44e"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits/CH02_Chapter01_ExitToEndings.asset",
+      "sha256": "9877544a323187d072ff91bb6170514467dcadbb3c1dba42eda3f5d3d3298f5a"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits/CH02_Chapter01_ExitToEndings.asset.meta",
+      "sha256": "f4846137d159ac4780f28e3c2c0fb72cc81154413574fc36c5d3bbac3db3e456"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Chapter.asset",
+      "sha256": "4d1a47866c15a5b2abf11cff6bc36bfc73fab68e3cc571ef5cec7a31446158b3"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Chapter.asset.meta",
+      "sha256": "c26a68d597608b85f9dac0d81cece8ef853fd828d870498f4735c3267c5111ae"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings.meta",
+      "sha256": "092023775a7d9a6c810352962583d4b80b924397d4f024cef20f6d8afae85cf0"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings/CH99_Endings_PreviewEnd.asset",
+      "sha256": "3a9418368757e4c1db492e801de3ac3561b081cf4d35f9d163a93a91b4f97bea"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH99_Endings/Endings/CH99_Endings_PreviewEnd.asset.meta",
+      "sha256": "8c99a8bc915f0366db033eb58351fefc876508d4c7cf0c6f20cfb30bd03bf832"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_audio.etable.csv",
+      "sha256": "957bf225463b22fb5a2edd6d854d827532922bc68686b82c4832a01d2b5ea2bd"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_backgrounds.etable.csv",
+      "sha256": "dd21416fe13d14a207d81fbc01e525dbd9eceac9d100954f6eb3f52e15ee8756"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_bgm.etable.csv",
+      "sha256": "b6527315002b590fae81eaf06976b05be3b869ac60c4d364a0c30531e116672e"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_characters.etable.csv",
+      "sha256": "415b7bb3954ad008ee0bae44e03cd2e03a6db81a58247d41c86033298d1e4dcd"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_content_text.etable.csv",
+      "sha256": "cf3f2792444decf646442a758f3a1c8afd63d14d1f262fbc129e6235b9032a52"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_languages.etable.csv",
+      "sha256": "0b28593a9ba85772762f01c109d1de86fb8cf19e1a8bf1d24d40fed42869b69b"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_portraits.etable.csv",
+      "sha256": "0597918eb4ad2b8e4480f0fc8a63354467d7fd2b38111cc497924a92fd2be548"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_skin_sprites.etable.csv",
+      "sha256": "d8ca555ad870118ef65191d3464956e3fbeac1e0664c5aeb2013de8ebb38249e"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_skins.etable.csv",
+      "sha256": "b8bed8171550e05b574a834a090695bea524ee9758178404eb5e07762fde47f6"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_story_skin.etable.csv",
+      "sha256": "19cb3b8d43e14b39ac617cd15a75cfd568d8b43b9ec359e634246e540d1836b2"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_ui_text.etable.csv",
+      "sha256": "898c07c0a9fdf5bdbe4b0b0c8f11484807ef12147e70fb285e414ba2a894ab81"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeData.cs",
+      "sha256": "284576b1145ed32a809c7ee60c37bde5832e7e5ba319b4443341c5eaf67e7ff8"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeDiagnostics.cs",
+      "sha256": "c44e73b5527f3606bc67bc705a6f6a5567a9106a71026440249a3ed90060f659"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeModule.cs",
+      "sha256": "1e5aa50673105f88dc22e812709578cfda1b792aab91e0934feb88370f6fb40f"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeObservation.cs",
+      "sha256": "6904cdd5a82f802d1b0f4bc5925fa62700c668abc18331ead892b54119e969e6"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeRunner.Checkpoint.cs",
+      "sha256": "613a1bef8abc4bf07e093593ef2ababee73f0cbd5e1d43cd105a2b851a059791"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeRunner.cs",
+      "sha256": "f7f5bda988dc5ecf2f3653d7f8a90d5d0c2ea0888040f353f34c50c5ebec671f"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeStory.cs",
+      "sha256": "2f4fa0282b083073b220827a4d497aa426159554926a2d57ecc73d7e0e03d454"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeTableCatalog.cs",
+      "sha256": "7a894c8179392e9277e2e1d18fcbe0e315a17f908147c9a044df66745e647a32"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NarrativeValidator.cs",
+      "sha256": "41941c8d29c6c6dea14ac8b43a8b7263dd64625dc479f58272b5f8f1e5596f0f"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelActions.cs",
+      "sha256": "5c39f96dad3230fe971ba7ed01560927c8ae57edb2ca57c7bc61b59102408412"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelActorRules.cs",
+      "sha256": "c0060eb3d7e175a78b0cab72efee402f6ca2e29c959e308a47df63d7458a79f0"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelBgm.cs",
+      "sha256": "8eeafddc46dd6f7e202465091326d01b0986f57051a9ae1fc8e31bbb103cb75a"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelBgmDirector.cs",
+      "sha256": "beb42f2248be7542e0b7e81e197a4765ccd27f5cac67bac997d70e777f031366"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelBgmModule.cs",
+      "sha256": "93b2006ef5abb8878486b4f7dc05f4f2c48fa1a8e3c5d6ab6dd33505f8898f5e"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelBgmRunner.cs",
+      "sha256": "ee9d15dbece51ab24fa03c542d8a5abb3a38137f93d4c9ba21e071ec18a6edd3"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelCamera.cs",
+      "sha256": "bea02e66612506db19eb32c9ebdf3b0a178d74a94b08a97f359394cfbe229fc3"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelCheckpoint.cs",
+      "sha256": "94e919aee6b4a8ce217db8a3b606907612a8d068371b0151b998ffddf2949f96"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelCustomStep.cs",
+      "sha256": "4704242dce2e82464557bd17cd9a437b9a8bc29a1793d04bd7afbf0f9331ced8"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelCustomStepContext.cs",
+      "sha256": "6c937698680566cbf9c9cb866ba6c91e1be2114322f857a1041fd75a2b17d0e7"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelLanguageSettings.cs",
+      "sha256": "891c0043a96d60c85d6850a28103edc9430085df13f999597b456e6cc7c2feda"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelLocalization.cs",
+      "sha256": "d60e52f887550a5379400bcdf6731e803342ce780c9f8d68765fecbdcd3f84dd"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelLoopPlayback.cs",
+      "sha256": "a13a68c28906114e1e64947c66030cd97e772bea1b89c1406d5274b8cf0712da"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelMedia.cs",
+      "sha256": "dd4a9c6e0d079fe3116c2e08edf19890a01e8ca90b553b96678f30878a433e76"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelOpeningSegment.cs",
+      "sha256": "8f246403d6f9c699d1d448769283e4b558eaa14ca052c4536e393ad5072fb553"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelPresentation.cs",
+      "sha256": "0b323489c66ce4e03ceaa55c54dcc5b6d25d1b820176dcb6fa1cbeb82bc2cec4"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelScreenRules.cs",
+      "sha256": "6f239067dc2bcbb67d36282dfb989152e0465d92b834b315766d010560e69593"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Actions.cs",
+      "sha256": "6bfcff592f4efa848b0e3ff61481300aef880e5ca74a699dccb092798d693d24"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Actors.cs",
+      "sha256": "5d2f10d304277c5dcfcd842e39741d052b9949963c3323d9ea7a073e5d7b962a"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Checkpoint.cs",
+      "sha256": "5b29170353e3d6e26435645c6daeb9fef979cdcec3df8c3c17e7ddb6e51419d3"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.cs",
+      "sha256": "9a627345dca92dd47d886424d2011e7db6dad072edecb99630e911662547bdfa"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Media.cs",
+      "sha256": "db874f796dd3ba6eac0e13fef2ca95f113c534013c5e82a42feda4ef879a4b0b"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Reading.cs",
+      "sha256": "ea12c6f0419673f36320d2ca8928d53a966de88f4bbb215d1b9b0c0493fdeb36"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Screen.cs",
+      "sha256": "4f50e548dd9f2d2f6f174467d46f88e6547aedffe962f3d17e4228c04395618c"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.StepCleanup.cs",
+      "sha256": "35a85fd7dba778d8118fccbfde624e891d3ca40f65a001344cb65d83967525cd"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSession.Text.cs",
+      "sha256": "e0bbf1bbd8be37f89870556c704c6e00af680621e06b3f91e7b4d1e403e149ad"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelSkin.cs",
+      "sha256": "871d13bca1d20fc9f02f53f7d43beb9a2cff117e7bf327e960c6dd03169e68a3"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelStepService.cs",
+      "sha256": "9d3dd387d2af9ef6b1b05fbec19756350fdd7ee7628c7c87c4e305754682bbfc"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelText.cs",
+      "sha256": "572b46332823323df319164cd2436f9bba805cea2cb72f317ec8f600a95218a9"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelTextBindings.cs",
+      "sha256": "5afe3c97a41a8e9927304d04ac220be1ba0e3c87da7dda7a95d73bb6e4ca0241"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelUISkin.cs",
+      "sha256": "c1f49184f13af073c5f76d75ff33e62d335f53a769a5f5b9db3da2c18d578cc5"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelUISkinAssignments.cs",
+      "sha256": "237c4d5047fa06e97c52bbbf956d080fcb07f54fc70b739cda6ed6bf4013ee93"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelUISkinRuntime.cs",
+      "sha256": "bc02d1dfdc239b2ed1ceacc947c2fc5a9208cd11cd40dfeb454ba9f6db21628d"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/NovelVariables.cs",
+      "sha256": "2d30c9afe82d03a6d5a6edb209df644bb1b081e89c628ce619ef864419c75831"
+    },
+    {
+      "path": "Assets/Game/UI/Runtime/Module/Narrative/EUINovelReaderPage.Actors.cs",
+      "sha256": "28d322d18aa92d54b6f45e2b6325bc6e5a3f18b17bdb73067b383768a6368e2e"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Prefabs/EUINovelReaderPage.prefab",
+      "sha256": "2108e99446d0c13e2866fc965d297a80a19c6bef53550323f06a88cd42c1baa7"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_闭眼.png",
+      "sha256": "25d6ba77bc272b5d1e8341db8ca5313a7bd0fea2c5bfe326c28a598fcdd14a07"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_闭眼.png.meta",
+      "sha256": "1be57be0984b43d35e78a1cb2d8af5d3a1ef85a88079cb977cacbb0d58db3a0d"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_微笑.png",
+      "sha256": "271cb873848afa6b5adcea7be27d8cd3beb7727579c0f870404c93044524ecb7"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_微笑.png.meta",
+      "sha256": "c80fc0924191232f63591bbc6bd77b135ccb324808701043ec12bf0a374f26bf"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_睁眼.png",
+      "sha256": "8c8b8300fe2502c6348f400add4e73eb7ea39a1f13e4c8b3c5bf83d7c558b248"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_inner_睁眼.png.meta",
+      "sha256": "aa3a43194cddd02dae65fbd95f466891ec6473dde299b43a265a59d9e8799087"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-不笑.png",
+      "sha256": "1630b214f7516f0fa28aafc42904b9ed1ee0a5c641bcad8e3467975c091db0db"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-不笑.png.meta",
+      "sha256": "e839989625bbfceccdb6378df244e370a04aeeb8d88f313b2b8703c538201317"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-微笑.png",
+      "sha256": "041f2ed2ef7109524aebd85be0dc948cd96e4a0c6057053d080bdcbabc57f904"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_r_人形-微笑.png.meta",
+      "sha256": "3864f5214341647587686cc7ad76492f19b45c7039aa246b279d63b81dd9f262"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-张嘴.png",
+      "sha256": "78aeb3e4107964ed0b00051efe9cc7e6e308f325d8949ed65a6ae74d719bd989"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-张嘴.png.meta",
+      "sha256": "3db3864080b9166ef29419742b2055ebc3b9035e74e041957e0e5528fdfe837d"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-龇牙.png",
+      "sha256": "557933234d4b7d728dad950e3b6fe1193a5c0f48aa5312a4d9e47e1a5dd3f515"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_lxz_s_兽形-龇牙.png.meta",
+      "sha256": "3d47530eecb12a91c067bed8c3e62cf8decb0eb1e53762bfbe0bfcde024664eb"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mq_default.png",
+      "sha256": "fedb63d05efbb2ff06a02f272b0796ffcba25d47fe0b756291bd6d55a821549c"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mq_default.png.meta",
+      "sha256": "b6b96b6d5351f964481b39099195167b8dda24ea2917693173a09d896a36fc6e"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mryx_default.png",
+      "sha256": "6cd53bad2b6eafa259be59e62090b68fc32e4b012d4a406181fd7e0da1121185"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_mryx_default.png.meta",
+      "sha256": "0af960cadb59fdf5b600ca0d269527429fe6f1d1b8eb7297a126caeb84d5f723"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_srq_微笑.png",
+      "sha256": "ff71d558efabc62bf8144176baa6c77754c0ffb9141e3a5cf3a031d8ee59da90"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_srq_微笑.png.meta",
+      "sha256": "40d2dc9eb1d296a70ea57c18bb343b026b5dfcac687fcb1913f29aea69f96195"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_sy_default.png",
+      "sha256": "7e1de006ea40fd8240dd2a95038fb95e4a826a4d586c454783f4bdc4ae4f5766"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_sy_default.png.meta",
+      "sha256": "fe070730e74b547d5eb47a78d03a557a6e1c78a7c1ba4fe39a06dee31145544d"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_xk_default.png",
+      "sha256": "89e7679c82c563ff9b0844d429318a3c8adb21c8d28f21a39df4233049f6119f"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_xk_default.png.meta",
+      "sha256": "ea0249e708fd7fa68ad4ed829f53b5dd97e241ccdbc25389fed11c6f3cf7fa48"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_yyf_微笑.png",
+      "sha256": "5a0a9d3de4e9dcb83b1917e5b1d2d3cf0129274bfaa80f90bb1d3ffe84d19ed2"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_yyf_微笑.png.meta",
+      "sha256": "b11d227971a40af7f33d56617d4e6e81d08ebc94c97cc53b2f3dda1b991d7556"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_zz_default.png",
+      "sha256": "2905bcb41c793166235f0d3ebe3d2aea99f485cbd7d8957a9d3f555cca863982"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/Narrative/Atlas/CMH/Portraits/CMH_zz_default.png.meta",
+      "sha256": "a4109999423b9f2c29406dfb8c34413a615f331cdcd21430a59bf21d9784f5b5"
+    }
+  ],
+  "storyPreservation": {
+    "equal": true,
+    "beforeSha256": "5ce4c49da24028dd243fcc6c4e2db88587d17b3e6a2d67a432b4217dd37e31a4",
+    "afterSha256": "5ce4c49da24028dd243fcc6c4e2db88587d17b3e6a2d67a432b4217dd37e31a4",
+    "sayCount": 78,
+    "allOriginalCommandIdsRetained": true,
+    "allOriginalSayFieldsPreserved": true,
+    "nodeConnectionsAndOtherAssetFieldsUnchanged": true,
+    "choiceVariableChapterStoryAndMetaFilesUnchanged": true
+  },
+  "validation": {
+    "story": "passed",
+    "resourceAssets": "passed",
+    "consoleErrors": 0,
+    "isolatedNodePlayback": "3/3 completed",
+    "transitionSampling": "Fade-out reaches zero before mirror changes; both fade-ins run concurrently and WaitActions completes before dialogue",
+    "visualInspection": [
+      "CH01_Prologue_Classroom",
+      "CH02_Chapter01_Town",
+      "CH02_Chapter01_Mountain"
+    ],
+    "visualResolution": "1920x1080, saved 960x540",
+    "userVisualAcceptance": "pending",
+    "fullGameAndSaveWrites": false
+  },
+  "knownToolIssue": {
+    "location": "Assets/Game/UI/Editor/Narrative/NovelPlaybackStory.cs: synthetic DrainCommandId",
+    "description": "The existing node preview adds BGM action IDs to its generated final WaitActions, but the resident BGM channel does not create those handles. This can report a missing action at preview end.",
+    "verificationHandling": "Removed only BGM IDs from the generated final drain on temporary playback copies. All authored commands and the actual BGM channel remained unchanged.",
+    "frameworkSourceModified": false
+  },
+  "nodes": [
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+      "nodeId": "a54f913d208b4410aed1443dd292cf30",
+      "name": "CH01_Prologue_Classroom",
+      "contentRevisionBefore": 12,
+      "contentRevisionAfter": 13,
+      "sayCount": 23,
+      "changes": [
+        {
+          "operation": "insert",
+          "index": 22,
+          "commandId": "a221cc9908204975ad05f806059bf02b",
+          "anchor": {
+            "relation": "before",
+            "lineId": "813194d986fc447c813979826993e388",
+            "text": "哎你看这个歌星的瓜"
+          },
+          "before": null,
+          "after": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "a221cc9908204975ad05f806059bf02b",
+            "_kind": 8,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.2199999988079071,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "cmh_me",
+            "_targetKind": 2,
+            "_actionId": "",
+            "_parallel": false,
+            "_delay": 0.0,
+            "_opacity": 0.0,
+            "_waitActions": [],
+            "_positionMode": 0,
+            "_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 1,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          }
+        },
+        {
+          "operation": "modify",
+          "index": 23,
+          "commandId": "756e1d9829b4ecc71e34e7ea1db6be72",
+          "anchor": {
+            "relation": "before",
+            "lineId": "813194d986fc447c813979826993e388",
+            "text": "哎你看这个歌星的瓜"
+          },
+          "before": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.44999998807907104,
+              "g": 0.6499999761581421,
+              "b": 0.949999988079071,
+              "a": 1.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "756e1d9829b4ecc71e34e7ea1db6be72",
+            "_kind": 10,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.30000001192092896,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "cmh_me",
+            "_targetKind": 0,
+            "_actionId": "",
+            "_parallel": false,
+            "_delay": 0.0,
+            "_opacity": 1.0,
+            "_waitActions": [],
+            "_positionMode": 1,
+            "_position": {
+              "x": 0.2800000011920929,
+              "y": 0.33000001311302185
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 1,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          },
+          "after": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.44999998807907104,
+              "g": 0.6499999761581421,
+              "b": 0.949999988079071,
+              "a": 1.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "756e1d9829b4ecc71e34e7ea1db6be72",
+            "_kind": 10,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.0,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "cmh_me",
+            "_targetKind": 0,
+            "_actionId": "",
+            "_parallel": false,
+            "_delay": 0.0,
+            "_opacity": 1.0,
+            "_waitActions": [],
+            "_positionMode": 1,
+            "_position": {
+              "x": 0.2800000011920929,
+              "y": 0.33000001311302185
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 1,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          }
+        },
+        {
+          "operation": "insert",
+          "index": 29,
+          "commandId": "e12a56d4ddfc4f09b6bf06f4202f685a",
+          "anchor": {
+            "relation": "before",
+            "lineId": "813194d986fc447c813979826993e388",
+            "text": "哎你看这个歌星的瓜"
+          },
+          "before": null,
+          "after": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "e12a56d4ddfc4f09b6bf06f4202f685a",
+            "_kind": 8,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.2199999988079071,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "cmh_me",
+            "_targetKind": 2,
+            "_actionId": "",
+            "_parallel": true,
+            "_delay": 0.0,
+            "_opacity": 1.0,
+            "_waitActions": [],
+            "_positionMode": 0,
+            "_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 1,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          }
+        },
+        {
+          "operation": "insert",
+          "index": 31,
+          "commandId": "bec13787d2744542b1230d68d9000ab8",
+          "anchor": {
+            "relation": "before",
+            "lineId": "813194d986fc447c813979826993e388",
+            "text": "哎你看这个歌星的瓜"
+          },
+          "before": null,
+          "after": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "bec13787d2744542b1230d68d9000ab8",
+            "_kind": 9,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.0,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "",
+            "_targetKind": 0,
+            "_actionId": "",
+            "_parallel": false,
+            "_delay": 0.0,
+            "_opacity": 1.0,
+            "_waitActions": [
+              "e12a56d4ddfc4f09b6bf06f4202f685a",
+              "c0927d00000000000000000000000006"
+            ],
+            "_positionMode": 0,
+            "_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 0,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          }
+        }
+      ],
+      "playback": {
+        "node": "CH01_Prologue_Classroom",
+        "state": "Ended",
+        "sayStops": 23,
+        "pairLines": 6,
+        "screenshot": ".utmp/vn-presentation/cmh-duet-fade-20260927/frames/CH01_Prologue_Classroom.png",
+        "poses": [
+          {
+            "commandId": "d4cd3d7bc0af4bbd8c2190c28b6e2c6c",
+            "actors": [
+              {
+                "Kind": 4,
+                "Slot": 2,
+                "Key": "CMH_inner_闭眼",
+                "InstanceId": "cmh_me",
+                "CharacterId": "CMH_inner",
+                "NamedSlot": -1,
+                "Mirror": true,
+                "Layer": 0,
+                "Brightness": 0.800000011920929,
+                "Opacity": 1.0,
+                "Scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                },
+                "Rotation": 0.0,
+                "Offset": {
+                  "x": -0.46000000834465027,
+                  "y": -0.00499996542930603
+                }
+              },
+              {
+                "Kind": 4,
+                "Slot": 0,
+                "Key": "CMH_sy_default",
+                "InstanceId": "prologue_speaker",
+                "CharacterId": "CMH_sy",
+                "NamedSlot": -1,
+                "Mirror": true,
+                "Layer": 0,
+                "Brightness": 1.0,
+                "Opacity": 1.0,
+                "Scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                },
+                "Rotation": 0.0,
+                "Offset": {
+                  "x": 0.46000003814697266,
+                  "y": -0.00499996542930603
+                }
+              }
+            ]
+          }
+        ],
+        "sourceUnchanged": true
+      }
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset",
+      "nodeId": "99732585ac7b46819748abd53641365d",
+      "name": "CH02_Chapter01_Mountain",
+      "contentRevisionBefore": 9,
+      "contentRevisionAfter": 10,
+      "sayCount": 21,
+      "changes": [
+        {
+          "operation": "insert",
+          "index": 8,
+          "commandId": "1a24169564c644638de48e173c894746",
+          "anchor": {
+            "relation": "before",
+            "lineId": "95479e2ab15f427a8420877cb7fe1aa0",
+            "text": "……"
+          },
+          "before": null,
+          "after": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "1a24169564c644638de48e173c894746",
+            "_kind": 8,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.2199999988079071,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "cmh_me",
+            "_targetKind": 2,
+            "_actionId": "",
+            "_parallel": false,
+            "_delay": 0.0,
+            "_opacity": 0.0,
+            "_waitActions": [],
+            "_positionMode": 0,
+            "_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 1,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          }
+        },
+        {
+          "operation": "modify",
+          "index": 9,
+          "commandId": "90dd148eb7a817284e643995a76e56de",
+          "anchor": {
+            "relation": "before",
+            "lineId": "95479e2ab15f427a8420877cb7fe1aa0",
+            "text": "……"
+          },
+          "before": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.44999998807907104,
+              "g": 0.6499999761581421,
+              "b": 0.949999988079071,
+              "a": 1.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "90dd148eb7a817284e643995a76e56de",
+            "_kind": 10,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.30000001192092896,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "cmh_me",
+            "_targetKind": 0,
+            "_actionId": "",
+            "_parallel": false,
+            "_delay": 0.0,
+            "_opacity": 1.0,
+            "_waitActions": [],
+            "_positionMode": 1,
+            "_position": {
+              "x": 0.2800000011920929,
+              "y": 0.33000001311302185
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 1,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          },
+          "after": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.44999998807907104,
+              "g": 0.6499999761581421,
+              "b": 0.949999988079071,
+              "a": 1.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "90dd148eb7a817284e643995a76e56de",
+            "_kind": 10,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.0,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "cmh_me",
+            "_targetKind": 0,
+            "_actionId": "",
+            "_parallel": false,
+            "_delay": 0.0,
+            "_opacity": 1.0,
+            "_waitActions": [],
+            "_positionMode": 1,
+            "_position": {
+              "x": 0.2800000011920929,
+              "y": 0.33000001311302185
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 1,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          }
+        },
+        {
+          "operation": "insert",
+          "index": 15,
+          "commandId": "d63cb9c986634c28bc50422430614209",
+          "anchor": {
+            "relation": "before",
+            "lineId": "95479e2ab15f427a8420877cb7fe1aa0",
+            "text": "……"
+          },
+          "before": null,
+          "after": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "d63cb9c986634c28bc50422430614209",
+            "_kind": 8,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.2199999988079071,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "cmh_me",
+            "_targetKind": 2,
+            "_actionId": "",
+            "_parallel": true,
+            "_delay": 0.0,
+            "_opacity": 1.0,
+            "_waitActions": [],
+            "_positionMode": 0,
+            "_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 1,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          }
+        },
+        {
+          "operation": "insert",
+          "index": 17,
+          "commandId": "34103b27f4d148b29ab9af91cf1ea6b8",
+          "anchor": {
+            "relation": "before",
+            "lineId": "95479e2ab15f427a8420877cb7fe1aa0",
+            "text": "……"
+          },
+          "before": null,
+          "after": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "34103b27f4d148b29ab9af91cf1ea6b8",
+            "_kind": 9,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.0,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "",
+            "_targetKind": 0,
+            "_actionId": "",
+            "_parallel": false,
+            "_delay": 0.0,
+            "_opacity": 1.0,
+            "_waitActions": [
+              "d63cb9c986634c28bc50422430614209",
+              "c0927d00000000000000000000000035"
+            ],
+            "_positionMode": 0,
+            "_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 0,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          }
+        }
+      ],
+      "playback": {
+        "node": "CH02_Chapter01_Mountain",
+        "state": "Ended",
+        "sayStops": 21,
+        "pairLines": 18,
+        "screenshot": ".utmp/vn-presentation/cmh-duet-fade-20260927/frames/CH02_Chapter01_Mountain.png",
+        "poses": [
+          {
+            "commandId": "9220d0941ed149b28b05a1872244bebc",
+            "actors": [
+              {
+                "Kind": 4,
+                "Slot": 2,
+                "Key": "CMH_inner_睁眼",
+                "InstanceId": "cmh_me",
+                "CharacterId": "CMH_inner",
+                "NamedSlot": -1,
+                "Mirror": true,
+                "Layer": 0,
+                "Brightness": 0.800000011920929,
+                "Opacity": 1.0,
+                "Scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                },
+                "Rotation": 0.0,
+                "Offset": {
+                  "x": -0.46000000834465027,
+                  "y": -0.00499996542930603
+                }
+              },
+              {
+                "Kind": 4,
+                "Slot": 0,
+                "Key": "CMH_srq_微笑",
+                "InstanceId": "ch01_srq",
+                "CharacterId": "CMH_srq",
+                "NamedSlot": -1,
+                "Mirror": false,
+                "Layer": 0,
+                "Brightness": 1.0,
+                "Opacity": 1.0,
+                "Scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                },
+                "Rotation": 0.0,
+                "Offset": {
+                  "x": 0.46000003814697266,
+                  "y": -0.00499996542930603
+                }
+              }
+            ]
+          }
+        ],
+        "sourceUnchanged": true
+      }
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+      "nodeId": "1ee958ac7ec042d986982a9c3b7c5ce2",
+      "name": "CH02_Chapter01_Town",
+      "contentRevisionBefore": 9,
+      "contentRevisionAfter": 10,
+      "sayCount": 34,
+      "changes": [
+        {
+          "operation": "insert",
+          "index": 7,
+          "commandId": "2af73aa806ab4348b5b8f4315aa453ca",
+          "anchor": {
+            "relation": "before",
+            "lineId": "541728fe379f4a55960ee661bc19c695",
+            "text": "你来啦"
+          },
+          "before": null,
+          "after": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "2af73aa806ab4348b5b8f4315aa453ca",
+            "_kind": 8,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.2199999988079071,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "cmh_me",
+            "_targetKind": 2,
+            "_actionId": "",
+            "_parallel": false,
+            "_delay": 0.0,
+            "_opacity": 0.0,
+            "_waitActions": [],
+            "_positionMode": 0,
+            "_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 1,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          }
+        },
+        {
+          "operation": "modify",
+          "index": 8,
+          "commandId": "c0927d00000000000000000000000059",
+          "anchor": {
+            "relation": "before",
+            "lineId": "541728fe379f4a55960ee661bc19c695",
+            "text": "你来啦"
+          },
+          "before": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "c0927d00000000000000000000000059",
+            "_kind": 10,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.30000001192092896,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "cmh_me",
+            "_targetKind": 0,
+            "_actionId": "",
+            "_parallel": false,
+            "_delay": 0.0,
+            "_opacity": 1.0,
+            "_waitActions": [],
+            "_positionMode": 1,
+            "_position": {
+              "x": 0.2800000011920929,
+              "y": 0.33000001311302185
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 1,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          },
+          "after": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "c0927d00000000000000000000000059",
+            "_kind": 10,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.0,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "cmh_me",
+            "_targetKind": 0,
+            "_actionId": "",
+            "_parallel": false,
+            "_delay": 0.0,
+            "_opacity": 1.0,
+            "_waitActions": [],
+            "_positionMode": 1,
+            "_position": {
+              "x": 0.2800000011920929,
+              "y": 0.33000001311302185
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 1,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          }
+        },
+        {
+          "operation": "insert",
+          "index": 14,
+          "commandId": "d4f826906c1f40dc92068fff7e0c0d17",
+          "anchor": {
+            "relation": "before",
+            "lineId": "541728fe379f4a55960ee661bc19c695",
+            "text": "你来啦"
+          },
+          "before": null,
+          "after": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "d4f826906c1f40dc92068fff7e0c0d17",
+            "_kind": 8,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.2199999988079071,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "cmh_me",
+            "_targetKind": 2,
+            "_actionId": "",
+            "_parallel": true,
+            "_delay": 0.0,
+            "_opacity": 1.0,
+            "_waitActions": [],
+            "_positionMode": 0,
+            "_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 1,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          }
+        },
+        {
+          "operation": "insert",
+          "index": 16,
+          "commandId": "e730469a593e4ffab9b35bf4def94b5e",
+          "anchor": {
+            "relation": "before",
+            "lineId": "541728fe379f4a55960ee661bc19c695",
+            "text": "你来啦"
+          },
+          "before": null,
+          "after": {
+            "_cameraZoom": 1.0,
+            "_wipeDirection": 0,
+            "_textMode": 0,
+            "_textEffectsVersion": 1,
+            "_textReveal": 0,
+            "_textFadeDuration": 0.800000011920929,
+            "_titleExitDuration": 0.6499999761581421,
+            "_textSpeedMultiplier": 1.0,
+            "_textEase": 1,
+            "_stepGroupId": "",
+            "_stepGroupName": "",
+            "_stepGroupColor": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            },
+            "_textBeats": [],
+            "_dialogueVisible": true,
+            "_textBindings": [],
+            "_commandId": "e730469a593e4ffab9b35bf4def94b5e",
+            "_kind": 9,
+            "_lineId": "",
+            "_textRevision": 1,
+            "_characterId": "",
+            "_speakerNameKey": "",
+            "_text": "",
+            "_resourceKey": "",
+            "_variableId": "",
+            "_scope": 0,
+            "_value": {
+              "_type": 0,
+              "_bool": false,
+              "_int": 0,
+              "_string": ""
+            },
+            "_duration": 0.0,
+            "_integerOperation": 0,
+            "_operandVariableId": "",
+            "_operandScope": 0,
+            "_integerOperand": 0,
+            "_customStepId": "",
+            "_speakerVariableId": "",
+            "_speakerVariableScope": 0,
+            "_randomMin": 0,
+            "_randomMax": 0,
+            "_slot": 0,
+            "_visualAction": 0,
+            "_instanceId": "",
+            "_targetKind": 0,
+            "_actionId": "",
+            "_parallel": false,
+            "_delay": 0.0,
+            "_opacity": 1.0,
+            "_waitActions": [
+              "d4f826906c1f40dc92068fff7e0c0d17",
+              "c0927d0000000000000000000000005e"
+            ],
+            "_positionMode": 0,
+            "_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "_rotation": 0.0,
+            "_mirror": false,
+            "_layer": 0,
+            "_ease": 0,
+            "_gesture": 0,
+            "_strength": 1.0,
+            "_exitAfterMove": false,
+            "_emphasisMode": 0,
+            "_dimFactor": 0.550000011920929,
+            "_direction": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "_frequency": 12.0,
+            "_decay": true,
+            "_color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "_hold": 0.0,
+            "_wholeReader": false,
+            "_persistent": false,
+            "_keepOnSceneChange": false,
+            "_bindingId": "",
+            "_volume": 1.0,
+            "_textKey": ""
+          }
+        }
+      ],
+      "playback": {
+        "node": "CH02_Chapter01_Town",
+        "state": "Ended",
+        "sayStops": 34,
+        "pairLines": 33,
+        "screenshot": ".utmp/vn-presentation/cmh-duet-fade-20260927/frames/CH02_Chapter01_Town.png",
+        "poses": [
+          {
+            "commandId": "2980b9cdb4a24239a5fd5b325e71ca14",
+            "actors": [
+              {
+                "Kind": 4,
+                "Slot": 2,
+                "Key": "CMH_inner_睁眼",
+                "InstanceId": "cmh_me",
+                "CharacterId": "CMH_inner",
+                "NamedSlot": -1,
+                "Mirror": true,
+                "Layer": 0,
+                "Brightness": 0.800000011920929,
+                "Opacity": 1.0,
+                "Scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                },
+                "Rotation": 0.0,
+                "Offset": {
+                  "x": -0.46000000834465027,
+                  "y": -0.00499996542930603
+                }
+              },
+              {
+                "Kind": 4,
+                "Slot": 0,
+                "Key": "CMH_zz_default",
+                "InstanceId": "ch01_zz",
+                "CharacterId": "CMH_zz",
+                "NamedSlot": -1,
+                "Mirror": false,
+                "Layer": 0,
+                "Brightness": 1.0,
+                "Opacity": 1.0,
+                "Scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                },
+                "Rotation": 0.0,
+                "Offset": {
+                  "x": 0.46000003814697266,
+                  "y": -0.00499996542930603
+                }
+              }
+            ]
+          }
+        ],
+        "sourceUnchanged": true
+      }
+    }
+  ],
+  "backupDirectory": "C:\\Users\\wuyu\\My\\Call Me Heartless\\.utmp\\vn-presentation\\cmh-duet-fade-20260927\\backup",
+  "saveCompatibility": "Presentation semantic fingerprints changed. Existing save files were neither removed nor modified; older content saves may be rejected by compatibility checks."
+}

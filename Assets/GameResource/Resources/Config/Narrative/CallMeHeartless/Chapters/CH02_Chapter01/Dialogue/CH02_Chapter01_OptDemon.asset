@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeDialogueSO
   _nodeId: c96dec0de1124957807b5ffb43714d6b
   _chapterId: 57c023ad23ef45be88cbab6bd9b3d51d
-  _contentRevision: 6
+  _contentRevision: 7
   _commands:
   - _cameraZoom: 1
     _wipeDirection: 0
@@ -159,6 +159,150 @@ MonoBehaviour:
     _keepOnSceneChange: 0
     _bindingId: 
     _volume: 0.6
+    _textKey: 
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: c0927d00000000000000000000000041
+    _kind: 16
+    _lineId: 
+    _textRevision: 1
+    _characterId: 
+    _speakerNameKey: 
+    _text: 
+    _resourceKey: 
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 0
+    _slot: 0
+    _visualAction: 0
+    _instanceId: 
+    _targetKind: 0
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 0
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 1
+    _dimFactor: 0.8
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
+    _textKey: 
+  - _cameraZoom: 1
+    _wipeDirection: 0
+    _textMode: 0
+    _textEffectsVersion: 1
+    _textReveal: 0
+    _textFadeDuration: 0.8
+    _titleExitDuration: 0.65
+    _textSpeedMultiplier: 1
+    _textEase: 1
+    _stepGroupId: 
+    _stepGroupName: 
+    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
+    _textBeats: []
+    _dialogueVisible: 1
+    _textBindings: []
+    _commandId: c0927d00000000000000000000000042
+    _kind: 20
+    _lineId: 
+    _textRevision: 1
+    _characterId: 
+    _speakerNameKey: 
+    _text: 
+    _resourceKey: "CMH_lxz_r_\u4EBA\u5F62-\u4E0D\u7B11"
+    _variableId: 
+    _scope: 0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+    _duration: 0.14
+    _integerOperation: 0
+    _operandVariableId: 
+    _operandScope: 0
+    _integerOperand: 0
+    _customStepId: 
+    _speakerVariableId: 
+    _speakerVariableScope: 0
+    _randomMin: 0
+    _randomMax: 0
+    _slot: 0
+    _visualAction: 0
+    _instanceId: ch01_lxz
+    _targetKind: 2
+    _actionId: 
+    _parallel: 0
+    _delay: 0
+    _opacity: 1
+    _waitActions: []
+    _positionMode: 0
+    _position: {x: 0, y: 0}
+    _scale: {x: 1, y: 1}
+    _rotation: 0
+    _mirror: 0
+    _layer: 0
+    _ease: 1
+    _gesture: 0
+    _strength: 1
+    _exitAfterMove: 0
+    _emphasisMode: 0
+    _dimFactor: 0.55
+    _direction: {x: 1, y: 0}
+    _frequency: 12
+    _decay: 1
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _hold: 0
+    _wholeReader: 0
+    _persistent: 0
+    _keepOnSceneChange: 0
+    _bindingId: 
+    _volume: 1
     _textKey: 
   - _cameraZoom: 1
     _wipeDirection: 0
