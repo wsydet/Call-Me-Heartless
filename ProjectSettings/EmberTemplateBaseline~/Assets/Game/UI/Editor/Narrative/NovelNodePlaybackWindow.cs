@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Sirenix.Utilities.Editor;
 using Ember.Table;
 using Game.Narrative;
 using Game.Table.Generated;
@@ -19,6 +20,7 @@ namespace Game.UI.Editor
         [SerializeField] private bool _automatic = true, _muted, _useContext, _showSetup = true;
         [SerializeField] private string _backgroundKey;
         [SerializeField] private int _multiplier = 1, _resolution;
+        [SerializeField] private bool _showActors = true, _showVariables = true;
         [SerializeField] private List<NovelPlaybackActor> _actors = new()
         {
             new() { Slot = NovelPortraitSlot.Left }, new() { Slot = NovelPortraitSlot.Center }, new() { Slot = NovelPortraitSlot.Right }
@@ -39,6 +41,8 @@ namespace Game.UI.Editor
         private long _frame;
         private bool _paused, _changed;
         private string _message, _sourceJson;
+        private INovelPreviewTextInput _nameInputRequest;
+        private string _previewName;
         private Vector2 _setupScroll, _statusScroll;
         private Action<NarrativeError> _locate;
         private Vector2 Pixels => _resolution == 1 ? new Vector2(1440, 1080) : new Vector2(1920, 1080);
@@ -93,6 +97,7 @@ namespace Game.UI.Editor
                         _statusScroll = EditorGUILayout.BeginScrollView(_statusScroll, GUILayout.Height(164));
                         if (_changed) EditorGUILayout.HelpBox("源内容或资源已变化，点击从头重播加载修改。", MessageType.Warning);
                         if (!string.IsNullOrEmpty(_message)) EditorGUILayout.HelpBox(_message, MessageType.Info);
+                        DrawNameInput();
                         DrawStatus();
                         EditorGUILayout.EndScrollView();
                     }
@@ -121,10 +126,11 @@ namespace Game.UI.Editor
                 }
                 using (new EditorGUI.DisabledScope(_session == null))
                     if (GUILayout.Button("停止", EditorStyles.toolbarButton)) StopAndReset();
-                using (new EditorGUI.DisabledScope(_session == null || _paused ||
+                using (new EditorGUI.DisabledScope(_session == null || _paused || _session.IsInputLocked ||
                     (_session.Snapshot.State != NarrativeState.Revealing && _session.Snapshot.State != NarrativeState.AwaitingAdvance)))
                     if (GUILayout.Button("推进", EditorStyles.toolbarButton)) Advance();
-                _automatic = GUILayout.Toggle(_automatic, "自动对白", EditorStyles.toolbarButton);
+                using (new EditorGUI.DisabledScope(_session?.IsInputLocked == true))
+                    _automatic = GUILayout.Toggle(_automatic, "自动对白", EditorStyles.toolbarButton);
                 bool mute = GUILayout.Toggle(_muted, "静音", EditorStyles.toolbarButton);
                 if (mute != _muted) { _muted = mute; _audio?.SetMuted(mute); }
                 _multiplier = EditorGUILayout.IntPopup(_multiplier, new[] { "1X", "2X", "3X" }, new[] { 1, 2, 3 }, GUILayout.Width(48));
@@ -133,6 +139,7 @@ namespace Game.UI.Editor
         }
         private void DrawSetup()
         {
+            SirenixEditorGUI.Title("起始设置", _session == null ? "停止状态 · 可编辑" : "试播中 · 停止后可编辑", TextAlignment.Left, true);
             EditorGUI.BeginChangeCheck();
             using (new EditorGUI.DisabledScope(_session != null))
             {
@@ -142,29 +149,41 @@ namespace Game.UI.Editor
                 if (_useContext)
                 {
                     _backgroundKey = DrawResourceKey("背景资源键", _backgroundKey, false);
+                    bool contextChanged = GUI.changed;
+                    _showActors = SirenixEditorGUI.Foldout(_showActors, "人物初始状态");
+                    GUI.changed = contextChanged;
+                    if (_showActors)
                     foreach (var actor in _actors)
                     {
+                        SirenixEditorGUI.BeginBox(actor.Slot.ToString());
                         actor.Enabled = EditorGUILayout.Toggle("人物 · " + actor.Slot, actor.Enabled);
-                        if (!actor.Enabled) continue;
+                        if (!actor.Enabled) { SirenixEditorGUI.EndBox(); continue; }
                         actor.ResourceKey = DrawResourceKey("立绘资源键", actor.ResourceKey, true);
                         actor.InstanceId = EditorGUILayout.TextField("实例 ID", actor.InstanceId);
                         actor.CustomPosition = EditorGUILayout.Toggle("归一化坐标", actor.CustomPosition);
                         if (actor.CustomPosition) actor.Position = EditorGUILayout.Vector2Field("位置", actor.Position);
+                        SirenixEditorGUI.EndBox();
                     }
                 }
-                GUILayout.Space(8); GUILayout.Label("变量初值", EditorStyles.boldLabel);
-                if (_variables.Count == 0) GUILayout.Label("当前章节 / 剧情无变量。");
-                foreach (var variable in _variables)
+                GUILayout.Space(8);
+                bool setupChanged = GUI.changed;
+                _showVariables = SirenixEditorGUI.Foldout(_showVariables, "变量初值（" + _variables.Count + "）");
+                GUI.changed = setupChanged;
+                if (_showVariables)
                 {
-                    string label = (variable.Scope == NovelVariableScope.Global ? "全局 · " : "章节 · ") + variable.Id;
-                    variable.Value = variable.Value.Type switch
+                    if (_variables.Count == 0) GUILayout.Label("当前章节 / 剧情无变量。");
+                    foreach (var variable in _variables)
                     {
-                        NovelValueType.Bool => new NovelValue(EditorGUILayout.Toggle(label, variable.Value.Bool)),
-                        NovelValueType.Int => new NovelValue(EditorGUILayout.IntField(label, variable.Value.Int)),
-                        _ => new NovelValue(EditorGUILayout.TextField(label, variable.Value.String))
-                    };
+                        string label = (variable.Scope == NovelVariableScope.Global ? "全局 · " : "章节 · ") + variable.Id;
+                        variable.Value = variable.Value.Type switch
+                        {
+                            NovelValueType.Bool => new NovelValue(EditorGUILayout.Toggle(label, variable.Value.Bool)),
+                            NovelValueType.Int => new NovelValue(EditorGUILayout.IntField(label, variable.Value.Int)),
+                            _ => new NovelValue(EditorGUILayout.TextField(label, variable.Value.String))
+                        };
+                    }
+                    if (GUILayout.Button("恢复变量定义初值")) { ResetVariables(); GUI.changed = true; }
                 }
-                if (GUILayout.Button("恢复变量定义初值")) { ResetVariables(); GUI.changed = true; }
             }
             if (EditorGUI.EndChangeCheck() && _session == null && _view != null)
             {
@@ -182,10 +201,33 @@ namespace Game.UI.Editor
             int selected = Mathf.Max(0, options.IndexOf(key ?? ""));
             return options[EditorGUILayout.Popup(label, selected, options.Select(s => s == "" ? "（无）" : s).ToArray())];
         }
+        private void DrawNameInput()
+        {
+            var request = _session?.PreviewCustomStepState as INovelPreviewTextInput;
+            if (request == null || request.Settled)
+            { _nameInputRequest = null; _previewName = null; return; }
+            if (!ReferenceEquals(_nameInputRequest, request))
+            { _nameInputRequest = request; _previewName = request.DefaultName ?? string.Empty; }
+            using (new EditorGUI.DisabledScope(_paused))
+            {
+                _previewName = EditorGUILayout.TextField(request.Title, _previewName);
+                int maxLength = Mathf.Max(1, request.MaxLength);
+                if (_previewName.Length > maxLength) _previewName = _previewName.Substring(0, maxLength);
+                if (GUILayout.Button("确认名字并继续"))
+                {
+                    request.Submit(_previewName);
+                    _nameInputRequest = null; _previewName = null;
+                    _lastTime = EditorApplication.timeSinceStartup;
+                    Repaint();
+                }
+            }
+        }
         private void DrawStatus()
         {
             if (_session == null) return;
             var snapshot = _session.Snapshot;
+            if (_session.IsInputLocked)
+                EditorGUILayout.LabelField("剧情控制自动播放 · 手动推进暂不可用");
             string commandId = snapshot.Error?.CommandId ?? snapshot.CommandId;
             int index = _node ? _node.Commands.ToList().FindIndex(c => c?.CommandId == commandId) : -1;
             if (snapshot.State == NarrativeState.Revealing || snapshot.State == NarrativeState.AwaitingAdvance)
@@ -318,7 +360,7 @@ namespace Game.UI.Editor
         }
         private void Advance()
         {
-            if (_session == null || _paused) return;
+            if (_session == null || _paused || _session.IsInputLocked) return;
             _automatic = false; _session.Advance(++_frame); Repaint();
         }
         private void SetPaused(bool paused)
@@ -343,7 +385,8 @@ namespace Game.UI.Editor
                 _audio.AdvanceTime(delta);
                 if (_session.ReadingMultiplier != _multiplier) _session.SetReadingMultiplier(_multiplier);
                 var desired = _automatic ? NarrativeReadMode.Auto : NarrativeReadMode.Manual;
-                if (_session.IsReady && _session.Snapshot.HasActiveSession && _session.ReadMode != desired) _session.SetReadMode(desired);
+                // 开场段落持有推进锁时由剧情控制阅读模式，不能被窗口的手动偏好覆盖。
+                if (_session.IsReady && !_session.IsInputLocked && _session.Snapshot.HasActiveSession && _session.ReadMode != desired) _session.SetReadMode(desired);
                 _session.Tick(delta, ++_frame);
                 if (_session.Snapshot.State == NarrativeState.Faulted) { _audio.Dispose(); _paused = true; }
                 Repaint();
@@ -363,6 +406,7 @@ namespace Game.UI.Editor
             finally
             {
                 _session = null; _audio?.Dispose(); _audio = null;
+                _nameInputRequest = null; _previewName = null;
                 _data?.Dispose(); _data = null; _paused = false; _changed = false;
             }
         }
