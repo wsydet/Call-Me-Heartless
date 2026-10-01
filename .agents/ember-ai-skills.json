@@ -154,34 +154,6 @@
             "directories": []
         },
         {
-            "id": "ember-doc-maintenance",
-            "repository": "package:com.ember",
-            "revision": "0.14.1",
-            "commit": "cc9dc1cf6414785ce59ec2ce492c52cbdc5b17a7",
-            "installedAtUtc": "2026-09-22T12:52:44.3256113Z",
-            "files": [
-                {
-                    "path": "SKILL.md",
-                    "sha256": "1aebe89ca340442950d758ef59fe2a25630286937feafdf84deca43253817366"
-                },
-                {
-                    "path": "agents/openai.yaml",
-                    "sha256": "ca7fe8e0b777bd83b0c557ff2b2e7e05f2a8ea161ed1dfca045b532d7b42b559"
-                },
-                {
-                    "path": "scripts/audit_docs.py",
-                    "sha256": "c1aad6dd82798879d23f4bfbb6575b3bba67b95dab99efb577e55c9cb55a1bd1"
-                }
-            ],
-            "ownerKind": "",
-            "templateId": "",
-            "templateVersion": "",
-            "templateContentHash": "",
-            "originTemplateId": "",
-            "templateMode": "",
-            "directories": []
-        },
-        {
             "id": "ember-odin-capture-style",
             "repository": "package:com.ember",
             "revision": "0.14.2",
@@ -238,19 +210,87 @@
             "directories": []
         },
         {
-            "id": "ember-template-conflict-recovery",
+            "id": "ember-add-font",
             "repository": "https://github.com/wsydet/ember-unity-framework.git",
             "revision": "main",
-            "commit": "2a77e437658703f7606fb78a095c92c43fc284e8",
-            "installedAtUtc": "2026-09-23T10:07:49.3597610Z",
+            "commit": "ff8f13fc865f5988a85b735e722ecd750eeae37a",
+            "installedAtUtc": "2026-09-29T12:40:30.6344428Z",
             "files": [
                 {
                     "path": "SKILL.md",
-                    "sha256": "6a7f03551c9a015af94714e67cb3808be22ec3acf752191289564e1d5bcfaa48"
+                    "sha256": "d2f101efcdc68886982cfab921e3668431d734d5651880ddf576aa80c5e44662"
                 },
                 {
                     "path": "agents/openai.yaml",
-                    "sha256": "1485da9b74ad4f7abab40cee99112cbb588d1954a6a6db36650e9f3f2224b669"
+                    "sha256": "15f450b558d60da8b4bc094546ecf540115c44b360ee1235e57a858f4ea8e1b9"
+                },
+                {
+                    "path": "references/font-wiring.md",
+                    "sha256": "034b593de1c7df856777f6d2b1d450f76d2101a6d6eeadb8bd25ef9eed97bb6c"
+                }
+            ],
+            "ownerKind": "",
+            "templateId": "",
+            "templateVersion": "",
+            "templateContentHash": "",
+            "originTemplateId": "",
+            "templateMode": "",
+            "directories": []
+        },
+        {
+            "id": "ember-template-conflict-recovery",
+            "repository": "https://github.com/wsydet/ember-unity-framework.git",
+            "revision": "main",
+            "commit": "ff8f13fc865f5988a85b735e722ecd750eeae37a",
+            "installedAtUtc": "2026-09-29T12:40:32.2265077Z",
+            "files": [
+                {
+                    "path": "SKILL.md",
+                    "sha256": "00e95e7d956427429f1d797a0d613e06683b393fd3e75550e669e42dd77363fc"
+                },
+                {
+                    "path": "agents/openai.yaml",
+                    "sha256": "9a6d93ae2241d4f1bb608b56b64094cb43ed45af641bd20e1d1846139afd669b"
+                },
+                {
+                    "path": "references/large-project-recovery.md",
+                    "sha256": "2b97e42444a7b2163067865388c1f23b36bf0f755a5b200bd76a2e3cc4e0a0a3"
+                },
+                {
+                    "path": "scripts/recovery_snapshot.py",
+                    "sha256": "071ee2201918bfe72100e8584d29335af95ac365a40241b364a5fd671ec37c93"
+                },
+                {
+                    "path": "scripts/test_recovery_snapshot.py",
+                    "sha256": "36cfefce2457ab0e46be17ff9a710da4ed97ca0cc549dfd78b44f2a7e2b9893e"
+                }
+            ],
+            "ownerKind": "",
+            "templateId": "",
+            "templateVersion": "",
+            "templateContentHash": "",
+            "originTemplateId": "",
+            "templateMode": "",
+            "directories": []
+        },
+        {
+            "id": "ember-doc-maintenance",
+            "repository": "https://github.com/wsydet/ember-unity-framework.git",
+            "revision": "main",
+            "commit": "ff8f13fc865f5988a85b735e722ecd750eeae37a",
+            "installedAtUtc": "2026-09-29T12:40:36.0608774Z",
+            "files": [
+                {
+                    "path": "SKILL.md",
+                    "sha256": "1aebe89ca340442950d758ef59fe2a25630286937feafdf84deca43253817366"
+                },
+                {
+                    "path": "agents/openai.yaml",
+                    "sha256": "ca7fe8e0b777bd83b0c557ff2b2e7e05f2a8ea161ed1dfca045b532d7b42b559"
+                },
+                {
+                    "path": "scripts/audit_docs.py",
+                    "sha256": "287b8f658ab9ef5d0f7f89b672be42f0fb56bcceb3cc468a8ddd526ee07853ee"
                 }
             ],
             "ownerKind": "",
@@ -264,9 +304,9 @@
         {
             "id": "ember-vn-custom-node",
             "repository": "package:com.ember",
-            "revision": "0.17.3",
+            "revision": "0.18.3",
             "commit": "",
-            "installedAtUtc": "2026-09-29T08:59:11.6729783Z",
+            "installedAtUtc": "2026-10-01T09:00:02.0275082Z",
             "files": [
                 {
                     "path": "SKILL.md",
@@ -339,8 +379,8 @@
             ],
             "ownerKind": "template",
             "templateId": "visual-novel",
-            "templateVersion": "0.17.3",
-            "templateContentHash": "81d0bb8ef1549a126ede75b3500e8805",
+            "templateVersion": "0.18.3",
+            "templateContentHash": "e0279904363d9734d495ed7f75fbed5b",
             "originTemplateId": "visual-novel",
             "templateMode": "deployed",
             "directories": [
@@ -352,9 +392,9 @@
         {
             "id": "ember-vn-edit-skin",
             "repository": "package:com.ember",
-            "revision": "0.17.3",
+            "revision": "0.18.3",
             "commit": "",
-            "installedAtUtc": "2026-09-29T08:59:11.7165665Z",
+            "installedAtUtc": "2026-10-01T09:00:02.0650332Z",
             "files": [
                 {
                     "path": "SKILL.md",
@@ -391,8 +431,8 @@
             ],
             "ownerKind": "template",
             "templateId": "visual-novel",
-            "templateVersion": "0.17.3",
-            "templateContentHash": "81d0bb8ef1549a126ede75b3500e8805",
+            "templateVersion": "0.18.3",
+            "templateContentHash": "e0279904363d9734d495ed7f75fbed5b",
             "originTemplateId": "visual-novel",
             "templateMode": "deployed",
             "directories": [
@@ -403,9 +443,9 @@
         {
             "id": "ember-vn-export-story",
             "repository": "package:com.ember",
-            "revision": "0.17.3",
+            "revision": "0.18.3",
             "commit": "",
-            "installedAtUtc": "2026-09-29T08:59:11.7353878Z",
+            "installedAtUtc": "2026-10-01T09:00:02.0834040Z",
             "files": [
                 {
                     "path": "SKILL.md",
@@ -418,8 +458,8 @@
             ],
             "ownerKind": "template",
             "templateId": "visual-novel",
-            "templateVersion": "0.17.3",
-            "templateContentHash": "81d0bb8ef1549a126ede75b3500e8805",
+            "templateVersion": "0.18.3",
+            "templateContentHash": "e0279904363d9734d495ed7f75fbed5b",
             "originTemplateId": "visual-novel",
             "templateMode": "deployed",
             "directories": []
@@ -427,9 +467,9 @@
         {
             "id": "ember-vn-import-images",
             "repository": "package:com.ember",
-            "revision": "0.17.3",
+            "revision": "0.18.3",
             "commit": "",
-            "installedAtUtc": "2026-09-29T08:59:11.8748945Z",
+            "installedAtUtc": "2026-10-01T09:00:02.2069854Z",
             "files": [
                 {
                     "path": "SKILL.md",
@@ -494,8 +534,8 @@
             ],
             "ownerKind": "template",
             "templateId": "visual-novel",
-            "templateVersion": "0.17.3",
-            "templateContentHash": "81d0bb8ef1549a126ede75b3500e8805",
+            "templateVersion": "0.18.3",
+            "templateContentHash": "e0279904363d9734d495ed7f75fbed5b",
             "originTemplateId": "visual-novel",
             "templateMode": "deployed",
             "directories": [
@@ -507,13 +547,13 @@
         {
             "id": "ember-vn-import-story",
             "repository": "package:com.ember",
-            "revision": "0.17.3",
+            "revision": "0.18.3",
             "commit": "",
-            "installedAtUtc": "2026-09-29T08:59:11.9682813Z",
+            "installedAtUtc": "2026-10-01T09:00:02.2717501Z",
             "files": [
                 {
                     "path": "SKILL.md",
-                    "sha256": "24b79f076ed5ef621576d455f6100b7441418c5e3815e58f5e2a3cd69c758b41"
+                    "sha256": "d7e318bfaacd6e76810595795848cb3c83acc42c76e97cf533a8ad1f302652a2"
                 },
                 {
                     "path": "SKILL.md.meta",
@@ -562,8 +602,8 @@
             ],
             "ownerKind": "template",
             "templateId": "visual-novel",
-            "templateVersion": "0.17.3",
-            "templateContentHash": "81d0bb8ef1549a126ede75b3500e8805",
+            "templateVersion": "0.18.3",
+            "templateContentHash": "e0279904363d9734d495ed7f75fbed5b",
             "originTemplateId": "visual-novel",
             "templateMode": "deployed",
             "directories": [
@@ -574,9 +614,9 @@
         {
             "id": "ember-vn-polish-presentation",
             "repository": "package:com.ember",
-            "revision": "0.17.3",
+            "revision": "0.18.3",
             "commit": "",
-            "installedAtUtc": "2026-09-29T08:59:11.9866098Z",
+            "installedAtUtc": "2026-10-01T09:00:02.2888628Z",
             "files": [
                 {
                     "path": "SKILL.md",
@@ -589,8 +629,8 @@
             ],
             "ownerKind": "template",
             "templateId": "visual-novel",
-            "templateVersion": "0.17.3",
-            "templateContentHash": "81d0bb8ef1549a126ede75b3500e8805",
+            "templateVersion": "0.18.3",
+            "templateContentHash": "e0279904363d9734d495ed7f75fbed5b",
             "originTemplateId": "visual-novel",
             "templateMode": "deployed",
             "directories": []
@@ -598,10 +638,10 @@
     ],
     "templateBaseline": {
         "templateId": "visual-novel",
-        "businessVersion": "0.17.3",
-        "businessContentHash": "81d0bb8ef1549a126ede75b3500e8805",
-        "sourceVersion": "0.17.3",
-        "sourceContentHash": "81d0bb8ef1549a126ede75b3500e8805",
+        "businessVersion": "0.18.3",
+        "businessContentHash": "e0279904363d9734d495ed7f75fbed5b",
+        "sourceVersion": "0.18.3",
+        "sourceContentHash": "e0279904363d9734d495ed7f75fbed5b",
         "sourceExists": true,
         "sourceFiles": [
             {
@@ -802,7 +842,7 @@
             },
             {
                 "path": "ember-vn-import-story/SKILL.md",
-                "sha256": "24b79f076ed5ef621576d455f6100b7441418c5e3815e58f5e2a3cd69c758b41"
+                "sha256": "d7e318bfaacd6e76810595795848cb3c83acc42c76e97cf533a8ad1f302652a2"
             },
             {
                 "path": "ember-vn-import-story/SKILL.md.meta",
