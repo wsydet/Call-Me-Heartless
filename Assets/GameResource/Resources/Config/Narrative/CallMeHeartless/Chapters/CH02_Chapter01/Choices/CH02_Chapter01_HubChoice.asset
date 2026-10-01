@@ -15,6 +15,7 @@ MonoBehaviour:
   _nodeId: f9f436dc485148ef8e98cf24a870d72e
   _chapterId: 57c023ad23ef45be88cbab6bd9b3d51d
   _contentRevision: 1
+  _flow: {fileID: 0}
   _prompt: 
   _promptTextKey: 
   _options:
@@ -24,21 +25,21 @@ MonoBehaviour:
     _condition:
       _junction: 0
       _predicates: []
-    _target: {fileID: 11400000, guid: 73dc1eb416e18954bbbe84f588b6edca, type: 2}
+    _target: {fileID: 11400000, guid: 47a5d903ca45004498cb4de613c8a205, type: 2}
   - _optionId: 79291c176c0c45f3b480d1fd8004d681
     _text: "\u5173\u4E8E\u95E8\u6D3E"
     _textKey: option.0942d3f17d504f01ba64169b17e2a578.79291c176c0c45f3b480d1fd8004d681
     _condition:
       _junction: 0
       _predicates: []
-    _target: {fileID: 11400000, guid: cc37b82ac3267f24eb5c3fbe5c4e8b4e, type: 2}
+    _target: {fileID: 11400000, guid: 146e66d6a0ae6eb46b31e891e7c502f2, type: 2}
   - _optionId: 27e1b5ea8bc8428b830bcbd2021652bd
     _text: "\u5173\u4E8E\u5996\u602A"
     _textKey: option.0942d3f17d504f01ba64169b17e2a578.27e1b5ea8bc8428b830bcbd2021652bd
     _condition:
       _junction: 0
       _predicates: []
-    _target: {fileID: 11400000, guid: c57e5c67accc095458a795b78db1a19a, type: 2}
+    _target: {fileID: 11400000, guid: b1266d13fa4c617478a64794b562fba9, type: 2}
   - _optionId: cmh_ch01_questions_done
     _text: "\u6CA1\u6709\u5176\u4ED6\u60F3\u95EE\u7684\u4E86"
     _textKey: option.0942d3f17d504f01ba64169b17e2a578.cmh_ch01_questions_done
@@ -52,7 +53,7 @@ MonoBehaviour:
           _type: 0
           _bool: 1
           _int: 0
-          _string:
+          _string: 
       - _variableId: asked_sect
         _scope: 0
         _comparison: 0
@@ -60,7 +61,7 @@ MonoBehaviour:
           _type: 0
           _bool: 1
           _int: 0
-          _string:
+          _string: 
       - _variableId: asked_demon
         _scope: 0
         _comparison: 0
@@ -68,5 +69,5 @@ MonoBehaviour:
           _type: 0
           _bool: 1
           _int: 0
-          _string:
+          _string: 
     _target: {fileID: 11400000, guid: ca43d52133b129048a142c017acfd152, type: 2}

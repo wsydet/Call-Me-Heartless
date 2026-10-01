@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93dd6ab62311b24193d560e392ea71a, type: 3}
+  m_Name: CH03_Chapter02_G_Call
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeFlowCallSO
+  _nodeId: def56c63c2df4bdba6028c9df2833d17
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 1
+  _flow: {fileID: 0}
+  _callee: {fileID: 11400000, guid: fa9d21e7c3a32c54dac3e656f41b6e28, type: 2}
+  _results:
+  - _name: "\u5B8C\u6210"
+    _target: {fileID: 11400000, guid: 9e27f319f2509ac4489cfdb03122a7d0, type: 2}

@@ -1,0 +1,1097 @@
+{
+  "schemaVersion": 1,
+  "batchId": "20260930-chapter01-cards",
+  "backup": ".utmp/vn-story-import/20260930-chapter01-cards/backup",
+  "chapters": [
+    {
+      "chapterId": "57c023ad23ef45be88cbab6bd9b3d51d",
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Chapter.asset",
+      "entry": "b32c0d739391484ebe3a39591a027e39",
+      "nodes": [
+        {
+          "id": "1ee958ac7ec042d986982a9c3b7c5ce2",
+          "name": "CH02_Chapter01_Town",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+          "guid": "53e264a23cc882e41977f79bcd83c33e",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "99732585ac7b46819748abd53641365d"
+          }
+        },
+        {
+          "id": "99732585ac7b46819748abd53641365d",
+          "name": "CH02_Chapter01_Mountain",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Mountain.asset",
+          "guid": "02f083a24f21fdd48b0522336558cee6",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "892a623db4314c9fb2dada1107773409"
+          }
+        },
+        {
+          "id": "892a623db4314c9fb2dada1107773409",
+          "name": "CH02_Chapter01_Arrival",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset",
+          "guid": "28cbafd5ca885a1429c70820c91e84a6",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "ab2022f50e45483797909e97be4f4b75"
+          }
+        },
+        {
+          "id": "ab2022f50e45483797909e97be4f4b75",
+          "name": "CH02_Chapter01_Overnight",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Overnight.asset",
+          "guid": "64474104c6bf64741b064d337b2f534b",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "537d5206a78b47c48166dafb7d9065c3"
+          }
+        },
+        {
+          "id": "537d5206a78b47c48166dafb7d9065c3",
+          "name": "CH02_Chapter01_HubSay",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_HubSay.asset",
+          "guid": "f1ee9f3377679c947bbf5be799228087",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "0eb30befaeee438d9e2302d9d4fec4bd"
+          }
+        },
+        {
+          "id": "0eb30befaeee438d9e2302d9d4fec4bd",
+          "name": "CH02_Chapter01_HubBranch",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Branches/CH02_Chapter01_HubBranch.asset",
+          "guid": "be9971fa35a1aec4c8bee9ac5ecdd5e0",
+          "scope": "",
+          "kind": "NarrativeBranchSO",
+          "targets": {
+            "_fallback": "f9f436dc485148ef8e98cf24a870d72e"
+          }
+        },
+        {
+          "id": "f9f436dc485148ef8e98cf24a870d72e",
+          "name": "CH02_Chapter01_HubChoice",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Choices/CH02_Chapter01_HubChoice.asset",
+          "guid": "a7ea549e5a99d9548a525d78b604b2ff",
+          "scope": "",
+          "kind": "NarrativeChoiceSO",
+          "targets": {
+            "_options.Array.data[0]._target": "31d3c28ac784488eadd26b58aa966ee3",
+            "_options.Array.data[1]._target": "3b92ed2384cb40209bb5715d2a6e245e",
+            "_options.Array.data[2]._target": "307db7e231a24aeaa47159ba049a84d4",
+            "_options.Array.data[3]._target": "d4ed48bba88940edb25a9f6448c57624"
+          }
+        },
+        {
+          "id": "5c9105f0103248a584e17647e338a08e",
+          "name": "CH02_Chapter01_OptSchedule",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+          "guid": "73dc1eb416e18954bbbe84f588b6edca",
+          "scope": "6234705cdfad4900801f8976b90af2dc",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "e6f6a3dcca3d45139a4b2460bd2c7693"
+          }
+        },
+        {
+          "id": "c0e8c9974d964bd990bcb6defd7d238f",
+          "name": "CH02_Chapter01_OptSect",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset",
+          "guid": "cc37b82ac3267f24eb5c3fbe5c4e8b4e",
+          "scope": "9fbf369a0f034c8b9edf227e59009d8d",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "7d7369fc0cf84e22926d9cb946682caf"
+          }
+        },
+        {
+          "id": "c96dec0de1124957807b5ffb43714d6b",
+          "name": "CH02_Chapter01_OptDemon",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset",
+          "guid": "c57e5c67accc095458a795b78db1a19a",
+          "scope": "c6a0ae7624564cacb2662b4a24b262a2",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "4f5c08f3db134f7697d7358192d5a457"
+          }
+        },
+        {
+          "id": "d4ed48bba88940edb25a9f6448c57624",
+          "name": "CH02_Chapter01_MainClose",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_MainClose.asset",
+          "guid": "ca43d52133b129048a142c017acfd152",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "55c0b32052b94aa09ffe885533cb7aab"
+          }
+        },
+        {
+          "id": "55c0b32052b94aa09ffe885533cb7aab",
+          "name": "CH02_Chapter01_ExitToEndings",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Exits/CH02_Chapter01_ExitToEndings.asset",
+          "guid": "3442714a5ccb8b347aa1053601550692",
+          "scope": "",
+          "kind": "NarrativeChapterExitSO",
+          "targets": {}
+        },
+        {
+          "id": "fe6a97739a2c4ced9acfa37103c6b82f",
+          "name": "CH02_Chapter01_Questions_Receive",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Endings/CH02_Chapter01_Questions_Receive.asset",
+          "guid": "56a8e97e2b3d50f4591898a35e999a9f",
+          "scope": "",
+          "kind": "NarrativeReceiverSO",
+          "targets": {
+            "_next": "0eb30befaeee438d9e2302d9d4fec4bd"
+          }
+        },
+        {
+          "id": "3f16aa1fa3b241bf8727c1c072a1e663",
+          "name": "CH02_Chapter01_Questions_ReturnJump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Endings/CH02_Chapter01_Questions_ReturnJump.asset",
+          "guid": "7aa445e5baac2d943a2c0bec2532e87f",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "6234705cdfad4900801f8976b90af2dc",
+          "name": "CH02_Chapter01_OptSchedule_Start",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Endings/CH02_Chapter01_OptSchedule_Start.asset",
+          "guid": "c0127d40c52d7c34c83f1e839c1b9f05",
+          "scope": "6234705cdfad4900801f8976b90af2dc",
+          "kind": "NarrativeFlowStartSO",
+          "targets": {
+            "_next": "5c9105f0103248a584e17647e338a08e"
+          }
+        },
+        {
+          "id": "e6f6a3dcca3d45139a4b2460bd2c7693",
+          "name": "CH02_Chapter01_OptSchedule_Return",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Endings/CH02_Chapter01_OptSchedule_Return.asset",
+          "guid": "dee1d474f9eaf674a812dacd8918c251",
+          "scope": "6234705cdfad4900801f8976b90af2dc",
+          "kind": "NarrativeFlowReturnSO",
+          "targets": {}
+        },
+        {
+          "id": "31d3c28ac784488eadd26b58aa966ee3",
+          "name": "CH02_Chapter01_OptSchedule_Call",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Endings/CH02_Chapter01_OptSchedule_Call.asset",
+          "guid": "47a5d903ca45004498cb4de613c8a205",
+          "scope": "",
+          "kind": "NarrativeFlowCallSO",
+          "targets": {
+            "_results.Array.data[0]._target": "3f16aa1fa3b241bf8727c1c072a1e663"
+          }
+        },
+        {
+          "id": "9fbf369a0f034c8b9edf227e59009d8d",
+          "name": "CH02_Chapter01_OptSect_Start",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Endings/CH02_Chapter01_OptSect_Start.asset",
+          "guid": "0b2849a4843d55f4d8b54ca667a57ad7",
+          "scope": "9fbf369a0f034c8b9edf227e59009d8d",
+          "kind": "NarrativeFlowStartSO",
+          "targets": {
+            "_next": "c0e8c9974d964bd990bcb6defd7d238f"
+          }
+        },
+        {
+          "id": "7d7369fc0cf84e22926d9cb946682caf",
+          "name": "CH02_Chapter01_OptSect_Return",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Endings/CH02_Chapter01_OptSect_Return.asset",
+          "guid": "13992ae6296058b4cbef184ce1211d49",
+          "scope": "9fbf369a0f034c8b9edf227e59009d8d",
+          "kind": "NarrativeFlowReturnSO",
+          "targets": {}
+        },
+        {
+          "id": "3b92ed2384cb40209bb5715d2a6e245e",
+          "name": "CH02_Chapter01_OptSect_Call",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Endings/CH02_Chapter01_OptSect_Call.asset",
+          "guid": "146e66d6a0ae6eb46b31e891e7c502f2",
+          "scope": "",
+          "kind": "NarrativeFlowCallSO",
+          "targets": {
+            "_results.Array.data[0]._target": "3f16aa1fa3b241bf8727c1c072a1e663"
+          }
+        },
+        {
+          "id": "c6a0ae7624564cacb2662b4a24b262a2",
+          "name": "CH02_Chapter01_OptDemon_Start",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Endings/CH02_Chapter01_OptDemon_Start.asset",
+          "guid": "4b818103f84aede44aa60ce78ff22c8c",
+          "scope": "c6a0ae7624564cacb2662b4a24b262a2",
+          "kind": "NarrativeFlowStartSO",
+          "targets": {
+            "_next": "c96dec0de1124957807b5ffb43714d6b"
+          }
+        },
+        {
+          "id": "4f5c08f3db134f7697d7358192d5a457",
+          "name": "CH02_Chapter01_OptDemon_Return",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Endings/CH02_Chapter01_OptDemon_Return.asset",
+          "guid": "aad00e2c3a907484b8e96effaaed373a",
+          "scope": "c6a0ae7624564cacb2662b4a24b262a2",
+          "kind": "NarrativeFlowReturnSO",
+          "targets": {}
+        },
+        {
+          "id": "307db7e231a24aeaa47159ba049a84d4",
+          "name": "CH02_Chapter01_OptDemon_Call",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Endings/CH02_Chapter01_OptDemon_Call.asset",
+          "guid": "b1266d13fa4c617478a64794b562fba9",
+          "scope": "",
+          "kind": "NarrativeFlowCallSO",
+          "targets": {
+            "_results.Array.data[0]._target": "3f16aa1fa3b241bf8727c1c072a1e663"
+          }
+        },
+        {
+          "id": "b32c0d739391484ebe3a39591a027e39",
+          "name": "CH02_Chapter01_TitleCard",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_TitleCard.asset",
+          "guid": "ccf0cada9c8350445a4c109bb79d6b57",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "1ee958ac7ec042d986982a9c3b7c5ce2"
+          }
+        }
+      ]
+    },
+    {
+      "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Chapter.asset",
+      "entry": "20fe082668134629afd524b43c02252f",
+      "nodes": [
+        {
+          "id": "e3c97a300612453f989eb5b5657ee788",
+          "name": "CH03_Chapter02_Loop",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_Loop.asset",
+          "guid": "f1de184747dd5da4e8339407c516e078",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "6c20dac8b09f48db819e41b7f48db868"
+          }
+        },
+        {
+          "id": "6c20dac8b09f48db819e41b7f48db868",
+          "name": "CH03_Chapter02_LoopRouter",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_LoopRouter.asset",
+          "guid": "097d4e52a0d16f54597cd64aca12c226",
+          "scope": "",
+          "kind": "NarrativeBranchSO",
+          "targets": {
+            "_branches.Array.data[0]._target": "87cb4e98e2024466bdbe66e9edc59944",
+            "_branches.Array.data[1]._target": "6360d82041dc4c849ea528a91b4ff162",
+            "_branches.Array.data[2]._target": "c0f056deb12e4505aa25002f0873c9ad",
+            "_branches.Array.data[3]._target": "4faaca5730ef43c98d8842add5f3148b",
+            "_branches.Array.data[4]._target": "a8829ea436954d0fa617eeb96d327a79",
+            "_fallback": "7eb4c076d29f4d7dbd726ed55e01a363"
+          }
+        },
+        {
+          "id": "0e3f6fce6bbc413eb174919fd8478b40",
+          "name": "CH03_Chapter02_Morning",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Morning.asset",
+          "guid": "517e6232e50791648b138307da8cad19",
+          "scope": "",
+          "kind": "NarrativeChoiceSO",
+          "targets": {
+            "_options.Array.data[0]._target": "a5bc327a62a94b38ae6ef7fd5a4842c1",
+            "_options.Array.data[1]._target": "cc06fbebb1e448238056e45b105e917f",
+            "_options.Array.data[2]._target": "2e58d92c6786422092a9877d4c75b1a7"
+          }
+        },
+        {
+          "id": "9ae06dbb25974227b5415b385ace6293",
+          "name": "CH03_Chapter02_Afternoon",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Afternoon.asset",
+          "guid": "94c1bd4cd0dc1ed4a9bdce71f98d5392",
+          "scope": "",
+          "kind": "NarrativeChoiceSO",
+          "targets": {
+            "_options.Array.data[0]._target": "903b531d42f34921b6c5942b9569bf71",
+            "_options.Array.data[1]._target": "74cc80caac0c4343a3d51ba4ee7877ad"
+          }
+        },
+        {
+          "id": "b09ca941a1fe47f9bc1622b50cd81c4b",
+          "name": "CH03_Chapter02_Evening",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Evening.asset",
+          "guid": "9f30a460adfa3b74fb2b0e9caedd9aca",
+          "scope": "",
+          "kind": "NarrativeChoiceSO",
+          "targets": {
+            "_options.Array.data[0]._target": "4592372f01654309b6f6c71ef1458756",
+            "_options.Array.data[1]._target": "def56c63c2df4bdba6028c9df2833d17"
+          }
+        },
+        {
+          "id": "4ef0f7afaf3e451081c34cd78f965cbc",
+          "name": "CH03_Chapter02_Town",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Town.asset",
+          "guid": "fdd0044853b23284a94151ea232a5619",
+          "scope": "",
+          "kind": "NarrativeChoiceSO",
+          "targets": {
+            "_options.Array.data[0]._target": "35e766bbd1f14b51805f51251e3e3911",
+            "_options.Array.data[1]._target": "bc8ef40b6aac481db3ff357508c57920"
+          }
+        },
+        {
+          "id": "f520c98f310d41cda3c626aa0c764168",
+          "name": "CH03_Chapter02_A_Action",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A_Action.asset",
+          "guid": "67b9be3b6ff9ca849bb59864ccc3a5fb",
+          "scope": "5e28a8f8f0d343988ca2caf5f17962a6",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "bd11a97755394913af9cf8e47531f810"
+          }
+        },
+        {
+          "id": "114da9d1eb0246b18b25c65ecd1f1ccb",
+          "name": "CH03_Chapter02_B_Action",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_B_Action.asset",
+          "guid": "eab08316b3768874a98ef84b08ba47e1",
+          "scope": "f0f765ac557246baaf61681fc60bd000",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "2da4d95c50f6424fbdca0825e5df1a70"
+          }
+        },
+        {
+          "id": "cec0a963791d452d805e6b5cab16cf7e",
+          "name": "CH03_Chapter02_C_Action",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_C_Action.asset",
+          "guid": "eb4a4a9e88d621d49878a4972d3fb33e",
+          "scope": "c47ba3ea977e47eaad45c4c6d3eb8aa5",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "5a54287117bb464e8f7f3cfb2853d355"
+          }
+        },
+        {
+          "id": "3f9ade496914464b8c345dc29be5e800",
+          "name": "CH03_Chapter02_D_Action",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_D_Action.asset",
+          "guid": "659828ea33977d94e9c5a1383a90cc32",
+          "scope": "d15fd9ad3c804f748aed0f2a162d63f9",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "f8686ebcbfad4fb99adc4f600e90b4d1"
+          }
+        },
+        {
+          "id": "72dec05b499d4371bfd69f37c4008467",
+          "name": "CH03_Chapter02_E_Action",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_E_Action.asset",
+          "guid": "b9c905977eb818e43928c68f559d0b09",
+          "scope": "cfd93b4a2ebc4d36b5e1f2732efa8fc0",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "4e193120c442429b83a854051b3fd994"
+          }
+        },
+        {
+          "id": "9d70b6a6d23c460c8e1f0ef5f9751282",
+          "name": "CH03_Chapter02_F_Action",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_F_Action.asset",
+          "guid": "1428076757aeda14e9d535b5e458b637",
+          "scope": "6f31b289b07445b89f090b36cce4f919",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "8e8e26efb04e42388b4c820ecdb61781"
+          }
+        },
+        {
+          "id": "76b1c4bfa55d451b891c6ef1a903f04c",
+          "name": "CH03_Chapter02_G_Action",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_G_Action.asset",
+          "guid": "a83b7480971ff2d48abc7ac69438067d",
+          "scope": "288cd9f953b744cc9869065faf4f954e",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "cfa88684f32b4ef280593d4006ea0478"
+          }
+        },
+        {
+          "id": "87f771b978ce4ef7949a9efada5f9e56",
+          "name": "CH03_Chapter02_H_Action",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_H_Action.asset",
+          "guid": "0e6cae36766076e43928cf811c6671f7",
+          "scope": "0b751c6b1d834a79acf6079b1df9685b",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "ae96a9a080474141860d75b2df378d75"
+          }
+        },
+        {
+          "id": "ae8795af29a04ea6b1ee3ad81672e5fd",
+          "name": "CH03_Chapter02_I_Action",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_I_Action.asset",
+          "guid": "fdfbb40ae99b1804c8648da7f74d54c0",
+          "scope": "28d5a72ea7634efc8a48495255f7b876",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "1a72cc45384a43d59f2eb1764294fc7b"
+          }
+        },
+        {
+          "id": "4e4d46a2fc6543ab858e76ae9df07b58",
+          "name": "CH03_Chapter02_AdvanceStep",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_AdvanceStep.asset",
+          "guid": "533c29352324763438b74a60d2e026b0",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "aeb25901a4134a5a83e6cab4889e03fc"
+          }
+        },
+        {
+          "id": "fa683626a3a444de8146323292c3b99f",
+          "name": "CH03_Chapter02_Settlement",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_Settlement.asset",
+          "guid": "9103c9502061ddd47b3d679e5810d684",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "63bd8bc2e9e64641b5840e6b73fd391b"
+          }
+        },
+        {
+          "id": "63bd8bc2e9e64641b5840e6b73fd391b",
+          "name": "CH03_Chapter02_MoneyBounds",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_MoneyBounds.asset",
+          "guid": "19db8cb04a515ef46b344f9c54bec5c6",
+          "scope": "",
+          "kind": "NarrativeBranchSO",
+          "targets": {
+            "_branches.Array.data[0]._target": "690186dc25684a29bd0f174c5659601b",
+            "_branches.Array.data[1]._target": "1eeaeeb8fc47436fbdf2d095d984359b",
+            "_fallback": "afe259e65633428382586485302cfe53"
+          }
+        },
+        {
+          "id": "690186dc25684a29bd0f174c5659601b",
+          "name": "CH03_Chapter02_MoneyMax",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_MoneyMax.asset",
+          "guid": "e3d4f5db14716c649b1505a14fd26c01",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "aec0eb1048a04bb2a0082430704a39bb"
+          }
+        },
+        {
+          "id": "1eeaeeb8fc47436fbdf2d095d984359b",
+          "name": "CH03_Chapter02_MoneyMin",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_MoneyMin.asset",
+          "guid": "8454adc2e422c2c43a7be7a16a824a02",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "60e498254c914ec2973a280976e73dc1"
+          }
+        },
+        {
+          "id": "e32c18aaba37425fbfb49a92d96495ad",
+          "name": "CH03_Chapter02_NextMonth",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_NextMonth.asset",
+          "guid": "ddfea1c41bc5c1940830da2f1d39fcea",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "870a8b7fb33a40199accf4041ff7e103"
+          }
+        },
+        {
+          "id": "f2ed717ee0ba416697ec53d82974ded7",
+          "name": "CH03_Chapter02_Exit",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Exits/CH03_Chapter02_Exit.asset",
+          "guid": "0d83b8397337f0d4dbd91deb9d19889a",
+          "scope": "",
+          "kind": "NarrativeChapterExitSO",
+          "targets": {}
+        },
+        {
+          "id": "771ff1f8de2d496fb928ef9b70f010ad",
+          "name": "CH03_Chapter02_Daily_Receive",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Daily_Receive.asset",
+          "guid": "c954f13b33eca304ab309b98c8bc7eda",
+          "scope": "",
+          "kind": "NarrativeReceiverSO",
+          "targets": {
+            "_next": "e3c97a300612453f989eb5b5657ee788"
+          }
+        },
+        {
+          "id": "1aabb8b5c9f448d49d2e0dff53afd54f",
+          "name": "CH03_Chapter02_Morning_Receive",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Morning_Receive.asset",
+          "guid": "dc5152b6db608584fb71b0529fa443d1",
+          "scope": "",
+          "kind": "NarrativeReceiverSO",
+          "targets": {
+            "_next": "0e3f6fce6bbc413eb174919fd8478b40"
+          }
+        },
+        {
+          "id": "62e755e628b043f9a80cd8ce879e6f44",
+          "name": "CH03_Chapter02_Afternoon_Receive",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Afternoon_Receive.asset",
+          "guid": "e279c4daf15a22948a76aeab1a71c35b",
+          "scope": "",
+          "kind": "NarrativeReceiverSO",
+          "targets": {
+            "_next": "9ae06dbb25974227b5415b385ace6293"
+          }
+        },
+        {
+          "id": "ca9b826e463044bab82083f7b34ea664",
+          "name": "CH03_Chapter02_Evening_Receive",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Evening_Receive.asset",
+          "guid": "96b999ba019f989419938c398a4d05ff",
+          "scope": "",
+          "kind": "NarrativeReceiverSO",
+          "targets": {
+            "_next": "b09ca941a1fe47f9bc1622b50cd81c4b"
+          }
+        },
+        {
+          "id": "9903e716db64400d8349afbdd165208a",
+          "name": "CH03_Chapter02_Settlement_Receive",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Settlement_Receive.asset",
+          "guid": "e8f8c3ac2d08242419b32df7e25a857b",
+          "scope": "",
+          "kind": "NarrativeReceiverSO",
+          "targets": {
+            "_next": "fa683626a3a444de8146323292c3b99f"
+          }
+        },
+        {
+          "id": "e4173ec55a784dadace909c4091a4b5e",
+          "name": "CH03_Chapter02_Town_Receive",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Town_Receive.asset",
+          "guid": "cf68d213a8e5f9f4592d03ff3d28e0f9",
+          "scope": "",
+          "kind": "NarrativeReceiverSO",
+          "targets": {
+            "_next": "4ef0f7afaf3e451081c34cd78f965cbc"
+          }
+        },
+        {
+          "id": "fad2e33f750041f094d97154a98b5394",
+          "name": "CH03_Chapter02_Advance_Receive",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Advance_Receive.asset",
+          "guid": "064ea7b4581357e41bc29da3d18a3534",
+          "scope": "",
+          "kind": "NarrativeReceiverSO",
+          "targets": {
+            "_next": "4e4d46a2fc6543ab858e76ae9df07b58"
+          }
+        },
+        {
+          "id": "8e4939828a1249e7a5d8c01957e9dfd8",
+          "name": "CH03_Chapter02_NextMonth_Receive",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_NextMonth_Receive.asset",
+          "guid": "37e313d4f49dc2540a83e97eb1812225",
+          "scope": "",
+          "kind": "NarrativeReceiverSO",
+          "targets": {
+            "_next": "e32c18aaba37425fbfb49a92d96495ad"
+          }
+        },
+        {
+          "id": "af9415ce35384e84b3c2e69985c0c644",
+          "name": "CH03_Chapter02_Exit_Receive",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Exit_Receive.asset",
+          "guid": "b3deb928a4390b148a7bab60e7f93796",
+          "scope": "",
+          "kind": "NarrativeReceiverSO",
+          "targets": {
+            "_next": "f2ed717ee0ba416697ec53d82974ded7"
+          }
+        },
+        {
+          "id": "7eb4c076d29f4d7dbd726ed55e01a363",
+          "name": "CH03_Chapter02_Morning_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Morning_Jump.asset",
+          "guid": "a67621f8ae13468489dbe118485ce459",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "4faaca5730ef43c98d8842add5f3148b",
+          "name": "CH03_Chapter02_Afternoon_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Afternoon_Jump.asset",
+          "guid": "c93b6936dc29d014c9ddb7cdc37c432e",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "a8829ea436954d0fa617eeb96d327a79",
+          "name": "CH03_Chapter02_Evening_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Evening_Jump.asset",
+          "guid": "41194df19607d2544a006ee495b76e16",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "c0f056deb12e4505aa25002f0873c9ad",
+          "name": "CH03_Chapter02_Settlement_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Settlement_Jump.asset",
+          "guid": "8469d2157a5504e4bae13ca61f743810",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "6360d82041dc4c849ea528a91b4ff162",
+          "name": "CH03_Chapter02_NextMonth_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_NextMonth_Jump.asset",
+          "guid": "1a8e6451a4d30f148ac344e744a1984f",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "87cb4e98e2024466bdbe66e9edc59944",
+          "name": "CH03_Chapter02_Exit_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Exit_Jump.asset",
+          "guid": "4b3a2f057fd43c542815857ae7bb5482",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "afe259e65633428382586485302cfe53",
+          "name": "CH03_Chapter02_TownBounds_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TownBounds_Jump.asset",
+          "guid": "55b80bb321ee60c47b705ce62540066c",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "aec0eb1048a04bb2a0082430704a39bb",
+          "name": "CH03_Chapter02_TownMax_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TownMax_Jump.asset",
+          "guid": "9171b3cbcae35554f9f1bcd1575d2f63",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "60e498254c914ec2973a280976e73dc1",
+          "name": "CH03_Chapter02_TownMin_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TownMin_Jump.asset",
+          "guid": "af96fe32d4eeaba43beaea6a587b84f1",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "3401531f6afe4d8390a152e26461f4d5",
+          "name": "CH03_Chapter02_AfterMorning_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterMorning_Jump.asset",
+          "guid": "605f09725af03ce4dbe73ac87f0886c8",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "e55b0b03a0ef460989c6b79027709561",
+          "name": "CH03_Chapter02_AfterAfternoon_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterAfternoon_Jump.asset",
+          "guid": "5eda37b870abd424398e31722615daa6",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "2c6384b53ccd4a3c864abb8db94f5770",
+          "name": "CH03_Chapter02_AfterEvening_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterEvening_Jump.asset",
+          "guid": "9e27f319f2509ac4489cfdb03122a7d0",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "bebe413f78534332a08542bdbca7a4c6",
+          "name": "CH03_Chapter02_AfterTown_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterTown_Jump.asset",
+          "guid": "341ea11d57af78b4d8663fc6bf0081c8",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "aeb25901a4134a5a83e6cab4889e03fc",
+          "name": "CH03_Chapter02_AfterAdvance_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterAdvance_Jump.asset",
+          "guid": "fa2131d315447824e99dfbd3250bfb3a",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "870a8b7fb33a40199accf4041ff7e103",
+          "name": "CH03_Chapter02_AfterMonth_Jump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterMonth_Jump.asset",
+          "guid": "385f2ce5c7d4dff4a90734c2dc04c8df",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        },
+        {
+          "id": "5e28a8f8f0d343988ca2caf5f17962a6",
+          "name": "CH03_Chapter02_A_Start",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Start.asset",
+          "guid": "1a8d1197e81018c43937df6cf5093ffb",
+          "scope": "5e28a8f8f0d343988ca2caf5f17962a6",
+          "kind": "NarrativeFlowStartSO",
+          "targets": {
+            "_next": "f520c98f310d41cda3c626aa0c764168"
+          }
+        },
+        {
+          "id": "bd11a97755394913af9cf8e47531f810",
+          "name": "CH03_Chapter02_A_Return",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Return.asset",
+          "guid": "8c1dbd022a59868488a594f5ea5ebfb0",
+          "scope": "5e28a8f8f0d343988ca2caf5f17962a6",
+          "kind": "NarrativeFlowReturnSO",
+          "targets": {}
+        },
+        {
+          "id": "a5bc327a62a94b38ae6ef7fd5a4842c1",
+          "name": "CH03_Chapter02_A_Call",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Call.asset",
+          "guid": "9702a55495caf2a47b79c959881fb3ac",
+          "scope": "",
+          "kind": "NarrativeFlowCallSO",
+          "targets": {
+            "_results.Array.data[0]._target": "3401531f6afe4d8390a152e26461f4d5"
+          }
+        },
+        {
+          "id": "f0f765ac557246baaf61681fc60bd000",
+          "name": "CH03_Chapter02_B_Start",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_B_Start.asset",
+          "guid": "e883878ca4074bb4295edbbc7b7351c0",
+          "scope": "f0f765ac557246baaf61681fc60bd000",
+          "kind": "NarrativeFlowStartSO",
+          "targets": {
+            "_next": "114da9d1eb0246b18b25c65ecd1f1ccb"
+          }
+        },
+        {
+          "id": "2da4d95c50f6424fbdca0825e5df1a70",
+          "name": "CH03_Chapter02_B_Return",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_B_Return.asset",
+          "guid": "5b49cacadc265fc4082f75c4f4e14480",
+          "scope": "f0f765ac557246baaf61681fc60bd000",
+          "kind": "NarrativeFlowReturnSO",
+          "targets": {}
+        },
+        {
+          "id": "cc06fbebb1e448238056e45b105e917f",
+          "name": "CH03_Chapter02_B_Call",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_B_Call.asset",
+          "guid": "312688057c7a72c46963097c9376382a",
+          "scope": "",
+          "kind": "NarrativeFlowCallSO",
+          "targets": {
+            "_results.Array.data[0]._target": "3401531f6afe4d8390a152e26461f4d5"
+          }
+        },
+        {
+          "id": "c47ba3ea977e47eaad45c4c6d3eb8aa5",
+          "name": "CH03_Chapter02_C_Start",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_C_Start.asset",
+          "guid": "337762bb534b2e246adb62a07eb5e432",
+          "scope": "c47ba3ea977e47eaad45c4c6d3eb8aa5",
+          "kind": "NarrativeFlowStartSO",
+          "targets": {
+            "_next": "cec0a963791d452d805e6b5cab16cf7e"
+          }
+        },
+        {
+          "id": "5a54287117bb464e8f7f3cfb2853d355",
+          "name": "CH03_Chapter02_C_Return",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_C_Return.asset",
+          "guid": "cd7546040b7a62a43b1e35b47874aaff",
+          "scope": "c47ba3ea977e47eaad45c4c6d3eb8aa5",
+          "kind": "NarrativeFlowReturnSO",
+          "targets": {}
+        },
+        {
+          "id": "2e58d92c6786422092a9877d4c75b1a7",
+          "name": "CH03_Chapter02_C_Call",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_C_Call.asset",
+          "guid": "897a4ac3a93c5554195cad7d56857343",
+          "scope": "",
+          "kind": "NarrativeFlowCallSO",
+          "targets": {
+            "_results.Array.data[0]._target": "3401531f6afe4d8390a152e26461f4d5"
+          }
+        },
+        {
+          "id": "d15fd9ad3c804f748aed0f2a162d63f9",
+          "name": "CH03_Chapter02_D_Start",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_D_Start.asset",
+          "guid": "dc5e870508cb38d4192a618cb6fa39f8",
+          "scope": "d15fd9ad3c804f748aed0f2a162d63f9",
+          "kind": "NarrativeFlowStartSO",
+          "targets": {
+            "_next": "3f9ade496914464b8c345dc29be5e800"
+          }
+        },
+        {
+          "id": "f8686ebcbfad4fb99adc4f600e90b4d1",
+          "name": "CH03_Chapter02_D_Return",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_D_Return.asset",
+          "guid": "bbb8b8e3523c13d4c842369c6c739636",
+          "scope": "d15fd9ad3c804f748aed0f2a162d63f9",
+          "kind": "NarrativeFlowReturnSO",
+          "targets": {}
+        },
+        {
+          "id": "903b531d42f34921b6c5942b9569bf71",
+          "name": "CH03_Chapter02_D_Call",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_D_Call.asset",
+          "guid": "284d7aa521afeeb468dab1e08cb89454",
+          "scope": "",
+          "kind": "NarrativeFlowCallSO",
+          "targets": {
+            "_results.Array.data[0]._target": "e55b0b03a0ef460989c6b79027709561"
+          }
+        },
+        {
+          "id": "cfd93b4a2ebc4d36b5e1f2732efa8fc0",
+          "name": "CH03_Chapter02_E_Start",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_E_Start.asset",
+          "guid": "e15d38a73f9c0934f8f460f79d1d9d8a",
+          "scope": "cfd93b4a2ebc4d36b5e1f2732efa8fc0",
+          "kind": "NarrativeFlowStartSO",
+          "targets": {
+            "_next": "72dec05b499d4371bfd69f37c4008467"
+          }
+        },
+        {
+          "id": "4e193120c442429b83a854051b3fd994",
+          "name": "CH03_Chapter02_E_Return",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_E_Return.asset",
+          "guid": "a1b015592c1b0d1459b8aea6d5573b31",
+          "scope": "cfd93b4a2ebc4d36b5e1f2732efa8fc0",
+          "kind": "NarrativeFlowReturnSO",
+          "targets": {}
+        },
+        {
+          "id": "74cc80caac0c4343a3d51ba4ee7877ad",
+          "name": "CH03_Chapter02_E_Call",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_E_Call.asset",
+          "guid": "4453931a16ab1c641a42da07d4d58216",
+          "scope": "",
+          "kind": "NarrativeFlowCallSO",
+          "targets": {
+            "_results.Array.data[0]._target": "e55b0b03a0ef460989c6b79027709561"
+          }
+        },
+        {
+          "id": "6f31b289b07445b89f090b36cce4f919",
+          "name": "CH03_Chapter02_F_Start",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_F_Start.asset",
+          "guid": "b99467c2b04821a4ca77fff97e1f6963",
+          "scope": "6f31b289b07445b89f090b36cce4f919",
+          "kind": "NarrativeFlowStartSO",
+          "targets": {
+            "_next": "9d70b6a6d23c460c8e1f0ef5f9751282"
+          }
+        },
+        {
+          "id": "8e8e26efb04e42388b4c820ecdb61781",
+          "name": "CH03_Chapter02_F_Return",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_F_Return.asset",
+          "guid": "94285a60099da4144bd8e42661d4d7fb",
+          "scope": "6f31b289b07445b89f090b36cce4f919",
+          "kind": "NarrativeFlowReturnSO",
+          "targets": {}
+        },
+        {
+          "id": "4592372f01654309b6f6c71ef1458756",
+          "name": "CH03_Chapter02_F_Call",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_F_Call.asset",
+          "guid": "3df92cc0b46898c488fd4856d1c175dd",
+          "scope": "",
+          "kind": "NarrativeFlowCallSO",
+          "targets": {
+            "_results.Array.data[0]._target": "2c6384b53ccd4a3c864abb8db94f5770"
+          }
+        },
+        {
+          "id": "288cd9f953b744cc9869065faf4f954e",
+          "name": "CH03_Chapter02_G_Start",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_G_Start.asset",
+          "guid": "fa9d21e7c3a32c54dac3e656f41b6e28",
+          "scope": "288cd9f953b744cc9869065faf4f954e",
+          "kind": "NarrativeFlowStartSO",
+          "targets": {
+            "_next": "76b1c4bfa55d451b891c6ef1a903f04c"
+          }
+        },
+        {
+          "id": "cfa88684f32b4ef280593d4006ea0478",
+          "name": "CH03_Chapter02_G_Return",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_G_Return.asset",
+          "guid": "50891ac9532c52f4499831569ab975fb",
+          "scope": "288cd9f953b744cc9869065faf4f954e",
+          "kind": "NarrativeFlowReturnSO",
+          "targets": {}
+        },
+        {
+          "id": "def56c63c2df4bdba6028c9df2833d17",
+          "name": "CH03_Chapter02_G_Call",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_G_Call.asset",
+          "guid": "4eebd43cfc469ea46adcb62d93f9a645",
+          "scope": "",
+          "kind": "NarrativeFlowCallSO",
+          "targets": {
+            "_results.Array.data[0]._target": "2c6384b53ccd4a3c864abb8db94f5770"
+          }
+        },
+        {
+          "id": "0b751c6b1d834a79acf6079b1df9685b",
+          "name": "CH03_Chapter02_H_Start",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_H_Start.asset",
+          "guid": "db54775918b05d145ad13e31139af1e4",
+          "scope": "0b751c6b1d834a79acf6079b1df9685b",
+          "kind": "NarrativeFlowStartSO",
+          "targets": {
+            "_next": "87f771b978ce4ef7949a9efada5f9e56"
+          }
+        },
+        {
+          "id": "ae96a9a080474141860d75b2df378d75",
+          "name": "CH03_Chapter02_H_Return",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_H_Return.asset",
+          "guid": "41465241cc7d4194e8a2e42dbf3d8af2",
+          "scope": "0b751c6b1d834a79acf6079b1df9685b",
+          "kind": "NarrativeFlowReturnSO",
+          "targets": {}
+        },
+        {
+          "id": "35e766bbd1f14b51805f51251e3e3911",
+          "name": "CH03_Chapter02_H_Call",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_H_Call.asset",
+          "guid": "8989fa1ff87c8d14a8530023526e9876",
+          "scope": "",
+          "kind": "NarrativeFlowCallSO",
+          "targets": {
+            "_results.Array.data[0]._target": "bebe413f78534332a08542bdbca7a4c6"
+          }
+        },
+        {
+          "id": "28d5a72ea7634efc8a48495255f7b876",
+          "name": "CH03_Chapter02_I_Start",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_I_Start.asset",
+          "guid": "fc4ff7fd34ad0c047bfd6d56293cd10a",
+          "scope": "28d5a72ea7634efc8a48495255f7b876",
+          "kind": "NarrativeFlowStartSO",
+          "targets": {
+            "_next": "ae8795af29a04ea6b1ee3ad81672e5fd"
+          }
+        },
+        {
+          "id": "1a72cc45384a43d59f2eb1764294fc7b",
+          "name": "CH03_Chapter02_I_Return",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_I_Return.asset",
+          "guid": "97050588acab75f4e83a361607d9d325",
+          "scope": "28d5a72ea7634efc8a48495255f7b876",
+          "kind": "NarrativeFlowReturnSO",
+          "targets": {}
+        },
+        {
+          "id": "bc8ef40b6aac481db3ff357508c57920",
+          "name": "CH03_Chapter02_I_Call",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_I_Call.asset",
+          "guid": "965b2124b394b56449e52568c6ee7861",
+          "scope": "",
+          "kind": "NarrativeFlowCallSO",
+          "targets": {
+            "_results.Array.data[0]._target": "bebe413f78534332a08542bdbca7a4c6"
+          }
+        },
+        {
+          "id": "20fe082668134629afd524b43c02252f",
+          "name": "CH03_Chapter02_TitleCard",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_TitleCard.asset",
+          "guid": "b7a430ddcfe8c4149be6ab5d010c18cb",
+          "scope": "",
+          "kind": "NarrativeDialogueSO",
+          "targets": {
+            "_next": "6d34e515692146e4aefbfa0569c6f9c8"
+          }
+        },
+        {
+          "id": "6d34e515692146e4aefbfa0569c6f9c8",
+          "name": "CH03_Chapter02_TitleEnterJump",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TitleEnterJump.asset",
+          "guid": "b69f444059f56594fa1db96e7f972661",
+          "scope": "",
+          "kind": "NarrativeJumpSO",
+          "targets": {}
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "chapterId": "57c023ad23ef45be88cbab6bd9b3d51d",
+      "nodeId": "b32c0d739391484ebe3a39591a027e39",
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_TitleCard.asset",
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.d34887ad80374cf9827588dc68babd15",
+      "zh_Hans": "第一章",
+      "fadeIn": 0.8,
+      "fadeOut": 0.65
+    },
+    {
+      "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+      "nodeId": "20fe082668134629afd524b43c02252f",
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_TitleCard.asset",
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.027af2ffc3b94149b70d464e8e3ed45d",
+      "zh_Hans": "第二章",
+      "fadeIn": 0.8,
+      "fadeOut": 0.65
+    }
+  ],
+  "validation": {
+    "preservedCommands": 282,
+    "preservedLocalizationRows": 281,
+    "newLocalizationRows": 2,
+    "questionLoopReturns": 4,
+    "questionSaveRestores": 74,
+    "chapter02Assertions": 4453,
+    "chapter02SaveRestores": 260,
+    "cardPlays": [
+      "第一章",
+      "第二章"
+    ],
+    "visualPlaybackVerified": false
+  }
+}

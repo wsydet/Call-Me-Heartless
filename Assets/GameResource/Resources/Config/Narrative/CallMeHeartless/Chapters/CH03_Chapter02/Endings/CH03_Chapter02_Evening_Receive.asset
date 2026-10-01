@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eca59b16011ed84d82ea6040fc63c79, type: 3}
+  m_Name: CH03_Chapter02_Evening_Receive
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeReceiverSO
+  _nodeId: ca9b826e463044bab82083f7b34ea664
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 1
+  _flow: {fileID: 0}
+  _next: {fileID: 11400000, guid: 9f30a460adfa3b74fb2b0e9caedd9aca, type: 2}

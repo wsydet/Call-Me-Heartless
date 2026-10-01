@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041f7a3b58db4974ca0a1a53846cc0fc, type: 3}
+  m_Name: CH02_Chapter01_OptDemon_Start
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeFlowStartSO
+  _nodeId: c6a0ae7624564cacb2662b4a24b262a2
+  _chapterId: 57c023ad23ef45be88cbab6bd9b3d51d
+  _contentRevision: 1
+  _flow: {fileID: 0}
+  _next: {fileID: 11400000, guid: c57e5c67accc095458a795b78db1a19a, type: 2}
+  _variables: []

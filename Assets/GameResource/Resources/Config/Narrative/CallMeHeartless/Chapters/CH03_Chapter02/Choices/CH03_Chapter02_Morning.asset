@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dba05619e27dcd54fba3a9a3c896306b, type: 3}
+  m_Name: CH03_Chapter02_Morning
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeChoiceSO
+  _nodeId: 0e3f6fce6bbc413eb174919fd8478b40
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 2
+  _flow: {fileID: 0}
+  _prompt: "\u4E0A\u5348\uFF0C\u4E3B\u63A7\u80FD\u505A\u7684\u4E8B\uFF1A"
+  _promptTextKey: prompt.0942d3f17d504f01ba64169b17e2a578.0e3f6fce6bbc413eb174919fd8478b40
+  _options:
+  - _optionId: 08ff5471f5664e0da35837c398eeadb0
+    _text: "A. \u6E05\u626B"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.08ff5471f5664e0da35837c398eeadb0
+    _condition:
+      _junction: 0
+      _predicates: []
+    _target: {fileID: 11400000, guid: 9702a55495caf2a47b79c959881fb3ac, type: 2}
+  - _optionId: af7dd97907e042369cfdf7d701473546
+    _text: "B. \u79CD\u5730"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.af7dd97907e042369cfdf7d701473546
+    _condition:
+      _junction: 0
+      _predicates: []
+    _target: {fileID: 11400000, guid: 312688057c7a72c46963097c9376382a, type: 2}
+  - _optionId: 973b377531fe420ebeffefbc6056e710
+    _text: "C. \u966A\u9999\u5BA2\u5520\u5BB6\u5E38"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.973b377531fe420ebeffefbc6056e710
+    _condition:
+      _junction: 0
+      _predicates: []
+    _target: {fileID: 11400000, guid: 897a4ac3a93c5554195cad7d56857343, type: 2}

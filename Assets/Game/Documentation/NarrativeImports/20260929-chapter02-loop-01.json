@@ -1,0 +1,3922 @@
+{
+  "schemaVersion": 1,
+  "batchId": "20260929-chapter02-loop-01",
+  "skillId": "ember-vn-import-story",
+  "status": "completed",
+  "readAt": "2026-09-29T21:15:22.302506+08:00",
+  "planHash": "4bdf23adace544627eae1ffbd5217cf34a90925c06de52bcc52193ca1f4ea101",
+  "choices": {
+    "scope": "chapter02_core_loop",
+    "storage": "story_globals",
+    "mana": "reserved",
+    "manaInitial": 0,
+    "manaMax": 100,
+    "connect": "after_chapter01"
+  },
+  "sourceUrls": [
+    "https://my.feishu.cn/docx/Ee5gdQuU6obSC3x0ePYcsh01njg",
+    "https://my.feishu.cn/sheets/P6VfsAMj3hq15btR3Oice7i4nId?sheet=hpgKna"
+  ],
+  "sourceFingerprints": {
+    "source-doc.json": "ce90bdc92dfb037fa284df07caaca1ed87f2921229473e49cb4aaaf1c132e60f",
+    "source-sheet.json": "5efdd8e31444f3651776429c748fea9d51d4a3c17a32e230afc5df5f26169d89"
+  },
+  "sourceSnapshot": {
+    "document": {
+      "content": "<fragment mode=\"section\" requested-start=\"E5NWdCtqoou3alxc4r8crMk0nGb\"><h1 id=\"E5NWdCtqoou3alxc4r8crMk0nGb\">程序逻辑</h1><p id=\"PAzHd8TykojnQDxDWgbcmRown9e\"></p><h2 id=\"RgVndGATboBmHZxPx4fcLBeEn6e\">个人面板</h2><table id=\"BwyddII53ou3vIxDNg0cd9f1n6c\"><colgroup><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td><p id=\"K1bxdfFt0oYPVBx6lc4c9DhJnie\"><b>Key类别</b></p></td><td><p id=\"NXPEdOqERo8oxKxJ7dwcMbg1nth\"><b>Key</b></p></td><td><p id=\"WIGadccECoOY23xBoUfcz5LTnRe\"><b>Value</b></p></td><td><p id=\"RbQTdHMvkoQwMwx3FRTc6PeGnXc\"><b>玩家是否可见</b></p></td><td><p id=\"QSlmd6VUSo29ACxzNAvcCoU6nAd\"><b>变化时机</b></p></td><td><p id=\"FpoIdUcI0oy0erxJKBQcPVxmnfg\"><b>影响</b></p></td></tr><tr><td><p id=\"MPKqdN5nYogMVbxcjEfcDlhlnll\">金钱</p></td><td><p id=\"VwQOdhK33ob5SPxSAEKcdKmxnhg\">金钱</p></td><td><p id=\"RC6Qd6ZPXoAMaBxFHfCcNpk0nrh\">0-1000，初始25</p><p id=\"Uiedd2zYzoeeMjx2z1UcCDpXnXc\"></p></td><td><p id=\"WPMxdiFpuohriox9g3fcp6GmnWc\">是</p></td><td><ul><li id=\"ManKdS5eVoYs6qxPb44ceUjIn0g\">每月第五天计算收入时（5天循环）随机增加（100-150）</li><li id=\"Sl4zda7Ifo5bEzxcy1Sc0IhinEh\">清扫时收入额外增加（每次当月增加10）</li><li id=\"DcuNdCkzUoSrkPx0tA2cO9dynPf\">每月固定扣减（50）<ul><li id=\"EfIcdhVinoqrVUxTI4vcMYj5nde\">每次种菜时当月固定扣减减少5</li></ul></li><li id=\"V0MbddVa0ohdr2x6Tmsc6n1EnUd\">第五天选择进入游戏厅时需要扣减20</li><li id=\"FuROdWiERogkQuxUiA3cHXatn5l\">第五天买礼物时根据礼物价值扣减</li></ul></td><td><p id=\"OceydJNjOoAhujxLvaych5fcnUe\">是否能够购买专属道具--&gt;解锁结局彩蛋/剧情彩蛋</p><p id=\"Vuu8dmMrjoGF0cxl8jbchVlVnkb\"></p></td></tr><tr><td rowspan=\"4\"><p id=\"DkkPdAMZyogmR7x0n3DcviNSnsg\">好感度</p></td><td><p id=\"Im6ddJD8soErwqxVKlccLcYxnhc\">申箬青好感</p></td><td rowspan=\"4\"><p id=\"CXw1dSMkooMlLdxeF3ScwxqynOd\">0-100，初始=0</p></td><td><p id=\"WZKLd70j7o9mv6xsbhkcNTqVnnf\">否</p></td><td rowspan=\"4\"><p id=\"IJghdkgN8o6XIzxPWXPcRyxcnml\">特定选项触发时增加</p><p id=\"J6aTdTC2Bo682KxtpkBcAQ5hnKe\"></p></td><td rowspan=\"4\"><ol><li id=\"K161dfshwobJzHx577kcTGCLnXf\" seq=\"1\" seq-marker=\"1. \">好感决定进入某地时优先触发谁的剧情</li><li id=\"T5Bgd5AnzoMHPXxdhKXc9l7xnvc\" seq-marker=\"2. \">能力值+好感+已解锁第二章小剧情==进入结局的判断条件</li></ol></td></tr><tr><td><p id=\"X4u5dZCT1oAVzDxOsqpcKm3mnWZ\">燕于飞好感</p></td><td><p id=\"PBCrdoveIoeN07xm5stcDjEXnlc\">否</p></td></tr><tr><td><p id=\"AnqhdPmeuojuUYxyuzact85hnMf\">林夕染好感</p></td><td><p id=\"LmC9dpBhJocZfSx4UfJclfr3nHH\">否</p></td></tr><tr><td><p id=\"VPfsdGPPpomwXxxxtmzcpIxpnPY\">慕容盈袖好感</p></td><td><p id=\"TxLDdgrCuoezH0xIX8EcYvz8nyu\">否</p></td></tr><tr><td rowspan=\"3\"><p id=\"K7iId7qOfo2FhSxEivJcM6G9nMc\">能力值</p></td><td><p id=\"NvoAdPvoNoygJnxViDrcgAHKnz8\">洞察</p></td><td rowspan=\"3\"><p id=\"HciVdDvz9oGCuoxflxMc8UHunGb\">0-100，初始=0</p><p id=\"TavGdBrALoJddqxxsm3cT2U4n4c\"></p></td><td><p id=\"QJSJd24OeoAZ4RxFepncLBHXnih\">是</p></td><td rowspan=\"3\"><p id=\"Frt1d24Yyo6W13x9TKVcF9INn3Z\">上课时选择</p></td><td rowspan=\"3\"><ol><li id=\"I4s1dXNOpozwwhxIgCLcINQ4n1c\" seq=\"1\" seq-marker=\"1. \">解锁最终结局</li><li id=\"Ie0HdhGm3oSb40x0QYWcInHvnoh\" seq-marker=\"2. \">解锁小剧情彩蛋</li><li id=\"Sv2RdYiwdoIkeOxv7KMcEe1HnZg\" seq-marker=\"3. \">【经营】属性增加时，每月收入增加对应经营能力的值。</li></ol><p id=\"ClnHdmSntoj9ngxDty2cBLfenn8\"></p><p id=\"Las5dpMSvoEngMxn282cg3PDn9d\"></p></td></tr><tr><td><p id=\"K71FdBFDCopzMBx7zgmcGbeBn7t\">经营</p></td><td><p id=\"IgmEdaUJIo7FZaxSZ0xc7Gb2nCf\">是</p></td></tr><tr><td><p id=\"KNetd60AJoDoYmx34EWcCOPDnRf\">无为</p></td><td><p id=\"SrzPdp9aYojdr5x4BLWcPxXVnWb\">是</p></td></tr><tr><td><p id=\"ORyHdcO4BotYN3xFspDc3uohnFg\">玩家已解锁剧情</p></td><td><p id=\"IwZRd7eSTovIiHxknqscaz3Unvd\">玩家已解锁剧情</p></td><td><p id=\"U2a8dpbzYojiyAxwiKOcIUh5njf\">数组或对象,存入各支线已解锁剧情，根据已解锁剧情和条件判断进入各个支线的下一个跳出子剧情</p></td><td><p id=\"F0o8dGNBaor8U9x98RocTExAngc\">否</p></td><td><p id=\"JtHydwEYyoQQ1jxmIloc8gUqnpW\">每次完成特殊剧情时记入</p></td><td><p id=\"Vrqkd8yUEovyHAxTO1fcGLzJnFe\"></p></td></tr><tr><td><p id=\"EVaHdzmsLoJxZmxIsJQchxl8nBg\">玩家拥有的物品</p></td><td><p id=\"MCq7djeNQo4icCxkBc5cNe63nuh\">玩家已购买物品</p></td><td><p id=\"X43adpbbUoFPiPxudG5cMMqhnkf\">数组,存入玩家已购买物品，根据已购买物品条件判断进入对应剧情后是否有彩蛋。</p></td><td><p id=\"BBWjdqDwBoXYWXx7JBXc2mvqnSb\">是</p></td><td><p id=\"Rmt3dSRVqolhCjx5QhjckkDqn7d\">每次购买后计入</p></td><td><ol><li id=\"D3OpdoXEJo0aYmx8OuDc9rognxe\" seq=\"1\" seq-marker=\"1. \">解锁小剧情彩蛋</li></ol></td></tr></tbody></table><h2 id=\"XPcFdrhlPocrpsxgxfpcQgk4nqe\">第二章剧情分层</h2><h3 id=\"HZlVdl9uIoZoNjxJ4lecyN2Dnfc\">时序</h3><ol><li id=\"ACpidFx0uoU9HFxKDmRcxNWAnPg\" seq=\"1\" seq-marker=\"1. \">一共5个月</li><li id=\"ZlRxdCU01oW9Taxc376cIDQ7nNg\" seq-marker=\"2. \">每个月有5天，线性顺序：</li></ol><ul><li id=\"L5hfdYpZLoToljx4H8Rcua4mnSp\">针对每个月第1-4天，每天有上午、下午和傍晚三次选择机会</li><li id=\"Razrd971KoScDBxB8gWccn5zneg\">每个月第5天开始时，结算当月收入和开支</li><li id=\"UDqRdx9yQo2Vzwxn5epcGe6Gnwg\">针对每个月第5天，只有一次选择H或I的机会。</li></ul><ol><li id=\"ELcYd8F4goJPZHx6BO9c7J9dnte\" seq-marker=\"1. \">5个月过完后，按玩家各角色好感度和能力值，决定进入谁的结局分支。匹配顺序优先级：慕容盈袖&gt;燕于飞&gt;申箬青&gt;师父</li></ol><h3 id=\"JlHad837io8LWdxsabZcWLoJnvh\">子情节类别</h3><table id=\"BFzAdUZHDo9yA2xXLc0cXkX4nHb\"><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td><p id=\"UfofdLn1goXOy0xOXs3cgcvZnie\">类别</p></td><td><p id=\"OLoId0zWPodaXgxifyzcJiEXn8g\">类型说明</p></td><td><p id=\"C5zVd6gY2oHSvNxCeVqc7tT4noc\">A分支</p></td><td><p id=\"LFWHd4qKAolhRbx2BhLc7Iqinyd\">B分支</p></td><td><p id=\"LGSZdirV4oHaPMxu92XclLrTnHf\">C分支</p></td><td><p id=\"ATpVdc2Udo8VwCx7gMbcADqAnQc\">D分支</p></td><td><p id=\"PmXxdS6Sro1htlxehPlcsIVkn8e\">E分支</p></td><td><p id=\"BKoUdPcFpoYRDwx5VPBc2kB2nef\">F分支</p></td><td><p id=\"G0aqdFNBKoBIS0xdzvAcQJdbn4c\">G分支</p></td><td><p id=\"AcxSdqnI5okcAmxT55RcGWLSnrb\">H分支</p></td><td><p id=\"X2INdTe5bo0vp6x09aycUsHhnmf\">I分支</p></td></tr><tr><td><p id=\"YaFmdlH2koyuU6xXjdTcE2tJnne\">唯一剧情</p></td><td><p id=\"O6BIdzwRxoh00fx1D0xcoXtInOd\">仅通过简单的选择执行的剧情</p></td><td><p id=\"KaNadh2RTopbq1xdrKkcyzPgn46\">-</p></td><td><p id=\"Ux8Odcd26oaeBtxfHfnckIvxn9g\">-</p></td><td><p id=\"HY01dTrOSoHRVfxqMVXcpkBfnhh\">-</p></td><td><p id=\"Lw4FdgEZ6oFugPxBVxuc1ji2n9b\">√</p><p id=\"OaR8dIHWsojfGBxWYDlcqrmrnFg\">可以考虑给3个选项植入小游戏</p></td><td><p id=\"AaYBdzhjiofgj0xsKilcdyDnn8f\">-</p></td><td><p id=\"FM4vdYN3poFJVrxA9C4cOSxfnyf\">-</p></td><td><p id=\"ZEmcd2bY5oYRM9xFIVtcidPwnTh\">-</p></td><td><p id=\"BhCVdgR6OorjpCxwQkwccuxQnld\">-</p></td><td><p id=\"R9kWdYYfYoQItHxt4z9cTIHnndc\">√</p></td></tr><tr><td><p id=\"ADtndRhmFo0zvvxtnwLci25Vn4b\">人物触发剧情</p></td><td><p id=\"TrxOdzvvOolWwnxtZuoclPx2nqd\"></p></td><td><p id=\"E4TgdXDPAoeaUYxgMR0cEmYpnkf\">林夕染</p><p id=\"FYLFd4UWYoQW8mxRFR0coPDinEc\">//编写结构[触发剧情（触发条件）]</p><p id=\"FYPAdaW5doHkM8xAU41csz7inHd\">[A003,A004（A003）]</p></td><td><p id=\"SKxKd7NBroeLsPxawXnc45HnnAc\">慕容盈袖</p><p id=\"UHbJd0OlpoaywMxJRMJcYS9ln4c\">燕于飞</p></td><td><p id=\"BWPcdcHyXovyXPxlZJFc7io3nIg\">香客（纯线性）</p></td><td><p id=\"LVTSd1Nl1ob38hxfctUcZkfankP\">-</p><p id=\"GLmUd0htJoXs7hxnOkMckreLnwb\"></p></td><td><p id=\"KR3rdpTFCowA15xZ7F5c8OP1nLb\">燕于飞</p></td><td><p id=\"CnWwdJ22EoB9ldxTuiDc5offnus\">申箬青</p><p id=\"AKobdq9UNoCuA5xEX4acgmtKn1e\">慕容盈袖</p></td><td><p id=\"VK9Od97eHoIOpIxZnSkc2exAnug\">林夕染</p><p id=\"HLyudeo9SoHqB3xO1qUcgBsJn3d\">慕容盈袖</p></td><td><p id=\"VwOgdhf7UoZ46mxKQ5Kclw1tn4c\">燕于飞</p></td><td><p id=\"CClFdJndnogSGNxd7nIclUQln2p\"></p></td></tr><tr><td><p id=\"RRbtdh0Z7oHJ8hxAQ9Rc5RyRnVc\">普通剧情</p></td><td><p id=\"OQGud3eKEoUZAWxWd88c6Ny7nxc\">与人物走向无关，但是yx普通的剧情</p></td><td><p id=\"EZTtdoIbHozhJwxklYIcFtLPncc\">√</p></td><td><p id=\"TEMkdxVBIoc6zPxOPaTcniOcnS8\">√</p></td><td><p id=\"EyxvdOpetoaGFlxLrKTcthBOnwh\"></p></td><td><p id=\"TjPAdiaKFo2Is0xJx3NcA4K4n3c\">-</p></td><td><p id=\"PCSJdizCWooODQxTrmpctNvtn4b\"></p></td><td><p id=\"AzbYdZx0ao8sRPxGs92cgzyQnlc\"></p></td><td><p id=\"U7X2dIrg0oJO4Ex9xCVc75TanAe\">-</p><p id=\"Op6OdrhQTobzU6xIVPwc36upnFc\"></p></td><td><p id=\"WlIBdbtM3oAinxxjCuTci30ynms\"></p></td><td><p id=\"BZg0dhOhaoDDXAxMHk9crhREnxg\"></p></td></tr><tr><td><p id=\"Il9gdCl5vo9ojQxpFKHcc7nInab\">兜底剧情</p></td><td><p id=\"NQRidt5zKoSMmnxHeS8cQBy6ntb\">当前选项所有人物触发剧情都完成时</p></td><td><p id=\"RO4ydrYrooygvdxj3IUcWW2InYd\"></p></td><td><p id=\"Qu8QdNmB8ob5xaxm5QMceQjhnub\"></p></td><td><p id=\"Cub5dc7aToMReKxfOo0cdTY5nvL\"></p></td><td><p id=\"NJKzdaH6Do8IgJxSkm1cKbaKnwg\">-</p></td><td><p id=\"DbRVdpTJ3oYqsuxvlkjc402Ynfd\"></p></td><td><p id=\"UnUmdZFTIoY19OxjRKBcZleMnkg\"></p></td><td><p id=\"ECS7dpYEXodiIdxCYHpc1MPinWc\">-</p></td><td><p id=\"FtaadEQsAo8H6SxeyvAcCFWRnOd\"></p></td><td><p id=\"WzzWdv49DohnpoxSfNLctlNxnff\"></p></td></tr></tbody></table><h3 id=\"TT0ado4ahoD4Gjx6Ii4crCacn8N\">详细说明</h3><table id=\"RKXPdljkbolHgjx4ASVcggB7nkd\"><colgroup><col/><col/><col/></colgroup><tbody><tr><td><p id=\"PsyUd20EEoGsCtx6U3UcNU6PnGB\"><b>选项</b></p></td><td><p id=\"GmqMdEARloj9HCxXE3bcgX9knZb\"><b>是否允许选择判断条件</b></p></td><td><p id=\"ACZtdoQ1KoDRSdxsrmbcuNjwnxh\"><b>剧情走向及判断条件</b></p><p id=\"MLiKdY3Khoospqx5wXbc9eSEnjh\">*针对部分人物在每个选项，均有对应的剧情线（线性展开）</p><p id=\"TPn3dng6Go2oYVxbHM0cCy7VnQe\">*当在当前选项下所有满足条件的特殊剧情被刷完时，每当需要跳转到特殊剧情时，进入当前分块的兜底剧情。</p><p id=\"JRH4dase1o7mlsxnFtncDTUanQe\">*每个剧情对应的玩家选择会影响后续触发哪些剧情</p></td></tr><tr><td><p id=\"VU9HdyZHooUqHgxIiKPcqVw7nEc\">A.清扫</p><p id=\"Vp55dc8BEoakwrxZv7fcxskFnqb\"></p></td><td><p id=\"ReUJdDjlIo4EBcxblnzcdBSrnXc\">默认每个月第1-4天允许</p></td><td><p id=\"Ra5Pd1THwoNY5MxX2jNcaRY6nCg\">每月固定1次A001,1次A002，之后按A003-往下顺序</p><p id=\"Hr8UdPf8roZaoixW86zcU0F0nOd\">*不管是否为特殊剧情，均增加收入</p></td></tr><tr><td><p id=\"WdLadg7Q8o5tjfx5BV3cVgZknSf\">B. 种地</p></td><td><p id=\"Y9oqdlt4goOhBUxdaiMcHhU8n2d\">默认每个月第1-4天允许</p></td><td><ul><li id=\"Oxs4dkwYOocH8IxHoi7cR7atnuc\">没达到解锁条件：均等概率刷普通剧情</li><li id=\"GXRRdpQQoow0H1xkyuRcX4OInBN\">达到燕于飞和慕容盈袖其中之一的解锁条件：优先刷出已满足条件的人物剧情线（剧情线会根据角色和解锁条件形成两个线性顺序list）</li><li id=\"O9rLdIRbsoCP3gxQSWyc99iHnsb\">达到了2个解锁条件：优先刷好感度高的角色的剧情list，好感均等则（慕容盈袖优先级&gt;燕于飞）</li></ul><p id=\"U9gmdv9EOo0PznxtgBqcJrImn9m\">*不管是否为特殊剧情，均减少开支</p></td></tr><tr><td><p id=\"HlzvdaLsbofG2zx4PplcIGtXnpf\">C. 陪香客唠家常</p></td><td><p id=\"VLhqdBVe7o4ThmxXXh8cLfG0nLf\">默认每个月第1-4天允许</p></td><td><p id=\"UbM5dofm9okzboxcW8NcsyFWn6d\">纯线性（C001-C007按顺序递增，每次选择只完成1个小剧情，全部完成后如果仍然选择，则进入兜底剧情C000）</p></td></tr><tr><td><p id=\"Ima5dgWsZoEIvVxHR1CcX7VTn6c\">D. 找师父学习</p></td><td><p id=\"FzzTd9D8soQeuvxwMvMcqFMGnHf\">默认每个月第1-4天允许</p></td><td><p id=\"G14sdZX0joi5KRxkXI0c9vrGnmh\">固定1个剧情，根据玩家选择增加对应值。</p></td></tr><tr><td><p id=\"Y6pudFMSgofeFhxNd96cDeZxnRg\">E. 燕于飞找你玩（见过1次燕于飞之后在每月第2、4天解锁）</p></td><td><p id=\"Fp24dOybzogUoPxjUFDc9mWBnPT\">选过1次H后，每个月第2、4天允许。</p></td><td><p id=\"QWOcdIiZIokAWtxQVSdcOkppned\">纯线性（E001-E007按顺序递增，每次选择只完成1个小剧情，全部完成后如果仍然选择，则进入兜底剧情E000）</p></td></tr><tr><td><p id=\"RgrrddQbto5qvpxCK5hcslb4nBc\">F. 后山探险</p></td><td><p id=\"YLKedJkNHolMUQxmjgWcPzQQnRc\">进入过C002后，每个月第1-4天允许</p></td><td><p id=\"U9JkdbTcxoJhSYx9gd2cLDmQnKh\"></p></td></tr><tr><td><p id=\"ZaJcdaU71oe4zCxccu8c9rV4nwf\"><br/>G. 陪师父吃饭</p></td><td><p id=\"KyzMdO73Mo6lo9xD7PecQQLCn3d\"></p></td><td><p id=\"GFa1dwJe6otmvLxnPJfcx7Hnn4P\"></p></td></tr><tr><td><p id=\"YWx2dT2P6oWEZixnjn8cbur0n8e\">H. 游戏厅</p></td><td><p id=\"EdDid4NAmow4hXxGnulcXd1sn2j\">默认每个月第5天允许</p></td><td><p id=\"UwoNdHUgYoOwUMxhzqtc1mhynpc\">纯线性（H001-H004按顺序递增，每次选择只完成1个小剧情，全部完成后如果仍然选择，则进入兜底剧情E000）</p></td></tr><tr><td><p id=\"UJgtdLoMUooUhyxMbTmcDhb3nwc\"><br/>I. 买礼物</p></td><td><p id=\"YtmcdXD4to7fcWxUQyKcIdmanVd\">默认每个月第5天允许</p></td><td><p id=\"O73id5fnroIlVnxGug7ccFXRnge\">固定1个剧情，根据玩家选择拥有对应物品。</p></td></tr></tbody></table></fragment>",
+      "document_id": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+      "revision_id": 3390
+    },
+    "sheet": {
+      "actual_range": "A1:T6",
+      "annotated_csv": "[row=1] 从此章开始进入选择循环，1个月=4天+1天去镇上，1天=上午+下午+傍晚，,主控能做的事：,上午,\"A. 清扫\nB. 种地\nC. 陪香客唠家常\",清扫种地影响收入，陪香客聊天会影响人物剧情解锁,清扫有概率刷出师父，种地有概率刷出丁香,,扫地做一个简单的扫地小游戏？比如有落叶和垃圾等，加点简单的垃圾分类步骤？,,,,,,,,,,,,\n[row=2] ,,下午,\"D. 找师父学习\nE. 燕于飞找你玩（见过1次燕于飞之后在每月第2、4天解锁）\",,,,学习这里怎么个表现呢，做成那种学习符咒？比如上面列出5个符咒，看一会后隐藏，下面需要还原原来的样子？,,,,,,,,,,,,\n[row=3] ,,傍晚,\"F. 后山探险\nG. 陪师父吃饭\",后山探险是找蛇，陪师父吃饭增加师父好感度，有概率刷出丁香,,,找蛇我能想到的就是类似找茬的小游戏，场景中有几个蛇需要找出来，有现时，找到几个影响这个节点的好感度？,,,,,,,,,,,,\n[row=4] ,,每月必须花费第5天下山去镇子,\"H. 游戏厅\nI. 买礼物\n\",钱够的话可以在这里买点奇妙纪念品+游戏厅，纪念品可以刷好感用,,,游戏厅太宽泛了，想不到具体的画面,,,,,,,,,,,,\n[row=5] ,,第四天结束后，第五天开始前清算当月收入,,,,,,,,,,,,,,,,,\n[row=6] 基础属性：,,,,,,,,,,,,,,,,,,,",
+      "col_count": 20,
+      "col_indices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T"
+      ],
+      "current_region": "A1:H6",
+      "has_more": false,
+      "revision": 3053,
+      "row_count": 6,
+      "row_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "warning_message": "①定位行号：必须直接读取 annotated_csv 中每行开头的 [row=N] 前缀（N 即为实际表格行号），不要自己数行，不要用\"序号/ID/编号\"列的值推导（这些列可能跳号或从非 1 开始，会全盘错位）；②定位列字母：必须用 col_indices[j]，不要手数。"
+    }
+  },
+  "headerMapping": {
+    "type": "schedule_matrix",
+    "C": "时段",
+    "D": "行动选项",
+    "E": "逻辑备注",
+    "F": "触发备注",
+    "H": "制作备注",
+    "fiveColumnDialogueMapping": null
+  },
+  "sourceRange": "hpgKna!A1:T6",
+  "importedRows": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "skippedRows": [
+    {
+      "row": 6,
+      "reason": "基础属性标题无数值；数值取自文档个人面板"
+    }
+  ],
+  "blockedRows": [],
+  "dialogueLines": 0,
+  "presentationCommands": 0,
+  "storyPath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset",
+  "storyId": "0942d3f17d504f01ba64169b17e2a578",
+  "chapterPath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Chapter.asset",
+  "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+  "chapterGuid": "75ad694ccc0992e41ba54774f0d7ab5a",
+  "nodes": {
+    "Loop": {
+      "id": "e3c97a300612453f989eb5b5657ee788",
+      "label": "计算当前时段",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "1da33e2a3ff541dea647a5c2b0377260",
+          "_kind": 31,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_slot",
+          "_integerOperation": 0,
+          "_integerOperand": 0,
+          "_operandVariableId": "ch2_monthStep",
+          "_operandScope": 1
+        },
+        {
+          "_commandId": "aab064bda1924320b3703dab65c75494",
+          "_kind": 31,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_slot",
+          "_integerOperation": 5,
+          "_integerOperand": 3,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        },
+        {
+          "_commandId": "c1b30227712441c6b6f0ab5a4fd4f79e",
+          "_kind": 31,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_eWindow",
+          "_integerOperation": 0,
+          "_integerOperand": 0,
+          "_operandVariableId": "ch2_monthStep",
+          "_operandScope": 1
+        },
+        {
+          "_commandId": "ce3ef7b8dd8e45bd9756155b2a9d559d",
+          "_kind": 31,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_eWindow",
+          "_integerOperation": 5,
+          "_integerOperand": 6,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        }
+      ],
+      "next": "LoopRouter",
+      "routes": [],
+      "prompt": null,
+      "name": "Loop",
+      "asset": {
+        "name": "CH03_Chapter02_Loop",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_Loop.asset",
+        "guid": "f1de184747dd5da4e8339407c516e078",
+        "nodeId": "e3c97a300612453f989eb5b5657ee788",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "",
+        "commandIds": [
+          "1da33e2a3ff541dea647a5c2b0377260",
+          "aab064bda1924320b3703dab65c75494",
+          "c1b30227712441c6b6f0ab5a4fd4f79e",
+          "ce3ef7b8dd8e45bd9756155b2a9d559d"
+        ],
+        "targets": {
+          "_next": "6c20dac8b09f48db819e41b7f48db868"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {
+        "_next": "6c20dac8b09f48db819e41b7f48db868"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "LoopRouter": {
+      "id": "6c20dac8b09f48db819e41b7f48db868",
+      "label": "月份 / 步数分流",
+      "kind": "Branch",
+      "commands": [],
+      "next": null,
+      "routes": [
+        {
+          "id": "ca984ba1607448a99fe2537b350f6b2a",
+          "text": "五个月完成",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.ca984ba1607448a99fe2537b350f6b2a",
+          "target": "Exit_Jump",
+          "predicates": [
+            {
+              "_variableId": "ch2_month",
+              "_scope": 1,
+              "_comparison": 3,
+              "_value": {
+                "_type": 1,
+                "_bool": false,
+                "_int": 6,
+                "_string": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "9bcfa0f0396b4b4db718830507cb23d6",
+          "text": "本月13步完成",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.9bcfa0f0396b4b4db718830507cb23d6",
+          "target": "NextMonth_Jump",
+          "predicates": [
+            {
+              "_variableId": "ch2_monthStep",
+              "_scope": 1,
+              "_comparison": 3,
+              "_value": {
+                "_type": 1,
+                "_bool": false,
+                "_int": 13,
+                "_string": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "45b9e8034ddc4ac1baf1a549cfb38477",
+          "text": "第12步：结算后去镇上",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.45b9e8034ddc4ac1baf1a549cfb38477",
+          "target": "Settlement_Jump",
+          "predicates": [
+            {
+              "_variableId": "ch2_monthStep",
+              "_scope": 1,
+              "_comparison": 0,
+              "_value": {
+                "_type": 1,
+                "_bool": false,
+                "_int": 12,
+                "_string": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "91ebdf5ba35b443f8736a6a4c3104205",
+          "text": "下午",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.91ebdf5ba35b443f8736a6a4c3104205",
+          "target": "Afternoon_Jump",
+          "predicates": [
+            {
+              "_variableId": "loop_slot",
+              "_scope": 0,
+              "_comparison": 0,
+              "_value": {
+                "_type": 1,
+                "_bool": false,
+                "_int": 1,
+                "_string": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "fe96dbe12ac245d7955a54f4881b0769",
+          "text": "傍晚",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.fe96dbe12ac245d7955a54f4881b0769",
+          "target": "Evening_Jump",
+          "predicates": [
+            {
+              "_variableId": "loop_slot",
+              "_scope": 0,
+              "_comparison": 0,
+              "_value": {
+                "_type": 1,
+                "_bool": false,
+                "_int": 2,
+                "_string": ""
+              }
+            }
+          ]
+        }
+      ],
+      "prompt": null,
+      "name": "LoopRouter",
+      "asset": {
+        "name": "CH03_Chapter02_LoopRouter",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_LoopRouter.asset",
+        "guid": "097d4e52a0d16f54597cd64aca12c226",
+        "nodeId": "6c20dac8b09f48db819e41b7f48db868",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeBranchSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_branches.Array.data[0]._target": "87cb4e98e2024466bdbe66e9edc59944",
+          "_branches.Array.data[1]._target": "6360d82041dc4c849ea528a91b4ff162",
+          "_branches.Array.data[2]._target": "c0f056deb12e4505aa25002f0873c9ad",
+          "_branches.Array.data[3]._target": "4faaca5730ef43c98d8842add5f3148b",
+          "_branches.Array.data[4]._target": "a8829ea436954d0fa617eeb96d327a79",
+          "_fallback": "7eb4c076d29f4d7dbd726ed55e01a363"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {
+        "_branches.Array.data[0]._target": "87cb4e98e2024466bdbe66e9edc59944",
+        "_branches.Array.data[1]._target": "6360d82041dc4c849ea528a91b4ff162",
+        "_branches.Array.data[2]._target": "c0f056deb12e4505aa25002f0873c9ad",
+        "_branches.Array.data[3]._target": "4faaca5730ef43c98d8842add5f3148b",
+        "_branches.Array.data[4]._target": "a8829ea436954d0fa617eeb96d327a79",
+        "_fallback": "7eb4c076d29f4d7dbd726ed55e01a363"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Morning": {
+      "id": "0e3f6fce6bbc413eb174919fd8478b40",
+      "label": "上午 · 选择行动",
+      "kind": "Choice",
+      "commands": [],
+      "next": null,
+      "routes": [
+        {
+          "id": "08ff5471f5664e0da35837c398eeadb0",
+          "text": "A. 清扫",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.08ff5471f5664e0da35837c398eeadb0",
+          "target": "A_Call",
+          "predicates": []
+        },
+        {
+          "id": "af7dd97907e042369cfdf7d701473546",
+          "text": "B. 种地",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.af7dd97907e042369cfdf7d701473546",
+          "target": "B_Call",
+          "predicates": []
+        },
+        {
+          "id": "973b377531fe420ebeffefbc6056e710",
+          "text": "C. 陪香客唠家常",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.973b377531fe420ebeffefbc6056e710",
+          "target": "C_Call",
+          "predicates": []
+        }
+      ],
+      "prompt": "上午，主控能做的事：",
+      "promptKey": "prompt.0942d3f17d504f01ba64169b17e2a578.0e3f6fce6bbc413eb174919fd8478b40",
+      "name": "Morning",
+      "asset": {
+        "name": "CH03_Chapter02_Morning",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Morning.asset",
+        "guid": "517e6232e50791648b138307da8cad19",
+        "nodeId": "0e3f6fce6bbc413eb174919fd8478b40",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeChoiceSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_options.Array.data[0]._target": "a5bc327a62a94b38ae6ef7fd5a4842c1",
+          "_options.Array.data[1]._target": "cc06fbebb1e448238056e45b105e917f",
+          "_options.Array.data[2]._target": "2e58d92c6786422092a9877d4c75b1a7"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {
+        "_options.Array.data[0]._target": "a5bc327a62a94b38ae6ef7fd5a4842c1",
+        "_options.Array.data[1]._target": "cc06fbebb1e448238056e45b105e917f",
+        "_options.Array.data[2]._target": "2e58d92c6786422092a9877d4c75b1a7"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Afternoon": {
+      "id": "9ae06dbb25974227b5415b385ace6293",
+      "label": "下午 · 选择行动",
+      "kind": "Choice",
+      "commands": [],
+      "next": null,
+      "routes": [
+        {
+          "id": "1b849bfd2c75429da798ee173facdbc5",
+          "text": "D. 找师父学习",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.1b849bfd2c75429da798ee173facdbc5",
+          "target": "D_Call",
+          "predicates": []
+        },
+        {
+          "id": "577c9c1606db41938b39c7177b2cae5b",
+          "text": "E. 燕于飞找你玩",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.577c9c1606db41938b39c7177b2cae5b",
+          "target": "E_Call",
+          "predicates": [
+            {
+              "_variableId": "ch2_hVisits",
+              "_scope": 1,
+              "_comparison": 3,
+              "_value": {
+                "_type": 1,
+                "_bool": false,
+                "_int": 1,
+                "_string": ""
+              }
+            },
+            {
+              "_variableId": "loop_eWindow",
+              "_scope": 0,
+              "_comparison": 0,
+              "_value": {
+                "_type": 1,
+                "_bool": false,
+                "_int": 4,
+                "_string": ""
+              }
+            }
+          ]
+        }
+      ],
+      "prompt": "下午，主控能做的事：",
+      "promptKey": "prompt.0942d3f17d504f01ba64169b17e2a578.9ae06dbb25974227b5415b385ace6293",
+      "name": "Afternoon",
+      "asset": {
+        "name": "CH03_Chapter02_Afternoon",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Afternoon.asset",
+        "guid": "94c1bd4cd0dc1ed4a9bdce71f98d5392",
+        "nodeId": "9ae06dbb25974227b5415b385ace6293",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeChoiceSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_options.Array.data[0]._target": "903b531d42f34921b6c5942b9569bf71",
+          "_options.Array.data[1]._target": "74cc80caac0c4343a3d51ba4ee7877ad"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {
+        "_options.Array.data[0]._target": "903b531d42f34921b6c5942b9569bf71",
+        "_options.Array.data[1]._target": "74cc80caac0c4343a3d51ba4ee7877ad"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Evening": {
+      "id": "b09ca941a1fe47f9bc1622b50cd81c4b",
+      "label": "傍晚 · 选择行动",
+      "kind": "Choice",
+      "commands": [],
+      "next": null,
+      "routes": [
+        {
+          "id": "ce3fafe990424c6a824c114e3353be97",
+          "text": "F. 后山探险",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.ce3fafe990424c6a824c114e3353be97",
+          "target": "F_Call",
+          "predicates": [
+            {
+              "_variableId": "ch2_cVisits",
+              "_scope": 1,
+              "_comparison": 3,
+              "_value": {
+                "_type": 1,
+                "_bool": false,
+                "_int": 2,
+                "_string": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "e6ddf42381de4c868fd86df4835c23e5",
+          "text": "G. 陪师父吃饭",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.e6ddf42381de4c868fd86df4835c23e5",
+          "target": "G_Call",
+          "predicates": []
+        }
+      ],
+      "prompt": "傍晚，主控能做的事：",
+      "promptKey": "prompt.0942d3f17d504f01ba64169b17e2a578.b09ca941a1fe47f9bc1622b50cd81c4b",
+      "name": "Evening",
+      "asset": {
+        "name": "CH03_Chapter02_Evening",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Evening.asset",
+        "guid": "9f30a460adfa3b74fb2b0e9caedd9aca",
+        "nodeId": "b09ca941a1fe47f9bc1622b50cd81c4b",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeChoiceSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_options.Array.data[0]._target": "4592372f01654309b6f6c71ef1458756",
+          "_options.Array.data[1]._target": "def56c63c2df4bdba6028c9df2833d17"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {
+        "_options.Array.data[0]._target": "4592372f01654309b6f6c71ef1458756",
+        "_options.Array.data[1]._target": "def56c63c2df4bdba6028c9df2833d17"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Town": {
+      "id": "4ef0f7afaf3e451081c34cd78f965cbc",
+      "label": "镇上 · 选择行动",
+      "kind": "Choice",
+      "commands": [],
+      "next": null,
+      "routes": [
+        {
+          "id": "40c83811b9924c4abe6f88bf84a87a1f",
+          "text": "H. 游戏厅",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.40c83811b9924c4abe6f88bf84a87a1f",
+          "target": "H_Call",
+          "predicates": [
+            {
+              "_variableId": "player_money",
+              "_scope": 1,
+              "_comparison": 3,
+              "_value": {
+                "_type": 1,
+                "_bool": false,
+                "_int": 20,
+                "_string": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "3809341259cf4437994019153b9a2d7e",
+          "text": "I. 买礼物",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.3809341259cf4437994019153b9a2d7e",
+          "target": "I_Call",
+          "predicates": []
+        }
+      ],
+      "prompt": "每月第5天，去镇上：",
+      "promptKey": "prompt.0942d3f17d504f01ba64169b17e2a578.4ef0f7afaf3e451081c34cd78f965cbc",
+      "name": "Town",
+      "asset": {
+        "name": "CH03_Chapter02_Town",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Town.asset",
+        "guid": "fdd0044853b23284a94151ea232a5619",
+        "nodeId": "4ef0f7afaf3e451081c34cd78f965cbc",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeChoiceSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_options.Array.data[0]._target": "35e766bbd1f14b51805f51251e3e3911",
+          "_options.Array.data[1]._target": "bc8ef40b6aac481db3ff357508c57920"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {
+        "_options.Array.data[0]._target": "35e766bbd1f14b51805f51251e3e3911",
+        "_options.Array.data[1]._target": "bc8ef40b6aac481db3ff357508c57920"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "A_Action": {
+      "id": "f520c98f310d41cda3c626aa0c764168",
+      "label": "A · 清扫（待补剧情）",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "a4c7de73883b40c8a284c69959c2a0f5",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_lastAction",
+          "_value": {
+            "_type": 2,
+            "_bool": false,
+            "_int": 0,
+            "_string": "A"
+          }
+        },
+        {
+          "_commandId": "7a17ac3588754fa798f36981e2dfeafc",
+          "_kind": 31,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_monthClean",
+          "_integerOperation": 1,
+          "_integerOperand": 1,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        }
+      ],
+      "next": "A_Return",
+      "routes": [],
+      "prompt": null,
+      "name": "A_Action",
+      "asset": {
+        "name": "CH03_Chapter02_A_Action",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A_Action.asset",
+        "guid": "67b9be3b6ff9ca849bb59864ccc3a5fb",
+        "nodeId": "f520c98f310d41cda3c626aa0c764168",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "5e28a8f8f0d343988ca2caf5f17962a6",
+        "commandIds": [
+          "a4c7de73883b40c8a284c69959c2a0f5",
+          "7a17ac3588754fa798f36981e2dfeafc"
+        ],
+        "targets": {
+          "_next": "bd11a97755394913af9cf8e47531f810"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 1,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "5e28a8f8f0d343988ca2caf5f17962a6",
+      "connections": {
+        "_next": "bd11a97755394913af9cf8e47531f810"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "B_Action": {
+      "id": "114da9d1eb0246b18b25c65ecd1f1ccb",
+      "label": "B · 种地（待补剧情）",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "683ff0e365134b3081a2a29d4b6b397f",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_lastAction",
+          "_value": {
+            "_type": 2,
+            "_bool": false,
+            "_int": 0,
+            "_string": "B"
+          }
+        },
+        {
+          "_commandId": "8672c1e6804b4ceba8e16bb74b6a47d4",
+          "_kind": 31,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_monthPlant",
+          "_integerOperation": 1,
+          "_integerOperand": 1,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        }
+      ],
+      "next": "B_Return",
+      "routes": [],
+      "prompt": null,
+      "name": "B_Action",
+      "asset": {
+        "name": "CH03_Chapter02_B_Action",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_B_Action.asset",
+        "guid": "eab08316b3768874a98ef84b08ba47e1",
+        "nodeId": "114da9d1eb0246b18b25c65ecd1f1ccb",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "f0f765ac557246baaf61681fc60bd000",
+        "commandIds": [
+          "683ff0e365134b3081a2a29d4b6b397f",
+          "8672c1e6804b4ceba8e16bb74b6a47d4"
+        ],
+        "targets": {
+          "_next": "2da4d95c50f6424fbdca0825e5df1a70"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 1,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "f0f765ac557246baaf61681fc60bd000",
+      "connections": {
+        "_next": "2da4d95c50f6424fbdca0825e5df1a70"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "C_Action": {
+      "id": "cec0a963791d452d805e6b5cab16cf7e",
+      "label": "C · 陪香客唠家常（待补剧情）",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "0580dee9e70a49eb8429c94388397bed",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_lastAction",
+          "_value": {
+            "_type": 2,
+            "_bool": false,
+            "_int": 0,
+            "_string": "C"
+          }
+        },
+        {
+          "_commandId": "505093f76e3a4db2afc7faed89419ca1",
+          "_kind": 31,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_cVisits",
+          "_integerOperation": 1,
+          "_integerOperand": 1,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        }
+      ],
+      "next": "C_Return",
+      "routes": [],
+      "prompt": null,
+      "name": "C_Action",
+      "asset": {
+        "name": "CH03_Chapter02_C_Action",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_C_Action.asset",
+        "guid": "eb4a4a9e88d621d49878a4972d3fb33e",
+        "nodeId": "cec0a963791d452d805e6b5cab16cf7e",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "c47ba3ea977e47eaad45c4c6d3eb8aa5",
+        "commandIds": [
+          "0580dee9e70a49eb8429c94388397bed",
+          "505093f76e3a4db2afc7faed89419ca1"
+        ],
+        "targets": {
+          "_next": "5a54287117bb464e8f7f3cfb2853d355"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 1,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "c47ba3ea977e47eaad45c4c6d3eb8aa5",
+      "connections": {
+        "_next": "5a54287117bb464e8f7f3cfb2853d355"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "D_Action": {
+      "id": "3f9ade496914464b8c345dc29be5e800",
+      "label": "D · 找师父学习（待补剧情）",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "5b262ca406394788817e5651f4e61bfc",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_lastAction",
+          "_value": {
+            "_type": 2,
+            "_bool": false,
+            "_int": 0,
+            "_string": "D"
+          }
+        }
+      ],
+      "next": "D_Return",
+      "routes": [],
+      "prompt": null,
+      "name": "D_Action",
+      "asset": {
+        "name": "CH03_Chapter02_D_Action",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_D_Action.asset",
+        "guid": "659828ea33977d94e9c5a1383a90cc32",
+        "nodeId": "3f9ade496914464b8c345dc29be5e800",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "d15fd9ad3c804f748aed0f2a162d63f9",
+        "commandIds": [
+          "5b262ca406394788817e5651f4e61bfc"
+        ],
+        "targets": {
+          "_next": "f8686ebcbfad4fb99adc4f600e90b4d1"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 2,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "d15fd9ad3c804f748aed0f2a162d63f9",
+      "connections": {
+        "_next": "f8686ebcbfad4fb99adc4f600e90b4d1"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "E_Action": {
+      "id": "72dec05b499d4371bfd69f37c4008467",
+      "label": "E · 燕于飞找你玩（待补剧情）",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "5c255b51b97a4d0b8f76b080bef89320",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_lastAction",
+          "_value": {
+            "_type": 2,
+            "_bool": false,
+            "_int": 0,
+            "_string": "E"
+          }
+        },
+        {
+          "_commandId": "b7b0d9fe87ff45b38fe5d918971996b7",
+          "_kind": 31,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_eVisits",
+          "_integerOperation": 1,
+          "_integerOperand": 1,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        }
+      ],
+      "next": "E_Return",
+      "routes": [],
+      "prompt": null,
+      "name": "E_Action",
+      "asset": {
+        "name": "CH03_Chapter02_E_Action",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_E_Action.asset",
+        "guid": "b9c905977eb818e43928c68f559d0b09",
+        "nodeId": "72dec05b499d4371bfd69f37c4008467",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "cfd93b4a2ebc4d36b5e1f2732efa8fc0",
+        "commandIds": [
+          "5c255b51b97a4d0b8f76b080bef89320",
+          "b7b0d9fe87ff45b38fe5d918971996b7"
+        ],
+        "targets": {
+          "_next": "4e193120c442429b83a854051b3fd994"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 2,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "cfd93b4a2ebc4d36b5e1f2732efa8fc0",
+      "connections": {
+        "_next": "4e193120c442429b83a854051b3fd994"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "F_Action": {
+      "id": "9d70b6a6d23c460c8e1f0ef5f9751282",
+      "label": "F · 后山探险（待补剧情）",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "a491bc4ed5894053ba34bca534e32424",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_lastAction",
+          "_value": {
+            "_type": 2,
+            "_bool": false,
+            "_int": 0,
+            "_string": "F"
+          }
+        }
+      ],
+      "next": "F_Return",
+      "routes": [],
+      "prompt": null,
+      "name": "F_Action",
+      "asset": {
+        "name": "CH03_Chapter02_F_Action",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_F_Action.asset",
+        "guid": "1428076757aeda14e9d535b5e458b637",
+        "nodeId": "9d70b6a6d23c460c8e1f0ef5f9751282",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "6f31b289b07445b89f090b36cce4f919",
+        "commandIds": [
+          "a491bc4ed5894053ba34bca534e32424"
+        ],
+        "targets": {
+          "_next": "8e8e26efb04e42388b4c820ecdb61781"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 3,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "6f31b289b07445b89f090b36cce4f919",
+      "connections": {
+        "_next": "8e8e26efb04e42388b4c820ecdb61781"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "G_Action": {
+      "id": "76b1c4bfa55d451b891c6ef1a903f04c",
+      "label": "G · 陪师父吃饭（待补剧情）",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "6c5d34894d5f47b6a55017c58a45fadb",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_lastAction",
+          "_value": {
+            "_type": 2,
+            "_bool": false,
+            "_int": 0,
+            "_string": "G"
+          }
+        }
+      ],
+      "next": "G_Return",
+      "routes": [],
+      "prompt": null,
+      "name": "G_Action",
+      "asset": {
+        "name": "CH03_Chapter02_G_Action",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_G_Action.asset",
+        "guid": "a83b7480971ff2d48abc7ac69438067d",
+        "nodeId": "76b1c4bfa55d451b891c6ef1a903f04c",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "288cd9f953b744cc9869065faf4f954e",
+        "commandIds": [
+          "6c5d34894d5f47b6a55017c58a45fadb"
+        ],
+        "targets": {
+          "_next": "cfa88684f32b4ef280593d4006ea0478"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 3,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "288cd9f953b744cc9869065faf4f954e",
+      "connections": {
+        "_next": "cfa88684f32b4ef280593d4006ea0478"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "H_Action": {
+      "id": "87f771b978ce4ef7949a9efada5f9e56",
+      "label": "H · 游戏厅（待补剧情）",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "8ddf0b305cad4d58ab7a463e14799366",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_lastAction",
+          "_value": {
+            "_type": 2,
+            "_bool": false,
+            "_int": 0,
+            "_string": "H"
+          }
+        },
+        {
+          "_commandId": "e822747ac665450c9dde7a547add51f6",
+          "_kind": 31,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_hVisits",
+          "_integerOperation": 1,
+          "_integerOperand": 1,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        },
+        {
+          "_commandId": "77084fb41dd5440c9b86a72e8e13bf69",
+          "_kind": 31,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "player_money",
+          "_integerOperation": 2,
+          "_integerOperand": 20,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        }
+      ],
+      "next": "H_Return",
+      "routes": [],
+      "prompt": null,
+      "name": "H_Action",
+      "asset": {
+        "name": "CH03_Chapter02_H_Action",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_H_Action.asset",
+        "guid": "0e6cae36766076e43928cf811c6671f7",
+        "nodeId": "87f771b978ce4ef7949a9efada5f9e56",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "0b751c6b1d834a79acf6079b1df9685b",
+        "commandIds": [
+          "8ddf0b305cad4d58ab7a463e14799366",
+          "e822747ac665450c9dde7a547add51f6",
+          "77084fb41dd5440c9b86a72e8e13bf69"
+        ],
+        "targets": {
+          "_next": "ae96a9a080474141860d75b2df378d75"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 4,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "0b751c6b1d834a79acf6079b1df9685b",
+      "connections": {
+        "_next": "ae96a9a080474141860d75b2df378d75"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "I_Action": {
+      "id": "ae8795af29a04ea6b1ee3ad81672e5fd",
+      "label": "I · 买礼物（待补剧情）",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "f2be239d05b3494b8201a366c9cd3128",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_lastAction",
+          "_value": {
+            "_type": 2,
+            "_bool": false,
+            "_int": 0,
+            "_string": "I"
+          }
+        }
+      ],
+      "next": "I_Return",
+      "routes": [],
+      "prompt": null,
+      "name": "I_Action",
+      "asset": {
+        "name": "CH03_Chapter02_I_Action",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_I_Action.asset",
+        "guid": "fdfbb40ae99b1804c8648da7f74d54c0",
+        "nodeId": "ae8795af29a04ea6b1ee3ad81672e5fd",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "28d5a72ea7634efc8a48495255f7b876",
+        "commandIds": [
+          "f2be239d05b3494b8201a366c9cd3128"
+        ],
+        "targets": {
+          "_next": "1a72cc45384a43d59f2eb1764294fc7b"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 4,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "28d5a72ea7634efc8a48495255f7b876",
+      "connections": {
+        "_next": "1a72cc45384a43d59f2eb1764294fc7b"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "AdvanceStep": {
+      "id": "4e4d46a2fc6543ab858e76ae9df07b58",
+      "label": "当月步数 +1",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "6b51f9f3fcc347199157ccf4ee264162",
+          "_kind": 31,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_monthStep",
+          "_integerOperation": 1,
+          "_integerOperand": 1,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        }
+      ],
+      "next": "AfterAdvance_Jump",
+      "routes": [],
+      "prompt": null,
+      "name": "AdvanceStep",
+      "asset": {
+        "name": "CH03_Chapter02_AdvanceStep",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_AdvanceStep.asset",
+        "guid": "533c29352324763438b74a60d2e026b0",
+        "nodeId": "4e4d46a2fc6543ab858e76ae9df07b58",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "",
+        "commandIds": [
+          "6b51f9f3fcc347199157ccf4ee264162"
+        ],
+        "targets": {
+          "_next": "aeb25901a4134a5a83e6cab4889e03fc"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {
+        "_next": "aeb25901a4134a5a83e6cab4889e03fc"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Settlement": {
+      "id": "fa683626a3a444de8146323292c3b99f",
+      "label": "月末 · 收支结算",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "9fab3511508b477cb775029c89e079f7",
+          "_kind": 32,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_income",
+          "_randomMin": 100,
+          "_randomMax": 150
+        },
+        {
+          "_commandId": "d305f88a389944ee989f6a2ec6b4b9db",
+          "_kind": 31,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_cleanBonus",
+          "_integerOperation": 0,
+          "_integerOperand": 0,
+          "_operandVariableId": "ch2_monthClean",
+          "_operandScope": 1
+        },
+        {
+          "_commandId": "5d5871b311f641e8bf299c48caa98fa9",
+          "_kind": 31,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_cleanBonus",
+          "_integerOperation": 3,
+          "_integerOperand": 10,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        },
+        {
+          "_commandId": "fc5ad03d9ccf43d9851ab8075f3a822a",
+          "_kind": 31,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_plantDiscount",
+          "_integerOperation": 0,
+          "_integerOperand": 0,
+          "_operandVariableId": "ch2_monthPlant",
+          "_operandScope": 1
+        },
+        {
+          "_commandId": "9f5ec4be8a984d4080d3488d1ab5194d",
+          "_kind": 31,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_plantDiscount",
+          "_integerOperation": 3,
+          "_integerOperand": 5,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        },
+        {
+          "_commandId": "d6262e428c0846fbb90ea4b15da1eac6",
+          "_kind": 31,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_income",
+          "_integerOperation": 1,
+          "_integerOperand": 0,
+          "_operandVariableId": "loop_cleanBonus",
+          "_operandScope": 0
+        },
+        {
+          "_commandId": "4b3a78f8e39f4ebe8540e9bf2143dfb7",
+          "_kind": 31,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_income",
+          "_integerOperation": 1,
+          "_integerOperand": 0,
+          "_operandVariableId": "player_management",
+          "_operandScope": 1
+        },
+        {
+          "_commandId": "f661f6e37eaa4d48859bbf4aa89b3a24",
+          "_kind": 31,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_income",
+          "_integerOperation": 2,
+          "_integerOperand": 50,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        },
+        {
+          "_commandId": "5a435e9e27e140dbbde917e65bb5d302",
+          "_kind": 31,
+          "_scope": 0,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "loop_income",
+          "_integerOperation": 1,
+          "_integerOperand": 0,
+          "_operandVariableId": "loop_plantDiscount",
+          "_operandScope": 0
+        },
+        {
+          "_commandId": "2e49246e287a4dd39cedcd8ca3db0877",
+          "_kind": 31,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "player_money",
+          "_integerOperation": 1,
+          "_integerOperand": 0,
+          "_operandVariableId": "loop_income",
+          "_operandScope": 0
+        },
+        {
+          "_commandId": "7432989e42d64236a504b59f23eeff62",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_monthClean",
+          "_value": {
+            "_type": 1,
+            "_bool": false,
+            "_int": 0,
+            "_string": ""
+          }
+        },
+        {
+          "_commandId": "7fa2a232fda04bc38e1c407972110076",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_monthPlant",
+          "_value": {
+            "_type": 1,
+            "_bool": false,
+            "_int": 0,
+            "_string": ""
+          }
+        }
+      ],
+      "next": "MoneyBounds",
+      "routes": [],
+      "prompt": null,
+      "name": "Settlement",
+      "asset": {
+        "name": "CH03_Chapter02_Settlement",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_Settlement.asset",
+        "guid": "9103c9502061ddd47b3d679e5810d684",
+        "nodeId": "fa683626a3a444de8146323292c3b99f",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "",
+        "commandIds": [
+          "9fab3511508b477cb775029c89e079f7",
+          "d305f88a389944ee989f6a2ec6b4b9db",
+          "5d5871b311f641e8bf299c48caa98fa9",
+          "fc5ad03d9ccf43d9851ab8075f3a822a",
+          "9f5ec4be8a984d4080d3488d1ab5194d",
+          "d6262e428c0846fbb90ea4b15da1eac6",
+          "4b3a78f8e39f4ebe8540e9bf2143dfb7",
+          "f661f6e37eaa4d48859bbf4aa89b3a24",
+          "5a435e9e27e140dbbde917e65bb5d302",
+          "2e49246e287a4dd39cedcd8ca3db0877",
+          "7432989e42d64236a504b59f23eeff62",
+          "7fa2a232fda04bc38e1c407972110076"
+        ],
+        "targets": {
+          "_next": "63bd8bc2e9e64641b5840e6b73fd391b"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {
+        "_next": "63bd8bc2e9e64641b5840e6b73fd391b"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "MoneyBounds": {
+      "id": "63bd8bc2e9e64641b5840e6b73fd391b",
+      "label": "金钱范围检查",
+      "kind": "Branch",
+      "commands": [],
+      "next": null,
+      "routes": [
+        {
+          "id": "dc531f738ef743be98c1ce22f4eb8f2a",
+          "text": "超过1000",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.dc531f738ef743be98c1ce22f4eb8f2a",
+          "target": "MoneyMax",
+          "predicates": [
+            {
+              "_variableId": "player_money",
+              "_scope": 1,
+              "_comparison": 2,
+              "_value": {
+                "_type": 1,
+                "_bool": false,
+                "_int": 1000,
+                "_string": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "b5136dd24d2c4f25ac876fbd43d3f8d2",
+          "text": "低于0",
+          "textKey": "option.0942d3f17d504f01ba64169b17e2a578.b5136dd24d2c4f25ac876fbd43d3f8d2",
+          "target": "MoneyMin",
+          "predicates": [
+            {
+              "_variableId": "player_money",
+              "_scope": 1,
+              "_comparison": 4,
+              "_value": {
+                "_type": 1,
+                "_bool": false,
+                "_int": 0,
+                "_string": ""
+              }
+            }
+          ]
+        }
+      ],
+      "prompt": null,
+      "name": "MoneyBounds",
+      "asset": {
+        "name": "CH03_Chapter02_MoneyBounds",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_MoneyBounds.asset",
+        "guid": "19db8cb04a515ef46b344f9c54bec5c6",
+        "nodeId": "63bd8bc2e9e64641b5840e6b73fd391b",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeBranchSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_branches.Array.data[0]._target": "690186dc25684a29bd0f174c5659601b",
+          "_branches.Array.data[1]._target": "1eeaeeb8fc47436fbdf2d095d984359b",
+          "_fallback": "afe259e65633428382586485302cfe53"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {
+        "_branches.Array.data[0]._target": "690186dc25684a29bd0f174c5659601b",
+        "_branches.Array.data[1]._target": "1eeaeeb8fc47436fbdf2d095d984359b",
+        "_fallback": "afe259e65633428382586485302cfe53"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "MoneyMax": {
+      "id": "690186dc25684a29bd0f174c5659601b",
+      "label": "金钱上限1000",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "dc4ac415f8464059a398d3dfd903f0db",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "player_money",
+          "_value": {
+            "_type": 1,
+            "_bool": false,
+            "_int": 1000,
+            "_string": ""
+          }
+        }
+      ],
+      "next": "TownMax_Jump",
+      "routes": [],
+      "prompt": null,
+      "name": "MoneyMax",
+      "asset": {
+        "name": "CH03_Chapter02_MoneyMax",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_MoneyMax.asset",
+        "guid": "e3d4f5db14716c649b1505a14fd26c01",
+        "nodeId": "690186dc25684a29bd0f174c5659601b",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "",
+        "commandIds": [
+          "dc4ac415f8464059a398d3dfd903f0db"
+        ],
+        "targets": {
+          "_next": "aec0eb1048a04bb2a0082430704a39bb"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {
+        "_next": "aec0eb1048a04bb2a0082430704a39bb"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "MoneyMin": {
+      "id": "1eeaeeb8fc47436fbdf2d095d984359b",
+      "label": "金钱下限0",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "abad062d6d91401ea3cbbfdcbb4c8791",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "player_money",
+          "_value": {
+            "_type": 1,
+            "_bool": false,
+            "_int": 0,
+            "_string": ""
+          }
+        }
+      ],
+      "next": "TownMin_Jump",
+      "routes": [],
+      "prompt": null,
+      "name": "MoneyMin",
+      "asset": {
+        "name": "CH03_Chapter02_MoneyMin",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_MoneyMin.asset",
+        "guid": "8454adc2e422c2c43a7be7a16a824a02",
+        "nodeId": "1eeaeeb8fc47436fbdf2d095d984359b",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "",
+        "commandIds": [
+          "abad062d6d91401ea3cbbfdcbb4c8791"
+        ],
+        "targets": {
+          "_next": "60e498254c914ec2973a280976e73dc1"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {
+        "_next": "60e498254c914ec2973a280976e73dc1"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "NextMonth": {
+      "id": "e32c18aaba37425fbfb49a92d96495ad",
+      "label": "月数 +1 / 步数归零",
+      "kind": "Dialogue",
+      "commands": [
+        {
+          "_commandId": "5e8aa338a7e6457a9e0897097288c240",
+          "_kind": 31,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_month",
+          "_integerOperation": 1,
+          "_integerOperand": 1,
+          "_operandVariableId": "",
+          "_operandScope": 1
+        },
+        {
+          "_commandId": "326fd634472a476393d053c706298d57",
+          "_kind": 1,
+          "_scope": 1,
+          "_textRevision": 1,
+          "_cameraZoom": 1,
+          "_textEffectsVersion": 1,
+          "_textSpeedMultiplier": 1,
+          "_volume": 1,
+          "_variableId": "ch2_monthStep",
+          "_value": {
+            "_type": 1,
+            "_bool": false,
+            "_int": 0,
+            "_string": ""
+          }
+        }
+      ],
+      "next": "AfterMonth_Jump",
+      "routes": [],
+      "prompt": null,
+      "name": "NextMonth",
+      "asset": {
+        "name": "CH03_Chapter02_NextMonth",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_NextMonth.asset",
+        "guid": "ddfea1c41bc5c1940830da2f1d39fcea",
+        "nodeId": "e32c18aaba37425fbfb49a92d96495ad",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeDialogueSO",
+        "scopeId": "",
+        "commandIds": [
+          "5e8aa338a7e6457a9e0897097288c240",
+          "326fd634472a476393d053c706298d57"
+        ],
+        "targets": {
+          "_next": "870a8b7fb33a40199accf4041ff7e103"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {
+        "_next": "870a8b7fb33a40199accf4041ff7e103"
+      },
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Exit": {
+      "id": "f2ed717ee0ba416697ec53d82974ded7",
+      "label": "结束 · 第二章出口",
+      "kind": "ChapterExit",
+      "commands": [],
+      "next": null,
+      "routes": [],
+      "prompt": null,
+      "name": "Exit",
+      "asset": {
+        "name": "CH03_Chapter02_Exit",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Exits/CH03_Chapter02_Exit.asset",
+        "guid": "0d83b8397337f0d4dbd91deb9d19889a",
+        "nodeId": "f2ed717ee0ba416697ec53d82974ded7",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeChapterExitSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": null,
+        "calleeId": null
+      },
+      "sourceRefs": [
+        {
+          "sheetId": "hpgKna",
+          "row": 5,
+          "columns": [
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "documentId": "Ee5gdQuU6obSC3x0ePYcsh01njg",
+          "section": "程序逻辑"
+        }
+      ],
+      "scopeId": "",
+      "connections": {},
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Daily_Receive": {
+      "id": "771ff1f8de2d496fb928ef9b70f010ad",
+      "name": "Daily_Receive",
+      "kind": "Receiver",
+      "label": "开始 · 每日分流",
+      "asset": {
+        "name": "CH03_Chapter02_Daily_Receive",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Daily_Receive.asset",
+        "guid": "c954f13b33eca304ab309b98c8bc7eda",
+        "nodeId": "771ff1f8de2d496fb928ef9b70f010ad",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeReceiverSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_next": "e3c97a300612453f989eb5b5657ee788"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {
+        "_next": "e3c97a300612453f989eb5b5657ee788"
+      },
+      "next": "Loop",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Morning_Receive": {
+      "id": "1aabb8b5c9f448d49d2e0dff53afd54f",
+      "name": "Morning_Receive",
+      "kind": "Receiver",
+      "label": "接收 · 上午行动",
+      "asset": {
+        "name": "CH03_Chapter02_Morning_Receive",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Morning_Receive.asset",
+        "guid": "dc5152b6db608584fb71b0529fa443d1",
+        "nodeId": "1aabb8b5c9f448d49d2e0dff53afd54f",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeReceiverSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_next": "0e3f6fce6bbc413eb174919fd8478b40"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {
+        "_next": "0e3f6fce6bbc413eb174919fd8478b40"
+      },
+      "next": "Morning",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Afternoon_Receive": {
+      "id": "62e755e628b043f9a80cd8ce879e6f44",
+      "name": "Afternoon_Receive",
+      "kind": "Receiver",
+      "label": "接收 · 下午行动",
+      "asset": {
+        "name": "CH03_Chapter02_Afternoon_Receive",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Afternoon_Receive.asset",
+        "guid": "e279c4daf15a22948a76aeab1a71c35b",
+        "nodeId": "62e755e628b043f9a80cd8ce879e6f44",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeReceiverSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_next": "9ae06dbb25974227b5415b385ace6293"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {
+        "_next": "9ae06dbb25974227b5415b385ace6293"
+      },
+      "next": "Afternoon",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Evening_Receive": {
+      "id": "ca9b826e463044bab82083f7b34ea664",
+      "name": "Evening_Receive",
+      "kind": "Receiver",
+      "label": "接收 · 傍晚行动",
+      "asset": {
+        "name": "CH03_Chapter02_Evening_Receive",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Evening_Receive.asset",
+        "guid": "96b999ba019f989419938c398a4d05ff",
+        "nodeId": "ca9b826e463044bab82083f7b34ea664",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeReceiverSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_next": "b09ca941a1fe47f9bc1622b50cd81c4b"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {
+        "_next": "b09ca941a1fe47f9bc1622b50cd81c4b"
+      },
+      "next": "Evening",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Settlement_Receive": {
+      "id": "9903e716db64400d8349afbdd165208a",
+      "name": "Settlement_Receive",
+      "kind": "Receiver",
+      "label": "接收 · 月末结算",
+      "asset": {
+        "name": "CH03_Chapter02_Settlement_Receive",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Settlement_Receive.asset",
+        "guid": "e8f8c3ac2d08242419b32df7e25a857b",
+        "nodeId": "9903e716db64400d8349afbdd165208a",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeReceiverSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_next": "fa683626a3a444de8146323292c3b99f"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {
+        "_next": "fa683626a3a444de8146323292c3b99f"
+      },
+      "next": "Settlement",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Town_Receive": {
+      "id": "e4173ec55a784dadace909c4091a4b5e",
+      "name": "Town_Receive",
+      "kind": "Receiver",
+      "label": "接收 · 镇上行动",
+      "asset": {
+        "name": "CH03_Chapter02_Town_Receive",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Town_Receive.asset",
+        "guid": "cf68d213a8e5f9f4592d03ff3d28e0f9",
+        "nodeId": "e4173ec55a784dadace909c4091a4b5e",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeReceiverSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_next": "4ef0f7afaf3e451081c34cd78f965cbc"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {
+        "_next": "4ef0f7afaf3e451081c34cd78f965cbc"
+      },
+      "next": "Town",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Advance_Receive": {
+      "id": "fad2e33f750041f094d97154a98b5394",
+      "name": "Advance_Receive",
+      "kind": "Receiver",
+      "label": "接收 · 行动完成",
+      "asset": {
+        "name": "CH03_Chapter02_Advance_Receive",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Advance_Receive.asset",
+        "guid": "064ea7b4581357e41bc29da3d18a3534",
+        "nodeId": "fad2e33f750041f094d97154a98b5394",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeReceiverSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_next": "4e4d46a2fc6543ab858e76ae9df07b58"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {
+        "_next": "4e4d46a2fc6543ab858e76ae9df07b58"
+      },
+      "next": "AdvanceStep",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "NextMonth_Receive": {
+      "id": "8e4939828a1249e7a5d8c01957e9dfd8",
+      "name": "NextMonth_Receive",
+      "kind": "Receiver",
+      "label": "接收 · 进入下月",
+      "asset": {
+        "name": "CH03_Chapter02_NextMonth_Receive",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_NextMonth_Receive.asset",
+        "guid": "37e313d4f49dc2540a83e97eb1812225",
+        "nodeId": "8e4939828a1249e7a5d8c01957e9dfd8",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeReceiverSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_next": "e32c18aaba37425fbfb49a92d96495ad"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {
+        "_next": "e32c18aaba37425fbfb49a92d96495ad"
+      },
+      "next": "NextMonth",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Exit_Receive": {
+      "id": "af9415ce35384e84b3c2e69985c0c644",
+      "name": "Exit_Receive",
+      "kind": "Receiver",
+      "label": "接收 · 五个月完成",
+      "asset": {
+        "name": "CH03_Chapter02_Exit_Receive",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Exit_Receive.asset",
+        "guid": "b3deb928a4390b148a7bab60e7f93796",
+        "nodeId": "af9415ce35384e84b3c2e69985c0c644",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeReceiverSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_next": "f2ed717ee0ba416697ec53d82974ded7"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {
+        "_next": "f2ed717ee0ba416697ec53d82974ded7"
+      },
+      "next": "Exit",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "Morning_Jump": {
+      "id": "7eb4c076d29f4d7dbd726ed55e01a363",
+      "name": "Morning_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 上午行动",
+      "asset": {
+        "name": "CH03_Chapter02_Morning_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Morning_Jump.asset",
+        "guid": "a67621f8ae13468489dbe118485ce459",
+        "nodeId": "7eb4c076d29f4d7dbd726ed55e01a363",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "1aabb8b5c9f448d49d2e0dff53afd54f",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "1aabb8b5c9f448d49d2e0dff53afd54f",
+      "calleeId": null
+    },
+    "Afternoon_Jump": {
+      "id": "4faaca5730ef43c98d8842add5f3148b",
+      "name": "Afternoon_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 下午行动",
+      "asset": {
+        "name": "CH03_Chapter02_Afternoon_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Afternoon_Jump.asset",
+        "guid": "c93b6936dc29d014c9ddb7cdc37c432e",
+        "nodeId": "4faaca5730ef43c98d8842add5f3148b",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "62e755e628b043f9a80cd8ce879e6f44",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "62e755e628b043f9a80cd8ce879e6f44",
+      "calleeId": null
+    },
+    "Evening_Jump": {
+      "id": "a8829ea436954d0fa617eeb96d327a79",
+      "name": "Evening_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 傍晚行动",
+      "asset": {
+        "name": "CH03_Chapter02_Evening_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Evening_Jump.asset",
+        "guid": "41194df19607d2544a006ee495b76e16",
+        "nodeId": "a8829ea436954d0fa617eeb96d327a79",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "ca9b826e463044bab82083f7b34ea664",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "ca9b826e463044bab82083f7b34ea664",
+      "calleeId": null
+    },
+    "Settlement_Jump": {
+      "id": "c0f056deb12e4505aa25002f0873c9ad",
+      "name": "Settlement_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 月末结算",
+      "asset": {
+        "name": "CH03_Chapter02_Settlement_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Settlement_Jump.asset",
+        "guid": "8469d2157a5504e4bae13ca61f743810",
+        "nodeId": "c0f056deb12e4505aa25002f0873c9ad",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "9903e716db64400d8349afbdd165208a",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "9903e716db64400d8349afbdd165208a",
+      "calleeId": null
+    },
+    "NextMonth_Jump": {
+      "id": "6360d82041dc4c849ea528a91b4ff162",
+      "name": "NextMonth_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 进入下月",
+      "asset": {
+        "name": "CH03_Chapter02_NextMonth_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_NextMonth_Jump.asset",
+        "guid": "1a8e6451a4d30f148ac344e744a1984f",
+        "nodeId": "6360d82041dc4c849ea528a91b4ff162",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "8e4939828a1249e7a5d8c01957e9dfd8",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "8e4939828a1249e7a5d8c01957e9dfd8",
+      "calleeId": null
+    },
+    "Exit_Jump": {
+      "id": "87cb4e98e2024466bdbe66e9edc59944",
+      "name": "Exit_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 章节结束",
+      "asset": {
+        "name": "CH03_Chapter02_Exit_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Exit_Jump.asset",
+        "guid": "4b3a2f057fd43c542815857ae7bb5482",
+        "nodeId": "87cb4e98e2024466bdbe66e9edc59944",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "af9415ce35384e84b3c2e69985c0c644",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "af9415ce35384e84b3c2e69985c0c644",
+      "calleeId": null
+    },
+    "TownBounds_Jump": {
+      "id": "afe259e65633428382586485302cfe53",
+      "name": "TownBounds_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 镇上行动",
+      "asset": {
+        "name": "CH03_Chapter02_TownBounds_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TownBounds_Jump.asset",
+        "guid": "55b80bb321ee60c47b705ce62540066c",
+        "nodeId": "afe259e65633428382586485302cfe53",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "e4173ec55a784dadace909c4091a4b5e",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "e4173ec55a784dadace909c4091a4b5e",
+      "calleeId": null
+    },
+    "TownMax_Jump": {
+      "id": "aec0eb1048a04bb2a0082430704a39bb",
+      "name": "TownMax_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 镇上行动",
+      "asset": {
+        "name": "CH03_Chapter02_TownMax_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TownMax_Jump.asset",
+        "guid": "9171b3cbcae35554f9f1bcd1575d2f63",
+        "nodeId": "aec0eb1048a04bb2a0082430704a39bb",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "e4173ec55a784dadace909c4091a4b5e",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "e4173ec55a784dadace909c4091a4b5e",
+      "calleeId": null
+    },
+    "TownMin_Jump": {
+      "id": "60e498254c914ec2973a280976e73dc1",
+      "name": "TownMin_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 镇上行动",
+      "asset": {
+        "name": "CH03_Chapter02_TownMin_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TownMin_Jump.asset",
+        "guid": "af96fe32d4eeaba43beaea6a587b84f1",
+        "nodeId": "60e498254c914ec2973a280976e73dc1",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "e4173ec55a784dadace909c4091a4b5e",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "e4173ec55a784dadace909c4091a4b5e",
+      "calleeId": null
+    },
+    "AfterMorning_Jump": {
+      "id": "3401531f6afe4d8390a152e26461f4d5",
+      "name": "AfterMorning_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 行动完成",
+      "asset": {
+        "name": "CH03_Chapter02_AfterMorning_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterMorning_Jump.asset",
+        "guid": "605f09725af03ce4dbe73ac87f0886c8",
+        "nodeId": "3401531f6afe4d8390a152e26461f4d5",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "fad2e33f750041f094d97154a98b5394",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "fad2e33f750041f094d97154a98b5394",
+      "calleeId": null
+    },
+    "AfterAfternoon_Jump": {
+      "id": "e55b0b03a0ef460989c6b79027709561",
+      "name": "AfterAfternoon_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 行动完成",
+      "asset": {
+        "name": "CH03_Chapter02_AfterAfternoon_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterAfternoon_Jump.asset",
+        "guid": "5eda37b870abd424398e31722615daa6",
+        "nodeId": "e55b0b03a0ef460989c6b79027709561",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "fad2e33f750041f094d97154a98b5394",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "fad2e33f750041f094d97154a98b5394",
+      "calleeId": null
+    },
+    "AfterEvening_Jump": {
+      "id": "2c6384b53ccd4a3c864abb8db94f5770",
+      "name": "AfterEvening_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 行动完成",
+      "asset": {
+        "name": "CH03_Chapter02_AfterEvening_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterEvening_Jump.asset",
+        "guid": "9e27f319f2509ac4489cfdb03122a7d0",
+        "nodeId": "2c6384b53ccd4a3c864abb8db94f5770",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "fad2e33f750041f094d97154a98b5394",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "fad2e33f750041f094d97154a98b5394",
+      "calleeId": null
+    },
+    "AfterTown_Jump": {
+      "id": "bebe413f78534332a08542bdbca7a4c6",
+      "name": "AfterTown_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 行动完成",
+      "asset": {
+        "name": "CH03_Chapter02_AfterTown_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterTown_Jump.asset",
+        "guid": "341ea11d57af78b4d8663fc6bf0081c8",
+        "nodeId": "bebe413f78534332a08542bdbca7a4c6",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "fad2e33f750041f094d97154a98b5394",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "fad2e33f750041f094d97154a98b5394",
+      "calleeId": null
+    },
+    "AfterAdvance_Jump": {
+      "id": "aeb25901a4134a5a83e6cab4889e03fc",
+      "name": "AfterAdvance_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 每日分流",
+      "asset": {
+        "name": "CH03_Chapter02_AfterAdvance_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterAdvance_Jump.asset",
+        "guid": "fa2131d315447824e99dfbd3250bfb3a",
+        "nodeId": "aeb25901a4134a5a83e6cab4889e03fc",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "771ff1f8de2d496fb928ef9b70f010ad",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "771ff1f8de2d496fb928ef9b70f010ad",
+      "calleeId": null
+    },
+    "AfterMonth_Jump": {
+      "id": "870a8b7fb33a40199accf4041ff7e103",
+      "name": "AfterMonth_Jump",
+      "kind": "Jump",
+      "label": "跳转 · 每日分流",
+      "asset": {
+        "name": "CH03_Chapter02_AfterMonth_Jump",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterMonth_Jump.asset",
+        "guid": "385f2ce5c7d4dff4a90734c2dc04c8df",
+        "nodeId": "870a8b7fb33a40199accf4041ff7e103",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeJumpSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": "771ff1f8de2d496fb928ef9b70f010ad",
+        "calleeId": null
+      },
+      "scopeId": "",
+      "connections": {},
+      "next": null,
+      "receiverId": "771ff1f8de2d496fb928ef9b70f010ad",
+      "calleeId": null
+    },
+    "A_Start": {
+      "id": "5e28a8f8f0d343988ca2caf5f17962a6",
+      "name": "A_Start",
+      "kind": "FlowStart",
+      "label": "A · 流程开始",
+      "asset": {
+        "name": "CH03_Chapter02_A_Start",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Start.asset",
+        "guid": "1a8d1197e81018c43937df6cf5093ffb",
+        "nodeId": "5e28a8f8f0d343988ca2caf5f17962a6",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowStartSO",
+        "scopeId": "5e28a8f8f0d343988ca2caf5f17962a6",
+        "commandIds": [],
+        "targets": {
+          "_next": "f520c98f310d41cda3c626aa0c764168"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "5e28a8f8f0d343988ca2caf5f17962a6",
+      "connections": {
+        "_next": "f520c98f310d41cda3c626aa0c764168"
+      },
+      "next": "A_Action",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "A_Return": {
+      "id": "bd11a97755394913af9cf8e47531f810",
+      "name": "A_Return",
+      "kind": "FlowReturn",
+      "label": "A · 完成并返回",
+      "asset": {
+        "name": "CH03_Chapter02_A_Return",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Return.asset",
+        "guid": "8c1dbd022a59868488a594f5ea5ebfb0",
+        "nodeId": "bd11a97755394913af9cf8e47531f810",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowReturnSO",
+        "scopeId": "5e28a8f8f0d343988ca2caf5f17962a6",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "5e28a8f8f0d343988ca2caf5f17962a6",
+      "connections": {},
+      "next": null,
+      "receiverId": null,
+      "calleeId": null
+    },
+    "A_Call": {
+      "id": "a5bc327a62a94b38ae6ef7fd5a4842c1",
+      "name": "A_Call",
+      "kind": "FlowCall",
+      "label": "A · 清扫流程",
+      "asset": {
+        "name": "CH03_Chapter02_A_Call",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Call.asset",
+        "guid": "9702a55495caf2a47b79c959881fb3ac",
+        "nodeId": "a5bc327a62a94b38ae6ef7fd5a4842c1",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowCallSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_results.Array.data[0]._target": "3401531f6afe4d8390a152e26461f4d5"
+        },
+        "receiverId": null,
+        "calleeId": "5e28a8f8f0d343988ca2caf5f17962a6"
+      },
+      "scopeId": "",
+      "connections": {
+        "_results.Array.data[0]._target": "3401531f6afe4d8390a152e26461f4d5"
+      },
+      "next": null,
+      "receiverId": null,
+      "calleeId": "5e28a8f8f0d343988ca2caf5f17962a6"
+    },
+    "B_Start": {
+      "id": "f0f765ac557246baaf61681fc60bd000",
+      "name": "B_Start",
+      "kind": "FlowStart",
+      "label": "B · 流程开始",
+      "asset": {
+        "name": "CH03_Chapter02_B_Start",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_B_Start.asset",
+        "guid": "e883878ca4074bb4295edbbc7b7351c0",
+        "nodeId": "f0f765ac557246baaf61681fc60bd000",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowStartSO",
+        "scopeId": "f0f765ac557246baaf61681fc60bd000",
+        "commandIds": [],
+        "targets": {
+          "_next": "114da9d1eb0246b18b25c65ecd1f1ccb"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "f0f765ac557246baaf61681fc60bd000",
+      "connections": {
+        "_next": "114da9d1eb0246b18b25c65ecd1f1ccb"
+      },
+      "next": "B_Action",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "B_Return": {
+      "id": "2da4d95c50f6424fbdca0825e5df1a70",
+      "name": "B_Return",
+      "kind": "FlowReturn",
+      "label": "B · 完成并返回",
+      "asset": {
+        "name": "CH03_Chapter02_B_Return",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_B_Return.asset",
+        "guid": "5b49cacadc265fc4082f75c4f4e14480",
+        "nodeId": "2da4d95c50f6424fbdca0825e5df1a70",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowReturnSO",
+        "scopeId": "f0f765ac557246baaf61681fc60bd000",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "f0f765ac557246baaf61681fc60bd000",
+      "connections": {},
+      "next": null,
+      "receiverId": null,
+      "calleeId": null
+    },
+    "B_Call": {
+      "id": "cc06fbebb1e448238056e45b105e917f",
+      "name": "B_Call",
+      "kind": "FlowCall",
+      "label": "B · 种地流程",
+      "asset": {
+        "name": "CH03_Chapter02_B_Call",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_B_Call.asset",
+        "guid": "312688057c7a72c46963097c9376382a",
+        "nodeId": "cc06fbebb1e448238056e45b105e917f",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowCallSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_results.Array.data[0]._target": "3401531f6afe4d8390a152e26461f4d5"
+        },
+        "receiverId": null,
+        "calleeId": "f0f765ac557246baaf61681fc60bd000"
+      },
+      "scopeId": "",
+      "connections": {
+        "_results.Array.data[0]._target": "3401531f6afe4d8390a152e26461f4d5"
+      },
+      "next": null,
+      "receiverId": null,
+      "calleeId": "f0f765ac557246baaf61681fc60bd000"
+    },
+    "C_Start": {
+      "id": "c47ba3ea977e47eaad45c4c6d3eb8aa5",
+      "name": "C_Start",
+      "kind": "FlowStart",
+      "label": "C · 流程开始",
+      "asset": {
+        "name": "CH03_Chapter02_C_Start",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_C_Start.asset",
+        "guid": "337762bb534b2e246adb62a07eb5e432",
+        "nodeId": "c47ba3ea977e47eaad45c4c6d3eb8aa5",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowStartSO",
+        "scopeId": "c47ba3ea977e47eaad45c4c6d3eb8aa5",
+        "commandIds": [],
+        "targets": {
+          "_next": "cec0a963791d452d805e6b5cab16cf7e"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "c47ba3ea977e47eaad45c4c6d3eb8aa5",
+      "connections": {
+        "_next": "cec0a963791d452d805e6b5cab16cf7e"
+      },
+      "next": "C_Action",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "C_Return": {
+      "id": "5a54287117bb464e8f7f3cfb2853d355",
+      "name": "C_Return",
+      "kind": "FlowReturn",
+      "label": "C · 完成并返回",
+      "asset": {
+        "name": "CH03_Chapter02_C_Return",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_C_Return.asset",
+        "guid": "cd7546040b7a62a43b1e35b47874aaff",
+        "nodeId": "5a54287117bb464e8f7f3cfb2853d355",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowReturnSO",
+        "scopeId": "c47ba3ea977e47eaad45c4c6d3eb8aa5",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "c47ba3ea977e47eaad45c4c6d3eb8aa5",
+      "connections": {},
+      "next": null,
+      "receiverId": null,
+      "calleeId": null
+    },
+    "C_Call": {
+      "id": "2e58d92c6786422092a9877d4c75b1a7",
+      "name": "C_Call",
+      "kind": "FlowCall",
+      "label": "C · 陪香客唠家常流程",
+      "asset": {
+        "name": "CH03_Chapter02_C_Call",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_C_Call.asset",
+        "guid": "897a4ac3a93c5554195cad7d56857343",
+        "nodeId": "2e58d92c6786422092a9877d4c75b1a7",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowCallSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_results.Array.data[0]._target": "3401531f6afe4d8390a152e26461f4d5"
+        },
+        "receiverId": null,
+        "calleeId": "c47ba3ea977e47eaad45c4c6d3eb8aa5"
+      },
+      "scopeId": "",
+      "connections": {
+        "_results.Array.data[0]._target": "3401531f6afe4d8390a152e26461f4d5"
+      },
+      "next": null,
+      "receiverId": null,
+      "calleeId": "c47ba3ea977e47eaad45c4c6d3eb8aa5"
+    },
+    "D_Start": {
+      "id": "d15fd9ad3c804f748aed0f2a162d63f9",
+      "name": "D_Start",
+      "kind": "FlowStart",
+      "label": "D · 流程开始",
+      "asset": {
+        "name": "CH03_Chapter02_D_Start",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_D_Start.asset",
+        "guid": "dc5e870508cb38d4192a618cb6fa39f8",
+        "nodeId": "d15fd9ad3c804f748aed0f2a162d63f9",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowStartSO",
+        "scopeId": "d15fd9ad3c804f748aed0f2a162d63f9",
+        "commandIds": [],
+        "targets": {
+          "_next": "3f9ade496914464b8c345dc29be5e800"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "d15fd9ad3c804f748aed0f2a162d63f9",
+      "connections": {
+        "_next": "3f9ade496914464b8c345dc29be5e800"
+      },
+      "next": "D_Action",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "D_Return": {
+      "id": "f8686ebcbfad4fb99adc4f600e90b4d1",
+      "name": "D_Return",
+      "kind": "FlowReturn",
+      "label": "D · 完成并返回",
+      "asset": {
+        "name": "CH03_Chapter02_D_Return",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_D_Return.asset",
+        "guid": "bbb8b8e3523c13d4c842369c6c739636",
+        "nodeId": "f8686ebcbfad4fb99adc4f600e90b4d1",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowReturnSO",
+        "scopeId": "d15fd9ad3c804f748aed0f2a162d63f9",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "d15fd9ad3c804f748aed0f2a162d63f9",
+      "connections": {},
+      "next": null,
+      "receiverId": null,
+      "calleeId": null
+    },
+    "D_Call": {
+      "id": "903b531d42f34921b6c5942b9569bf71",
+      "name": "D_Call",
+      "kind": "FlowCall",
+      "label": "D · 找师父学习流程",
+      "asset": {
+        "name": "CH03_Chapter02_D_Call",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_D_Call.asset",
+        "guid": "284d7aa521afeeb468dab1e08cb89454",
+        "nodeId": "903b531d42f34921b6c5942b9569bf71",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowCallSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_results.Array.data[0]._target": "e55b0b03a0ef460989c6b79027709561"
+        },
+        "receiverId": null,
+        "calleeId": "d15fd9ad3c804f748aed0f2a162d63f9"
+      },
+      "scopeId": "",
+      "connections": {
+        "_results.Array.data[0]._target": "e55b0b03a0ef460989c6b79027709561"
+      },
+      "next": null,
+      "receiverId": null,
+      "calleeId": "d15fd9ad3c804f748aed0f2a162d63f9"
+    },
+    "E_Start": {
+      "id": "cfd93b4a2ebc4d36b5e1f2732efa8fc0",
+      "name": "E_Start",
+      "kind": "FlowStart",
+      "label": "E · 流程开始",
+      "asset": {
+        "name": "CH03_Chapter02_E_Start",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_E_Start.asset",
+        "guid": "e15d38a73f9c0934f8f460f79d1d9d8a",
+        "nodeId": "cfd93b4a2ebc4d36b5e1f2732efa8fc0",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowStartSO",
+        "scopeId": "cfd93b4a2ebc4d36b5e1f2732efa8fc0",
+        "commandIds": [],
+        "targets": {
+          "_next": "72dec05b499d4371bfd69f37c4008467"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "cfd93b4a2ebc4d36b5e1f2732efa8fc0",
+      "connections": {
+        "_next": "72dec05b499d4371bfd69f37c4008467"
+      },
+      "next": "E_Action",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "E_Return": {
+      "id": "4e193120c442429b83a854051b3fd994",
+      "name": "E_Return",
+      "kind": "FlowReturn",
+      "label": "E · 完成并返回",
+      "asset": {
+        "name": "CH03_Chapter02_E_Return",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_E_Return.asset",
+        "guid": "a1b015592c1b0d1459b8aea6d5573b31",
+        "nodeId": "4e193120c442429b83a854051b3fd994",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowReturnSO",
+        "scopeId": "cfd93b4a2ebc4d36b5e1f2732efa8fc0",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "cfd93b4a2ebc4d36b5e1f2732efa8fc0",
+      "connections": {},
+      "next": null,
+      "receiverId": null,
+      "calleeId": null
+    },
+    "E_Call": {
+      "id": "74cc80caac0c4343a3d51ba4ee7877ad",
+      "name": "E_Call",
+      "kind": "FlowCall",
+      "label": "E · 燕于飞找你玩流程",
+      "asset": {
+        "name": "CH03_Chapter02_E_Call",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_E_Call.asset",
+        "guid": "4453931a16ab1c641a42da07d4d58216",
+        "nodeId": "74cc80caac0c4343a3d51ba4ee7877ad",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowCallSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_results.Array.data[0]._target": "e55b0b03a0ef460989c6b79027709561"
+        },
+        "receiverId": null,
+        "calleeId": "cfd93b4a2ebc4d36b5e1f2732efa8fc0"
+      },
+      "scopeId": "",
+      "connections": {
+        "_results.Array.data[0]._target": "e55b0b03a0ef460989c6b79027709561"
+      },
+      "next": null,
+      "receiverId": null,
+      "calleeId": "cfd93b4a2ebc4d36b5e1f2732efa8fc0"
+    },
+    "F_Start": {
+      "id": "6f31b289b07445b89f090b36cce4f919",
+      "name": "F_Start",
+      "kind": "FlowStart",
+      "label": "F · 流程开始",
+      "asset": {
+        "name": "CH03_Chapter02_F_Start",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_F_Start.asset",
+        "guid": "b99467c2b04821a4ca77fff97e1f6963",
+        "nodeId": "6f31b289b07445b89f090b36cce4f919",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowStartSO",
+        "scopeId": "6f31b289b07445b89f090b36cce4f919",
+        "commandIds": [],
+        "targets": {
+          "_next": "9d70b6a6d23c460c8e1f0ef5f9751282"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "6f31b289b07445b89f090b36cce4f919",
+      "connections": {
+        "_next": "9d70b6a6d23c460c8e1f0ef5f9751282"
+      },
+      "next": "F_Action",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "F_Return": {
+      "id": "8e8e26efb04e42388b4c820ecdb61781",
+      "name": "F_Return",
+      "kind": "FlowReturn",
+      "label": "F · 完成并返回",
+      "asset": {
+        "name": "CH03_Chapter02_F_Return",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_F_Return.asset",
+        "guid": "94285a60099da4144bd8e42661d4d7fb",
+        "nodeId": "8e8e26efb04e42388b4c820ecdb61781",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowReturnSO",
+        "scopeId": "6f31b289b07445b89f090b36cce4f919",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "6f31b289b07445b89f090b36cce4f919",
+      "connections": {},
+      "next": null,
+      "receiverId": null,
+      "calleeId": null
+    },
+    "F_Call": {
+      "id": "4592372f01654309b6f6c71ef1458756",
+      "name": "F_Call",
+      "kind": "FlowCall",
+      "label": "F · 后山探险流程",
+      "asset": {
+        "name": "CH03_Chapter02_F_Call",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_F_Call.asset",
+        "guid": "3df92cc0b46898c488fd4856d1c175dd",
+        "nodeId": "4592372f01654309b6f6c71ef1458756",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowCallSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_results.Array.data[0]._target": "2c6384b53ccd4a3c864abb8db94f5770"
+        },
+        "receiverId": null,
+        "calleeId": "6f31b289b07445b89f090b36cce4f919"
+      },
+      "scopeId": "",
+      "connections": {
+        "_results.Array.data[0]._target": "2c6384b53ccd4a3c864abb8db94f5770"
+      },
+      "next": null,
+      "receiverId": null,
+      "calleeId": "6f31b289b07445b89f090b36cce4f919"
+    },
+    "G_Start": {
+      "id": "288cd9f953b744cc9869065faf4f954e",
+      "name": "G_Start",
+      "kind": "FlowStart",
+      "label": "G · 流程开始",
+      "asset": {
+        "name": "CH03_Chapter02_G_Start",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_G_Start.asset",
+        "guid": "fa9d21e7c3a32c54dac3e656f41b6e28",
+        "nodeId": "288cd9f953b744cc9869065faf4f954e",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowStartSO",
+        "scopeId": "288cd9f953b744cc9869065faf4f954e",
+        "commandIds": [],
+        "targets": {
+          "_next": "76b1c4bfa55d451b891c6ef1a903f04c"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "288cd9f953b744cc9869065faf4f954e",
+      "connections": {
+        "_next": "76b1c4bfa55d451b891c6ef1a903f04c"
+      },
+      "next": "G_Action",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "G_Return": {
+      "id": "cfa88684f32b4ef280593d4006ea0478",
+      "name": "G_Return",
+      "kind": "FlowReturn",
+      "label": "G · 完成并返回",
+      "asset": {
+        "name": "CH03_Chapter02_G_Return",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_G_Return.asset",
+        "guid": "50891ac9532c52f4499831569ab975fb",
+        "nodeId": "cfa88684f32b4ef280593d4006ea0478",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowReturnSO",
+        "scopeId": "288cd9f953b744cc9869065faf4f954e",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "288cd9f953b744cc9869065faf4f954e",
+      "connections": {},
+      "next": null,
+      "receiverId": null,
+      "calleeId": null
+    },
+    "G_Call": {
+      "id": "def56c63c2df4bdba6028c9df2833d17",
+      "name": "G_Call",
+      "kind": "FlowCall",
+      "label": "G · 陪师父吃饭流程",
+      "asset": {
+        "name": "CH03_Chapter02_G_Call",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_G_Call.asset",
+        "guid": "4eebd43cfc469ea46adcb62d93f9a645",
+        "nodeId": "def56c63c2df4bdba6028c9df2833d17",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowCallSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_results.Array.data[0]._target": "2c6384b53ccd4a3c864abb8db94f5770"
+        },
+        "receiverId": null,
+        "calleeId": "288cd9f953b744cc9869065faf4f954e"
+      },
+      "scopeId": "",
+      "connections": {
+        "_results.Array.data[0]._target": "2c6384b53ccd4a3c864abb8db94f5770"
+      },
+      "next": null,
+      "receiverId": null,
+      "calleeId": "288cd9f953b744cc9869065faf4f954e"
+    },
+    "H_Start": {
+      "id": "0b751c6b1d834a79acf6079b1df9685b",
+      "name": "H_Start",
+      "kind": "FlowStart",
+      "label": "H · 流程开始",
+      "asset": {
+        "name": "CH03_Chapter02_H_Start",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_H_Start.asset",
+        "guid": "db54775918b05d145ad13e31139af1e4",
+        "nodeId": "0b751c6b1d834a79acf6079b1df9685b",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowStartSO",
+        "scopeId": "0b751c6b1d834a79acf6079b1df9685b",
+        "commandIds": [],
+        "targets": {
+          "_next": "87f771b978ce4ef7949a9efada5f9e56"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "0b751c6b1d834a79acf6079b1df9685b",
+      "connections": {
+        "_next": "87f771b978ce4ef7949a9efada5f9e56"
+      },
+      "next": "H_Action",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "H_Return": {
+      "id": "ae96a9a080474141860d75b2df378d75",
+      "name": "H_Return",
+      "kind": "FlowReturn",
+      "label": "H · 完成并返回",
+      "asset": {
+        "name": "CH03_Chapter02_H_Return",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_H_Return.asset",
+        "guid": "41465241cc7d4194e8a2e42dbf3d8af2",
+        "nodeId": "ae96a9a080474141860d75b2df378d75",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowReturnSO",
+        "scopeId": "0b751c6b1d834a79acf6079b1df9685b",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "0b751c6b1d834a79acf6079b1df9685b",
+      "connections": {},
+      "next": null,
+      "receiverId": null,
+      "calleeId": null
+    },
+    "H_Call": {
+      "id": "35e766bbd1f14b51805f51251e3e3911",
+      "name": "H_Call",
+      "kind": "FlowCall",
+      "label": "H · 游戏厅流程",
+      "asset": {
+        "name": "CH03_Chapter02_H_Call",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_H_Call.asset",
+        "guid": "8989fa1ff87c8d14a8530023526e9876",
+        "nodeId": "35e766bbd1f14b51805f51251e3e3911",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowCallSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_results.Array.data[0]._target": "bebe413f78534332a08542bdbca7a4c6"
+        },
+        "receiverId": null,
+        "calleeId": "0b751c6b1d834a79acf6079b1df9685b"
+      },
+      "scopeId": "",
+      "connections": {
+        "_results.Array.data[0]._target": "bebe413f78534332a08542bdbca7a4c6"
+      },
+      "next": null,
+      "receiverId": null,
+      "calleeId": "0b751c6b1d834a79acf6079b1df9685b"
+    },
+    "I_Start": {
+      "id": "28d5a72ea7634efc8a48495255f7b876",
+      "name": "I_Start",
+      "kind": "FlowStart",
+      "label": "I · 流程开始",
+      "asset": {
+        "name": "CH03_Chapter02_I_Start",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_I_Start.asset",
+        "guid": "fc4ff7fd34ad0c047bfd6d56293cd10a",
+        "nodeId": "28d5a72ea7634efc8a48495255f7b876",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowStartSO",
+        "scopeId": "28d5a72ea7634efc8a48495255f7b876",
+        "commandIds": [],
+        "targets": {
+          "_next": "ae8795af29a04ea6b1ee3ad81672e5fd"
+        },
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "28d5a72ea7634efc8a48495255f7b876",
+      "connections": {
+        "_next": "ae8795af29a04ea6b1ee3ad81672e5fd"
+      },
+      "next": "I_Action",
+      "receiverId": null,
+      "calleeId": null
+    },
+    "I_Return": {
+      "id": "1a72cc45384a43d59f2eb1764294fc7b",
+      "name": "I_Return",
+      "kind": "FlowReturn",
+      "label": "I · 完成并返回",
+      "asset": {
+        "name": "CH03_Chapter02_I_Return",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_I_Return.asset",
+        "guid": "97050588acab75f4e83a361607d9d325",
+        "nodeId": "1a72cc45384a43d59f2eb1764294fc7b",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowReturnSO",
+        "scopeId": "28d5a72ea7634efc8a48495255f7b876",
+        "commandIds": [],
+        "targets": {},
+        "receiverId": null,
+        "calleeId": null
+      },
+      "scopeId": "28d5a72ea7634efc8a48495255f7b876",
+      "connections": {},
+      "next": null,
+      "receiverId": null,
+      "calleeId": null
+    },
+    "I_Call": {
+      "id": "bc8ef40b6aac481db3ff357508c57920",
+      "name": "I_Call",
+      "kind": "FlowCall",
+      "label": "I · 买礼物流程",
+      "asset": {
+        "name": "CH03_Chapter02_I_Call",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_I_Call.asset",
+        "guid": "965b2124b394b56449e52568c6ee7861",
+        "nodeId": "bc8ef40b6aac481db3ff357508c57920",
+        "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+        "type": "NarrativeFlowCallSO",
+        "scopeId": "",
+        "commandIds": [],
+        "targets": {
+          "_results.Array.data[0]._target": "bebe413f78534332a08542bdbca7a4c6"
+        },
+        "receiverId": null,
+        "calleeId": "28d5a72ea7634efc8a48495255f7b876"
+      },
+      "scopeId": "",
+      "connections": {
+        "_results.Array.data[0]._target": "bebe413f78534332a08542bdbca7a4c6"
+      },
+      "next": null,
+      "receiverId": null,
+      "calleeId": "28d5a72ea7634efc8a48495255f7b876"
+    },
+    "TitleCard": {
+      "id": "20fe082668134629afd524b43c02252f",
+      "name": "TitleCard",
+      "kind": "NarrativeDialogueSO",
+      "label": "开始 · 第二章",
+      "asset": {
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_TitleCard.asset",
+        "guid": "b7a430ddcfe8c4149be6ab5d010c18cb",
+        "nodeId": "20fe082668134629afd524b43c02252f"
+      },
+      "connections": {
+        "_next": "6d34e515692146e4aefbfa0569c6f9c8"
+      }
+    },
+    "TitleEnterJump": {
+      "id": "6d34e515692146e4aefbfa0569c6f9c8",
+      "name": "TitleEnterJump",
+      "kind": "NarrativeJumpSO",
+      "label": "跳转 · 进入日程",
+      "asset": {
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TitleEnterJump.asset",
+        "guid": "b69f444059f56594fa1db96e7f972661",
+        "nodeId": "6d34e515692146e4aefbfa0569c6f9c8"
+      },
+      "connections": {}
+    }
+  },
+  "globalVariables": {
+    "player_money": 25,
+    "player_affection_shen": 0,
+    "player_affection_yan": 0,
+    "player_affection_lin": 0,
+    "player_affection_murong": 0,
+    "player_insight": 0,
+    "player_management": 0,
+    "player_wuwei": 0,
+    "player_mana": 0,
+    "player_manaMax": 0,
+    "player_manaConfigured": false,
+    "player_ownedItems": "[]",
+    "ch2_month": 1,
+    "ch2_monthStep": 0,
+    "ch2_monthClean": 0,
+    "ch2_monthPlant": 0,
+    "ch2_cVisits": 0,
+    "ch2_eVisits": 0,
+    "ch2_hVisits": 0,
+    "ch2_lastAction": ""
+  },
+  "localization": [
+    {
+      "key": "chapter.0942d3f17d504f01ba64169b17e2a578.a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+      "zh_Hans": "第二章",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "prompt.0942d3f17d504f01ba64169b17e2a578.0e3f6fce6bbc413eb174919fd8478b40",
+      "zh_Hans": "上午，主控能做的事：",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.08ff5471f5664e0da35837c398eeadb0",
+      "zh_Hans": "A. 清扫",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.af7dd97907e042369cfdf7d701473546",
+      "zh_Hans": "B. 种地",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.973b377531fe420ebeffefbc6056e710",
+      "zh_Hans": "C. 陪香客唠家常",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "prompt.0942d3f17d504f01ba64169b17e2a578.9ae06dbb25974227b5415b385ace6293",
+      "zh_Hans": "下午，主控能做的事：",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.1b849bfd2c75429da798ee173facdbc5",
+      "zh_Hans": "D. 找师父学习",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.577c9c1606db41938b39c7177b2cae5b",
+      "zh_Hans": "E. 燕于飞找你玩",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "prompt.0942d3f17d504f01ba64169b17e2a578.b09ca941a1fe47f9bc1622b50cd81c4b",
+      "zh_Hans": "傍晚，主控能做的事：",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.ce3fafe990424c6a824c114e3353be97",
+      "zh_Hans": "F. 后山探险",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.e6ddf42381de4c868fd86df4835c23e5",
+      "zh_Hans": "G. 陪师父吃饭",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "prompt.0942d3f17d504f01ba64169b17e2a578.4ef0f7afaf3e451081c34cd78f965cbc",
+      "zh_Hans": "每月第5天，去镇上：",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.40c83811b9924c4abe6f88bf84a87a1f",
+      "zh_Hans": "H. 游戏厅",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.3809341259cf4437994019153b9a2d7e",
+      "zh_Hans": "I. 买礼物",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.dc531f738ef743be98c1ce22f4eb8f2a",
+      "zh_Hans": "超过1000",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.b5136dd24d2c4f25ac876fbd43d3f8d2",
+      "zh_Hans": "低于0",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.ca984ba1607448a99fe2537b350f6b2a",
+      "zh_Hans": "五个月完成",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.9bcfa0f0396b4b4db718830507cb23d6",
+      "zh_Hans": "本月13步完成",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.45b9e8034ddc4ac1baf1a549cfb38477",
+      "zh_Hans": "第12步：结算后去镇上",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.91ebdf5ba35b443f8736a6a4c3104205",
+      "zh_Hans": "下午",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.fe96dbe12ac245d7955a54f4881b0769",
+      "zh_Hans": "傍晚",
+      "zh_Hant": "",
+      "ja": "",
+      "en": ""
+    }
+  ],
+  "validation": {
+    "storyDefinition": true,
+    "assertions": 4453,
+    "saveRestoreChecks": 260,
+    "flowCheckpointCases": 9,
+    "layoutOverlaps": 0,
+    "scenarios": 4,
+    "choicesPerScenario": 65,
+    "monthlyDrawsPerScenario": 5,
+    "finalMoney": [
+      558,
+      514,
+      285,
+      445
+    ],
+    "runtimeCommandsPreserved": true
+  },
+  "targetFingerprints": {
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset": "6a35b305a7bdecb624881e49140b882cb6fb10262588fbdfed21086d152a73f5",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset.meta": "fec8c0317d47185b9c1044002df80dae92738243cac7581e07829b1643a7f845",
+    "Assets/GameResource/TableSources/novel_content_text.etable.csv": "85b02afb23661115e89a1f27c431987a370800eab8819a0c1d14c4c258e57739",
+    "Assets/GameResource/Resources/Config/Tables/novel_content_text.bytes": "a05ccd9b15b6768a6045c296a59529fb4692c12e331b3e0849452881948dec23",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches.meta": "d30451eb5e7a1a2d084f0b1b0c4716604c9ec2958888a520f8caf5b7ddedffe4",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Chapter.asset": "8056124a37df4f3fc217d50c0df183f3412eaa85ae2b7e1104c7398fc05225f1",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Chapter.asset.meta": "118768c1cb0aceca80b6dbb75a6f3f31b9b402991450288780f2d9def6c248d9",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices.meta": "1afce114f684cfc0af51e8f93be7a725be6ff88d3065a5f2e3c0feebee4fd533",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue.meta": "1e54e1f765181d56307f0a954f70536397d44f67ebbc057f09f08fb1d2f8e744",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Exits.meta": "7cc091f93e5be1b85f6b38a06282833b596e81ae0680c8983db98cd197a190e7",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_LoopRouter.asset": "bb7eebf1de8abd02fcb1fe8f3aa0b9402a4586b9b37f4299c8922c5b932f27a4",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_LoopRouter.asset.meta": "d5d4d77292a58305b2cba9341b7ca59ebf285a0736cd629398135897a8f4b7a0",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_MoneyBounds.asset": "d5660d1a9f29f84aadf5384b56f4e607e0a366230f30b2629244a0918c121f15",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_MoneyBounds.asset.meta": "f1f9ffb5eee9275ef12010b10bc997b2c805fe611bfbf35543fafe3d02a2ed7e",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Afternoon.asset": "addc3223e204d6f41c2f4fdfd68f2ac48d812b3fd1f0df6e87c650f33b5c513c",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Afternoon.asset.meta": "644d497991c9d64f2a8bdd391669cf8cbc35311b3bdbead4f9edc3581c0e5902",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Evening.asset": "68c82abd6b4198d79bcaa8fc0cc0b693cba29c06c4e0848589c3540e4fc16f74",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Evening.asset.meta": "0536d22327e882b66f2d1cef333c3343e76681cd1f62ade8f9efe6588c583764",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Morning.asset": "639ef7629095965f07edfafad73b4d23ffa62717e5b4ccb853c500ba3343f722",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Morning.asset.meta": "a28e5f0b3a08c2ff34dadcf31bf329b8c886f9920f576e366f7e9667131eabe5",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Town.asset": "35c53f36137269d20af9d38eff376ea51008c356db3e5ecbb9cf28dc384b2309",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Town.asset.meta": "96afbbaa9421a7430ad2b2aa31f4542d388f56f16b403262aba03fc04d3f16d8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_AdvanceStep.asset": "26037dbcad6069ff8399f62f428357fb76c238dd00990dc35ffef7e8e41173a6",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_AdvanceStep.asset.meta": "d546a3c2e98acfa58b0c376e917fca18f4776010ec6e9c516b1da0f789128676",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A_Action.asset": "4ed365857283344ccb192090d21ac57d6415d5813fb5c0ec379299f4a6c8d0be",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A_Action.asset.meta": "3f72ee227c8c30f29c39000f0cbc3adc32c25846666696261e3d05472f5bf148",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_B_Action.asset": "27394d195e3643255c8880206081760beb3bdbcc48a59931a4b49f9ab6275386",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_B_Action.asset.meta": "9ab2bb45f21eee7ca65c03b9210720eed942ceadafa3af9e5c1e4e4a4d7c8f71",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_C_Action.asset": "38f2333c20fcba523691de46acb01cb4c8a4ed7211d2c553b671bc3be3f6e763",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_C_Action.asset.meta": "eff8c52a5380dafccfc6241383f030d1720a4bda5d0fdb66d8ccff13b76af5fd",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_D_Action.asset": "e7deb8d7f1aab7b2bf7ac616cb30ede870714a333f58e795e6e8a89ddffb8e6e",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_D_Action.asset.meta": "2f6709647adff0e8ece0b8d03bd8ea00c081f62cbf2a7119a0b6a6d901d6d56d",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_E_Action.asset": "78393f57c847e89defba6df09c4365d14e757c35337de9316d9ed2ff80c327d8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_E_Action.asset.meta": "690f53e3fd65b623481e55312a016651738604377775e45ed430595bc802aa68",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_F_Action.asset": "edaa9863bece5a868ccda5e7af487fe2ca38c6f80842c25ca60f2972687ebb87",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_F_Action.asset.meta": "ad86395dce4bd177007dd867d56bda498adf996d658c52b0e2e60529cd4daf87",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_G_Action.asset": "6308e7a4611d7eb2054e457327f7a3b4b52d2d4f1fde7d56327c5e2f74608fc8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_G_Action.asset.meta": "d5c0801595b75b4c0240fc77833b29120d548eee21660681198c8659c0dac3d6",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_H_Action.asset": "b245d6d88d861b58ee6ea3fdd94ac654612394b08e0dc31209e403a400d3df9f",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_H_Action.asset.meta": "4c65c36664a69fdb2056bac984c7d618c1b1593c54d25d61f9e2fc70d938e0ec",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_I_Action.asset": "e9fb306124ae2b1cd4acbd17e593f5dca1fc3696fd196600e5d22b24d82b4eb6",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_I_Action.asset.meta": "53f793b535b5aea100b1a0d00e2b5b668c4a2c9af942fbb88ea4c2f4d5814ef9",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_Loop.asset": "f8f700a75f8f67c106aa5f78f5a5e87bd2e8b7d492548cad1c08bf92c066d67f",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_Loop.asset.meta": "05d8bd2b6102c6c29cd599fd2e333a1056efc70f87b12a5bd7ee149365e3c8ce",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_MoneyMax.asset": "45f1d0ec55d42653e713539bd4ed2b947446d79e66a280d1e51737c3ed710069",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_MoneyMax.asset.meta": "42e873a3b09745b305ce229535fda1b6ebe85c9a81a994e55784c7813c0bf937",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_MoneyMin.asset": "9ae1149b3cc7ce81e6bd767c7a6ad521d38316bcce97f9a02404a56deace16a8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_MoneyMin.asset.meta": "ca3023a849954404fd5c2c99d58bb7ebfc611b3d6ae0a8249919c07280434c6b",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_NextMonth.asset": "1ca8d9539d79e5d56405db8a6fd27214b6dfb486e8b0f711cd767840fab19b1b",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_NextMonth.asset.meta": "2529d24b0b3fa55bac33e4a80f004e7112f07bd9779f6333e6ec459e4d294ada",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_Settlement.asset": "66608b7e97f5c2ca34e95c7ec7259a460b3f1047e1feba1986cf7f0eac9be380",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_Settlement.asset.meta": "6671fda46395fe6ada8f6a079a210bc9f49226270a4762f4de3eb072556c5111",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Exits/CH03_Chapter02_Exit.asset": "8ad4510993978fc506ce3cc144488883aa076446290b8a06e99ebb079212b108",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Exits/CH03_Chapter02_Exit.asset.meta": "e4348d88317f2a094f2cca59235cd55ee2874b5c638a98a5bd592990d397e965",
+    "Assets/Game/Module/Narrative/Editor/Layouts/75ad694ccc0992e41ba54774f0d7ab5a.asset": "4d759d1bea0d54b74a0d43c4f7241b0a6ba6d2fd02a20c78fa7bb98f8c6b01bc",
+    "Assets/Game/Module/Narrative/Editor/Layouts/75ad694ccc0992e41ba54774f0d7ab5a.asset.meta": "4998da80d89280611cc271e295f20935d1b6d7f764981f641f3ee2c25968fd1d",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Daily_Receive.asset": "5e5dfb1f1d762a441986ca9556fbc21b11be2ff3e0f2657132155c946d980b73",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Daily_Receive.asset.meta": "c22e1d90b9b079a4bb47cba1c7b4ac634cd781d681fa0e05a80fa7515fd24610",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Morning_Receive.asset": "24e113d51a25b17eb44579618fb4837237ed1a15bb63bbaa540d9993e4f38df9",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Morning_Receive.asset.meta": "b929cf31181d73eb6e6e2eb221534ea453ac561ca99e255f19019cf287356d2a",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Afternoon_Receive.asset": "109afb0248ca8e33be75258a5e8250a9a4d0e53df0d736cef76bc6b96ae5f571",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Afternoon_Receive.asset.meta": "d4df3d96ffb1b79b1e8f4eb8e84e6c40765bba300191041a356207dd240fd483",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Evening_Receive.asset": "4a934947098f91840b9f5e4f658e9794183f7e4c1ace1ca4d253515ff3037bff",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Evening_Receive.asset.meta": "84c6c123fccd2e379306247a9c9d6b184b65730e4b6cd52cb16c91dd17276faa",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Settlement_Receive.asset": "37c62dc0049f152bc7c0a5d715376de19fd0d1e4c5a7164c88c40ccb6700c522",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Settlement_Receive.asset.meta": "2d1850be2d1a161b7d03b7c828b6839f55d5157b111f977de8f36795604a02f3",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Town_Receive.asset": "855ef58438742c807ae4e279e602f2d7e808e292956f5a17235bcf1cd054c959",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Town_Receive.asset.meta": "d973695b005957d988b76a915aaafc49f5eca710cb2e1d5c177a58ba6ecec3da",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Advance_Receive.asset": "924d3cfd046077babb5b333726faac1584b55eab7ffa2f5f3832d6d78e966457",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Advance_Receive.asset.meta": "a434e715b4134ed7039760a1aeb408cda3a1e3a4d6708bc9a1079ae5a52ca24c",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_NextMonth_Receive.asset": "a7b32f752709c3f765a296fc734de53d9d1b4b9b8a2db831e2f7971873bb1464",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_NextMonth_Receive.asset.meta": "a51b4d9e51ad7f170941615893910ff112d6de6d45254951c069f93183bcd564",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Exit_Receive.asset": "c599fbbc3a7f859219032ce075c3c877eba8a384d6ef40cca9726f661b4fffa6",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Exit_Receive.asset.meta": "6c3d7a22f84395cfeb808accfb19df69f09a3a45d9b44a640f69aecca6712d84",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Morning_Jump.asset": "db41a697a4e228180935401676448efcba6dce036fc73665ec26fa0d59860f59",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Morning_Jump.asset.meta": "f4350ca6c7b893c1d88c32a8f1aee6e2e021a3a85061bf7e7f013ae4e04b7e73",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Afternoon_Jump.asset": "10ab18f0d31df617f1d627333c2d44638d97ed2957bab295f9e043db64df0d3a",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Afternoon_Jump.asset.meta": "b77c243a8ac6c9d69288e2be148241cec8d9e43b91fbfc3481fede7062c47246",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Evening_Jump.asset": "89002a50f36dd03e37386efb6eceab70e6828c473f1a8677da47e4ec275ced87",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Evening_Jump.asset.meta": "25dfe938e182c0ec19475672c5414d20c569ec3cf36e4e2bf2e46e6f8bc2f1e9",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Settlement_Jump.asset": "4b7e1b9a144222ecc53a11b94e4cb371553d8dfe1305eca42dcdad9af3970ce4",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Settlement_Jump.asset.meta": "b570a59e07ab9f11d2b2454d59a49d46c02757a9930beccd6dd8cf2942409121",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_NextMonth_Jump.asset": "72a71945aacc4e974aa9b09a8129c513429d4db51878880715f5d53f99c5e7da",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_NextMonth_Jump.asset.meta": "20173426158be116296d935b7c6dce3aa6cbebb5e415655f42fad1c051d9954b",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Exit_Jump.asset": "2ceb772736be83a9acf744828fc32920306596a01ba562cbc2e838ce79f390ae",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Exit_Jump.asset.meta": "0bfe66f7936615d4de8e999ac4a900aab4bdf0fc0e3d28f9daed84d6fc556108",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TownBounds_Jump.asset": "d08fa9e51623b91d9db2bbd50e679bbc1cfcbe5f08911adea1025342847cca32",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TownBounds_Jump.asset.meta": "7a1e49cc13525c7328c3df04e5ce911a146baa1ec803cd1b9838672e8db7dff1",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TownMax_Jump.asset": "76715c748359e607cc7d35b320a2ac8de004423c182564af7dbd9fde73499852",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TownMax_Jump.asset.meta": "dc917a142fcee82e99cdd52a8ac101fc384386d260a3a0c2707bbc4aa802cfdc",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TownMin_Jump.asset": "c35d8c20156e4849e775afa4350af82200aaaa52cc3d57bb8840f4bd15695be8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TownMin_Jump.asset.meta": "05f2bc811231e68be8af3c02f4b7d5786cf345627e143b8d9bb4c991cc46aae7",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterMorning_Jump.asset": "eade1fc2aed2667fc611e81857069bbc8a1f16ac0617de0d7aa2b57561465cc5",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterMorning_Jump.asset.meta": "5f46534fa9546c245a365955f514dac860ae35cff1edaf9aa8655ecdbfd8d87e",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterAfternoon_Jump.asset": "505b3a2f5f1593ffdebce4bc08b5b0e4cfdf4a52d9e25eb5a4c3105be3431254",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterAfternoon_Jump.asset.meta": "3fae6e0cddeb4cd3160188aa1692660c8ada07bebd176fcc36bb03be04cc5f3d",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterEvening_Jump.asset": "caa950d176cef8f6680f6650b074d4b165d2d0263748537b0e40e4419fe8e5d8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterEvening_Jump.asset.meta": "8a739f385500d8c2d57014b8bae83f4a962daf62eefd63c28ae68b359a6eaaa8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterTown_Jump.asset": "c784838cb1b45b2424e5f646be36146859fb9fda1053aea9917d82be5668ce41",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterTown_Jump.asset.meta": "4a199a08911d6d83f67f356c377e07da6c64e6085da1a41cb3876e09ff5d4f3e",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterAdvance_Jump.asset": "7b49980f385173aa482c149e930a39b4ca74650b90806c4ea73755cec344dbdc",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterAdvance_Jump.asset.meta": "d7e00d5034a33ae81ef18e8daad6ee65e4bae0d0f561c7b35bcc6c4dc0643457",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterMonth_Jump.asset": "caf5b17b96b79ddf43a73cfb523e2631a87a6e0fd60e981facb82299e9409f58",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterMonth_Jump.asset.meta": "561328d97e00a114cdd67942f90b4c533f357ca947f55cd72f9e8347e992c2ef",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Start.asset": "528443a593075ee0a4752802852a7c14e00bf7afbd44269d0f453ad9f5068686",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Start.asset.meta": "cdde45de2f59e933b78562d1b07fdc588cb59a73bf6f30474e5b091030a631e6",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Return.asset": "e03e2e74b1a4106961105d12fcae0f8a2e4cf5c8f6c18f0b80db1bbd8bc23f3d",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Return.asset.meta": "c61218f12f513dc3a06e210778a1b8b86f7963be3b8a5a911c48b8bf6b597fd2",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Call.asset": "5a2060e82672987643a9d4e2b67ba2f3b8965c7f0d23f4d211edc882d42371f0",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Call.asset.meta": "22b3dbb4691ec80c61801d5ed475bf0de93bc3ee4e7f4a302471cf3a05c58577",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_B_Start.asset": "4f682a54ce49871fa722c2854d543d18edf5f6c10a0478ba5da79e388c5c75e2",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_B_Start.asset.meta": "55dd8d18b8841589e4005443ad7ccaaffe104e8cf68e53ffbc082380d3d6d651",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_B_Return.asset": "7d05b99f105ebd893ab6432ca4dde6adc0b997b571645324db2a4a437dcb14bd",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_B_Return.asset.meta": "33112b829a01530c6f6ea4b0c576eb3ae6dd9c570ded7f16494786dbcd108607",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_B_Call.asset": "c381fead395951b3904974ff2352fe031a0be08c913faed4a4532c171d09f9a9",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_B_Call.asset.meta": "f0f621bbddcb514708206a0d186db3647baa6609bb61a72ac6963bd9e92befed",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_C_Start.asset": "e03dc00a72182d0cac87f2e81f2c3d6f002162010f8fa7615c152ff142675e5a",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_C_Start.asset.meta": "995164c07b8a3eac9da59a444f13be49492bfef97b615e68b31d7775c4824b3c",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_C_Return.asset": "850fd3575356152911ffc5b031feba66f5791e6f1732905e61c46bb505b73d3d",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_C_Return.asset.meta": "358c622985a807cf5b286a60a4588d30263c56346384f52543e37d3dc61369d8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_C_Call.asset": "d8bde727a827ce988abdaa077ff8d495a82fcd44db2e1f8760c504ccfa93afb2",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_C_Call.asset.meta": "947ee0de8749cb2edd6c472a5d177c40f3c9e7ed558f96f913fb97383ad142d8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_D_Start.asset": "42e6d831ea938a5da348e52fd40bbbbcaf84228e5e80b51d9efa2fe6f46d67f4",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_D_Start.asset.meta": "48ec70936fc1a33e57e287409a2506988e1cd4ca06d536c10186a59284d246e3",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_D_Return.asset": "adb91fb07e5c3b3b9e4ab7de6b047a6d5bf05300b6506f896e02b6140b57738c",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_D_Return.asset.meta": "a3bf6d77ec4033819d9b392b7a92025f1ddbe39576d877daa2566151644ccae1",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_D_Call.asset": "ced313da41e351824b882ab9f4a44b94c458b41c7577b5c7b9dec8274154bdf8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_D_Call.asset.meta": "f41aadf695120d62facc0ff80c8584cb832301ac71dacece7ecd76ce8e30c4fa",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_E_Start.asset": "b724e45d296a79c99f6975cc24dda1a864b69c78bb47bfc483f887d38942555f",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_E_Start.asset.meta": "79d04e8b06deeed28bb412f2386c5e30a18355f9830d8abe5cd9d2f124587475",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_E_Return.asset": "90a23cee97283e4380c69292368f469e417361a166fdaba1fefc33bf9a0a65c2",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_E_Return.asset.meta": "ee853b62043626ff76177e5a4345581f7438fb8fbcedca5baac79e6bf4f9c28a",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_E_Call.asset": "2010115f2e1138ce6ed1253381b5fc842364d91de7978270c221b4bd9f9f50fa",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_E_Call.asset.meta": "6bb62b92685ef0ba66afe7abaecfa71adbc379b0a100dc1adacea742d322e4a9",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_F_Start.asset": "a849b325023c0d3f92070e39d7cdf664b299714b3b156ca6620d3a5b179c2deb",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_F_Start.asset.meta": "eb83f07e52ce8c50f5b307ff777cb25ba1c32a606bf1a6cd145fd679de2a519a",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_F_Return.asset": "afca5d9ae958f931aa6cb29ba8cfd5f7dba75fafed4612697dddd74357f4e852",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_F_Return.asset.meta": "e3f5868c19eef54992a2c29f27d67d6ce3686464dca808430c26a0af8e77c640",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_F_Call.asset": "1e3468d6d6e5bc59ab20f5ea812245d98feb1c600cd5fef2a62c6728f80a936e",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_F_Call.asset.meta": "4fb2324d15529ddbe1596c6bbbb45a622c35f2800c2d467622f225f8e6fbc2cf",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_G_Start.asset": "47e157c65f68eb41903376dc6efa43f47ca800ab0e3c96979e9d005b48b0a2fd",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_G_Start.asset.meta": "6949730e80a406c2ba8af2a26feb4a09a34b8d0ba457a9c097ac77feae096123",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_G_Return.asset": "5af09214bbe3d821724e8eb7e678cd358837383cd316232a0e019dc76d17466b",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_G_Return.asset.meta": "97cd053a8204d4687c37c60f574ddda7d61b8f5444a24a9d0f3a00e7adb38a4c",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_G_Call.asset": "8fb6583c7636125c3be5601fb1e5daae78a3b09fc23ef14c54c1739ef7fb6617",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_G_Call.asset.meta": "3c655d94807c666cc824f43c97eac619e522fdefc23692a0257bbf1c9687146a",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_H_Start.asset": "33c7f72b2e67174a03ba4c2d4c2780e622f61381cb164503e1a8309f27e53e39",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_H_Start.asset.meta": "386956f9dbf8c08ada673a6df2bc1abfbeee01843878949b8a22a06a81a26c71",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_H_Return.asset": "9c813c63e40595a208a95d165b9dd60defa2877abca3c6a2b5a84b9836248702",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_H_Return.asset.meta": "d7d57823a72b0636c89760f0a7695d125fbc694834acfa405cce40b433de558d",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_H_Call.asset": "86fcf83de0c65f53128a9ee3fed23128222b699b43c82952e79d9a606db51f51",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_H_Call.asset.meta": "3d6a1128b1623fb2292c95b161b152545ce39c42f302d76ce2c1886d226a154d",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_I_Start.asset": "d79c9c7c85072ee112a626b3ba074bbcefaaa9e8c1946d5eb6a813c4d01ec66a",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_I_Start.asset.meta": "bf2d76b582387b5edd5f40a676fb408ea41a8d5a926140f2e28c577933b23d1e",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_I_Return.asset": "f20a87bdeafe88aa11d830a1b614e9fdd8c9b6b9bafa03a26bc1069f210f68ca",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_I_Return.asset.meta": "80ecec65aaf1cfc9c1204a99289e1ebb5ba41101ca635192b9eaad5d9bc4e6a6",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_I_Call.asset": "7128753483988494ba05ed55075c180c35862fb96d764a3ee24216c140c56003",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_I_Call.asset.meta": "68154b8981ab02f4445bab0c5fe8ffb03f4797115ce580a41fec2f22ce6cb69b",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_TitleCard.asset": "cf46d4616da931fcad5d243cb3e2c651350661a5f508a4d452ef6ef086a697e1",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_TitleCard.asset.meta": "e13017a39dc9ee4f5d44d6cd7fbe8c77ecc8e0aba9ec4861129afe34781fda37",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TitleEnterJump.asset": "324a9787e4b5098450b6105bf140d463e63c823b274e55ab9dd77e775ee83bd7",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_TitleEnterJump.asset.meta": "8e2314cbc4c26963ab2d7fba48d8a4a600a60a755639f697f495583f85944766"
+  },
+  "remainingContent": [
+    "文档H耗尽写成E000，语义疑似笔误：本批用H自己的空兜底节点，不跳到E线。",
+    "A/B/F/G的完整人物触发、概率和优先级留在事件分派扩展点；本批不假装实现这些支线规则。",
+    "结局阈值尚未指定：本批第五个月后进入现有预览结束章节，不自动选择任何角色结局；后续结局优先级按慕容盈袖＞燕于飞＞申箬青＞师父。"
+  ],
+  "backupDirectory": "C:\\Users\\wuyu\\My\\Call Me Heartless\\.utmp\\vn-story-import\\20260929-chapter02-loop-01\\backup",
+  "chapterScratchVariables": {
+    "loop_slot": 0,
+    "loop_eWindow": 0,
+    "loop_income": 0,
+    "loop_cleanBonus": 0,
+    "loop_plantDiscount": 0
+  },
+  "revisionReason": "以正式 Jump/Receiver 和 FlowCall/FlowStart/FlowReturn 重组第二章；保留全部原指令、变量及选项。",
+  "refactoredAt": "2026-09-30T12:38:08.8347037+08:00",
+  "currentStoryRevision": 10,
+  "scheduleState": {
+    "month": "ch2_month",
+    "step": "ch2_monthStep",
+    "stepRange": [
+      0,
+      12
+    ],
+    "normalSteps": [
+      0,
+      11
+    ],
+    "townStep": 12,
+    "nextMonthTrigger": 13,
+    "finishedWhenMonth": 6
+  },
+  "eventProgress": "C/E/H使用累计访问次数，进入行动前的次数+1即下一候选事件序号；超出7/7/4后为兜底。当前正文为空，不创建逐事件空资产；后续填入真实事件时按计数分派。F在C次数≥2后解锁，E在H次数≥1且step为4/10时解锁。",
+  "retiredNodes": [
+    "PrepareSlot",
+    "SlotRouter",
+    "A_Dispatch",
+    "A001",
+    "A001_Done",
+    "A002",
+    "A002_Done",
+    "A_Pending",
+    "A_Complete",
+    "B_Pending",
+    "B_Complete",
+    "D_Pending",
+    "D_Complete",
+    "F_Pending",
+    "F_Complete",
+    "G_Pending",
+    "G_Complete",
+    "I_Pending",
+    "I_Complete",
+    "C_Dispatch",
+    "C001",
+    "C001_Done",
+    "C002",
+    "C002_Done",
+    "C003",
+    "C003_Done",
+    "C004",
+    "C004_Done",
+    "C005",
+    "C005_Done",
+    "C006",
+    "C006_Done",
+    "C007",
+    "C007_Done",
+    "C000",
+    "C000_Done",
+    "C_Complete",
+    "E_Dispatch",
+    "E001",
+    "E001_Done",
+    "E002",
+    "E002_Done",
+    "E003",
+    "E003_Done",
+    "E004",
+    "E004_Done",
+    "E005",
+    "E005_Done",
+    "E006",
+    "E006_Done",
+    "E007",
+    "E007_Done",
+    "E000",
+    "E000_Done",
+    "E_Complete",
+    "H_Dispatch",
+    "H001",
+    "H001_Done",
+    "H002",
+    "H002_Done",
+    "H003",
+    "H003_Done",
+    "H004",
+    "H004_Done",
+    "H000",
+    "H000_Done",
+    "H_Complete",
+    "CheckSlot",
+    "NextDay",
+    "SettlementGate",
+    "TownComplete",
+    "MonthCheck",
+    "ChapterComplete"
+  ],
+  "refactorBackupDirectory": "C:\\Users\\wuyu\\My\\Call Me Heartless\\.utmp\\vn-story-import\\20260929-chapter02-loop-01\\simplify\\backup",
+  "retiredLocalizationKeys": [
+    "option.0942d3f17d504f01ba64169b17e2a578.0a247e19d8e04eb0b43ef151df3c097d",
+    "option.0942d3f17d504f01ba64169b17e2a578.10a1d4609daa4067b3f923503ac88fec",
+    "option.0942d3f17d504f01ba64169b17e2a578.12b4beac09a24918bf231669bbf244a3",
+    "option.0942d3f17d504f01ba64169b17e2a578.28543eda74a04f4c8fca484d99fcb9e9",
+    "option.0942d3f17d504f01ba64169b17e2a578.35c50dbe84ad42a896b94589f0ffbd61",
+    "option.0942d3f17d504f01ba64169b17e2a578.36ce0dc6ebd244138c44f292ee6f15dc",
+    "option.0942d3f17d504f01ba64169b17e2a578.3a3e3f5826024262ab2815ec6feade53",
+    "option.0942d3f17d504f01ba64169b17e2a578.41ec2342df8e40d28a636f326440a858",
+    "option.0942d3f17d504f01ba64169b17e2a578.467831ac65c148c88e8c1920d3608673",
+    "option.0942d3f17d504f01ba64169b17e2a578.54888ef4390d45ddaff4180390b7a51e",
+    "option.0942d3f17d504f01ba64169b17e2a578.5863fc7b2b404d9d94584592482cfb35",
+    "option.0942d3f17d504f01ba64169b17e2a578.5e94b01fa140413bbaa115db728ffa9f",
+    "option.0942d3f17d504f01ba64169b17e2a578.6e412406ffcc4db5935c71b1914df575",
+    "option.0942d3f17d504f01ba64169b17e2a578.7641ac3bf2be4e8b9a84c9b86e8f4adb",
+    "option.0942d3f17d504f01ba64169b17e2a578.7c39115b5182491f89d3335b5c01b9c2",
+    "option.0942d3f17d504f01ba64169b17e2a578.8891dbcb084c456290840767329d08b2",
+    "option.0942d3f17d504f01ba64169b17e2a578.89aa78e6d3b94fa1a0d99d3066d0c927",
+    "option.0942d3f17d504f01ba64169b17e2a578.9509f80dddd24b48852a0555adf0d0af",
+    "option.0942d3f17d504f01ba64169b17e2a578.9620d024b40140b4aa05bb538fd06063",
+    "option.0942d3f17d504f01ba64169b17e2a578.989076c671f743e098003ea3b6c553b0",
+    "option.0942d3f17d504f01ba64169b17e2a578.c1e5496ad4d14d5fb0c7395741f231e9",
+    "option.0942d3f17d504f01ba64169b17e2a578.d5b815cf700a435d901743b7601876ff",
+    "option.0942d3f17d504f01ba64169b17e2a578.d7584fb94d744987bc803f877f598491",
+    "option.0942d3f17d504f01ba64169b17e2a578.d86e4f0fa757445d9b24205ea4ae6d86",
+    "option.0942d3f17d504f01ba64169b17e2a578.e1918b1082e94ea18fd9ca6f8773dfb0",
+    "option.0942d3f17d504f01ba64169b17e2a578.fe544cec17c148a2a60ccd055dbb3d56"
+  ],
+  "nativeFlowMigration": {
+    "batchId": "20260930-native-flow",
+    "nodeCount": 75,
+    "flowCount": 9,
+    "receiverCount": 9,
+    "jumpCount": 15,
+    "entryNodeId": "20fe082668134629afd524b43c02252f",
+    "backupDirectory": ".utmp/vn-story-import/20260930-native-flow/backup",
+    "oldCheckpointCompatible": false
+  },
+  "chapterCardBatch": "20260930-chapter01-cards"
+}

@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb016b628299664584f2d647b3b1421, type: 3}
+  m_Name: CH03_Chapter02_LoopRouter
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeBranchSO
+  _nodeId: 6c20dac8b09f48db819e41b7f48db868
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 2
+  _flow: {fileID: 0}
+  _branches:
+  - _optionId: ca984ba1607448a99fe2537b350f6b2a
+    _text: "\u4E94\u4E2A\u6708\u5B8C\u6210"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.ca984ba1607448a99fe2537b350f6b2a
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_month
+        _scope: 1
+        _comparison: 3
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 6
+          _string: 
+    _target: {fileID: 11400000, guid: 4b3a2f057fd43c542815857ae7bb5482, type: 2}
+  - _optionId: 9bcfa0f0396b4b4db718830507cb23d6
+    _text: "\u672C\u670813\u6B65\u5B8C\u6210"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.9bcfa0f0396b4b4db718830507cb23d6
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_monthStep
+        _scope: 1
+        _comparison: 3
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 13
+          _string: 
+    _target: {fileID: 11400000, guid: 1a8e6451a4d30f148ac344e744a1984f, type: 2}
+  - _optionId: 45b9e8034ddc4ac1baf1a549cfb38477
+    _text: "\u7B2C12\u6B65\uFF1A\u7ED3\u7B97\u540E\u53BB\u9547\u4E0A"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.45b9e8034ddc4ac1baf1a549cfb38477
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_monthStep
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 12
+          _string: 
+    _target: {fileID: 11400000, guid: 8469d2157a5504e4bae13ca61f743810, type: 2}
+  - _optionId: 91ebdf5ba35b443f8736a6a4c3104205
+    _text: "\u4E0B\u5348"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.91ebdf5ba35b443f8736a6a4c3104205
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: loop_slot
+        _scope: 0
+        _comparison: 0
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 1
+          _string: 
+    _target: {fileID: 11400000, guid: c93b6936dc29d014c9ddb7cdc37c432e, type: 2}
+  - _optionId: fe96dbe12ac245d7955a54f4881b0769
+    _text: "\u508D\u665A"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.fe96dbe12ac245d7955a54f4881b0769
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: loop_slot
+        _scope: 0
+        _comparison: 0
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 2
+          _string: 
+    _target: {fileID: 11400000, guid: 41194df19607d2544a006ee495b76e16, type: 2}
+  _fallback: {fileID: 11400000, guid: a67621f8ae13468489dbe118485ce459, type: 2}

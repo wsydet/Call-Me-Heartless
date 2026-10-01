@@ -15,6 +15,7 @@ MonoBehaviour:
   _nodeId: c0e8c9974d964bd990bcb6defd7d238f
   _chapterId: 57c023ad23ef45be88cbab6bd9b3d51d
   _contentRevision: 6
+  _flow: {fileID: 11400000, guid: 0b2849a4843d55f4d8b54ca667a57ad7, type: 2}
   _commands:
   - _cameraZoom: 1
     _wipeDirection: 0
@@ -1099,4 +1100,4 @@ MonoBehaviour:
     _bindingId: 
     _volume: 1
     _textKey: 
-  _next: {fileID: 11400000, guid: be9971fa35a1aec4c8bee9ac5ecdd5e0, type: 2}
+  _next: {fileID: 11400000, guid: 13992ae6296058b4cbef184ce1211d49, type: 2}

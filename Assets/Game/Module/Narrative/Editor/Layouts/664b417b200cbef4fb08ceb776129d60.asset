@@ -13,26 +13,78 @@ MonoBehaviour:
   m_Name: 664b417b200cbef4fb08ceb776129d60
   m_EditorClassIdentifier: Game.Narrative.Editor::Game.Narrative.Editor.NarrativeGraphLayout
   _chapterGuid: 664b417b200cbef4fb08ceb776129d60
+  _compactConnections: 0
+  _collapsedFlows: []
   _positions:
   - _nodeId: d4ed48bba88940edb25a9f6448c57624
-    _position: {x: 800, y: 940}
+    _position: {x: 2720, y: 650}
+    _caption: "\u7ED3\u675F\u95EE\u7B54 \xB7 \u7EE7\u7EED\u5267\u60C5"
   - _nodeId: 1ee958ac7ec042d986982a9c3b7c5ce2
-    _position: {x: -1140, y: 240}
+    _position: {x: 340, y: 0}
+    _caption: "\u62B5\u8FBE\u9547\u4E0A"
   - _nodeId: 99732585ac7b46819748abd53641365d
-    _position: {x: -840.00006, y: 240}
+    _position: {x: 680, y: 0}
+    _caption: "\u4E0A\u5C71"
   - _nodeId: 892a623db4314c9fb2dada1107773409
-    _position: {x: -540.00006, y: 240}
+    _position: {x: 1020, y: 0}
+    _caption: "\u521D\u89C1\u5E08\u7236"
   - _nodeId: f9f436dc485148ef8e98cf24a870d72e
-    _position: {x: 400, y: 540}
+    _position: {x: 2380, y: 0}
+    _caption: "\u9009\u62E9\u63D0\u95EE / \u7ED3\u675F\u95EE\u7B54"
   - _nodeId: 5c9105f0103248a584e17647e338a08e
-    _position: {x: 800, y: 440}
+    _position: {x: 1700, y: 640}
+    _caption: "\u65E5\u7A0B\u5B89\u6392 \xB7 \u6B63\u6587"
   - _nodeId: c0e8c9974d964bd990bcb6defd7d238f
-    _position: {x: 800, y: 600}
+    _position: {x: 1700, y: 940}
+    _caption: "\u5173\u4E8E\u95E8\u6D3E \xB7 \u6B63\u6587"
   - _nodeId: c96dec0de1124957807b5ffb43714d6b
-    _position: {x: 800, y: 760}
+    _position: {x: 1700, y: 1240}
+    _caption: "\u5173\u4E8E\u5996\u602A \xB7 \u6B63\u6587"
   - _nodeId: 55c0b32052b94aa09ffe885533cb7aab
-    _position: {x: 1360, y: 240}
+    _position: {x: 3060, y: 650}
+    _caption: "\u7ED3\u675F \xB7 \u8FDB\u5165\u7B2C\u4E8C\u7AE0"
   - _nodeId: ab2022f50e45483797909e97be4f4b75
-    _position: {x: -220.00005, y: 240}
+    _position: {x: 1360, y: 0}
+    _caption: "\u8FC7\u4E86\u4E00\u591C"
   - _nodeId: 537d5206a78b47c48166dafb7d9065c3
-    _position: {x: 79.99996, y: 240}
+    _position: {x: 1700, y: 0}
+    _caption: "\u5E08\u7236 \xB7 \u5F00\u59CB\u63D0\u95EE"
+  - _nodeId: b32c0d739391484ebe3a39591a027e39
+    _position: {x: 0, y: 0}
+    _caption: "\u5F00\u59CB \xB7 \u7B2C\u4E00\u7AE0"
+  - _nodeId: 0eb30befaeee438d9e2302d9d4fec4bd
+    _position: {x: 2040, y: 0}
+    _caption: "\u95EE\u7B54\u5206\u6D41"
+  - _nodeId: fe6a97739a2c4ced9acfa37103c6b82f
+    _position: {x: 1700, y: 200}
+    _caption: "\u63A5\u6536 \xB7 \u8FD4\u56DE\u63D0\u95EE\u83DC\u5355"
+  - _nodeId: 3f16aa1fa3b241bf8727c1c072a1e663
+    _position: {x: 3060, y: 150}
+    _caption: "\u8DF3\u8F6C \xB7 \u8FD4\u56DE\u63D0\u95EE\u83DC\u5355"
+  - _nodeId: 31d3c28ac784488eadd26b58aa966ee3
+    _position: {x: 2720, y: -120}
+    _caption: "\u65E5\u7A0B\u5B89\u6392 \xB7 \u6D41\u7A0B"
+  - _nodeId: 6234705cdfad4900801f8976b90af2dc
+    _position: {x: 1360, y: 640}
+    _caption: "\u65E5\u7A0B\u5B89\u6392 \xB7 \u5F00\u59CB"
+  - _nodeId: e6f6a3dcca3d45139a4b2460bd2c7693
+    _position: {x: 2040, y: 640}
+    _caption: "\u65E5\u7A0B\u5B89\u6392 \xB7 \u8FD4\u56DE"
+  - _nodeId: 3b92ed2384cb40209bb5715d2a6e245e
+    _position: {x: 2720, y: 120}
+    _caption: "\u5173\u4E8E\u95E8\u6D3E \xB7 \u6D41\u7A0B"
+  - _nodeId: 9fbf369a0f034c8b9edf227e59009d8d
+    _position: {x: 1360, y: 940}
+    _caption: "\u5173\u4E8E\u95E8\u6D3E \xB7 \u5F00\u59CB"
+  - _nodeId: 7d7369fc0cf84e22926d9cb946682caf
+    _position: {x: 2040, y: 940}
+    _caption: "\u5173\u4E8E\u95E8\u6D3E \xB7 \u8FD4\u56DE"
+  - _nodeId: 307db7e231a24aeaa47159ba049a84d4
+    _position: {x: 2720, y: 360}
+    _caption: "\u5173\u4E8E\u5996\u602A \xB7 \u6D41\u7A0B"
+  - _nodeId: c6a0ae7624564cacb2662b4a24b262a2
+    _position: {x: 1360, y: 1240}
+    _caption: "\u5173\u4E8E\u5996\u602A \xB7 \u5F00\u59CB"
+  - _nodeId: 4f5c08f3db134f7697d7358192d5a457
+    _position: {x: 2040, y: 1240}
+    _caption: "\u5173\u4E8E\u5996\u602A \xB7 \u8FD4\u56DE"

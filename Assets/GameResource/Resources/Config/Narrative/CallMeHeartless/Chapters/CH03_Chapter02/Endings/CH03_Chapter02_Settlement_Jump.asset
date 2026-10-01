@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c023a03c8e3b74c4791b19c32b191ffc, type: 3}
+  m_Name: CH03_Chapter02_Settlement_Jump
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeJumpSO
+  _nodeId: c0f056deb12e4505aa25002f0873c9ad
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 1
+  _flow: {fileID: 0}
+  _receiverId: 9903e716db64400d8349afbdd165208a

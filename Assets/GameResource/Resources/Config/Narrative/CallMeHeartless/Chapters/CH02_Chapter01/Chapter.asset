@@ -16,8 +16,8 @@ MonoBehaviour:
   _displayName: "\u7B2C\u4E00\u7AE0"
   _displayNameKey: chapter.0942d3f17d504f01ba64169b17e2a578.57c023ad23ef45be88cbab6bd9b3d51d
   _assetPrefix: CH02_Chapter01
-  _storyRevision: 5
-  _entry: {fileID: 11400000, guid: 53e264a23cc882e41977f79bcd83c33e, type: 2}
+  _storyRevision: 6
+  _entry: {fileID: 11400000, guid: ccf0cada9c8350445a4c109bb79d6b57, type: 2}
   _nodes:
   - {fileID: 11400000, guid: 53e264a23cc882e41977f79bcd83c33e, type: 2}
   - {fileID: 11400000, guid: 02f083a24f21fdd48b0522336558cee6, type: 2}
@@ -31,6 +31,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c57e5c67accc095458a795b78db1a19a, type: 2}
   - {fileID: 11400000, guid: ca43d52133b129048a142c017acfd152, type: 2}
   - {fileID: 11400000, guid: 3442714a5ccb8b347aa1053601550692, type: 2}
+  - {fileID: 11400000, guid: 56a8e97e2b3d50f4591898a35e999a9f, type: 2}
+  - {fileID: 11400000, guid: 7aa445e5baac2d943a2c0bec2532e87f, type: 2}
+  - {fileID: 11400000, guid: c0127d40c52d7c34c83f1e839c1b9f05, type: 2}
+  - {fileID: 11400000, guid: dee1d474f9eaf674a812dacd8918c251, type: 2}
+  - {fileID: 11400000, guid: 47a5d903ca45004498cb4de613c8a205, type: 2}
+  - {fileID: 11400000, guid: 0b2849a4843d55f4d8b54ca667a57ad7, type: 2}
+  - {fileID: 11400000, guid: 13992ae6296058b4cbef184ce1211d49, type: 2}
+  - {fileID: 11400000, guid: 146e66d6a0ae6eb46b31e891e7c502f2, type: 2}
+  - {fileID: 11400000, guid: 4b818103f84aede44aa60ce78ff22c8c, type: 2}
+  - {fileID: 11400000, guid: aad00e2c3a907484b8e96effaaed373a, type: 2}
+  - {fileID: 11400000, guid: b1266d13fa4c617478a64794b562fba9, type: 2}
+  - {fileID: 11400000, guid: ccf0cada9c8350445a4c109bb79d6b57, type: 2}
   _variables:
   - _id: asked_schedule
     _value:

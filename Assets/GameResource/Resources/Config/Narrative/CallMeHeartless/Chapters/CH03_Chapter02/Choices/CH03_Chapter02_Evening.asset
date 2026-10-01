@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dba05619e27dcd54fba3a9a3c896306b, type: 3}
+  m_Name: CH03_Chapter02_Evening
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeChoiceSO
+  _nodeId: b09ca941a1fe47f9bc1622b50cd81c4b
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 2
+  _flow: {fileID: 0}
+  _prompt: "\u508D\u665A\uFF0C\u4E3B\u63A7\u80FD\u505A\u7684\u4E8B\uFF1A"
+  _promptTextKey: prompt.0942d3f17d504f01ba64169b17e2a578.b09ca941a1fe47f9bc1622b50cd81c4b
+  _options:
+  - _optionId: ce3fafe990424c6a824c114e3353be97
+    _text: "F. \u540E\u5C71\u63A2\u9669"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.ce3fafe990424c6a824c114e3353be97
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_cVisits
+        _scope: 1
+        _comparison: 3
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 2
+          _string: 
+    _target: {fileID: 11400000, guid: 3df92cc0b46898c488fd4856d1c175dd, type: 2}
+  - _optionId: e6ddf42381de4c868fd86df4835c23e5
+    _text: "G. \u966A\u5E08\u7236\u5403\u996D"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.e6ddf42381de4c868fd86df4835c23e5
+    _condition:
+      _junction: 0
+      _predicates: []
+    _target: {fileID: 11400000, guid: 4eebd43cfc469ea46adcb62d93f9a645, type: 2}

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb016b628299664584f2d647b3b1421, type: 3}
+  m_Name: CH03_Chapter02_MoneyBounds
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeBranchSO
+  _nodeId: 63bd8bc2e9e64641b5840e6b73fd391b
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 2
+  _flow: {fileID: 0}
+  _branches:
+  - _optionId: dc531f738ef743be98c1ce22f4eb8f2a
+    _text: "\u8D85\u8FC71000"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.dc531f738ef743be98c1ce22f4eb8f2a
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: player_money
+        _scope: 1
+        _comparison: 2
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 1000
+          _string: 
+    _target: {fileID: 11400000, guid: e3d4f5db14716c649b1505a14fd26c01, type: 2}
+  - _optionId: b5136dd24d2c4f25ac876fbd43d3f8d2
+    _text: "\u4F4E\u4E8E0"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.b5136dd24d2c4f25ac876fbd43d3f8d2
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: player_money
+        _scope: 1
+        _comparison: 4
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 0
+          _string: 
+    _target: {fileID: 11400000, guid: 8454adc2e422c2c43a7be7a16a824a02, type: 2}
+  _fallback: {fileID: 11400000, guid: 55b80bb321ee60c47b705ce62540066c, type: 2}
