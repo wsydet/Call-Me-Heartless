@@ -10,11 +10,15 @@ namespace Game.Narrative.Editor
     {
         #region 编辑器面板参数
         [SerializeField] private string _chapterGuid;
+        [SerializeField] private bool _compactConnections;
+        [SerializeField] private List<string> _collapsedFlows = new();
         [SerializeField] private List<NodePosition> _positions = new();
         #endregion
         // --------------------------------------------------------
         #region 内部参数
         public string ChapterGuid => _chapterGuid;
+        public bool CompactConnections => _compactConnections;
+        public IReadOnlyList<string> CollapsedFlows => _collapsedFlows;
         #endregion
         // --------------------------------------------------------
         #region 内部方法
@@ -23,11 +27,19 @@ namespace Game.Narrative.Editor
         {
             [SerializeField] internal string _nodeId;
             [SerializeField] internal Vector2 _position;
+            [SerializeField] internal string _caption;
         }
         #endregion
         // --------------------------------------------------------
         #region 外部方法
+        internal void SetFlowCollapsed(string id, bool collapsed)
+        { _collapsedFlows.Remove(id); if (collapsed) _collapsedFlows.Add(id); }
         internal void Initialize(string guid) { _chapterGuid = guid; }
+        public string GetCaption(string id)
+        {
+            foreach (var item in _positions) if (item._nodeId == id) return item._caption;
+            return null;
+        }
         public Vector2 GetPosition(string id, int index)
         {
             foreach (var item in _positions) if (item._nodeId == id) return item._position;
@@ -37,7 +49,7 @@ namespace Game.Narrative.Editor
         {
             var position = new NodePosition { _nodeId = id, _position = value };
             for (int i = 0; i < _positions.Count; i++)
-                if (_positions[i]._nodeId == id) { _positions[i] = position; return; }
+                if (_positions[i]._nodeId == id) { position._caption = _positions[i]._caption; _positions[i] = position; return; }
             _positions.Add(position);
         }
         #endregion
