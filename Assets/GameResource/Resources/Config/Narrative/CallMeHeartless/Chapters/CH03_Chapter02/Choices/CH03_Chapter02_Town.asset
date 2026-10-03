@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeChoiceSO
   _nodeId: 4ef0f7afaf3e451081c34cd78f965cbc
   _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
-  _contentRevision: 2
+  _contentRevision: 3
   _flow: {fileID: 0}
   _prompt: "\u6BCF\u6708\u7B2C5\u5929\uFF0C\u53BB\u9547\u4E0A\uFF1A"
   _promptTextKey: prompt.0942d3f17d504f01ba64169b17e2a578.4ef0f7afaf3e451081c34cd78f965cbc
@@ -25,13 +25,13 @@ MonoBehaviour:
     _condition:
       _junction: 0
       _predicates:
-      - _variableId: player_money
-        _scope: 1
-        _comparison: 3
+      - _variableId: town_hDone
+        _scope: 0
+        _comparison: 0
         _value:
-          _type: 1
+          _type: 0
           _bool: 0
-          _int: 20
+          _int: 0
           _string: 
     _target: {fileID: 11400000, guid: 8989fa1ff87c8d14a8530023526e9876, type: 2}
   - _optionId: 3809341259cf4437994019153b9a2d7e
@@ -39,5 +39,20 @@ MonoBehaviour:
     _textKey: option.0942d3f17d504f01ba64169b17e2a578.3809341259cf4437994019153b9a2d7e
     _condition:
       _junction: 0
-      _predicates: []
+      _predicates:
+      - _variableId: town_iDone
+        _scope: 0
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 0
+          _int: 0
+          _string: 
     _target: {fileID: 11400000, guid: 965b2124b394b56449e52568c6ee7861, type: 2}
+  - _optionId: 4d4fb1329c124ba48d8a2abd6e68a274
+    _text: "\u56DE\u89C2"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.4d4fb1329c124ba48d8a2abd6e68a274
+    _condition:
+      _junction: 0
+      _predicates: []
+    _target: {fileID: 11400000, guid: 341ea11d57af78b4d8663fc6bf0081c8, type: 2}

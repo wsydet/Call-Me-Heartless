@@ -1,0 +1,16 @@
+id,targetVariableId,amount,multiplierVariableId,minimum,maximum,enabled
+cmh_a003_option1,player_affection_lin,15,,0,100,true
+cmh_month_clean_bonus,player_money,10,ch2_monthClean,0,1000,true
+cmh_box_fast,ch2_aBoxMonthlyBonus,30,,0,1000,true
+cmh_box_medium,ch2_aBoxMonthlyBonus,20,,0,1000,true
+cmh_box_slow,ch2_aBoxMonthlyBonus,10,,0,1000,true
+cmh_box_timeout,ch2_aBoxMonthlyBonus,5,,0,1000,true
+cmh_box_month_payout,player_money,1,ch2_aBoxMonthlyBonus,0,1000,true
+cmh_clean_fast,ch2_aCleaningMonthlyBonus,30,,0,1000,true
+cmh_clean_medium,ch2_aCleaningMonthlyBonus,20,,0,1000,true
+cmh_clean_slow,ch2_aCleaningMonthlyBonus,10,,0,1000,true
+cmh_clean_timeout,ch2_aCleaningMonthlyBonus,5,,0,1000,true
+cmh_clean_month_payout,player_money,1,ch2_aCleaningMonthlyBonus,0,1000,true
+cmh_c003_option1,player_affection_shen,15,,0,100,true
+cmh_g006_option1,player_affection_murong,15,,0,100,true
+cmh_i001_catnip,player_affection_lin,20,,0,100,true

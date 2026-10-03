@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb016b628299664584f2d647b3b1421, type: 3}
+  m_Name: CH03_Chapter02_B_RandomRoute
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeBranchSO
+  _nodeId: b7f59f23703b45b6be074fc5190f3e02
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 1
+  _flow: {fileID: 11400000, guid: e883878ca4074bb4295edbbc7b7351c0, type: 2}
+  _branches:
+  - _optionId: cfaa0409033f42908f289f67b50371c0
+    _text: "\u666E\u901A\u79CD\u5730\u4E8B\u4EF6\u4E00"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.cfaa0409033f42908f289f67b50371c0
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: b_roll
+        _scope: 0
+        _comparison: 4
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 50
+          _string: 
+    _target: {fileID: 11400000, guid: 29abbc3bcb4a7c7408ad50df00c48552, type: 2}
+  _fallback: {fileID: 11400000, guid: c6e4a12e366b3c441b63986cb8d9d07a, type: 2}

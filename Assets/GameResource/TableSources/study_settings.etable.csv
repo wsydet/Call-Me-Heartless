@@ -1,0 +1,6 @@
+id,level,differenceSeconds,orderSeconds,patienceSeconds,customerCount,requestSeconds,resultSeconds,tutorialHintDelay
+tutorial,1,90,150,25,3,600,1.5,3
+steady,2,90,150,25,5,600,1.5,3
+practice,3,75,150,22,6,600,1.5,3
+advanced,4,60,150,20,7,600,1.5,3
+master,5,50,150,18,8,600,1.5,3

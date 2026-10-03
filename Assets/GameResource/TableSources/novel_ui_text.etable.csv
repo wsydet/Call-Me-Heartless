@@ -72,3 +72,23 @@ ui.save.Slot.Auto,自动槽,自動存檔,オートスロット,Auto Slot
 ui.name.Hint,这个名字会被他们记住。,這個名字會被他們記住。,この名前は、きっと彼らに記憶される。,They will remember this name.
 ui.name.Confirm,确定,確定,決定,Confirm
 ui.save.InputPending,正在输入名字，完成输入后才能保存。,正在輸入名字，完成輸入後才能儲存。,名前を入力中です。入力を終えるとセーブできます。,You are entering a name. Finish the input to save.
+ui.gardenCare.Title,照料菜地,,,
+ui.gardenCare.Timer,剩余 {0} 秒,,,
+ui.gardenCare.Progress,拔草 {0}/{1}    移虫 {2}/{3},,,
+ui.gardenCare.Intro,点掉杂草，把菜上的虫子拖到右侧草丛。准备好后开始。60 秒后自动开始。,,,
+ui.gardenCare.Instruction,点击杂草拔除；拖动虫子到右侧草丛。,,,
+ui.gardenCare.KeepCrop,这是菜苗，请保留它。,,,
+ui.gardenCare.WeedRemoved,杂草已拔除。,,,
+ui.gardenCare.DropInRefuge,把虫子放到右侧草丛里。,,,
+ui.gardenCare.InsectMoved,虫子已移到草丛。,,,
+ui.gardenCare.Completed,菜地照料完成！点击继续，或等待 15 秒返回。,,,
+ui.gardenCare.TimeUp,今天先照料到这里。点击继续，或等待 15 秒返回。,,,
+ui.gardenCare.Paused,已暂停,,,
+ui.gardenCare.Start,开始照料,,,
+ui.gardenCare.Continue,继续剧情,,,
+ui.gardenCare.Refuge,"草丛
+将虫子放在这里",,,
+ui.gardenCare.Cleared,已拔除,,,
+ui.gardenCare.Weed,杂草,,,
+ui.gardenCare.Crop,菜苗,,,
+ui.gardenCare.Insect,虫,,,

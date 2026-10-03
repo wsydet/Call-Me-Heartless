@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeDialogueSO
   _nodeId: 76b1c4bfa55d451b891c6ef1a903f04c
   _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
-  _contentRevision: 4
+  _contentRevision: 5
   _flow: {fileID: 11400000, guid: fa9d21e7c3a32c54dac3e656f41b6e28, type: 2}
   _commands:
   - _cameraZoom: 1
@@ -89,4 +89,4 @@ MonoBehaviour:
     _bindingId: 
     _volume: 1
     _textKey: 
-  _next: {fileID: 11400000, guid: 50891ac9532c52f4499831569ab975fb, type: 2}
+  _next: {fileID: 11400000, guid: edb80c542171ea044b63a98586d33493, type: 2}

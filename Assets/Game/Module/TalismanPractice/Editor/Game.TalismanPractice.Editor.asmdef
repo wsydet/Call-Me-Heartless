@@ -1,0 +1,17 @@
+{
+  "name": "Game.TalismanPractice.Editor",
+  "references": [
+    "Game.TalismanPractice.Runtime",
+    "Game.Narrative.Runtime",
+    "Ember.Basic.Runtime",
+    "Ember.UI.Runtime",
+    "Ember.UIExtension.Runtime",
+    "Ember.UIExtension.Editor",
+    "Unity.TextMeshPro",
+    "Unity.ugui"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": true
+}

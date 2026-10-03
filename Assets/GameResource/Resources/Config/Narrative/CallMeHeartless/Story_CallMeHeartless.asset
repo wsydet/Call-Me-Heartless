@@ -15,7 +15,7 @@ MonoBehaviour:
   _storyId: 0942d3f17d504f01ba64169b17e2a578
   _displayName: Call Me Heartless
   _displayNameKey: 
-  _revision: 10
+  _revision: 15
   _entry: {fileID: 11400000, guid: 4daafdce996c2ac4fa0c7c941c4ff895, type: 2}
   _chapters:
   - {fileID: 11400000, guid: 4daafdce996c2ac4fa0c7c941c4ff895, type: 2}
@@ -149,6 +149,240 @@ MonoBehaviour:
       _bool: 0
       _int: 0
       _string: 
+  - _id: ch2_aVisits
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_aFirstEvent
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_aRoll
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_aBoxVisits
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_aBoxElapsedMs
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_aBoxOutcome
+    _value:
+      _type: 2
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_aBoxRewardId
+    _value:
+      _type: 2
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_aBoxMonthlyBonus
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_aCleaningVisits
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_aCleaningElapsedMs
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_aCleaningOutcome
+    _value:
+      _type: 2
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_aCleaningRewardId
+    _value:
+      _type: 2
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_aCleaningMonthlyBonus
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_metMurong
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_hasOutingWithYan
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_b003Played
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_b004Played
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_metYan
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_askedYan
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_hasVisitedTown
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_catnipBought
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_g001Played
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_g002Played
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_g003Played
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_g004Played
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_g005Played
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_g006Played
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_g007Played
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_lastDrink
+    _value:
+      _type: 2
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_gardenLearned
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_studyLearned_0
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_studyLearned_1
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_studyLearned_2
+    _value:
+      _type: 0
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_featherVisits
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_studyVisits_0
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_studyVisits_1
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_gardenVisits_0
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_gardenVisits_1
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
+  - _id: ch2_shopVisits
+    _value:
+      _type: 1
+      _bool: 0
+      _int: 0
+      _string: 
   _exits:
   - _source: {fileID: 11400000, guid: 4daafdce996c2ac4fa0c7c941c4ff895, type: 2}
     _exit: {fileID: 11400000, guid: db051ae094def574db2739618c88bc7f, type: 2}
@@ -166,3 +400,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 15583cb76cac68f44b3e2a2153486e6c, type: 2}
   - {fileID: 11400000, guid: 1b5604ff2a9253940840c15014d176a0, type: 2}
   - {fileID: 11400000, guid: 0ae387ae992e08a40b247937fb01898f, type: 2}
+  - {fileID: 11400000, guid: 91268a27533742440acee68a024f58e9, type: 2}
+  - {fileID: 11400000, guid: 691a6c95321446646b0c64ceaf48a1d5, type: 2}
+  - {fileID: 11400000, guid: 00222f1e75e7c744486b2c4b01cd7652, type: 2}
+  - {fileID: 11400000, guid: e6db7718a8a66174e838090c2092c99d, type: 2}
+  - {fileID: 11400000, guid: 7e8b1725cb23fb744ac4b1e7ae6d7068, type: 2}
+  - {fileID: 11400000, guid: e798b1c4d5b6a1a4384cf68c14adf67b, type: 2}
+  - {fileID: 11400000, guid: fbc5a9db498f17b4c987ce4cf25a3957, type: 2}

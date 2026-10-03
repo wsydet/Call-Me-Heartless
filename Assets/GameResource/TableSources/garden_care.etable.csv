@@ -1,0 +1,6 @@
+id,level,cropCount,weedCount,insectCount,timeLimitSeconds,columns,rows,resultSeconds,tutorialHintDelay,requestSeconds
+tutorial,1,12,6,2,90,4,3,1.5,3,180
+steady,2,12,6,3,90,4,3,1.5,3,180
+practice,3,12,8,4,80,4,3,1.5,3,180
+advanced,4,12,10,4,70,4,3,1.5,3,180
+master,5,12,11,4,60,4,3,1.5,3,180

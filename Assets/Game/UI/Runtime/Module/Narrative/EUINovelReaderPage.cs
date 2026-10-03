@@ -160,7 +160,7 @@ namespace Game.UI
                 (snapshot.State == NarrativeState.Revealing || snapshot.State == NarrativeState.AwaitingAdvance);
             string text = say ? command.Text
                 : snapshot.State == NarrativeState.Ended ? Localized(ENDING_KEY, "故事暂告一段落。感谢阅读。")
-                : snapshot.State == NarrativeState.AwaitingChoice ? Localized(CHOICE_PROMPT_KEY, "你会如何选择？")
+                : snapshot.State == NarrativeState.AwaitingChoice ? (!string.IsNullOrWhiteSpace(_session?.ChoicePrompt) ? _session.ChoicePrompt : Localized(CHOICE_PROMPT_KEY, "你会如何选择？"))
                 : status;
             if (say)
             {

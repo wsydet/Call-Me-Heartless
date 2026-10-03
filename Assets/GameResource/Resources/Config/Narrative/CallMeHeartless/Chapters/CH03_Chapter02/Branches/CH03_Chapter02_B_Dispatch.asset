@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb016b628299664584f2d647b3b1421, type: 3}
+  m_Name: CH03_Chapter02_B_Dispatch
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeBranchSO
+  _nodeId: fad3078c9c314739b7ac3b7bea26fa62
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 1
+  _flow: {fileID: 11400000, guid: e883878ca4074bb4295edbbc7b7351c0, type: 2}
+  _branches:
+  - _optionId: b2bb287201ad4e1c93d5d275ca115f52
+    _text: "\u5DF2\u7ED3\u8BC6\u6155\u5BB9\u76C8\u8896\uFF0C\u4E14\u672C\u4E8B\u4EF6\u5C1A\u672A\u64AD\u653E"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.b2bb287201ad4e1c93d5d275ca115f52
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_metMurong
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 1
+          _int: 0
+          _string: 
+      - _variableId: ch2_b003Played
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 0
+          _int: 0
+          _string: 
+    _target: {fileID: 11400000, guid: 7f3b60c78c59450429b17daa37843f06, type: 2}
+  - _optionId: 498cbae8cdcf40039649dd6cd490e979
+    _text: "\u5DF2\u4E0E\u71D5\u4E8E\u98DE\u51FA\u6E38\uFF0C\u4E14\u672C\u4E8B\u4EF6\u5C1A\u672A\u64AD\u653E"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.498cbae8cdcf40039649dd6cd490e979
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_hasOutingWithYan
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 1
+          _int: 0
+          _string: 
+      - _variableId: ch2_b004Played
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 0
+          _int: 0
+          _string: 
+    _target: {fileID: 11400000, guid: 481d2dfbbb69c3544a9e1681b8259267, type: 2}
+  _fallback: {fileID: 11400000, guid: 71d2df5530b17874a8992b3645319759, type: 2}

@@ -1,0 +1,11 @@
+{
+  "name": "Game.OfferingSort.Runtime",
+  "references": [
+    "Ember.Basic.Runtime",
+    "Ember.Core.Runtime",
+    "Ember.Table.Runtime",
+    "Game.Table.Runtime",
+    "Game.Narrative.Runtime"
+  ],
+  "autoReferenced": true
+}

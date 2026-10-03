@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb016b628299664584f2d647b3b1421, type: 3}
+  m_Name: CH03_Chapter02_G_Dispatch
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeBranchSO
+  _nodeId: 27fb900968af43dbaf948239040d7732
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 1
+  _flow: {fileID: 11400000, guid: fa9d21e7c3a32c54dac3e656f41b6e28, type: 2}
+  _branches:
+  - _optionId: 34cfcc581478474688d51912dc69ac1d
+    _text: "\u672A\u64AD\u653E\u7684 G001"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.34cfcc581478474688d51912dc69ac1d
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_g001Played
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 0
+          _int: 0
+          _string: 
+    _target: {fileID: 11400000, guid: ec2f958237c29134ea1ec72f5f7ffb4e, type: 2}
+  - _optionId: 1443d7c1d25a4800aa510490f57d620b
+    _text: "\u672A\u64AD\u653E\u7684 G002"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.1443d7c1d25a4800aa510490f57d620b
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_g002Played
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 0
+          _int: 0
+          _string: 
+    _target: {fileID: 11400000, guid: 15e34f7fad9b930409cba961624d1d11, type: 2}
+  - _optionId: a16d2679ae87477a9ec51bdc7402d1d7
+    _text: "\u672A\u64AD\u653E\u7684 G003"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.a16d2679ae87477a9ec51bdc7402d1d7
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_g003Played
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 0
+          _int: 0
+          _string: 
+    _target: {fileID: 11400000, guid: 5fce56b1bbcb0a74ba2f9465dbdd6e3d, type: 2}
+  - _optionId: 0a5d9d1581264a3abc12fbbe841c6824
+    _text: "\u672A\u64AD\u653E\u7684 G004"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.0a5d9d1581264a3abc12fbbe841c6824
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_g004Played
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 0
+          _int: 0
+          _string: 
+      - _variableId: ch2_hasVisitedTown
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 1
+          _int: 0
+          _string: 
+    _target: {fileID: 11400000, guid: 0d8edf00bd346b945b64c657ed854038, type: 2}
+  - _optionId: 8d7dc74d3f144a219927398eed3d1f19
+    _text: "\u672A\u64AD\u653E\u7684 G005"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.8d7dc74d3f144a219927398eed3d1f19
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_g005Played
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 0
+          _int: 0
+          _string: 
+      - _variableId: ch2_metYan
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 1
+          _int: 0
+          _string: 
+    _target: {fileID: 11400000, guid: 8ca159ad4279f184ea2595d842be99dd, type: 2}
+  - _optionId: 09419f57130a4e63981b07ec9e24b085
+    _text: "\u672A\u64AD\u653E\u7684 G006"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.09419f57130a4e63981b07ec9e24b085
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_g006Played
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 0
+          _int: 0
+          _string: 
+      - _variableId: ch2_metMurong
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 1
+          _int: 0
+          _string: 
+    _target: {fileID: 11400000, guid: 9d6450d32d7b76d479edc682132e291a, type: 2}
+  - _optionId: 1098b10f78664349be70652db47da924
+    _text: "\u672A\u64AD\u653E\u7684 G007"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.1098b10f78664349be70652db47da924
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_g007Played
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 0
+          _bool: 0
+          _int: 0
+          _string: 
+    _target: {fileID: 11400000, guid: fe83b33b32e079b49a3f409571a40b4b, type: 2}
+  _fallback: {fileID: 11400000, guid: 0c192501e8f35e04aa775960e5ea5809, type: 2}

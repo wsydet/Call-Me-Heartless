@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb016b628299664584f2d647b3b1421, type: 3}
+  m_Name: CH03_Chapter02_C_Dispatch
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeBranchSO
+  _nodeId: aff07a033b294c3096faad174b93ae50
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 1
+  _flow: {fileID: 11400000, guid: 337762bb534b2e246adb62a07eb5e432, type: 2}
+  _branches:
+  - _optionId: 15b2f51f5f544ba4a9453e0f1f11deaf
+    _text: "\u7B2C1\u6B21\u9999\u5BA2\u804A\u5929"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.15b2f51f5f544ba4a9453e0f1f11deaf
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_cVisits
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 0
+          _string: 
+    _target: {fileID: 11400000, guid: 159bcaf0dc248e24c87b5dce934ec776, type: 2}
+  - _optionId: 0a0032446a8f49759fd1f70f927f9b05
+    _text: "\u7B2C2\u6B21\u9999\u5BA2\u804A\u5929"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.0a0032446a8f49759fd1f70f927f9b05
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_cVisits
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 1
+          _string: 
+    _target: {fileID: 11400000, guid: 647061ba8f4317540bb3f129c9ca2c77, type: 2}
+  - _optionId: c68b6545589944f097191f2f4b725990
+    _text: "\u7B2C3\u6B21\u9999\u5BA2\u804A\u5929"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.c68b6545589944f097191f2f4b725990
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_cVisits
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 2
+          _string: 
+    _target: {fileID: 11400000, guid: a0083c2f2ff393b4eab8f5c5d624da1d, type: 2}
+  _fallback: {fileID: 11400000, guid: 92016bc761cd94744bb509e627d09213, type: 2}

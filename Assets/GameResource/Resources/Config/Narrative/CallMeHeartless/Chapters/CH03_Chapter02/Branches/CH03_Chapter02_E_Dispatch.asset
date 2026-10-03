@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb016b628299664584f2d647b3b1421, type: 3}
+  m_Name: CH03_Chapter02_E_Dispatch
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeBranchSO
+  _nodeId: 6b79069e937947dbaf24be9581ccbd74
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 1
+  _flow: {fileID: 11400000, guid: e15d38a73f9c0934f8f460f79d1d9d8a, type: 2}
+  _branches:
+  - _optionId: dd598bff27404b14ab2f5bf0d9db0410
+    _text: "\u9996\u6B21\u5916\u51FA"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.dd598bff27404b14ab2f5bf0d9db0410
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_eVisits
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 0
+          _string: 
+    _target: {fileID: 11400000, guid: cd3abbaf339865e4fa6c21f3f9a1aa86, type: 2}
+  _fallback: {fileID: 11400000, guid: fa36cb6a41cd4474c82a574feb8ce50b, type: 2}

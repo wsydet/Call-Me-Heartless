@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeDialogueSO
   _nodeId: bc0599b6af714de2b55b831680ac6dd2
   _chapterId: 2e58920df7dd454096c73f95a528b843
-  _contentRevision: 10
+  _contentRevision: 11
+  _flow: {fileID: 0}
   _commands:
   - _cameraZoom: 1
     _wipeDirection: 0
@@ -1619,7 +1620,7 @@ MonoBehaviour:
     _textReveal: 0
     _textFadeDuration: 0.8
     _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
+    _textSpeedMultiplier: 1.08
     _textEase: 1
     _stepGroupId: 
     _stepGroupName: 
@@ -2055,7 +2056,7 @@ MonoBehaviour:
     _textReveal: 0
     _textFadeDuration: 0.8
     _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
+    _textSpeedMultiplier: 1.08
     _textEase: 1
     _stepGroupId: 
     _stepGroupName: 

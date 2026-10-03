@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dba05619e27dcd54fba3a9a3c896306b, type: 3}
+  m_Name: CH03_Chapter02_D_StudyChoice
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeChoiceSO
+  _nodeId: 27166860b05443e8b1a8bca90951a711
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 1
+  _flow: {fileID: 11400000, guid: dc5e870508cb38d4192a618cb6fa39f8, type: 2}
+  _prompt: "\u4ECA\u5929\u60F3\u8DDF\u5E08\u7236\u5B66\u4E60\u4EC0\u4E48\uFF1F"
+  _promptTextKey: 
+  _options:
+  - _optionId: cmh_d_study_0
+    _text: "\u8BC6\u7B26\u627E\u4E0D\u540C"
+    _textKey: 
+    _condition:
+      _junction: 0
+      _predicates: []
+    _target: {fileID: 11400000, guid: 933a4a97392510b4c8cb9581ea0a2977, type: 2}
+  - _optionId: cmh_d_study_1
+    _text: "\u753B\u7B26\u63A5\u5355"
+    _textKey: 
+    _condition:
+      _junction: 0
+      _predicates: []
+    _target: {fileID: 11400000, guid: 06d0f74a8a69dda47af594a8346b37e2, type: 2}
+  - _optionId: cmh_d_study_2
+    _text: "\u9759\u5FC3\u5439\u7FBD\u6BDB"
+    _textKey: 
+    _condition:
+      _junction: 0
+      _predicates: []
+    _target: {fileID: 11400000, guid: 0fbe8b236f574e440be400d72841d9e3, type: 2}

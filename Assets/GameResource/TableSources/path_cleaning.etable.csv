@@ -1,0 +1,6 @@
+id,visitFrom,visitTo,itemCount,timeLimitSeconds,typePool,hintEnabled,hintAfterErrors,hintAfterSeconds,fastSeconds,mediumSeconds,fastRewardId,mediumRewardId,slowRewardId,timeoutRewardId,leafSweepDistance,mudSweepDistance,mudSpreadLength,mudSpreadOpacity,mudClearThreshold,brushRadius,sweepRadius,successResultSeconds,timeoutResultSeconds
+first,1,1,6,0,standard,true,3,12,15,30,cmh_clean_fast,cmh_clean_medium,cmh_clean_slow,cmh_clean_timeout,0.25,0.22,1,0.9,0.92,0.13,0.11,0.9,2
+level_2,2,2,10,90,standard,false,3,12,15,30,cmh_clean_fast,cmh_clean_medium,cmh_clean_slow,cmh_clean_timeout,0.25,0.22,1,0.9,0.92,0.13,0.11,0.9,2
+level_3,3,3,12,85,standard,false,3,12,15,30,cmh_clean_fast,cmh_clean_medium,cmh_clean_slow,cmh_clean_timeout,0.25,0.22,1,0.9,0.92,0.13,0.11,0.9,2
+level_4,4,4,14,80,standard,false,3,12,15,30,cmh_clean_fast,cmh_clean_medium,cmh_clean_slow,cmh_clean_timeout,0.25,0.22,1,0.9,0.92,0.13,0.11,0.9,2
+level_5,5,0,16,75,standard,false,3,12,15,30,cmh_clean_fast,cmh_clean_medium,cmh_clean_slow,cmh_clean_timeout,0.25,0.22,1,0.9,0.92,0.13,0.11,0.9,2

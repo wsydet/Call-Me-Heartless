@@ -14,6 +14,7 @@ namespace Game.Module
         partial void OnGameTableModuleInitialized()
         {
             NovelCatalog = new NarrativeTableCatalog(Database);
+            Game.CMH.Rewards.NovelRewardService.Install(Database);
             // 多语言与皮肤跟着配表一起装配：缺表时安装方法内部按未接入处理，行为与接入前一致。
             NovelLocalization.Install(NovelCatalog);
             NovelSkin.Install(NovelCatalog);
@@ -21,6 +22,7 @@ namespace Game.Module
 
         partial void OnGameTableModuleDestroying()
         {
+            Game.CMH.Rewards.NovelRewardService.Uninstall();
             NovelLocalization.Uninstall();
             NovelSkin.Uninstall();
             NovelCatalog = null;
@@ -28,6 +30,7 @@ namespace Game.Module
 
         partial void OnResetGameTableModuleData()
         {
+            Game.CMH.Rewards.NovelRewardService.Uninstall();
             NovelLocalization.Uninstall();
             NovelCatalog = null;
         }

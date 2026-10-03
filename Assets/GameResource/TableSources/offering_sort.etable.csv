@@ -1,0 +1,6 @@
+id,visitFrom,visitTo,itemCount,minimumSize,maximumSize,timeLimitSeconds,smallestFirst,largestLast,hintEnabled,hintAfterNoProgress,fastSeconds,mediumSeconds,fastRewardId,mediumRewardId,slowRewardId,timeoutRewardId,hintKey,successResultSeconds,timeoutResultSeconds
+first,1,1,6,48,112,0,true,true,true,4,15,30,cmh_box_fast,cmh_box_medium,cmh_box_slow,cmh_box_timeout,ui.offeringSort.Hint,1.5,2
+level_2,2,2,6,48,112,55,false,false,false,4,15,30,cmh_box_fast,cmh_box_medium,cmh_box_slow,cmh_box_timeout,ui.offeringSort.Hint,1.5,2
+level_3,3,3,7,48,112,50,false,false,false,4,15,30,cmh_box_fast,cmh_box_medium,cmh_box_slow,cmh_box_timeout,ui.offeringSort.Hint,1.5,2
+level_4,4,4,8,48,112,45,false,false,false,4,15,30,cmh_box_fast,cmh_box_medium,cmh_box_slow,cmh_box_timeout,ui.offeringSort.Hint,1.5,2
+level_5,5,0,9,48,112,40,false,false,false,4,15,30,cmh_box_fast,cmh_box_medium,cmh_box_slow,cmh_box_timeout,ui.offeringSort.Hint,1.5,2

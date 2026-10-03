@@ -10,6 +10,8 @@ namespace Game.Table.Generated
             return new global::Ember.Table.EmberTableCatalog(
                 new global::Ember.Table.EmberTableCatalogEntry[]
                 {
+                    new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_FeatherDifficultyRowTableBinding(), true, 16777216, 100000, 1048576),
+                    new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_GardenCareSettingsRowTableBinding(), true, 16777216, 100000, 1048576),
                     new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_NovelAudioRowTableBinding(), true, 16777216, 100000, 1048576),
                     new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_NovelBackgroundRowTableBinding(), true, 16777216, 100000, 1048576),
                     new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_NovelBgmRowTableBinding(), false, 16777216, 100000, 1048576),
@@ -17,10 +19,18 @@ namespace Game.Table.Generated
                     new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_NovelContentTextRowTableBinding(), true, 16777216, 100000, 1048576),
                     new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_NovelLanguageRowTableBinding(), true, 16777216, 100000, 1048576),
                     new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_NovelPortraitRowTableBinding(), true, 16777216, 100000, 1048576),
+                    new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_NovelRewardRowTableBinding(), true, 16777216, 100000, 1048576),
                     new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_NovelSkinSpriteRowTableBinding(), true, 16777216, 100000, 1048576),
                     new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_NovelSkinRowTableBinding(), true, 16777216, 100000, 1048576),
                     new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_NovelStorySkinRowTableBinding(), true, 16777216, 100000, 1048576),
                     new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_NovelUiTextRowTableBinding(), true, 16777216, 100000, 1048576),
+                    new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_OfferingSortConfigRowTableBinding(), true, 16777216, 100000, 1048576),
+                    new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_PathCleaningConfigRowTableBinding(), true, 16777216, 100000, 1048576),
+                    new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_PathCleaningToolRowTableBinding(), true, 16777216, 100000, 1048576),
+                    new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_PathCleaningTypeRowTableBinding(), true, 16777216, 100000, 1048576),
+                    new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_ShopProductRowTableBinding(), true, 16777216, 100000, 1048576),
+                    new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_ShopSettingsRowTableBinding(), true, 16777216, 100000, 1048576),
+                    new global::Ember.Table.EmberTableCatalogEntry(new Game_Table_StudySettingsRowTableBinding(), true, 16777216, 100000, 1048576),
                 });
         }
     }

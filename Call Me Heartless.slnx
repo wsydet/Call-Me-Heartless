@@ -1,11 +1,24 @@
 ﻿<Solution>
+  <Project Path="Game.Narrative.Editor.csproj" />
   <Project Path="Game.Narrative.Runtime.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Game.TalismanPractice.Editor.csproj" />
   <Project Path="Game.Narrative.Tests.csproj" />
+  <Project Path="Game.PathCleaning.Runtime.csproj" />
   <Project Path="Game.UI.Editor.csproj" />
-  <Project Path="Game.Narrative.Editor.csproj" />
   <Project Path="Game.Table.Runtime.csproj" />
+  <Project Path="Game.GardenCare.Runtime.csproj" />
+  <Project Path="Game.OfferingSort.Runtime.csproj" />
+  <Project Path="Game.ShopSelection.Runtime.csproj" />
+  <Project Path="Game.TalismanPractice.Runtime.csproj" />
+  <Project Path="Game.GardenCare.Tests.csproj" />
   <Project Path="Game.Module.Editor.csproj" />
+  <Project Path="Game.OfferingSort.Editor.csproj" />
   <Project Path="Game.NovelSave.Runtime.csproj" />
+  <Project Path="Game.OfferingSort.Tests.csproj" />
+  <Project Path="Game.PathCleaning.Editor.csproj" />
+  <Project Path="Game.PathCleaning.Tests.csproj" />
+  <Project Path="Game.ShopSelection.Tests.csproj" />
+  <Project Path="Game.TalismanPractice.Tests.csproj" />
 </Solution>

@@ -1,0 +1,10 @@
+{
+  "name": "Game.TalismanPractice.Runtime",
+  "references": [
+    "Ember.Basic.Runtime",
+    "Ember.Core.Runtime",
+    "Game.Narrative.Runtime",
+    "Game.Table.Runtime"
+  ],
+  "autoReferenced": true
+}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeDialogueSO
   _nodeId: 114da9d1eb0246b18b25c65ecd1f1ccb
   _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
-  _contentRevision: 4
+  _contentRevision: 5
   _flow: {fileID: 11400000, guid: e883878ca4074bb4295edbbc7b7351c0, type: 2}
   _commands:
   - _cameraZoom: 1
@@ -89,76 +89,4 @@ MonoBehaviour:
     _bindingId: 
     _volume: 1
     _textKey: 
-  - _cameraZoom: 1
-    _wipeDirection: 0
-    _textMode: 0
-    _textEffectsVersion: 1
-    _textReveal: 0
-    _textFadeDuration: 0
-    _titleExitDuration: 0
-    _textSpeedMultiplier: 1
-    _textEase: 0
-    _stepGroupId: 
-    _stepGroupName: 
-    _stepGroupColor: {r: 0, g: 0, b: 0, a: 0}
-    _textBeats: []
-    _dialogueVisible: 0
-    _textBindings: []
-    _commandId: 8672c1e6804b4ceba8e16bb74b6a47d4
-    _kind: 31
-    _lineId: 
-    _textRevision: 1
-    _characterId: 
-    _speakerNameKey: 
-    _text: 
-    _resourceKey: 
-    _variableId: ch2_monthPlant
-    _scope: 1
-    _value:
-      _type: 0
-      _bool: 0
-      _int: 0
-      _string: 
-    _duration: 0
-    _integerOperation: 1
-    _operandVariableId: 
-    _operandScope: 1
-    _integerOperand: 1
-    _customStepId: 
-    _speakerVariableId: 
-    _speakerVariableScope: 0
-    _randomMin: 0
-    _randomMax: 0
-    _slot: 0
-    _visualAction: 0
-    _instanceId: 
-    _targetKind: 0
-    _actionId: 
-    _parallel: 0
-    _delay: 0
-    _opacity: 0
-    _waitActions: []
-    _positionMode: 0
-    _position: {x: 0, y: 0}
-    _scale: {x: 0, y: 0}
-    _rotation: 0
-    _mirror: 0
-    _layer: 0
-    _ease: 0
-    _gesture: 0
-    _strength: 0
-    _exitAfterMove: 0
-    _emphasisMode: 0
-    _dimFactor: 0
-    _direction: {x: 0, y: 0}
-    _frequency: 0
-    _decay: 0
-    _color: {r: 0, g: 0, b: 0, a: 0}
-    _hold: 0
-    _wholeReader: 0
-    _persistent: 0
-    _keepOnSceneChange: 0
-    _bindingId: 
-    _volume: 1
-    _textKey: 
-  _next: {fileID: 11400000, guid: 5b49cacadc265fc4082f75c4f4e14480, type: 2}
+  _next: {fileID: 11400000, guid: 5866aecccddc9344484d7a6a26e03ad2, type: 2}

@@ -458,3 +458,120 @@ MonoBehaviour:
     - "\u6B63\u5728\u8F38\u5165\u540D\u5B57\uFF0C\u5B8C\u6210\u8F38\u5165\u5F8C\u624D\u80FD\u5132\u5B58\u3002"
     - "\u540D\u524D\u3092\u5165\u529B\u4E2D\u3067\u3059\u3002\u5165\u529B\u3092\u7D42\u3048\u308B\u3068\u30BB\u30FC\u30D6\u3067\u304D\u307E\u3059\u3002"
     - You are entering a name. Finish the input to save.
+  - Key: ui.gardenCare.Title
+    Values:
+    - "\u7167\u6599\u83DC\u5730"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Timer
+    Values:
+    - "\u5269\u4F59 {0} \u79D2"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Progress
+    Values:
+    - "\u62D4\u8349 {0}/{1}    \u79FB\u866B {2}/{3}"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Intro
+    Values:
+    - "\u70B9\u6389\u6742\u8349\uFF0C\u628A\u83DC\u4E0A\u7684\u866B\u5B50\u62D6\u5230\u53F3\u4FA7\u8349\u4E1B\u3002\u51C6\u5907\u597D\u540E\u5F00\u59CB\u300260
+      \u79D2\u540E\u81EA\u52A8\u5F00\u59CB\u3002"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Instruction
+    Values:
+    - "\u70B9\u51FB\u6742\u8349\u62D4\u9664\uFF1B\u62D6\u52A8\u866B\u5B50\u5230\u53F3\u4FA7\u8349\u4E1B\u3002"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.KeepCrop
+    Values:
+    - "\u8FD9\u662F\u83DC\u82D7\uFF0C\u8BF7\u4FDD\u7559\u5B83\u3002"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.WeedRemoved
+    Values:
+    - "\u6742\u8349\u5DF2\u62D4\u9664\u3002"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.DropInRefuge
+    Values:
+    - "\u628A\u866B\u5B50\u653E\u5230\u53F3\u4FA7\u8349\u4E1B\u91CC\u3002"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.InsectMoved
+    Values:
+    - "\u866B\u5B50\u5DF2\u79FB\u5230\u8349\u4E1B\u3002"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Completed
+    Values:
+    - "\u83DC\u5730\u7167\u6599\u5B8C\u6210\uFF01\u70B9\u51FB\u7EE7\u7EED\uFF0C\u6216\u7B49\u5F85
+      15 \u79D2\u8FD4\u56DE\u3002"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.TimeUp
+    Values:
+    - "\u4ECA\u5929\u5148\u7167\u6599\u5230\u8FD9\u91CC\u3002\u70B9\u51FB\u7EE7\u7EED\uFF0C\u6216\u7B49\u5F85
+      15 \u79D2\u8FD4\u56DE\u3002"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Paused
+    Values:
+    - "\u5DF2\u6682\u505C"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Start
+    Values:
+    - "\u5F00\u59CB\u7167\u6599"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Continue
+    Values:
+    - "\u7EE7\u7EED\u5267\u60C5"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Refuge
+    Values:
+    - "\u8349\u4E1B\n\u5C06\u866B\u5B50\u653E\u5728\u8FD9\u91CC"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Cleared
+    Values:
+    - "\u5DF2\u62D4\u9664"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Weed
+    Values:
+    - "\u6742\u8349"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Crop
+    Values:
+    - "\u83DC\u82D7"
+    - 
+    - 
+    - 
+  - Key: ui.gardenCare.Insect
+    Values:
+    - "\u866B"
+    - 
+    - 
+    - 

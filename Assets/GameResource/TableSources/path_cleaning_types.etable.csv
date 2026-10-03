@@ -1,0 +1,4 @@
+id,pool,toolId,weight,color,size,spritePath,hintKey
+leaves,standard,broom,1,#CFAD45,58,,ui.pathCleaning.HintLeaves
+mud,standard,brush,1,#765141,72,,ui.pathCleaning.HintMud
+trash,standard,tongs,1,#A9D8DD,48,,ui.pathCleaning.HintTrash

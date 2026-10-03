@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeDialogueSO
   _nodeId: 1ee958ac7ec042d986982a9c3b7c5ce2
   _chapterId: 57c023ad23ef45be88cbab6bd9b3d51d
-  _contentRevision: 10
+  _contentRevision: 11
+  _flow: {fileID: 0}
   _commands:
   - _cameraZoom: 1
     _wipeDirection: 0
@@ -1609,7 +1610,7 @@ MonoBehaviour:
     _textReveal: 0
     _textFadeDuration: 0.8
     _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
+    _textSpeedMultiplier: 1.08
     _textEase: 1
     _stepGroupId: 
     _stepGroupName: 
@@ -2401,7 +2402,7 @@ MonoBehaviour:
     _textReveal: 0
     _textFadeDuration: 0.8
     _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
+    _textSpeedMultiplier: 1.08
     _textEase: 1
     _stepGroupId: 
     _stepGroupName: 
@@ -2473,7 +2474,7 @@ MonoBehaviour:
     _textReveal: 0
     _textFadeDuration: 0.8
     _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
+    _textSpeedMultiplier: 1.08
     _textEase: 1
     _stepGroupId: 
     _stepGroupName: 
@@ -2617,7 +2618,7 @@ MonoBehaviour:
     _textReveal: 0
     _textFadeDuration: 0.8
     _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
+    _textSpeedMultiplier: 1.08
     _textEase: 1
     _stepGroupId: 
     _stepGroupName: 
@@ -2689,7 +2690,7 @@ MonoBehaviour:
     _textReveal: 0
     _textFadeDuration: 0.8
     _titleExitDuration: 0.65
-    _textSpeedMultiplier: 1
+    _textSpeedMultiplier: 1.08
     _textEase: 1
     _stepGroupId: 
     _stepGroupName: 
@@ -2910,7 +2911,11 @@ MonoBehaviour:
     _stepGroupId: 
     _stepGroupName: 
     _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
-    _textBeats: []
+    _textBeats:
+    - _at: 3
+      _pause: 0.16
+      _speed: 1
+      _instant: 0
     _dialogueVisible: 1
     _textBindings: []
     _commandId: aac3649f0dcf4dd0b3324942b79a85ef
@@ -2982,7 +2987,11 @@ MonoBehaviour:
     _stepGroupId: 
     _stepGroupName: 
     _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
-    _textBeats: []
+    _textBeats:
+    - _at: 3
+      _pause: 0.16
+      _speed: 1
+      _instant: 0
     _dialogueVisible: 1
     _textBindings: []
     _commandId: 3cc0a89f4b7e4a0c8250c4c93d2e6310
@@ -3054,7 +3063,11 @@ MonoBehaviour:
     _stepGroupId: 
     _stepGroupName: 
     _stepGroupColor: {r: 0.45, g: 0.65, b: 0.95, a: 1}
-    _textBeats: []
+    _textBeats:
+    - _at: 3
+      _pause: 0.16
+      _speed: 1
+      _instant: 0
     _dialogueVisible: 1
     _textBindings: []
     _commandId: a7b24474af04447880306c66dc1ede6c

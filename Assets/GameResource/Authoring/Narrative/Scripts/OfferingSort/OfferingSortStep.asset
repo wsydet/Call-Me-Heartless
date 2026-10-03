@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d5e761db7a9ec4088f9b33cb242de1, type: 3}
+  m_Name: OfferingSortStep
+  m_EditorClassIdentifier: Game.OfferingSort.Runtime::Game.OfferingSort.OfferingSortStepSO
+  _configFingerprint: 3ab749ce28e98067103c0dd98f37a321c6654d1459f36d76c6d5867139d911ad
+  _previewOnly: 0

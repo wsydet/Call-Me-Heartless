@@ -45,6 +45,27 @@ namespace Game.Narrative
         public event Action Changed;
         public bool IsReady => _started && !_disposed && _view != null && !_restoring;
         public bool IsDisposed => _disposed;
+        public string ChoicePrompt
+        {
+            get
+            {
+                var snapshot=Snapshot;
+                if(snapshot.State!=NarrativeState.AwaitingChoice)return "";
+                if(_story?.Asset!=null)
+                    foreach(var chapter in _story.Asset.Chapters)
+                        if(chapter.ChapterId==snapshot.ChapterId)
+                            foreach(var node in chapter.Nodes)
+                                if(node.NodeId==snapshot.NodeId && node is NarrativeChoiceSO choice)
+                                    return NovelLocalization.Runtime(choice.PromptTextKey,choice.Prompt);
+                if(_definition!=null)
+                    foreach(var chapter in _definition.Chapters)
+                        if(chapter.Id==snapshot.ChapterId)
+                            foreach(var node in chapter.Nodes)
+                                if(node.Id==snapshot.NodeId)return node.Prompt;
+                return "";
+            }
+        }
+
         /// <summary>剧情是否正在接管推进输入；自动播放仍然运行。</summary>
         public bool IsInputLocked => _inputLocks.Count > 0;
 #if UNITY_EDITOR
@@ -119,13 +140,20 @@ namespace Game.Narrative
             string status = snapshot.Error?.ToString() ?? (snapshot.State == NarrativeState.Ended
                     ? NovelLocalization.Runtime("ui.reader.Status.Ending", "结局") + " · " + snapshot.EndingId
                 : !_started ? NovelLocalization.Runtime("ui.reader.Status.Preparing", "正在准备配表、页面与剧情…")
-                : snapshot.PauseReasons.Count > 0 ? NovelLocalization.Runtime("ui.reader.Status.Paused", "已暂停") : "");
+                : HasVisiblePause(snapshot) ? NovelLocalization.Runtime("ui.reader.Status.Paused", "已暂停") : "");
             int visible = snapshot.State == NarrativeState.AwaitingAdvance ? int.MaxValue : (int)_visible;
             PrepareText(command, snapshot.State == NarrativeState.AwaitingAdvance);
             (_view as INovelTextView)?.SetStoryDialogueVisible(StoryDialogueVisible);
             _view.Render(snapshot, command, speaker, visible, status);
             RenderTextEffects();
         }
+        private static bool HasVisiblePause(NarrativeSnapshot snapshot)
+        {
+            foreach (var reason in snapshot.PauseReasons)
+                if (!reason.StartsWith("CustomStep:", StringComparison.Ordinal)) return true;
+            return false;
+        }
+
         private void Prepare()
         {
             _catalog = _catalogProvider();

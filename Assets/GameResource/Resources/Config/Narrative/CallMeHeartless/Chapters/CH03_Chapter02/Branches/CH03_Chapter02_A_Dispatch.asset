@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb016b628299664584f2d647b3b1421, type: 3}
+  m_Name: CH03_Chapter02_A_Dispatch
+  m_EditorClassIdentifier: Game.Narrative.Runtime::Game.Narrative.NarrativeBranchSO
+  _nodeId: 08f3562943564fd590428f867b197409
+  _chapterId: a9dbb0cd472a4c99a5a1d1ece01bcaa7
+  _contentRevision: 1
+  _flow: {fileID: 11400000, guid: 1a8d1197e81018c43937df6cf5093ffb, type: 2}
+  _branches:
+  - _optionId: 0e8511c205fe4a83a98c88cd90c7d86a
+    _text: "\u7B2C2\u6B21\uFF1A\u8865\u9F50\u672A\u64AD\u653E\u4E8B\u4EF6"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.0e8511c205fe4a83a98c88cd90c7d86a
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_aVisits
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 2
+          _string: 
+    _target: {fileID: 11400000, guid: 7f0316542c4c34a48bbc54d55a469f5d, type: 2}
+  - _optionId: 083891801e044115a62a4505cca2d087
+    _text: "\u7B2C3\u6B21"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.083891801e044115a62a4505cca2d087
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_aVisits
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 3
+          _string: 
+    _target: {fileID: 11400000, guid: 36c2571cfb8d91244964543a83436203, type: 2}
+  - _optionId: ee7913fff0fc466583d41bc71847068a
+    _text: "\u7B2C4\u6B21"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.ee7913fff0fc466583d41bc71847068a
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_aVisits
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 4
+          _string: 
+    _target: {fileID: 11400000, guid: dd9ffdd91e7f02d469eeaf07d40c61c8, type: 2}
+  - _optionId: 89982570d3b94b6eba94ac12d6bcd220
+    _text: "\u7B2C5\u6B21"
+    _textKey: option.0942d3f17d504f01ba64169b17e2a578.89982570d3b94b6eba94ac12d6bcd220
+    _condition:
+      _junction: 0
+      _predicates:
+      - _variableId: ch2_aVisits
+        _scope: 1
+        _comparison: 0
+        _value:
+          _type: 1
+          _bool: 0
+          _int: 5
+          _string: 
+    _target: {fileID: 11400000, guid: f11cf75fbc6cbc046aa4c597fa8ea814, type: 2}
+  _fallback: {fileID: 11400000, guid: c14ae52b6b29f5f468d9bd1e3cb1f1fa, type: 2}

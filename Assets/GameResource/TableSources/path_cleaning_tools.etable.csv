@@ -1,0 +1,4 @@
+id,nameKey,color,spritePath
+broom,ui.pathCleaning.Broom,#CFAD45,
+brush,ui.pathCleaning.Brush,#B77C64,
+tongs,ui.pathCleaning.Tongs,#A9D8DD,

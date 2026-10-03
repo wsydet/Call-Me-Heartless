@@ -1,0 +1,13 @@
+{
+  "name": "Game.PathCleaning.Editor",
+  "references": [
+    "Game.PathCleaning.Runtime",
+    "Game.Narrative.Runtime",
+    "Ember.Basic.Runtime",
+    "Ember.Core.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": true
+}

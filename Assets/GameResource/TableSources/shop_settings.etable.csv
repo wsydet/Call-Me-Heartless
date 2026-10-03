@@ -1,0 +1,6 @@
+id,level,timeoutSeconds
+tutorial,1,0
+steady,2,300
+practice,3,240
+advanced,4,180
+master,5,120

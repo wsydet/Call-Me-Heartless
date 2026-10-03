@@ -1,0 +1,1 @@
+{"name":"Game.OfferingSort.Editor","references":["Game.OfferingSort.Runtime","Game.Narrative.Runtime","Ember.Basic.Runtime"],"includePlatforms":["Editor"],"autoReferenced":true}
