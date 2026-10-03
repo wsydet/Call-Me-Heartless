@@ -1,0 +1,5601 @@
+{
+  "schemaVersion": 1,
+  "batchId": "20261001-chapter02-a-01",
+  "skillId": "ember-vn-import-story",
+  "status": "completed",
+  "completedAt": "2026-10-01T18:13:59.583750+08:00",
+  "source": {
+    "url": "https://my.feishu.cn/sheets/P6VfsAMj3hq15btR3Oice7i4nId?sheet=H3qKdD",
+    "sheetId": "H3qKdD",
+    "sheetName": "第二章分支剧情段落-A系列",
+    "range": "A2:U54",
+    "revision": 3053,
+    "readAt": "2026-10-01T09:51:01.653421+00:00",
+    "contentSha256": "7dc78ae89724f4fddd6e3b05c7e1fb78c41360714bb326300d22be6865b5ac85",
+    "recheckedSha256": "7dc78ae89724f4fddd6e3b05c7e1fb78c41360714bb326300d22be6865b5ac85",
+    "columnMapping": {
+      "scene": "C",
+      "speaker": "D",
+      "text": "E",
+      "art": "F",
+      "change": "G",
+      "minigame": "H"
+    },
+    "rows": [
+      {
+        "row": 2,
+        "raw": [
+          "A001",
+          "清扫的普通日程随机刷出",
+          "拂云观内白天",
+          "我",
+          "今天整理下贡品吧",
+          "",
+          "",
+          "盲盒娃娃排序游戏",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "拂云观内白天",
+        "speaker": "我",
+        "text": "今天整理下贡品吧",
+        "art": "",
+        "change": "",
+        "minigame": "盲盒娃娃排序游戏"
+      },
+      {
+        "row": 3,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "能想出用这种可爱小东西供奉的也只有师父这样的住持了吧",
+          "可爱摆件盲盒类贡品",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "能想出用这种可爱小东西供奉的也只有师父这样的住持了吧",
+        "art": "可爱摆件盲盒类贡品",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 4,
+        "raw": [
+          "",
+          "",
+          "",
+          "旁白",
+          "本月的【收入】增加了~",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "旁白",
+        "text": "本月的【收入】增加了~",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 5,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 6,
+        "raw": [
+          "A002",
+          "清扫的普通日程随机刷出",
+          "山门前白天",
+          "我",
+          "山门前有点泥泞呢",
+          "",
+          "",
+          "泥点清洁游戏",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "山门前白天",
+        "speaker": "我",
+        "text": "山门前有点泥泞呢",
+        "art": "",
+        "change": "",
+        "minigame": "泥点清洁游戏"
+      },
+      {
+        "row": 7,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "不好好打扫下的话，会有人滑倒",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "不好好打扫下的话，会有人滑倒",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 8,
+        "raw": [
+          "",
+          "",
+          "",
+          "旁白",
+          "本月的【收入】增加了~",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "旁白",
+        "text": "本月的【收入】增加了~",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 9,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 10,
+        "raw": [
+          "A003",
+          "师父好感关键剧情（第三次清扫时出现1次）",
+          "自己房间白天",
+          "我",
+          "房间就是需要收拾的舒舒服服的才好睡觉",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "自己房间白天",
+        "speaker": "我",
+        "text": "房间就是需要收拾的舒舒服服的才好睡觉",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 11,
+        "raw": [
+          "",
+          "",
+          "",
+          "师父",
+          "（突然出现）大早上的就想睡觉，小懒鬼",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "师父",
+        "text": "（突然出现）大早上的就想睡觉，小懒鬼",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 12,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "选项1：「师父你这样不打招呼就进人房间很打扰啊喂」\n选项2：「师父你怎么不去庙里专门跑来看我」",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "选项1：「师父你这样不打招呼就进人房间很打扰啊喂」\n选项2：「师父你怎么不去庙里专门跑来看我」",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 13,
+        "raw": [
+          "",
+          "",
+          "",
+          "师父",
+          "选项1回答：「谁让你是我徒弟，你的房间我想进就进，随时抓到你偷懒」\n选项2回答：「今天不忙嘛，监督下你有没有好好干活，果然在偷懒」",
+          "剧情逻辑：选项1林夕染好感+15",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "师父",
+        "text": "选项1回答：「谁让你是我徒弟，你的房间我想进就进，随时抓到你偷懒」\n选项2回答：「今天不忙嘛，监督下你有没有好好干活，果然在偷懒」",
+        "art": "剧情逻辑：选项1林夕染好感+15",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 14,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "我哪有在偷懒，我是在收拾自己房间",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "我哪有在偷懒，我是在收拾自己房间",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 15,
+        "raw": [
+          "",
+          "",
+          "",
+          "旁白",
+          "本月的【收入】增加了~",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "旁白",
+        "text": "本月的【收入】增加了~",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 16,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 17,
+        "raw": [
+          "A004",
+          "师父好感关键剧情（A003出现后这个可以出）",
+          "老君庙内白天",
+          "我",
+          "今天人少，打扫下庙里吧",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "老君庙内白天",
+        "speaker": "我",
+        "text": "今天人少，打扫下庙里吧",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 18,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "诶？师父在上香？",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "诶？师父在上香？",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 19,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "选项1：默默打扫，尽量不打扰师父\n选项2：和师父开玩笑",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "选项1：默默打扫，尽量不打扰师父\n选项2：和师父开玩笑",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 20,
+        "raw": [
+          "",
+          "",
+          "选项1分支",
+          "林夕染",
+          "弟子林夕染，诚心叩拜，上昭天光，下照地祇，谨奉香烛，虔修表文，伏愿神明慈悲，赐愚弟子可辖一地之资，不求丰功伟绩，但求平安顺遂。稽首百拜，谨疏以闻。 ",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "选项1分支",
+        "speaker": "林夕染",
+        "text": "弟子林夕染，诚心叩拜，上昭天光，下照地祇，谨奉香烛，虔修表文，伏愿神明慈悲，赐愚弟子可辖一地之资，不求丰功伟绩，但求平安顺遂。稽首百拜，谨疏以闻。 ",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 21,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "哇，师父好认真",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "哇，师父好认真",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 22,
+        "raw": [
+          "",
+          "",
+          "选项2分支",
+          "我",
+          "“弟子林夕染，诚心叩拜，希望祖师保佑我顿顿有零食，吃嘛嘛香，天天睡懒觉，中午才起床”",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "选项2分支",
+        "speaker": "我",
+        "text": "“弟子林夕染，诚心叩拜，希望祖师保佑我顿顿有零食，吃嘛嘛香，天天睡懒觉，中午才起床”",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 23,
+        "raw": [
+          "",
+          "",
+          "",
+          "林夕染",
+          "干嘛捣乱，欠打了是不是",
+          "剧情逻辑：",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "林夕染",
+        "text": "干嘛捣乱，欠打了是不是",
+        "art": "剧情逻辑：",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 24,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "祖师像前，戒嗔戒怒，善哉，善哉",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "祖师像前，戒嗔戒怒，善哉，善哉",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 25,
+        "raw": [
+          "",
+          "",
+          "",
+          "旁白",
+          "本月的【收入】增加了~",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "旁白",
+        "text": "本月的【收入】增加了~",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 26,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 27,
+        "raw": [
+          "A005",
+          "师父普通剧情（A004出现后出这个）",
+          "老君庙内白天",
+          "林夕染",
+          "呦，【主角昵称】有好好在扫地呢。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "老君庙内白天",
+        "speaker": "林夕染",
+        "text": "呦，【主角昵称】有好好在扫地呢。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 28,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "师父，如果脑子里的杂念也能像灰尘一样被扫掉就好了",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "师父，如果脑子里的杂念也能像灰尘一样被扫掉就好了",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 29,
+        "raw": [
+          "",
+          "",
+          "",
+          "林夕染",
+          "小徒弟有什么心事？",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "林夕染",
+        "text": "小徒弟有什么心事？",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 30,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "嗯……也没什么",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "嗯……也没什么",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 31,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "就是……我不知道我该干什么。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "就是……我不知道我该干什么。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 32,
+        "raw": [
+          "",
+          "",
+          "",
+          "林夕染",
+          "你该扫地呀",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "林夕染",
+        "text": "你该扫地呀",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 33,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "不是，我是说，人生，未来，要做什么样的人，以什么为生。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "不是，我是说，人生，未来，要做什么样的人，以什么为生。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 34,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "我觉得我，似乎在任何一条道路上都很失败。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "我觉得我，似乎在任何一条道路上都很失败。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 35,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "上学压力很大，没有办法坚持下去，和同学的关系又有点糟糕，感觉格格不入。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "上学压力很大，没有办法坚持下去，和同学的关系又有点糟糕，感觉格格不入。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 36,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "更确切地说，我也不知道我现在是什么样的人",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "更确切地说，我也不知道我现在是什么样的人",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 37,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "朋友，家人，陌生人们，会怎么评价我",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "朋友，家人，陌生人们，会怎么评价我",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 38,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "师父是怎么知道自己要当道士，留在道观里，甚至要当住持的呢？",
+          "",
+          "*maybe换成掌门更好",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "师父是怎么知道自己要当道士，留在道观里，甚至要当住持的呢？",
+        "art": "",
+        "change": "*maybe换成掌门更好",
+        "minigame": ""
+      },
+      {
+        "row": 39,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "师父是怎么知道自己一定会在这条路上变得优秀呢？",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "师父是怎么知道自己一定会在这条路上变得优秀呢？",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 40,
+        "raw": [
+          "",
+          "",
+          "",
+          "林夕染",
+          "（摸摸头）【主角昵称】呀",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "林夕染",
+        "text": "（摸摸头）【主角昵称】呀",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 41,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "人生的任何一条路都不会太顺畅。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "人生的任何一条路都不会太顺畅。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 42,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "我们看似拥有无穷多的选择，事实上，每当到达关键选择的节点，我们都会选择看似最有利且最稳妥的选项。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "我们看似拥有无穷多的选择，事实上，每当到达关键选择的节点，我们都会选择看似最有利且最稳妥的选项。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 43,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "我们能做的，只有适应自己的选择。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "我们能做的，只有适应自己的选择。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 44,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "努力活在这个选择里，全盘接收它带给你的好处和坏处，",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "努力活在这个选择里，全盘接收它带给你的好处和坏处，",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 45,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "直到有一天，你会发现，你的全盘接受让这个选项和你盘根错节地长在了一起。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "直到有一天，你会发现，你的全盘接受让这个选项和你盘根错节地长在了一起。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 46,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "你就是它，它就是你。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "你就是它，它就是你。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 47,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "所以师父也不知道自己会当住持吗？",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "所以师父也不知道自己会当住持吗？",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 48,
+        "raw": [
+          "",
+          "",
+          "",
+          "林夕染",
+          "师父只想在有限的选择里尽量当个有始有终的人。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "林夕染",
+        "text": "师父只想在有限的选择里尽量当个有始有终的人。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 49,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "可是自由呢？",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "可是自由呢？",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 50,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "如果不开心的话，难道不能放弃吗？",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "如果不开心的话，难道不能放弃吗？",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 51,
+        "raw": [
+          "",
+          "",
+          "",
+          "林夕染",
+          "选择绝对的自由是一种虚度光阴。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "林夕染",
+        "text": "选择绝对的自由是一种虚度光阴。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 52,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "好比对任何道路和选择都半途而废。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "好比对任何道路和选择都半途而废。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 53,
+        "raw": [
+          "",
+          "",
+          "",
+          "",
+          "不管在哪条路上，我都希望【主角昵称】能做个自律的孩子，为自己的目标而努力。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "",
+        "text": "不管在哪条路上，我都希望【主角昵称】能做个自律的孩子，为自己的目标而努力。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      },
+      {
+        "row": 54,
+        "raw": [
+          "",
+          "",
+          "",
+          "我",
+          "（点头）嗯嗯。",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "scene": "",
+        "speaker": "我",
+        "text": "（点头）嗯嗯。",
+        "art": "",
+        "change": "",
+        "minigame": ""
+      }
+    ]
+  },
+  "confirmation": {
+    "planHash": "859b93c0e6b672c724bfa2453c12455fe8d63ad6eca51214ce4ece5a53ecdb87",
+    "choices": {
+      "scope": "A001-A005",
+      "a001Percent": 50,
+      "blankSpeakers": "continue",
+      "teacher": "CMH_lxz_r",
+      "backgrounds": "generic",
+      "a004Reward": "none",
+      "minigames": "empty_passthrough"
+    }
+  },
+  "target": {
+    "storyId": "0942d3f17d504f01ba64169b17e2a578",
+    "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+    "semantics": "A5771A7598E25F69EE5D768BB76D8531494AAA7D49605284698A587F3FC75D3F",
+    "assets": [
+      {
+        "name": "CH03_Chapter02_Afternoon",
+        "id": "9ae06dbb25974227b5415b385ace6293",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Afternoon.asset",
+        "guid": "94c1bd4cd0dc1ed4a9bdce71f98d5392"
+      },
+      {
+        "name": "CH03_Chapter02_A_Action",
+        "id": "f520c98f310d41cda3c626aa0c764168",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A_Action.asset",
+        "guid": "67b9be3b6ff9ca849bb59864ccc3a5fb"
+      },
+      {
+        "name": "CH03_Chapter02_B_Action",
+        "id": "114da9d1eb0246b18b25c65ecd1f1ccb",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_B_Action.asset",
+        "guid": "eab08316b3768874a98ef84b08ba47e1"
+      },
+      {
+        "name": "CH03_Chapter02_C_Action",
+        "id": "cec0a963791d452d805e6b5cab16cf7e",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_C_Action.asset",
+        "guid": "eb4a4a9e88d621d49878a4972d3fb33e"
+      },
+      {
+        "name": "CH03_Chapter02_D_Action",
+        "id": "3f9ade496914464b8c345dc29be5e800",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_D_Action.asset",
+        "guid": "659828ea33977d94e9c5a1383a90cc32"
+      },
+      {
+        "name": "CH03_Chapter02_E_Action",
+        "id": "72dec05b499d4371bfd69f37c4008467",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_E_Action.asset",
+        "guid": "b9c905977eb818e43928c68f559d0b09"
+      },
+      {
+        "name": "CH03_Chapter02_F_Action",
+        "id": "9d70b6a6d23c460c8e1f0ef5f9751282",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_F_Action.asset",
+        "guid": "1428076757aeda14e9d535b5e458b637"
+      },
+      {
+        "name": "CH03_Chapter02_G_Action",
+        "id": "76b1c4bfa55d451b891c6ef1a903f04c",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_G_Action.asset",
+        "guid": "a83b7480971ff2d48abc7ac69438067d"
+      },
+      {
+        "name": "CH03_Chapter02_H_Action",
+        "id": "87f771b978ce4ef7949a9efada5f9e56",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_H_Action.asset",
+        "guid": "0e6cae36766076e43928cf811c6671f7"
+      },
+      {
+        "name": "CH03_Chapter02_I_Action",
+        "id": "ae8795af29a04ea6b1ee3ad81672e5fd",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_I_Action.asset",
+        "guid": "fdfbb40ae99b1804c8648da7f74d54c0"
+      },
+      {
+        "name": "CH03_Chapter02_AdvanceStep",
+        "id": "4e4d46a2fc6543ab858e76ae9df07b58",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_AdvanceStep.asset",
+        "guid": "533c29352324763438b74a60d2e026b0"
+      },
+      {
+        "name": "CH03_Chapter02_Settlement",
+        "id": "fa683626a3a444de8146323292c3b99f",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_Settlement.asset",
+        "guid": "9103c9502061ddd47b3d679e5810d684"
+      },
+      {
+        "name": "CH03_Chapter02_Afternoon_Receive",
+        "id": "62e755e628b043f9a80cd8ce879e6f44",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Afternoon_Receive.asset",
+        "guid": "e279c4daf15a22948a76aeab1a71c35b"
+      },
+      {
+        "name": "CH03_Chapter02_Advance_Receive",
+        "id": "fad2e33f750041f094d97154a98b5394",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Advance_Receive.asset",
+        "guid": "064ea7b4581357e41bc29da3d18a3534"
+      },
+      {
+        "name": "CH03_Chapter02_Afternoon_Jump",
+        "id": "4faaca5730ef43c98d8842add5f3148b",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Afternoon_Jump.asset",
+        "guid": "c93b6936dc29d014c9ddb7cdc37c432e"
+      },
+      {
+        "name": "CH03_Chapter02_AfterMorning_Jump",
+        "id": "3401531f6afe4d8390a152e26461f4d5",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterMorning_Jump.asset",
+        "guid": "605f09725af03ce4dbe73ac87f0886c8"
+      },
+      {
+        "name": "CH03_Chapter02_AfterAfternoon_Jump",
+        "id": "e55b0b03a0ef460989c6b79027709561",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterAfternoon_Jump.asset",
+        "guid": "5eda37b870abd424398e31722615daa6"
+      },
+      {
+        "name": "CH03_Chapter02_AfterEvening_Jump",
+        "id": "2c6384b53ccd4a3c864abb8db94f5770",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterEvening_Jump.asset",
+        "guid": "9e27f319f2509ac4489cfdb03122a7d0"
+      },
+      {
+        "name": "CH03_Chapter02_AfterTown_Jump",
+        "id": "bebe413f78534332a08542bdbca7a4c6",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterTown_Jump.asset",
+        "guid": "341ea11d57af78b4d8663fc6bf0081c8"
+      },
+      {
+        "name": "CH03_Chapter02_AfterAdvance_Jump",
+        "id": "aeb25901a4134a5a83e6cab4889e03fc",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterAdvance_Jump.asset",
+        "guid": "fa2131d315447824e99dfbd3250bfb3a"
+      },
+      {
+        "name": "CH03_Chapter02_AfterMonth_Jump",
+        "id": "870a8b7fb33a40199accf4041ff7e103",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterMonth_Jump.asset",
+        "guid": "385f2ce5c7d4dff4a90734c2dc04c8df"
+      },
+      {
+        "name": "CH03_Chapter02_A_Start",
+        "id": "5e28a8f8f0d343988ca2caf5f17962a6",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Start.asset",
+        "guid": "1a8d1197e81018c43937df6cf5093ffb"
+      },
+      {
+        "name": "CH03_Chapter02_A_Return",
+        "id": "bd11a97755394913af9cf8e47531f810",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Return.asset",
+        "guid": "8c1dbd022a59868488a594f5ea5ebfb0"
+      },
+      {
+        "name": "CH03_Chapter02_A_Call",
+        "id": "a5bc327a62a94b38ae6ef7fd5a4842c1",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Call.asset",
+        "guid": "9702a55495caf2a47b79c959881fb3ac"
+      },
+      {
+        "name": "CH03_Chapter02_A_Dispatch",
+        "id": "08f3562943564fd590428f867b197409",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_A_Dispatch.asset",
+        "guid": "aff1d30c6e95e9446b01923ef48f711a"
+      },
+      {
+        "name": "CH03_Chapter02_A_Random",
+        "id": "e96dde4ab1b9450f8a79032c6d78d271",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A_Random.asset",
+        "guid": "c14ae52b6b29f5f468d9bd1e3cb1f1fa"
+      },
+      {
+        "name": "CH03_Chapter02_A_RandomRoute",
+        "id": "8f7da6ef0f8040f79cb4cd6112ddd91a",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_A_RandomRoute.asset",
+        "guid": "6c3c6067ed059b8438fc7bcc864004d4"
+      },
+      {
+        "name": "CH03_Chapter02_A_Second",
+        "id": "73f1f43e4b414aaf9c681ab00489e6ff",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_A_Second.asset",
+        "guid": "7f0316542c4c34a48bbc54d55a469f5d"
+      },
+      {
+        "name": "CH03_Chapter02_A001",
+        "id": "692d7c716ac84f98a25655c8762f70a7",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A001.asset",
+        "guid": "792c9fabf11875b4caf58dd168d2112e"
+      },
+      {
+        "name": "CH03_Chapter02_A001_Minigame",
+        "id": "9776c59614e548e6acef96e56bf26c90",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A001_Minigame.asset",
+        "guid": "edf1fc36c92d1c04998a3b3d2cd61eac"
+      },
+      {
+        "name": "CH03_Chapter02_A001_End",
+        "id": "5c4070e7372f46a485531ca0192a21a6",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A001_End.asset",
+        "guid": "426481c8f3b14694c887badc6408e09c"
+      },
+      {
+        "name": "CH03_Chapter02_A001_FirstGate",
+        "id": "b0af6a9cf1194521adaaea7ebc938dc1",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_A001_FirstGate.asset",
+        "guid": "b4407d7ee04aac641972df8e9943fd2d"
+      },
+      {
+        "name": "CH03_Chapter02_A001_FirstRecord",
+        "id": "390bac9b0dc24c83b71a894de63ee576",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A001_FirstRecord.asset",
+        "guid": "9ee009095e450ec4d90a2e16323d70d6"
+      },
+      {
+        "name": "CH03_Chapter02_A002",
+        "id": "2096637a25c14487952bb9ecfb2f9765",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A002.asset",
+        "guid": "cf028ce1af6a55c45b9ab713570b6186"
+      },
+      {
+        "name": "CH03_Chapter02_A002_Minigame",
+        "id": "a963a343a21f49fd96a350b67b9ae507",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A002_Minigame.asset",
+        "guid": "e37462a04ca3ce741ad9c2deb52668fd"
+      },
+      {
+        "name": "CH03_Chapter02_A002_End",
+        "id": "859a602d8de44c0ea730a7081e238df2",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A002_End.asset",
+        "guid": "9273cc0172e95ba428e92165580fc0ad"
+      },
+      {
+        "name": "CH03_Chapter02_A002_FirstGate",
+        "id": "fbc00fbc67154895ba9d9eb28e2403e0",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_A002_FirstGate.asset",
+        "guid": "9f060ff537107e64b94e65abd21fae04"
+      },
+      {
+        "name": "CH03_Chapter02_A002_FirstRecord",
+        "id": "832ad3d69b6d43db9208159537c21bfc",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A002_FirstRecord.asset",
+        "guid": "fccd750bbaad1e5419b626726e79c37f"
+      },
+      {
+        "name": "CH03_Chapter02_A003_Intro",
+        "id": "a3f0139a783f47289ab475745a3367e1",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Intro.asset",
+        "guid": "36c2571cfb8d91244964543a83436203"
+      },
+      {
+        "name": "CH03_Chapter02_A003_Choice",
+        "id": "94919e3c5f5c4c85b9e84006790a1641",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_A003_Choice.asset",
+        "guid": "25d94e01316c9604cb45bdf2b63d80f1"
+      },
+      {
+        "name": "CH03_Chapter02_A003_Answer1",
+        "id": "7a14229516254689ae6f6d8fcc6abb6d",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Answer1.asset",
+        "guid": "917bf79ccf9132e43b98b0a26480140f"
+      },
+      {
+        "name": "CH03_Chapter02_A003_Answer2",
+        "id": "da31501634f846f69eadaff47af27b70",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Answer2.asset",
+        "guid": "fa57278aaca943443b22439cfb43c7e6"
+      },
+      {
+        "name": "CH03_Chapter02_A003_Common",
+        "id": "f4bc1cfb91f14cfb9a5f68312380488d",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Common.asset",
+        "guid": "fb1a35eae207c1f4b97d137692cb5315"
+      },
+      {
+        "name": "CH03_Chapter02_A004_Intro",
+        "id": "0d9a05f6330e440eb48c46d1c7293e07",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Intro.asset",
+        "guid": "dd9ffdd91e7f02d469eeaf07d40c61c8"
+      },
+      {
+        "name": "CH03_Chapter02_A004_Choice",
+        "id": "19e4f87b8ebd4efdac8c990ed93d5bec",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_A004_Choice.asset",
+        "guid": "d692ed5926dc1c64d80efef37dd21674"
+      },
+      {
+        "name": "CH03_Chapter02_A004_Branch1",
+        "id": "a4dd8dd4577a4c1a896b95a7fa92f971",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Branch1.asset",
+        "guid": "d9675b1554cdaeb44ae0395e6342c803"
+      },
+      {
+        "name": "CH03_Chapter02_A004_Branch2",
+        "id": "9db6e17ccecc4ed2bcaadd1c17503877",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Branch2.asset",
+        "guid": "b573e77094d8c62468388794d13e1dfd"
+      },
+      {
+        "name": "CH03_Chapter02_A004_Common",
+        "id": "bbbcd03e0d594e85ab6bfd1ce2ea60c6",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Common.asset",
+        "guid": "ac1c6b3f6a6c63445970561ae3af74e7"
+      },
+      {
+        "name": "CH03_Chapter02_A005",
+        "id": "cc1f7163652b40f39c5351cd35ac161a",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+        "guid": "f11cf75fbc6cbc046aa4c597fa8ea814"
+      },
+      {
+        "name": "CH03_Chapter02_A_Complete",
+        "id": "36593398a92541d0a9868c140725880c",
+        "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A_Complete.asset",
+        "guid": "3656019ae2f09054d97cfebec3e8e991"
+      }
+    ]
+  },
+  "sourceMap": [
+    {
+      "row": 2,
+      "nodeId": "692d7c716ac84f98a25655c8762f70a7",
+      "nodeGuid": "792c9fabf11875b4caf58dd168d2112e",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A001.asset",
+      "commandId": "450e1588c9ae45808de613ec001d3d86",
+      "lineId": "7eef81d82ccf47339ce9fb3dfab527b4",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.7eef81d82ccf47339ce9fb3dfab527b4",
+      "text": "今天整理下贡品吧",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 3,
+      "nodeId": "692d7c716ac84f98a25655c8762f70a7",
+      "nodeGuid": "792c9fabf11875b4caf58dd168d2112e",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A001.asset",
+      "commandId": "46f2ce58622845a197d828606bd6a9ab",
+      "lineId": "5ec567fe2854417ea024b35ea8880a98",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.5ec567fe2854417ea024b35ea8880a98",
+      "text": "能想出用这种可爱小东西供奉的也只有师父这样的住持了吧",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 4,
+      "nodeId": "5c4070e7372f46a485531ca0192a21a6",
+      "nodeGuid": "426481c8f3b14694c887badc6408e09c",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A001_End.asset",
+      "commandId": "b31001aec24647a6aea593d2b23e2b1f",
+      "lineId": "645b5c5180c64ab9b48eb5c91ec32eba",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.645b5c5180c64ab9b48eb5c91ec32eba",
+      "text": "本月的【收入】增加了~",
+      "characterId": "",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 6,
+      "nodeId": "2096637a25c14487952bb9ecfb2f9765",
+      "nodeGuid": "cf028ce1af6a55c45b9ab713570b6186",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A002.asset",
+      "commandId": "17c13ddfa2404524bf6e4d3c753b6b89",
+      "lineId": "65506c9eb01d43d4b1c6254175ed346f",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.65506c9eb01d43d4b1c6254175ed346f",
+      "text": "山门前有点泥泞呢",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 7,
+      "nodeId": "2096637a25c14487952bb9ecfb2f9765",
+      "nodeGuid": "cf028ce1af6a55c45b9ab713570b6186",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A002.asset",
+      "commandId": "df238788eb8d41928686dc10c82381fc",
+      "lineId": "6e571636ee22405c891dfe391856cd92",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.6e571636ee22405c891dfe391856cd92",
+      "text": "不好好打扫下的话，会有人滑倒",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 8,
+      "nodeId": "859a602d8de44c0ea730a7081e238df2",
+      "nodeGuid": "9273cc0172e95ba428e92165580fc0ad",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A002_End.asset",
+      "commandId": "4c82394cbf864539a8c2ce19ae6a4977",
+      "lineId": "57cf81cb681b42ca9dc1688db906c6ec",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.57cf81cb681b42ca9dc1688db906c6ec",
+      "text": "本月的【收入】增加了~",
+      "characterId": "",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 10,
+      "nodeId": "a3f0139a783f47289ab475745a3367e1",
+      "nodeGuid": "36c2571cfb8d91244964543a83436203",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Intro.asset",
+      "commandId": "c882fa2313ca481786ea7a825a2c111f",
+      "lineId": "236300aa06ff443f88e8d71041d2641a",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.236300aa06ff443f88e8d71041d2641a",
+      "text": "房间就是需要收拾的舒舒服服的才好睡觉",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 11,
+      "nodeId": "a3f0139a783f47289ab475745a3367e1",
+      "nodeGuid": "36c2571cfb8d91244964543a83436203",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Intro.asset",
+      "commandId": "0ff0ea6e973c4ddea5b22b95382fc247",
+      "lineId": "4918fd9a3d7a4499a7e2ccb34e4f13e5",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.4918fd9a3d7a4499a7e2ccb34e4f13e5",
+      "text": "（突然出现）大早上的就想睡觉，小懒鬼",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 12,
+      "nodeId": "94919e3c5f5c4c85b9e84006790a1641",
+      "nodeGuid": "25d94e01316c9604cb45bdf2b63d80f1",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_A003_Choice.asset",
+      "routeId": "bd3811fcff7f42db9ec029fbb474ca68",
+      "text": "师父你这样不打招呼就进人房间很打扰啊喂",
+      "textKey": "option.0942d3f17d504f01ba64169b17e2a578.bd3811fcff7f42db9ec029fbb474ca68",
+      "target": "A003_Answer1"
+    },
+    {
+      "row": 12,
+      "nodeId": "94919e3c5f5c4c85b9e84006790a1641",
+      "nodeGuid": "25d94e01316c9604cb45bdf2b63d80f1",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_A003_Choice.asset",
+      "routeId": "e9fd6b4f87444184878a4f924d334a45",
+      "text": "师父你怎么不去庙里专门跑来看我",
+      "textKey": "option.0942d3f17d504f01ba64169b17e2a578.e9fd6b4f87444184878a4f924d334a45",
+      "target": "A003_Answer2"
+    },
+    {
+      "row": 13,
+      "nodeId": "7a14229516254689ae6f6d8fcc6abb6d",
+      "nodeGuid": "917bf79ccf9132e43b98b0a26480140f",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Answer1.asset",
+      "commandId": "a57d7c1c6b1948298d0dad114b6b42a7",
+      "lineId": "027054fbbd63483aa883cdfc78a09627",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.027054fbbd63483aa883cdfc78a09627",
+      "text": "谁让你是我徒弟，你的房间我想进就进，随时抓到你偷懒",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 13,
+      "nodeId": "da31501634f846f69eadaff47af27b70",
+      "nodeGuid": "fa57278aaca943443b22439cfb43c7e6",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Answer2.asset",
+      "commandId": "3e0a9b637a08411c98ae395a1fe8bddf",
+      "lineId": "9301f8e29a324be8bd342889ef52f7e2",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.9301f8e29a324be8bd342889ef52f7e2",
+      "text": "今天不忙嘛，监督下你有没有好好干活，果然在偷懒",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 14,
+      "nodeId": "f4bc1cfb91f14cfb9a5f68312380488d",
+      "nodeGuid": "fb1a35eae207c1f4b97d137692cb5315",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Common.asset",
+      "commandId": "3a0573c1dcc04c7c954863ccbc1a25c3",
+      "lineId": "7701f11468e049bb86bac7205bf4149e",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.7701f11468e049bb86bac7205bf4149e",
+      "text": "我哪有在偷懒，我是在收拾自己房间",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 15,
+      "nodeId": "f4bc1cfb91f14cfb9a5f68312380488d",
+      "nodeGuid": "fb1a35eae207c1f4b97d137692cb5315",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Common.asset",
+      "commandId": "2b5433301b8e4c538ebd5c1054e23955",
+      "lineId": "a92de51f9a9c4a84a325333d29fc4526",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.a92de51f9a9c4a84a325333d29fc4526",
+      "text": "本月的【收入】增加了~",
+      "characterId": "",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 17,
+      "nodeId": "0d9a05f6330e440eb48c46d1c7293e07",
+      "nodeGuid": "dd9ffdd91e7f02d469eeaf07d40c61c8",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Intro.asset",
+      "commandId": "525f748ab6ff4ff78ff8c42a8712eef8",
+      "lineId": "835e5f4b3c1945eeb64319da7ed54d50",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.835e5f4b3c1945eeb64319da7ed54d50",
+      "text": "今天人少，打扫下庙里吧",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 18,
+      "nodeId": "0d9a05f6330e440eb48c46d1c7293e07",
+      "nodeGuid": "dd9ffdd91e7f02d469eeaf07d40c61c8",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Intro.asset",
+      "commandId": "0042f31ce98b4c75b6e065484a99bbfc",
+      "lineId": "ec899eaf083a4525b3e9b76cf17faf91",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.ec899eaf083a4525b3e9b76cf17faf91",
+      "text": "诶？师父在上香？",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 19,
+      "nodeId": "19e4f87b8ebd4efdac8c990ed93d5bec",
+      "nodeGuid": "d692ed5926dc1c64d80efef37dd21674",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_A004_Choice.asset",
+      "routeId": "40dc715c04a44f1396b43bc3ce746dc3",
+      "text": "默默打扫，尽量不打扰师父",
+      "textKey": "option.0942d3f17d504f01ba64169b17e2a578.40dc715c04a44f1396b43bc3ce746dc3",
+      "target": "A004_Branch1"
+    },
+    {
+      "row": 19,
+      "nodeId": "19e4f87b8ebd4efdac8c990ed93d5bec",
+      "nodeGuid": "d692ed5926dc1c64d80efef37dd21674",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_A004_Choice.asset",
+      "routeId": "5f7f81bebca144e0bc2826781df074d5",
+      "text": "和师父开玩笑",
+      "textKey": "option.0942d3f17d504f01ba64169b17e2a578.5f7f81bebca144e0bc2826781df074d5",
+      "target": "A004_Branch2"
+    },
+    {
+      "row": 20,
+      "nodeId": "a4dd8dd4577a4c1a896b95a7fa92f971",
+      "nodeGuid": "d9675b1554cdaeb44ae0395e6342c803",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Branch1.asset",
+      "commandId": "56936fdbf49e489d87f7a06f68cfa3ff",
+      "lineId": "29f06c5424834723995a2f1cea67746a",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.29f06c5424834723995a2f1cea67746a",
+      "text": "弟子林夕染，诚心叩拜，上昭天光，下照地祇，谨奉香烛，虔修表文，伏愿神明慈悲，赐愚弟子可辖一地之资，不求丰功伟绩，但求平安顺遂。稽首百拜，谨疏以闻。 ",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 21,
+      "nodeId": "a4dd8dd4577a4c1a896b95a7fa92f971",
+      "nodeGuid": "d9675b1554cdaeb44ae0395e6342c803",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Branch1.asset",
+      "commandId": "688cef2c682f46bbbc1a93d45448353d",
+      "lineId": "4d38c185d2f2442f9788056e6522fa2c",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.4d38c185d2f2442f9788056e6522fa2c",
+      "text": "哇，师父好认真",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 22,
+      "nodeId": "9db6e17ccecc4ed2bcaadd1c17503877",
+      "nodeGuid": "b573e77094d8c62468388794d13e1dfd",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Branch2.asset",
+      "commandId": "6f5d7787a37545aebc74d57784ffb9f3",
+      "lineId": "dcc6246e45964f49a53d58b363f157a0",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.dcc6246e45964f49a53d58b363f157a0",
+      "text": "“弟子林夕染，诚心叩拜，希望祖师保佑我顿顿有零食，吃嘛嘛香，天天睡懒觉，中午才起床”",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 23,
+      "nodeId": "9db6e17ccecc4ed2bcaadd1c17503877",
+      "nodeGuid": "b573e77094d8c62468388794d13e1dfd",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Branch2.asset",
+      "commandId": "a5ad15ac72a74d3db600b0d5f013d6f4",
+      "lineId": "78e68b76d8b141b189ab066b5d7dc3e5",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.78e68b76d8b141b189ab066b5d7dc3e5",
+      "text": "干嘛捣乱，欠打了是不是",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 24,
+      "nodeId": "9db6e17ccecc4ed2bcaadd1c17503877",
+      "nodeGuid": "b573e77094d8c62468388794d13e1dfd",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Branch2.asset",
+      "commandId": "1ee5d977e9b046ff9977ba16e214aadd",
+      "lineId": "3de74d91591b4758a185a1f517f208f9",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.3de74d91591b4758a185a1f517f208f9",
+      "text": "祖师像前，戒嗔戒怒，善哉，善哉",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 25,
+      "nodeId": "bbbcd03e0d594e85ab6bfd1ce2ea60c6",
+      "nodeGuid": "ac1c6b3f6a6c63445970561ae3af74e7",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Common.asset",
+      "commandId": "9b30ede27508424a8988a88acb01a27e",
+      "lineId": "1e1f256975484b6ea0b33f4240558cea",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.1e1f256975484b6ea0b33f4240558cea",
+      "text": "本月的【收入】增加了~",
+      "characterId": "",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 27,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "5114cf6d3be94cb19d232150fc36abbe",
+      "lineId": "4d59c8eac38d47dab2ddf5bc8d74a76a",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.4d59c8eac38d47dab2ddf5bc8d74a76a",
+      "text": "呦，【主角昵称】有好好在扫地呢。",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": [
+        {
+          "_token": "【主角昵称】",
+          "_variableId": "playerName",
+          "_scope": 1
+        }
+      ]
+    },
+    {
+      "row": 28,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "50d7d89f6d054661962dcddbababb667",
+      "lineId": "ca3530626dfc47559adc861f877b1868",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.ca3530626dfc47559adc861f877b1868",
+      "text": "师父，如果脑子里的杂念也能像灰尘一样被扫掉就好了",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 29,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "80c2cb30dda5450392e4e5798bdc2b75",
+      "lineId": "9775cf54208e415183e6990ebe66eab8",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.9775cf54208e415183e6990ebe66eab8",
+      "text": "小徒弟有什么心事？",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 30,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "22c82db0122d48a0918861e12bf98d60",
+      "lineId": "b5811964ceb24360bb4d539a71b2dfc8",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.b5811964ceb24360bb4d539a71b2dfc8",
+      "text": "嗯……也没什么",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 31,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "df00f3d07d4e4ae4bfac3936c441a9d6",
+      "lineId": "8a64034458d94afaa106637427ce726a",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.8a64034458d94afaa106637427ce726a",
+      "text": "就是……我不知道我该干什么。",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 32,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "d08e5ed3880146289c3a2c83039bbdf7",
+      "lineId": "511b437f46374de7a59983020e53165c",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.511b437f46374de7a59983020e53165c",
+      "text": "你该扫地呀",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 33,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "67bdb69a6a0344a0bd40a506ef81515b",
+      "lineId": "00bbad0a7b4047cbbf55821b42113184",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.00bbad0a7b4047cbbf55821b42113184",
+      "text": "不是，我是说，人生，未来，要做什么样的人，以什么为生。",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 34,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "40079f271dee48f19b49a64119f2dd7a",
+      "lineId": "c44d2c6a1075490ba604d9351e25ce1f",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.c44d2c6a1075490ba604d9351e25ce1f",
+      "text": "我觉得我，似乎在任何一条道路上都很失败。",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 35,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "152fc2fcb801423c9dcc9b595e75e6e7",
+      "lineId": "c28abce186674ecd92f886c8ba08b887",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.c28abce186674ecd92f886c8ba08b887",
+      "text": "上学压力很大，没有办法坚持下去，和同学的关系又有点糟糕，感觉格格不入。",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 36,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "bf78228594c24a6cbdb78b454444d869",
+      "lineId": "bd457f9e9d3b44b492382d8c510c3a19",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.bd457f9e9d3b44b492382d8c510c3a19",
+      "text": "更确切地说，我也不知道我现在是什么样的人",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 37,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "83b12089a14644ef940b0e54c667c157",
+      "lineId": "ed3053fefb284a3f9bd54b83ffc8636d",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.ed3053fefb284a3f9bd54b83ffc8636d",
+      "text": "朋友，家人，陌生人们，会怎么评价我",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 38,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "e055280e7c974b8bac30f592a6aa7041",
+      "lineId": "eea41099f1b94d079f18820bfe6c8b2a",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.eea41099f1b94d079f18820bfe6c8b2a",
+      "text": "师父是怎么知道自己要当道士，留在道观里，甚至要当住持的呢？",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 39,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "3c88520a67a54fe092f48dec20ffaa4c",
+      "lineId": "df534d7a94c44685a5d0df400330d8bd",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.df534d7a94c44685a5d0df400330d8bd",
+      "text": "师父是怎么知道自己一定会在这条路上变得优秀呢？",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 40,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "d9aaabf1b8e746818c9acf28cc8eaaa7",
+      "lineId": "ceb70e25fb6240ea9f65f41f4f8e69b4",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.ceb70e25fb6240ea9f65f41f4f8e69b4",
+      "text": "（摸摸头）【主角昵称】呀",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": [
+        {
+          "_token": "【主角昵称】",
+          "_variableId": "playerName",
+          "_scope": 1
+        }
+      ]
+    },
+    {
+      "row": 41,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "b73a1e20c7a143d78398eb1d15594bac",
+      "lineId": "4896f03f658541319b2e2c0d4e1352ae",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.4896f03f658541319b2e2c0d4e1352ae",
+      "text": "人生的任何一条路都不会太顺畅。",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 42,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "5f051cc8108f41f98fed30d7780dd6e3",
+      "lineId": "81d2fb400add4e8ead54abef6d15cea3",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.81d2fb400add4e8ead54abef6d15cea3",
+      "text": "我们看似拥有无穷多的选择，事实上，每当到达关键选择的节点，我们都会选择看似最有利且最稳妥的选项。",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 43,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "72576b4438344da596f752be2f6216b8",
+      "lineId": "152dc38a6577408b9142d279ea3c2f36",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.152dc38a6577408b9142d279ea3c2f36",
+      "text": "我们能做的，只有适应自己的选择。",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 44,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "409a92599cfe427f85d05f14e741c055",
+      "lineId": "d12b79dd3e414ac6b76466d4c6686f84",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.d12b79dd3e414ac6b76466d4c6686f84",
+      "text": "努力活在这个选择里，全盘接收它带给你的好处和坏处，",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 45,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "11da9c9accac46ed8c3228eefd1e287e",
+      "lineId": "781aa078cfb44c1fb2804eb3a2539666",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.781aa078cfb44c1fb2804eb3a2539666",
+      "text": "直到有一天，你会发现，你的全盘接受让这个选项和你盘根错节地长在了一起。",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 46,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "83a531aa1e3546caa0ff0af7bcf0ab90",
+      "lineId": "82b0074c19ae48d7a4a12eec14494417",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.82b0074c19ae48d7a4a12eec14494417",
+      "text": "你就是它，它就是你。",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 47,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "e93846967cdd4a03a3e4e1731e85cdcd",
+      "lineId": "1d312db90808400fb407fd2aba2e793e",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.1d312db90808400fb407fd2aba2e793e",
+      "text": "所以师父也不知道自己会当住持吗？",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 48,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "4fbf75c8f81d420382985b5623beea72",
+      "lineId": "7b03ec3bb5eb4b119c61eb2471e63691",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.7b03ec3bb5eb4b119c61eb2471e63691",
+      "text": "师父只想在有限的选择里尽量当个有始有终的人。",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 49,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "d973e7808b6545339b28863038c7dc28",
+      "lineId": "14e56aefaf4e4ec5987e0c152edaf65c",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.14e56aefaf4e4ec5987e0c152edaf65c",
+      "text": "可是自由呢？",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 50,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "ee255d314f4b498ea7380c5969c366ad",
+      "lineId": "18b7c2f1e7ab4b7c8bf5683d8707fc0e",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.18b7c2f1e7ab4b7c8bf5683d8707fc0e",
+      "text": "如果不开心的话，难道不能放弃吗？",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    },
+    {
+      "row": 51,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "a11fe717c17b4060afe399d415847f87",
+      "lineId": "8531a3ffa01b43c68bc4285c439bfda6",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.8531a3ffa01b43c68bc4285c439bfda6",
+      "text": "选择绝对的自由是一种虚度光阴。",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 52,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "6ee457f87dd04cffb7dc5152deac5f77",
+      "lineId": "11fa8af283a64131b244b2da1cf2d0ea",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.11fa8af283a64131b244b2da1cf2d0ea",
+      "text": "好比对任何道路和选择都半途而废。",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": []
+    },
+    {
+      "row": 53,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "a6af9ba021f7460d96b8c4fc5027a514",
+      "lineId": "bfe988bab9d3402ca071975c6d4dc0ee",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.bfe988bab9d3402ca071975c6d4dc0ee",
+      "text": "不管在哪条路上，我都希望【主角昵称】能做个自律的孩子，为自己的目标而努力。",
+      "characterId": "CMH_lxz_r",
+      "speakerVariableId": null,
+      "textBindings": [
+        {
+          "_token": "【主角昵称】",
+          "_variableId": "playerName",
+          "_scope": 1
+        }
+      ]
+    },
+    {
+      "row": 54,
+      "nodeId": "cc1f7163652b40f39c5351cd35ac161a",
+      "nodeGuid": "f11cf75fbc6cbc046aa4c597fa8ea814",
+      "nodePath": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset",
+      "commandId": "66ec104eba504b9bb48b952487e0de45",
+      "lineId": "710f77f8ee04419184676f0d0204314e",
+      "textKey": "text.0942d3f17d504f01ba64169b17e2a578.710f77f8ee04419184676f0d0204314e",
+      "text": "（点头）嗯嗯。",
+      "characterId": "CMH_inner",
+      "speakerVariableId": "playerName",
+      "textBindings": []
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "name": "A_Dispatch",
+        "id": "08f3562943564fd590428f867b197409",
+        "kind": "Branch",
+        "label": "A_Dispatch",
+        "next": "A_Random",
+        "sourceRows": [],
+        "routes": [
+          {
+            "id": "0e8511c205fe4a83a98c88cd90c7d86a",
+            "text": "第2次：补齐未播放事件",
+            "target": "A_Second",
+            "condition": {
+              "global": "ch2_aVisits",
+              "eq": 2
+            },
+            "textKey": "option.0942d3f17d504f01ba64169b17e2a578.0e8511c205fe4a83a98c88cd90c7d86a"
+          },
+          {
+            "id": "083891801e044115a62a4505cca2d087",
+            "text": "第3次",
+            "target": "A003_Intro",
+            "condition": {
+              "global": "ch2_aVisits",
+              "eq": 3
+            },
+            "textKey": "option.0942d3f17d504f01ba64169b17e2a578.083891801e044115a62a4505cca2d087"
+          },
+          {
+            "id": "ee7913fff0fc466583d41bc71847068a",
+            "text": "第4次",
+            "target": "A004_Intro",
+            "condition": {
+              "global": "ch2_aVisits",
+              "eq": 4
+            },
+            "textKey": "option.0942d3f17d504f01ba64169b17e2a578.ee7913fff0fc466583d41bc71847068a"
+          },
+          {
+            "id": "89982570d3b94b6eba94ac12d6bcd220",
+            "text": "第5次",
+            "target": "A005",
+            "condition": {
+              "global": "ch2_aVisits",
+              "eq": 5
+            },
+            "textKey": "option.0942d3f17d504f01ba64169b17e2a578.89982570d3b94b6eba94ac12d6bcd220"
+          }
+        ],
+        "commands": [],
+        "actualCommands": []
+      },
+      {
+        "name": "A_Random",
+        "id": "e96dde4ab1b9450f8a79032c6d78d271",
+        "kind": "Dialogue",
+        "label": "A001 / A002 · 随机抽取",
+        "next": "A_RandomRoute",
+        "sourceRows": [],
+        "routes": [],
+        "commands": [
+          {
+            "kind": "RandomVariable",
+            "variable": "ch2_aRoll",
+            "scope": "Global",
+            "min": 0,
+            "max": 99
+          }
+        ],
+        "actualCommands": [
+          {
+            "_commandId": "0605d9630dea426796fd983c15742a8f",
+            "_kind": 32,
+            "_textRevision": 1,
+            "_scope": 1,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_variableId": "ch2_aRoll",
+            "_randomMin": 0,
+            "_randomMax": 99
+          }
+        ]
+      },
+      {
+        "name": "A_RandomRoute",
+        "id": "8f7da6ef0f8040f79cb4cd6112ddd91a",
+        "kind": "Branch",
+        "label": "A_RandomRoute",
+        "next": "A002",
+        "sourceRows": [],
+        "routes": [
+          {
+            "id": "0e90176ad31143ffb34fd32f6e760f3e",
+            "text": "随机值小于选定阈值：A001",
+            "target": "A001",
+            "condition": {
+              "global": "ch2_aRoll",
+              "lt": "a001Percent"
+            },
+            "textKey": "option.0942d3f17d504f01ba64169b17e2a578.0e90176ad31143ffb34fd32f6e760f3e"
+          }
+        ],
+        "commands": [],
+        "actualCommands": []
+      },
+      {
+        "name": "A_Second",
+        "id": "73f1f43e4b414aaf9c681ab00489e6ff",
+        "kind": "Branch",
+        "label": "A_Second",
+        "next": "A001",
+        "sourceRows": [],
+        "routes": [
+          {
+            "id": "ca34994ef5a5407bb4f1b0bba46a69d1",
+            "text": "首次为A001，第二次播放A002",
+            "target": "A002",
+            "condition": {
+              "global": "ch2_aFirstEvent",
+              "eq": 1
+            },
+            "textKey": "option.0942d3f17d504f01ba64169b17e2a578.ca34994ef5a5407bb4f1b0bba46a69d1"
+          }
+        ],
+        "commands": [],
+        "actualCommands": []
+      },
+      {
+        "name": "A001",
+        "id": "692d7c716ac84f98a25655c8762f70a7",
+        "kind": "Dialogue",
+        "label": "A001 · 整理贡品",
+        "next": "A001_Minigame",
+        "sourceRows": [
+          2,
+          3
+        ],
+        "routes": [],
+        "commands": [],
+        "actualCommands": [
+          {
+            "_commandId": "0bd68de5b8ce43be86ed031caf66c914",
+            "_kind": 3,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_resourceKey": "道观_default"
+          },
+          {
+            "_commandId": "450e1588c9ae45808de613ec001d3d86",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "7eef81d82ccf47339ce9fb3dfab527b4",
+            "_text": "今天整理下贡品吧",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.7eef81d82ccf47339ce9fb3dfab527b4",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 2
+          },
+          {
+            "_commandId": "46f2ce58622845a197d828606bd6a9ab",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "5ec567fe2854417ea024b35ea8880a98",
+            "_text": "能想出用这种可爱小东西供奉的也只有师父这样的住持了吧",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.5ec567fe2854417ea024b35ea8880a98",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 3
+          }
+        ]
+      },
+      {
+        "name": "A001_Minigame",
+        "id": "9776c59614e548e6acef96e56bf26c90",
+        "kind": "Dialogue",
+        "label": "待补小游戏 · 盲盒娃娃排序（空节点直通）",
+        "next": "A001_End",
+        "sourceRows": [],
+        "routes": [],
+        "commands": [],
+        "actualCommands": []
+      },
+      {
+        "name": "A001_End",
+        "id": "5c4070e7372f46a485531ca0192a21a6",
+        "kind": "Dialogue",
+        "label": "A001_End",
+        "next": "A001_FirstGate",
+        "sourceRows": [
+          4
+        ],
+        "routes": [],
+        "commands": [],
+        "actualCommands": [
+          {
+            "_commandId": "b31001aec24647a6aea593d2b23e2b1f",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "645b5c5180c64ab9b48eb5c91ec32eba",
+            "_text": "本月的【收入】增加了~",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.645b5c5180c64ab9b48eb5c91ec32eba",
+            "_characterId": "",
+            "sourceRow": 4
+          }
+        ]
+      },
+      {
+        "name": "A001_FirstGate",
+        "id": "b0af6a9cf1194521adaaea7ebc938dc1",
+        "kind": "Branch",
+        "label": "A001_FirstGate",
+        "next": "A_Complete",
+        "sourceRows": [],
+        "routes": [
+          {
+            "id": "8bf0a718e48e41e2a112a1344a1c9803",
+            "text": "仅首次记为A001",
+            "target": "A001_FirstRecord",
+            "condition": {
+              "global": "ch2_aVisits",
+              "eq": 1
+            },
+            "textKey": "option.0942d3f17d504f01ba64169b17e2a578.8bf0a718e48e41e2a112a1344a1c9803"
+          }
+        ],
+        "commands": [],
+        "actualCommands": []
+      },
+      {
+        "name": "A001_FirstRecord",
+        "id": "390bac9b0dc24c83b71a894de63ee576",
+        "kind": "Dialogue",
+        "label": "A001_FirstRecord",
+        "next": "A_Complete",
+        "sourceRows": [],
+        "routes": [],
+        "commands": [
+          {
+            "kind": "SetVariable",
+            "variable": "ch2_aFirstEvent",
+            "value": 1,
+            "scope": "Global"
+          }
+        ],
+        "actualCommands": [
+          {
+            "_commandId": "4d80d772290143cf8c81aa39faaa2857",
+            "_kind": 1,
+            "_textRevision": 1,
+            "_scope": 1,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_variableId": "ch2_aFirstEvent",
+            "_value": {
+              "_type": 1,
+              "_int": 1,
+              "_bool": false,
+              "_string": ""
+            }
+          }
+        ]
+      },
+      {
+        "name": "A002",
+        "id": "2096637a25c14487952bb9ecfb2f9765",
+        "kind": "Dialogue",
+        "label": "A002 · 清扫山门",
+        "next": "A002_Minigame",
+        "sourceRows": [
+          6,
+          7
+        ],
+        "routes": [],
+        "commands": [],
+        "actualCommands": [
+          {
+            "_commandId": "7149e62741644629bb48d3acfb8a1250",
+            "_kind": 3,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_resourceKey": "道观_default"
+          },
+          {
+            "_commandId": "17c13ddfa2404524bf6e4d3c753b6b89",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "65506c9eb01d43d4b1c6254175ed346f",
+            "_text": "山门前有点泥泞呢",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.65506c9eb01d43d4b1c6254175ed346f",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 6
+          },
+          {
+            "_commandId": "df238788eb8d41928686dc10c82381fc",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "6e571636ee22405c891dfe391856cd92",
+            "_text": "不好好打扫下的话，会有人滑倒",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.6e571636ee22405c891dfe391856cd92",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 7
+          }
+        ]
+      },
+      {
+        "name": "A002_Minigame",
+        "id": "a963a343a21f49fd96a350b67b9ae507",
+        "kind": "Dialogue",
+        "label": "待补小游戏 · 泥点清洁（空节点直通）",
+        "next": "A002_End",
+        "sourceRows": [],
+        "routes": [],
+        "commands": [],
+        "actualCommands": []
+      },
+      {
+        "name": "A002_End",
+        "id": "859a602d8de44c0ea730a7081e238df2",
+        "kind": "Dialogue",
+        "label": "A002_End",
+        "next": "A002_FirstGate",
+        "sourceRows": [
+          8
+        ],
+        "routes": [],
+        "commands": [],
+        "actualCommands": [
+          {
+            "_commandId": "4c82394cbf864539a8c2ce19ae6a4977",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "57cf81cb681b42ca9dc1688db906c6ec",
+            "_text": "本月的【收入】增加了~",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.57cf81cb681b42ca9dc1688db906c6ec",
+            "_characterId": "",
+            "sourceRow": 8
+          }
+        ]
+      },
+      {
+        "name": "A002_FirstGate",
+        "id": "fbc00fbc67154895ba9d9eb28e2403e0",
+        "kind": "Branch",
+        "label": "A002_FirstGate",
+        "next": "A_Complete",
+        "sourceRows": [],
+        "routes": [
+          {
+            "id": "1f8c560e73a6459b90d26248868287b4",
+            "text": "仅首次记为A002",
+            "target": "A002_FirstRecord",
+            "condition": {
+              "global": "ch2_aVisits",
+              "eq": 1
+            },
+            "textKey": "option.0942d3f17d504f01ba64169b17e2a578.1f8c560e73a6459b90d26248868287b4"
+          }
+        ],
+        "commands": [],
+        "actualCommands": []
+      },
+      {
+        "name": "A002_FirstRecord",
+        "id": "832ad3d69b6d43db9208159537c21bfc",
+        "kind": "Dialogue",
+        "label": "A002_FirstRecord",
+        "next": "A_Complete",
+        "sourceRows": [],
+        "routes": [],
+        "commands": [
+          {
+            "kind": "SetVariable",
+            "variable": "ch2_aFirstEvent",
+            "value": 2,
+            "scope": "Global"
+          }
+        ],
+        "actualCommands": [
+          {
+            "_commandId": "f3f6f856bac242298c2991ecd9672424",
+            "_kind": 1,
+            "_textRevision": 1,
+            "_scope": 1,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_variableId": "ch2_aFirstEvent",
+            "_value": {
+              "_type": 1,
+              "_int": 2,
+              "_bool": false,
+              "_string": ""
+            }
+          }
+        ]
+      },
+      {
+        "name": "A003_Intro",
+        "id": "a3f0139a783f47289ab475745a3367e1",
+        "kind": "Dialogue",
+        "label": "A003 · 师父进房间",
+        "next": "A003_Choice",
+        "sourceRows": [
+          10,
+          11
+        ],
+        "routes": [],
+        "commands": [],
+        "actualCommands": [
+          {
+            "_commandId": "eecefa22fa4e436486b5af56fa382997",
+            "_kind": 3,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_resourceKey": "房间_default"
+          },
+          {
+            "_commandId": "c882fa2313ca481786ea7a825a2c111f",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "236300aa06ff443f88e8d71041d2641a",
+            "_text": "房间就是需要收拾的舒舒服服的才好睡觉",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.236300aa06ff443f88e8d71041d2641a",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 10
+          },
+          {
+            "_commandId": "0ff0ea6e973c4ddea5b22b95382fc247",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "4918fd9a3d7a4499a7e2ccb34e4f13e5",
+            "_text": "（突然出现）大早上的就想睡觉，小懒鬼",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.4918fd9a3d7a4499a7e2ccb34e4f13e5",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 11
+          }
+        ]
+      },
+      {
+        "name": "A003_Choice",
+        "id": "94919e3c5f5c4c85b9e84006790a1641",
+        "kind": "Choice",
+        "label": "A003_Choice",
+        "next": null,
+        "sourceRows": [],
+        "routes": [
+          {
+            "id": "bd3811fcff7f42db9ec029fbb474ca68",
+            "text": "师父你这样不打招呼就进人房间很打扰啊喂",
+            "target": "A003_Answer1",
+            "condition": null,
+            "textKey": "option.0942d3f17d504f01ba64169b17e2a578.bd3811fcff7f42db9ec029fbb474ca68"
+          },
+          {
+            "id": "e9fd6b4f87444184878a4f924d334a45",
+            "text": "师父你怎么不去庙里专门跑来看我",
+            "target": "A003_Answer2",
+            "condition": null,
+            "textKey": "option.0942d3f17d504f01ba64169b17e2a578.e9fd6b4f87444184878a4f924d334a45"
+          }
+        ],
+        "commands": [],
+        "actualCommands": []
+      },
+      {
+        "name": "A003_Answer1",
+        "id": "7a14229516254689ae6f6d8fcc6abb6d",
+        "kind": "Dialogue",
+        "label": "A003 · 选项1回答 + 配表奖励 cmh_a003_option1",
+        "next": "A003_Common",
+        "sourceRows": [
+          13
+        ],
+        "routes": [],
+        "commands": [
+          {
+            "kind": "CustomStep",
+            "scriptId": "Game.CMH.Rewards.TableRewardStep",
+            "rewardId": "cmh_a003_option1"
+          }
+        ],
+        "actualCommands": [
+          {
+            "_commandId": "a57d7c1c6b1948298d0dad114b6b42a7",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "027054fbbd63483aa883cdfc78a09627",
+            "_text": "谁让你是我徒弟，你的房间我想进就进，随时抓到你偷懒",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.027054fbbd63483aa883cdfc78a09627",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 13
+          },
+          {
+            "_commandId": "12a4ccd127c240f2bf8ed17a8d59b64e",
+            "_kind": 34,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_customStepId": "Game.CMH.Rewards.TableRewardStep",
+            "_value": {
+              "_type": 2,
+              "_string": "cmh_a003_option1",
+              "_int": 0,
+              "_bool": false
+            }
+          }
+        ]
+      },
+      {
+        "name": "A003_Answer2",
+        "id": "da31501634f846f69eadaff47af27b70",
+        "kind": "Dialogue",
+        "label": "A003 · 选项2回答",
+        "next": "A003_Common",
+        "sourceRows": [
+          13
+        ],
+        "routes": [],
+        "commands": [],
+        "actualCommands": [
+          {
+            "_commandId": "3e0a9b637a08411c98ae395a1fe8bddf",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "9301f8e29a324be8bd342889ef52f7e2",
+            "_text": "今天不忙嘛，监督下你有没有好好干活，果然在偷懒",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.9301f8e29a324be8bd342889ef52f7e2",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 13
+          }
+        ]
+      },
+      {
+        "name": "A003_Common",
+        "id": "f4bc1cfb91f14cfb9a5f68312380488d",
+        "kind": "Dialogue",
+        "label": "A003_Common",
+        "next": "A_Complete",
+        "sourceRows": [
+          14,
+          15
+        ],
+        "routes": [],
+        "commands": [],
+        "actualCommands": [
+          {
+            "_commandId": "3a0573c1dcc04c7c954863ccbc1a25c3",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "7701f11468e049bb86bac7205bf4149e",
+            "_text": "我哪有在偷懒，我是在收拾自己房间",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.7701f11468e049bb86bac7205bf4149e",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 14
+          },
+          {
+            "_commandId": "2b5433301b8e4c538ebd5c1054e23955",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "a92de51f9a9c4a84a325333d29fc4526",
+            "_text": "本月的【收入】增加了~",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.a92de51f9a9c4a84a325333d29fc4526",
+            "_characterId": "",
+            "sourceRow": 15
+          }
+        ]
+      },
+      {
+        "name": "A004_Intro",
+        "id": "0d9a05f6330e440eb48c46d1c7293e07",
+        "kind": "Dialogue",
+        "label": "A004 · 师父上香",
+        "next": "A004_Choice",
+        "sourceRows": [
+          17,
+          18
+        ],
+        "routes": [],
+        "commands": [],
+        "actualCommands": [
+          {
+            "_commandId": "eb9a9de6fd4049378bad8414c61504c5",
+            "_kind": 3,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_resourceKey": "道观_default"
+          },
+          {
+            "_commandId": "525f748ab6ff4ff78ff8c42a8712eef8",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "835e5f4b3c1945eeb64319da7ed54d50",
+            "_text": "今天人少，打扫下庙里吧",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.835e5f4b3c1945eeb64319da7ed54d50",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 17
+          },
+          {
+            "_commandId": "0042f31ce98b4c75b6e065484a99bbfc",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "ec899eaf083a4525b3e9b76cf17faf91",
+            "_text": "诶？师父在上香？",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.ec899eaf083a4525b3e9b76cf17faf91",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 18
+          }
+        ]
+      },
+      {
+        "name": "A004_Choice",
+        "id": "19e4f87b8ebd4efdac8c990ed93d5bec",
+        "kind": "Choice",
+        "label": "A004_Choice",
+        "next": null,
+        "sourceRows": [],
+        "routes": [
+          {
+            "id": "40dc715c04a44f1396b43bc3ce746dc3",
+            "text": "默默打扫，尽量不打扰师父",
+            "target": "A004_Branch1",
+            "condition": null,
+            "textKey": "option.0942d3f17d504f01ba64169b17e2a578.40dc715c04a44f1396b43bc3ce746dc3"
+          },
+          {
+            "id": "5f7f81bebca144e0bc2826781df074d5",
+            "text": "和师父开玩笑",
+            "target": "A004_Branch2",
+            "condition": null,
+            "textKey": "option.0942d3f17d504f01ba64169b17e2a578.5f7f81bebca144e0bc2826781df074d5"
+          }
+        ],
+        "commands": [],
+        "actualCommands": []
+      },
+      {
+        "name": "A004_Branch1",
+        "id": "a4dd8dd4577a4c1a896b95a7fa92f971",
+        "kind": "Dialogue",
+        "label": "A004_Branch1",
+        "next": "A004_Common",
+        "sourceRows": [
+          20,
+          21
+        ],
+        "routes": [],
+        "commands": [],
+        "actualCommands": [
+          {
+            "_commandId": "56936fdbf49e489d87f7a06f68cfa3ff",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "29f06c5424834723995a2f1cea67746a",
+            "_text": "弟子林夕染，诚心叩拜，上昭天光，下照地祇，谨奉香烛，虔修表文，伏愿神明慈悲，赐愚弟子可辖一地之资，不求丰功伟绩，但求平安顺遂。稽首百拜，谨疏以闻。 ",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.29f06c5424834723995a2f1cea67746a",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 20
+          },
+          {
+            "_commandId": "688cef2c682f46bbbc1a93d45448353d",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "4d38c185d2f2442f9788056e6522fa2c",
+            "_text": "哇，师父好认真",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.4d38c185d2f2442f9788056e6522fa2c",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 21
+          }
+        ]
+      },
+      {
+        "name": "A004_Branch2",
+        "id": "9db6e17ccecc4ed2bcaadd1c17503877",
+        "kind": "Dialogue",
+        "label": "A004_Branch2",
+        "next": "A004_Common",
+        "sourceRows": [
+          22,
+          23,
+          24
+        ],
+        "routes": [],
+        "commands": [],
+        "actualCommands": [
+          {
+            "_commandId": "6f5d7787a37545aebc74d57784ffb9f3",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "dcc6246e45964f49a53d58b363f157a0",
+            "_text": "“弟子林夕染，诚心叩拜，希望祖师保佑我顿顿有零食，吃嘛嘛香，天天睡懒觉，中午才起床”",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.dcc6246e45964f49a53d58b363f157a0",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 22
+          },
+          {
+            "_commandId": "a5ad15ac72a74d3db600b0d5f013d6f4",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "78e68b76d8b141b189ab066b5d7dc3e5",
+            "_text": "干嘛捣乱，欠打了是不是",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.78e68b76d8b141b189ab066b5d7dc3e5",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 23
+          },
+          {
+            "_commandId": "1ee5d977e9b046ff9977ba16e214aadd",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "3de74d91591b4758a185a1f517f208f9",
+            "_text": "祖师像前，戒嗔戒怒，善哉，善哉",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.3de74d91591b4758a185a1f517f208f9",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 24
+          }
+        ]
+      },
+      {
+        "name": "A004_Common",
+        "id": "bbbcd03e0d594e85ab6bfd1ce2ea60c6",
+        "kind": "Dialogue",
+        "label": "A004_Common",
+        "next": "A_Complete",
+        "sourceRows": [
+          25
+        ],
+        "routes": [],
+        "commands": [],
+        "actualCommands": [
+          {
+            "_commandId": "9b30ede27508424a8988a88acb01a27e",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "1e1f256975484b6ea0b33f4240558cea",
+            "_text": "本月的【收入】增加了~",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.1e1f256975484b6ea0b33f4240558cea",
+            "_characterId": "",
+            "sourceRow": 25
+          }
+        ]
+      },
+      {
+        "name": "A005",
+        "id": "cc1f7163652b40f39c5351cd35ac161a",
+        "kind": "Dialogue",
+        "label": "A005 · 人生选择与师徒谈心",
+        "next": "A_Complete",
+        "sourceRows": [
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54
+        ],
+        "routes": [],
+        "commands": [],
+        "actualCommands": [
+          {
+            "_commandId": "d5fd044732384155ae9b3ccadbb9995e",
+            "_kind": 3,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_resourceKey": "道观_default"
+          },
+          {
+            "_commandId": "5114cf6d3be94cb19d232150fc36abbe",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [
+              {
+                "_token": "【主角昵称】",
+                "_variableId": "playerName",
+                "_scope": 1
+              }
+            ],
+            "_lineId": "4d59c8eac38d47dab2ddf5bc8d74a76a",
+            "_text": "呦，【主角昵称】有好好在扫地呢。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.4d59c8eac38d47dab2ddf5bc8d74a76a",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 27
+          },
+          {
+            "_commandId": "50d7d89f6d054661962dcddbababb667",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "ca3530626dfc47559adc861f877b1868",
+            "_text": "师父，如果脑子里的杂念也能像灰尘一样被扫掉就好了",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.ca3530626dfc47559adc861f877b1868",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 28
+          },
+          {
+            "_commandId": "80c2cb30dda5450392e4e5798bdc2b75",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "9775cf54208e415183e6990ebe66eab8",
+            "_text": "小徒弟有什么心事？",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.9775cf54208e415183e6990ebe66eab8",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 29
+          },
+          {
+            "_commandId": "22c82db0122d48a0918861e12bf98d60",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "b5811964ceb24360bb4d539a71b2dfc8",
+            "_text": "嗯……也没什么",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.b5811964ceb24360bb4d539a71b2dfc8",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 30
+          },
+          {
+            "_commandId": "df00f3d07d4e4ae4bfac3936c441a9d6",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "8a64034458d94afaa106637427ce726a",
+            "_text": "就是……我不知道我该干什么。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.8a64034458d94afaa106637427ce726a",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 31
+          },
+          {
+            "_commandId": "d08e5ed3880146289c3a2c83039bbdf7",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "511b437f46374de7a59983020e53165c",
+            "_text": "你该扫地呀",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.511b437f46374de7a59983020e53165c",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 32
+          },
+          {
+            "_commandId": "67bdb69a6a0344a0bd40a506ef81515b",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "00bbad0a7b4047cbbf55821b42113184",
+            "_text": "不是，我是说，人生，未来，要做什么样的人，以什么为生。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.00bbad0a7b4047cbbf55821b42113184",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 33
+          },
+          {
+            "_commandId": "40079f271dee48f19b49a64119f2dd7a",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "c44d2c6a1075490ba604d9351e25ce1f",
+            "_text": "我觉得我，似乎在任何一条道路上都很失败。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.c44d2c6a1075490ba604d9351e25ce1f",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 34
+          },
+          {
+            "_commandId": "152fc2fcb801423c9dcc9b595e75e6e7",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "c28abce186674ecd92f886c8ba08b887",
+            "_text": "上学压力很大，没有办法坚持下去，和同学的关系又有点糟糕，感觉格格不入。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.c28abce186674ecd92f886c8ba08b887",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 35
+          },
+          {
+            "_commandId": "bf78228594c24a6cbdb78b454444d869",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "bd457f9e9d3b44b492382d8c510c3a19",
+            "_text": "更确切地说，我也不知道我现在是什么样的人",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.bd457f9e9d3b44b492382d8c510c3a19",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 36
+          },
+          {
+            "_commandId": "83b12089a14644ef940b0e54c667c157",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "ed3053fefb284a3f9bd54b83ffc8636d",
+            "_text": "朋友，家人，陌生人们，会怎么评价我",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.ed3053fefb284a3f9bd54b83ffc8636d",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 37
+          },
+          {
+            "_commandId": "e055280e7c974b8bac30f592a6aa7041",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "eea41099f1b94d079f18820bfe6c8b2a",
+            "_text": "师父是怎么知道自己要当道士，留在道观里，甚至要当住持的呢？",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.eea41099f1b94d079f18820bfe6c8b2a",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 38
+          },
+          {
+            "_commandId": "3c88520a67a54fe092f48dec20ffaa4c",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "df534d7a94c44685a5d0df400330d8bd",
+            "_text": "师父是怎么知道自己一定会在这条路上变得优秀呢？",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.df534d7a94c44685a5d0df400330d8bd",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 39
+          },
+          {
+            "_commandId": "d9aaabf1b8e746818c9acf28cc8eaaa7",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [
+              {
+                "_token": "【主角昵称】",
+                "_variableId": "playerName",
+                "_scope": 1
+              }
+            ],
+            "_lineId": "ceb70e25fb6240ea9f65f41f4f8e69b4",
+            "_text": "（摸摸头）【主角昵称】呀",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.ceb70e25fb6240ea9f65f41f4f8e69b4",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 40
+          },
+          {
+            "_commandId": "b73a1e20c7a143d78398eb1d15594bac",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "4896f03f658541319b2e2c0d4e1352ae",
+            "_text": "人生的任何一条路都不会太顺畅。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.4896f03f658541319b2e2c0d4e1352ae",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 41
+          },
+          {
+            "_commandId": "5f051cc8108f41f98fed30d7780dd6e3",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "81d2fb400add4e8ead54abef6d15cea3",
+            "_text": "我们看似拥有无穷多的选择，事实上，每当到达关键选择的节点，我们都会选择看似最有利且最稳妥的选项。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.81d2fb400add4e8ead54abef6d15cea3",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 42
+          },
+          {
+            "_commandId": "72576b4438344da596f752be2f6216b8",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "152dc38a6577408b9142d279ea3c2f36",
+            "_text": "我们能做的，只有适应自己的选择。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.152dc38a6577408b9142d279ea3c2f36",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 43
+          },
+          {
+            "_commandId": "409a92599cfe427f85d05f14e741c055",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "d12b79dd3e414ac6b76466d4c6686f84",
+            "_text": "努力活在这个选择里，全盘接收它带给你的好处和坏处，",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.d12b79dd3e414ac6b76466d4c6686f84",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 44
+          },
+          {
+            "_commandId": "11da9c9accac46ed8c3228eefd1e287e",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "781aa078cfb44c1fb2804eb3a2539666",
+            "_text": "直到有一天，你会发现，你的全盘接受让这个选项和你盘根错节地长在了一起。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.781aa078cfb44c1fb2804eb3a2539666",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 45
+          },
+          {
+            "_commandId": "83a531aa1e3546caa0ff0af7bcf0ab90",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "82b0074c19ae48d7a4a12eec14494417",
+            "_text": "你就是它，它就是你。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.82b0074c19ae48d7a4a12eec14494417",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 46
+          },
+          {
+            "_commandId": "e93846967cdd4a03a3e4e1731e85cdcd",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "1d312db90808400fb407fd2aba2e793e",
+            "_text": "所以师父也不知道自己会当住持吗？",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.1d312db90808400fb407fd2aba2e793e",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 47
+          },
+          {
+            "_commandId": "4fbf75c8f81d420382985b5623beea72",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "7b03ec3bb5eb4b119c61eb2471e63691",
+            "_text": "师父只想在有限的选择里尽量当个有始有终的人。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.7b03ec3bb5eb4b119c61eb2471e63691",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 48
+          },
+          {
+            "_commandId": "d973e7808b6545339b28863038c7dc28",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "14e56aefaf4e4ec5987e0c152edaf65c",
+            "_text": "可是自由呢？",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.14e56aefaf4e4ec5987e0c152edaf65c",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 49
+          },
+          {
+            "_commandId": "ee255d314f4b498ea7380c5969c366ad",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "18b7c2f1e7ab4b7c8bf5683d8707fc0e",
+            "_text": "如果不开心的话，难道不能放弃吗？",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.18b7c2f1e7ab4b7c8bf5683d8707fc0e",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 50
+          },
+          {
+            "_commandId": "a11fe717c17b4060afe399d415847f87",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "8531a3ffa01b43c68bc4285c439bfda6",
+            "_text": "选择绝对的自由是一种虚度光阴。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.8531a3ffa01b43c68bc4285c439bfda6",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 51
+          },
+          {
+            "_commandId": "6ee457f87dd04cffb7dc5152deac5f77",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "11fa8af283a64131b244b2da1cf2d0ea",
+            "_text": "好比对任何道路和选择都半途而废。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.11fa8af283a64131b244b2da1cf2d0ea",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 52
+          },
+          {
+            "_commandId": "a6af9ba021f7460d96b8c4fc5027a514",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [
+              {
+                "_token": "【主角昵称】",
+                "_variableId": "playerName",
+                "_scope": 1
+              }
+            ],
+            "_lineId": "bfe988bab9d3402ca071975c6d4dc0ee",
+            "_text": "不管在哪条路上，我都希望【主角昵称】能做个自律的孩子，为自己的目标而努力。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.bfe988bab9d3402ca071975c6d4dc0ee",
+            "_characterId": "CMH_lxz_r",
+            "sourceRow": 53
+          },
+          {
+            "_commandId": "66ec104eba504b9bb48b952487e0de45",
+            "_kind": 0,
+            "_textRevision": 1,
+            "_scope": 0,
+            "_opacity": 1,
+            "_cameraZoom": 1,
+            "_scale": {
+              "x": 1,
+              "y": 1
+            },
+            "_volume": 1,
+            "_textEffectsVersion": 1,
+            "_textSpeedMultiplier": 1,
+            "_textFadeDuration": 0.8,
+            "_titleExitDuration": 0.65,
+            "_dialogueVisible": true,
+            "_textBeats": [],
+            "_waitActions": [],
+            "_textBindings": [],
+            "_lineId": "710f77f8ee04419184676f0d0204314e",
+            "_text": "（点头）嗯嗯。",
+            "_textKey": "text.0942d3f17d504f01ba64169b17e2a578.710f77f8ee04419184676f0d0204314e",
+            "_characterId": "CMH_inner",
+            "_speakerVariableId": "playerName",
+            "_speakerVariableScope": 1,
+            "sourceRow": 54
+          }
+        ]
+      },
+      {
+        "name": "A_Complete",
+        "id": "36593398a92541d0a9868c140725880c",
+        "kind": "Dialogue",
+        "label": "清扫完成 · 本月清扫次数+1 / 返回现有流程",
+        "next": "A_Return",
+        "sourceRows": [],
+        "routes": [],
+        "commands": [
+          {
+            "kind": "CalculateVariable",
+            "variable": "ch2_monthClean",
+            "operation": "Add",
+            "operand": 1,
+            "scope": "Global"
+          }
+        ],
+        "actualCommands": []
+      }
+    ],
+    "lines": [
+      {
+        "id": "7eef81d82ccf47339ce9fb3dfab527b4",
+        "sourceRow": 2,
+        "text": "今天整理下贡品吧",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "5ec567fe2854417ea024b35ea8880a98",
+        "sourceRow": 3,
+        "text": "能想出用这种可爱小东西供奉的也只有师父这样的住持了吧",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "645b5c5180c64ab9b48eb5c91ec32eba",
+        "sourceRow": 4,
+        "text": "本月的【收入】增加了~",
+        "speaker": "旁白",
+        "blankSpeaker": false
+      },
+      {
+        "id": "65506c9eb01d43d4b1c6254175ed346f",
+        "sourceRow": 6,
+        "text": "山门前有点泥泞呢",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "6e571636ee22405c891dfe391856cd92",
+        "sourceRow": 7,
+        "text": "不好好打扫下的话，会有人滑倒",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "57cf81cb681b42ca9dc1688db906c6ec",
+        "sourceRow": 8,
+        "text": "本月的【收入】增加了~",
+        "speaker": "旁白",
+        "blankSpeaker": false
+      },
+      {
+        "id": "236300aa06ff443f88e8d71041d2641a",
+        "sourceRow": 10,
+        "text": "房间就是需要收拾的舒舒服服的才好睡觉",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "4918fd9a3d7a4499a7e2ccb34e4f13e5",
+        "sourceRow": 11,
+        "text": "（突然出现）大早上的就想睡觉，小懒鬼",
+        "speaker": "师父",
+        "blankSpeaker": false
+      },
+      {
+        "id": "027054fbbd63483aa883cdfc78a09627",
+        "sourceRow": 13,
+        "branch": "1",
+        "text": "谁让你是我徒弟，你的房间我想进就进，随时抓到你偷懒",
+        "speaker": "师父"
+      },
+      {
+        "id": "9301f8e29a324be8bd342889ef52f7e2",
+        "sourceRow": 13,
+        "branch": "2",
+        "text": "今天不忙嘛，监督下你有没有好好干活，果然在偷懒",
+        "speaker": "师父"
+      },
+      {
+        "id": "7701f11468e049bb86bac7205bf4149e",
+        "sourceRow": 14,
+        "text": "我哪有在偷懒，我是在收拾自己房间",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "a92de51f9a9c4a84a325333d29fc4526",
+        "sourceRow": 15,
+        "text": "本月的【收入】增加了~",
+        "speaker": "旁白",
+        "blankSpeaker": false
+      },
+      {
+        "id": "835e5f4b3c1945eeb64319da7ed54d50",
+        "sourceRow": 17,
+        "text": "今天人少，打扫下庙里吧",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "ec899eaf083a4525b3e9b76cf17faf91",
+        "sourceRow": 18,
+        "text": "诶？师父在上香？",
+        "speaker": "我",
+        "blankSpeaker": true
+      },
+      {
+        "id": "29f06c5424834723995a2f1cea67746a",
+        "sourceRow": 20,
+        "text": "弟子林夕染，诚心叩拜，上昭天光，下照地祇，谨奉香烛，虔修表文，伏愿神明慈悲，赐愚弟子可辖一地之资，不求丰功伟绩，但求平安顺遂。稽首百拜，谨疏以闻。 ",
+        "speaker": "林夕染",
+        "blankSpeaker": false
+      },
+      {
+        "id": "4d38c185d2f2442f9788056e6522fa2c",
+        "sourceRow": 21,
+        "text": "哇，师父好认真",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "dcc6246e45964f49a53d58b363f157a0",
+        "sourceRow": 22,
+        "text": "“弟子林夕染，诚心叩拜，希望祖师保佑我顿顿有零食，吃嘛嘛香，天天睡懒觉，中午才起床”",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "78e68b76d8b141b189ab066b5d7dc3e5",
+        "sourceRow": 23,
+        "text": "干嘛捣乱，欠打了是不是",
+        "speaker": "林夕染",
+        "blankSpeaker": false
+      },
+      {
+        "id": "3de74d91591b4758a185a1f517f208f9",
+        "sourceRow": 24,
+        "text": "祖师像前，戒嗔戒怒，善哉，善哉",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "1e1f256975484b6ea0b33f4240558cea",
+        "sourceRow": 25,
+        "text": "本月的【收入】增加了~",
+        "speaker": "旁白",
+        "blankSpeaker": false
+      },
+      {
+        "id": "4d59c8eac38d47dab2ddf5bc8d74a76a",
+        "sourceRow": 27,
+        "text": "呦，【主角昵称】有好好在扫地呢。",
+        "speaker": "林夕染",
+        "blankSpeaker": false
+      },
+      {
+        "id": "ca3530626dfc47559adc861f877b1868",
+        "sourceRow": 28,
+        "text": "师父，如果脑子里的杂念也能像灰尘一样被扫掉就好了",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "9775cf54208e415183e6990ebe66eab8",
+        "sourceRow": 29,
+        "text": "小徒弟有什么心事？",
+        "speaker": "林夕染",
+        "blankSpeaker": false
+      },
+      {
+        "id": "b5811964ceb24360bb4d539a71b2dfc8",
+        "sourceRow": 30,
+        "text": "嗯……也没什么",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "8a64034458d94afaa106637427ce726a",
+        "sourceRow": 31,
+        "text": "就是……我不知道我该干什么。",
+        "speaker": "我",
+        "blankSpeaker": true
+      },
+      {
+        "id": "511b437f46374de7a59983020e53165c",
+        "sourceRow": 32,
+        "text": "你该扫地呀",
+        "speaker": "林夕染",
+        "blankSpeaker": false
+      },
+      {
+        "id": "00bbad0a7b4047cbbf55821b42113184",
+        "sourceRow": 33,
+        "text": "不是，我是说，人生，未来，要做什么样的人，以什么为生。",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "c44d2c6a1075490ba604d9351e25ce1f",
+        "sourceRow": 34,
+        "text": "我觉得我，似乎在任何一条道路上都很失败。",
+        "speaker": "我",
+        "blankSpeaker": true
+      },
+      {
+        "id": "c28abce186674ecd92f886c8ba08b887",
+        "sourceRow": 35,
+        "text": "上学压力很大，没有办法坚持下去，和同学的关系又有点糟糕，感觉格格不入。",
+        "speaker": "我",
+        "blankSpeaker": true
+      },
+      {
+        "id": "bd457f9e9d3b44b492382d8c510c3a19",
+        "sourceRow": 36,
+        "text": "更确切地说，我也不知道我现在是什么样的人",
+        "speaker": "我",
+        "blankSpeaker": true
+      },
+      {
+        "id": "ed3053fefb284a3f9bd54b83ffc8636d",
+        "sourceRow": 37,
+        "text": "朋友，家人，陌生人们，会怎么评价我",
+        "speaker": "我",
+        "blankSpeaker": true
+      },
+      {
+        "id": "eea41099f1b94d079f18820bfe6c8b2a",
+        "sourceRow": 38,
+        "text": "师父是怎么知道自己要当道士，留在道观里，甚至要当住持的呢？",
+        "speaker": "我",
+        "blankSpeaker": true
+      },
+      {
+        "id": "df534d7a94c44685a5d0df400330d8bd",
+        "sourceRow": 39,
+        "text": "师父是怎么知道自己一定会在这条路上变得优秀呢？",
+        "speaker": "我",
+        "blankSpeaker": true
+      },
+      {
+        "id": "ceb70e25fb6240ea9f65f41f4f8e69b4",
+        "sourceRow": 40,
+        "text": "（摸摸头）【主角昵称】呀",
+        "speaker": "林夕染",
+        "blankSpeaker": false
+      },
+      {
+        "id": "4896f03f658541319b2e2c0d4e1352ae",
+        "sourceRow": 41,
+        "text": "人生的任何一条路都不会太顺畅。",
+        "speaker": "林夕染",
+        "blankSpeaker": true
+      },
+      {
+        "id": "81d2fb400add4e8ead54abef6d15cea3",
+        "sourceRow": 42,
+        "text": "我们看似拥有无穷多的选择，事实上，每当到达关键选择的节点，我们都会选择看似最有利且最稳妥的选项。",
+        "speaker": "林夕染",
+        "blankSpeaker": true
+      },
+      {
+        "id": "152dc38a6577408b9142d279ea3c2f36",
+        "sourceRow": 43,
+        "text": "我们能做的，只有适应自己的选择。",
+        "speaker": "林夕染",
+        "blankSpeaker": true
+      },
+      {
+        "id": "d12b79dd3e414ac6b76466d4c6686f84",
+        "sourceRow": 44,
+        "text": "努力活在这个选择里，全盘接收它带给你的好处和坏处，",
+        "speaker": "林夕染",
+        "blankSpeaker": true
+      },
+      {
+        "id": "781aa078cfb44c1fb2804eb3a2539666",
+        "sourceRow": 45,
+        "text": "直到有一天，你会发现，你的全盘接受让这个选项和你盘根错节地长在了一起。",
+        "speaker": "林夕染",
+        "blankSpeaker": true
+      },
+      {
+        "id": "82b0074c19ae48d7a4a12eec14494417",
+        "sourceRow": 46,
+        "text": "你就是它，它就是你。",
+        "speaker": "林夕染",
+        "blankSpeaker": true
+      },
+      {
+        "id": "1d312db90808400fb407fd2aba2e793e",
+        "sourceRow": 47,
+        "text": "所以师父也不知道自己会当住持吗？",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "7b03ec3bb5eb4b119c61eb2471e63691",
+        "sourceRow": 48,
+        "text": "师父只想在有限的选择里尽量当个有始有终的人。",
+        "speaker": "林夕染",
+        "blankSpeaker": false
+      },
+      {
+        "id": "14e56aefaf4e4ec5987e0c152edaf65c",
+        "sourceRow": 49,
+        "text": "可是自由呢？",
+        "speaker": "我",
+        "blankSpeaker": false
+      },
+      {
+        "id": "18b7c2f1e7ab4b7c8bf5683d8707fc0e",
+        "sourceRow": 50,
+        "text": "如果不开心的话，难道不能放弃吗？",
+        "speaker": "我",
+        "blankSpeaker": true
+      },
+      {
+        "id": "8531a3ffa01b43c68bc4285c439bfda6",
+        "sourceRow": 51,
+        "text": "选择绝对的自由是一种虚度光阴。",
+        "speaker": "林夕染",
+        "blankSpeaker": false
+      },
+      {
+        "id": "11fa8af283a64131b244b2da1cf2d0ea",
+        "sourceRow": 52,
+        "text": "好比对任何道路和选择都半途而废。",
+        "speaker": "林夕染",
+        "blankSpeaker": true
+      },
+      {
+        "id": "bfe988bab9d3402ca071975c6d4dc0ee",
+        "sourceRow": 53,
+        "text": "不管在哪条路上，我都希望【主角昵称】能做个自律的孩子，为自己的目标而努力。",
+        "speaker": "林夕染",
+        "blankSpeaker": true
+      },
+      {
+        "id": "710f77f8ee04419184676f0d0204314e",
+        "sourceRow": 54,
+        "text": "（点头）嗯嗯。",
+        "speaker": "我",
+        "blankSpeaker": false
+      }
+    ],
+    "globals": {
+      "ch2_aVisits": 0,
+      "ch2_aFirstEvent": 0,
+      "ch2_aRoll": 0
+    },
+    "entryMutation": {
+      "node": "A_Action",
+      "preserveCommandId": "a4c7de73883b40c8a284c69959c2a0f5",
+      "preserveLastAction": "A",
+      "replaceMonthlyIncrementWith": "ch2_aVisits += 1",
+      "next": "A_Dispatch"
+    },
+    "scope": "5e28a8f8f0d343988ca2caf5f17962a6"
+  },
+  "localization": [
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.0e8511c205fe4a83a98c88cd90c7d86a",
+      "zh_Hans": "第2次：补齐未播放事件"
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.083891801e044115a62a4505cca2d087",
+      "zh_Hans": "第3次"
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.ee7913fff0fc466583d41bc71847068a",
+      "zh_Hans": "第4次"
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.89982570d3b94b6eba94ac12d6bcd220",
+      "zh_Hans": "第5次"
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.0e90176ad31143ffb34fd32f6e760f3e",
+      "zh_Hans": "随机值小于选定阈值：A001"
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.ca34994ef5a5407bb4f1b0bba46a69d1",
+      "zh_Hans": "首次为A001，第二次播放A002"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.7eef81d82ccf47339ce9fb3dfab527b4",
+      "zh_Hans": "今天整理下贡品吧"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.5ec567fe2854417ea024b35ea8880a98",
+      "zh_Hans": "能想出用这种可爱小东西供奉的也只有师父这样的住持了吧"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.645b5c5180c64ab9b48eb5c91ec32eba",
+      "zh_Hans": "本月的【收入】增加了~"
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.8bf0a718e48e41e2a112a1344a1c9803",
+      "zh_Hans": "仅首次记为A001"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.65506c9eb01d43d4b1c6254175ed346f",
+      "zh_Hans": "山门前有点泥泞呢"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.6e571636ee22405c891dfe391856cd92",
+      "zh_Hans": "不好好打扫下的话，会有人滑倒"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.57cf81cb681b42ca9dc1688db906c6ec",
+      "zh_Hans": "本月的【收入】增加了~"
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.1f8c560e73a6459b90d26248868287b4",
+      "zh_Hans": "仅首次记为A002"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.236300aa06ff443f88e8d71041d2641a",
+      "zh_Hans": "房间就是需要收拾的舒舒服服的才好睡觉"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.4918fd9a3d7a4499a7e2ccb34e4f13e5",
+      "zh_Hans": "（突然出现）大早上的就想睡觉，小懒鬼"
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.bd3811fcff7f42db9ec029fbb474ca68",
+      "zh_Hans": "师父你这样不打招呼就进人房间很打扰啊喂"
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.e9fd6b4f87444184878a4f924d334a45",
+      "zh_Hans": "师父你怎么不去庙里专门跑来看我"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.027054fbbd63483aa883cdfc78a09627",
+      "zh_Hans": "谁让你是我徒弟，你的房间我想进就进，随时抓到你偷懒"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.9301f8e29a324be8bd342889ef52f7e2",
+      "zh_Hans": "今天不忙嘛，监督下你有没有好好干活，果然在偷懒"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.7701f11468e049bb86bac7205bf4149e",
+      "zh_Hans": "我哪有在偷懒，我是在收拾自己房间"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.a92de51f9a9c4a84a325333d29fc4526",
+      "zh_Hans": "本月的【收入】增加了~"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.835e5f4b3c1945eeb64319da7ed54d50",
+      "zh_Hans": "今天人少，打扫下庙里吧"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.ec899eaf083a4525b3e9b76cf17faf91",
+      "zh_Hans": "诶？师父在上香？"
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.40dc715c04a44f1396b43bc3ce746dc3",
+      "zh_Hans": "默默打扫，尽量不打扰师父"
+    },
+    {
+      "key": "option.0942d3f17d504f01ba64169b17e2a578.5f7f81bebca144e0bc2826781df074d5",
+      "zh_Hans": "和师父开玩笑"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.29f06c5424834723995a2f1cea67746a",
+      "zh_Hans": "弟子林夕染，诚心叩拜，上昭天光，下照地祇，谨奉香烛，虔修表文，伏愿神明慈悲，赐愚弟子可辖一地之资，不求丰功伟绩，但求平安顺遂。稽首百拜，谨疏以闻。 "
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.4d38c185d2f2442f9788056e6522fa2c",
+      "zh_Hans": "哇，师父好认真"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.dcc6246e45964f49a53d58b363f157a0",
+      "zh_Hans": "“弟子林夕染，诚心叩拜，希望祖师保佑我顿顿有零食，吃嘛嘛香，天天睡懒觉，中午才起床”"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.78e68b76d8b141b189ab066b5d7dc3e5",
+      "zh_Hans": "干嘛捣乱，欠打了是不是"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.3de74d91591b4758a185a1f517f208f9",
+      "zh_Hans": "祖师像前，戒嗔戒怒，善哉，善哉"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.1e1f256975484b6ea0b33f4240558cea",
+      "zh_Hans": "本月的【收入】增加了~"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.4d59c8eac38d47dab2ddf5bc8d74a76a",
+      "zh_Hans": "呦，【主角昵称】有好好在扫地呢。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.ca3530626dfc47559adc861f877b1868",
+      "zh_Hans": "师父，如果脑子里的杂念也能像灰尘一样被扫掉就好了"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.9775cf54208e415183e6990ebe66eab8",
+      "zh_Hans": "小徒弟有什么心事？"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.b5811964ceb24360bb4d539a71b2dfc8",
+      "zh_Hans": "嗯……也没什么"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.8a64034458d94afaa106637427ce726a",
+      "zh_Hans": "就是……我不知道我该干什么。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.511b437f46374de7a59983020e53165c",
+      "zh_Hans": "你该扫地呀"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.00bbad0a7b4047cbbf55821b42113184",
+      "zh_Hans": "不是，我是说，人生，未来，要做什么样的人，以什么为生。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.c44d2c6a1075490ba604d9351e25ce1f",
+      "zh_Hans": "我觉得我，似乎在任何一条道路上都很失败。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.c28abce186674ecd92f886c8ba08b887",
+      "zh_Hans": "上学压力很大，没有办法坚持下去，和同学的关系又有点糟糕，感觉格格不入。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.bd457f9e9d3b44b492382d8c510c3a19",
+      "zh_Hans": "更确切地说，我也不知道我现在是什么样的人"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.ed3053fefb284a3f9bd54b83ffc8636d",
+      "zh_Hans": "朋友，家人，陌生人们，会怎么评价我"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.eea41099f1b94d079f18820bfe6c8b2a",
+      "zh_Hans": "师父是怎么知道自己要当道士，留在道观里，甚至要当住持的呢？"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.df534d7a94c44685a5d0df400330d8bd",
+      "zh_Hans": "师父是怎么知道自己一定会在这条路上变得优秀呢？"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.ceb70e25fb6240ea9f65f41f4f8e69b4",
+      "zh_Hans": "（摸摸头）【主角昵称】呀"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.4896f03f658541319b2e2c0d4e1352ae",
+      "zh_Hans": "人生的任何一条路都不会太顺畅。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.81d2fb400add4e8ead54abef6d15cea3",
+      "zh_Hans": "我们看似拥有无穷多的选择，事实上，每当到达关键选择的节点，我们都会选择看似最有利且最稳妥的选项。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.152dc38a6577408b9142d279ea3c2f36",
+      "zh_Hans": "我们能做的，只有适应自己的选择。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.d12b79dd3e414ac6b76466d4c6686f84",
+      "zh_Hans": "努力活在这个选择里，全盘接收它带给你的好处和坏处，"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.781aa078cfb44c1fb2804eb3a2539666",
+      "zh_Hans": "直到有一天，你会发现，你的全盘接受让这个选项和你盘根错节地长在了一起。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.82b0074c19ae48d7a4a12eec14494417",
+      "zh_Hans": "你就是它，它就是你。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.1d312db90808400fb407fd2aba2e793e",
+      "zh_Hans": "所以师父也不知道自己会当住持吗？"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.7b03ec3bb5eb4b119c61eb2471e63691",
+      "zh_Hans": "师父只想在有限的选择里尽量当个有始有终的人。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.14e56aefaf4e4ec5987e0c152edaf65c",
+      "zh_Hans": "可是自由呢？"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.18b7c2f1e7ab4b7c8bf5683d8707fc0e",
+      "zh_Hans": "如果不开心的话，难道不能放弃吗？"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.8531a3ffa01b43c68bc4285c439bfda6",
+      "zh_Hans": "选择绝对的自由是一种虚度光阴。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.11fa8af283a64131b244b2da1cf2d0ea",
+      "zh_Hans": "好比对任何道路和选择都半途而废。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.bfe988bab9d3402ca071975c6d4dc0ee",
+      "zh_Hans": "不管在哪条路上，我都希望【主角昵称】能做个自律的孩子，为自己的目标而努力。"
+    },
+    {
+      "key": "text.0942d3f17d504f01ba64169b17e2a578.710f77f8ee04419184676f0d0204314e",
+      "zh_Hans": "（点头）嗯嗯。"
+    }
+  ],
+  "rewards": {
+    "tableId": "novel_rewards",
+    "sourcePath": "Assets/GameResource/TableSources/novel_rewards.etable.csv",
+    "rows": [
+      {
+        "id": "cmh_a003_option1",
+        "targetVariableId": "player_affection_lin",
+        "amount": "15",
+        "multiplierVariableId": "",
+        "minimum": "0",
+        "maximum": "100",
+        "enabled": "true"
+      },
+      {
+        "id": "cmh_month_clean_bonus",
+        "targetVariableId": "player_money",
+        "amount": "10",
+        "multiplierVariableId": "ch2_monthClean",
+        "minimum": "0",
+        "maximum": "1000",
+        "enabled": "true"
+      }
+    ],
+    "semanticFingerprint": "c1ec27ead533ec31e7faa92e6322b20f705f6e079327fe9ed2f0bed3838ea986",
+    "settlement": "Base settlement retained; A clean bonus now applied from table immediately before monthly counter reset"
+  },
+  "deferred": [
+    {
+      "row": 2,
+      "type": "minigame",
+      "node": "A001_Minigame",
+      "behavior": "empty pass-through"
+    },
+    {
+      "row": 6,
+      "type": "minigame",
+      "node": "A002_Minigame",
+      "behavior": "empty pass-through"
+    },
+    {
+      "row": 3,
+      "type": "art",
+      "text": "可爱摆件盲盒类贡品"
+    },
+    {
+      "row": 38,
+      "type": "editorialNote",
+      "behavior": "keep original 住持 wording"
+    }
+  ],
+  "validation": {
+    "story": {
+      "valid": true,
+      "errors": [],
+      "storyId": "0942d3f17d504f01ba64169b17e2a578",
+      "chapterId": "a9dbb0cd472a4c99a5a1d1ece01bcaa7",
+      "rewardHash": "c1ec27ead533ec31e7faa92e6322b20f705f6e079327fe9ed2f0bed3838ea986",
+      "semantics": "A5771A7598E25F69EE5D768BB76D8531494AAA7D49605284698A587F3FC75D3F",
+      "compiling": false
+    },
+    "assetReadback": {
+      "assetReadbackCommands": 57,
+      "localizationKeys": 60,
+      "emptyMinigameNodes": 2,
+      "matched": true
+    },
+    "tests": {
+      "mode": "EditMode",
+      "summary": {
+        "total": 10,
+        "passed": 10,
+        "failed": 0,
+        "skipped": 0,
+        "durationSeconds": 1.3171615,
+        "resultState": "Passed"
+      },
+      "results": [
+        {
+          "name": "ALineCheckpointRestoresVisitAndFirstChoiceWithoutReentry",
+          "fullName": "Game.Narrative.Tests.NovelSessionTests.ALineCheckpointRestoresVisitAndFirstChoiceWithoutReentry",
+          "state": "Passed",
+          "durationSeconds": 0.2011484,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "ALineUsesCumulativeVisitRulesAndCompletesOnce(0,0,\"random\")",
+          "fullName": "Game.Narrative.Tests.NovelSessionTests.ALineUsesCumulativeVisitRulesAndCompletesOnce(0,0,\"random\")",
+          "state": "Passed",
+          "durationSeconds": 0.0558064,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "ALineUsesCumulativeVisitRulesAndCompletesOnce(1,1,\"A002\")",
+          "fullName": "Game.Narrative.Tests.NovelSessionTests.ALineUsesCumulativeVisitRulesAndCompletesOnce(1,1,\"A002\")",
+          "state": "Passed",
+          "durationSeconds": 0.0318206,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "ALineUsesCumulativeVisitRulesAndCompletesOnce(1,2,\"A001\")",
+          "fullName": "Game.Narrative.Tests.NovelSessionTests.ALineUsesCumulativeVisitRulesAndCompletesOnce(1,2,\"A001\")",
+          "state": "Passed",
+          "durationSeconds": 0.0396115,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "ALineUsesCumulativeVisitRulesAndCompletesOnce(2,1,\"A003_Intro\")",
+          "fullName": "Game.Narrative.Tests.NovelSessionTests.ALineUsesCumulativeVisitRulesAndCompletesOnce(2,1,\"A003_Intro\")",
+          "state": "Passed",
+          "durationSeconds": 0.0545782,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "ALineUsesCumulativeVisitRulesAndCompletesOnce(3,2,\"A004_Intro\")",
+          "fullName": "Game.Narrative.Tests.NovelSessionTests.ALineUsesCumulativeVisitRulesAndCompletesOnce(3,2,\"A004_Intro\")",
+          "state": "Passed",
+          "durationSeconds": 0.0453153,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "ALineUsesCumulativeVisitRulesAndCompletesOnce(4,1,\"A005\")",
+          "fullName": "Game.Narrative.Tests.NovelSessionTests.ALineUsesCumulativeVisitRulesAndCompletesOnce(4,1,\"A005\")",
+          "state": "Passed",
+          "durationSeconds": 0.0695543,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "ALineUsesCumulativeVisitRulesAndCompletesOnce(5,1,\"random\")",
+          "fullName": "Game.Narrative.Tests.NovelSessionTests.ALineUsesCumulativeVisitRulesAndCompletesOnce(5,1,\"random\")",
+          "state": "Passed",
+          "durationSeconds": 0.0473534,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "ALineUsesCumulativeVisitRulesAndCompletesOnce(6,2,\"random\")",
+          "fullName": "Game.Narrative.Tests.NovelSessionTests.ALineUsesCumulativeVisitRulesAndCompletesOnce(6,2,\"random\")",
+          "state": "Passed",
+          "durationSeconds": 0.0951742,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        },
+        {
+          "name": "TableRewardReadsTargetAmountMultiplierAndBoundsAtExecution",
+          "fullName": "Game.Narrative.Tests.NovelSessionTests.TableRewardReadsTargetAmountMultiplierAndBoundsAtExecution",
+          "state": "Passed",
+          "durationSeconds": 0.0163265,
+          "message": null,
+          "stackTrace": null,
+          "output": ""
+        }
+      ]
+    }
+  },
+  "postImportFingerprints": {
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_A001_FirstGate.asset": "40467cc4012dc74a583f844099ac7ece795d1fd777e645eab7f05a6ebc9a65b9",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_A002_FirstGate.asset": "ec25b7f8765bba6a15db2d44d9a2a665cc77106e06c30fa3577319c1300abaac",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_A_Dispatch.asset": "996f25fd18dc119e1e148dac9a8a4bce5f21217006c4d438130e531367a01504",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_A_RandomRoute.asset": "a34f9a0e56d5ef2595534f5a38bb33a0826d6656d0e9db54480b27b9ab69233e",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Branches/CH03_Chapter02_A_Second.asset": "df7731b1c5d279084d9b6f8854a193abad15d19f48e0ab01bffbca08692af4b7",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Chapter.asset": "1396e2e176def17d40934f6a31da6581d185011ec93e1042aedff580e40b0aff",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_A003_Choice.asset": "7a71465aecc4a20c4466017ee6d2688d8965f6620a62838afccfb883dbc4b7f6",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_A004_Choice.asset": "ea7f38d8704047a21014b954544c8d57f8b85e8fd380be0a37af09100addba4c",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Choices/CH03_Chapter02_Afternoon.asset": "addc3223e204d6f41c2f4fdfd68f2ac48d812b3fd1f0df6e87c650f33b5c513c",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A001.asset": "cd530a8617dfe944e460f1db342b61f53e8b1990169d339aa0bdc958683a1c59",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A001_End.asset": "f3a7a3fd5d1623c6696e54a30c9904945a9d6ac856ab805f552e1166b451fa4f",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A001_FirstRecord.asset": "29f62cf18cfeeddfa9bd9dff1c613596b0bd651eb74956ce9dc1af64bc3c14e5",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A001_Minigame.asset": "2d50a29d860cf6673db61dfe0b8840b9a45d6e6db45a33033fdeec34722720f8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A002.asset": "7a7faf742f7d5b73e1ed8bed4917608d2f099b0e3f0cf025c2f57a3ad45f9ccc",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A002_End.asset": "ae3253005c132c40ac4964e8c34958dd81a33a4749400a4efe45c22addff0344",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A002_FirstRecord.asset": "e8c1f990085e57d2b5c922d83f706635272ff565bb2f95dfa1cee4762c26abb0",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A002_Minigame.asset": "b8b7b61cab3bbe323523e13d15cdaf5f89261faf9f490cf8e0064c271516b094",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Answer1.asset": "412faac0cc3c6fe6132e4290cdbd8f2f334a5a0b1bd92c2ac3210c41aa25fb8a",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Answer2.asset": "8090cd8181d5550cf7afc8b4aad0ced13a054f3b408ddff5eb0f6b362e567457",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Common.asset": "f033344069c8e34e2e525df733a3cf556c012dea80270bae6d8e8a0af0f966a9",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A003_Intro.asset": "1f67ac59f72694a7974c4a6a5fa771568d13a7e3194562bc48d4d172834daeee",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Branch1.asset": "a65791bff9168375747b8425845edd84a32a8ad651285bf1a132b4ed1282c70f",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Branch2.asset": "dfe63828a759bfae176e5c5b05724926b7d89b31c55149dd67a2a82fae4e8267",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Common.asset": "b186e97cf16eac2839a9b047062a85c4de401dede616f2896e2a2c275c0669fb",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A004_Intro.asset": "fcb9d51f1ee38ea89607bc7cbca36f1180e5d116e6dde4b340d89f355415bd9c",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A005.asset": "4a2a57aa0ba6f299f8b76a82956aa9ee6d28d285fd5080864fc615b9f8f71c89",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A_Action.asset": "93836787bce498d51deb96deeb4c4a3226651200d08bd0a50ad93d3bd0c0f8e6",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A_Complete.asset": "4311dfb9f9b71f5a4914b593788e6ce2e3894aa7a880cbccde8b0dcf26651fb0",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A_Random.asset": "65d49cf82a0e8067e65c98e274b265e0cfb33ecfb7c102e20349e672d8fe80a4",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_AdvanceStep.asset": "26037dbcad6069ff8399f62f428357fb76c238dd00990dc35ffef7e8e41173a6",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_B_Action.asset": "27394d195e3643255c8880206081760beb3bdbcc48a59931a4b49f9ab6275386",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_C_Action.asset": "38f2333c20fcba523691de46acb01cb4c8a4ed7211d2c553b671bc3be3f6e763",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_D_Action.asset": "e7deb8d7f1aab7b2bf7ac616cb30ede870714a333f58e795e6e8a89ddffb8e6e",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_E_Action.asset": "78393f57c847e89defba6df09c4365d14e757c35337de9316d9ed2ff80c327d8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_F_Action.asset": "edaa9863bece5a868ccda5e7af487fe2ca38c6f80842c25ca60f2972687ebb87",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_G_Action.asset": "6308e7a4611d7eb2054e457327f7a3b4b52d2d4f1fde7d56327c5e2f74608fc8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_H_Action.asset": "b245d6d88d861b58ee6ea3fdd94ac654612394b08e0dc31209e403a400d3df9f",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_I_Action.asset": "e9fb306124ae2b1cd4acbd17e593f5dca1fc3696fd196600e5d22b24d82b4eb6",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_Settlement.asset": "96d3de73e5e937e4a1650944615e7f2adebaa9007f3089d17940a18480c06ea8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Call.asset": "5a2060e82672987643a9d4e2b67ba2f3b8965c7f0d23f4d211edc882d42371f0",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Return.asset": "e03e2e74b1a4106961105d12fcae0f8a2e4cf5c8f6c18f0b80db1bbd8bc23f3d",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_A_Start.asset": "528443a593075ee0a4752802852a7c14e00bf7afbd44269d0f453ad9f5068686",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Advance_Receive.asset": "924d3cfd046077babb5b333726faac1584b55eab7ffa2f5f3832d6d78e966457",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterAdvance_Jump.asset": "7b49980f385173aa482c149e930a39b4ca74650b90806c4ea73755cec344dbdc",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterAfternoon_Jump.asset": "505b3a2f5f1593ffdebce4bc08b5b0e4cfdf4a52d9e25eb5a4c3105be3431254",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterEvening_Jump.asset": "caa950d176cef8f6680f6650b074d4b165d2d0263748537b0e40e4419fe8e5d8",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterMonth_Jump.asset": "caf5b17b96b79ddf43a73cfb523e2631a87a6e0fd60e981facb82299e9409f58",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterMorning_Jump.asset": "eade1fc2aed2667fc611e81857069bbc8a1f16ac0617de0d7aa2b57561465cc5",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_AfterTown_Jump.asset": "c784838cb1b45b2424e5f646be36146859fb9fda1053aea9917d82be5668ce41",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Afternoon_Jump.asset": "10ab18f0d31df617f1d627333c2d44638d97ed2957bab295f9e043db64df0d3a",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Endings/CH03_Chapter02_Afternoon_Receive.asset": "109afb0248ca8e33be75258a5e8250a9a4d0e53df0d736cef76bc6b96ae5f571",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset": "b8f40e06e83aadede78319dc33d274f5798b87b3d155446ee3d538fd389a8d3c",
+    "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/TableRewardStep.asset": "f7e2e32ef22f6f5cd898026f9515366dfb69b2822bb32ae36336530d639711d6",
+    "Assets/GameResource/Resources/Config/Tables/novel_content_text.bytes": "f78c79f8cdd9a04ae2a18ce6b1d6dcc0a558c6550c485a9ade8807b0e4c68c10",
+    "Assets/GameResource/Resources/Config/Tables/novel_rewards.bytes": "6feb606aff2732f402162ac5ca1643de9b3d8fd4fc95154a1550b1423cd8fd37",
+    "Assets/GameResource/TableSources/novel_content_text.etable.csv": "111f4dd905f6ea9e5a17279af89c1a2709a8ef4efc3eea432f07e83d99d8c455",
+    "Assets/GameResource/TableSources/novel_rewards.etable.csv": "9927ff1be69801f285330600f00e3c7991173506f66f68a57ba83a1d8d611614"
+  },
+  "backupIndex": ".utmp/vn-story-import/20261001-chapter02-a-01/backup-index.json"
+}

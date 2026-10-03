@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "batchId": "20261001-a001-offering-sort",
+  "status": "completed",
+  "completedAt": "2026-10-01T19:56:05.330710+08:00",
+  "skillId": "ember-vn-custom-node",
+  "tier": "script",
+  "reason": "动态读取小游戏次数、多字段结果、首次不限时和会话锁，专属薄节点启动模块；玩法不在节点中。",
+  "confirmation": {
+    "planHash": "40518193729cb703515938f1001da1646afa0a79bdfd9c65ffea02a810d97766",
+    "reviewHash": "2d4a6ae22402326ba2f81c4f88c167580ea497b76d77509cd77a1003a08425e1",
+    "addendum": {
+      "at": "2026-10-01T19:29:10.517710",
+      "authorization": "用户已确认，并明确要求难度分级、数量和首次首尾规则配表；时限0表示不限时。",
+      "timeLimitSeconds": {
+        "0": "unlimited"
+      },
+      "itemCount": "config",
+      "smallestFirst": "config",
+      "largestLast": "config"
+    }
+  },
+  "sourceImport": "20261001-chapter02-a-01.json",
+  "supersedesDeferredNode": "A001_Minigame",
+  "validation": {
+    "valid": true,
+    "issues": [],
+    "semantics": "3A95A2FFD3FDAE1698EB7D741EF05CA2F1FD71C16BEED8EA515197B4004D8F68",
+    "configHash": "9332fa856414e0ac96350f64b4ad1b783c1fb64c9b5db11f30897cc2200462e0",
+    "rewardHash": "53ef90c9740e3ad8a5bb4d5d17dcd80c20cdda060177d148411af54666b5025a",
+    "stepId": "Game.OfferingSort.OfferingSortStep",
+    "stepPath": "Assets/GameResource/Authoring/Narrative/Scripts/OfferingSort/OfferingSortStep.asset",
+    "stepGuid": "691a6c95321446646b0c64ceaf48a1d5",
+    "nodeId": "9776c59614e548e6acef96e56bf26c90",
+    "nodeGuid": "edf1fc36c92d1c04998a3b3d2cd61eac",
+    "commandIds": [
+      "257dbae62da848509b84605fe8975af1"
+    ],
+    "registered": 1,
+    "uiPrefab": "Assets/GameResource/Resources/UI/Module/OfferingSort/Prefabs/EUIOfferingSortItem.prefab",
+    "uiViaCenter": true,
+    "dragEventSwaps": 1
+  },
+  "tests": {
+    "mode": "EditMode",
+    "summary": {
+      "total": 221,
+      "passed": 221,
+      "failed": 0,
+      "skipped": 0,
+      "durationSeconds": 6.9778061,
+      "resultState": "Passed"
+    },
+    "results": []
+  },
+  "settlementValidation": {
+    "passed": true,
+    "baseIncome": 59,
+    "cleanBonus": 20,
+    "sortBonus": 55,
+    "finalMoney": 159,
+    "bonusReset": true,
+    "visitsPreserved": true
+  },
+  "difficultyTable": {
+    "path": "Assets/GameResource/TableSources/offering_sort.etable.csv",
+    "rows": [
+      {
+        "id": "first",
+        "visitFrom": "1",
+        "visitTo": "1",
+        "itemCount": "6",
+        "minimumSize": "48",
+        "maximumSize": "112",
+        "timeLimitSeconds": "0",
+        "smallestFirst": "true",
+        "largestLast": "true",
+        "hintEnabled": "true",
+        "hintAfterNoProgress": "4",
+        "fastSeconds": "15",
+        "mediumSeconds": "30",
+        "fastRewardId": "cmh_box_fast",
+        "mediumRewardId": "cmh_box_medium",
+        "slowRewardId": "cmh_box_slow",
+        "timeoutRewardId": "cmh_box_timeout",
+        "hintKey": "ui.offeringSort.Hint"
+      },
+      {
+        "id": "repeat",
+        "visitFrom": "2",
+        "visitTo": "0",
+        "itemCount": "6",
+        "minimumSize": "48",
+        "maximumSize": "112",
+        "timeLimitSeconds": "45",
+        "smallestFirst": "false",
+        "largestLast": "false",
+        "hintEnabled": "false",
+        "hintAfterNoProgress": "4",
+        "fastSeconds": "15",
+        "mediumSeconds": "30",
+        "fastRewardId": "cmh_box_fast",
+        "mediumRewardId": "cmh_box_medium",
+        "slowRewardId": "cmh_box_slow",
+        "timeoutRewardId": "cmh_box_timeout",
+        "hintKey": "ui.offeringSort.Hint"
+      }
+    ],
+    "zeroSeconds": "unlimited",
+    "visitToZero": "unbounded upper visit range"
+  },
+  "rewardTable": {
+    "path": "Assets/GameResource/TableSources/novel_rewards.etable.csv",
+    "rows": [
+      {
+        "id": "cmh_box_fast",
+        "targetVariableId": "ch2_aBoxMonthlyBonus",
+        "amount": "30",
+        "multiplierVariableId": "",
+        "minimum": "0",
+        "maximum": "1000",
+        "enabled": "true"
+      },
+      {
+        "id": "cmh_box_medium",
+        "targetVariableId": "ch2_aBoxMonthlyBonus",
+        "amount": "20",
+        "multiplierVariableId": "",
+        "minimum": "0",
+        "maximum": "1000",
+        "enabled": "true"
+      },
+      {
+        "id": "cmh_box_slow",
+        "targetVariableId": "ch2_aBoxMonthlyBonus",
+        "amount": "10",
+        "multiplierVariableId": "",
+        "minimum": "0",
+        "maximum": "1000",
+        "enabled": "true"
+      },
+      {
+        "id": "cmh_box_timeout",
+        "targetVariableId": "ch2_aBoxMonthlyBonus",
+        "amount": "5",
+        "multiplierVariableId": "",
+        "minimum": "0",
+        "maximum": "1000",
+        "enabled": "true"
+      },
+      {
+        "id": "cmh_box_month_payout",
+        "targetVariableId": "player_money",
+        "amount": "1",
+        "multiplierVariableId": "ch2_aBoxMonthlyBonus",
+        "minimum": "0",
+        "maximum": "1000",
+        "enabled": "true"
+      }
+    ],
+    "timing": "accumulate ch2_aBoxMonthlyBonus; pay on month settlement, then reset"
+  },
+  "variables": [
+    {
+      "id": "ch2_aBoxVisits",
+      "type": "Int",
+      "scope": "Global",
+      "declaredIn": "Story_CallMeHeartless",
+      "purpose": "小游戏独立累计进入次数，跨月不清零"
+    },
+    {
+      "id": "ch2_aBoxElapsedMs",
+      "type": "Int",
+      "scope": "Global",
+      "declaredIn": "Story_CallMeHeartless",
+      "purpose": "最近一轮有效用时毫秒"
+    },
+    {
+      "id": "ch2_aBoxOutcome",
+      "type": "String",
+      "scope": "Global",
+      "declaredIn": "Story_CallMeHeartless",
+      "purpose": "success或timeout"
+    },
+    {
+      "id": "ch2_aBoxRewardId",
+      "type": "String",
+      "scope": "Global",
+      "declaredIn": "Story_CallMeHeartless",
+      "purpose": "最近一轮命中的奖励ID"
+    },
+    {
+      "id": "ch2_aBoxMonthlyBonus",
+      "type": "Int",
+      "scope": "Global",
+      "declaredIn": "Story_CallMeHeartless",
+      "purpose": "小游戏额外奖励累计至月结清零"
+    }
+  ],
+  "requestKey": "cmh.a001.offering_sort",
+  "timeout": "difficulty.timeLimitSeconds; 0 unlimited; otherwise module independently reaches normal timeout result",
+  "abort": "Close owned UI, reset drag callbacks/input map, drop game state, release input and pause locks; no reward on cancel; late callbacks ignored",
+  "compatibility": "Custom step asset/table fingerprint and added globals change semantics. Old saves rejected by existing compatibility checks and retained. Game-running state cannot be saved. Stable line after completion can be saved.",
+  "ui": {
+    "viaEuI": true,
+    "prefab": "Assets/GameResource/Resources/UI/Module/OfferingSort/Prefabs/EUIOfferingSortItem.prefab",
+    "bindingsGenerated": true,
+    "placeholderOnly": true,
+    "renderPreview": ".utmp/vn-custom-node/20261001-a001-offering-sort-review/offering-sort-preview.png",
+    "actualDragEvents": 1
+  },
+  "tutorial": "First difficulty enables hint; 4 effective swaps without beating the best inversion count show the original inner thought once. Bad drops excluded.",
+  "files": [
+    {
+      "path": "Assets/Game/Documentation/NarrativeImports/20261001-a001-offering-sort.json",
+      "ownership": "new",
+      "sha256": "416ffe06e0a856c5c95bed2500a582605f0536815513299ce8cf72803737850e"
+    },
+    {
+      "path": "Assets/Game/Module/Narrative/Tests/CallMeHeartlessALineTests.cs",
+      "ownership": "project-owned",
+      "sha256": "b15efa00dd4b275a6fe704f87c6e37d2b03738866685159d1de007c078695891"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Editor.meta",
+      "ownership": "new",
+      "sha256": "d98fd552a7b9098fb3a40c2a1c9e2e8945456697500250df154b0f1b569ec1b1"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Editor/Game.OfferingSort.Editor.asmdef",
+      "ownership": "new",
+      "sha256": "567d4fa0ee39281c51007e569b02ee353d8c298504356555705579c5f447d780"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Editor/Game.OfferingSort.Editor.asmdef.meta",
+      "ownership": "new",
+      "sha256": "f99006b562fef8fb2c90c1efbb8a1e7a8f0d73ad3a824d3cd2a82b60cae9c836"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Editor/OfferingSortFingerprintSync.cs",
+      "ownership": "new",
+      "sha256": "3079b168eda9b098580c17e6fd330520b1fadb108fd21cde838805bec0b40511"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Editor/OfferingSortFingerprintSync.cs.meta",
+      "ownership": "new",
+      "sha256": "36cfc7cc5c37f99d252e0922e014eac0edcfd0b76e7a396c13428ee00e58917c"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Game.OfferingSort.Runtime.asmdef",
+      "ownership": "new",
+      "sha256": "d4f9e95033d6d1c122bab5bcdf78c4848d3c00ae9e3c43a55ea45be5fb01701d"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Game.OfferingSort.Runtime.asmdef.meta",
+      "ownership": "new",
+      "sha256": "907158dfa04a99e9addc526cdfd3743f6e4d215afe0a4dad878ce8d6e86f43b5"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Narrative.meta",
+      "ownership": "new",
+      "sha256": "b37e6287f2b57a2cf56185bbfb259a69aa2757ae67f563eb2dd95aaa50617076"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Narrative/OfferingSortStepSO.cs",
+      "ownership": "new",
+      "sha256": "586f2b315597cc633c571f17adade6cd961f451b7209bae4bd63c5bde16c9532"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Narrative/OfferingSortStepSO.cs.meta",
+      "ownership": "new",
+      "sha256": "e2d135a9fa75e6cfedeac79db3e3291abac6804cfa1d2c51f6a0651d4fb55ca1"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/OfferingSortContracts.cs",
+      "ownership": "new",
+      "sha256": "efc1515229acbb7cf4802309762dde9ec55bc35fece5b7ea18f644b608fa38c5"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/OfferingSortContracts.cs.meta",
+      "ownership": "new",
+      "sha256": "1a7ff5cf15291fa1c69ee4c28b7a098767922bb612133b8ba1f3d48ac6324883"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/OfferingSortGame.cs",
+      "ownership": "new",
+      "sha256": "588ccb7a12ea8ebe3ea1c0785964898ef748464fb9e19809600888ed5018c11f"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/OfferingSortGame.cs.meta",
+      "ownership": "new",
+      "sha256": "bff6a2519d65080a8b9039d44ec68846b806fc88899077d706c6b504d9068f22"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/OfferingSortModule.cs",
+      "ownership": "new",
+      "sha256": "0f88e77f485ae1522572dc60a90d97ee18daa475d37c21e74b6c138ffa490a44"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/OfferingSortModule.cs.meta",
+      "ownership": "new",
+      "sha256": "496bfde38973465d842b90d9ba4293e21d73c5c068b01b9e509e86788dee5f7b"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Tests.meta",
+      "ownership": "new",
+      "sha256": "8b15b0e265936e7c145b4e1d59c690661557d1b4dbc9b396b4426bf5747b7829"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Tests/Game.OfferingSort.Tests.asmdef",
+      "ownership": "new",
+      "sha256": "c14d43743165317da4f737d984a5cf621372672ed2cc0daf357818711d72be50"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Tests/Game.OfferingSort.Tests.asmdef.meta",
+      "ownership": "new",
+      "sha256": "e592c84288c6b8dbb09fe5bfb46556169f6b1035cd8cf45766ceb07a1ded0bfa"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Tests/OfferingSortTests.cs",
+      "ownership": "new",
+      "sha256": "b069d0318158270551dac5726c60969cbc8ca49fe620c891ce00b26919581758"
+    },
+    {
+      "path": "Assets/Game/Module/OfferingSort/Tests/OfferingSortTests.cs.meta",
+      "ownership": "new",
+      "sha256": "1c1a8d4851d12b5ff9f73ef499bbf6170f34e71c18756fdcae4e8a274f80a0ce"
+    },
+    {
+      "path": "Assets/Game/Table/Definitions/offering_sort.asset",
+      "ownership": "new",
+      "sha256": "98534c74ea668b830b9e6b510e3013efecb16a4d74c1c4a9f3539526fecd5f3c"
+    },
+    {
+      "path": "Assets/Game/Table/Generated/EmberTableArtifacts.manifest.json",
+      "ownership": "project-owned",
+      "sha256": "9ce2f7ea309f00d0223de4d7906460c2a5083d2dc96d454b3014bd5e8a05b0ed"
+    },
+    {
+      "path": "Assets/Game/Table/Generated/GameTables.Catalog.g.cs",
+      "ownership": "project-owned",
+      "sha256": "788a865c14485d68fdb41447b5b16c7556020c34b4d4d040f485eee2e58b9112"
+    },
+    {
+      "path": "Assets/Game/Table/Generated/Game_Table_OfferingSortConfigRowTableBinding.TableBinding.g.cs",
+      "ownership": "new",
+      "sha256": "7c7ee773d9dc94e7a0fc028471677269125bbe3c4db532cc056bf71e50ebe1fb"
+    },
+    {
+      "path": "Assets/Game/Table/Rows/OfferingSortConfigRow.cs",
+      "ownership": "new",
+      "sha256": "f646e0715a8791c4da78aaf3f25be2982649adeb2f99f41f2e4ad4ad81bbd68f"
+    },
+    {
+      "path": "Assets/Game/UI/Runtime/Module/OfferingSort/EUIOfferingSortItem.Binding.cs",
+      "ownership": "new",
+      "sha256": "4d89286704fafa435f1b65bf139efd4eefc631b4396c1de45edd2cd1d0c14505"
+    },
+    {
+      "path": "Assets/Game/UI/Runtime/Module/OfferingSort/EUIOfferingSortItem.Binding.cs.meta",
+      "ownership": "new",
+      "sha256": "489e6e5f80e924345f9ee681853c9e1880356e4d995e823fbe3b75a296845aa4"
+    },
+    {
+      "path": "Assets/Game/UI/Runtime/Module/OfferingSort/EUIOfferingSortItem.cs",
+      "ownership": "new",
+      "sha256": "b18459d8abc1b07737db3f0722a324bd4135cc6aa4caba33725b95e98fba1000"
+    },
+    {
+      "path": "Assets/Game/UI/Runtime/Module/OfferingSort/EUIOfferingSortItem.cs.meta",
+      "ownership": "new",
+      "sha256": "deef60175ade639bbbb1dfe8c1ad66aaaa047c21011c2b6a2077288184e6c54b"
+    },
+    {
+      "path": "Assets/Game/UI/Runtime/Module/OfferingSort/OfferingSortDragHandle.cs",
+      "ownership": "new",
+      "sha256": "1c7c520bc15afab197aa62aaa78de339be9fa75e5e213aee42745f01808df750"
+    },
+    {
+      "path": "Assets/Game/UI/Runtime/Module/OfferingSort/OfferingSortDragHandle.cs.meta",
+      "ownership": "new",
+      "sha256": "d7e65a0a9e67a31a73a8c82bb9677bdd927ed1f47bb9526c0494410ba31e5a6e"
+    },
+    {
+      "path": "Assets/Game/UI/Runtime/Module/OfferingSort/OfferingSortUIHostModule.cs",
+      "ownership": "new",
+      "sha256": "92e082ee8c3f49f1ca15630a3c45b3c61c11078fd00db2800fb00b35bba662fd"
+    },
+    {
+      "path": "Assets/Game/UI/Runtime/Module/OfferingSort/OfferingSortUIHostModule.cs.meta",
+      "ownership": "new",
+      "sha256": "f16e883e607d2be737917307449356e71c6ff54d3990f5aadc2345472fc6fea2"
+    },
+    {
+      "path": "Assets/GameResource/Authoring/Narrative/Scripts/OfferingSort/OfferingSortStep.asset",
+      "ownership": "new",
+      "sha256": "fb8d07f1d24cc87b7bc33523841f12ce02cb5bccef90b09383b2ea9105d5ce01"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_A001_Minigame.asset",
+      "ownership": "project-owned",
+      "sha256": "5eca875521df0f6daa20f390befd97aa8924667d4d41d4c061b62bd9a3135981"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH03_Chapter02/Dialogue/CH03_Chapter02_Settlement.asset",
+      "ownership": "project-owned",
+      "sha256": "1bb2244b7ab97038755517f322136d2e60101a5b0285e00ece63ab8500e4f1d0"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Story_CallMeHeartless.asset",
+      "ownership": "project-owned",
+      "sha256": "d47740a39b9649f1aa8d32f27408f3fad9f33e2bc1e3a003edcce048bff9f758"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/TableRewardStep.asset",
+      "ownership": "project-owned",
+      "sha256": "7afb3167f5bce54e28c2919199c15daea8daf429986d3f1d24592a8615321512"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Tables/novel_content_text.bytes",
+      "ownership": "new",
+      "sha256": "c63c98457f6a23b11d558babf09c7a09782578280ddb7fb1a7b8fdbebc557934"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Tables/novel_rewards.bytes",
+      "ownership": "new",
+      "sha256": "87c36f2b240742448240ef52cc61ad6c3f0787588fe09428d08ae4277d9c4721"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Tables/offering_sort.bytes",
+      "ownership": "new",
+      "sha256": "9332fa856414e0ac96350f64b4ad1b783c1fb64c9b5db11f30897cc2200462e0"
+    },
+    {
+      "path": "Assets/GameResource/Resources/UI/Module/OfferingSort/Prefabs/EUIOfferingSortItem.prefab",
+      "ownership": "new",
+      "sha256": "58d2ec047999669a48001b662b3f614a260ca10722536134363fb5c79b1135b6"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_content_text.etable.csv",
+      "ownership": "project-owned",
+      "sha256": "f57ee9b3361e0dcbf342cbcd8844e4c9c400c2b920a7e5017935d367f2d37489"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/novel_rewards.etable.csv",
+      "ownership": "project-owned",
+      "sha256": "7e8087792a6ace7bbd78b3fe05ef58bf12e704f3a1ce0eeab9e6ed50ab94a0f7"
+    },
+    {
+      "path": "Assets/GameResource/TableSources/offering_sort.etable.csv",
+      "ownership": "new",
+      "sha256": "8495fa0da1440d49aeaaa538baeec11db55acd9828860fcd3b94ff4800e85f16"
+    }
+  ],
+  "manualAcceptance": [
+    "在真实Game视图完整试玩首轮、限时轮、超时轮；检查阅读UI与按钮/快捷键屏蔽和恢复。",
+    "实际试玩与结果回写验收后，再决定是否封存业务或发布。"
+  ],
+  "backup": ".utmp/vn-custom-node/20261001-a001-offering-sort-review/backup",
+  "publishing": "No SaveTemplate/Bump/publishing actions"
+}

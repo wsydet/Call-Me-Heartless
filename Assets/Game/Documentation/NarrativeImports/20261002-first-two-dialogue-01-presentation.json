@@ -1,0 +1,722 @@
+{
+  "schemaVersion": 1,
+  "batchId": "20261002-first-two-dialogue-01",
+  "skillId": "ember-vn-polish-presentation",
+  "status": "applied",
+  "completedAt": "2026-10-02T14:41:15.955619+00:00",
+  "scope": "序章＋第一章：对白阅读体验",
+  "choices": {
+    "items": [
+      "prologue_long",
+      "town_long",
+      "town_hesitate",
+      "arrival",
+      "schedule_long",
+      "schedule_hesitate",
+      "sect",
+      "demon"
+    ],
+    "strength": "light",
+    "chapters": [
+      "序章",
+      "第一章"
+    ]
+  },
+  "confirmedPlanHash": "f56be9e205a1d1b0903b94f167d1022c4b16fec3589466b3950ceac1d4bc39d5",
+  "sourcePreservationHash": "ad136e2afff471a0a7367edea9eb23b65072410cef2d8856f1e0761626fa89ff",
+  "modifiedCommands": 23,
+  "modifiedNodes": 7,
+  "changes": [
+    {
+      "id": "prologue_long",
+      "title": "序章：长叙述读起来更流畅",
+      "chapter": "序章",
+      "category": "速度",
+      "reason": "略微加快老师旁白、休学说明和辅导员留言，保留原有句内停顿与压抑气氛。",
+      "default": true,
+      "changes": [
+        {
+          "node": "CH01_Prologue_Classroom",
+          "nodeId": "a54f913d208b4410aed1443dd292cf30",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+          "commandIndex": 19,
+          "commandId": "bb1c1e1c6df64a6a940dff725ee99830",
+          "lineId": "c51cb156476743a5a5860a16859c6050",
+          "text": "老师一直在讲台上平铺直叙地念着课本上印好的字。我一直在这里坐着，盯着黑板，老师看向我的时候，我还会配合点头微笑，但实际上什么都没听进去。",
+          "speaker": "CMH_inner",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.08
+          }
+        },
+        {
+          "node": "CH01_Prologue_Home",
+          "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset",
+          "commandIndex": 22,
+          "commandId": "2882767f03d84c68958ed72baebf2422",
+          "lineId": "16c2fc7f2bb346f8929bef63ba9a6a44",
+          "text": "这是你辅导员给你办好的休学手续，说是两年内想通了还能回去接着读，不然就办退学，你自己看着办吧",
+          "speaker": "CMH_mq",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.08
+          }
+        },
+        {
+          "node": "CH01_Prologue_Home",
+          "nodeId": "bc0599b6af714de2b55b831680ac6dd2",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset",
+          "commandIndex": 28,
+          "commandId": "deb9861fdc974fa28250e569ac880ee4",
+          "lineId": "da9fc09b0f48405496452ed5f0093e01",
+          "text": "“上学的意义我想你都清楚，我也不多劝，不过如果你想换个环境，我有个朋友在县城需要人手，需要的话可以联系13XXXXXXXXX”",
+          "speaker": "CMH_dy",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.08
+          }
+        }
+      ]
+    },
+    {
+      "id": "town_long",
+      "title": "镇长：减少长段介绍的出字等待",
+      "chapter": "第一章",
+      "category": "速度",
+      "reason": "人口、工作与食宿说明较集中，只加快较长的解释句，短句问答维持原节奏。",
+      "default": true,
+      "changes": [
+        {
+          "node": "CH02_Chapter01_Town",
+          "nodeId": "1ee958ac7ec042d986982a9c3b7c5ce2",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+          "commandIndex": 22,
+          "commandId": "1c86b5fd65d74b87b8cc14f33d9ae54b",
+          "lineId": "d7efd32d17f44143a82b1b6458edbf62",
+          "text": "他说你是个靠得住的沉稳的同学，最近需要换换环境，来我们这里再好不过了",
+          "speaker": "CMH_zz",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.08
+          }
+        },
+        {
+          "node": "CH02_Chapter01_Town",
+          "nodeId": "1ee958ac7ec042d986982a9c3b7c5ce2",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+          "commandIndex": 33,
+          "commandId": "44f2cf9a3db34359bdca9ad843959119",
+          "lineId": "c23d54a6f41c41f38c832545ce50b269",
+          "text": "在这些生活的艰难中，拂云观对这个镇子的镇民们起到了一定的心理安慰的作用",
+          "speaker": "CMH_zz",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.08
+          }
+        },
+        {
+          "node": "CH02_Chapter01_Town",
+          "nodeId": "1ee958ac7ec042d986982a9c3b7c5ce2",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+          "commandIndex": 34,
+          "commandId": "a7784bada5664169ac45e9ed4eef5735",
+          "lineId": "af5337eab80a486c8e2028647918bdc7",
+          "text": "虽然没有工资发，但是往好的方面想，这里还挺山清水秀的，你也能和拂云观的道长学到一些有趣的知识",
+          "speaker": "CMH_zz",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.08
+          }
+        },
+        {
+          "node": "CH02_Chapter01_Town",
+          "nodeId": "1ee958ac7ec042d986982a9c3b7c5ce2",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+          "commandIndex": 36,
+          "commandId": "b4bc737216574df0a573da8d1ea6e34f",
+          "lineId": "7fe75a89d832433da5c12535db7c8206",
+          "text": "最近拂云观原来的3位道长有两位在外进修，现在庙里只有住持一人，需要帮忙做些打下手的工作",
+          "speaker": "CMH_zz",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.08
+          }
+        },
+        {
+          "node": "CH02_Chapter01_Town",
+          "nodeId": "1ee958ac7ec042d986982a9c3b7c5ce2",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+          "commandIndex": 37,
+          "commandId": "8484c561135249ff8e0d063c995adfa1",
+          "lineId": "b2744ba8188647b48bc05842f5b6f1a1",
+          "text": "你可以在这里待一段时间，直到他们回来，你就可以自由决定去留",
+          "speaker": "CMH_zz",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.08
+          }
+        }
+      ]
+    },
+    {
+      "id": "town_hesitate",
+      "title": "镇长：三次“嗯……”留出轻微犹豫",
+      "chapter": "第一章",
+      "category": "停顿",
+      "reason": "让回答好处时的犹豫更容易读出来；不增加动作或强制等候。",
+      "default": true,
+      "changes": [
+        {
+          "node": "CH02_Chapter01_Town",
+          "nodeId": "1ee958ac7ec042d986982a9c3b7c5ce2",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+          "commandIndex": 40,
+          "commandId": "aac3649f0dcf4dd0b3324942b79a85ef",
+          "lineId": "3f1251ce91824dbdabcbaecc3a9bfe2a",
+          "text": "嗯……获得什么都不用担心的一段包吃包住的时间？",
+          "speaker": "CMH_zz",
+          "bindings": [],
+          "before": {
+            "_textBeats": []
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textBeats": [
+              {
+                "_at": 3,
+                "_pause": 0.16,
+                "_speed": 1.0,
+                "_instant": 0
+              }
+            ]
+          }
+        },
+        {
+          "node": "CH02_Chapter01_Town",
+          "nodeId": "1ee958ac7ec042d986982a9c3b7c5ce2",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+          "commandIndex": 41,
+          "commandId": "3cc0a89f4b7e4a0c8250c4c93d2e6310",
+          "lineId": "a05fbc4d0e1949ccb72146bf697a5b54",
+          "text": "嗯……如果不满意的话，给你开个实习证明之类的？",
+          "speaker": "CMH_zz",
+          "bindings": [],
+          "before": {
+            "_textBeats": []
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textBeats": [
+              {
+                "_at": 3,
+                "_pause": 0.16,
+                "_speed": 1.0,
+                "_instant": 0
+              }
+            ]
+          }
+        },
+        {
+          "node": "CH02_Chapter01_Town",
+          "nodeId": "1ee958ac7ec042d986982a9c3b7c5ce2",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+          "commandIndex": 42,
+          "commandId": "a7b24474af04447880306c66dc1ede6c",
+          "lineId": "84ee6ec0e5704b8283e4936a444778b6",
+          "text": "嗯……就，这边人还蛮质朴的，也许能收获一些大城市没有的温情吧",
+          "speaker": "CMH_zz",
+          "bindings": [],
+          "before": {
+            "_textBeats": []
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textBeats": [
+              {
+                "_at": 3,
+                "_pause": 0.16,
+                "_speed": 1.0,
+                "_instant": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "arrival",
+      "title": "初见师父：欢迎语与关心的语气",
+      "chapter": "第一章",
+      "category": "混合",
+      "reason": "介绍身份的长句略快，在“累了吧今天”前轻停，体现从玩笑转向关心。",
+      "default": true,
+      "changes": [
+        {
+          "node": "CH02_Chapter01_Arrival",
+          "nodeId": "892a623db4314c9fb2dada1107773409",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset",
+          "commandIndex": 21,
+          "commandId": "917631bc26014753be3464a54825ad46",
+          "lineId": "8af239b1d9cd42b9982b225582c681ed",
+          "text": "{playerName}你好哦，我是拂云观的住持，我叫林夕染，明后天我会办个仪式收{playerName}为临时弟子",
+          "speaker": "",
+          "bindings": [
+            {
+              "_token": "{playerName}",
+              "_variableId": "playerName",
+              "_scope": 1
+            }
+          ],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.06
+          }
+        },
+        {
+          "node": "CH02_Chapter01_Arrival",
+          "nodeId": "892a623db4314c9fb2dada1107773409",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset",
+          "commandIndex": 25,
+          "commandId": "417219e190ea4d62b8ea3bb349e52f94",
+          "lineId": "e94b8bd6bd524738abcd844c1d756d2b",
+          "text": "（笑）改口到很快嘛，先不急，累了吧今天，这是你的房间，这几个月你就住在这里",
+          "speaker": "CMH_lxz_r",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0,
+            "_textBeats": []
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.05,
+            "_textBeats": [
+              {
+                "_at": 14,
+                "_pause": 0.14,
+                "_speed": 1.0,
+                "_instant": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "schedule_long",
+      "title": "日程讲解：长说明轻微提速并突出总结",
+      "chapter": "第一章",
+      "category": "混合",
+      "reason": "避免多句工作说明连续慢速出字，在“总之”前分出信息层次。",
+      "default": true,
+      "changes": [
+        {
+          "node": "CH02_Chapter01_OptSchedule",
+          "nodeId": "5c9105f0103248a584e17647e338a08e",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+          "commandIndex": 7,
+          "commandId": "214f8b26184041e2891049cc24cbb483",
+          "lineId": "b28596b960094a33b3453ca09bd627b8",
+          "text": "接下来的上午我会比较忙，有时候是应镇民要求主持仪式，有时候是表文作符，有时候是起卦看相，总之尽可能的满足香客要求",
+          "speaker": "CMH_lxz_r",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0,
+            "_textBeats": []
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.1,
+            "_textBeats": [
+              {
+                "_at": 44,
+                "_pause": 0.16,
+                "_speed": 1.0,
+                "_instant": 0
+              }
+            ]
+          }
+        },
+        {
+          "node": "CH02_Chapter01_OptSchedule",
+          "nodeId": "5c9105f0103248a584e17647e338a08e",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+          "commandIndex": 9,
+          "commandId": "6b0a251283dc4e2cae3df0e2cee5b02c",
+          "lineId": "d9fb241e99964938ac2f5dd596b66cbd",
+          "text": "{playerName}需要做的事就是基础的贡品整理，庭院洒扫，浇菜种地，洗衣做饭之类",
+          "speaker": "CMH_lxz_r",
+          "bindings": [
+            {
+              "_token": "{playerName}",
+              "_variableId": "playerName",
+              "_scope": 1
+            }
+          ],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.08
+          }
+        },
+        {
+          "node": "CH02_Chapter01_OptSchedule",
+          "nodeId": "5c9105f0103248a584e17647e338a08e",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+          "commandIndex": 11,
+          "commandId": "25d8075e7d6149b698d6fdae213ad004",
+          "lineId": "943dd2bdc5454849b8e602b16fbc9414",
+          "text": "生活物资短缺的话，每隔一个月统一下到镇子里采办一次",
+          "speaker": "CMH_lxz_r",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.06
+          }
+        },
+        {
+          "node": "CH02_Chapter01_OptSchedule",
+          "nodeId": "5c9105f0103248a584e17647e338a08e",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+          "commandIndex": 14,
+          "commandId": "896725089b584be1b1b8bfa6d37f3cd1",
+          "lineId": "ef6024969f54497d8d1f2e1c48b9ce00",
+          "text": "当然我们也有来自镇上的固定经费，所以这个不用太过担心",
+          "speaker": "CMH_lxz_r",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.06
+          }
+        },
+        {
+          "node": "CH02_Chapter01_OptSchedule",
+          "nodeId": "5c9105f0103248a584e17647e338a08e",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+          "commandIndex": 16,
+          "commandId": "5fe9d0454d39492e82e711a6b4fca884",
+          "lineId": "7fd00747e24c4ab58f5bf94d2c8a573f",
+          "text": "如果{playerName}有兴趣的话可以找我学习一些你在学校学不到的妙妙小知识",
+          "speaker": "CMH_lxz_r",
+          "bindings": [
+            {
+              "_token": "{playerName}",
+              "_variableId": "playerName",
+              "_scope": 1
+            }
+          ],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.06
+          }
+        }
+      ]
+    },
+    {
+      "id": "schedule_hesitate",
+      "title": "谈除妖：让师父的迟疑更清楚",
+      "chapter": "第一章",
+      "category": "停顿",
+      "reason": "在“没，没什么”前轻停；保留既有表情切换与前后沉默。",
+      "default": true,
+      "changes": [
+        {
+          "node": "CH02_Chapter01_OptSchedule",
+          "nodeId": "5c9105f0103248a584e17647e338a08e",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+          "commandIndex": 23,
+          "commandId": "2889a55541f94af3b580320f5a8e51bb",
+          "lineId": "5e2fce056c79454e9d9add6361350b6b",
+          "text": "……没，没什么",
+          "speaker": "CMH_lxz_r",
+          "bindings": [],
+          "before": {
+            "_textBeats": []
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textBeats": [
+              {
+                "_at": 2,
+                "_pause": 0.18,
+                "_speed": 1.0,
+                "_instant": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sect",
+      "title": "门派问答：吐槽顺畅、转折清楚",
+      "chapter": "第一章",
+      "category": "混合",
+      "reason": "较长吐槽稍快，“但好处”前轻停；原来的笑脸、哼声与短句保持。",
+      "default": true,
+      "changes": [
+        {
+          "node": "CH02_Chapter01_OptSect",
+          "nodeId": "c0e8c9974d964bd990bcb6defd7d238f",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset",
+          "commandIndex": 10,
+          "commandId": "7e5a3dccd1cd462b9f66b9aa7ae31ae5",
+          "lineId": "1e809ce6ba324a2799f2ea0bc313a67a",
+          "text": "师父是不是碰到这种尴尬的问题都会嬉皮笑脸糊弄过去",
+          "speaker": "CMH_inner",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 1.06
+          }
+        },
+        {
+          "node": "CH02_Chapter01_OptSect",
+          "nodeId": "c0e8c9974d964bd990bcb6defd7d238f",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset",
+          "commandIndex": 13,
+          "commandId": "575490f46e3b491aae926a51fa92b57d",
+          "lineId": "b68ead2b11784f58b9992c5d74c2a90a",
+          "text": "总之呢就是这样，门派很小，但好处是人际关系及其简单",
+          "speaker": "CMH_lxz_r",
+          "bindings": [],
+          "before": {
+            "_textBeats": []
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textBeats": [
+              {
+                "_at": 13,
+                "_pause": 0.14,
+                "_speed": 1.0,
+                "_instant": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "demon",
+      "title": "妖怪问答：区分解释与警告",
+      "chapter": "第一章",
+      "category": "混合",
+      "reason": "镇民遭遇的说明在“所以”前轻停，远离妖怪的提醒稍慢；保留已有两处重点停顿。",
+      "default": true,
+      "changes": [
+        {
+          "node": "CH02_Chapter01_OptDemon",
+          "nodeId": "c96dec0de1124957807b5ffb43714d6b",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset",
+          "commandIndex": 8,
+          "commandId": "dbe01b600f7b41bba20775f0de8dc6e5",
+          "lineId": "a5096d6970de49f380f51ef761ca85af",
+          "text": "这里的镇民们，有人曾被妖怪以奇怪的方式杀害的。所以镇民们也很害怕妖怪。",
+          "speaker": "CMH_lxz_r",
+          "bindings": [],
+          "before": {
+            "_textBeats": []
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textBeats": [
+              {
+                "_at": 23,
+                "_pause": 0.16,
+                "_speed": 1.0,
+                "_instant": 0
+              }
+            ]
+          }
+        },
+        {
+          "node": "CH02_Chapter01_OptDemon",
+          "nodeId": "c96dec0de1124957807b5ffb43714d6b",
+          "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset",
+          "commandIndex": 9,
+          "commandId": "ce29a0d439934b7d8194c5ca78709f3d",
+          "lineId": "fe21c16c5811426c8856386d89191a8d",
+          "text": "如果不小心遇到了，一定要远离。",
+          "speaker": "CMH_lxz_r",
+          "bindings": [],
+          "before": {
+            "_textSpeedMultiplier": 1.0
+          },
+          "wait": "只作用于本句逐字显示；点击仍可补全文字，没有新增 Wait 或并行动作。",
+          "reset": "下一句读取自己的速度与节奏，不遗留到分支或后续章节。",
+          "resources": "沿用当前文字、人物和语音绑定；无需新增资源。",
+          "after": {
+            "_textSpeedMultiplier": 0.96
+          }
+        }
+      ]
+    }
+  ],
+  "fingerprints": [
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Classroom.asset",
+      "before": "1670534bb4817f1737edba4a57f37b0b7b15f04ff129fa7369147a0d637462a8",
+      "after": "a897944cc12f1efc319ef839db735b2fc8fff0431a8b0a8fdeea5ae628f39fc1"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH01_Prologue/Dialogue/CH01_Prologue_Home.asset",
+      "before": "31cc1bf3636cb8650440fd56991d5190d4ed99a82f21da5414816f7146192a39",
+      "after": "1c0e6eabda3560a5e125b800257da051d1414124669979a3b9e735875cb566d2"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Arrival.asset",
+      "before": "e5b49c934ad957a6619b55677a935b5d759fc5eb454297a19963fc5a528d97c5",
+      "after": "23e47f7925c833250e61760d4e3f757609ff980a7d61a35a0c2f31c07a37c191"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptDemon.asset",
+      "before": "e2a2d1d71c208f4fc8e37c5afe52323297d0edd4a33008d091b5ba38390cf1c9",
+      "after": "b8488ec403fe04fb985e5ac4b902d39fda5b20f7238f100ca2a68efb70f33567"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSchedule.asset",
+      "before": "8814393ab55d0a8cc5d47813436193e66f413ce6c792007d258c9496a42cf443",
+      "after": "2194a0cecc52b2f0046eede366fa2fbd67acc965ab3f8230ca36e459007cf0bb"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_OptSect.asset",
+      "before": "89a7b1c35f56d14e45ce76ea5001afd33c32a7cd3d04297f9b921167068b95f0",
+      "after": "d7d4b9b337e288ac1b2e568e2b9ca0cf69548eb7134145d3a80070bfe1ff491c"
+    },
+    {
+      "path": "Assets/GameResource/Resources/Config/Narrative/CallMeHeartless/Chapters/CH02_Chapter01/Dialogue/CH02_Chapter01_Town.asset",
+      "before": "49e23e897e2be9ea8a061f61cb470180b0759f79d23de30a11b95b162ff12c0c",
+      "after": "1e9f22f2274d64ed46fd190492216a1af38454b1d8cd3f6f97ac63b2cfc4263c"
+    }
+  ],
+  "preservation": {
+    "checkedObjects": 205,
+    "unexpectedDifferences": [],
+    "textSpeakerVoiceIdsOrderOptionsVariablesConnectionsEndings": "unchanged",
+    "contentRevision": "modified nodes +1",
+    "textRevision": "unchanged"
+  },
+  "validation": {
+    "wholeStoryWithRealTables": "passed",
+    "selectedCommandValidation": "passed",
+    "exactWholeObjectComparison": "passed",
+    "onlyConfirmedSevenAssetFilesChanged": true,
+    "isolatedPlayback": {
+      "passed": true,
+      "selectedLinesExercised": 23,
+      "route": "序章→第一章→日程安排→关于门派→关于妖怪→第二章入口",
+      "realReadingPrefab": true,
+      "realTextClock": true,
+      "simulationTimeStepSeconds": 0.05,
+      "fullGameStarted": false,
+      "userSaveWritten": false,
+      "captures": [
+        ".utmp/vn-presentation/20261002-first-two-dialogue-01/playback-CH02_Chapter01_Town.png",
+        ".utmp/vn-presentation/20261002-first-two-dialogue-01/playback-CH02_Chapter01_OptSchedule.png",
+        ".utmp/vn-presentation/20261002-first-two-dialogue-01/playback-CH02_Chapter01_OptDemon.png"
+      ]
+    },
+    "visualInspection": "已查看镇长、日程、妖怪三处实际渲染截图；对白、背景和人物正常。主观节奏仍以玩家体验为准。",
+    "console": "试播后未发现错误日志；未清空控制台。"
+  },
+  "backups": "C:\\Users\\wuyu\\My\\Call Me Heartless\\.utmp\\vn-presentation\\20261002-first-two-dialogue-01\\backup",
+  "notes": [
+    "未填补既有剧情逻辑缺口；进入结局逻辑继续留空。",
+    "未采用缩短三处纯省略号等待的可选建议。",
+    "演出内容指纹已变化，保留现有存档且未绕过兼容检查。"
+  ]
+}
